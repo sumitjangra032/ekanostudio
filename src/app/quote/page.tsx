@@ -1,0 +1,7 @@
+export default function QuotePage() {
+  return (
+    <main>
+      <h1>Request a Quote</h1>
+    </main>
+  );
+}
