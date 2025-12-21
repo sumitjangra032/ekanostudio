@@ -13,9 +13,13 @@ interface AnimatedLineProps {
   text: string;
   duration?: number;
   delay?: number;
-  className?: string;
+  className?: string; // Container class
+  textSize?: string; // e.g. "text-4xl"
+  textColor?: string; // e.g. "#ffffff" or "text-white"
   isHeading?: boolean;
   gradient?: Gradient;
+  highlightStyle?: React.CSSProperties;
+  highlightClassName?: string;
 }
 
 export default function AnimatedLine({
@@ -24,38 +28,58 @@ export default function AnimatedLine({
   delay = 0,
   className = "",
   isHeading = false,
+  textSize = isHeading ? "" : "text-sm",
+  textColor,
   gradient,
+  highlightStyle,
+  highlightClassName,
 }: AnimatedLineProps) {
   const ref = useRef<HTMLDivElement | null>(null);
   const isInView = useInView(ref, { once: true, margin: "-20% 0px" });
 
-  const words = text.split(" ");
+  // Regex to match:
+  // 1. [...] segments
+  // 2. {...} segments
+  // 3. Or sequence of non-whitespace characters (words)
+  const regex = /(\[[^\]]+\]|\{[^}]+\}|\S+)/g;
+  const words = text.match(regex) || [];
 
   const gradientStyle = gradient
     ? {
-        backgroundImage: `linear-gradient(270deg, ${gradient.from}, ${
-          gradient.via ?? gradient.to
+      backgroundImage: `linear-gradient(270deg, ${gradient.from}, ${gradient.via ?? gradient.to
         }, ${gradient.to})`,
-        WebkitBackgroundClip: "text",
-        WebkitTextFillColor: "transparent",
-      }
+      WebkitBackgroundClip: "text",
+      WebkitTextFillColor: "transparent",
+    }
     : undefined;
 
   return (
     <div
       ref={ref}
-      className={`block ${isHeading ? "font-[var(--font-cabinet)]" : ""} ${className}`}
+      className={`block ${isHeading ? "font-[var(--font-cabinet)]" : ""} ${textSize ?? ""} ${className}`}
       style={{
-        color: gradient ? undefined : "#ffffff",
+        color: gradient ? undefined : (textColor ?? "#ffffff"),
       }}
     >
       {words.map((word, i) => {
-        const parts = word.split(/(\{[^}]+\}|\[[^\]]+\])/g);
+        // Now 'word' could be "[Why Choose Us ?]" or "Why"
+        // We still need to check if it matches the bracket pattern to determine IsTarget
+
+        const isTarget =
+          (word.startsWith("{") && word.endsWith("}")) ||
+          (word.startsWith("[") && word.endsWith("]"));
+
+        const cleanText = isTarget
+          ? word.slice(1, -1)
+          : word;
+
+        // If it is a target (bracketed), we render it as one highlighted block
+        // If not, it's just a normal word
 
         return (
           <motion.span
             key={i}
-            className="inline-block mr-2 "
+            className={`inline-block mr-2 ${isTarget ? highlightClassName : ""} px-[0.045em]`}
             initial={{ opacity: 0, y: 8 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{
@@ -63,26 +87,12 @@ export default function AnimatedLine({
               delay: isInView ? delay + i * 0.08 : 0,
               ease: "easeOut",
             }}
+            style={{
+              ...(isTarget && gradient ? gradientStyle : {}),
+              ...(isTarget && highlightStyle ? highlightStyle : {}),
+            }}
           >
-            {parts.map((part, index) => {
-              const isTarget =
-                (part.startsWith("{") && part.endsWith("}")) ||
-                (part.startsWith("[") && part.endsWith("]"));
-
-              const cleanText = isTarget
-                ? part.slice(1, -1)
-                : part;
-
-              return (
-                <span
-                  key={index}
-                  className="inline-block px-[0.045em]"
-                  style={isTarget && gradient ? gradientStyle : undefined}
-                >
-                  {cleanText}
-                </span>
-              );
-            })}
+            {cleanText}
           </motion.span>
         );
       })}

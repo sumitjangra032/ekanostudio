@@ -6,10 +6,10 @@ export const PROCESS_CONTENT = {
     label: "PROCESS",
   },
 
-  title: "Our [Approach]",
+  title: "[Our] [Approach]",
 
   description:
-    "A clear, streamlined workflow designed to get you started {fast} and keep your project moving smoothly — from onboarding to ongoing support.",
+    "A clear, streamlined workflow designed to get you started fast and keep your project moving smoothly from onboarding to ongoing support.",
 
   processSteps: [
     {

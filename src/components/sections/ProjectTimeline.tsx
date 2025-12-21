@@ -1,6 +1,14 @@
 "use client";
 
-import { motion, useInView, useScroll, useSpring, useMotionValue, useMotionValueEvent, MotionValue } from "framer-motion";
+import {
+  motion,
+  useInView,
+  useScroll,
+  useSpring,
+  useMotionValue,
+  useMotionValueEvent,
+  MotionValue,
+} from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import { PROJECT_TIMELINE_CONTENT } from "@/constants/projectTimeline";
 import AnimatedLine from "../animated/AnimatedLine";
@@ -12,10 +20,9 @@ import AnimateDownloadedSVG from "../animated/AnimateDownloadedSVG";
 export default function ProjectTimeline() {
   const { themeName } = useTheme();
   const theme = THEMES[themeName];
-  const GLOW_COLOR = "#FFD700"; // Glowing Gold/Yellow
+  const GLOW_COLOR = "#FFD700";
 
-  const containerRef = useRef(null);
-  const isInView = useInView(containerRef, { once: true, margin: "-10% 0px" });
+  const containerRef = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start center", "end center"],
@@ -24,11 +31,8 @@ export default function ProjectTimeline() {
   const maxProgress = useMotionValue(0);
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    if (latest <= 0.01) {
-      maxProgress.set(0);
-    } else if (latest > maxProgress.get()) {
-      maxProgress.set(latest);
-    }
+    if (latest <= 0.01) maxProgress.set(0);
+    else if (latest > maxProgress.get()) maxProgress.set(latest);
   });
 
   const scaleY = useSpring(maxProgress, {
@@ -41,71 +45,91 @@ export default function ProjectTimeline() {
     <section
       id="project-timeline"
       className="relative w-full py-28 px-6"
-      style={{
-        backgroundColor: theme.background,
-      }}
+      style={{ backgroundColor: theme.background }}
     >
       <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col items-center text-center">
 
-          {/* Top Tag */}
-          <div className="flex items-center gap-2 font-semibold text-sm">
-            <PROJECT_TIMELINE_CONTENT.tag.icon
-              className="w-4 h-4"
-              style={{ color: theme.primary }}
-            />
-            <span style={{ color: theme.text }}>
+        {/* Header */}
+        <div className="flex flex-col items-center text-center mb-20">
+          <div
+            className="
+            inline-flex items-center gap-1
+            px-4 py-2
+            rounded-full
+            border
+            text-sm font-light
+            mb-3
+            backdrop-blur-xs
+            "
+            style={{
+              borderColor: "#22c55e",
+              background: "rgba(34,197,94,0.08)",
+            }}
+          >
+            <div className="pulse green" />
+
+            <span className="text-green-500">
               {PROJECT_TIMELINE_CONTENT.tag.label}
             </span>
           </div>
 
-          {/* Title */}
+
           <h2
-            className="text-[42px] md:text-[42px] font-bold mt-3"
+            className="text-[32px] md:text-[42px] font-bold"
             style={{ color: theme.text }}
           >
-            <AnimatedLine text={PROJECT_TIMELINE_CONTENT.title} delay={0.1} isHeading={true} />
+            <AnimatedLine
+              text={PROJECT_TIMELINE_CONTENT.title}
+              delay={0.1}
+              isHeading
+              gradient={{
+                from: "#fac175",
+                via: "#ff006a",
+                to: "#8b5cf6",
+              }}
+            />
           </h2>
 
-          {/* Subtitle */}
-          <div
-            className="text-md font-medium max-w-3xl mt-4 "
-            style={{ color: theme.subtext }}
-          >
+          <div className="max-w-3xl mt-4">
             <AnimatedLine
               text={PROJECT_TIMELINE_CONTENT.description}
               delay={0.1}
+              textColor={theme.subtext}
             />
           </div>
         </div>
 
-        {/* TIMELINE CONTAINER */}
-        <div ref={containerRef} className="relative mt-20">
-          {/* Vertical Line (Base) */}
+        {/* TIMELINE */}
+        <div ref={containerRef} className="relative">
+
+          {/* Base Line */}
           <div
-            className="absolute left-4 md:left-[50%] w-[1px] -translate-x-1/2"
+            className="absolute left-4 md:left-1/2 w-[1px] -translate-x-1/2"
             style={{
-              top: "182px",  
-              bottom: "182px",
-              background: `linear-gradient(to bottom, ${theme.primary}00, ${theme.primary}40, ${theme.primary}00)`
+              top: "180px",
+              bottom: "180px",
+              background: `linear-gradient(
+                to bottom,
+                transparent,
+                ${theme.primary}40,
+                transparent
+              )`,
             }}
           />
 
-          {/* Filling Line */}
+          {/* Active Line */}
           <motion.div
-            className="absolute left-4 md:left-[50%] w-[3px] -translate-x-1/2 origin-top rounded-full"
+            className="absolute left-4 md:left-1/2 w-[3px] -translate-x-1/2 origin-top rounded-full"
             style={{
-              top: "182px", 
-              bottom: "182px",
+              top: "180px",
+              bottom: "180px",
               background: GLOW_COLOR,
               scaleY,
-              boxShadow: `0 0 15px ${GLOW_COLOR}`
+              boxShadow: `0 0 15px ${GLOW_COLOR}`,
             }}
           />
 
-
-
-          <div className="space-y-12">
+          <div className="space-y-16">
             {PROJECT_TIMELINE_CONTENT.phases.map((phase, idx) => (
               <TimelinePhase
                 key={idx}
@@ -137,122 +161,127 @@ function TimelinePhase({
   scrollYProgress: MotionValue<number>;
 }) {
   const isEven = idx % 2 === 0;
-  const dotRef = useRef(null);
-  const isInView = useInView(dotRef, { margin: "-50% 0px -50% 0px" });
+  const dotRef = useRef<HTMLDivElement | null>(null);
+  const isInView = useInView(dotRef, { margin: "-40% 0px -40% 0px" });
   const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
-    if (isInView) {
-      setIsActive(true);
-    }
+    if (isInView) setIsActive(true);
   }, [isInView]);
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    if (latest <= 0.01) {
-      setIsActive(false);
-    }
+    if (latest <= 0.01) setIsActive(false);
   });
 
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-10% 0px" }}
-      transition={{
-        duration: 0.5,
-        delay: 0.1,
-        ease: "easeOut",
-      }}
-      className={`relative flex flex-col md:flex-row gap-8 md:gap-0 ${isEven ? "md:flex-row-reverse" : ""
-        }`}
+      viewport={{ once: true, margin: "-10%" }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className={`relative flex flex-col md:flex-row ${isEven ? "md:flex-row-reverse" : ""}`}
     >
-      {/* Timeline Dot (Mobile & Desktop) */}
+      {/* Timeline Dot */}
       <motion.div
         ref={dotRef}
-        className="absolute left-4 md:left-[50%] top-1/2 w-4 h-4 rounded-full -translate-x-1/2 -translate-y-1/2 z-10"
-        initial={{
-          backgroundColor: theme.background,
-          borderColor: theme.primary,
-          scale: 1,
-          boxShadow: "none",
-        }}
+        className="absolute left-4 md:left-1/2 top-1/2 w-4 h-4 rounded-full -translate-x-1/2 -translate-y-1/2 z-10"
+        initial={{ scale: 1 }}
         animate={
           isActive
             ? {
               backgroundColor: GLOW_COLOR,
-              borderColor: GLOW_COLOR,
               scale: 1.6,
               boxShadow: `0 0 12px ${GLOW_COLOR}`,
             }
             : {
               backgroundColor: theme.background,
-              borderColor: theme.primary,
               scale: 1,
               boxShadow: "none",
             }
         }
-        transition={{ duration: 0.5, ease: "backOut" }}
+        transition={{ duration: 0.4, ease: "backOut" }}
         style={{
-          borderWidth: "2px",
-          borderStyle: "solid",
+          border: `2px solid ${isActive ? GLOW_COLOR : theme.primary}`,
         }}
       />
 
-      {/* Spacer for the other side */}
       <div className="hidden md:block md:w-1/2" />
 
-      {/* Content Card */}
+      {/* CARD */}
       <div className="flex-1 md:w-1/2 pl-12 md:pl-0">
         <div
-          className={`relative p-8 rounded-2xl border ${isEven ? "md:mr-12" : "md:ml-12"
-            }`}
-          style={{
-            background: theme.cardBg,
-            borderColor: `${theme.text}10`,
-          }}
+          className={`
+            relative p-8 rounded-3xl
+            bg-black/40
+            border border-white/10
+            backdrop-blur-xl
+            overflow-hidden
+            ${isEven ? "md:mr-12" : "md:ml-12"}
+          `}
         >
-          {/* Glow Effect */}
           <GlowBeam color={theme.accents.a} />
 
-          {/* Duration & Icon */}
-          <div className="flex items-center justify-between mb-4">
+          {/* Left Accent Line */}
+          <div
+            className="absolute left-0 top-0 h-full w-[2px]"
+            style={{
+              background: `linear-gradient(
+                to bottom,
+                transparent,
+                ${theme.accents.a},
+                transparent
+              )`,
+            }}
+          />
+
+          {/* Header */}
+          <div className="flex items-center justify-between mb-5">
             <span
-              className="inline-block px-3 py-1 rounded-full text-xs font-semibold"
+              className="px-3 py-1 rounded-full text-xs font-semibold"
               style={{
-                backgroundColor: `${theme.primary}15`,
-                color: theme.primary,
+                background: `${theme.accents.a}15`,
+                color: theme.accents.a,
               }}
             >
               {phase.duration}
             </span>
+
             <AnimateDownloadedSVG
               src={phase.icon}
-              size={35}
-              stroke={theme.primary}
+              size={32}
+              stroke={theme.accents.a}
             />
           </div>
 
-          <h3 className="text-2xl font-bold mb-3" style={{ color: theme.text }}>
+          <h3
+            className="text-2xl font-semibold mb-4"
+            style={{ color: theme.text }}
+          >
             {phase.title}
           </h3>
 
-          <p className="mb-6 leading-relaxed" style={{ color: theme.subtext }}>
+          <p
+            className="leading-relaxed mb-6 text-[15px]"
+            style={{ color: theme.subtext }}
+          >
             {phase.description}
           </p>
 
-          {/* Features List */}
-          <ul className="space-y-2">
-            {phase.features.map((feature: any, fIdx: number) => (
+          {/* Features */}
+          <ul className="space-y-3 text-left">
+            {phase.features.map((feature: string, fIdx: number) => (
               <li
                 key={fIdx}
-                className="flex items-center gap-2 text-sm font-medium"
+                className="flex items-start gap-3 text-sm"
                 style={{ color: theme.subtext }}
               >
                 <span
-                  className="w-1.5 h-1.5 rounded-full"
-                  style={{ backgroundColor: theme.primary }}
+                  className="mt-2 w-1.5 h-1.5 rounded-full flex-shrink-0"
+                  style={{ background: theme.accents.a }}
                 />
-                {feature}
+                <span className="block w-full">
+                  {feature}
+                </span>
               </li>
             ))}
           </ul>

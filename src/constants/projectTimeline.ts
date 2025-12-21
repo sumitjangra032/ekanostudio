@@ -7,7 +7,7 @@ export const PROJECT_TIMELINE_CONTENT = {
     icon: PiCalendarCheckFill,
     label: "PROJECT TIMELINE",
   },
-  title: "From Concept to [Launch]",
+  title: "[From Concept to Launch]",
   description:
     "Transparency at every stage. We keep you informed and involved as we {transform} your vision into reality, ensuring a smooth journey from start to finish.",
   phases: [

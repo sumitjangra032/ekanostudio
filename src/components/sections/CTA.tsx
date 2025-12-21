@@ -34,7 +34,11 @@ export default function CTA() {
           className="text-4xl font-light leading-tight space-y-1"
           style={{ color: theme.text }}
         >
-          <AnimatedLine text={CTA_CONTENT.title} delay={0.1} />
+          <AnimatedLine text={CTA_CONTENT.title} delay={0.1} gradient={{
+            from: "#fac175",
+            via: "#ff006a",
+            to: "#8b5cf6",
+          }} />
         </div>
 
         {/* DESCRIPTION */}
@@ -42,7 +46,7 @@ export default function CTA() {
           className="mt-6 text-lg font-medium leading-relaxed max-w-2xl mx-auto mb-6"
           style={{ color: theme.subtext }}
         >
-          <AnimatedLine text={CTA_CONTENT.description} delay={0.4} />
+          <AnimatedLine text={CTA_CONTENT.description} delay={0.4} textColor={theme.subtext} />
         </div>
 
         <AnimatedRotateButton

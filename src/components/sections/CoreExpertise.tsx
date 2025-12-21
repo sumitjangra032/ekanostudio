@@ -28,27 +28,45 @@ export default function CoreExpertise() {
         >
             <div className="max-w-6xl mx-auto">
                 {/* Header */}
+                {/* Header */}
                 <div className="text-center md:text-left mb-20 max-w-3xl">
-                    <div className="flex items-center justify-center md:justify-start gap-2 font-semibold text-sm mb-4">
-                        <CORE_EXPERTISE_CONTENT.tag.icon
-                            className="w-4 h-4"
-                            style={{ color: theme.primary }}
-                        />
-                        <span style={{ color: theme.text }}>
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6"
+                        style={{
+                            background: `${theme.accents.a}08`,
+                            border: `1px solid ${theme.accents.a}20`,
+                            backdropFilter: "blur(4px)",
+                        }}
+                    >
+                        {/* CSS Pulse Dot */}
+                        <div className="pulse red"></div>
+
+                        <span
+                            className="text-xs font-medium tracking-wide "
+                            style={{ color: theme.accents.a }}
+                        >
                             {CORE_EXPERTISE_CONTENT.tag.label}
                         </span>
                     </div>
+
                     <h2
-                        className="text-3xl md:text-5xl font-bold mb-6"
-                        style={{ color: theme.text }}
+                        className="text-[32px] md:text-[42px] font-semibold mb-2"
+                        style={{ color: theme.text, fontFamily: "var(--font-general-sans)" }}
                     >
-                        <AnimatedLine text={CORE_EXPERTISE_CONTENT.title} isHeading={true} />
+                        <AnimatedLine text={CORE_EXPERTISE_CONTENT.title} isHeading={true} gradient={{
+                            from: "#fac175",
+                            via: "#ff006a",
+                            to: "#8b5cf6",
+                        }} />
                     </h2>
-                    <div
-                        className="text-lg leading-relaxed"
-                        style={{ color: theme.subtext }}
-                    >
-                        <AnimatedLine text={CORE_EXPERTISE_CONTENT.description} />
+                    <div className="mr-8 mt-4 mb-2">
+                        <AnimatedLine
+                            text={CORE_EXPERTISE_CONTENT.description}
+                            delay={0.1}
+                            isHeading={false}
+                            className="text-left"
+                            textColor={theme.subtext}
+                        />
                     </div>
                 </div>
 
@@ -92,10 +110,7 @@ function CoreExpertiseCard({
     range: number[];
     targetScale: number;
 }) {
-    const topOffset = 120;
-
     const isEven = index % 2 === 0;
-
     const scale = useTransform(progress, range, [1, targetScale]);
 
     return (
@@ -107,44 +122,69 @@ function CoreExpertiseCard({
             className="sticky w-full origin-top top-24 md:top-[120px]"
             style={{
                 zIndex: index + 1,
-                backgroundColor: theme.background,
-                scale
+                scale,
             }}
         >
             <div
-                className={`relative overflow-hidden rounded-3xl border shadow-2xl flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} h-auto md:h-[500px]`}
-                style={{
-                    backgroundColor: theme.cardBg,
-                    borderColor: `${theme.text}10`,
-                }}
+                className={`
+          relative overflow-hidden rounded-3xl
+          flex flex-col ${isEven ? "md:flex-row" : "md:flex-row-reverse"}
+          h-auto md:h-[520px]
+          border border-white/10
+          bg-black/40
+          backdrop-blur-xl
+          transition-all duration-500
+          hover:-translate-y-1
+        `}
             >
+                {/* Ambient Glow */}
                 <GlowBeam color={theme.accents.a} />
 
-                {/* Content Side */}
-                <div className="flex-1 md:flex-1 p-6 md:p-12 flex flex-col justify-center relative z-10 order-2 md:order-none">
+                {/* Left Accent Line */}
+                <div
+                    className="absolute left-0 top-0 h-full w-[2px]"
+                    style={{
+                        background: `linear-gradient(
+              to bottom,
+              transparent,
+              ${theme.accents.a},
+              transparent
+            )`,
+                    }}
+                />
 
+                {/* CONTENT */}
+                <div className="flex-1 p-6 md:p-12 flex flex-col justify-center relative z-10">
                     <h3
-                        className="text-3xl md:text-4xl font-bold mb-8"
-                        style={{ color: theme.text }}
+                        className="text-2xl md:text-3xl font-semibold mb-6 tracking-tight"
+                        style={{
+                            color: theme.text,
+                            fontFamily: "var(--font-general-sans)",
+                        }}
                     >
                         {card.title}
                     </h3>
+
                     <p
-                        className="text-xl leading-relaxed mb-8"
-                        style={{ color: theme.subtext }}
+                        className="text-[16px] leading-relaxed mb-8 max-w-xl"
+                        style={{
+                            color: theme.subtext,
+                            fontFamily: "var(--font-inter)",
+                        }}
                     >
                         {card.description}
                     </p>
 
+                    {/* Tags */}
                     <div className="flex flex-wrap gap-3 mt-auto">
                         {card.tags.map((tag, tIdx) => (
                             <span
                                 key={tIdx}
-                                className="px-4 py-2 rounded-full text-sm font-medium border"
+                                className="px-4 py-2 rounded-full text-sm font-medium border backdrop-blur-md"
                                 style={{
-                                    borderColor: `${theme.text}15`,
+                                    borderColor: `${theme.accents.a}30`,
                                     color: theme.subtext,
-                                    backgroundColor: `${theme.background}80`,
+                                    background: `${theme.accents.a}10`,
                                 }}
                             >
                                 {tag}
@@ -153,22 +193,27 @@ function CoreExpertiseCard({
                     </div>
                 </div>
 
-                {/* Image/Visual Side */}
-                <div className="w-full h-64 md:h-auto md:flex-1 relative overflow-hidden bg-gradient-to-br from-gray-900 to-black order-1 md:order-none">
+                {/* IMAGE SIDE */}
+                <div className="relative w-full md:flex-1 h-64 md:h-auto overflow-hidden">
+                    {/* Gradient Overlay */}
                     <div
-                        className="absolute inset-0 opacity-100"
+                        className="absolute inset-0 z-10"
                         style={{
-                            background: `linear-gradient(135deg, ${theme.primary}40 0%, ${theme.accents.b}80 100%)`
+                            background: `radial-gradient(
+                600px circle at top right,
+                ${theme.accents.a}25,
+                transparent 45%
+              )`,
                         }}
                     />
 
+                    {/* Image */}
                     <Image
                         src={card.image}
                         alt={card.title}
                         fill
-                        className="object-cover opacity-100 mix-blend-overlay"
+                        className="object-cover opacity-80"
                     />
-
                 </div>
             </div>
         </motion.div>

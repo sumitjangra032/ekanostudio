@@ -25,7 +25,7 @@ export default function Navbar() {
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  
+
 
   useEffect(() => setMounted(true), []);
   if (!mounted) return null;
@@ -33,20 +33,19 @@ export default function Navbar() {
   return (
     <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-7xl ">
       <nav
-        className="mx-auto w-full rounded-[40px] backdrop-blur-md flex items-center justify-between px-4 py-2 relative bg-[#111111]
-          backdrop-blur-xl
-          border border-white/15
-          shadow-[inset_0px_1px_20px_rgba(255,255,255,0.25)]"
+        className="mx-auto w-full rounded-[40px] flex items-center justify-between px-4 py-2 relative transition-all duration-300"
         style={
           {
             "--text": theme.text,
             "--subtext": theme.subtext,
-            "--card": theme.cardBg,
-            background: theme.cardBg,
+            background: "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%)",
+            border: "1px solid rgba(255,255,255,0.05)",
+            backdropFilter: "blur(12px)",
+            boxShadow: "0 4px 20px -2px rgba(0,0,0,0.1)",
           } as React.CSSProperties
         }
       >
-        
+
         <Link
           href="/"
           className="flex items-center font-medium text-lg md:text-xl"
@@ -59,7 +58,7 @@ export default function Navbar() {
           {NAV_LINKS.map((link) => {
             const isOpen = openMenu === link.label;
             const isHighlighted =
-                  link.label === "Home" || link.label === "Portfolio";
+              link.label === "Home" || link.label === "Portfolio";
 
             return (
               <div
@@ -68,7 +67,7 @@ export default function Navbar() {
                 onMouseEnter={() => link.megaMenu && setOpenMenu(link.label)}
                 onMouseLeave={() => link.megaMenu && setOpenMenu(null)}
               >
-                
+
 
                 <Link
                   href={link.href}
@@ -107,12 +106,12 @@ export default function Navbar() {
 
         <div className="hidden md:block ">
           <ButtonVibrator>
-          <AnimatedRotateButton
-            text="Book a Call"
-            href={GLOBAL_CTA_CONTENT.getStarted.href}
-            color= {theme.buttonBg}
-            accent={theme.accents}
-          />
+            <AnimatedRotateButton
+              text="Book a Call"
+              href={GLOBAL_CTA_CONTENT.getStarted.href}
+              color={theme.buttonBg}
+              accent={theme.accents}
+            />
           </ ButtonVibrator>
         </div>
 
@@ -144,7 +143,7 @@ export default function Navbar() {
             >
 
               <div className="flex flex-col gap-4  ">
-              
+
                 {NAV_LINKS.map((link) => (
                   <Link
                     key={link.label}

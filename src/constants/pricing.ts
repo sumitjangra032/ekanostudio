@@ -6,7 +6,7 @@ export const PRICING_CONTENT = {
     label: "PRICING",
   },
 
-  title: "Choose the Perfect [Plan]",
+  title: "[Choose the Perfect Plan]",
 
   description:
     "Flexible, {transparent} pricing designed for every stage of your business growth — from startup to enterprise.",
@@ -66,10 +66,10 @@ export const PRICING_CONTENT = {
     },
   ],
 
-  call:{
-    headline:"Not sure if we're a fit?",
-    description:"Let’s setup a 15-minute call to figure out if we can help you.",
+  call: {
+    headline: "Not sure if we're a fit?",
+    description: "Let’s setup a 15-minute call to figure out if we can help you.",
     icon: "/icons/phone.svg",
-    buttonText:"Schedule A Call"
+    buttonText: "Schedule A Call"
   }
 };

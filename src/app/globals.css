@@ -53,11 +53,16 @@ html {
 }
 
 body {
-  font-family:  var(--font-inter), sans-serif;
+  font-family: var(--font-inter), sans-serif;
 }
 
 /* Headings use General Sans by default */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-satoshi), sans-serif;
 }
 
@@ -143,6 +148,7 @@ h1, h2, h3, h4, h5, h6 {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -155,15 +161,14 @@ h1, h2, h3, h4, h5, h6 {
   pointer-events: none;
 
   --border-angle: 0turn;
-  --beam-color: red; /* default, overwritten by props */
+  --beam-color: red;
+  /* default, overwritten by props */
 
   /* the beam only along border */
-  --beam: conic-gradient(
-    from var(--border-angle),
-    transparent 0deg,
-    var(--beam-color) 20deg,
-    transparent 40deg
-  );
+  --beam: conic-gradient(from var(--border-angle),
+      transparent 0deg,
+      var(--beam-color) 20deg,
+      transparent 40deg);
 
   /* Paint beam ONLY in border area */
   background: var(--beam) border-box;
@@ -173,9 +178,10 @@ h1, h2, h3, h4, h5, h6 {
     linear-gradient(#000 0 0) content-box,
     linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
-          mask-composite: exclude;
+  mask-composite: exclude;
 
-  padding: 1px; /* thickness of border */
+  padding: 1px;
+  /* thickness of border */
 
   animation: rotateBeam 6s linear infinite;
 }
@@ -196,6 +202,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-telma);
   font-style: italic;
 }
+
 .font-cabinet {
   font-family: var(--font-cabinet);
 }
@@ -205,6 +212,7 @@ h1, h2, h3, h4, h5, h6 {
     0% {
       transform: translateX(-100%);
     }
+
     100% {
       transform: translateX(300%);
     }
@@ -216,10 +224,113 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes gradientSlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
+
 .animate-gradient-slow {
   animation: gradientSlow 20s ease infinite;
+}
+
+
+
+.wrap {
+  background: #000d1a;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 200px;
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+@keyframes opacity-animation {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-animation {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.8;
+  }
+
+  70% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(3);
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+}
+
+.pulse:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: #f9e9a2;
+  border-radius: 100%;
+  opacity: 0.5;
+  transform: translate(-50%, -50%) scale(3);
+  animation: pulse-animation 3s infinite;
+}
+
+.pulse {
+  position: relative;
+  display: inline-block;
+  vertical-align: 1px;
+  width: 8px;
+  height: 8px;
+  margin: 0 6px;
+  background: #ffdd40;
+  color: transparent;
+  border-radius: 100%;
+  flex: 0 0 auto;
+  animation: opacity-animation 1s linear;
+}
+
+.pulse.red {
+  background: #e60000;
+}
+
+.pulse.orange {
+  background: #ff9900;
+}
+
+.pulse.green {
+  background: #00e600;
 }

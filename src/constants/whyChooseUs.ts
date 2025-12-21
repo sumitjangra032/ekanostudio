@@ -7,14 +7,15 @@ export const WHY_US_CONTENT = {
     label: "WHY CHOOSE US?",
   },
 
-  title: "Why [Choose] Us?",
+  title: "[Why Choose Us ?]",
+
 
   description:
-    "We make technology {simple}. By blending smart tools with real human expertise, we help your business work better, move faster, and achieve meaningful results without the stress.",
+    "We make technology simple. By blending smart tools with real human expertise, we help your business work better, move faster, and achieve meaningful results without the stress.",
 
   cards: [
     {
-      icon:  "/icons/trending-up.svg",
+      icon: "/icons/trending-up.svg",
       title: "Smart Solutions – Zero Hassle",
       description:
         "Easy processes, clear communication, and no complications. Our smart systems and responsive support keep your projects organized and effortless.",

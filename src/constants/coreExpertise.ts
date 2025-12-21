@@ -6,7 +6,7 @@ export const CORE_EXPERTISE_CONTENT = {
     icon: FaLayerGroup,
     label: "CORE EXPERTISE",
   },
-  title: "Mastering the Digital [Landscape]",
+  title: "[Mastering] [the] [Digital] [Landscape]",
   description:
     "We blend creativity with data-driven strategies to deliver {comprehensive} digital solutions that drive real growth for your business.",
   cards: [
@@ -35,7 +35,7 @@ export const CORE_EXPERTISE_CONTENT = {
       title: "Performance Marketing",
       description:
         "Data-backed advertising campaigns designed to maximize ROI, targeting the right audience with the right message at the right time.",
-      image: "/images/coreExpertise/performance-marketing.jpg", 
+      image: "/images/coreExpertise/performance-marketing.jpg",
       tags: ["PPC", "Conversion", "A/B Testing"],
     },
   ],

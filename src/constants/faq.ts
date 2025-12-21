@@ -7,7 +7,7 @@ export const FAQ_CONTENT = {
     label: "FAQ’S",
   },
 
-  title: "Got a Quick [Question?]",
+  title: "[Got a Quick Question?]",
 
   description:
     "We’re here to help you make {confident} decisions. Explore some commonly asked questions below.",

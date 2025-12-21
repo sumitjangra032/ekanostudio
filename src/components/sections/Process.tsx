@@ -4,100 +4,174 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { PROCESS_CONTENT } from "@/constants/process";
 import AnimatedLine from "../animated/AnimatedLine";
-
 import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "../../constants/theme";
 import GlowBeam from "../effects/GlowBeam";
-import RandomGradientGlow from "../effects/RandomGradientGlow";
 
 export default function ProcessSection() {
   const { themeName } = useTheme();
   const theme = THEMES[themeName];
 
-  const cardsRef = useRef(null);
+  const cardsRef = useRef<HTMLDivElement | null>(null);
   const cardsInView = useInView(cardsRef, { once: true, margin: "-10% 0px" });
 
   return (
     <section
       id="process"
       className="relative w-full py-28 px-6"
-      style={{
-        backgroundColor: theme.background,
-      }}
+      style={{ backgroundColor: theme.background }}
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto w-full">
+
         {/* Top Tag */}
-        <div className="flex items-center gap-2 font-semibold text-sm">
-          <PROCESS_CONTENT.tag.icon
-            className="w-4 h-4"
-            style={{ color: theme.primary }}
-          />
-          <span style={{ color: theme.text }}>{PROCESS_CONTENT.tag.label}</span>
+        <div
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6"
+          style={{
+            background: `${theme.accents.a}08`,
+            border: `1px solid ${theme.accents.a}20`,
+            backdropFilter: "blur(4px)",
+          }}
+        >
+          <div className="pulse red" />
+          <span
+            className="text-xs font-medium tracking-wide"
+            style={{ color: theme.accents.a }}
+          >
+            {PROCESS_CONTENT.tag.label}
+          </span>
         </div>
 
         {/* Title */}
         <h2
-          className="text-[42px] md:text-[42px] font-bold mt-3"
+          className="text-[32px] md:text-[42px] font-bold"
           style={{ color: theme.text }}
         >
-          <AnimatedLine text={PROCESS_CONTENT.title} delay={0.1} isHeading={true}/>
+          <AnimatedLine
+            text={PROCESS_CONTENT.title}
+            delay={0.1}
+            isHeading
+            gradient={{
+              from: "#fac175",
+              via: "#ff006a",
+              to: "#8b5cf6",
+            }}
+          />
         </h2>
 
         {/* Subtitle */}
-        <div
-          className="text-md font-medium max-w-3xl mt-4 leading-relaxed"
-          style={{ color: theme.subtext }}
-        >
-          <AnimatedLine text={PROCESS_CONTENT.description} delay={0.1} />
+        <div className="mt-4 mb-12 max-w-3xl">
+          <AnimatedLine
+            text={PROCESS_CONTENT.description}
+            delay={0.1}
+            isHeading={false}
+            textColor={theme.subtext}
+          />
         </div>
 
-        {/* ANIMATED GRID */}
+        {/* PROCESS CARDS */}
         <motion.div
           ref={cardsRef}
           initial={{ opacity: 0, y: 60 }}
           animate={cardsInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-14"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8"
         >
           {PROCESS_CONTENT.processSteps.map((item, idx) => (
             <div
               key={idx}
-              className="relative rounded-2xl shadow-sm p-10"
-              style={{
-                background: theme.cardBg,
-                border: `1px solid ${theme.text}15`,
-              }}
+              className="
+                relative rounded-3xl p-8
+                bg-black/40
+                border border-white/10
+                backdrop-blur-xl
+                overflow-hidden
+                transition-all duration-500
+                hover:-translate-y-1
+              "
             >
+              {/* Accent Glow */}
               <GlowBeam color={theme.accents.a} />
+
+              {/* Left Accent Line */}
+              <div
+                className="absolute left-0 top-0 h-full w-[2px]"
+                style={{
+                  background: `linear-gradient(
+                    to bottom,
+                    transparent,
+                    ${theme.accents.a},
+                    transparent
+                  )`,
+                }}
+              />
+
               {/* Step Badge */}
               <div
-                className="inline-flex items-center justify-center w-8 h-8 rounded-full font-semibold"
+                className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold mb-6"
                 style={{
-                  background: theme.background,
-                  border: `1px solid ${theme.text}20`,
-                  color: theme.primary, 
+                  background: `${theme.accents.a}14`,
+                  color: theme.accents.a,
+                  border: `1px solid ${theme.accents.a}30`,
                 }}
               >
-                {item.step}
+                <span className="opacity-70">Step</span>
+                <span>{item.step}</span>
               </div>
 
-              {/* Title */}
+              {/* Card Title */}
               <h3
-                className="text-[24px] font-medium mb-4 mt-4"
-                style={{ color: theme.text }}
+                className="text-2xl font-semibold mb-5 tracking-tight"
+                style={{
+                  color: theme.text,
+                  fontFamily: "var(--font-general-sans)",
+                }}
               >
                 {item.title}
               </h3>
 
-              {/* Bullets */}
-              <ul className="space-y-3 leading-relaxed">
+              {/* Bullet Content (Paragraph Style) */}
+              <div className="space-y-4">
                 {item.bullets.map((bullet, bIdx) => (
-                  <li key={bIdx} className="flex gap-2">
-                    <span style={{ color: theme.primary }}>•</span>
-                    <span style={{ color: theme.subtext }}>{bullet}</span>
-                  </li>
+                  <div
+                    key={bIdx}
+                    className="flex gap-4 items-start"
+                  >
+                    {/* Dot */}
+                    <span
+                      className="mt-2 w-2 h-2 rounded-full flex-shrink-0"
+                      style={{ background: theme.accents.a }}
+                    />
+
+                    {/* Text */}
+                    <p
+                      className="text-[15px] leading-relaxed font-light w-full max-w-none"
+                      style={{
+                        color: theme.subtext,
+                        fontFamily: "var(--font-inter)",
+                      }}
+                    >
+                      {String(bullet).replace(/\n+/g, " ")}
+                    </p>
+                  </div>
                 ))}
-              </ul>
+              </div>
+
+              {/* Hover Ambient */}
+              <div
+                className="
+                  absolute inset-0 opacity-0
+                  hover:opacity-100
+                  transition-opacity duration-500
+                  pointer-events-none
+                "
+                style={{
+                  background: `radial-gradient(
+                    600px circle at top right,
+                    ${theme.accents.a}10,
+                    transparent 45%
+                  )`,
+                }}
+              />
             </div>
           ))}
         </motion.div>

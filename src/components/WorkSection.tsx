@@ -1,5 +1,9 @@
 "use client";
 
+import { useTheme } from "./providers/ThemeProvider";
+import { THEMES } from "@/constants/theme";
+import AnimatedLine from "./animated/AnimatedLine";
+import { WORK_CONTENT } from "@/constants/work";
 import WorkMarquee from "./WorkMarquee";
 
 const ROW_1 = [
@@ -24,11 +28,60 @@ const ROW_3 = [
 ];
 
 export default function WorkSection() {
+  const { themeName } = useTheme();
+  const theme = THEMES[themeName];
+
   return (
     <section
       id="work"
-      className="relative w-full space-y-12 py-24 bg-black"
+      className="relative w-full space-y-12 py-24"
+      style={{ backgroundColor: theme.background }}
     >
+      <div className="max-w-full mx-auto px-6 mb-12">
+        {/* Tag */}
+        <div
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6"
+          style={{
+            background: `${theme.accents.a}08`,
+            border: `1px solid ${theme.accents.a}20`,
+            backdropFilter: "blur(4px)",
+          }}
+        >
+          <div className="pulse red" />
+          <span
+            className="text-xs font-medium tracking-wide"
+            style={{ color: theme.accents.a }}
+          >
+            {WORK_CONTENT.tag.label}
+          </span>
+        </div>
+
+        {/* Title */}
+        <h2
+          className="text-[32px] md:text-[42px] font-bold mb-4"
+          style={{ color: theme.text, fontFamily: "var(--font-general-sans)" }}
+        >
+          <AnimatedLine
+            text={WORK_CONTENT.title}
+            isHeading
+            gradient={{
+              from: "#fac175",
+              via: "#ff006a",
+              to: "#8b5cf6",
+            }}
+          />
+        </h2>
+
+        {/* Description */}
+        <div className="max-w-2xl">
+          <AnimatedLine
+            text={WORK_CONTENT.description}
+            delay={0.1}
+            isHeading={false}
+            textColor={theme.subtext}
+          />
+        </div>
+      </div>
       <div
         className="space-y-8"
         style={{

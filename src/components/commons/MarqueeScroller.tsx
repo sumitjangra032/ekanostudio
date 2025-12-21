@@ -10,7 +10,6 @@ interface MarqueeProps {
   duration?: number;
   className?: string;
   textColor?: string;
-  iconColor?: string;
 }
 
 export default function MarqueeScroller({
@@ -19,19 +18,12 @@ export default function MarqueeScroller({
   duration = 15,
   className = "",
   textColor,
-  iconColor,
 }: MarqueeProps) {
   const { themeName } = useTheme();
   const theme = THEMES[themeName];
 
   // Repeat items for seamless loop
   const list = [...items, ...items, ...items];
-
-  const chip = {
-    background: theme.cardBg,
-    color: textColor || theme.subtext,
-    border: `1px solid ${theme.text}15`,
-  };
 
   const animate =
     direction === "left"
@@ -40,16 +32,16 @@ export default function MarqueeScroller({
 
   return (
     <div
-      className="relative w-full overflow-hidden py-3"
-      style={{
-        WebkitMaskImage:
-          "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
-        maskImage:
-          "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
-      }}
+      className="relative w-full overflow-hidden py-2 bg-black"
+    // style={{
+    //   WebkitMaskImage:
+    //     "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
+    //   maskImage:
+    //     "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
+    // }}
     >
       <motion.div
-        className={`flex gap-8 w-max ${className}`}
+        className={`flex gap-10 w-max ${className}`}
         animate={animate}
         transition={{
           duration,
@@ -60,10 +52,27 @@ export default function MarqueeScroller({
         {list.map((item, idx) => (
           <div
             key={idx}
-            className="px-10 py-4 rounded-full font-semibold whitespace-nowrap"
-            style={chip}
+            className="
+              group
+              flex items-center gap-3
+              px-10 py-4
+              rounded-full
+              font-medium
+              whitespace-nowrap
+              backdrop-blur-xl
+              transition-all duration-300
+              border border-white/10
+            "
+            style={{
+              background: "#000000/20",
+              color: textColor || theme.subtext,
+            }}
           >
-            {item}
+
+            {/* Text */}
+            <span>{item}</span>
+
+
           </div>
         ))}
       </motion.div>

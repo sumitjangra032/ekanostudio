@@ -6,7 +6,7 @@ export const COMPARISON_CONTENT = {
     label: "COMPARISON",
   },
 
-  title: "[Compare] Our Digital Ecosystem With Traditional Agencies",
+  title: "[Compare Our Digital Ecosystem With Traditional Agencies]",
 
   description:
     "See how we deliver more transparency, more performance, and greater long-term {value} compared to the rest of the industry.",

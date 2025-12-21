@@ -2,8 +2,6 @@
 
 import AnimatedLine from "../animated/AnimatedLine";
 import { REVIEW_CONTENT } from "@/constants/reviews";
-import MarqueeScroller from "../commons/MarqueeScroller";
-
 import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "../../constants/theme";
 
@@ -21,40 +19,64 @@ export default function Reviews() {
         backgroundColor: theme.background,
       }}
     >
+      {/* Background Image – clarity fixed */}
       <div
-    className="absolute inset-0"
-    style={{
-      backgroundImage: `url(${REVIEW_CONTENT.background})`,
-      backgroundRepeat: "no-repeat",
-      backgroundSize: "1200px auto",    
-      backgroundPosition: "center 350px", 
-      filter: " brightness(0.7)", 
-      transform: "scale(1.1)",           
-    }}
-  />
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `url(${REVIEW_CONTENT.background})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "1200px auto",
+          backgroundPosition: "center 350px",
+          filter: "brightness(0.9)",   // ❌ removed blur, improved clarity
+          transform: "scale(1.05)",    // subtle depth without blur
+        }}
+      />
+
       <div className="relative max-w-7xl mx-auto">
         {/* HEADER */}
         <div className="max-w-5xl mx-auto text-center mb-24">
+
+          {/* Tag with pulse green */}
           <div
-            className="flex items-center justify-center gap-2 font-semibold"
-            style={{ color: theme.primary }}
+            className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full mb-6"
+            style={{
+              background: `${theme.accents.a}08`,
+              border: `1px solid ${theme.accents.a}20`,
+              backdropFilter: "blur(4px)",
+            }}
           >
-            <REVIEW_CONTENT.tag.icon size={16} />
-            <span>{REVIEW_CONTENT.tag.label}</span>
+            <div className="pulse red" />
+            <span
+              className="text-xs font-medium tracking-wide"
+              style={{ color: theme.accents.a }}
+            >
+              {REVIEW_CONTENT.tag.label}
+            </span>
           </div>
 
+          {/* Title with gradient */}
           <h2
-            className="text-[42px] font-bold mt-3"
+            className="text-[32px] md:text-[42px] font-bold mt-3"
             style={{ color: theme.text }}
           >
-            <AnimatedLine text={REVIEW_CONTENT.title} delay={0.1} isHeading={true} />
+            <AnimatedLine
+              text={REVIEW_CONTENT.title}
+              delay={0.1}
+              isHeading
+              gradient={{
+                from: "#fac175",
+                via: "#ff006a",
+                to: "#8b5cf6",
+              }}
+            />
           </h2>
 
+          {/* Description */}
           <div
             className="text-lg max-w-3xl mx-auto mt-4 leading-relaxed"
             style={{ color: theme.subtext }}
           >
-            <AnimatedLine text={REVIEW_CONTENT.description} delay={0.1} />
+            <AnimatedLine text={REVIEW_CONTENT.description} delay={0.1} textColor={theme.subtext} />
           </div>
         </div>
 
@@ -65,27 +87,7 @@ export default function Reviews() {
           duration={60}
         />
 
-        {/* BRAND SCROLLER */}
-        <div className="max-w-5xl mx-auto text-center mt-16">
-          <p
-            className="text-sm font-medium"
-            style={{ color: theme.subtext }}
-          >
-            CLIENTS USING GREENCLOVER
-          </p>
-        </div>
-
-        
-        <div className="mt-6">
-          <MarqueeScroller
-            items={REVIEW_CONTENT.brands}
-            direction="right"
-            textColor={theme.subtext}
-            iconColor={theme.primary}
-          />
-        </div>
       </div>
     </section>
   );
 }
-

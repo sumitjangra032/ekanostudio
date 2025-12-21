@@ -6,7 +6,7 @@ export const REVIEW_CONTENT = {
     label: "CLIENT REVIEWS",
   },
 
-  title: "What Our Clients [Say]",
+  title: "[What Our Clients Say]",
 
   description:
     "Real feedback from businesses that trusted us. Here's what they {experienced} working with our team.",
@@ -70,7 +70,7 @@ export const REVIEW_CONTENT = {
     },
   ],
 
-  background:"/reviews/reviews_background.avif",
+  background: "/reviews/reviews_background.avif",
 
   brands: [
     "Nectar",

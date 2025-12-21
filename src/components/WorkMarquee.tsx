@@ -43,11 +43,11 @@ export default function WorkMarquee({
       >
         {[...items, ...items].map((item, index) => (
           <li key={index} className="flex-shrink-0">
-            <div className="relative rounded-xl overflow-hidden border border-white/10">
+            <div className="relative rounded-xl overflow-hidden border border-white/10 w-[300px] md:w-[600px]">
               <img
                 src={item.src}
                 alt={item.alt || ""}
-                className="h-[400px] md:h-[400px] w-full object-cover"
+                className="h-[250px] md:h-[400px] w-full object-cover"
                 draggable={false}
               />
             </div>
