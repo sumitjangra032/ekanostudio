@@ -1,9 +1,7 @@
 "use client";
 
-import { motion, useAnimation } from "framer-motion";
-import Link from "next/link";
+import { motion } from "framer-motion";
 import AnimatedLine from "@/components/animated/AnimatedLine";
-import { FaChevronDown } from "react-icons/fa";
 import { HERO_CONTENT } from "@/constants/hero";
 import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "../../constants/theme";
@@ -12,60 +10,118 @@ import { GLOBAL_CTA_CONTENT } from "@/constants/global";
 import FloatingParticles from "../animated/FloatingParticles";
 
 export default function Hero() {
-
   const { themeName } = useTheme();
   const theme = THEMES[themeName];
 
   return (
     <section
       id="hero"
-      className=" relative overflow-hidden  min-h-screen pt-32 pb-16 md:py-0 flex flex-col items-center justify-center text-center "
+      className="
+        relative overflow-hidden
+        min-h-[100svh]
+        flex items-center justify-center
+        px-4 sm:px-6
+      "
       style={{
         backgroundColor: theme.background,
         color: theme.text,
       }}
     >
+      {/* Centered dotted + glow background with soft edge fades */}
+      <div className="absolute inset-0 flex justify-center pointer-events-none">
+        <div
+          className="h-full w-full max-w-[1400px]"
+          style={{
+            backgroundImage: `
+              radial-gradient(circle, rgba(255,165,0,0.45) 1px, transparent 1px),
+              radial-gradient(circle, rgba(255,255,255,0.10) 1px, transparent 1px),
+              radial-gradient(circle at 50% 40%, rgba(255,140,0,0.20), transparent 60%),
+              radial-gradient(circle at 50% 50%, rgba(0,0,0,0.85), rgba(0,0,0,1))
+            `,
+            backgroundSize: `
+              9px 9px,
+              20px 20px,
+              100% 100%,
+              100% 100%
+            `,
+            backgroundPosition: `
+              0 0,
+              7px 7px,
+              center,
+              center
+            `,
+            /* 🔥 2D MASK — soft sides, subtle top, stronger bottom */
+            maskImage: `
+              linear-gradient(
+                to right,
+                transparent 0%,
+                black 18%,
+                black 82%,
+                transparent 100%
+              ),
+              linear-gradient(
+                to bottom,
+                transparent 0%,
+                black 12%,
+                black 78%,
+                transparent 100%
+              )
+            `,
+            WebkitMaskImage: `
+              linear-gradient(
+                to right,
+                transparent 0%,
+                black 18%,
+                black 82%,
+                transparent 100%
+              ),
+              linear-gradient(
+                to bottom,
+                transparent 0%,
+                black 12%,
+                black 78%,
+                transparent 100%
+              )
+            `,
+            maskComposite: "intersect",
+            WebkitMaskComposite: "source-in",
+          }}
+        />
+      </div>
 
-      {/* Dotted Background */}
-      <div
-        className="absolute inset-0 z-0 pointer-events-none"
-        style={{
-          backgroundImage: `radial-gradient(#f97316 1px, transparent 1px)`,
-          backgroundSize: "24px 24px",
-          maskImage: "radial-gradient(circle at center, black 0%, transparent 80%)",
-          WebkitMaskImage:
-            "radial-gradient(circle at center, black 0%, transparent 80%)",
-          opacity: 0.3,
-        }}
-      />
-
+      {/* Floating Particles */}
       <FloatingParticles count={30} />
 
-      <div className="relative max-w-6xl mx-auto w-full">
-
-        {/* Main Content */}
+      <div className="relative max-w-7xl mx-auto w-full text-center">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="relative max-w-5xl mx-auto px-4"
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="max-w-5xl mx-auto"
         >
-
-          <div className="w-full py-2 flex justify-center">
-            <h1 className="text-sm md:text-sm  tracking-wide">
-              <span className="bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
-                #1 Digital Service Providers
-              </span>
-            </h1>
+          {/* Top Badge */}
+          <div className="mb-4 flex justify-center">
+            <span className="text-xs sm:text-sm tracking-wide bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
+              #1 Digital Service Providers
+            </span>
           </div>
 
           {/* Headline */}
-          <div className="text-3xl md:text-5xl lg:text-7xl font-medium italic leading-tight mb-2">
+          <div
+            className="
+              font-medium italic leading-tight
+              text-[32px]
+              sm:text-[40px]
+              md:text-[52px]
+              lg:text-[64px]
+              xl:text-[72px]
+            "
+          >
             {HERO_CONTENT.headline.map((line, index) => (
               <AnimatedLine
                 key={index}
                 text={line}
-                delay={index * 0.4}
+                delay={index * 0.25}
                 isHeading
                 gradient={{
                   from: "#fac175",
@@ -76,35 +132,21 @@ export default function Hero() {
             ))}
           </div>
 
-
-          {/* Description */}
-          {/* <div
-            className="text-sm md:text-lg font-medium max-w-4xl mx-auto mb-2 "
-            style={{ color: theme.subtext }}
-          >
-            {HERO_CONTENT.description.map((line, index) => (
-              <AnimatedLine
-                key={index}
-                text={line}
-                delay={0.7 + index * 0.2}
-                isHeading={false}
-              />
+          {/* Sub Notes */}
+          <div className="mt-4 space-y-1">
+            {HERO_CONTENT.subNotes.map((note, i) => (
+              <p
+                key={i}
+                className="text-xs sm:text-sm italic"
+                style={{ color: theme.subtext }}
+              >
+                {note}
+              </p>
             ))}
-          </div> */}
+          </div>
 
-          {/* Notes */}
-          {HERO_CONTENT.subNotes.map((note, i) => (
-            <p
-              key={i}
-              className="italic text-xs md:text-sm "
-              style={{ color: theme.subtext }}
-            >
-              {note}
-            </p>
-          ))}
-
-          {/* Buttons */}
-          <div className="flex flex-wrap justify-center items-center gap-4 mb-8 mt-6">
+          {/* CTA */}
+          <div className="mt-8 flex justify-center">
             <AnimatedRotateButton
               text={GLOBAL_CTA_CONTENT.getStarted.title}
               href={GLOBAL_CTA_CONTENT.getStarted.href}
@@ -112,23 +154,6 @@ export default function Hero() {
               accent={theme.accents}
             />
           </div>
-
-
-
-          {/* Down Arrow */}
-          {/* <div className="mt-8 flex justify-center">
-            <a
-              href="#why-us"
-              className="p-3 rounded-full border border-black/10 transition flex items-center justify-center"
-              style={{
-                background: theme.cardBg,
-                color: theme.subtext,
-              }}
-            >
-              <FaChevronDown size={20} />
-            </a>
-          </div> */}
-
         </motion.div>
       </div>
     </section>
