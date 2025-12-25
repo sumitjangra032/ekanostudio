@@ -8,7 +8,7 @@ import {
   useMotionValueEvent,
 } from "framer-motion";
 
-const NAKULA_EASE = [0.22, 1, 0.36, 1];
+export const NAKULA_EASE = [0.6, 0.01, -0.05, 0.95] as const;
 
 export default function ServiceRow({
   item,
