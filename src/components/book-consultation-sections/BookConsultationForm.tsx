@@ -1,11 +1,11 @@
 "use client"
 
-import {useEffect,useState,useMemo} from "react"
+import { useEffect, useState, useMemo } from "react"
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { format } from "date-fns";
-import { Calendar as CalendarIcon, User, Briefcase, Phone, Star, FolderGit2, Check, Mail } from "lucide-react";
+import { format, isBefore, startOfDay, addDays } from "date-fns";
+import { Calendar as CalendarIcon, User, Briefcase, Phone, Star, FolderGit2, Check, Mail, Loader2 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
@@ -14,6 +14,8 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from "@/components/ui/popover";
+import { motion } from "framer-motion";
+
 import {
     Card,
     CardContent,
@@ -44,13 +46,11 @@ import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
 import { BOOK_CONSULTATION_CONTENT } from "@/constants/bookConsultation";
 import AnimatedLine from "../animated/AnimatedLine";
-import { IoCallOutline } from "react-icons/io5";
 import GlowBeam from "../effects/GlowBeam";
 import RandomGradientGlow from "../effects/RandomGradientGlow";
 import { COUNTRIES } from "@/constants/countries";
 import { Label } from "@/components/ui/label";
 import ProjectScroller from "./ProjectScroller";
-
 import { SERVICES_CONTENT } from "@/constants/services";
 import AnimatedRotateButton from "../animated/AnimatedRotateButton";
 import AnimateDownloadedSVG from "../animated/AnimateDownloadedSVG";
@@ -60,9 +60,14 @@ const consultationFormSchema = z.object({
     name: z.string().min(2, "Name must be at least 2 characters."),
     phone: z.string().min(10, "Phone number must be at least 10 digits."),
     country: z.string().min(1, "Please select a country."),
-    callDate: z.date(),
+    callDate: z.date({
+        required_error: "Please select a date.",
+    }).refine((date) => {
+        const today = startOfDay(new Date());
+        return !isBefore(date, today);
+    }, "Date cannot be in the past."),
     callTime: z.string(),
-    email: z.email("Please enter a valid email address."),
+    email: z.string().email("Please enter a valid email address."),
     category: z.string().min(1, "Please select a category."),
     service: z.string().min(1, "Select a service."),
     contactMethod: z.enum(["whatsapp", "email"]),
@@ -70,21 +75,21 @@ const consultationFormSchema = z.object({
 
 type ConsultationFormValues = z.infer<typeof consultationFormSchema>;
 
-// Generate 12-hour format options
 const HOURS = Array.from({ length: 12 }, (_, i) => (i + 1).toString().padStart(2, "0"));
 const MINUTES = ["00", "15", "30", "45"];
 const PERIODS = ["AM", "PM"];
 
 export default function BookConsultationForm() {
-
     const searchParams = useSearchParams();
     const categoryFromUrl = searchParams.get("category");
     const serviceFromUrl = searchParams.get("service");
-    
+
     const { themeName } = useTheme();
     const theme = THEMES[themeName];
 
     const [submittedData, setSubmittedData] = useState<ConsultationFormValues | null>(null);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submissionError, setSubmissionError] = useState<string | null>(null);
 
     const form = useForm<ConsultationFormValues>({
         resolver: zodResolver(consultationFormSchema),
@@ -95,17 +100,38 @@ export default function BookConsultationForm() {
             email: "",
             category: "",
             service: "",
-            callDate: undefined,
-            callTime: "09:00 AM", 
+            callDate: addDays(new Date(), 1), // Default to tomorrow
+            callTime: "09:00 AM",
             contactMethod: "whatsapp",
         },
-    });    
+    });
 
     const selectedCategorySlug = form.watch("category");
     const availableServices = useMemo(() => {
         return SERVICES_CONTENT.categories.find((c) => c.slug === selectedCategorySlug)?.items || [];
     }, [selectedCategorySlug]);
-    
+
+    // Fix 1: Autofill background color fix
+    useEffect(() => {
+        const style = document.createElement('style');
+        style.textContent = `
+            input:-webkit-autofill {
+                -webkit-box-shadow: 0 0 0 1000px ${theme.background} inset !important;
+                -webkit-text-fill-color: ${theme.text} !important;
+                box-shadow: 0 0 0 1000px ${theme.background} inset !important;
+            }
+            input:-webkit-autofill:focus {
+                -webkit-box-shadow: 0 0 0 1000px ${theme.background} inset !important;
+                -webkit-text-fill-color: ${theme.text} !important;
+                box-shadow: 0 0 0 1000px ${theme.background} inset !important;
+            }
+        `;
+        document.head.appendChild(style);
+
+        return () => {
+            document.head.removeChild(style);
+        };
+    }, [theme.background, theme.text]);
 
     useEffect(() => {
         if (categoryFromUrl) {
@@ -117,9 +143,37 @@ export default function BookConsultationForm() {
         }
     }, [categoryFromUrl, serviceFromUrl, form]);
 
-    function onSubmit(data: ConsultationFormValues) {
-        console.log(data);
-        setSubmittedData(data);
+    async function onSubmit(data: ConsultationFormValues) {
+        setIsSubmitting(true);
+        setSubmissionError(null);
+        try {
+            // Fix 2: Validate date is not in past
+            const today = startOfDay(new Date());
+            if (isBefore(data.callDate, today)) {
+                setSubmissionError("Selected date cannot be in the past.");
+                setIsSubmitting(false);
+                return;
+            }
+
+            const response = await fetch("/api/book-consultation", {
+                method: "POST",
+                body: JSON.stringify(data),
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            });
+
+            if (!response.ok) {
+                throw new Error("Failed to book consultation.");
+            }
+
+            setSubmittedData(data);
+        } catch (error: unknown) {
+            const errorMessage = error instanceof Error ? error.message : "Something went wrong. Please try again.";
+            setSubmissionError(errorMessage);
+        } finally {
+            setIsSubmitting(false);
+        }
     }
 
     return (
@@ -127,31 +181,42 @@ export default function BookConsultationForm() {
             backgroundColor: theme.background,
             color: theme.text,
         }}>
-            <div className="max-w-7xl w-full space-y-8 mt-40">
-                <div className="flex flex-col items-center justify-center gap-4">
-                    <div
-                        className="flex text-xs justify-center items-center gap-2 font-medium uppercase py-2 px-3 rounded-full "
-                        style={{ color: theme.primary, }}
+            <div className="max-w-7xl w-full space-y-8 mt-20">
+                <div className="flex flex-col items-center justify-center ">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5 }}
+                        className="inline-flex items-center gap-1 px-4 py-2 rounded-full mb-6"
+                        style={{
+                            background: `${theme.accents.a}10`,
+                            border: `1px solid ${theme.accents.a}30`,
+                        }}
                     >
-                        <IoCallOutline size={14} />
-                        Contact us
-                    </div>
+                        <div className="w-2 h-2 rounded-full pulse red" style={{ backgroundColor: theme.accents.a }} />
+                        <span
+                            className="text-xs font-bold uppercase tracking-wider font-satoshi"
+                            style={{ color: theme.accents.a }}
+                        >
+                            CONTACT US
+                        </span>
+                    </motion.div>
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-cabinet leading-[1.05] tracking-tighter mb-2 lg:mb-8">
+                        <span style={{ color: theme.text }}>Book  </span>
+                        <span style={{ color: theme.accents.a }}>Consultation</span>
+
+                        <br />
+                    </h1>
                     <div
-                        className="text-lg md:text-xl lg:text-4xl font-bold leading-tight mb-2"
-                        style={{ color: theme.text }}
-                    >
-                        <AnimatedLine text={BOOK_CONSULTATION_CONTENT.title} />
-                    </div>
-                    <div
-                        className="text-sm md:text-base lg:text-lg font-medium items-center justify-center leading-tight mb-2"
+                        className="text-sm md:text-base lg:text-lg font-medium items-center justify-center leading-tight"
                         style={{ color: theme.subtext }}
                     >
-                        <AnimatedLine text={BOOK_CONSULTATION_CONTENT.description} />
+                        <AnimatedLine text={BOOK_CONSULTATION_CONTENT.description} textSize="text-lg" textColor={theme.subtext} />
                     </div>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    {/* Left Column: Form Sections (Scrollable) */}
+                    {/* Left Column: Form Sections */}
                     <div className="lg:col-span-2 space-y-8">
                         {submittedData ? (
                             <div className="relative w-full rounded-xl">
@@ -170,34 +235,38 @@ export default function BookConsultationForm() {
                                         textAlign: "center",
                                     }}
                                 >
-                                    <CardContent className="space-y-6 pt-6 w-full max-w-lg">
-                                        <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                                    <CardContent className="space-y-6 pt-8 pb-8">
+                                        <motion.div
+                                            initial={{ scale: 0 }}
+                                            animate={{ scale: 1 }}
+                                            transition={{ type: "spring", stiffness: 200 }}
+                                            className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4"
+                                        >
                                             <AnimateDownloadedSVG src={BOOK_CONSULTATION_CONTENT.confirmationPage.icon} size={35} stroke={theme.primary} />
-                                        </div>
-                                        <div>
+                                        </motion.div>
+                                        <div className="text-center">
                                             <h2 className="text-3xl font-bold mb-2">
-                                                <AnimatedLine text={BOOK_CONSULTATION_CONTENT.confirmationPage.title} />
+                                                <AnimatedLine text={BOOK_CONSULTATION_CONTENT.confirmationPage.title} textSize="text-3xl" />
                                             </h2>
-                                            <div className="text-sm opacity-80" style={{ color: theme.subtext }}>
+                                            <p className="text-sm opacity-80" style={{ color: theme.subtext }}>
                                                 <AnimatedLine text={BOOK_CONSULTATION_CONTENT.confirmationPage.description} />
-                                            </div>
+                                            </p>
                                         </div>
 
-                                        <div className="bg-primary/5 p-6 rounded-lg space-y-3 text-left w-full border" style={{ borderColor: theme.text + "11" }}>
-                                            <h3 className="font-semibold text-sm uppercase tracking-wider mb-4 opacity-70">Submission Details</h3>
+                                        <div className="bg-primary/5 p-4 sm:p-6 rounded-lg space-y-3 text-left w-full border" style={{ borderColor: theme.text + "11" }}>
+                                            <h3 className="font-semibold text-sm uppercase tracking-wider mb-4 opacity-70 text-center">Booking Details</h3>
 
-                                            <div className="grid grid-cols-2 gap-2 text-sm">
+                                            <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
                                                 <span className="opacity-60">Name:</span>
-                                                <span className="font-medium text-right">{submittedData.name}</span>
+                                                <span className="font-medium text-right truncate">{submittedData.name}</span>
 
                                                 <span className="opacity-60">Email:</span>
                                                 <span className="font-medium text-right truncate">{submittedData.email}</span>
 
-                                                <span className="opacity-60">Category:</span>
-                                                <span className="font-medium text-right">{SERVICES_CONTENT.categories.find(c => c.slug === submittedData.category)?.name || submittedData.category}</span>
-
                                                 <span className="opacity-60">Service:</span>
-                                                <span className="font-medium text-right">{SERVICES_CONTENT.categories.find(c => c.slug === submittedData.category)?.items.find(i => i.slug === submittedData.service)?.title || submittedData.service}</span>
+                                                <span className="font-medium text-right truncate">
+                                                    {SERVICES_CONTENT.categories.find(c => c.slug === submittedData.category)?.items.find(i => i.slug === submittedData.service)?.title || submittedData.service}
+                                                </span>
 
                                                 <span className="opacity-60">Date:</span>
                                                 <span className="font-medium text-right">{format(submittedData.callDate, "PPP")}</span>
@@ -205,16 +274,16 @@ export default function BookConsultationForm() {
                                                 <span className="opacity-60">Time:</span>
                                                 <span className="font-medium text-right">{submittedData.callTime}</span>
 
-                                                <span className="opacity-60">Contact:</span>
+                                                <span className="opacity-60">Contact Method:</span>
                                                 <span className="font-medium text-right capitalize">{submittedData.contactMethod}</span>
                                             </div>
                                         </div>
 
-                                        <p className="text-sm" style={{ color: theme.subtext }}>
-                                            You will receive a confirmation email and text shortly.
+                                        <p className="text-sm text-center" style={{ color: theme.subtext }}>
+                                            You will receive a confirmation email shortly.
                                         </p>
 
-                                        <div className="pt-2">
+                                        <div className="pt-2 flex justify-center">
                                             <AnimatedRotateButton
                                                 text="Back to Home"
                                                 href="/"
@@ -259,12 +328,15 @@ export default function BookConsultationForm() {
                                                     name="name"
                                                     render={({ field }) => (
                                                         <FormItem>
-                                                            <FormLabel className="required">Full Name</FormLabel>
+                                                            <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">Full Name</FormLabel>
                                                             <FormControl>
                                                                 <Input
                                                                     placeholder="John Doe"
                                                                     {...field}
-                                                                    style={{ border: `1px solid ${theme.text}22`, }}
+                                                                    style={{
+                                                                        border: `1px solid ${theme.text}22`,
+                                                                        backgroundColor: theme.background,
+                                                                    }}
                                                                 />
                                                             </FormControl>
                                                             <FormMessage />
@@ -277,13 +349,16 @@ export default function BookConsultationForm() {
                                                     name="email"
                                                     render={({ field }) => (
                                                         <FormItem>
-                                                            <FormLabel>Email Address</FormLabel>
+                                                            <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">Email Address</FormLabel>
                                                             <FormControl>
                                                                 <Input
                                                                     placeholder="john@example.com"
                                                                     type="email"
                                                                     {...field}
-                                                                    style={{ border: `1px solid ${theme.text}22`, }}
+                                                                    style={{
+                                                                        border: `1px solid ${theme.text}22`,
+                                                                        backgroundColor: theme.background,
+                                                                    }}
                                                                 />
                                                             </FormControl>
                                                             <FormMessage />
@@ -296,13 +371,19 @@ export default function BookConsultationForm() {
                                                     name="country"
                                                     render={({ field }) => (
                                                         <FormItem>
-                                                            <FormLabel>Country</FormLabel>
+                                                            <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">Country</FormLabel>
                                                             <Select
                                                                 onValueChange={field.onChange}
                                                                 defaultValue={field.value}
                                                             >
                                                                 <FormControl>
-                                                                    <SelectTrigger className="w-full" style={{ border: `1px solid ${theme.text}22` }}>
+                                                                    <SelectTrigger
+                                                                        className="w-full"
+                                                                        style={{
+                                                                            border: `1px solid ${theme.text}22`,
+                                                                            backgroundColor: theme.background,
+                                                                        }}
+                                                                    >
                                                                         <SelectValue placeholder="Select your country" />
                                                                     </SelectTrigger>
                                                                 </FormControl>
@@ -333,13 +414,16 @@ export default function BookConsultationForm() {
                                                     name="phone"
                                                     render={({ field }) => (
                                                         <FormItem>
-                                                            <FormLabel>Phone Number</FormLabel>
+                                                            <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">Phone Number</FormLabel>
                                                             <FormControl>
                                                                 <Input
                                                                     placeholder="123 456 7890"
                                                                     type="tel"
                                                                     {...field}
-                                                                    style={{ border: `1px solid ${theme.text}22`, }}
+                                                                    style={{
+                                                                        border: `1px solid ${theme.text}22`,
+                                                                        backgroundColor: theme.background,
+                                                                    }}
                                                                 />
                                                             </FormControl>
                                                             <FormMessage />
@@ -347,13 +431,13 @@ export default function BookConsultationForm() {
                                                     )}
                                                 />
 
-                                                {/* Date Picker */}
+                                                {/* Date Picker - Fix 3: Disable past dates */}
                                                 <FormField
                                                     control={form.control}
                                                     name="callDate"
                                                     render={({ field }) => (
                                                         <FormItem>
-                                                            <FormLabel>Preferred Date</FormLabel>
+                                                            <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">Preferred Date</FormLabel>
                                                             <FormControl>
                                                                 <Popover>
                                                                     <PopoverTrigger asChild>
@@ -373,12 +457,20 @@ export default function BookConsultationForm() {
                                                                         <Calendar
                                                                             mode="single"
                                                                             selected={field.value}
-                                                                            onSelect={(date) => field.onChange(date)}
+                                                                            onSelect={(date) => {
+                                                                                if (date) {
+                                                                                    // Validate not past date
+                                                                                    const today = startOfDay(new Date());
+                                                                                    if (!isBefore(date, today)) {
+                                                                                        field.onChange(date);
+                                                                                    }
+                                                                                }
+                                                                            }}
+                                                                            disabled={(date) => isBefore(date, startOfDay(new Date()))}
                                                                             style={{
                                                                                 background: theme.background,
                                                                                 color: theme.text,
                                                                                 border: `1px solid ${theme.text}22`,
-                                                                                // Using CSS variables to override shadcn/tailwind defaults for Calendar
                                                                                 "--accent": theme.accents.a,
                                                                                 "--accent-foreground": theme.background,
                                                                                 "--muted": theme.text + "44",
@@ -394,7 +486,7 @@ export default function BookConsultationForm() {
                                                     )}
                                                 />
 
-                                                {/* Time Selector (12h Format) */}
+                                                {/* Time Selector */}
                                                 <FormField
                                                     control={form.control}
                                                     name="callTime"
@@ -417,7 +509,7 @@ export default function BookConsultationForm() {
 
                                                         return (
                                                             <FormItem>
-                                                                <FormLabel>Preferred Time</FormLabel>
+                                                                <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">Preferred Time</FormLabel>
                                                                 <div className="flex gap-2">
                                                                     {/* Hour */}
                                                                     <Select
@@ -425,11 +517,21 @@ export default function BookConsultationForm() {
                                                                         onValueChange={(val) => handleTimeChange("hour", val)}
                                                                     >
                                                                         <FormControl>
-                                                                            <SelectTrigger className="flex-1" style={{ border: `1px solid ${theme.text}22` }}>
+                                                                            <SelectTrigger
+                                                                                className="flex-1"
+                                                                                style={{
+                                                                                    border: `1px solid ${theme.text}22`,
+                                                                                    backgroundColor: theme.background,
+                                                                                }}
+                                                                            >
                                                                                 <SelectValue placeholder="HH" />
                                                                             </SelectTrigger>
                                                                         </FormControl>
-                                                                        <SelectContent style={{ backgroundColor: theme.background, borderColor: theme.text + "22", color: theme.text }}>
+                                                                        <SelectContent style={{
+                                                                            backgroundColor: theme.background,
+                                                                            borderColor: theme.text + "22",
+                                                                            color: theme.text
+                                                                        }}>
                                                                             {HOURS.map((h) => (
                                                                                 <SelectItem key={h} value={h}>{h}</SelectItem>
                                                                             ))}
@@ -442,11 +544,21 @@ export default function BookConsultationForm() {
                                                                         onValueChange={(val) => handleTimeChange("minute", val)}
                                                                     >
                                                                         <FormControl>
-                                                                            <SelectTrigger className="flex-1" style={{ border: `1px solid ${theme.text}22` }}>
+                                                                            <SelectTrigger
+                                                                                className="flex-1"
+                                                                                style={{
+                                                                                    border: `1px solid ${theme.text}22`,
+                                                                                    backgroundColor: theme.background,
+                                                                                }}
+                                                                            >
                                                                                 <SelectValue placeholder="MM" />
                                                                             </SelectTrigger>
                                                                         </FormControl>
-                                                                        <SelectContent style={{ backgroundColor: theme.background, borderColor: theme.text + "22", color: theme.text }}>
+                                                                        <SelectContent style={{
+                                                                            backgroundColor: theme.background,
+                                                                            borderColor: theme.text + "22",
+                                                                            color: theme.text
+                                                                        }}>
                                                                             {MINUTES.map((m) => (
                                                                                 <SelectItem key={m} value={m}>{m}</SelectItem>
                                                                             ))}
@@ -459,11 +571,21 @@ export default function BookConsultationForm() {
                                                                         onValueChange={(val) => handleTimeChange("period", val)}
                                                                     >
                                                                         <FormControl>
-                                                                            <SelectTrigger className="w-[80px]" style={{ border: `1px solid ${theme.text}22` }}>
+                                                                            <SelectTrigger
+                                                                                className="w-[80px]"
+                                                                                style={{
+                                                                                    border: `1px solid ${theme.text}22`,
+                                                                                    backgroundColor: theme.background,
+                                                                                }}
+                                                                            >
                                                                                 <SelectValue placeholder="AM/PM" />
                                                                             </SelectTrigger>
                                                                         </FormControl>
-                                                                        <SelectContent style={{ backgroundColor: theme.background, borderColor: theme.text + "22", color: theme.text }}>
+                                                                        <SelectContent style={{
+                                                                            backgroundColor: theme.background,
+                                                                            borderColor: theme.text + "22",
+                                                                            color: theme.text
+                                                                        }}>
                                                                             {PERIODS.map((p) => (
                                                                                 <SelectItem key={p} value={p}>{p}</SelectItem>
                                                                             ))}
@@ -509,16 +631,22 @@ export default function BookConsultationForm() {
                                                         name="category"
                                                         render={({ field }) => (
                                                             <FormItem>
-                                                                <FormLabel>Category</FormLabel>
+                                                                <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">Category</FormLabel>
                                                                 <Select
                                                                     onValueChange={(value) => {
                                                                         field.onChange(value);
-                                                                        form.setValue("service", ""); 
+                                                                        form.setValue("service", "");
                                                                     }}
                                                                     value={field.value}
                                                                 >
                                                                     <FormControl>
-                                                                        <SelectTrigger className="w-full" style={{ border: `1px solid ${theme.text}22` }}>
+                                                                        <SelectTrigger
+                                                                            className="w-full"
+                                                                            style={{
+                                                                                border: `1px solid ${theme.text}22`,
+                                                                                backgroundColor: theme.background,
+                                                                            }}
+                                                                        >
                                                                             <SelectValue placeholder="Select a category" />
                                                                         </SelectTrigger>
                                                                     </FormControl>
@@ -546,14 +674,20 @@ export default function BookConsultationForm() {
                                                         name="service"
                                                         render={({ field }) => (
                                                             <FormItem>
-                                                                <FormLabel>Service</FormLabel>
+                                                                <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">Service</FormLabel>
                                                                 <Select
                                                                     onValueChange={field.onChange}
                                                                     value={field.value}
                                                                     disabled={!selectedCategorySlug}
                                                                 >
                                                                     <FormControl>
-                                                                        <SelectTrigger className="w-full" style={{ border: `1px solid ${theme.text}22` }}>
+                                                                        <SelectTrigger
+                                                                            className="w-full"
+                                                                            style={{
+                                                                                border: `1px solid ${theme.text}22`,
+                                                                                backgroundColor: theme.background,
+                                                                            }}
+                                                                        >
                                                                             <SelectValue placeholder={selectedCategorySlug ? "Select a service" : "Select a category first"} />
                                                                         </SelectTrigger>
                                                                     </FormControl>
@@ -608,7 +742,7 @@ export default function BookConsultationForm() {
                                                     name="contactMethod"
                                                     render={({ field }) => (
                                                         <FormItem className="space-y-3">
-                                                            <FormLabel>Preferred Method</FormLabel>
+                                                            <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">Preferred Method</FormLabel>
                                                             <FormControl>
                                                                 <RadioGroup
                                                                     onValueChange={field.onChange}
@@ -627,8 +761,8 @@ export default function BookConsultationForm() {
                                                                     </div>
                                                                     <div className="flex items-center space-x-2">
                                                                         <RadioGroupItem
-                                                                            value="phone"
-                                                                            id="phone"
+                                                                            value="email"
+                                                                            id="email"
                                                                             style={{ "--primary": theme.accents.a, borderColor: theme.text + "44" } as React.CSSProperties}
                                                                         />
                                                                         <Label htmlFor="email" className="font-normal cursor-pointer">
@@ -642,9 +776,44 @@ export default function BookConsultationForm() {
                                                     )}
                                                 />
                                             </CardContent>
-                                            <CardFooter>
-                                                <Button type="submit" size="lg" className="w-full" style={{ backgroundColor: theme.accents.a, color: theme.primary }}>
-                                                    Book Consultation
+                                            <CardFooter className="flex flex-col gap-4">
+                                                {/* Fix 4: Error message stays within card */}
+                                                {submissionError && (
+                                                    <div
+                                                        className="w-full rounded-lg border p-4 text-sm"
+                                                        style={{
+                                                            backgroundColor: `${theme.accents.a}15`,
+                                                            borderColor: `${theme.accents.a}30`,
+                                                            color: theme.accents.a,
+                                                        }}
+                                                    >
+                                                        <div className="flex items-center gap-2">
+                                                            <span className="text-red-500">⚠️</span>
+                                                            <span>{submissionError}</span>
+                                                        </div>
+                                                    </div>
+                                                )}
+
+                                                {/* Fix 5: Button with proper constraints */}
+                                                <Button
+                                                    type="submit"
+                                                    size="lg"
+                                                    className="w-full relative overflow-hidden group h-14 text-base font-bold transition-all duration-300 hover:scale-[1.02]"
+                                                    style={{
+                                                        backgroundColor: theme.accents.a,
+                                                        color: theme.primary,
+                                                        maxWidth: "100%",
+                                                    }}
+                                                    disabled={isSubmitting}
+                                                >
+                                                    {isSubmitting ? (
+                                                        <span className="flex items-center gap-2">
+                                                            <Loader2 className="animate-spin" size={18} />
+                                                            Booking...
+                                                        </span>
+                                                    ) : (
+                                                        <span className="truncate px-2">Book Consultation</span>
+                                                    )}
                                                 </Button>
                                             </CardFooter>
                                         </Card>
@@ -654,10 +823,10 @@ export default function BookConsultationForm() {
                         )}
                     </div>
 
+                    {/* Right Column */}
                     <div className="lg:col-span-1 hidden lg:block">
                         <div className="sticky top-24 space-y-8">
-
-                            {/* Card 4: Why Choose Us */}
+                            {/* Why Choose Us Card */}
                             <div className="relative w-full rounded-xl">
                                 <GlowBeam color={theme.accents.b} />
                                 <Card style={{
@@ -672,12 +841,12 @@ export default function BookConsultationForm() {
                                             </div>
                                             <div>
                                                 <CardTitle>
-                                                    <AnimatedLine text={BOOK_CONSULTATION_CONTENT.whyChooseUs.title} />
+                                                    <AnimatedLine text={BOOK_CONSULTATION_CONTENT.whyChooseUs.title} textSize="text-xl" />
                                                 </CardTitle>
                                             </div>
                                         </div>
                                         <div className="text-sm text-muted-foreground">
-                                            <AnimatedLine text={BOOK_CONSULTATION_CONTENT.whyChooseUs.description} />
+                                            <AnimatedLine text={BOOK_CONSULTATION_CONTENT.whyChooseUs.description} textColor={theme.subtext} />
                                         </div>
                                         <ul className="space-y-3">
                                             {BOOK_CONSULTATION_CONTENT.whyChooseUs.list.slice(0, 3).map((item, index) => (
@@ -691,7 +860,7 @@ export default function BookConsultationForm() {
                                 </Card>
                             </div>
 
-                            {/* Card 5: Our Projects */}
+                            {/* Projects Card */}
                             <div className="relative w-full rounded-xl">
                                 <GlowBeam color={theme.accents.b} />
                                 <Card style={{
@@ -706,19 +875,19 @@ export default function BookConsultationForm() {
                                             </div>
                                             <div>
                                                 <CardTitle>
-                                                    <AnimatedLine text={BOOK_CONSULTATION_CONTENT.projects.title} />
+                                                    <AnimatedLine text={BOOK_CONSULTATION_CONTENT.projects.title} textSize="text-xl" />
                                                 </CardTitle>
                                             </div>
                                         </div>
                                         <div className="text-sm text-muted-foreground">
-                                            <AnimatedLine text={BOOK_CONSULTATION_CONTENT.projects.description} />
+                                            <AnimatedLine text={BOOK_CONSULTATION_CONTENT.projects.description} textColor={theme.subtext} />
                                         </div>
                                         <ProjectScroller projects={BOOK_CONSULTATION_CONTENT.projects.list} />
                                     </CardContent>
                                 </Card>
                             </div>
 
-                            {/* Card 6: Contact Us */}
+                            {/* Contact Card */}
                             <div className="relative w-full rounded-xl">
                                 <GlowBeam color={theme.accents.b} />
                                 <Card style={{
@@ -731,17 +900,15 @@ export default function BookConsultationForm() {
                                             <div className="p-2 rounded-md bg-primary/10 text-primary">
                                                 <Phone className="h-5 w-5" style={{ color: theme.accents.b }} />
                                             </div>
-                                            <div>
+                                            <div className="text-xl">
                                                 <CardTitle>Contact Us</CardTitle>
                                             </div>
                                         </div>
 
-                                        {/* Emails */}
                                         <div className="flex flex-row items-start gap-4">
                                             <div className="flex items-center justify-center p-3 rounded-full bg-primary/10 shrink-0">
                                                 <Mail className="h-5 w-5" />
                                             </div>
-
                                             <div className="min-w-0">
                                                 <p className="text-xs font-semibold uppercase tracking-wider opacity-50 mb-1" style={{ color: theme.subtext }}>Email</p>
                                                 {BOOK_CONSULTATION_CONTENT.contact.emails.map((email, idx) => (
@@ -757,7 +924,6 @@ export default function BookConsultationForm() {
                                             </div>
                                         </div>
 
-                                        {/* Phones */}
                                         <div className="flex flex-row items-start gap-4">
                                             <div className="flex items-center justify-center p-3 rounded-full bg-primary/10 shrink-0">
                                                 <Phone className="h-5 w-5" />
@@ -776,11 +942,9 @@ export default function BookConsultationForm() {
                                                 ))}
                                             </div>
                                         </div>
-
                                     </CardContent>
                                 </Card>
                             </div>
-
                         </div>
                     </div>
                 </div>

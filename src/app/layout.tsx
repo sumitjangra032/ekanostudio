@@ -9,11 +9,14 @@ import Footer from "@/components/sections/Footer";
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${generalSans.variable}  ${satoshi.variable} ${inter.variable} ${telma.variable} ${cabinet.variable}`}>
+      <body
+        className={`${generalSans.variable} ${satoshi.variable} ${inter.variable} ${telma.variable} ${cabinet.variable}`}
+      >
+        
         <SmoothScroll />
         <ThemeProvider>
           <Navbar />
-          {children}      {/* Page Content */}
+          {children}
           <Footer />
         </ThemeProvider>
       </body>

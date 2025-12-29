@@ -32,8 +32,23 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-7xl ">
+      {/* Under Development Notice */}
+<div
+  className="absolute -top-4 left-1/2 -translate-x-1/2 px-6 py-1.5 rounded-full text-[11px] md:text-xs font-semibold tracking-[0.15em] uppercase"
+  style={{
+    background:
+      "linear-gradient(90deg, #ff3d3d 0%, #ff9f43 50%, #ffd36e 100%)",
+    color: "#0b0b0b",
+    boxShadow:
+      "0 6px 24px rgba(255, 120, 60, 0.55), inset 0 1px 0 rgba(255,255,255,0.4)",
+    border: "1px solid rgba(0,0,0,0.25)",
+  }}
+>
+  🚧 Website Under Active Development — Features Are Being Updated
+</div>
+
       <nav
-        className="mx-auto w-full rounded-[40px] flex items-center justify-between px-4 py-2 relative transition-all duration-300"
+        className="mx-auto w-full rounded-[40px] flex items-center justify-between px-4 py-2 mt-4 relative transition-all duration-300"
         style={
           {
             "--text": theme.text,

@@ -3,14 +3,13 @@
 import { useState, useMemo, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { SERVICES_CONTENT } from "@/constants/services";
+import { ALL_SERVICES_CONTENT } from "@/constants/allServices";
 import { useTheme } from "@/components/providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
 import Link from "next/link";
-import { FaSearch } from "react-icons/fa";
 import AnimatedLine from "./animated/AnimatedLine";
-import { ALL_SERVICES_CONTENT } from "@/constants/allServices";
-import { IoSearchOutline } from "react-icons/io5";
 import { FiSearch } from "react-icons/fi";
+import GlowBeam from "@/components/effects/GlowBeam";
 
 export default function ServicesComponent() {
   const { themeName } = useTheme();
@@ -18,26 +17,23 @@ export default function ServicesComponent() {
 
   const [search, setSearch] = useState("");
   const [activeTag, setActiveTag] = useState("All");
-  const { title, description } = ALL_SERVICES_CONTENT;
+  const { description } = ALL_SERVICES_CONTENT;
 
-  // Refs for animations
-  const searchRef = useRef(null);
+  const searchRef = useRef<HTMLDivElement | null>(null);
   const searchInView = useInView(searchRef, { once: true, margin: "-10% 0px" });
 
-  const tagsRef = useRef(null);
+  const tagsRef = useRef<HTMLDivElement | null>(null);
   const tagsInView = useInView(tagsRef, { once: true, margin: "-10% 0px" });
 
-  const cardsRef = useRef(null);
+  const cardsRef = useRef<HTMLDivElement | null>(null);
   const cardsInView = useInView(cardsRef, { once: true, margin: "-10% 0px" });
 
-  // Extract unique tags (Marketing, Web, Video, etc.)
   const tags = useMemo(() => {
     const set = new Set<string>();
     SERVICES_CONTENT.categories.forEach((cat) => set.add(cat.name));
     return ["All", ...Array.from(set)];
-  }, [SERVICES_CONTENT]);
+  }, []);
 
-  // Filter services
   const filtered = useMemo(() => {
     return SERVICES_CONTENT.categories.flatMap((cat) =>
       cat.items
@@ -48,52 +44,77 @@ export default function ServicesComponent() {
           const matchesTag = activeTag === "All" || activeTag === cat.name;
           return matchesSearch && matchesTag;
         })
-        .map((item) => ({ ...item, category: cat.name, categorySlug: cat.slug }))
+        .map((item) => ({
+          ...item,
+          category: cat.name,
+          categorySlug: cat.slug,
+        }))
     );
   }, [search, activeTag]);
 
   return (
     <section
-      className="  px-4 sm:px-8 pt-20 pb-10"
-      style={{ color: theme.text, backgroundColor: theme.background }}
+      className="px-4 sm:px-8 pt-28 pb-20"
+      style={{
+        backgroundColor: theme.background,
+        color: theme.text,
+      }}
     >
-      <div className="max-w-7xl mx-auto space-y-6 r">
-        {/* HEADER */}
-        <h1
-          className="text-5xl font-bold leading-tight text-center mt-10"
-          style={{ color: theme.text }}
-        >
-          <AnimatedLine text={title} delay={0.1} />
-        </h1>
+      <div className="max-w-7xl mx-auto space-y-10">
 
-        <h1
-          className="text-md font-medium leading-tight text-center mt-5"
-          style={{ color: theme.subtext }}
-        >
-          <AnimatedLine text={description} delay={0.1} />
-        </h1>
+        {/* TOP TAG (CENTERED, NOT REPEATED) */}
+        <div className="flex justify-center">
+          <div
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full"
+            style={{
+              background: `${theme.accents.a}08`,
+              border: `1px solid ${theme.accents.a}20`,
+              backdropFilter: "blur(6px)",
+            }}
+          >
+            <div className="pulse red" />
+            <span
+              className="text-xs font-medium tracking-wide uppercase"
+              style={{ color: theme.accents.a }}
+            >
+              All Services
+            </span>
+          </div>
+        </div>
 
-        {/* SEARCH BAR */}
+        {/* DESCRIPTION ONLY (NO REPEATED TITLE) */}
+        <div className="text-center">
+          <p
+            className="max-w-3xl mx-auto text-sm md:text-base"
+            style={{ color: theme.subtext }}
+          >
+            <AnimatedLine text={description} delay={0.15} />
+          </p>
+        </div>
+
+        {/* SEARCH */}
         <motion.div
           ref={searchRef}
-          initial={{ opacity: 0, y: 60 }}
+          initial={{ opacity: 0, y: 40 }}
           animate={searchInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="max-w-xl mx-auto mb-8 relative"
+          transition={{ duration: 0.6 }}
+          className="max-w-xl mx-auto relative"
         >
           <FiSearch
             className="absolute left-4 top-1/2 -translate-y-1/2"
+            size={20}
             style={{ color: theme.subtext }}
-            size={24}
           />
           <input
             type="text"
             placeholder="Search services..."
-            className="w-full py-3 pl-12 pr-4 rounded-xl outline-none"
+            className="w-full py-3 pl-12 pr-4 rounded-2xl outline-none transition-all"
             style={{
-              background: theme.cardBg,
+              background:
+                "linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02))",
               color: theme.text,
               border: `1px solid ${theme.text}20`,
+              backdropFilter: "blur(12px)",
             }}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
@@ -103,24 +124,24 @@ export default function ServicesComponent() {
         {/* FILTER TAGS */}
         <motion.div
           ref={tagsRef}
-          initial={{ opacity: 0, y: 60 }}
+          initial={{ opacity: 0, y: 40 }}
           animate={tagsInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="flex flex-wrap gap-2 justify-center mb-10"
+          transition={{ duration: 0.6 }}
+          className="flex flex-wrap justify-center gap-3"
         >
-          {tags.map((tag, i) => {
+          {tags.map((tag) => {
             const active = tag === activeTag;
             return (
               <button
-                key={i}
+                key={tag}
                 onClick={() => setActiveTag(tag)}
-                className="px-1 py-1 rounded-full text-sm font-light transition-all"
+                className="px-5 py-1.5 rounded-full text-xs font-medium transition-all"
                 style={{
-                  background: active ? theme.primary : theme.cardBg,
-                  color: active ? theme.background : theme.text,
-                  border: `1px solid ${theme.text}30`,
-                  height: "30px",
-                  paddingInline: "18px",
+                  background: active
+                    ? `linear-gradient(90deg, ${theme.accents.a}, ${theme.accents.b})`
+                    : "rgba(255,255,255,0.04)",
+                  color: active ? "#000" : theme.text,
+                  border: `1px solid ${theme.text}20`,
                 }}
               >
                 {tag}
@@ -129,79 +150,97 @@ export default function ServicesComponent() {
           })}
         </motion.div>
 
-
-        {/* ALL SERVICE CARDS */}
+        {/* SERVICE CARDS */}
         <motion.div
           ref={cardsRef}
-          initial={{ opacity: 0, y: 60 }}
+          initial={{ opacity: 0, y: 40 }}
           animate={cardsInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.6 }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
-          {filtered.map((service, i) => {
-            const Icon = service.icon;
-            return (
-              <Link
-                key={i}
-                href={`/services/${service.categorySlug}/${service.slug}`}
-                className="p-6 rounded-2xl group transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                style={{
-                  background: theme.cardBg,
-                  border: `1px solid ${theme.text}15`,
-                  borderColor: theme.text + "30",
-                }}
-              >
-                {/* Tags */}
-                <div className="flex gap-2 mb-3">
-                  <span
-                    className="px-3 py-1 text-xs rounded-full"
-                    style={{
-                      background: theme.primary + "20",
-                      color: theme.primary,
-                    }}
-                  >
-                    {service.category}
-                  </span>
-                </div>
+          {filtered.map((service, i) => (
+            <Link
+              key={i}
+              href={`/services/${service.categorySlug}/${service.slug}`}
+              className="
+                relative rounded-3xl p-7
+                bg-black/40
+                border border-white/10
+                backdrop-blur-xl
+                overflow-hidden
+                transition-all duration-500
+                hover:-translate-y-1
+              "
+            >
+              <GlowBeam color={theme.accents.a} />
 
-                {/* Title */}
-                <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-
-                {/* Description */}
-                <p className="text-sm mb-4" style={{ color: theme.subtext }}>
-                  {service.desc}
-                </p>
-
-                {/* View details */}
-                <span
-                  className="
-                    text-sm font-medium 
-                    transition-opacity duration-200 
-                    opacity-80 group-hover:opacity-100
-                  "
-                  style={{ color: theme.text }}
-                >
-                  View details →
-                </span>
-              </Link>
-            );
-          })}
-
-          {filtered.length === 0 && (
-            <div className="col-span-full flex justify-center">
               <div
-                className="rounded-xl border p-6 text-center w-full max-w-full"
+                className="absolute left-0 top-0 h-full w-[2px]"
                 style={{
-                  background: theme.cardBg,
-                  border: `1px solid ${theme.text}15`,
+                  background: `linear-gradient(
+                    to bottom,
+                    transparent,
+                    ${theme.accents.a},
+                    transparent
+                  )`,
+                }}
+              />
+
+              <span
+                className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold mb-4"
+                style={{
+                  background: `${theme.accents.a}14`,
+                  color: theme.accents.a,
+                  border: `1px solid ${theme.accents.a}30`,
                 }}
               >
-                <p className="text-sm mb-1" style={{ color: theme.subtext }}>
-                  No services found. Try a different keyword or filter.
-                </p>
-              </div>
-            </div>
-          )}
+                {service.category}
+              </span>
+
+              <h3
+                className="text-lg font-semibold mb-3 tracking-tight"
+                style={{
+                  color: theme.text,
+                  fontFamily: "var(--font-general-sans)",
+                }}
+              >
+                {service.title}
+              </h3>
+
+              <p
+                className="text-[15px] leading-relaxed mb-6"
+                style={{
+                  color: theme.subtext,
+                  fontFamily: "var(--font-inter)",
+                }}
+              >
+                {service.desc}
+              </p>
+
+              <span
+                className="text-sm font-medium opacity-70 hover:opacity-100 transition"
+                style={{ color: theme.text }}
+              >
+                View details →
+              </span>
+
+              <div
+                className="
+                  absolute inset-0 opacity-0
+                  hover:opacity-100
+                  transition-opacity duration-500
+                  pointer-events-none
+                "
+                style={{
+                  background: `radial-gradient(
+                    600px circle at top right,
+                    ${theme.accents.a}12,
+                    transparent 45%
+                  )`,
+                }}
+              />
+            </Link>
+          ))}
         </motion.div>
       </div>
     </section>
