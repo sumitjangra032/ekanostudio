@@ -45,12 +45,12 @@ export const SERVICES_CONTENT = {
       slug: "web-design-development",
       icon: FaGlobe,
       items: [
-        {title: "Website Design (UI/UX)",desc: "Modern, responsive layouts with visual design",slug: "website-design-uiux",icon: FaLaptopCode,},
-        {title: "Website Development",desc: "Next.js, React, WordPress, custom CMS",slug: "website-development",icon: FaLaptopCode,},
-        {title: "Landing Page Development",desc: "High-converting landing pages",slug: "landing-page-development",icon: FaLayerGroup,},
-        {title: "E-Commerce Development",desc: "Shopify, WooCommerce, custom commerce",slug: "ecommerce-development",icon: FaShoppingCart,},
-        {title: "Website Maintenance",desc: "Regular updates, security, backups",slug: "website-maintenance",icon: FaCog,},
-        {title: "Website Speed Optimization",desc: "Performance tuning for SEO & UX",slug: "website-speed-optimization",icon: FaRocket,},
+        { title: "Website Design (UI/UX)", desc: "Modern, responsive layouts with visual design", slug: "website-design-uiux", icon: FaLaptopCode, },
+        { title: "Website Development", desc: "Next.js, React, WordPress, custom CMS", slug: "website-development", icon: FaLaptopCode, },
+        { title: "Landing Page Development", desc: "High-converting landing pages", slug: "landing-page-development", icon: FaLayerGroup, },
+        { title: "E-Commerce Development", desc: "Shopify, WooCommerce, custom commerce", slug: "ecommerce-development", icon: FaShoppingCart, },
+        { title: "Website Maintenance", desc: "Regular updates, security, backups", slug: "website-maintenance", icon: FaCog, },
+        { title: "Website Speed Optimization", desc: "Performance tuning for SEO & UX", slug: "website-speed-optimization", icon: FaRocket, },
       ],
     },
 
@@ -62,11 +62,11 @@ export const SERVICES_CONTENT = {
       slug: "seo",
       icon: FaSearch,
       items: [
-        {title: "On-Page SEO",desc: "Content, structure, metadata",slug: "on-page-seo",icon: FaSearch,},
-        {title: "Off-Page SEO",desc: "Backlinks, digital PR",slug: "off-page-seo",icon: FaBullhorn,},
-        {title: "Technical SEO",desc: "Crawl issues, indexing, schema",slug: "technical-seo",icon: FaCog,},
-        {title: "Local SEO",desc: "Google Business Profile optimization",slug: "local-seo",icon: FaGlobe,},
-        {title: "Keyword Research",desc: "Competitor & industry keyword planning",slug: "keyword-research",icon: FaSearch,},
+        { title: "On-Page SEO", desc: "Content, structure, metadata", slug: "on-page-seo", icon: FaSearch, },
+        { title: "Off-Page SEO", desc: "Backlinks, digital PR", slug: "off-page-seo", icon: FaBullhorn, },
+        { title: "Technical SEO", desc: "Crawl issues, indexing, schema", slug: "technical-seo", icon: FaCog, },
+        { title: "Local SEO", desc: "Google Business Profile optimization", slug: "local-seo", icon: FaGlobe, },
+        { title: "Keyword Research", desc: "Competitor & industry keyword planning", slug: "keyword-research", icon: FaSearch, },
       ],
     },
 
@@ -78,10 +78,10 @@ export const SERVICES_CONTENT = {
       slug: "social-media-marketing",
       icon: FaBullhorn,
       items: [
-        {title: "Social Media Management",desc: "Posting, content creation, engagement",slug: "social-media-management",icon: FaHashtag,},
-        {title: "Social Media Strategy",desc: "Growth planning and branding",slug: "social-media-strategy",icon: FaBullhorn,},
-        {title: "Paid Social Ads",desc: "Meta Ads, Instagram Ads, LinkedIn Ads",slug: "paid-social-ads",icon: FaBullhorn,},
-        {title: "Influencer Marketing",desc: "Campaign planning & management",slug: "influencer-marketing",icon: FaUserFriends,},
+        { title: "Social Media Management", desc: "Posting, content creation, engagement", slug: "social-media-management", icon: FaHashtag, },
+        { title: "Social Media Strategy", desc: "Growth planning and branding", slug: "social-media-strategy", icon: FaBullhorn, },
+        { title: "Paid Social Ads", desc: "Meta Ads, Instagram Ads, LinkedIn Ads", slug: "paid-social-ads", icon: FaBullhorn, },
+        { title: "Influencer Marketing", desc: "Campaign planning & management", slug: "influencer-marketing", icon: FaUserFriends, },
       ],
     },
 
@@ -93,10 +93,10 @@ export const SERVICES_CONTENT = {
       slug: "performance-marketing",
       icon: FaBullhorn,
       items: [
-        {title: "Google Ads (Search & Display)",desc: "PPC management",slug: "google-ads",icon: FaSearch,},
-        {title: "Meta Ads",desc: "Facebook & Instagram ads",slug: "meta-ads",icon: FaBullhorn,},
-        {title: "YouTube Ads",desc: "Video-based ad campaigns",slug: "youtube-ads",icon: FaPlayCircle,},
-        {title: "Conversion Optimization (CRO)",desc: "Improving website conversion rates",slug: "conversion-rate-optimization",icon: FaRocket,},
+        { title: "Google Ads (Search & Display)", desc: "PPC management", slug: "google-ads", icon: FaSearch, },
+        { title: "Meta Ads", desc: "Facebook & Instagram ads", slug: "meta-ads", icon: FaBullhorn, },
+        { title: "YouTube Ads", desc: "Video-based ad campaigns", slug: "youtube-ads", icon: FaPlayCircle, },
+        { title: "Conversion Optimization (CRO)", desc: "Improving website conversion rates", slug: "conversion-rate-optimization", icon: FaRocket, },
       ],
     },
 
@@ -108,9 +108,9 @@ export const SERVICES_CONTENT = {
       slug: "consulting",
       icon: FaCog,
       items: [
-        {title: "Digital Strategy Consulting",desc: "Full digital growth plan",slug: "digital-strategy-consulting",icon: FaGlobe,},
-        {title: "Competitor Analysis",desc: "Market intelligence",slug: "competitor-analysis",icon: FaSearch,},
-        {title: "Analytics & Reporting",desc: "GA4 dashboards, marketing metrics",slug: "analytics-and-reporting",icon: FaRegFile,},
+        { title: "Digital Strategy Consulting", desc: "Full digital growth plan", slug: "digital-strategy-consulting", icon: FaGlobe, },
+        { title: "Competitor Analysis", desc: "Market intelligence", slug: "competitor-analysis", icon: FaSearch, },
+        { title: "Analytics & Reporting", desc: "GA4 dashboards, marketing metrics", slug: "analytics-and-reporting", icon: FaRegFile, },
       ],
     },
 
@@ -122,11 +122,11 @@ export const SERVICES_CONTENT = {
       slug: "content-creation",
       icon: FaPenNib,
       items: [
-        {title: "Content Writing",desc: "Website copy, blogs, articles",slug: "content-writing",icon: FaPenNib,},
-        {title: "Script Writing",desc: "Video & ad scripts",slug: "script-writing",icon: FaRegFileAlt,},
-        {title: "Graphic Design",desc: "Posters, banners, social posts",slug: "graphic-design",icon: FaBrush,},
-        {title: "Video Editing",desc: "Reels, ads, brand videos",slug: "video-editing",icon: FaFilm,},
-        {title: "Motion Graphics",desc: "Animated graphics",slug: "motion-graphics",icon: FaPlayCircle,},
+        { title: "Content Writing", desc: "Website copy, blogs, articles", slug: "content-writing", icon: FaPenNib, },
+        { title: "Script Writing", desc: "Video & ad scripts", slug: "script-writing", icon: FaRegFileAlt, },
+        { title: "Graphic Design", desc: "Posters, banners, social posts", slug: "graphic-design", icon: FaBrush, },
+        { title: "Video Editing", desc: "Reels, ads, brand videos", slug: "video-editing", icon: FaFilm, },
+        { title: "Motion Graphics", desc: "Animated graphics", slug: "motion-graphics", icon: FaPlayCircle, },
       ],
     },
 
@@ -138,9 +138,9 @@ export const SERVICES_CONTENT = {
       slug: "ecommerce-services",
       icon: FaStore,
       items: [
-        {title: "Marketplace Setup",desc: "Amazon, Flipkart, Shopify",slug: "marketplace-setup",icon: FaStore,},
-        {title: "Product Listing Optimization",desc: "SEO-friendly listings",slug: "product-listing-optimization",icon: FaRegFileAlt,},
-        {title: "Store Management",desc: "Inventory & order handling",slug: "store-management",icon: FaShoppingCart,},
+        { title: "Marketplace Setup", desc: "Amazon, Flipkart, Shopify", slug: "marketplace-setup", icon: FaStore, },
+        { title: "Product Listing Optimization", desc: "SEO-friendly listings", slug: "product-listing-optimization", icon: FaRegFileAlt, },
+        { title: "Store Management", desc: "Inventory & order handling", slug: "store-management", icon: FaShoppingCart, },
       ],
     },
 
@@ -152,9 +152,9 @@ export const SERVICES_CONTENT = {
       slug: "email-automation",
       icon: FaEnvelope,
       items: [
-        {title: "Email Marketing",desc: "Campaign creation, newsletters",slug: "email-marketing",icon: FaEnvelope,},
-        {title: "Marketing Automation",desc: "Flows, triggers, customer journeys",slug: "marketing-automation",icon: FaRobot,},
-        {title: "CRM Setup",desc: "HubSpot, Zoho, Salesforce",slug: "crm-setup",icon: FaRegIdCard,},
+        { title: "Email Marketing", desc: "Campaign creation, newsletters", slug: "email-marketing", icon: FaEnvelope, },
+        { title: "Marketing Automation", desc: "Flows, triggers, customer journeys", slug: "marketing-automation", icon: FaRobot, },
+        { title: "CRM Setup", desc: "HubSpot, Zoho, Salesforce", slug: "crm-setup", icon: FaRegIdCard, },
       ],
     },
 
@@ -166,8 +166,8 @@ export const SERVICES_CONTENT = {
       slug: "technology-cloud",
       icon: FaCloud,
       items: [
-        {title: "Hosting & Deployment",desc: "Cloud, DNS, servers",slug: "hosting-and-deployment",icon: FaCloud,},
-        {title: "API Integrations",desc: "Payment gateway, CRM, ERP",slug: "api-integrations",icon: FaCog,},
+        { title: "Hosting & Deployment", desc: "Cloud, DNS, servers", slug: "hosting-and-deployment", icon: FaCloud, },
+        { title: "API Integrations", desc: "Payment gateway, CRM, ERP", slug: "api-integrations", icon: FaCog, },
       ],
     },
 
@@ -179,9 +179,9 @@ export const SERVICES_CONTENT = {
       slug: "branding",
       icon: FaBrush,
       items: [
-        {title: "Brand Identity Design",desc: "Logo, color palette, typography, brand guidelines",slug: "brand-identity-design",icon: FaPalette,},
-        {title: "Brand Strategy",desc: "Positioning, messaging, competitive analysis",slug: "brand-strategy",icon: FaBrain,},
-        {title: "Rebranding",desc: "Full brand refresh and redesign",slug: "rebranding",icon: FaRocket,},
+        { title: "Brand Identity Design", desc: "Logo, color palette, typography, brand guidelines", slug: "brand-identity-design", icon: FaPalette, },
+        { title: "Brand Strategy", desc: "Positioning, messaging, competitive analysis", slug: "brand-strategy", icon: FaBrain, },
+        { title: "Rebranding", desc: "Full brand refresh and redesign", slug: "rebranding", icon: FaRocket, },
       ],
     },
   ],

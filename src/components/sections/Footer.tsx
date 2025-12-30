@@ -47,7 +47,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-14">
 
             {/* BRAND — 5 COLS */}
-            <div className="lg:col-span-5 flex flex-col gap-6">
+            <div className="lg:col-span-5 flex flex-col gap-2">
               <Link
                 href="/"
                 className="text-2xl font-semibold tracking-tight"
@@ -85,7 +85,7 @@ export default function Footer() {
             </div>
 
             {/* COMPANY — 2 COLS */}
-            <div className="lg:col-span-2 flex flex-col gap-6">
+            <div className="lg:col-span-2 flex flex-col gap-3">
               <h4
                 className="text-xs font-semibold uppercase tracking-widest"
                 style={{ color: theme.text }}
@@ -93,7 +93,7 @@ export default function Footer() {
                 Company
               </h4>
 
-              <ul className="space-y-4">
+              <ul className="space-y-1">
                 {FOOTER_CONTENT.columns[0].links.map((link, i) => (
                   <li key={i}>
                     <FooterLink theme={theme} link={link} />
@@ -103,7 +103,7 @@ export default function Footer() {
             </div>
 
             {/* SERVICES — 2 COLS */}
-            <div className="lg:col-span-2 flex flex-col gap-6">
+            <div className="lg:col-span-2 flex flex-col gap-3">
               <h4
                 className="text-xs font-semibold uppercase tracking-widest"
                 style={{ color: theme.text }}
@@ -111,7 +111,7 @@ export default function Footer() {
                 Services
               </h4>
 
-              <ul className="space-y-4">
+              <ul className="space-y-1">
                 {FOOTER_CONTENT.columns[1].links.map((link, i) => (
                   <li key={i}>
                     <FooterLink theme={theme} link={link} />
@@ -121,7 +121,7 @@ export default function Footer() {
             </div>
 
             {/* LEGAL — 3 COLS */}
-            <div className="lg:col-span-3 flex flex-col gap-6">
+            <div className="lg:col-span-3 flex flex-col gap-3">
               <h4
                 className="text-xs font-semibold uppercase tracking-widest"
                 style={{ color: theme.text }}
@@ -129,7 +129,7 @@ export default function Footer() {
                 Legal
               </h4>
 
-              <ul className="space-y-4">
+              <ul className="space-y-1">
                 {FOOTER_CONTENT.columns[2].links.map((link, i) => (
                   <li key={i}>
                     <FooterLink theme={theme} link={link} />

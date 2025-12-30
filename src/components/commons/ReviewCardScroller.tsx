@@ -41,14 +41,14 @@ export default function ReviewCardScroller({
           background: `linear-gradient(to right, ${theme.background}, transparent)`,
         }}
       />
-      
+
       <div
         className="absolute top-0 right-0 h-full w-[10%] z-20 pointer-events-none"
         style={{
           background: `linear-gradient(to left, ${theme.background}, transparent)`,
         }}
       />
-      
+
       <motion.div
         className={`flex gap-8 w-max ${className}`}
         animate={animate}
@@ -61,7 +61,7 @@ export default function ReviewCardScroller({
         {list.map((review, idx) => (
           <div key={idx} className="w-[380px] flex-shrink-0">
             {/* The ReviewCard itself will now have the working backdrop-filter */}
-            <ReviewCard {...review} /> 
+            <ReviewCard {...review} />
           </div>
         ))}
       </motion.div>
@@ -86,8 +86,8 @@ function ReviewCard({ text, name, role, img, stars }: any) {
     >
       {/* ... (rest of ReviewCard content) ... */}
       <GlowBeam color={theme.accents.a} />
-      <RandomGradientGlow colorA={theme.accents.a} colorB={theme.accents.b}/>
-      
+      <RandomGradientGlow colorA={theme.accents.a} colorB={theme.accents.b} />
+
       {stars && (
         <div className="flex gap-1 mb-5">
           {Array.from({ length: stars }).map((_, i) => (

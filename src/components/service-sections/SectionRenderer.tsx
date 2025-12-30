@@ -9,18 +9,14 @@ import ServiceCta from "./ServiceCta";
 
 import ServiceWhoItsFor from "./ServiceWhoItsFor";
 import ServiceCaseStudy from "./ServiceCaseStudy";
-import ServiceOverview from "./ServiceOverview";
-import ServiceWhatYouSee from "./ServiceWhatYouSee";
 import ServiceDeliverables from "./ServiceDeliverables";
 import ServiceWhyMatters from "./ServiceWhyMatters";
 
 import { ISectionType, IServiceSection } from "@/constants/services";
 
-export const SECTION_COMPONENTS: Record<ISectionType, any> = {
+export const SECTION_COMPONENTS: Partial<Record<ISectionType, any>> = {
   hero: ServiceHero,
   metrics: ServiceMetrics,
-  overview: ServiceOverview,
-  whatYouSee: ServiceWhatYouSee,
   deliverables: ServiceDeliverables,
   whyMatters: ServiceWhyMatters,
   process: ServiceProcess,

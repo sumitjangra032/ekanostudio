@@ -28,7 +28,7 @@ export default function ServiceCaseStudy({ data }: { data: any }) {
             ref={sectionRef}
             className="py-20 px-6 relative z-10"
         >
-            
+
             <div className="max-w-4xl mx-auto">
                 <motion.div
                     className="flex justify-center items-center gap-2 font-semibold uppercase mb-4"
@@ -61,10 +61,10 @@ export default function ServiceCaseStudy({ data }: { data: any }) {
 
                     <div className="relative z-10">
                         <div
-                            className="text-lg md:text-xl leading-relaxed text-center"
+                            className="text-xl md:text-2xl leading-relaxed text-center"
                             style={{ color: theme.text }}
                         >
-                            <AnimatedLine text={data.content} delay={0.2} />
+                            <AnimatedLine text={data.content} delay={0.2} textSize="text-lg md:text-xl" textColor={theme.subtext} />
                         </div>
                     </div>
                 </motion.div>

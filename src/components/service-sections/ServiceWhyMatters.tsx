@@ -21,7 +21,7 @@ export default function ServiceWhyMatters({ data }: { data: any }) {
     const yText = useTransform(scrollYProgress, [0, 1], [0, -150]);
     const yCards = useTransform(scrollYProgress, [0, 1], [0, -15]);
 
-    return (    
+    return (
         <section
             id="whyMatters"
             ref={sectionRef}
@@ -30,19 +30,46 @@ export default function ServiceWhyMatters({ data }: { data: any }) {
             <div className="max-w-6xl mx-auto">
 
                 <motion.div
-                    className="flex justify-center items-center gap-2 font-semibold uppercase mb-6"
-                    style={{ y: yText, color: theme.primary }}
+                    className="text-center"
+                    style={{ y: yText }}
                 >
-                    <FaHeart size={20} />
-                    Why this matters
-                </motion.div>
+                    <div
+                        className="flex justify-center mb-6"
+                    >
+                        <div
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full"
+                            style={{
+                                background: `${theme.accents.a}08`,
+                                border: `1px solid ${theme.accents.a}20`,
+                                backdropFilter: "blur(4px)",
+                            }}
+                        >
+                            <div className="pulse red" />
+                            <span
+                                className="text-xs font-medium tracking-wide uppercase"
+                                style={{ color: theme.accents.a }}
+                            >
+                                Why this matters
+                            </span>
+                        </div>
+                    </div>
 
-                <motion.h2
-                    className="text-4xl font-bold text-center mb-12"
-                    style={{ y: yText, color: theme.text }}
-                >
-                    <AnimatedLine text={data.heading} delay={0.1} isHeading={true} />
-                </motion.h2>
+                    <h2
+                        className="text-[32px] md:text-[42px] font-bold mb-12"
+                        style={{ color: theme.text }}
+                    >
+                        <AnimatedLine
+                            text={data.heading}
+                            delay={0.1}
+                            isHeading
+                            gradient={{
+                                from: "#fac175",
+                                via: "#ff006a",
+                                to: "#8b5cf6",
+                            }}
+                        />
+                    </h2>
+                </motion.div>
 
                 <motion.div
                     className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
@@ -51,30 +78,53 @@ export default function ServiceWhyMatters({ data }: { data: any }) {
                     {data.items.map((item: string, i: number) => (
                         <motion.div
                             key={i}
-                            className="p-8 rounded-2xl relative overflow-hidden group"
-                            style={{
-                                background: theme.cardBg,
-                                border: `1px solid ${theme.text}10`,
-                            }}
+                            className="
+                                group relative p-8 rounded-3xl
+                                bg-black/40
+                                border border-white/10
+                                backdrop-blur-xl
+                                overflow-hidden
+                                transition-all duration-500
+                                hover:-translate-y-1
+                            "
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.1, duration: 0.5 }}
                         >
-                            {/* Hover glow */}
+
+
+                            {/* Left Accent Line */}
                             <div
-                                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                                className="absolute left-0 top-0 h-full w-[2px]"
                                 style={{
-                                    background: `linear-gradient(to bottom right, ${theme.primary}10, transparent)`,
+                                    background: `linear-gradient(
+                                        to bottom,
+                                        transparent,
+                                        ${theme.accents.a},
+                                        transparent
+                                    )`,
                                 }}
                             />
 
-                            <div className="relative ">
+                            {/* Hover glow */}
+                            <div
+                                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                                style={{
+                                    background: `radial-gradient(
+                                        400px circle at top right,
+                                        ${theme.accents.a}12,
+                                        transparent 45%
+                                    )`,
+                                }}
+                            />
+
+                            <div className="relative z-10">
                                 <h3
-                                    className="text-lg  leading-snug"
-                                    style={{ color: theme.text }}
+                                    className="text-lg leading-relaxed font-medium"
+                                    style={{ color: theme.text, fontFamily: "var(--font-general-sans)" }}
                                 >
-                                    <AnimatedLine text={item} delay={0.1} />
+                                    <AnimatedLine text={item} delay={0.1 * i} />
                                 </h3>
                             </div>
                         </motion.div>

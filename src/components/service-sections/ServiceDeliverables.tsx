@@ -30,36 +30,95 @@ export default function ServiceDeliverables({ data }: { data: any }) {
             <div className="max-w-5xl mx-auto">
 
                 <motion.div
-                    className="flex justify-center items-center gap-2 font-semibold uppercase mb-6"
-                    style={{ y: yText, color: theme.primary }}
+                    className="text-center"
+                    style={{ y: yText }}
                 >
-                    <FaBoxOpen size={20} />
-                    Deliverables
+                    <div
+                        className="flex justify-center mb-6"
+                    >
+                        <div
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full"
+                            style={{
+                                background: `${theme.accents.a}08`,
+                                border: `1px solid ${theme.accents.a}20`,
+                                backdropFilter: "blur(4px)",
+                            }}
+                        >
+                            <div className="pulse red" />
+                            <span
+                                className="text-xs font-medium tracking-wide uppercase"
+                                style={{ color: theme.accents.a }}
+                            >
+                                Deliverables
+                            </span>
+                        </div>
+                    </div>
+                    <h2
+                        className="text-[32px] md:text-[42px] font-bold mb-12"
+                        style={{ color: theme.text }}
+                    >
+                        <AnimatedLine
+                            text={data.heading}
+                            delay={0.1}
+                            isHeading
+                            gradient={{
+                                from: "#fac175",
+                                via: "#ff006a",
+                                to: "#8b5cf6",
+                            }}
+                        />
+                    </h2>
                 </motion.div>
-                <motion.h2
-                    className="text-4xl font-bold text-center mb-12"
-                    style={{ y: yText, color: theme.text }}
-                >
-                    <AnimatedLine text={data.heading} delay={0.1} isHeading={true} />
-                </motion.h2>
                 <motion.div
-                    className="grid md:grid-cols-2 gap-x-12 gap-y-4"
+                    className="grid md:grid-cols-2 gap-6"
                     style={{ y: yList }}
                 >
                     {data.items.map((item: string, i: number) => (
                         <div
                             key={i}
-                            className="flex items-center gap-4 py-3 border-b"
-                            style={{ borderColor: `${theme.text}10` }}
+                            className="
+                                group relative p-6 rounded-2xl
+                                bg-black/40
+                                border border-white/10
+                                backdrop-blur-xl
+                                overflow-hidden
+                                transition-all duration-500
+                                hover:-translate-y-1
+                                flex items-center gap-4
+                            "
                         >
-                            <FaCheckCircle
-                                size={20}
-                                style={{ color: theme.accents.b }}
-                                className="shrink-0"
+
+
+                            <div
+                                className="absolute left-0 top-0 h-full w-[2px]"
+                                style={{
+                                    background: `linear-gradient(
+                                        to bottom,
+                                        transparent,
+                                        ${theme.accents.a},
+                                        transparent
+                                    )`,
+                                }}
                             />
 
-                            <div className="font-medium text-lg" style={{ color: theme.subtext }}>
-                                <AnimatedLine text={item} delay={0.1} />
+                            <div
+                                className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
+                                style={{
+                                    background: `${theme.accents.a}14`,
+                                    border: `1px solid ${theme.accents.a}30`,
+                                }}
+                            >
+                                <FaCheckCircle
+                                    size={18}
+                                    style={{ color: theme.accents.a }}
+                                />
+                            </div>
+
+                            <div
+                                className="font-medium text-[16px]"
+                                style={{ color: theme.text, fontFamily: "var(--font-general-sans)" }}
+                            >
+                                <AnimatedLine text={item} delay={0.1 * i} />
                             </div>
                         </div>
                     ))}

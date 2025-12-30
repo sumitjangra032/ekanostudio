@@ -556,7 +556,7 @@ export default function CareersPage() {
                           className="w-full h-14 rounded-xl font-bold text-base transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-3"
                           style={{
                             backgroundColor: theme.accents.a,
-                            color: theme.buttonText || '#ffffff',
+                            color: theme.primary || '#ffffff',
                           }}
                         >
                           {loading ? (

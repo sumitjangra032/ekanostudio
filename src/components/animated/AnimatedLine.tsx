@@ -42,7 +42,7 @@ export default function AnimatedLine({
   // 2. {...} segments
   // 3. Or sequence of non-whitespace characters (words)
   const regex = /(\[[^\]]+\]|\{[^}]+\}|\S+)/g;
-  const words = text.match(regex) || [];
+  const words = text ? (text.match(regex) || []) : [];
 
   const gradientStyle = gradient
     ? {

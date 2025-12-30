@@ -28,19 +28,46 @@ export default function ServiceTools({ data }: { data: any }) {
         >
             <div className="max-w-7xl mx-auto text-center">
                 <motion.div
-                    className="flex justify-center items-center gap-2 font-semibold uppercase"
-                    style={{ y: yText, color: theme.primary }}
+                    className="text-center"
+                    style={{ y: yText }}
                 >
-                    <FaToolbox size={16} />
-                    Tools
-                </motion.div>
+                    <div
+                        className="flex justify-center mb-6"
+                    >
+                        <div
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full"
+                            style={{
+                                background: `${theme.accents.a}08`,
+                                border: `1px solid ${theme.accents.a}20`,
+                                backdropFilter: "blur(4px)",
+                            }}
+                        >
+                            <div className="pulse red" />
+                            <span
+                                className="text-xs font-medium tracking-wide uppercase"
+                                style={{ color: theme.accents.a }}
+                            >
+                                Tools
+                            </span>
+                        </div>
+                    </div>
 
-                <motion.h2
-                    className="text-4xl font-bold mb-10"
-                    style={{ y: yText, color: theme.text }}
-                >
-                    <AnimatedLine text={data.heading} delay={0.1} isHeading={true}  />
-                </motion.h2>
+                    <h2
+                        className="text-[32px] md:text-[42px] font-bold mb-10"
+                        style={{ color: theme.text }}
+                    >
+                        <AnimatedLine
+                            text={data.heading}
+                            delay={0.1}
+                            isHeading
+                            gradient={{
+                                from: "#fac175",
+                                via: "#ff006a",
+                                to: "#8b5cf6",
+                            }}
+                        />
+                    </h2>
+                </motion.div>
 
                 <motion.div
                     className="flex flex-wrap justify-center gap-4"

@@ -898,7 +898,7 @@ export const SEO_DATA: {
                     XI. THE SEO MAINTENANCE ROUTINE
                 </h2>
                 <div className="space-y-4 text-gray-300">
-                    <p>SEO is not a one-time setup; it is a gym membership. You have to keep showing up.</p>
+                    <p>SEO is not a one-time setup; it is a gym membership. You have to keep showing up. Ekanostudio is here to help you maintain your SEO. Best SEO services in Hisar Haryana.</p>
 
                     <div className="space-y-6 mt-6">
                         <div className="bg-gray-900 p-5 rounded-lg">
@@ -970,6 +970,8 @@ export const SEO_DATA: {
                 <div className="space-y-4 text-gray-300">
                     <p>
                         SEO is often frustrating. It is slow. It takes 6 to 12 months to see the "Hockey Stick" growth curve. During the first few months, you will be writing content into the void. You will be fixing code that no one sees. You will feel like it isn't working.
+                        Best SEO services in Hisar Haryana. Seo , Digital marketing services in Hisar Haryana. Seo , On Page Seo , Off Page Seo , Local Seo , Ecommerce Seo , Local SEO Services in Hisar Haryana.
+                        Maintain Your Website on Top Ranking in Hisar Haryana.
                     </p>
 
                     <div className="bg-gray-900 p-6 rounded-lg my-8 border-l-4 border-red-500">

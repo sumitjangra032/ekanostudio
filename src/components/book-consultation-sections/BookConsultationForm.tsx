@@ -61,7 +61,7 @@ const consultationFormSchema = z.object({
     phone: z.string().min(10, "Phone number must be at least 10 digits."),
     country: z.string().min(1, "Please select a country."),
     callDate: z.date({
-        required_error: "Please select a date.",
+        message: "Please select a date.",
     }).refine((date) => {
         const today = startOfDay(new Date());
         return !isBefore(date, today);

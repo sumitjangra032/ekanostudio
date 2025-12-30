@@ -9,7 +9,6 @@ import { THEMES } from "@/constants/theme";
 import AnimateDownloadedSVG from "../animated/AnimateDownloadedSVG";
 import { IoAnalytics } from "react-icons/io5";
 import AnimatedLine from "../animated/AnimatedLine";
-import RandomGradientGlow from "../effects/RandomGradientGlow";
 import { AnimatedNumber } from "../animated/AnimatedNumber";
 
 export default function ServiceMetrics({ data }: { data: any }) {
@@ -23,71 +22,120 @@ export default function ServiceMetrics({ data }: { data: any }) {
         offset: ["start end", "end start"],
     });
 
-    const yText = useTransform(scrollYProgress, [0, 1], [0, -115]);
-    const yCards = useTransform(scrollYProgress, [0, 1], [0, -15]);
+    const yText = useTransform(scrollYProgress, [0, 1], [0, -80]);
+    const yCards = useTransform(scrollYProgress, [0, 1], [0, -10]);
 
     return (
         <section
             id="metrics"
             ref={sectionRef}
             className="py-20 px-6"
-            style={{  }}
+            style={{}}
         >
             <div className="max-w-7xl mx-auto">
 
                 <motion.div
-                    className="flex justify-center items-center gap-2 font-semibold uppercase"
-                    style={{ y: yText, color: theme.primary }}
+                    className="text-center mb-12 mt-3"
+                    style={{ y: yText }}
                 >
-                    <IoAnalytics size={16} />
-                    Metrics
-                </motion.div>
-
-                <div className="text-center mb-12 mt-3">
-
-                    <motion.h2
-                        className="text-4xl font-bold mb-4 "
-                        style={{ y: yText, color: theme.text }}
+                    <div
+                        className="flex justify-center mb-6"
                     >
-                        <AnimatedLine text={data.heading} delay={0.1} isHeading={true} />
-                    </motion.h2>
+                        <div
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full"
+                            style={{
+                                background: `${theme.accents.a}08`,
+                                border: `1px solid ${theme.accents.a}20`,
+                                backdropFilter: "blur(4px)",
+                            }}
+                        >
+                            <div className="pulse red" />
+                            <span
+                                className="text-xs font-medium tracking-wide uppercase"
+                                style={{ color: theme.accents.a }}
+                            >
+                                Metrics
+                            </span>
+                        </div>
+                    </div>
 
-                    <motion.div
+                    <h2
+                        className="text-[32px] md:text-[42px] font-bold mb-4"
+                        style={{ color: theme.text }}
+                    >
+                        <AnimatedLine
+                            text={data.heading}
+                            delay={0.1}
+                            isHeading
+                            gradient={{
+                                from: "#fac175",
+                                via: "#ff006a",
+                                to: "#8b5cf6",
+                            }}
+                        />
+                    </h2>
+
+                    <div
                         className="text-lg"
-                        style={{ y: yText, color: theme.subtext }}
+                        style={{ color: theme.subtext }}
                     >
                         <AnimatedLine text={data.subheading} />
-                    </motion.div>
-                </div>
+                    </div>
+                </motion.div>
 
                 <motion.div
-                    className="grid grid-cols-2 md:grid-cols-4 gap-8"
+                    className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8"
                     style={{ y: yCards }}
                 >
                     {data.items.map((item: any, i: number) => (
                         <motion.div
                             key={i}
-                            className="text-center p-6 rounded-2xl border flex flex-col items-center gap-2 relative overflow-hidden group"
-                            style={{
-                                borderColor: `${theme.text}15`,
-                                background: theme.cardBg,
-                            }}
+                            className="
+                                group relative p-5 md:p-8 rounded-2xl md:rounded-3xl
+                                bg-black/40
+                                border border-white/10
+                                backdrop-blur-xl
+                                overflow-hidden
+                                transition-all duration-500
+                                hover:-translate-y-1
+                                flex flex-col items-center gap-2
+                            "
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.1, duration: 0.5 }}
                         >
-                            <RandomGradientGlow
-                                colorA={theme.accents.a}
-                                colorB={theme.accents.b}
+                            {/* Left Accent Line */}
+                            <div
+                                className="absolute left-0 top-0 h-full w-[2px]"
+                                style={{
+                                    background: `linear-gradient(
+                                        to bottom,
+                                        transparent,
+                                        ${theme.accents.a},
+                                        transparent
+                                    )`,
+                                }}
+                            />
+
+                            {/* Hover Glow */}
+                            <div
+                                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                                style={{
+                                    background: `radial-gradient(
+                                        400px circle at top right,
+                                        ${theme.accents.a}12,
+                                        transparent 45%
+                                    )`,
+                                }}
                             />
 
                             {/* ICON */}
-                            <div className="mb-2 relative z-10">
+                            <div className="mb-4 relative z-10 p-4 rounded-2xl" style={{ background: `${theme.accents.a}08`, border: `1px solid ${theme.accents.a}15` }}>
                                 <AnimateDownloadedSVG
                                     src={item.icon}
-                                    size={40}
-                                    stroke={theme.primary}
+                                    size={36}
+                                    stroke={theme.accents.a}
                                     repeat={false}
                                 />
                             </div>
@@ -95,7 +143,7 @@ export default function ServiceMetrics({ data }: { data: any }) {
                             {/* NUMBER */}
                             <h3
                                 className="text-4xl font-bold relative z-10 flex items-center justify-center"
-                                style={{ color: theme.primary }}
+                                style={{ color: theme.text, fontFamily: "var(--font-general-sans)" }}
                             >
                                 {(() => {
                                     const valStr = String(item.value).trim();
@@ -151,7 +199,7 @@ export default function ServiceMetrics({ data }: { data: any }) {
                             </h3>
 
                             {/* LABEL */}
-                            <p className="relative z-10" style={{ color: theme.subtext }}>
+                            <p className="relative z-10 text-sm font-medium tracking-tight" style={{ color: theme.subtext, fontFamily: "var(--font-inter)" }}>
                                 {item.label}
                             </p>
                         </motion.div>

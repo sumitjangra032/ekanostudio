@@ -17,6 +17,7 @@ import { THEMES } from "@/constants/theme";
 import AnimateDownloadedSVG from "../animated/AnimateDownloadedSVG";
 import { TiFlowMerge } from "react-icons/ti";
 import RandomGradientGlow from "../effects/RandomGradientGlow";
+import FloatingParticles from "../animated/FloatingParticles";
 import ParallaxBackground from "../animated/ParallaxBackground";
 
 export default function ServiceProcess({ data }: { data: any }) {
@@ -100,31 +101,55 @@ export default function ServiceProcess({ data }: { data: any }) {
         >
             <ParallaxBackground
                 image="/images/service-page-bg/wave-svg-2.svg"
-                speed={0.5}
+                speed={0.3}
                 zIndex={0}
-                opacity={0.9}
+                opacity={0.4}
                 backgroundSize="cover"
                 backgroundPosition="center"
             />
-            <div className="max-w-6xl mx-auto">
 
-                <motion.div
-                    className="flex justify-center items-center gap-2 font-semibold uppercase"
-                    style={{ y: yText, color: theme.primary }}
-                >
-                    <TiFlowMerge size={16} />
-                    Process
-                </motion.div>
+            {/* Floating Particles */}
+            <FloatingParticles count={15} />
+            <div className="max-w-6xl mx-auto">
 
                 <motion.div
                     className="flex flex-col items-center text-center"
                     style={{ y: yText }}
                 >
+                    <div
+                        className="flex justify-center mb-6"
+                    >
+                        <div
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full"
+                            style={{
+                                background: `${theme.accents.a}08`,
+                                border: `1px solid ${theme.accents.a}20`,
+                                backdropFilter: "blur(4px)",
+                            }}
+                        >
+                            <div className="pulse red" />
+                            <span
+                                className="text-xs font-medium tracking-wide uppercase"
+                                style={{ color: theme.accents.a }}
+                            >
+                                Process
+                            </span>
+                        </div>
+                    </div>
                     <h2
-                        className="text-4xl font-bold mt-3"
+                        className="text-[32px] md:text-[42px] font-bold"
                         style={{ color: theme.text }}
                     >
-                        <AnimatedLine text={data.heading} delay={0.1} isHeading={true} />
+                        <AnimatedLine
+                            text="Step By Step"
+                            delay={0.1}
+                            isHeading
+                            gradient={{
+                                from: "#fac175",
+                                via: "#ff006a",
+                                to: "#8b5cf6",
+                            }}
+                        />
                     </h2>
                 </motion.div>
 
@@ -246,13 +271,42 @@ function ProcessStep({
             {/* Content Card */}
             <div className="flex-1 md:w-1/2 pl-12 md:pl-0">
                 <div
-                    className={`relative p-8 rounded-2xl border ${isEven ? "md:mr-12" : "md:ml-12"
-                        }`}
-                    style={{
-                        background: theme.cardBg,
-                        borderColor: `${theme.text}10`,
-                    }}
+                    className={`
+                        relative p-8 rounded-3xl
+                        bg-black/40
+                        border border-white/10
+                        backdrop-blur-xl
+                        overflow-hidden
+                        transition-all duration-500
+                        hover:-translate-y-1
+                        ${isEven ? "md:mr-12" : "md:ml-12"}
+                    `}
                 >
+
+
+                    <div
+                        className="absolute left-0 top-0 h-full w-[2px]"
+                        style={{
+                            background: `linear-gradient(
+                                to bottom,
+                                transparent,
+                                ${theme.accents.a},
+                                transparent
+                            )`,
+                        }}
+                    />
+
+                    {/* Hover glow */}
+                    <div
+                        className="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                        style={{
+                            background: `radial-gradient(
+                                600px circle at top right,
+                                ${theme.accents.a}12,
+                                transparent 45%
+                            )`,
+                        }}
+                    />
 
                     <RandomGradientGlow
                         colorA={theme.accents.a}
@@ -262,29 +316,38 @@ function ProcessStep({
                     />
 
                     {/* Title + Icon */}
-                    <div className="flex items-center gap-4 mb-4 justify-between">
+                    <div className="flex items-center gap-4 mb-4 justify-between relative z-10">
                         <div className="flex items-center gap-4">
-                            <div className="p-2 rounded-lg bg-white/5 border border-white/10">
+                            <div
+                                className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
+                                style={{
+                                    background: `${theme.accents.a}14`,
+                                    border: `1px solid ${theme.accents.a}30`,
+                                }}
+                            >
                                 <AnimateDownloadedSVG
                                     src={step.icon}
-                                    size={32}
-                                    stroke={theme.primary}
+                                    size={28}
+                                    stroke={theme.accents.a}
                                     repeat={false}
                                 />
                             </div>
-                            <h3 className="text-xl font-medium" style={{ color: theme.text }}>
+                            <h3
+                                className="text-2xl font-semibold tracking-tight"
+                                style={{ color: theme.text, fontFamily: "var(--font-general-sans)" }}
+                            >
                                 <AnimatedLine text={step.title} delay={0.1} />
                             </h3>
                         </div>
                         <span
                             className="text-4xl font-black opacity-10"
-                            style={{ color: theme.primary }}
+                            style={{ color: theme.accents.a }}
                         >
                             {idx + 1}
                         </span>
                     </div>
 
-                    <div className="leading-relaxed" style={{ color: theme.subtext }}>
+                    <div className="leading-relaxed relative z-10" style={{ color: theme.subtext, fontFamily: "var(--font-inter)" }}>
                         <AnimatedLine text={step.description} />
                     </div>
                 </div>

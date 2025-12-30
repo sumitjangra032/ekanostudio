@@ -26,7 +26,7 @@ export default function ServiceCta({ data }: { data: any }) {
         <section
             id="cta"
             ref={sectionRef}
-            className="py-20 px-6 text-center"
+            className="py-10 px-6 text-center"
         >
             <div className="max-w-3xl mx-auto">
                 <motion.div style={{ y: yText }}>
@@ -39,14 +39,21 @@ export default function ServiceCta({ data }: { data: any }) {
                     </Link>
 
                     <h2
-                        className="text-4xl font-light leading-tight mb-4"
+                        className="text-[32px] md:text-[42px] font-bold leading-tight mb-4"
                         style={{ color: theme.text }}
                     >
-                        <AnimatedLine text={data.heading} delay={0.1} />
+                        <AnimatedLine
+                            text={data.heading}
+                            delay={0.1}
+                            gradient={{
+                                from: "#fac175",
+                                via: "#ff006a",
+                                to: "#8b5cf6",
+                            }}
+                        />
                     </h2>
-                </motion.div>
 
-                <motion.div style={{ y: ySub }}>
+
                     <div
                         className="text-lg font-medium leading-relaxed mb-10"
                         style={{ color: theme.subtext }}
@@ -63,6 +70,7 @@ export default function ServiceCta({ data }: { data: any }) {
                         />
                     </div>
                 </motion.div>
+
             </div>
         </section>
     );
