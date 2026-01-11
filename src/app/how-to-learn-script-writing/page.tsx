@@ -1,6 +1,8 @@
 import ScreenwritingMasterclassPage from "@/components/blogs/how-to-learn-script-writing";
 import { Metadata } from "next";
 
+const SITE_URL = "https://ekanostudio.com";
+
 export const metadata: Metadata = {
   title: "The Screenwriter's Master Class: Structure, Psychology, and Selling",
   description:
@@ -18,8 +20,20 @@ export const metadata: Metadata = {
     "Final Draft",
     "The Black List"
   ],
+  openGraph: {
+    title: "The Screenwriter's Master Class: Structure, Psychology, and Selling",
+    description: "A deep dive into the technical format, psychological character design, and business strategy required to write a professional, salable screenplay.",
+    url: `${SITE_URL}/how-to-learn-script-writing`,
+    siteName: "Ekanostudio",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Screenwriter's Master Class: Structure, Psychology, and Selling",
+    description: "A deep dive into the technical format, psychological character design, and business strategy.",
+  },
   alternates: {
-    canonical: "/how-to-learn-script-writing",
+    canonical: `${SITE_URL}/how-to-learn-script-writing`,
   },
 };
 export default function scriptwritingblogpage() {

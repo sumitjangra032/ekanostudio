@@ -1,6 +1,8 @@
 import CreateOnlineMarketplaceBlog from "@/components/blogs/how-to-create-online-marketplace";
 import { Metadata } from "next";
 
+const SITE_URL = "https://ekanostudio.com";
+
 export const metadata: Metadata = {
   title: "How to Create an Online Marketplace: Strategy, Monetization, Trust & Growth",
   description:
@@ -16,8 +18,20 @@ export const metadata: Metadata = {
     "escrow payments marketplace",
     "managed marketplace",
   ],
+  openGraph: {
+    title: "How to Create an Online Marketplace: Strategy, Monetization, Trust & Growth",
+    description: "A complete in-depth guide on how to create an online marketplace.",
+    url: `${SITE_URL}/how-to-create-online-marketplace`,
+    siteName: "Ekanostudio",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How to Create an Online Marketplace: Strategy, Monetization, Trust & Growth",
+    description: "A complete in-depth guide on how to create an online marketplace.",
+  },
   alternates: {
-    canonical: "/create-online-marketplace",
+    canonical: `${SITE_URL}/how-to-create-online-marketplace`,
   },
 };
 

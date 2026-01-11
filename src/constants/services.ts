@@ -55,6 +55,31 @@ export const SERVICES_CONTENT = {
     },
 
     /* -------------------------------------------------------------------
+     * APP DEVELOPMENT
+     * ------------------------------------------------------------------- */
+    {
+      name: "App Development",
+      slug: "app-development",
+      icon: FaMobileAlt,
+      items: [
+        { title: "Mobile App Development", desc: "iOS, Android, React Native, Flutter", slug: "mobile-app-development", icon: FaMobileAlt, },
+        { title: "Web App Development", desc: "Progressive Web Apps, cross-platform solutions", slug: "web-app-development", icon: FaLaptopCode, },
+      ],
+    },
+
+    /* -------------------------------------------------------------------
+     * AI AUTOMATION / N8N
+     * ------------------------------------------------------------------- */
+    {
+      name: "AI Automation / n8n",
+      slug: "ai-automation",
+      icon: FaRobot,
+      items: [
+        { title: "AI Automation & n8n Workflows", desc: "n8n automation, AI-powered workflows, intelligent automation", slug: "ai-automation-n8n", icon: FaRobot, },
+      ],
+    },
+
+    /* -------------------------------------------------------------------
      * SEO
      * ------------------------------------------------------------------- */
     {

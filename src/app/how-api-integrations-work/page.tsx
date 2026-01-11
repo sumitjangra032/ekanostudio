@@ -1,6 +1,8 @@
 import ApiIntegrationsBlog from "@/components/blogs/how-api-integrations-work";
 import { Metadata } from "next";
 
+const SITE_URL = "https://ekanostudio.com";
+
 export const metadata: Metadata = {
   title: "The Complete Guide to API Integrations: Protocols, Security & Strategy",
   description:
@@ -20,8 +22,20 @@ export const metadata: Metadata = {
     "API Security",
     "OpenAPI"
   ],
+  openGraph: {
+    title: "The Complete Guide to API Integrations: Protocols, Security & Strategy",
+    description: "A technical and strategic deep dive into building, managing, and securing vital API connections.",
+    url: `${SITE_URL}/how-api-integrations-work`,
+    siteName: "Ekanostudio",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Complete Guide to API Integrations: Protocols, Security & Strategy",
+    description: "A technical and strategic deep dive into building, managing, and securing vital API connections.",
+  },
   alternates: {
-    canonical: "/how-api-integrations-work",
+    canonical: `${SITE_URL}/how-api-integrations-work`,
   },
 };
 

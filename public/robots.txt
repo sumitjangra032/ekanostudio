@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ekanostudio.com
+
+# Sitemaps
+Sitemap: https://ekanostudio.com/sitemap.xml

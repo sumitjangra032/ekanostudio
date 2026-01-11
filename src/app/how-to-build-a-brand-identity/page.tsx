@@ -1,6 +1,8 @@
 import BrandingMasterclass from "@/components/blogs/how-to-build-a-brand-identity";
 import { Metadata } from "next";
 
+const SITE_URL = "https://ekanostudio.com";
+
 export const metadata: Metadata = {
   title: "How to Build a Brand Identity: Strategy, Psychology & Visuals",
   description:
@@ -16,8 +18,20 @@ export const metadata: Metadata = {
     "brand equity",
     "rebranding risks",
   ],
+  openGraph: {
+    title: "How to Build a Brand Identity: Strategy, Psychology & Visuals",
+    description: "A comprehensive master class on how to build a powerful brand identity.",
+    url: `${SITE_URL}/how-to-build-a-brand-identity`,
+    siteName: "Ekanostudio",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How to Build a Brand Identity: Strategy, Psychology & Visuals",
+    description: "A comprehensive master class on how to build a powerful brand identity.",
+  },
   alternates: {
-    canonical: "/how-to-build-a-brand-identity",
+    canonical: `${SITE_URL}/how-to-build-a-brand-identity`,
   },
 };
 
