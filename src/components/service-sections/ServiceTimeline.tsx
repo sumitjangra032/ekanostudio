@@ -79,7 +79,7 @@ export default function ServiceTimeline({ data }: { data: any }) {
                         key={i}
                         className="
                             group relative w-full md:flex-1 p-8 rounded-3xl
-                            bg-black/40
+                            bg-[#09090b]
                             border border-white/10
                             backdrop-blur-xl
                             overflow-hidden

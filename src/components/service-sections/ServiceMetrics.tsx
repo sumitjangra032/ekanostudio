@@ -156,32 +156,6 @@ export default function ServiceMetrics({ data }: { data: any }) {
                                 <div className="absolute inset-0 rounded-2xl md:rounded-3xl bg-gradient-to-br from-black/40 via-black/30 to-black/20" />
                             </div>
 
-                            {/* Left Accent Line */}
-                            <div
-                                className="absolute left-0 top-1/2 -translate-y-1/2 h-2/3 w-[1px]"
-                                style={{
-                                    background: `linear-gradient(
-                                        to bottom,
-                                        transparent,
-                                        ${theme.accents.a}80,
-                                        transparent
-                                    )`,
-                                }}
-                            />
-
-                            {/* Right Accent Line */}
-                            <div
-                                className="absolute right-0 top-1/2 -translate-y-1/2 h-2/3 w-[1px]"
-                                style={{
-                                    background: `linear-gradient(
-                                        to bottom,
-                                        transparent,
-                                        ${theme.accents.b}80,
-                                        transparent
-                                    )`,
-                                }}
-                            />
-
                             {/* Hover Glow */}
                             <div
                                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
@@ -203,12 +177,16 @@ export default function ServiceMetrics({ data }: { data: any }) {
                                     boxShadow: `0 4px 20px ${theme.accents.a}10`
                                 }}
                             >
-                                <AnimateDownloadedSVG
-                                    src={item.icon}
-                                    size={32}
-                                    stroke={theme.accents.a}
-                                    repeat={false}
-                                />
+                                {typeof item.icon === 'string' ? (
+                                    <AnimateDownloadedSVG
+                                        src={item.icon}
+                                        size={32}
+                                        stroke={theme.accents.a}
+                                        repeat={false}
+                                    />
+                                ) : (
+                                    <item.icon size={32} color={theme.accents.a} />
+                                )}
                             </div>
 
                             {/* Number Value */}

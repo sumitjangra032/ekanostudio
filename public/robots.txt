@@ -3,7 +3,8 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://ekanostudio.com
+Host: https://www.ekanostudio.com
 
 # Sitemaps
-Sitemap: https://ekanostudio.com/sitemap.xml
+Sitemap: https://www.ekanostudio.com/sitemap.xml
+    

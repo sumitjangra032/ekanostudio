@@ -115,15 +115,17 @@ export default function ServiceHero({ data }: { data: any }) {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row justify-center gap-4 items-center sm:items-stretch">
-            {/* Primary CTA */}
-            <AnimatedRotateButton
-              text={data.serviceCta.text}
-              href={`${GLOBAL_CTA_CONTENT.serviceForm.href}?category=${category}&service=${service}`}
-              color={theme.buttonBg2}
-              accent={theme.accents}
-              variant="secondary"
-              className="w-full sm:w-auto"
-            />
+            {/* Primary CTA - Optional */}
+            {data.serviceCta && (
+              <AnimatedRotateButton
+                text={data.serviceCta.text}
+                href={`${GLOBAL_CTA_CONTENT.serviceForm.href}?category=${category}&service=${service}`}
+                color={theme.buttonBg2}
+                accent={theme.accents}
+                variant="secondary"
+                className="w-full sm:w-auto"
+              />
+            )}
             <AnimatedRotateButton
               text={GLOBAL_CTA_CONTENT.bookConsultation.title}
               href={GLOBAL_CTA_CONTENT.bookConsultation.href}

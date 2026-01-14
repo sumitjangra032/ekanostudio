@@ -21,6 +21,13 @@ export default function ServiceWhyMatters({ data }: { data: any }) {
     const yText = useTransform(scrollYProgress, [0, 1], [0, -150]);
     const yCards = useTransform(scrollYProgress, [0, 1], [0, -15]);
 
+    const getGridClass = () => {
+        const count = data.items.length;
+        if (count === 1) return "grid-cols-1 max-w-3xl mx-auto";
+        if (count === 2) return "grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto";
+        return "grid-cols-1 md:grid-cols-2 lg:grid-cols-3";
+    };
+
     return (
         <section
             id="whyMatters"
@@ -72,7 +79,7 @@ export default function ServiceWhyMatters({ data }: { data: any }) {
                 </motion.div>
 
                 <motion.div
-                    className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+                    className={`grid ${getGridClass()} gap-6`}
                     style={{ y: yCards }}
                 >
                     {data.items.map((item: string, i: number) => (
