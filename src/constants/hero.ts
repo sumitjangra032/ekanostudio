@@ -1,16 +1,16 @@
 export const HERO_CONTENT = {
   headline: [
-    "Build.Launch.Grow.",
+    "Design. Deploy. Grow.",
     "We Handle [Everything] Else.",
   ],
 
   description: [
-    "Full-digital solutions for brands looking to grow and gain their presence online.",
+    "End-to-end digital solutions for brands that want clarity, performance, and sustainable online growth.",
   ],
 
   subNotes: [
-    "* No long-term commitment · Budget friendly · Flexible plans · No Ghosting*",
-    "* Total control · Regularly Updates on Ongoing Projects  *",
+    "* No long-term contracts · Transparent pricing · Flexible engagement · Clear communication *",
+    "* Full visibility · Regular progress updates · You stay in control *",
   ],
 
   floatingIcons: {

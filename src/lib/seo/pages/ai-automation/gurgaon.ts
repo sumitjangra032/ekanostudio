@@ -7,66 +7,122 @@ export const data: SeoPageData = {
         slug: "ai-automation",
         targetServiceSlug: "ai-automation-n8n",
         categorySlug: "ai-automation",
-        keywords: ["Business Automation", "AI Workflows", "n8n Integration"],
-        description: "Streamline your operations and reduce costs with cutting-edge AI automation and workflow optimization.",
+        keywords: [
+            "AI Automation Gurgaon",
+            "Enterprise Automation",
+            "AI Workflows",
+            "n8n Integration"
+        ],
+        description:
+            "Automate complex enterprise workflows and reduce operational costs with secure AI automation and n8n-based systems built for scale.",
     },
+
     location: {
         name: "Gurgaon",
         slug: "gurgaon",
         type: "city",
         country: "India",
         adjective: "Gurgaon-based",
-        context: "in the corporate hub of NCR",
-        metaTitleSuffix: "Gurgaon | Leading Agency",
-        traits: ["MNCs", "financial districts", "tech startups"],
+        context: "in NCR’s corporate and financial hub",
+        metaTitleSuffix: "Gurgaon | Enterprise Automation Experts",
+        traits: ["multinational corporations", "financial operations", "enterprise technology teams"],
     },
+
     meta: {
-        title: "AI Automation Services Gurgaon | n8n & Workflow Excellence",
-        description: "Modernize your Gurgaon enterprise. We build custom AI and automation workflows to boost productivity and reduce operational costs for Gurgaon firms.",
+        title: "AI Automation Services in Gurgaon | Enterprise Workflow Automation",
+        description:
+            "AI automation solutions for Gurgaon enterprises. We design secure n8n workflows and AI systems that improve efficiency, reduce errors, and scale operations.",
         canonical: "/ai-automation-gurgaon",
     },
+
     content: {
         hero: {
-            title: "Intelligent Automation for Gurgaon's Future-Ready Enterprise",
-            subtitle: "Boost productivity. Reduce manual error. We bring secure AI and workflow automation to Gurgaon.",
+            title: "AI Automation for Gurgaon’s Enterprise Ecosystem",
+            subtitle:
+                "Streamline high-volume operations, reduce manual risk, and improve consistency with enterprise-grade AI automation.",
         },
+
         overview: {
-            title: "Operational Excellence with AI in Cyber City",
-            text: "In Gurgaon's lightning-fast corporate world, manual overhead is the enemy of scale. Ekanostudio brings high-level AI automation to your business. Using n8n and OpenAI, we build secure, enterprise-grade workflows that automate sales triage, lead entry, and document processing, saving your firm thousands of hours every month.",
+            title: "Enterprise Automation for High-Volume Operations",
+            text:
+                "Gurgaon is home to multinational corporations, finance teams, and operations-heavy enterprises where speed, accuracy, and reliability are critical. Ekanostudio helps Gurgaon-based organizations implement AI automation using n8n and OpenAI. We design workflows that automate sales qualification, document handling, finance operations, and internal reporting—helping teams operate efficiently at scale.",
         },
+
         whyChoose: {
-            title: "Why Automate with Ekanostudio",
+            title: "Why Enterprises in Gurgaon Choose Us",
             points: [
-                { title: "Enterprise Reliability", desc: "Robust n8n setups that integrate with your global tools." },
-                { title: "Custom AI Agents", desc: "Bots designed with your specific business logic and data." },
-                { title: "Measurable ROI", desc: "Radically lowering operational costs while improving speed." }
-            ]
+                {
+                    title: "Enterprise-Grade Architecture",
+                    desc:
+                        "Robust n8n workflows designed to integrate with global CRMs, ERPs, and internal systems.",
+                },
+                {
+                    title: "AI Built Around Your Business Logic",
+                    desc:
+                        "Custom AI agents configured to follow your approval flows, compliance rules, and data structure.",
+                },
+                {
+                    title: "Clear and Measurable ROI",
+                    desc:
+                        "Automation that reduces operational cost, improves turnaround time, and minimizes human error.",
+                },
+            ],
         },
+
         deliverables: [
-            "Process & Workflow Audit",
-            "Custom n8n Enterprise Workflows",
-            "AI Customer Success Agents",
-            "Secure API Integration Services",
-            "Automated Finance & Triage Bots",
-            "Training and Maintenance Support"
+            "Enterprise process and automation audit",
+            "Custom n8n workflows for large teams",
+            "AI-powered customer and operations agents",
+            "Secure API and internal system integrations",
+            "Automation for finance, reporting, and triage",
+            "Ongoing support, training, and maintenance",
         ],
+
         process: {
-            title: "Your Automation Roadmap",
+            title: "Our Enterprise Automation Framework",
             steps: [
-                { title: "Analysis", desc: "Identifying friction points in your Gurgaon office's operations." },
-                { title: "Blueprint", desc: "Designing a secure and efficient automated path." },
-                { title: "Development", desc: "Building and staging your custom AI flows safely." },
-                { title: "Full Integration", desc: "Deploying and training your staff for peak efficiency." }
-            ]
+                {
+                    title: "Operational Assessment",
+                    desc:
+                        "We analyze workflow bottlenecks across your Gurgaon-based operations.",
+                },
+                {
+                    title: "Automation Blueprint",
+                    desc:
+                        "We design a secure, scalable automation architecture aligned with enterprise needs.",
+                },
+                {
+                    title: "Controlled Development",
+                    desc:
+                        "AI workflows are built, tested, and validated in staged environments.",
+                },
+                {
+                    title: "Deployment & Enablement",
+                    desc:
+                        "We deploy the system and ensure your teams are fully trained to operate it.",
+                },
+            ],
         },
+
         cta: {
-            title: "Want to transform your operations?",
-            text: "Request a free automation consultation for your Gurgaon business."
+            title: "Ready to optimize enterprise operations?",
+            text:
+                "Schedule a free AI automation consultation for your Gurgaon-based organization.",
         },
+
         relatedServices: [
-            { title: "CRM Setup", link: "/services/email-automation/crm-setup" },
-            { title: "Web development", link: "/services/web-design-development/website-development" },
-            { title: "Digital Marketing", link: "/services/digital-marketing/digital-marketing" }
-        ]
-    }
+            {
+                title: "CRM Setup & Automation",
+                link: "/services/email-automation/crm-setup",
+            },
+            {
+                title: "Website Development",
+                link: "/services/web-design-development/website-development",
+            },
+            {
+                title: "Digital Marketing",
+                link: "/services/digital-marketing/digital-marketing",
+            },
+        ],
+    },
 };

@@ -7,66 +7,123 @@ export const data: SeoPageData = {
         slug: "content-creation",
         targetServiceSlug: "content-writing",
         categorySlug: "content-creation",
-        keywords: ["Content Marketing", "Copywriting", "Video Production"],
-        description: "Engage your audience with compelling content that tells your story and builds brand authority.",
+        keywords: [
+            "Creazione Contenuti Italia",
+            "Content Marketing Italia",
+            "Copywriting Professionale",
+            "Produzione Video Italia",
+            "Strategia di Contenuto"
+        ],
+        description:
+            "Servizi di creazione contenuti in Italia: copywriting, video e contenuti digitali progettati per rafforzare brand, visibilità e autorevolezza.",
     },
+
     location: {
         name: "Italy",
         slug: "italy",
         type: "country",
         country: "Italy",
         adjective: "Italian",
-        context: "in Italy",
-        metaTitleSuffix: "Italy | Servizi Digitali",
+        context: "in Italia",
+        metaTitleSuffix: "Italia | Content & Media Studio",
         traits: ["design excellence", "fashion & industry", "creative market"],
     },
+
     meta: {
-        title: "Creazione Contenuti Italia | Video, Copywriting e Digital Art",
-        description: "Racconta la tua storia con lo stile italiano. Produciamo video, testi e grafiche di alta qualità per coinvolgere il pubblico in Italia.",
+        title: "Creazione Contenuti Italia | Video, Copywriting e Strategia",
+        description:
+            "Creiamo contenuti di alta qualità per il mercato italiano: video, testi e visual pensati per coinvolgere, posizionare e far crescere il tuo brand.",
         canonical: "/content-creation-italy",
     },
+
     content: {
         hero: {
-            title: "Contenuti che Parlano al Cuore dell'Italia",
-            subtitle: "Dalla scrittura creativa alla produzione video professionale, diamo voce al tuo brand nel mercato italiano.",
+            title: "Contenuti Pensati per il Mercato Italiano",
+            subtitle:
+                "Creatività, strategia e qualità editoriale per brand che vogliono distinguersi in Italia.",
         },
+
         overview: {
-            title: "Storytelling Strategico per Brand Italiani",
-            text: "In Italia, la comunicazione è un'arte. Ekanostudio aiuta le aziende a trasmettere i propri valori attraverso contenuti originali e coinvolgenti. Che si tratti di un blog post ottimizzato o di un video promozionale per i social media, curiamo ogni parola e immagine per massimizzare l'impatto sul tuo target.",
+            title: "Lo Storytelling come Vantaggio Competitivo",
+            text:
+                "In Italia, il contenuto non è solo comunicazione: è percezione, stile e fiducia. Ekanostudio supporta aziende e brand nella creazione di contenuti digitali che uniscono estetica e strategia. Dalla scrittura SEO-oriented alla produzione video professionale, sviluppiamo asset pensati per rafforzare l’identità del brand e generare risultati concreti nel tempo.",
         },
+
         whyChoose: {
-            title: "L'Arte della Comunicazione",
+            title: "Perché Investire nei Contenuti Giusti",
             points: [
-                { title: "Copywriting Italiano", desc: "Testi scritti da professionisti madrelingua per un tono di voce autentico." },
-                { title: "Produzione Multimediale", desc: "Video e grafiche che catturano l'attenzione al primo sguardo." },
-                { title: "Strategia Editoriale", desc: "Pianifichiamo i contenuti per mantenere alta l'authority del tuo brand." }
-            ]
+                {
+                    title: "Copywriting di Qualità",
+                    desc:
+                        "Testi chiari, autentici e ottimizzati, scritti in italiano professionale.",
+                },
+                {
+                    title: "Produzione Visiva Curata",
+                    desc:
+                        "Video e grafiche coerenti con il gusto estetico e gli standard italiani.",
+                },
+                {
+                    title: "Approccio Strategico",
+                    desc:
+                        "Ogni contenuto è progettato per supportare visibilità, posizionamento e fiducia.",
+                },
+            ],
         },
+
         deliverables: [
-            "Video Editing e Motion Graphics",
-            "Copywriting per Blog e Siti Web",
-            "Grafiche per Social Media",
-            "Newsletter e DEM",
-            "White Paper e Case Studies",
-            "Script per Spot e Presentazioni"
+            "Produzione video e post-produzione professionale",
+            "Copywriting per siti web e blog aziendali",
+            "Contenuti visivi per social media",
+            "Newsletter e comunicazioni digitali",
+            "White paper e case study",
+            "Script per video, spot e presentazioni",
         ],
+
         process: {
-            title: "Come Nascono i Nostri Contenuti",
+            title: "Il Nostro Metodo di Lavoro",
             steps: [
-                { title: "Ideazione", desc: "Sviluppiamo concept creativi basati sulle tendenze italiane." },
-                { title: "Sviluppo", desc: "Realizziamo i contenuti con strumentazione professionale." },
-                { title: "Revisione", desc: "Affiniamo ogni dettaglio insieme a te." },
-                { title: "Social Ready", desc: "Adattiamo i contenuti per ogni tua piattaforma digitale." }
-            ]
+                {
+                    title: "Analisi",
+                    desc:
+                        "Studio del brand, del pubblico e del contesto competitivo italiano.",
+                },
+                {
+                    title: "Strategia",
+                    desc:
+                        "Definizione del messaggio, dei formati e dei canali di distribuzione.",
+                },
+                {
+                    title: "Produzione",
+                    desc:
+                        "Creazione dei contenuti con attenzione a qualità, coerenza e SEO.",
+                },
+                {
+                    title: "Consegna",
+                    desc:
+                        "Asset pronti per l’uso su web, social e campagne digitali.",
+                },
+            ],
         },
+
         cta: {
-            title: "Hai una storia da raccontare?",
-            text: "Creiamo insieme contenuti che ispirano i tuoi clienti italiani."
+            title: "Vuoi rafforzare la tua presenza in Italia?",
+            text:
+                "Costruiamo contenuti che rappresentano davvero il tuo brand.",
         },
+
         relatedServices: [
-            { title: "Social Media Marketing", link: "/services/social-media-marketing/social-media-management" },
-            { title: "SEO", link: "/services/seo/on-page-seo" },
-            { title: "Branding", link: "/services/branding/brand-identity-design" }
-        ]
-    }
+            {
+                title: "Social Media Marketing",
+                link: "/services/social-media-marketing/social-media-management",
+            },
+            {
+                title: "SEO & Content Optimization",
+                link: "/services/seo/on-page-seo",
+            },
+            {
+                title: "Brand Identity & Design",
+                link: "/services/branding/brand-identity-design",
+            },
+        ],
+    },
 };

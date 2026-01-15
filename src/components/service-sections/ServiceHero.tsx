@@ -82,7 +82,10 @@ export default function ServiceHero({ data }: { data: any }) {
 
           {/* Title */}
           <h1
-            className="text-4xl md:text-5xl lg:text-7xl font-bold uppercase leading-tight mb-8"
+            className={data.isSmallHeading
+              ? "text-2xl md:text-3xl lg:text-5xl font-bold uppercase leading-tight mb-8"
+              : "text-4xl md:text-5xl lg:text-7xl font-bold uppercase leading-tight mb-8"
+            }
           >
             <AnimatedLine
               text={data.title}

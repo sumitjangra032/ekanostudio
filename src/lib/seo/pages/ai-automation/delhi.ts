@@ -7,66 +7,122 @@ export const data: SeoPageData = {
         slug: "ai-automation",
         targetServiceSlug: "ai-automation-n8n",
         categorySlug: "ai-automation",
-        keywords: ["Business Automation", "AI Workflows", "n8n Integration"],
-        description: "Streamline your operations and reduce costs with cutting-edge AI automation and workflow optimization.",
+        keywords: [
+            "AI Automation Delhi",
+            "Business Automation",
+            "AI Workflows",
+            "n8n Integration"
+        ],
+        description:
+            "Automate complex business operations and reduce manual workload with custom AI automation and n8n workflows built for high-volume teams.",
     },
+
     location: {
         name: "Delhi",
         slug: "delhi",
         type: "city",
         country: "India",
         adjective: "Delhi-based",
-        context: "in the heart of India's capital",
-        metaTitleSuffix: "Delhi | Premium Services",
-        traits: ["corporate enterprises", "established brands", "growing businesses"],
+        context: "in India’s capital and major business hub",
+        metaTitleSuffix: "Delhi | AI Automation Specialists",
+        traits: ["large enterprises", "operations-heavy businesses", "process-driven organizations"],
     },
+
     meta: {
-        title: "AI Automation Solutions in Delhi | Efficiency & Scale",
-        description: "Modernize your Delhi business with AI. We build custom n8n workflows and AI agents to automate repetitive tasks and boost productivity.",
+        title: "AI Automation Solutions in Delhi | Enterprise Workflow Automation",
+        description:
+            "AI automation services for Delhi businesses. We design secure n8n workflows and AI systems to reduce operational overhead, improve accuracy, and scale efficiently.",
         canonical: "/ai-automation-delhi",
     },
+
     content: {
         hero: {
-            title: "Smart Automation for Delhi's Future-Ready Businesses",
-            subtitle: "Reduce overhead and eliminate manual errors. We bring Silicon Valley grade AI automation to the heart of Delhi NCR.",
+            title: "AI Automation Services in Delhi",
+            subtitle:
+                "Reduce manual effort, improve consistency, and scale operations with intelligent automation built for complex business environments.",
         },
+
         overview: {
-            title: "Operational Excellence with AI",
-            text: "In a hub like Delhi, efficiency is the difference between profit and loss. Ekanostudio helps traditional and modern businesses alike adopt AI. From automating lead entry to generating instant customer reports, our custom workflows save you hundreds of man-hours every month, allowing your team to focus on growth.",
+            title: "Driving Operational Efficiency with AI Automation",
+            text:
+                "Delhi is home to large enterprises, established brands, and high-volume operations where efficiency directly impacts margins. Ekanostudio helps Delhi-based organizations implement AI automation using tools like n8n and OpenAI. From lead processing and reporting to internal approvals and customer workflows, we design systems that reduce errors, save time, and bring structure to complex operations.",
         },
+
         whyChoose: {
-            title: "Why Automate with Us",
+            title: "Why Choose Ekanostudio for AI Automation",
             points: [
-                { title: "Custom Logic", desc: "We build workflows that match your exact business rules." },
-                { title: "n8n Experts", desc: "Certified expertise in deploying secure, self-hosted automation." },
-                { title: "Zero Disruption", desc: "We integrate with your existing tools (CRM, Email, Sheets)." }
-            ]
+                {
+                    title: "Business-Rule Driven Automation",
+                    desc:
+                        "We build workflows that follow your exact approval chains, logic, and operational requirements.",
+                },
+                {
+                    title: "n8n-Centered Architecture",
+                    desc:
+                        "Our automations are built on secure, flexible n8n setups that you fully control.",
+                },
+                {
+                    title: "Seamless System Integration",
+                    desc:
+                        "We integrate automation into your existing CRM, email, spreadsheets, and internal tools without disruption.",
+                },
+            ],
         },
+
         deliverables: [
-            "Custom n8n Workflow Files",
-            "AI Agent Configuration",
-            "Process Mapping Document",
-            "API Integration Setup",
-            "Error Handling Protocols",
-            "Staff Training Session"
+            "Custom n8n workflow implementation",
+            "AI agent configuration and tuning",
+            "End-to-end process mapping documentation",
+            "Secure API and system integrations",
+            "Monitoring and error-handling setup",
+            "Team training and handover sessions",
         ],
+
         process: {
-            title: "Automation Deployment",
+            title: "Our Automation Deployment Approach",
             steps: [
-                { title: "Audit", desc: " identifying bottlenecks in your current Delhi operations." },
-                { title: "Design", desc: "Architecting the perfect automated workflow." },
-                { title: "Build", desc: "Developing and testing the bots in a sandbox." },
-                { title: "Deploy", desc: "Going live and handing over control to you." }
-            ]
+                {
+                    title: "Operational Review",
+                    desc:
+                        "We analyze existing workflows to identify bottlenecks across your Delhi operations.",
+                },
+                {
+                    title: "Workflow Architecture",
+                    desc:
+                        "We design structured, scalable automation flows aligned with your business rules.",
+                },
+                {
+                    title: "Development & Testing",
+                    desc:
+                        "Automations are developed, tested in controlled environments, and optimized.",
+                },
+                {
+                    title: "Deployment & Ownership Transfer",
+                    desc:
+                        "We deploy the solution and ensure your team can manage and extend it confidently.",
+                },
+            ],
         },
+
         cta: {
-            title: "Want to save 20+ hours a week?",
-            text: "Let's automate your busywork. Get a free consultation."
+            title: "Looking to reduce operational load?",
+            text:
+                "Schedule a free AI automation consultation for your Delhi-based business.",
         },
+
         relatedServices: [
-            { title: "Digital Marketing", link: "/services/digital-marketing/digital-marketing" },
-            { title: "CRM Setup", link: "/services/email-automation/crm-setup" },
-            { title: "Web App Dev", link: "/services/app-development/web-app-development" }
-        ]
-    }
+            {
+                title: "Digital Marketing",
+                link: "/services/digital-marketing/digital-marketing",
+            },
+            {
+                title: "CRM Setup & Automation",
+                link: "/services/email-automation/crm-setup",
+            },
+            {
+                title: "Web Application Development",
+                link: "/services/app-development/web-app-development",
+            },
+        ],
+    },
 };

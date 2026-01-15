@@ -7,9 +7,17 @@ export const data: SeoPageData = {
         slug: "content-creation",
         targetServiceSlug: "content-writing",
         categorySlug: "content-creation",
-        keywords: ["Content Marketing", "Copywriting", "Video Production"],
-        description: "Engage your audience with compelling content that tells your story and builds brand authority.",
+        keywords: [
+            "Content Creation Delhi",
+            "Content Marketing Delhi NCR",
+            "Copywriting Services Delhi",
+            "Video Production Delhi",
+            "Corporate Content Agency"
+        ],
+        description:
+            "Professional content creation for Delhi-based brands—corporate video, copywriting, and digital media built for authority and scale.",
     },
+
     location: {
         name: "Delhi",
         slug: "delhi",
@@ -17,56 +25,105 @@ export const data: SeoPageData = {
         country: "India",
         adjective: "Delhi-based",
         context: "in the heart of India's capital",
-        metaTitleSuffix: "Delhi | Premium Services",
-        traits: ["corporate enterprises", "established brands", "growing businesses"],
+        metaTitleSuffix: "Delhi | Corporate Content Experts",
+        traits: ["enterprise brands", "policy-facing organisations", "large-scale businesses"],
     },
+
     meta: {
-        title: "Professional Content Creation Agency in Delhi | Video & Copy",
-        description: "Elevate your brand narrative. We produce high-quality video, graphic, and written content tailored for Delhi's diverse and demanding audience.",
+        title: "Professional Content Creation Agency in Delhi | Video & Copywriting",
+        description:
+            "Content creation for Delhi NCR businesses. We produce corporate videos, multilingual copy, and digital content built for credibility and impact.",
         canonical: "/content-creation-delhi",
     },
+
     content: {
         hero: {
-            title: "Storytelling That Resonates in Delhi",
-            subtitle: "From corporate films in Gurgaon to brand campaigns in South Delhi, we create content that captivates and converts.",
+            title: "Authoritative Content for Delhi’s Leading Brands",
+            subtitle:
+                "Strategic storytelling designed for enterprises, institutions, and high-visibility brands in Delhi NCR.",
         },
+
         overview: {
-            title: "The Voice of Your Brand in the Capital",
-            text: "Delhi is a melting pot of cultures and languages. Connecting here requires nuance and flair. Ekanostudio's content team brings together expert copywriters, filmmakers, and designers to craft narratives that cut through the noise. We help established Delhi brands reinvent themselves and newcomers make a bold entrance.",
+            title: "Content That Commands Attention in the Capital",
+            text:
+                "Delhi is one of India’s most competitive and diverse markets, where credibility matters as much as creativity. Ekanostudio helps organisations craft content that communicates authority, clarity, and professionalism. From corporate communication and brand films to long-form content and digital campaigns, we support established businesses and institutions in shaping a strong public narrative.",
         },
+
         whyChoose: {
-            title: "Why Choose Our Content Studio",
+            title: "Why Delhi Brands Work With Us",
             points: [
-                { title: "Multilingual Capabilities", desc: "Hindi, English, and Hinglish content that speaks to everyone." },
-                { title: "End-to-End Production", desc: "Script-to-screen services for video and ad campaigns." },
-                { title: "Corporate Standards", desc: "Professionalism suitable for B2B and government facing clients." }
-            ]
+                {
+                    title: "Multilingual Communication",
+                    desc:
+                        "Content in English, Hindi, and Hinglish tailored for Delhi’s diverse audiences.",
+                },
+                {
+                    title: "Corporate-Grade Production",
+                    desc:
+                        "High standards suitable for enterprises, public-facing organisations, and B2B brands.",
+                },
+                {
+                    title: "End-to-End Capability",
+                    desc:
+                        "From concept and scripting to production, editing, and delivery.",
+                },
+            ],
         },
+
         deliverables: [
-            "4K Brand Films / Ad Shoots",
-            "SEO-Optimized Blog Packages",
-            "Social Media Design Kits",
-            "Corporate Presentations / Decks",
-            "Whitepapers & Case Studies",
-            "Full Usage Rights & Raw Files"
+            "Corporate brand films and commercial videos",
+            "SEO-optimised blogs and long-form articles",
+            "Social media design and content kits",
+            "Corporate presentations and pitch decks",
+            "Whitepapers, reports, and case studies",
+            "Full usage rights with organised asset delivery",
         ],
+
         process: {
-            title: "Content Production Workflow",
+            title: "Our Content Production Process",
             steps: [
-                { title: "Ideation", desc: "Brainstorming concepts that align with Delhi trends." },
-                { title: "Production", desc: "Executing shoots or drafting copy with top-tier talent." },
-                { title: "Editing", desc: "Post-production polishing to meet broadcast standards." },
-                { title: "Distribution", desc: "Formatting content for all your digital channels." }
-            ]
+                {
+                    title: "Concept Development",
+                    desc:
+                        "Aligning messaging with your brand goals and Delhi market context.",
+                },
+                {
+                    title: "Production",
+                    desc:
+                        "Executing video shoots, copywriting, and design with experienced professionals.",
+                },
+                {
+                    title: "Post-Production",
+                    desc:
+                        "Editing, refinement, and quality control to meet professional standards.",
+                },
+                {
+                    title: "Distribution Readiness",
+                    desc:
+                        "Preparing content for websites, campaigns, and digital platforms.",
+                },
+            ],
         },
+
         cta: {
-            title: "Have a story to tell?",
-            text: "Let's create something iconic for your Delhi audience."
+            title: "Ready to strengthen your brand presence?",
+            text:
+                "Let’s create content that reflects authority and trust in the Delhi market.",
         },
+
         relatedServices: [
-            { title: "Social Media Marketing", link: "/services/social-media-marketing/social-media-management" },
-            { title: "Branding", link: "/services/branding/brand-identity-design" },
-            { title: "Website Design", link: "/services/web-design-development/landing-page-development" }
-        ]
-    }
+            {
+                title: "Social Media Marketing",
+                link: "/services/social-media-marketing/social-media-management",
+            },
+            {
+                title: "Brand Identity & Design",
+                link: "/services/branding/brand-identity-design",
+            },
+            {
+                title: "Website Design & Development",
+                link: "/services/web-design-development/landing-page-development",
+            },
+        ],
+    },
 };

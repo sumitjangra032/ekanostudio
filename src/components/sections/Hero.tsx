@@ -20,14 +20,14 @@ export default function Hero() {
         relative overflow-hidden
         min-h-[100svh]
         flex items-center justify-center
-        px-4 sm:px-6
+        px-4 pt-16 sm:px-6
       "
       style={{
         backgroundColor: theme.background,
         color: theme.text,
       }}
     >
-      {/* Centered dotted + glow background with soft edge fades */}
+      {/* Background */}
       <div className="absolute inset-0 flex justify-center pointer-events-none">
         <div
           className="h-full w-full max-w-[1400px]"
@@ -50,7 +50,6 @@ export default function Hero() {
               center,
               center
             `,
-            /* 🔥 2D MASK — soft sides, subtle top, stronger bottom */
             maskImage: `
               linear-gradient(
                 to right,
@@ -99,14 +98,14 @@ export default function Hero() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="max-w-5xl mx-auto"
         >
-          {/* Top Badge */}
+          {/* Top Badge (SEO-safe) */}
           <div className="mb-4 flex justify-center">
             <span className="text-xs sm:text-sm tracking-wide bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
-              #1 Digital Service Providers
+              Digital Growth & Web Solutions Partner
             </span>
           </div>
 
-          {/* Headline */}
+          {/* H1 Headline */}
           <div
             className="
               font-medium italic leading-tight
@@ -129,6 +128,19 @@ export default function Hero() {
                   to: "#8b5cf6",
                 }}
               />
+            ))}
+          </div>
+
+          {/* Supporting Description (NEW but SAFE) */}
+          <div className="mt-4 max-w-3xl mx-auto">
+            {HERO_CONTENT.description.map((desc, i) => (
+              <p
+                key={i}
+                className="text-sm sm:text-base leading-relaxed"
+                style={{ color: theme.subtext }}
+              >
+                {desc}
+              </p>
             ))}
           </div>
 

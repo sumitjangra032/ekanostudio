@@ -7,9 +7,17 @@ export const data: SeoPageData = {
         slug: "content-creation",
         targetServiceSlug: "content-writing",
         categorySlug: "content-creation",
-        keywords: ["Content Marketing", "Copywriting", "Video Production"],
-        description: "Engage your audience with compelling content that tells your story and builds brand authority.",
+        keywords: [
+            "Content Creation India",
+            "Content Marketing Agency India",
+            "Video Production India",
+            "Copywriting Services India",
+            "Brand Content Strategy"
+        ],
+        description:
+            "Scalable content creation for Indian brands—video, copywriting, and digital media built to engage diverse audiences and build long-term authority.",
     },
+
     location: {
         name: "India",
         slug: "india",
@@ -17,56 +25,105 @@ export const data: SeoPageData = {
         country: "India",
         adjective: "Indian",
         context: "across the Indian market",
-        metaTitleSuffix: "India | #1 Digital Agency",
-        traits: ["rapidly growing market", "diverse audience", "digital-first consumers"],
+        metaTitleSuffix: "India | Content & Media Studio",
+        traits: ["large-scale audiences", "multilingual market", "digital-first consumers"],
     },
+
     meta: {
-        title: "Content Creation Agency India | Video, Copy & Strategy",
-        description: "Tell your story to a billion. We produce high-quality video, authoritative copy, and digital assets for India's leading brands and influencers.",
+        title: "Content Creation Agency India | Video, Copywriting & Strategy",
+        description:
+            "Content creation for Indian brands at scale. We produce videos, copy, and digital content designed for reach, credibility, and consistent growth.",
         canonical: "/content-creation-india",
     },
+
     content: {
         hero: {
-            title: "Authentic Content for the Indian Audience",
-            subtitle: "Visuals that resonate. Words that persuade. Your content partner for the Indian digital boom.",
+            title: "Content That Connects Across India",
+            subtitle:
+                "Strategic storytelling designed for a diverse, digital-first audience across platforms and regions.",
         },
+
         overview: {
-            title: "Storytelling for a Digital-First India",
-            text: "India is a content-hungry nation. To win, your brand must produce assets that are relevant, engaging, and culturally resonant. Ekanostudio's content team produces high-impact media for the Indian market—from viral-ready video reels to authoritative blogs that build industry trust.",
+            title: "Building Brands in a High-Volume Content Market",
+            text:
+                "India is one of the most competitive content markets in the world, with audiences spread across languages, platforms, and formats. Ekanostudio helps brands create content that balances scale with substance. From short-form social videos and campaign creatives to long-form blogs, case studies, and brand narratives, our content is designed to engage, inform, and build lasting trust.",
         },
+
         whyChoose: {
-            title: "Why Our Content Studio?",
+            title: "Why Brands Across India Choose Us",
             points: [
-                { title: "Diverse Reach", desc: "Content designed to appeal across different Indian demographics." },
-                { title: "Premium Media", desc: "High-quality video production and graphic design." },
-                { title: "SEO-Ready Copy", desc: "Content that ranks on Google while engaging the reader." }
-            ]
+                {
+                    title: "Audience Diversity Expertise",
+                    desc:
+                        "Content strategies designed to work across regions, industries, and platforms.",
+                },
+                {
+                    title: "Platform-Ready Production",
+                    desc:
+                        "Assets optimised for web, social media, search, and performance marketing.",
+                },
+                {
+                    title: "SEO & Brand Alignment",
+                    desc:
+                        "Content that ranks well on Google while reinforcing brand voice and authority.",
+                },
+            ],
         },
+
         deliverables: [
-            "Brand Films & Commercials",
-            "SEO-Optimized Blog Writing",
-            "Social Media Design Kits",
-            "Email Marketing Campaigns",
-            "Whitepapers & Case Studies",
-            "Corporate Storytelling Docs"
+            "Brand films, commercials, and digital video content",
+            "SEO-focused blogs and long-form articles",
+            "Social media content and design systems",
+            "Email marketing and campaign copy",
+            "Whitepapers, reports, and case studies",
+            "Brand messaging and content guidelines",
         ],
+
         process: {
-            title: "Creative Workflow in India",
+            title: "Our India-Wide Content Workflow",
             steps: [
-                { title: "Ideate", desc: "Developing concepts aimed at India's digital consumers." },
-                { title: "Execute", desc: "Producing high-quality visuals and drafting copy." },
-                { title: "Refine", desc: "Polishing assets for maximum engagement." },
-                { title: "Deploy", desc: "Providing ready-to-use content for all platforms." }
-            ]
+                {
+                    title: "Research & Planning",
+                    desc:
+                        "Understanding your audience segments, platforms, and content objectives.",
+                },
+                {
+                    title: "Content Strategy",
+                    desc:
+                        "Defining formats, messaging, and cadence aligned with scale and consistency.",
+                },
+                {
+                    title: "Production",
+                    desc:
+                        "Creating written, visual, and video content with quality control at scale.",
+                },
+                {
+                    title: "Delivery & Optimisation",
+                    desc:
+                        "Final assets prepared for multi-platform distribution and growth.",
+                },
+            ],
         },
+
         cta: {
-            title: "Ready to engage your audience?",
-            text: "Let's create content that defines your brand in India."
+            title: "Ready to scale your content?",
+            text:
+                "Let’s create content that builds recognition and trust across India.",
         },
+
         relatedServices: [
-            { title: "SEO", link: "/services/seo/on-page-seo" },
-            { title: "Social Media", link: "/services/social-media-marketing/social-media-management" },
-            { title: "Branding", link: "/services/branding/brand-identity-design" }
-        ]
-    }
+            {
+                title: "SEO & Content Optimisation",
+                link: "/services/seo/on-page-seo",
+            },
+            {
+                title: "Social Media Marketing",
+                link: "/services/social-media-marketing/social-media-management",
+            },
+            {
+                title: "Brand Identity & Design",
+                link: "/services/branding/brand-identity-design",
+            },
+        ],
+    },
 };

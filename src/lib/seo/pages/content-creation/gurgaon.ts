@@ -7,9 +7,17 @@ export const data: SeoPageData = {
         slug: "content-creation",
         targetServiceSlug: "content-writing",
         categorySlug: "content-creation",
-        keywords: ["Content Marketing", "Copywriting", "Video Production"],
-        description: "Engage your audience with compelling content that tells your story and builds brand authority.",
+        keywords: [
+            "Content Creation Gurgaon",
+            "Corporate Content Agency Gurgaon",
+            "Thought Leadership Content",
+            "Video Production Gurgaon",
+            "B2B Content Marketing"
+        ],
+        description:
+            "Corporate-focused content creation for Gurgaon-based enterprises—video, copywriting, and thought leadership built for authority and trust.",
     },
+
     location: {
         name: "Gurgaon",
         slug: "gurgaon",
@@ -17,56 +25,105 @@ export const data: SeoPageData = {
         country: "India",
         adjective: "Gurgaon-based",
         context: "in the corporate hub of NCR",
-        metaTitleSuffix: "Gurgaon | Leading Agency",
-        traits: ["MNCs", "financial districts", "tech startups"],
+        metaTitleSuffix: "Gurgaon | Enterprise Content Studio",
+        traits: ["multinational corporations", "financial services", "enterprise brands"],
     },
+
     meta: {
-        title: "Content Creation Agency Gurgaon | Video & Thought Leadership",
-        description: "Communicate with corporate excellence. We produce high-quality video, authoritative copy, and digital assets for Gurgaon's leading brands.",
+        title: "Content Creation Agency Gurgaon | Corporate Video & Thought Leadership",
+        description:
+            "Content creation for Gurgaon enterprises. We produce corporate videos, executive content, and authoritative copy for B2B and enterprise brands.",
         canonical: "/content-creation-gurgaon",
     },
+
     content: {
         hero: {
-            title: "Authoritative Content for Gurgaon's Enterprise",
-            subtitle: "Media that captivates. Copy that convinces. We tell the stories of Gurgaon's most innovative brands.",
+            title: "Enterprise-Grade Content for Gurgaon's Leading Brands",
+            subtitle:
+                "Strategic content designed for boardrooms, decision-makers, and global stakeholders.",
         },
+
         overview: {
-            title: "Driving Authority Through Content in Gurgaon",
-            text: "Gurgaon's audience is sophisticated and time-pressed. Your content needs to be sharp, professional, and valuable. Ekanostudio's content team specializes in creating digital assets for the NCR corporate world—from deep-dive whitepapers for tech firms to polished video bios for financial leaders.",
+            title: "Content Built for Corporate Credibility",
+            text:
+                "Gurgaon is home to multinational corporations, consulting firms, and financial leaders where credibility and clarity matter more than noise. Ekanostudio helps enterprise teams communicate complex ideas with precision. From executive thought leadership and investor-ready narratives to polished corporate videos, our content supports reputation, trust, and long-term brand positioning.",
         },
+
         whyChoose: {
-            title: "Why Our Content Studio?",
+            title: "Why Gurgaon Enterprises Work With Us",
             points: [
-                { title: "Corporate Tone", desc: "Authoritative writing that resonates with C-suite executives." },
-                { title: "High-End Production", desc: "4K video and premium design for a world-class brand image." },
-                { title: "Integrated Strategy", desc: "Content designed to perform across LinkedIn, Email, and Web." }
-            ]
+                {
+                    title: "Executive-Level Tone",
+                    desc:
+                        "Content crafted for CXOs, stakeholders, and professional audiences.",
+                },
+                {
+                    title: "Enterprise Production Standards",
+                    desc:
+                        "High-quality video and design aligned with global brand guidelines.",
+                },
+                {
+                    title: "Strategic Distribution",
+                    desc:
+                        "Content optimised for LinkedIn, websites, internal communications, and sales enablement.",
+                },
+            ],
         },
+
         deliverables: [
-            "Corporate Brand Films",
-            "Thought Leadership Articles",
-            "Executive Interview Videos",
-            "Case Studies & Whitepapers",
-            "LinkedIn Content Management",
-            "Brand Narrative Guidelines"
+            "Corporate brand and culture films",
+            "Executive thought leadership articles",
+            "Leadership interview and keynote videos",
+            "Case studies, reports, and whitepapers",
+            "LinkedIn content strategy and execution",
+            "Brand messaging and narrative frameworks",
         ],
+
         process: {
-            title: "Our Creative Workflow",
+            title: "Our Corporate Content Workflow",
             steps: [
-                { title: "Discovery", desc: "Identifying your brand's unique edge in the Gurgaon market." },
-                { title: "Ideation", desc: "Developing concepts aimed at corporate decision-makers." },
-                { title: "Production", desc: "Executing high-quality shoots and drafting precise copy." },
-                { title: "Fulfillment", desc: "Delivering polished assets ready for global distribution." }
-            ]
+                {
+                    title: "Stakeholder Discovery",
+                    desc:
+                        "Understanding your organisation, audience, and communication objectives.",
+                },
+                {
+                    title: "Editorial Planning",
+                    desc:
+                        "Defining themes, formats, and messaging aligned with enterprise goals.",
+                },
+                {
+                    title: "Production & Review",
+                    desc:
+                        "Creating and refining content with multiple review cycles.",
+                },
+                {
+                    title: "Delivery & Enablement",
+                    desc:
+                        "Final assets prepared for internal teams and external distribution.",
+                },
+            ],
         },
+
         cta: {
-            title: "Need to build more authority?",
-            text: "Let's create content that defines your leadership in Gurgaon."
+            title: "Looking to elevate your corporate narrative?",
+            text:
+                "Let’s build content that reflects leadership and credibility in Gurgaon’s enterprise ecosystem.",
         },
+
         relatedServices: [
-            { title: "SEO", link: "/services/seo/on-page-seo" },
-            { title: "Social Media", link: "/services/social-media-marketing/social-media-management" },
-            { title: "Branding", link: "/services/branding/brand-identity-design" }
-        ]
-    }
+            {
+                title: "SEO & Content Optimisation",
+                link: "/services/seo/on-page-seo",
+            },
+            {
+                title: "Social Media Marketing",
+                link: "/services/social-media-marketing/social-media-management",
+            },
+            {
+                title: "Brand Identity & Design",
+                link: "/services/branding/brand-identity-design",
+            },
+        ],
+    },
 };

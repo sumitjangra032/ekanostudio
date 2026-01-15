@@ -7,66 +7,122 @@ export const data: SeoPageData = {
         slug: "ai-automation",
         targetServiceSlug: "ai-automation-n8n",
         categorySlug: "ai-automation",
-        keywords: ["Business Automation", "AI Workflows", "n8n Integration"],
-        description: "Streamline your operations and reduce costs with cutting-edge AI automation and workflow optimization.",
+        keywords: [
+            "KI Automatisierung",
+            "Business Automation",
+            "AI Workflows",
+            "n8n Integration"
+        ],
+        description:
+            "Optimieren Sie Geschäftsprozesse und reduzieren Sie manuelle Arbeit durch maßgeschneiderte KI-Automatisierung und intelligente Workflows.",
     },
+
     location: {
         name: "Austria",
         slug: "austria",
         type: "country",
         country: "Austria",
         adjective: "Austrian",
-        context: "in Austria",
-        metaTitleSuffix: "Austria | Digital Solutions",
-        traits: ["central european business", "quality focused", "innovation"],
+        context: "in Österreich",
+        metaTitleSuffix: "Österreich | Digitale Lösungen",
+        traits: ["zentraleuropäische Wirtschaft", "qualitätsorientiert", "innovativ"],
     },
+
     meta: {
-        title: "KI-Automatisierung Österreich | Intelligente Workflows & n8n",
-        description: "Modernisieren Sie Ihr österreichisches Unternehmen mit KI. Wir bauen maßgeschneiderte Automatisierungen, um Zeit zu sparen und Kosten zu senken.",
+        title: "KI-Automatisierung in Österreich | Intelligente Workflows mit n8n",
+        description:
+            "Professionelle KI-Automatisierung für Unternehmen in Österreich. Wir entwickeln sichere n8n-Workflows, die Zeit sparen, Prozesse vereinfachen und Kosten senken.",
         canonical: "/ai-automation-austria",
     },
+
     content: {
         hero: {
-            title: "Künstliche Intelligenz für Österreichs Wirtschaft",
-            subtitle: "Eliminieren Sie mühsame Routineaufgaben und steigern Sie die Effizienz Ihres Teams durch smarte Automatisierung.",
+            title: "KI-Automatisierung für Unternehmen in Österreich",
+            subtitle:
+                "Automatisieren Sie wiederkehrende Aufgaben, steigern Sie Effizienz und entlasten Sie Ihr Team mit intelligenten KI-Workflows.",
         },
+
         overview: {
-            title: "Effizienz durch intelligente Prozesse",
-            text: "Österreichische Unternehmen setzen verstärkt auf digitale Transformation. Ekanostudio bringt modernste KI-Automatisierung in die Alpenrepublik. Mit n8n und OpenAI entwickeln wir Workflows, die Ihre Datenverarbeitung, Lead-Verwaltung und Kundenkommunikation sicher und effizient automatisieren.",
+            title: "Intelligente Automatisierung für nachhaltige Effizienz",
+            text:
+                "Immer mehr österreichische Unternehmen setzen auf digitale Prozessoptimierung. Ekanostudio unterstützt Sie dabei mit moderner KI-Automatisierung auf Basis von n8n und OpenAI. Wir entwickeln sichere Workflows zur Automatisierung von Datenverarbeitung, Lead-Management und Kundenkommunikation – individuell angepasst an Ihre Geschäftsabläufe.",
         },
+
         whyChoose: {
-            title: "Warum Automatisierung?",
+            title: "Warum KI-Automatisierung sinnvoll ist",
             points: [
-                { title: "Zeitgewinn", desc: "Mehr Fokus auf strategische Aufgaben statt auf Datenpflege." },
-                { title: "Sichere Umsetzung", desc: "Automatisierungen unter Berücksichtigung lokaler Standards." },
-                { title: "Kostensenkung", desc: "Nachhaltige Optimierung Ihrer operativen Ausgaben." }
-            ]
+                {
+                    title: "Mehr Zeit für Wesentliches",
+                    desc:
+                        "Reduzieren Sie manuelle Tätigkeiten und gewinnen Sie wertvolle Zeit für strategische Entscheidungen.",
+                },
+                {
+                    title: "Sichere & skalierbare Lösungen",
+                    desc:
+                        "Unsere Automatisierungen berücksichtigen europäische Standards und wachsen mit Ihrem Unternehmen.",
+                },
+                {
+                    title: "Langfristige Kosteneffizienz",
+                    desc:
+                        "Optimierte Prozesse senken operative Kosten und steigern die Produktivität nachhaltig.",
+                },
+            ],
         },
+
         deliverables: [
-            "Individuelle n8n Workflows",
-            "KI-gestützte Chatbots",
-            "Automatisierung von Back-Office Prozessen",
-            "CRM-Integrationen (Salesforce, HubSpot, etc.)",
-            "Automatisierte Reporting-Systeme",
-            "Workshops für Ihr Team"
+            "Individuell entwickelte n8n-Workflows",
+            "KI-gestützte Chatbots und Assistenzsysteme",
+            "Automatisierung von Back-Office-Prozessen",
+            "CRM-Integrationen (Salesforce, HubSpot u. a.)",
+            "Automatisierte Reporting- und Analyse-Systeme",
+            "Praxisnahe Workshops für Ihr Team",
         ],
+
         process: {
-            title: "Ihre Automatisierungs-Roadmap",
+            title: "Ihre KI-Automatisierungs-Roadmap",
             steps: [
-                { title: "Diagnose", desc: "Identifikation von Zeitfressern in Ihrem Unternehmen." },
-                { title: "Planung", desc: "Architektur des perfekten automatisierten Workflows." },
-                { title: "Coding", desc: "Entwicklung und Testen der Automatisierungen." },
-                { title: "Handoff", desc: "Implementierung und Einschulung Ihres Teams." }
-            ]
+                {
+                    title: "Analyse",
+                    desc:
+                        "Identifikation von zeitintensiven Prozessen und Automatisierungspotenzialen.",
+                },
+                {
+                    title: "Konzeption",
+                    desc:
+                        "Planung einer stabilen und effizienten Automatisierungsarchitektur.",
+                },
+                {
+                    title: "Umsetzung",
+                    desc:
+                        "Entwicklung, Test und Feinabstimmung der KI-Workflows.",
+                },
+                {
+                    title: "Implementierung & Übergabe",
+                    desc:
+                        "Live-Schaltung, Dokumentation und Schulung Ihres Teams.",
+                },
+            ],
         },
+
         cta: {
-            title: "Wollen Sie 10+ Stunden pro Woche sparen?",
-            text: "Entdecken Sie die Möglichkeiten der KI für Ihr Unternehmen in Österreich."
+            title: "Möchten Sie jede Woche wertvolle Zeit sparen?",
+            text:
+                "Entdecken Sie, wie KI-Automatisierung Ihr Unternehmen in Österreich effizienter machen kann.",
         },
+
         relatedServices: [
-            { title: "Web Entwicklung", link: "/services/app-development/web-app-development" },
-            { title: "Performance Marketing", link: "/services/digital-marketing/digital-marketing" },
-            { title: "CRM Setup", link: "/services/email-automation/crm-setup" }
-        ]
-    }
+            {
+                title: "Webentwicklung",
+                link: "/services/app-development/web-app-development",
+            },
+            {
+                title: "Performance Marketing",
+                link: "/services/digital-marketing/digital-marketing",
+            },
+            {
+                title: "CRM-Setup & Automatisierung",
+                link: "/services/email-automation/crm-setup",
+            },
+        ],
+    },
 };

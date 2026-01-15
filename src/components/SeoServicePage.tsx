@@ -22,8 +22,7 @@ export default function SeoServicePage({ data }: { data: SeoPageData }) {
                     title: data.content.hero.title,
                     headline: data.content.hero.subtitle,
                     subheadline: `Professional ${data.service.name} services tailored for the ${data.location.adjective} market.`,
-                    // serviceCta explicitly mapped to undefined/null to enforce single CTA via ServiceHero logic if needed
-                    // But our previous edit to ServiceHero handles optional serviceCta, so omitting it here is correct.
+                    isSmallHeading: true,
                 }
             },
             // 2. METRICS

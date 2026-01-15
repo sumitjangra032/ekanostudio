@@ -7,66 +7,122 @@ export const data: SeoPageData = {
         slug: "ai-automation",
         targetServiceSlug: "ai-automation-n8n",
         categorySlug: "ai-automation",
-        keywords: ["Business Automation", "AI Workflows", "n8n Integration"],
-        description: "Streamline your operations and reduce costs with cutting-edge AI automation and workflow optimization.",
+        keywords: [
+            "AI Automation Pune",
+            "Business Automation",
+            "AI Workflows",
+            "n8n Integration"
+        ],
+        description:
+            "Improve process efficiency and reduce manual workload with custom AI automation and n8n workflows built for Pune-based businesses.",
     },
+
     location: {
         name: "Pune",
         slug: "pune",
         type: "city",
         country: "India",
         adjective: "Pune-based",
-        context: "in the Oxford of the East",
-        metaTitleSuffix: "Pune | Expert Solutions",
-        traits: ["education sector", "manufacturing hubs", "IT parks"],
+        context: "in one of India’s leading engineering and manufacturing hubs",
+        metaTitleSuffix: "Pune | AI Automation Specialists",
+        traits: ["engineering-driven companies", "manufacturing operations", "IT services"],
     },
+
     meta: {
-        title: "AI Automation Services in Pune | n8n & Workflow Excellence",
-        description: "Modernize your Pune business. We build custom AI and automation workflows to reduce manual work and boost efficiency for Pune's industries.",
+        title: "AI Automation Services in Pune | n8n Workflow Solutions",
+        description:
+            "AI automation solutions for Pune businesses. We design reliable n8n workflows and AI systems to reduce errors, improve efficiency, and streamline operations.",
         canonical: "/ai-automation-pune",
     },
+
     content: {
         hero: {
-            title: "Intelligent Automation for Pune's Future-Ready Business",
-            subtitle: "Eliminate busywork. Empower your team. Cutting-edge AI automation solutions in Pune.",
+            title: "AI Automation for Process-Driven Businesses in Pune",
+            subtitle:
+                "Reduce repetitive work, improve accuracy, and streamline operations with intelligent automation.",
         },
+
         overview: {
-            title: "Operational Excellence with AI in Pune",
-            text: "In the IT and manufacturing hub of Pune, manual errors are costly. Ekanostudio brings advanced AI automation to your doorstep. Using n8n and OpenAI, we build secure, custom workflows that manage everything from lead entry to complex data reporting, saving you hundreds of hours every month.",
+            title: "Practical AI Automation for Pune’s Engineering Ecosystem",
+            text:
+                "Pune is known for its strong engineering talent, manufacturing units, and IT service organizations where structured processes and accuracy matter. Ekanostudio helps Pune-based businesses implement AI automation using n8n and OpenAI. We design workflows that automate lead handling, reporting, invoicing, and internal operations—helping teams reduce manual effort while maintaining process control.",
         },
+
         whyChoose: {
-            title: "Why Automate with Us",
+            title: "Why Pune Businesses Choose Ekanostudio",
             points: [
-                { title: "Deep n8n Expertise", desc: "Advanced workflow design that connects all your existing tools." },
-                { title: "Custom AI Agents", desc: "Bots that understand your specific business logic." },
-                { title: "Fast ROI", desc: "Reducing operational costs within the first month of implementation." }
-            ]
+                {
+                    title: "Process-Focused Automation",
+                    desc:
+                        "Workflows designed to match structured business processes and operational discipline.",
+                },
+                {
+                    title: "Custom AI Aligned to Your Logic",
+                    desc:
+                        "AI agents built around your specific rules, data flows, and internal systems.",
+                },
+                {
+                    title: "Clear and Measurable ROI",
+                    desc:
+                        "Automation that reduces errors, saves time, and delivers value from the early stages.",
+                },
+            ],
         },
+
         deliverables: [
-            "Workflow Process Mapping",
-            "Custom n8n Integrations",
-            "AI Chatbot Implementation",
-            "Automated CRM Hygiene",
-            "Invoicing & Triage Bots",
-            "Staff Training & Support"
+            "End-to-end process and workflow mapping",
+            "Custom n8n integrations and automation",
+            "AI chatbot and internal assistant setup",
+            "CRM data cleanup and automation",
+            "Automation for invoicing and task triage",
+            "Team training, support, and documentation",
         ],
+
         process: {
-            title: "Your Automation Journey",
+            title: "Our Automation Implementation Approach",
             steps: [
-                { title: "Audit", desc: "Analyzing your current operations for automation points." },
-                { title: "Design", desc: "Mapping out the efficient automated roadmap." },
-                { title: "Build", desc: "Developing and testing the workflows safely." },
-                { title: "Go Live", desc: "Full deployment and handoff to your team." }
-            ]
+                {
+                    title: "Operational Review",
+                    desc:
+                        "We analyze existing processes to identify automation opportunities.",
+                },
+                {
+                    title: "Workflow Design",
+                    desc:
+                        "We create a clear and efficient automation roadmap.",
+                },
+                {
+                    title: "Development & Testing",
+                    desc:
+                        "Workflows are built and tested for reliability and accuracy.",
+                },
+                {
+                    title: "Deployment & Enablement",
+                    desc:
+                        "We go live and ensure your team can confidently manage the system.",
+                },
+            ],
         },
+
         cta: {
-            title: "Want to save 20+ hours a week?",
-            text: "Request a free automation audit for your Pune firm."
+            title: "Ready to simplify your operations?",
+            text:
+                "Request a free AI automation assessment for your Pune-based business.",
         },
+
         relatedServices: [
-            { title: "Web development", link: "/services/web-design-development/website-development" },
-            { title: "Digital Marketing", link: "/services/digital-marketing/digital-marketing" },
-            { title: "CRM Setup", link: "/services/email-automation/crm-setup" }
-        ]
-    }
+            {
+                title: "Website Development",
+                link: "/services/web-design-development/website-development",
+            },
+            {
+                title: "Digital Marketing",
+                link: "/services/digital-marketing/digital-marketing",
+            },
+            {
+                title: "CRM Setup & Automation",
+                link: "/services/email-automation/crm-setup",
+            },
+        ],
+    },
 };

@@ -7,9 +7,17 @@ export const data: SeoPageData = {
         slug: "content-creation",
         targetServiceSlug: "content-writing",
         categorySlug: "content-creation",
-        keywords: ["Content Marketing", "Copywriting", "Video Production"],
-        description: "Engage your audience with compelling content that tells your story and builds brand authority.",
+        keywords: [
+            "Content Creation Luxembourg",
+            "Corporate Content Luxembourg",
+            "Thought Leadership Content",
+            "Executive Video Production",
+            "B2B Content Marketing Luxembourg"
+        ],
+        description:
+            "High-end content creation services in Luxembourg, including executive copywriting, corporate video production, and thought leadership assets.",
     },
+
     location: {
         name: "Luxembourg",
         slug: "luxembourg",
@@ -17,56 +25,105 @@ export const data: SeoPageData = {
         country: "Luxembourg",
         adjective: "Luxembourg",
         context: "in Luxembourg",
-        metaTitleSuffix: "Luxembourg | Premium Agency",
+        metaTitleSuffix: "Luxembourg | Corporate Content Studio",
         traits: ["financial sector", "high-end business", "european hub"],
     },
+
     meta: {
-        title: "Content Creation Luxembourg | Video, Copy & Thought Leadership",
-        description: "Communicate with authority. We produce high-quality video, written content, and digital assets for Luxembourg's leading firms and institutions.",
+        title: "Content Creation Luxembourg | Corporate Video & Thought Leadership",
+        description:
+            "Premium content creation for Luxembourg businesses. Executive copywriting, corporate video, and strategic content for finance, consulting, and enterprise firms.",
         canonical: "/content-creation-luxembourg",
     },
+
     content: {
         hero: {
-            title: "Authoritative Content for the Grand Duchy",
-            subtitle: "Thought leadership that resonates. Media that captivates. We tell your brand story in the heart of Europe.",
+            title: "Corporate Content for Luxembourg’s Decision-Makers",
+            subtitle:
+                "Strategic storytelling, executive-grade visuals, and content built for trust in regulated and high-value markets.",
         },
+
         overview: {
-            title: "Crafting the Narrative of Success",
-            text: "Luxembourg's sophisticated audience values clarity, professionalism, and nuance. Ekanostudio's content team produces high-stakes digital assets – from deep-dive whitepapers and executive video interviews to multi-format social content that builds international trust.",
+            title: "Content Designed for Trust, Clarity, and Authority",
+            text:
+                "Luxembourg operates at the intersection of finance, regulation, and international business. Content here must be precise, credible, and strategically positioned. Ekanostudio creates high-authority content for firms operating in finance, consulting, investment, and cross-border services—helping brands communicate clearly, reinforce credibility, and support long-term growth.",
         },
+
         whyChoose: {
-            title: "Why Our Content Studio",
+            title: "Why Leading Firms Choose Our Content Team",
             points: [
-                { title: "Corporate Nuance", desc: "Tone of voice suitable for the highest level of business." },
-                { title: "Visual Excellence", desc: "4K video production and premium graphic design." },
-                { title: "Multi-Channel Strategy", desc: "Integrated content flows for LinkedIn, Email, and Web." }
-            ]
+                {
+                    title: "Executive-Level Communication",
+                    desc:
+                        "Tone, structure, and messaging aligned with board-level and institutional audiences.",
+                },
+                {
+                    title: "Multilingual Precision",
+                    desc:
+                        "Content crafted for English, French, and German business environments.",
+                },
+                {
+                    title: "Strategic Intent",
+                    desc:
+                        "Every asset is designed to support reputation, compliance, and positioning.",
+                },
+            ],
         },
+
         deliverables: [
-            "Executive Video Production",
-            "Thought Leadership Blogs (EN/FR/DE)",
-            "Corporate Case Studies",
-            "Investor Relation Presentions",
-            "Brand Narrative Documentation",
-            "Social Content Kits for Executives"
+            "Executive and corporate video production",
+            "Thought leadership articles and long-form content (EN / FR / DE)",
+            "Corporate case studies and success stories",
+            "Investor and stakeholder presentations",
+            "Brand narrative and messaging frameworks",
+            "Executive-focused social media content kits",
         ],
+
         process: {
-            title: "Content Production Workflow",
+            title: "Our Structured Content Approach",
             steps: [
-                { title: "Ideation", desc: "Developing concepts that align with European market trends." },
-                { title: "Production", desc: "Executing high-quality shoots and drafting authoritative copy." },
-                { title: "Polishing", desc: "Ensuring every asset meets our premium standards." },
-                { title: "Delivery", desc: "Providing ready-to-publish assets for all your channels." }
-            ]
+                {
+                    title: "Context Analysis",
+                    desc:
+                        "Understanding your sector, audience expectations, and regulatory environment.",
+                },
+                {
+                    title: "Strategic Direction",
+                    desc:
+                        "Defining messaging pillars and content formats aligned with business goals.",
+                },
+                {
+                    title: "Production",
+                    desc:
+                        "Creating polished content with a focus on clarity, accuracy, and authority.",
+                },
+                {
+                    title: "Delivery",
+                    desc:
+                        "Providing publication-ready assets across web, internal, and external channels.",
+                },
+            ],
         },
+
         cta: {
-            title: "Need to build more authority?",
-            text: "Let's create content that defines your leadership in Luxembourg."
+            title: "Position your brand with confidence",
+            text:
+                "Let’s create content that reflects the credibility of your Luxembourg business.",
         },
+
         relatedServices: [
-            { title: "SEO", link: "/services/seo/on-page-seo" },
-            { title: "Social Media", link: "/services/social-media-marketing/social-media-management" },
-            { title: "Branding", link: "/services/branding/brand-identity-design" }
-        ]
-    }
+            {
+                title: "SEO & Content Optimization",
+                link: "/services/seo/on-page-seo",
+            },
+            {
+                title: "Social Media Strategy",
+                link: "/services/social-media-marketing/social-media-management",
+            },
+            {
+                title: "Brand Identity & Positioning",
+                link: "/services/branding/brand-identity-design",
+            },
+        ],
+    },
 };

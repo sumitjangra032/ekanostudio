@@ -7,66 +7,123 @@ export const data: SeoPageData = {
         slug: "content-creation",
         targetServiceSlug: "content-writing",
         categorySlug: "content-creation",
-        keywords: ["Content Marketing", "Copywriting", "Video Production"],
-        description: "Engage your audience with compelling content that tells your story and builds brand authority.",
+        keywords: [
+            "Content Creation USA",
+            "Content Marketing Agency USA",
+            "Video Production USA",
+            "Copywriting Services USA",
+            "Brand Content Strategy USA"
+        ],
+        description:
+            "Professional content creation services in the USA, including video production, SEO copywriting, and scalable brand storytelling for growth-driven businesses.",
     },
+
     location: {
         name: "USA",
         slug: "usa",
         type: "country",
         country: "USA",
-        adjective: "American",
-        context: "in the US market",
-        metaTitleSuffix: "USA | Global Agency",
+        adjective: "US-based",
+        context: "across the United States market",
+        metaTitleSuffix: "USA | Global Content Agency",
         traits: ["competitive market", "innovation leaders", "high-value customers"],
     },
+
     meta: {
-        title: "Content Creation Services for USA | Video & Copywriting",
-        description: "Engage the American audience. Premium content production agency offering video editing, copywriting, and design for US businesses.",
+        title: "Content Creation Services USA | Video, Copywriting & Strategy",
+        description:
+            "US-focused content creation agency delivering video, SEO copywriting, and scalable brand content tailored for American audiences and search intent.",
         canonical: "/content-creation-usa",
     },
+
     content: {
         hero: {
-            title: "Content That Speaks to the American Consumer",
-            subtitle: "High-impact storytelling tailored for the fast-paced US social and digital landscape.",
+            title: "Scalable Content for the US Market",
+            subtitle:
+                "High-impact visuals, persuasive copy, and strategic storytelling built for American brands and fast-moving digital platforms.",
         },
+
         overview: {
-            title: "Capturing Attention in the US Economy",
-            text: "American consumers value authenticity and speed. Your content needs to be visually striking and culturally relevant. Ekanostudio produces high-volume, high-quality creative assets that fuel your US marketing channels—from TikTok Reels to LinkedIn Thought Leadership articles.",
+            title: "Content Built for the American Digital Landscape",
+            text:
+                "The US market moves fast and competition is intense. To stand out, content must be clear, authentic, and designed for performance. Ekanostudio helps US businesses scale their content production without sacrificing quality. From short-form video and paid ad creatives to long-form blogs and thought leadership, we create assets that support visibility, trust, and conversion across US audiences.",
         },
+
         whyChoose: {
-            title: "Your Remote Creative Team",
+            title: "Why US Brands Choose Ekanostudio",
             points: [
-                { title: "US English Proficiency", desc: "Native-level copywriting with correct nuance and spelling." },
-                { title: "Trend Awareness", desc: "Stay ahead of US-based viral trends and formats." },
-                { title: "Scalable Production", desc: "Produce 100s of assets monthly without hiring in house." }
-            ]
+                {
+                    title: "US-Market Writing Standards",
+                    desc:
+                        "Content written in American English with the right tone, clarity, and cultural context.",
+                },
+                {
+                    title: "Performance-Driven Content",
+                    desc:
+                        "Every asset is designed to support engagement, conversion, and SEO growth.",
+                },
+                {
+                    title: "Scalable Production Model",
+                    desc:
+                        "Increase output quickly without the cost and complexity of in-house teams.",
+                },
+            ],
         },
+
         deliverables: [
-            "Reels / Shorts Editing",
-            "Long-form Copywriting (US English)",
-            "Podcast Production / Editing",
-            "Ad Creatives (Static & Video)",
-            "Email Marketing Sequence",
-            "Brand Asset Library"
+            "Short-form video editing (Reels, Shorts, TikTok)",
+            "Long-form SEO copywriting (US English)",
+            "Podcast editing and production",
+            "Static and video ad creatives",
+            "Email marketing sequences",
+            "Centralised brand asset libraries",
         ],
+
         process: {
-            title: "The Creative Pipeline",
+            title: "Our Content Production Pipeline",
             steps: [
-                { title: "Brief", desc: "Downloading your brand voice and US market goals." },
-                { title: "Draft", desc: "Creating initial concepts for review." },
-                { title: "Refine", desc: "Polishing based on your specific feedback." },
-                { title: "Deliver", desc: "Providing raw and edit files ready for platform upload." }
-            ]
+                {
+                    title: "Strategy Alignment",
+                    desc:
+                        "Understanding your brand voice, audience, and US market objectives.",
+                },
+                {
+                    title: "Content Creation",
+                    desc:
+                        "Producing video, copy, and visual assets aligned with platform best practices.",
+                },
+                {
+                    title: "Review & Optimisation",
+                    desc:
+                        "Refining content for clarity, performance, and brand consistency.",
+                },
+                {
+                    title: "Delivery & Scale",
+                    desc:
+                        "Providing ready-to-publish assets optimized for US digital channels.",
+                },
+            ],
         },
+
         cta: {
-            title: "Need more content?",
-            text: "Scale your creative output with our dedicated team."
+            title: "Ready to scale your content?",
+            text:
+                "Partner with a content team built for growth-focused US brands.",
         },
+
         relatedServices: [
-            { title: "Video Editing", link: "/services/content-creation/video-editing" },
-            { title: "Social Media", link: "/services/social-media-marketing/social-media-management" },
-            { title: "Digital Marketing", link: "/services/digital-marketing/digital-marketing" }
-        ]
-    }
+            {
+                title: "Video Editing",
+                link: "/services/content-creation/video-editing",
+            },
+            {
+                title: "Social Media Management",
+                link: "/services/social-media-marketing/social-media-management",
+            },
+            {
+                title: "Digital Marketing",
+                link: "/services/digital-marketing/digital-marketing",
+            },
+        ],
+    },
 };

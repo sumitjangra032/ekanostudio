@@ -13,8 +13,8 @@ const SITE_URL = "https://www.ekanostudio.com";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Digital Transformation Services & Consulting | ekanostudio",
-    template: "%s | ekanostudio",
+    default: "ekanostudio - Digital Transformation Services & Consulting",
+    template: "ekanostudio - %s",
   },
   description:
     "Accelerate your digital growth with ekanostudio. We provide expert SEO, web development, branding, and digital marketing services across India.",
@@ -36,13 +36,13 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: SITE_URL,
     siteName: "ekanostudio",
-    title: "Digital Transformation Services & Consulting | ekanostudio",
+    title: "ekanostudio - Digital Transformation Services & Consulting",
     description:
       "ekanostudio helps businesses grow with SEO, web development, branding, and digital marketing services across India.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Digital Transformation Services & Consulting | ekanostudio",
+    title: "ekanostudioDigital Transformation Services & Consulting",
     description:
       "ekanostudio helps businesses grow with SEO, web development, branding, and digital marketing services across India.",
   },

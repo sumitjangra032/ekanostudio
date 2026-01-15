@@ -7,66 +7,123 @@ export const data: SeoPageData = {
         slug: "content-creation",
         targetServiceSlug: "content-writing",
         categorySlug: "content-creation",
-        keywords: ["Content Marketing", "Copywriting", "Video Production"],
-        description: "Engage your audience with compelling content that tells your story and builds brand authority.",
+        keywords: [
+            "Création de contenu France",
+            "Marketing de contenu",
+            "Rédaction web française",
+            "Production vidéo France",
+            "Contenu de marque"
+        ],
+        description:
+            "Création de contenu haut de gamme pour les entreprises en France – rédaction, vidéo et design au service de votre image de marque.",
     },
+
     location: {
         name: "France",
         slug: "france",
         type: "country",
         country: "France",
         adjective: "French",
-        context: "in France",
-        metaTitleSuffix: "France | Agence Numérique",
-        traits: ["luxury brands", "art & culture", "european market"],
+        context: "en France",
+        metaTitleSuffix: "France | Studio Créatif",
+        traits: ["exigence qualitative", "culture de marque", "marché européen"],
     },
+
     meta: {
-        title: "Création de Contenu France | Vidéo, Rédaction & Design",
-        description: "Tell your story with French elegance. We produce high-quality video, copywriting, and visual content tailored for the French audience.",
+        title: "Création de Contenu France | Vidéo, Rédaction & Image de Marque",
+        description:
+            "Studio de création de contenu pour les marques françaises. Vidéos, rédaction SEO et contenus visuels pensés pour l’élégance, la crédibilité et la performance.",
         canonical: "/content-creation-france",
     },
+
     content: {
         hero: {
-            title: "Contenu Créatif pour Marques Françaises",
-            subtitle: "Visuals aimed at the heart. Words that persuade. We create premium digital content for France's leading brands.",
+            title: "Création de Contenu pour les Marques Françaises",
+            subtitle:
+                "Des contenus élégants, cohérents et stratégiques, conçus pour renforcer votre image et votre crédibilité.",
         },
+
         overview: {
-            title: "Stratégie de Contenu Premium",
-            text: "French consumers demand quality and authenticity. Ekanostudio creates content that meets the high standards of the French market. From video production for luxury brands to SEO copywriting for startups, we ensure your message is culturally relevant, gramatically perfect, and visually stunning.",
+            title: "Une Approche Éditoriale Exigeante",
+            text:
+                "En France, le contenu est un vecteur d’image autant qu’un levier marketing. Ekanostudio accompagne les marques françaises dans la création de contenus à forte valeur ajoutée. Rédaction web, storytelling de marque, production vidéo ou supports visuels : chaque contenu est pensé pour respecter les codes culturels, la langue et les attentes d’un public exigeant.",
         },
+
         whyChoose: {
-            title: "L'Excellence Créative",
+            title: "Pourquoi Choisir Ekanostudio",
             points: [
-                { title: "Culture Française", desc: "Content that reflects French values and trends." },
-                { title: "Qualité Visuelle", desc: "High-end production values for video and design." },
-                { title: "SEO Friendly", desc: "Written content optimized for Google France ranking." }
-            ]
+                {
+                    title: "Maîtrise Culturelle & Linguistique",
+                    desc:
+                        "Des contenus rédigés en français naturel, précis et adaptés au marché local.",
+                },
+                {
+                    title: "Qualité Visuelle Premium",
+                    desc:
+                        "Production vidéo et design soignés pour des marques soucieuses de leur image.",
+                },
+                {
+                    title: "Vision Stratégique",
+                    desc:
+                        "Chaque contenu s’inscrit dans une logique éditoriale et marketing cohérente.",
+                },
+            ],
         },
+
         deliverables: [
-            "Vidéos Marketing & Reels",
-            "Articles de Blog SEO (FR)",
-            "Design Réseaux Sociaux",
-            "Newsletters & Emailing",
-            "Présentations Corporate",
-            "Stratégie Éditoriale"
+            "Vidéos de marque et contenus promotionnels",
+            "Articles de blog SEO en français",
+            "Visuels et contenus pour réseaux sociaux",
+            "Newsletters et campagnes emailing",
+            "Présentations corporate et supports institutionnels",
+            "Stratégie éditoriale et ligne de contenu",
         ],
+
         process: {
-            title: "Workflow de Production",
+            title: "Notre Processus de Création",
             steps: [
-                { title: "Concept", desc: "Ideation aligned with French market trends." },
-                { title: "Création", desc: "Producing assets with attention to detail." },
-                { title: "Révision", desc: "Polishing to perfection." },
-                { title: "Livraison", desc: "Ready-to-use format for all channels." }
-            ]
+                {
+                    title: "Analyse",
+                    desc:
+                        "Compréhension de votre marque, de votre audience et de votre positionnement.",
+                },
+                {
+                    title: "Conception",
+                    desc:
+                        "Définition des messages, formats et axes éditoriaux.",
+                },
+                {
+                    title: "Production",
+                    desc:
+                        "Rédaction, tournage et design avec un haut niveau d’exigence.",
+                },
+                {
+                    title: "Livraison",
+                    desc:
+                        "Contenus prêts à être diffusés sur tous vos canaux.",
+                },
+            ],
         },
+
         cta: {
-            title: "Besoin de contenu ?",
-            text: "Discutons de votre stratégie éditoriale."
+            title: "Envie de contenus à la hauteur de votre marque ?",
+            text:
+                "Construisons ensemble une stratégie de contenu efficace pour le marché français.",
         },
+
         relatedServices: [
-            { title: "Social Media", link: "/services/social-media-marketing/social-media-management" },
-            { title: "Branding", link: "/services/branding/brand-identity-design" },
-            { title: "SEO", link: "/services/seo/on-page-seo" }
-        ]
-    }
+            {
+                title: "Social Media Marketing",
+                link: "/services/social-media-marketing/social-media-management",
+            },
+            {
+                title: "Branding & Identité Visuelle",
+                link: "/services/branding/brand-identity-design",
+            },
+            {
+                title: "SEO & Optimisation de Contenu",
+                link: "/services/seo/on-page-seo",
+            },
+        ],
+    },
 };

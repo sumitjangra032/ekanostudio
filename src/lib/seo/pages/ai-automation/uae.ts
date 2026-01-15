@@ -7,66 +7,122 @@ export const data: SeoPageData = {
         slug: "ai-automation",
         targetServiceSlug: "ai-automation-n8n",
         categorySlug: "ai-automation",
-        keywords: ["Business Automation", "AI Workflows", "n8n Integration"],
-        description: "Streamline your operations and reduce costs with cutting-edge AI automation and workflow optimization.",
+        keywords: [
+            "AI Automation UAE",
+            "Business Automation Dubai",
+            "AI Workflows",
+            "n8n Integration"
+        ],
+        description:
+            "Automate high-volume business operations with secure AI automation and n8n workflows designed for fast-growing UAE enterprises.",
     },
+
     location: {
         name: "UAE",
         slug: "uae",
         type: "country",
         country: "UAE",
         adjective: "UAE",
-        context: "in the United Arab Emirates",
-        metaTitleSuffix: "UAE | Dubai & Abu Dhabi",
-        traits: ["luxury market", "rapid development", "global business hub"],
+        context: "across the United Arab Emirates",
+        metaTitleSuffix: "UAE | AI Automation Experts",
+        traits: ["service-driven economy", "real estate & logistics", "global business hub"],
     },
+
     meta: {
-        title: "AI Automation Services UAE | Dubai Smart Business Solutions",
-        description: "Transform your UAE business with AI. We build custom n8n workflows and AI chatbots to automate operations for companies in Dubai & Abu Dhabi.",
+        title: "AI Automation Services in UAE | Dubai & Abu Dhabi Workflow Automation",
+        description:
+            "AI automation solutions for UAE businesses. We build secure n8n workflows and AI systems to automate operations, improve service speed, and scale efficiently.",
         canonical: "/ai-automation-uae",
     },
+
     content: {
         hero: {
-            title: "AI Innovation for Business in the UAE",
-            subtitle: "Embrace the future. We implement intelligent automation to power the next generation of Dubai enterprises.",
+            title: "AI Automation for High-Growth Businesses in the UAE",
+            subtitle:
+                "Improve service speed, reduce manual workload, and scale operations with intelligent automation.",
         },
+
         overview: {
-            title: "Smart Automation for the Smart Nation",
-            text: "The UAE leads the world in adopting future technologies. Your business operations should be no different. Ekanostudio brings advanced AI automation to the Emirates. Whether it's automating property inquiries in Real Estate or streamlining logistics data, our custom AI solutions save time and drive efficiency.",
+            title: "Smart Automation for a Digital-First Economy",
+            text:
+                "The UAE is a global leader in technology adoption, real estate, logistics, and service-driven industries where speed and accuracy are critical. Ekanostudio helps UAE-based organizations implement AI automation using n8n and OpenAI. From customer inquiries and lead qualification to operations reporting and internal workflows, our solutions reduce manual effort while supporting high-volume, round-the-clock operations.",
         },
+
         whyChoose: {
-            title: "Why Automate Your UAE Business",
+            title: "Why UAE Businesses Choose AI Automation",
             points: [
-                { title: "Scalability", desc: "Handle growing demand without increasing headcount." },
-                { title: "24/7 Service", desc: "AI agents that serve your customers round-the-clock." },
-                { title: "Error Reduction", desc: "Automated workflows eliminate manual data entry mistakes." }
-            ]
+                {
+                    title: "Built for Scale and Speed",
+                    desc:
+                        "Automation systems designed to handle rapid growth and high transaction volumes.",
+                },
+                {
+                    title: "24/7 Customer Engagement",
+                    desc:
+                        "AI agents that respond instantly across channels, improving service availability.",
+                },
+                {
+                    title: "Reduced Operational Errors",
+                    desc:
+                        "Automated workflows eliminate repetitive manual entry and improve data accuracy.",
+                },
+            ],
         },
+
         deliverables: [
-            "WhatsApp Business AI Bots",
-            "Real Estate Lead Automation",
-            "Custom n8n Workflows",
-            "CRM Integration (Salesforce/Zoho)",
-            "Automated Invoicing",
-            "Bilingual Chatbot Setup"
+            "AI-powered WhatsApp and customer support bots",
+            "Automation for real estate and lead management",
+            "Custom n8n workflow development",
+            "CRM integrations (Salesforce, Zoho, and more)",
+            "Automated invoicing and operations workflows",
+            "Bilingual AI chatbot configuration",
         ],
+
         process: {
-            title: "UAE Automation Strategy",
+            title: "Our AI Automation Implementation Process",
             steps: [
-                { title: "Consult", desc: "Identifying your operational bottlenecks." },
-                { title: "Design", desc: "Architecting a secure automation flow." },
-                { title: "Implement", desc: "Building and testing the solution." },
-                { title: "Support", desc: "Ongoing maintenance and optimization." }
-            ]
+                {
+                    title: "Operational Assessment",
+                    desc:
+                        "We identify inefficiencies and automation opportunities across your operations.",
+                },
+                {
+                    title: "Workflow Design",
+                    desc:
+                        "We architect secure and scalable automation flows tailored to your business.",
+                },
+                {
+                    title: "Implementation & Testing",
+                    desc:
+                        "AI workflows are built, tested, and optimized for reliability and performance.",
+                },
+                {
+                    title: "Ongoing Optimization",
+                    desc:
+                        "We monitor, refine, and support automation as your business scales.",
+                },
+            ],
         },
+
         cta: {
-            title: "Ready to innovate?",
-            text: "Explore our AI automation solutions for UAE."
+            title: "Ready to scale with intelligent automation?",
+            text:
+                "Explore AI automation solutions designed for businesses in the UAE.",
         },
+
         relatedServices: [
-            { title: "Web Apps", link: "/services/app-development/web-app-development" },
-            { title: "Digital Marketing", link: "/services/digital-marketing/digital-marketing" },
-            { title: "CRM Setup", link: "/services/email-automation/crm-setup" }
-        ]
-    }
+            {
+                title: "Web Application Development",
+                link: "/services/app-development/web-app-development",
+            },
+            {
+                title: "Digital Marketing",
+                link: "/services/digital-marketing/digital-marketing",
+            },
+            {
+                title: "CRM Setup & Automation",
+                link: "/services/email-automation/crm-setup",
+            },
+        ],
+    },
 };

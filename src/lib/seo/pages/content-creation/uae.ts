@@ -7,66 +7,123 @@ export const data: SeoPageData = {
         slug: "content-creation",
         targetServiceSlug: "content-writing",
         categorySlug: "content-creation",
-        keywords: ["Content Marketing", "Copywriting", "Video Production"],
-        description: "Engage your audience with compelling content that tells your story and builds brand authority.",
+        keywords: [
+            "Content Creation UAE",
+            "Video Production Dubai",
+            "Corporate Content Abu Dhabi",
+            "Bilingual Content UAE",
+            "Luxury Brand Content Middle East"
+        ],
+        description:
+            "Premium content creation services in the UAE, including corporate video production, bilingual copywriting, and high-end digital assets for luxury and enterprise brands.",
     },
+
     location: {
         name: "UAE",
         slug: "uae",
         type: "country",
         country: "UAE",
-        adjective: "UAE",
-        context: "in the United Arab Emirates",
+        adjective: "UAE-based",
+        context: "across the United Arab Emirates",
         metaTitleSuffix: "UAE | Dubai & Abu Dhabi",
         traits: ["luxury market", "rapid development", "global business hub"],
     },
+
     meta: {
-        title: "Content Creation Agency UAE | Video, Copy & Social",
-        description: "Premium content for luxury and corporate brands in Dubai and Abu Dhabi. We create high-impact video, visuals, and copy in English and Arabic.",
+        title: "Content Creation Services UAE | Video, Copywriting & Branding",
+        description:
+            "High-end content creation in the UAE. We produce corporate videos, bilingual copy, and premium digital content for brands in Dubai and Abu Dhabi.",
         canonical: "/content-creation-uae",
     },
+
     content: {
         hero: {
-            title: "World-Class Content for UAE Brands",
-            subtitle: "Visuals that captivate. Words that sell. We produce premium content for the Emirates' leading companies.",
+            title: "Premium Content for the UAE’s Global Brands",
+            subtitle:
+                "Strategic storytelling, cinematic visuals, and refined copy crafted for Dubai, Abu Dhabi, and the wider Emirates.",
         },
+
         overview: {
-            title: "Elevating Brands in Dubai & Abu Dhabi",
-            text: "In a market defined by luxury and innovation, standard content falls flat. Ekanostudio creates exceptional digital assets tailored for the UAE. From cinematic corporate videos to high-end social media visuals, we help your brand stand out in the crowded feed of Dubai's elite.",
+            title: "Content Built for a Luxury-Driven Market",
+            text:
+                "The UAE is a market where presentation, precision, and perception matter. Ekanostudio works with businesses that operate at a global standard—delivering content that reflects ambition and credibility. From executive brand films to bilingual digital campaigns, we create assets that align with the expectations of decision-makers, investors, and premium audiences across the Emirates.",
         },
+
         whyChoose: {
-            title: "Why Leading UAE Brands Trust Us",
+            title: "Why UAE Brands Partner With Us",
             points: [
-                { title: "Luxury Aesthetic", desc: "Design language that fits the premium UAE market." },
-                { title: "Cultural Sensitivity", desc: "Content that respects local values and traditions." },
-                { title: "Bilingual Production", desc: "Seamless creation of English and Arabic assets." }
-            ]
+                {
+                    title: "Premium Brand Positioning",
+                    desc:
+                        "Content designed to match the visual and editorial standards of luxury and enterprise brands.",
+                },
+                {
+                    title: "Cultural & Regional Awareness",
+                    desc:
+                        "Messaging that respects local values while appealing to an international audience.",
+                },
+                {
+                    title: "Bilingual Execution",
+                    desc:
+                        "Professional English and Arabic content delivered with consistency and accuracy.",
+                },
+            ],
         },
+
         deliverables: [
-            "Corporate Brand Films",
-            "Social Media Reels/Tikok",
-            "Bilingual Blog Articles",
-            "Company Profiles & Brochures",
-            "Event Coverage",
-            "Visual Identity Guidelines"
+            "Corporate and executive brand films",
+            "High-end social media video and reels",
+            "Bilingual website and blog content (EN / AR)",
+            "Company profiles, brochures, and pitch decks",
+            "Event coverage and highlight videos",
+            "Brand and visual identity documentation",
         ],
+
         process: {
-            title: "Production Workflow",
+            title: "Our Content Production Approach",
             steps: [
-                { title: "Concept", desc: "Developing ideas that resonate with the UAE audience." },
-                { title: "Shoot", desc: "Capturing high-quality footage or drafting copy." },
-                { title: "Edit", desc: "Post-production to international standards." },
-                { title: "Deliver", desc: "Ready-to-post assets for all platforms." }
-            ]
+                {
+                    title: "Market Alignment",
+                    desc:
+                        "Understanding your positioning within the UAE’s competitive landscape.",
+                },
+                {
+                    title: "Creative Direction",
+                    desc:
+                        "Defining tone, visuals, and messaging aligned with brand goals.",
+                },
+                {
+                    title: "Production",
+                    desc:
+                        "Executing video shoots, design, and copywriting to international standards.",
+                },
+                {
+                    title: "Final Delivery",
+                    desc:
+                        "Supplying ready-to-publish assets optimized for web, social, and presentations.",
+                },
+            ],
         },
+
         cta: {
-            title: "Ready to tell your story?",
-            text: "Contact us for a content strategy session."
+            title: "Position your brand at the highest level",
+            text:
+                "Let’s create content that strengthens your presence across the UAE market.",
         },
+
         relatedServices: [
-            { title: "Social Media", link: "/services/social-media-marketing/social-media-management" },
-            { title: "Web Design", link: "/services/web-design-development/website-design-uiux" },
-            { title: "Branding", link: "/services/branding/brand-identity-design" }
-        ]
-    }
+            {
+                title: "Social Media Management",
+                link: "/services/social-media-marketing/social-media-management",
+            },
+            {
+                title: "Website Design & UI/UX",
+                link: "/services/web-design-development/website-design-uiux",
+            },
+            {
+                title: "Brand Identity & Strategy",
+                link: "/services/branding/brand-identity-design",
+            },
+        ],
+    },
 };

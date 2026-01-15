@@ -7,66 +7,123 @@ export const data: SeoPageData = {
         slug: "content-creation",
         targetServiceSlug: "content-writing",
         categorySlug: "content-creation",
-        keywords: ["Content Marketing", "Copywriting", "Video Production"],
-        description: "Engage your audience with compelling content that tells your story and builds brand authority.",
+        keywords: [
+            "Content Creation UK",
+            "Content Marketing Agency UK",
+            "Video Production UK",
+            "Copywriting Services UK",
+            "Brand Content Strategy UK"
+        ],
+        description:
+            "Professional content creation services in the UK, including video production, SEO copywriting, and strategic brand storytelling for growth-focused businesses.",
     },
+
     location: {
         name: "UK",
         slug: "uk",
         type: "country",
         country: "UK",
-        adjective: "UK",
+        adjective: "UK-based",
         context: "across the United Kingdom",
-        metaTitleSuffix: "UK | Trusted Partners",
+        metaTitleSuffix: "UK | Trusted Content Partners",
         traits: ["established businesses", "digital transformation", "service sector"],
     },
+
     meta: {
-        title: "Content Creation Services UK | Video, Copy & Design",
-        description: "Tell your story with British flair. Our content team delivers high-quality video editing, blog writing, and social media assets for UK brands.",
+        title: "Content Creation Services UK | Video, Copywriting & Strategy",
+        description:
+            "UK-focused content creation agency delivering video, SEO copywriting, and brand storytelling tailored to British audiences and search intent.",
         canonical: "/content-creation-uk",
     },
+
     content: {
         hero: {
-            title: "Compelling Content for the UK Audience",
-            subtitle: "From witty social copy to professional corporate video. We create content that engages the British consumer.",
+            title: "Strategic Content for the UK Market",
+            subtitle:
+                "Clear messaging, refined storytelling, and high-quality visuals designed for British brands and audiences.",
         },
+
         overview: {
-            title: "Brand Storytelling for the UK",
-            text: "The UK audience appreciates wit, authenticity, and understatement. Hard selling rarely works. Ekanostudio crafting content that strikes the right chord. Whether it's thought leadership articles for LinkedIn or engaging visuals for Instagram, we ensure your brand voice is perfectly tuned for the UK market.",
+            title: "Content That Connects With UK Audiences",
+            text:
+                "UK audiences value clarity, credibility, and relevance. Loud marketing and exaggerated claims rarely perform well. Ekanostudio creates content grounded in strategy—designed to inform, engage, and convert. From SEO-led blog articles to polished corporate video and social media assets, our content is built to support long-term brand authority and measurable growth across the UK market.",
         },
+
         whyChoose: {
-            title: "Why UK Brands Choose Us",
+            title: "Why UK Businesses Work With Us",
             points: [
-                { title: "Cultural Nuance", desc: "We understand the subtle differences in British humour and tone." },
-                { title: "Multi-Format", desc: "One team for video, graphics, and written content." },
-                { title: "Consistent Quality", desc: "Reliable delivery schedules for your content calendar." }
-            ]
+                {
+                    title: "UK-Specific Tone & Style",
+                    desc:
+                        "Content written in British English with the right balance of professionalism, clarity, and approachability.",
+                },
+                {
+                    title: "Search-First Approach",
+                    desc:
+                        "Every piece of content is structured to support SEO, user intent, and long-term organic visibility.",
+                },
+                {
+                    title: "Reliable Production",
+                    desc:
+                        "Consistent output and delivery schedules that support your marketing and editorial calendar.",
+                },
+            ],
         },
+
         deliverables: [
-            "SEO Blog Posts (British English)",
-            "Social Media Design Packs",
-            "Video Editing (Shorts/Reels)",
-            "Whitepapers & Reports",
-            "Email Newsletter Copy",
-            "Brand Voice Guidelines"
+            "SEO-optimised blog articles (British English)",
+            "Corporate and brand video editing",
+            "Social media visuals and short-form video",
+            "Whitepapers, reports, and long-form content",
+            "Email newsletter and campaign copy",
+            "Brand voice and content guidelines",
         ],
+
         process: {
-            title: "Content Production Cycle",
+            title: "Our UK Content Workflow",
             steps: [
-                { title: "Plan", desc: "Aligning topics with UK trends and seasonality." },
-                { title: "Create", desc: "Drafting and designing with attention to detail." },
-                { title: "Review", desc: "Ensuring tone and style match your British brand identity." },
-                { title: "Publish", desc: "delivering assets ready for your channels." }
-            ]
+                {
+                    title: "Research & Planning",
+                    desc:
+                        "Analysing UK search trends, audience intent, and competitive positioning.",
+                },
+                {
+                    title: "Content Creation",
+                    desc:
+                        "Producing copy, visuals, and video aligned with brand and SEO goals.",
+                },
+                {
+                    title: "Quality Review",
+                    desc:
+                        "Ensuring tone, accuracy, and consistency meet UK market expectations.",
+                },
+                {
+                    title: "Delivery & Optimisation",
+                    desc:
+                        "Supplying ready-to-publish assets optimised for web, search, and social platforms.",
+                },
+            ],
         },
+
         cta: {
-            title: "Need better content?",
-            text: "Let's create something remarkable for your UK audience."
+            title: "Strengthen your content strategy",
+            text:
+                "Let’s create content that builds authority and trust with your UK audience.",
         },
+
         relatedServices: [
-            { title: "SEO Services", link: "/services/seo/on-page-seo" },
-            { title: "Social Media", link: "/services/social-media-marketing/social-media-management" },
-            { title: "Graphic Design", link: "/services/branding/brand-identity-design" }
-        ]
-    }
+            {
+                title: "SEO Services",
+                link: "/services/seo/on-page-seo",
+            },
+            {
+                title: "Social Media Management",
+                link: "/services/social-media-marketing/social-media-management",
+            },
+            {
+                title: "Brand Identity & Design",
+                link: "/services/branding/brand-identity-design",
+            },
+        ],
+    },
 };

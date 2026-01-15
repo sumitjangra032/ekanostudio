@@ -7,7 +7,7 @@ export const WHY_US_CONTENT = {
     label: "WHY CHOOSE US?",
   },
 
-  title: "[Why Choose Us ?]",
+  title: "[Why Choose Us]",
 
 
   description:

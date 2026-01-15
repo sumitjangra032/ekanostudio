@@ -19,7 +19,7 @@ export default function Benefits() {
   const cardsRef = useRef(null);
   const cardsInView = useInView(cardsRef, { once: true, margin: "-10% 0px" });
 
-  
+
   return (
     <section
       id="benefits"
@@ -44,7 +44,7 @@ export default function Benefits() {
           className="text-[42px] font-bold mt-3"
           style={{ color: theme.text }}
         >
-          <AnimatedLine text={BENEFITS_CONTENT.title} delay={0.1} isHeading={true}/>
+          <AnimatedLine text={BENEFITS_CONTENT.title} delay={0.1} isHeading={true} />
         </h2>
 
         {/* Subtitle */}
@@ -78,7 +78,7 @@ export default function Benefits() {
 
                 {/* Main Icon */}
 
-                <AnimateDownloadedSVG src={Icon} size={35} stroke={theme.primary} />                   
+                <AnimateDownloadedSVG src={Icon} size={35} stroke={theme.primary} />
 
                 {/* Title */}
                 <h3

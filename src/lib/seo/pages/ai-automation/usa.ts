@@ -7,9 +7,17 @@ export const data: SeoPageData = {
         slug: "ai-automation",
         targetServiceSlug: "ai-automation-n8n",
         categorySlug: "ai-automation",
-        keywords: ["Business Automation", "AI Workflows", "n8n Integration"],
-        description: "Streamline your operations and reduce costs with cutting-edge AI automation and workflow optimization.",
+        keywords: [
+            "AI Automation USA",
+            "Business Process Automation",
+            "AI Workflows",
+            "n8n Integration",
+            "AI Agents for Business"
+        ],
+        description:
+            "Build scalable AI automation and n8n workflows tailored for US businesses to reduce operational costs and improve execution speed.",
     },
+
     location: {
         name: "USA",
         slug: "usa",
@@ -17,56 +25,105 @@ export const data: SeoPageData = {
         country: "USA",
         adjective: "American",
         context: "in the US market",
-        metaTitleSuffix: "USA | Global Agency",
-        traits: ["competitive market", "innovation leaders", "high-value customers"],
+        metaTitleSuffix: "USA | AI Automation Experts",
+        traits: ["high labor costs", "scale-driven growth", "results-focused businesses"],
     },
+
     meta: {
-        title: "AI Automation Services USA | Custom Workflows & n8n",
-        description: "US-Standard AI implementation. We replace repetitive tasks with intelligent agents and n8n workflows for American SMEs.",
+        title: "AI Automation Services USA | Scalable n8n & AI Workflow Solutions",
+        description:
+            "AI automation for US companies. We design custom n8n workflows and AI agents that replace repetitive tasks, reduce overhead, and scale operations.",
         canonical: "/ai-automation-usa",
     },
+
     content: {
         hero: {
-            title: "Future-Proof Your Business with AI",
-            subtitle: "Bring Silicon Valley efficiency to your operations. Custom AI agents and automation for modern US companies.",
+            title: "Scalable AI Automation for US Businesses",
+            subtitle:
+                "Reduce operational overhead and increase execution speed with AI workflows built for the American market.",
         },
+
         overview: {
-            title: "Automation for the High-Cost US Labor Market",
-            text: "Labor costs in the US are rising. The solution isn't just outsourcing—it's automation. Ekanostudio helps US businesses implement 'digital employees'. Our AI agents handle customer support, data entry, and lead qualification 24/7, allowing your expensive US team to focus on high-leverage strategy.",
+            title: "Automation Built for a High-Cost, High-Scale Market",
+            text:
+                "In the United States, labor is expensive and expectations are high. Automation is no longer optional—it’s a competitive advantage. Ekanostudio helps American businesses deploy AI-powered workflows using n8n and OpenAI. From customer support and lead qualification to internal reporting and data processing, our systems act as reliable digital operators that work continuously without increasing payroll.",
         },
+
         whyChoose: {
-            title: "Why Automate Now",
+            title: "Why US Companies Choose Automation",
             points: [
-                { title: "Cut Overhead", desc: "Reduce reliance on large support or admin teams." },
-                { title: "Instant Response", desc: "US consumers expect 24/7/365 availability." },
-                { title: "Scalability", desc: "Handle 10x volume without hiring 10x staff." }
-            ]
+                {
+                    title: "Lower Operational Costs",
+                    desc:
+                        "Reduce dependency on large admin and support teams without sacrificing quality.",
+                },
+                {
+                    title: "Always-On Execution",
+                    desc:
+                        "AI workflows run 24/7, meeting the availability expectations of US customers.",
+                },
+                {
+                    title: "Built to Scale",
+                    desc:
+                        "Handle rapid growth and seasonal spikes without hiring or retraining staff.",
+                },
+            ],
         },
+
         deliverables: [
-            "Customer Support AI Agents",
-            "Sales Outreach Automation",
-            "Internal Knowledge Base Chatbots",
-            "CRM Data Hygiene Bots",
-            "Invoice Processing Automation",
-            "Secure Self-Hosted Deployment"
+            "AI-powered customer support agents",
+            "Sales and lead qualification automation",
+            "Internal knowledge base chatbots",
+            "CRM data cleanup and synchronization",
+            "Invoice and document processing automation",
+            "Secure self-hosted AI deployment",
         ],
+
         process: {
-            title: "Automation Rollout",
+            title: "Our AI Automation Implementation Process",
             steps: [
-                { title: "SOP Audit", desc: "Reviewing your current Standard Operating Procedures." },
-                { title: "Prototype", desc: "Building a proof-of-concept AI workflow." },
-                { title: "Integrate", desc: "Connecting to your Slack, Salesforce, or Hubspot." },
-                { title: "Train", desc: "Showing your team how to manage the AI." }
-            ]
+                {
+                    title: "SOP Review",
+                    desc:
+                        "We analyze existing workflows to identify automation-ready processes.",
+                },
+                {
+                    title: "Prototype",
+                    desc:
+                        "A working AI workflow is built to validate performance and ROI.",
+                },
+                {
+                    title: "System Integration",
+                    desc:
+                        "Automation connects seamlessly with tools like Salesforce, HubSpot, or Slack.",
+                },
+                {
+                    title: "Enablement",
+                    desc:
+                        "Your team is trained to monitor, manage, and extend the AI systems.",
+                },
+            ],
         },
+
         cta: {
-            title: "Ready to modernize?",
-            text: "See a demo of our AI agents in action."
+            title: "Ready to modernize operations?",
+            text:
+                "See how AI automation can replace repetitive work in your US business.",
         },
+
         relatedServices: [
-            { title: "CRM Setup", link: "/services/email-automation/crm-setup" },
-            { title: "Web Apps", link: "/services/app-development/web-app-development" },
-            { title: "Digital Marketing", link: "/services/digital-marketing/digital-marketing" }
-        ]
-    }
+            {
+                title: "CRM Setup & Automation",
+                link: "/services/email-automation/crm-setup",
+            },
+            {
+                title: "Web Application Development",
+                link: "/services/app-development/web-app-development",
+            },
+            {
+                title: "Digital Marketing",
+                link: "/services/digital-marketing/digital-marketing",
+            },
+        ],
+    },
 };

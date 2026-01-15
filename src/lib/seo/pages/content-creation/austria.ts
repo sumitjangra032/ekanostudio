@@ -7,9 +7,17 @@ export const data: SeoPageData = {
         slug: "content-creation",
         targetServiceSlug: "content-writing",
         categorySlug: "content-creation",
-        keywords: ["Content Marketing", "Copywriting", "Video Production"],
-        description: "Engage your audience with compelling content that tells your story and builds brand authority.",
+        keywords: [
+            "Content Erstellung Österreich",
+            "Content Marketing",
+            "Copywriting Deutsch",
+            "Videoproduktion Österreich",
+            "Brand Content"
+        ],
+        description:
+            "Hochwertige Content-Erstellung für Unternehmen in Österreich – Texte, Videos und visuelle Inhalte mit klarer Markenbotschaft.",
     },
+
     location: {
         name: "Austria",
         slug: "austria",
@@ -17,56 +25,105 @@ export const data: SeoPageData = {
         country: "Austria",
         adjective: "Austrian",
         context: "in Austria",
-        metaTitleSuffix: "Austria | Digital Solutions",
-        traits: ["central european business", "quality focused", "innovation"],
+        metaTitleSuffix: "Austria | Content & Media Studio",
+        traits: ["qualitätsbewusst", "vertrauensbasiert", "markenorientiert"],
     },
+
     meta: {
-        title: "Content Erstellung Österreich | Video, Copywriting & Design",
-        description: "Erzählen Sie Ihre Geschichte mit österreichischer Qualität. Wir produzieren erstklassige Videos, Texte und Grafiken für Ihr Business in Österreich.",
+        title: "Content Erstellung Österreich | Video, Copywriting & Brand Content",
+        description:
+            "Professionelle Content-Erstellung für österreichische Unternehmen. Wir produzieren Videos, Texte und Designs mit klarer Strategie und messbarer Wirkung.",
         canonical: "/content-creation-austria",
     },
+
     content: {
         hero: {
-            title: "Content, der in Österreich begeistert",
-            subtitle: "Von kreativen Texten bis hin zur professionellen Videoproduktion – wir machen Ihre Marke sichtbar.",
+            title: "Professioneller Content für den österreichischen Markt",
+            subtitle:
+                "Strategische Inhalte, die Vertrauen aufbauen, Marken stärken und Ihre Zielgruppe nachhaltig erreichen.",
         },
+
         overview: {
-            title: "Strategisches Storytelling für Österreich",
-            text: "In Österreich zählen Authentizität und Vertrauen. Ekanostudio hilft Ihnen dabei, Ihre Botschaft klar und überzeugend zu kommunizieren. Wir erstellen hochwertige digitale Assets, die Ihre Zielgruppe direkt ansprechen und Ihre Marke als Experten im österreichischen Markt positionieren.",
+            title: "Content mit Substanz – nicht nur Reichweite",
+            text:
+                "Im österreichischen Markt zählen Glaubwürdigkeit, Qualität und klare Kommunikation. Ekanostudio unterstützt Unternehmen dabei, Inhalte zu entwickeln, die nicht nur gut aussehen, sondern wirken. Von durchdachtem Copywriting über visuelles Storytelling bis hin zu Video-Content erstellen wir digitale Assets, die Ihre Marke professionell positionieren und langfristig Vertrauen aufbauen.",
         },
+
         whyChoose: {
-            title: "Kreative Exzellenz",
+            title: "Warum Content von Ekanostudio?",
             points: [
-                { title: "Muttersprachliches Copywriting", desc: "Texte, die genau den Ton Ihrer österreichischen Kunden treffen." },
-                { title: "Moderne Videoproduktion", desc: "High-End Visuals für Ihre Social Media und Website." },
-                { title: "Ganzheitlicher Ansatz", desc: "Strategische Planung aller Inhalte für maximale Wirkung." }
-            ]
+                {
+                    title: "Muttersprachliche Inhalte",
+                    desc:
+                        "Deutschsprachiges Copywriting mit Gespür für Tonalität, Kultur und Zielgruppen in Österreich.",
+                },
+                {
+                    title: "Visuelle Qualität",
+                    desc:
+                        "Professionelle Videos und Grafiken, die Ihrer Marke ein hochwertiges Erscheinungsbild geben.",
+                },
+                {
+                    title: "Strategischer Ansatz",
+                    desc:
+                        "Jeder Inhalt folgt einer klaren Content- und Markenstrategie – kein zufälliger Output.",
+                },
+            ],
         },
+
         deliverables: [
-            "Professionelles Video Editing",
-            "SEO-optimierte Blogartikel (Deutsch)",
-            "Social Media Content-Pakete",
-            "Newsletter-Texte & Kampagnen",
-            "Whitepaper & Fachartikel",
-            "Brand-Storytelling Leitfaden"
+            "Professionelles Video Editing & Motion Content",
+            "SEO-optimierte Blogartikel auf Deutsch",
+            "Social Media Content & Redaktionspläne",
+            "Newsletter & E-Mail-Kampagnen",
+            "Whitepaper, Guides & Fachartikel",
+            "Brand Storytelling & Content Guidelines",
         ],
+
         process: {
-            title: "Unser Kreativ-Prozess",
+            title: "Unser Content-Workflow",
             steps: [
-                { title: "Idee", desc: "Entwicklung von Konzepten, die in Österreich funktionieren." },
-                { title: "Erstellung", desc: "Produktion der Inhalte mit modernster Technik." },
-                { title: "Feinschliff", desc: "Optimierung basierend auf Ihrem Feedback." },
-                { title: "Distribution", desc: "Bereitstellung der Assets für alle Kanäle." }
-            ]
+                {
+                    title: "Strategie",
+                    desc:
+                        "Analyse Ihrer Marke, Zielgruppe und Kommunikationsziele.",
+                },
+                {
+                    title: "Produktion",
+                    desc:
+                        "Erstellung von Texten, Videos und visuellen Inhalten auf hohem Qualitätsniveau.",
+                },
+                {
+                    title: "Optimierung",
+                    desc:
+                        "Feinschliff basierend auf Feedback, Performance und SEO-Anforderungen.",
+                },
+                {
+                    title: "Auslieferung",
+                    desc:
+                        "Strukturierte Übergabe der Inhalte für Website, Social Media und Kampagnen.",
+                },
+            ],
         },
+
         cta: {
-            title: "Haben Sie eine Geschichte zu erzählen?",
-            text: "Lassen Sie uns gemeinsam Content erstellen, der bewegt."
+            title: "Bereit für besseren Content?",
+            text:
+                "Lassen Sie uns Inhalte entwickeln, die Ihre Marke in Österreich nachhaltig stärken.",
         },
+
         relatedServices: [
-            { title: "Social Media Marketing", link: "/services/social-media-marketing/social-media-management" },
-            { title: "SEO", link: "/services/seo/on-page-seo" },
-            { title: "Logo & Branding", link: "/services/branding/brand-identity-design" }
-        ]
-    }
+            {
+                title: "Social Media Marketing",
+                link: "/services/social-media-marketing/social-media-management",
+            },
+            {
+                title: "SEO Optimierung",
+                link: "/services/seo/on-page-seo",
+            },
+            {
+                title: "Branding & Design",
+                link: "/services/branding/brand-identity-design",
+            },
+        ],
+    },
 };

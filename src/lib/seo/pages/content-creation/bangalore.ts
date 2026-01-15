@@ -7,9 +7,17 @@ export const data: SeoPageData = {
         slug: "content-creation",
         targetServiceSlug: "content-writing",
         categorySlug: "content-creation",
-        keywords: ["Content Marketing", "Copywriting", "Video Production"],
-        description: "Engage your audience with compelling content that tells your story and builds brand authority.",
+        keywords: [
+            "Content Creation Bangalore",
+            "Content Marketing for Startups",
+            "Tech Copywriting",
+            "Video Production Bangalore",
+            "SaaS Content"
+        ],
+        description:
+            "Strategic content creation for Bangalore startups and tech companies—copy, video, and media built to establish authority and drive growth.",
     },
+
     location: {
         name: "Bangalore",
         slug: "bangalore",
@@ -17,56 +25,105 @@ export const data: SeoPageData = {
         country: "India",
         adjective: "Bangalore-based",
         context: "in the Silicon Valley of India",
-        metaTitleSuffix: "Bangalore | Top Rated Agency",
-        traits: ["tech startups", "innovative businesses", "IT hubs"],
+        metaTitleSuffix: "Bangalore | Content Studio",
+        traits: ["startup ecosystem", "SaaS companies", "technology-led brands"],
     },
+
     meta: {
-        title: "Content Creation Agency Bangalore | Video & Copywriting",
-        description: "Tell your tech story. We create high-impact video, professional copy, and digital content for Bangalore's leading startups and IT firms.",
+        title: "Content Creation Agency Bangalore | Tech Copy & Video Studio",
+        description:
+            "Content creation for Bangalore startups and IT companies. We produce tech-focused copy, videos, and brand content that builds trust and authority.",
         canonical: "/content-creation-bangalore",
     },
+
     content: {
         hero: {
-            title: "Authoritative Content for Bangalore's Tech Ecosystem",
-            subtitle: "Media that captivates. Copy that convinces. We tell the stories of India's Silicon Valley.",
+            title: "High-Impact Content for Bangalore’s Tech Companies",
+            subtitle:
+                "Content built for founders, SaaS teams, and product-led businesses in India’s tech capital.",
         },
+
         overview: {
-            title: "Driving Authority Through Content in Bangalore",
-            text: "In Bangalore's fast-paced tech world, your message needs depth. Ekanostudio's content team specializes in creating digital assets for the IT and Startup world—from deep-dive technical blogs to polished video bios for startup founders.",
+            title: "Content That Builds Trust in a Competitive Tech Market",
+            text:
+                "Bangalore is crowded with products, platforms, and promises. Standing out requires clarity, credibility, and consistency. Ekanostudio helps startups and technology-driven companies create content that explains complex ideas simply, positions founders as experts, and supports long sales cycles. From technical blogs and case studies to founder videos and brand narratives, our content is built for informed decision-makers.",
         },
+
         whyChoose: {
-            title: "Why Our Content Studio?",
+            title: "Why Bangalore Teams Choose Our Content Studio",
             points: [
-                { title: "Tech-Savy Tone", desc: "Writing that resonates with developers and founders alike." },
-                { title: "Premium Visuals", desc: "4K video and modern design for a global brand image." },
-                { title: "Integrated Strategy", desc: "Content designed to perform across LinkedIn, Twitter, and Web." }
-            ]
+                {
+                    title: "Tech-First Copywriting",
+                    desc:
+                        "Content written for developers, product leaders, founders, and enterprise buyers.",
+                },
+                {
+                    title: "Founder & Brand Storytelling",
+                    desc:
+                        "Videos and narratives that humanize your brand and build credibility.",
+                },
+                {
+                    title: "Distribution-Aware Content",
+                    desc:
+                        "Assets designed to perform on LinkedIn, websites, pitch decks, and sales funnels.",
+                },
+            ],
         },
+
         deliverables: [
-            "Startup Brand Films",
-            "Technical Blog Posts",
-            "Founder Interview Videos",
-            "Whitepapers & eBooks",
-            "Social Media Design Kits",
-            "Brand Narrative Documentation"
+            "Startup brand & product videos",
+            "Technical blogs & thought leadership articles",
+            "Founder interviews & leadership content",
+            "Whitepapers, case studies & pitch content",
+            "Social media visuals & content kits",
+            "Brand messaging & narrative documentation",
         ],
+
         process: {
-            title: "Our Creative Workflow",
+            title: "Our Content Production Process",
             steps: [
-                { title: "Discovery", desc: "Identifying your brand's unique edge in the Bangalore market." },
-                { title: "Ideation", desc: "Developing concepts aimed at tech decision-makers." },
-                { title: "Execution", desc: "Producing high-quality visuals and drafting precise copy." },
-                { title: "Fulfillment", desc: "Delivering polished assets for your growth journey." }
-            ]
+                {
+                    title: "Discovery",
+                    desc:
+                        "Understanding your product, audience, and competitive positioning in Bangalore.",
+                },
+                {
+                    title: "Content Strategy",
+                    desc:
+                        "Defining formats, themes, and messaging aligned with your growth stage.",
+                },
+                {
+                    title: "Production",
+                    desc:
+                        "Writing, filming, and designing content with a focus on clarity and quality.",
+                },
+                {
+                    title: "Delivery",
+                    desc:
+                        "Final assets delivered ready for marketing, sales, and employer branding.",
+                },
+            ],
         },
+
         cta: {
-            title: "Need to build more authority?",
-            text: "Let's create content that defines your leadership in Bangalore."
+            title: "Ready to strengthen your brand authority?",
+            text:
+                "Let’s create content that positions your company as a leader in Bangalore’s tech ecosystem.",
         },
+
         relatedServices: [
-            { title: "SEO", link: "/services/seo/on-page-seo" },
-            { title: "Social Media", link: "/services/social-media-marketing/social-media-management" },
-            { title: "Branding", link: "/services/branding/brand-identity-design" }
-        ]
-    }
+            {
+                title: "SEO & Content Optimization",
+                link: "/services/seo/on-page-seo",
+            },
+            {
+                title: "Social Media Marketing",
+                link: "/services/social-media-marketing/social-media-management",
+            },
+            {
+                title: "Brand Identity & Design",
+                link: "/services/branding/brand-identity-design",
+            },
+        ],
+    },
 };

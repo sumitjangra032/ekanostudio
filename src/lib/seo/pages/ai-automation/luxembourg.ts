@@ -7,9 +7,16 @@ export const data: SeoPageData = {
         slug: "ai-automation",
         targetServiceSlug: "ai-automation-n8n",
         categorySlug: "ai-automation",
-        keywords: ["Business Automation", "AI Workflows", "n8n Integration"],
-        description: "Streamline your operations and reduce costs with cutting-edge AI automation and workflow optimization.",
+        keywords: [
+            "AI Automation Luxembourg",
+            "Enterprise Automation",
+            "AI Workflows",
+            "n8n Integration"
+        ],
+        description:
+            "Improve operational efficiency and reduce risk with secure, enterprise-grade AI automation and n8n workflows designed for Luxembourg-based organizations.",
     },
+
     location: {
         name: "Luxembourg",
         slug: "luxembourg",
@@ -17,56 +24,105 @@ export const data: SeoPageData = {
         country: "Luxembourg",
         adjective: "Luxembourg",
         context: "in Luxembourg",
-        metaTitleSuffix: "Luxembourg | Premium Agency",
-        traits: ["financial sector", "high-end business", "european hub"],
+        metaTitleSuffix: "Luxembourg | Enterprise AI Automation",
+        traits: ["financial services", "regulated enterprises", "European headquarters"],
     },
+
     meta: {
-        title: "AI Automation Services Luxembourg | n8n & Enterprise Workflows",
-        description: "Future-proof your Luxembourg business. We build custom AI and automation workflows to boost productivity and security for financial and corporate firms.",
+        title: "AI Automation Services in Luxembourg | Secure n8n Workflows",
+        description:
+            "AI automation solutions for Luxembourg enterprises. We design secure n8n workflows and AI systems for financial, corporate, and regulated organizations.",
         canonical: "/ai-automation-luxembourg",
     },
+
     content: {
         hero: {
-            title: "Intelligent Automation for Global Powerhouses",
-            subtitle: "Boost efficiency. Reduce risk. We bring secure AI and workflow automation to the heart of Luxembourg.",
+            title: "AI Automation for High-Value Enterprises in Luxembourg",
+            subtitle:
+                "Increase efficiency, reduce operational risk, and maintain control with secure AI automation built for regulated environments.",
         },
+
         overview: {
-            title: "Operational Excellence with AI",
-            text: "In Luxembourg's high-cost labor market, efficiency is the key to competitive advantage. Ekanostudio helps leading firms implement AI automation. Whether it's automating complex document verification in Finance or streamlining multi-lingual support, our secure n8n workflows and AI agents save thousands of man-hours.",
+            title: "Enterprise-Grade Automation for Regulated Operations",
+            text:
+                "Luxembourg is a global hub for finance, investment firms, and multinational headquarters where accuracy, security, and compliance are critical. Ekanostudio helps organizations in Luxembourg implement AI automation using n8n and OpenAI. From document verification and reporting to multilingual customer workflows, our solutions reduce manual workload while maintaining strict control over data and processes.",
         },
+
         whyChoose: {
-            title: "Why Automate With Ekanostudio",
+            title: "Why Enterprises Choose Ekanostudio",
             points: [
-                { title: "Enterprise Grade", desc: "Self-hosted, secure n8n deployments for data sovereignty." },
-                { title: "Risk Mitigation", desc: "Reducing manual errors in high-stakes business processes." },
-                { title: "Scale with AI", desc: "Handle increased volume without increasing headcount." }
-            ]
+                {
+                    title: "Secure, Self-Hosted Architecture",
+                    desc:
+                        "Enterprise-grade n8n deployments designed for data control, privacy, and sovereignty.",
+                },
+                {
+                    title: "Risk Reduction Through Automation",
+                    desc:
+                        "Minimize human error in compliance-sensitive and high-impact business processes.",
+                },
+                {
+                    title: "Scalable Without Additional Headcount",
+                    desc:
+                        "Handle growing operational volume efficiently without increasing staffing costs.",
+                },
+            ],
         },
+
         deliverables: [
-            "Process Automation Audit",
-            "Custom n8n Enterprise Workflows",
-            "Bilingual AI Support Agents",
-            "Secure API Integration Services",
-            "Automated Compliance Monitoring",
-            "Internal Training & Documentation"
+            "Enterprise process and automation audit",
+            "Custom n8n workflows for regulated environments",
+            "Multilingual AI support and operations agents",
+            "Secure API and internal system integrations",
+            "Automation for compliance and reporting workflows",
+            "Internal training and operational documentation",
         ],
+
         process: {
-            title: "Automation Roadmap",
+            title: "Our Automation Implementation Framework",
             steps: [
-                { title: "Audit", desc: "Identifying high-friction manual processes in your ops." },
-                { title: "Architect", desc: "Designing a robust and secure automated solution." },
-                { title: "Build", desc: "Developing and staging your custom AI workflows." },
-                { title: "Deploy", desc: "Full integration and staff handoff for live operations." }
-            ]
+                {
+                    title: "Process Assessment",
+                    desc:
+                        "We identify manual, high-risk, and high-cost processes across your operations.",
+                },
+                {
+                    title: "Solution Architecture",
+                    desc:
+                        "We design a secure and compliant automation blueprint tailored to your environment.",
+                },
+                {
+                    title: "Development & Validation",
+                    desc:
+                        "AI workflows are built, tested, and validated in controlled staging environments.",
+                },
+                {
+                    title: "Deployment & Enablement",
+                    desc:
+                        "We deploy the solution and ensure your teams can operate and extend it confidently.",
+                },
+            ],
         },
+
         cta: {
-            title: "Want to transform your operations?",
-            text: "Discuss your automation potential with our Luxembourg experts."
+            title: "Looking to optimize enterprise operations?",
+            text:
+                "Discuss your AI automation requirements with our Luxembourg-focused team.",
         },
+
         relatedServices: [
-            { title: "CRM Setup", link: "/services/email-automation/crm-setup" },
-            { title: "Web Apps", link: "/services/app-development/web-app-development" },
-            { title: "Digital Marketing", link: "/services/digital-marketing/digital-marketing" }
-        ]
-    }
+            {
+                title: "CRM Setup & Automation",
+                link: "/services/email-automation/crm-setup",
+            },
+            {
+                title: "Web Application Development",
+                link: "/services/app-development/web-app-development",
+            },
+            {
+                title: "Digital Marketing",
+                link: "/services/digital-marketing/digital-marketing",
+            },
+        ],
+    },
 };

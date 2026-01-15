@@ -7,66 +7,122 @@ export const data: SeoPageData = {
         slug: "ai-automation",
         targetServiceSlug: "ai-automation-n8n",
         categorySlug: "ai-automation",
-        keywords: ["Business Automation", "AI Workflows", "n8n Integration"],
-        description: "Streamline your operations and reduce costs with cutting-edge AI automation and workflow optimization.",
+        keywords: [
+            "AI Automation Bangalore",
+            "Business Automation",
+            "AI Workflows",
+            "n8n Integration"
+        ],
+        description:
+            "Automate business processes and reduce operational load with custom AI automation and n8n workflows built for fast-growing teams.",
     },
+
     location: {
         name: "Bangalore",
         slug: "bangalore",
         type: "city",
         country: "India",
         adjective: "Bangalore-based",
-        context: "in the Silicon Valley of India",
-        metaTitleSuffix: "Bangalore | Top Rated Agency",
-        traits: ["tech startups", "innovative businesses", "IT hubs"],
+        context: "in India's leading technology hub",
+        metaTitleSuffix: "Bangalore | AI Automation Experts",
+        traits: ["technology startups", "scaling companies", "IT-driven businesses"],
     },
+
     meta: {
-        title: "AI Automation Services Bangalore | n8n & Workflow Strategy",
-        description: "Modernize your Bangalore business. We build custom AI and automation workflows to boost productivity and reduce operational overhead for tech firms.",
+        title: "AI Automation Services in Bangalore | n8n Workflow Experts",
+        description:
+            "AI automation services for Bangalore businesses. We design secure n8n workflows and intelligent systems to save time, reduce errors, and scale operations.",
         canonical: "/ai-automation-bangalore",
     },
+
     content: {
         hero: {
-            title: "Intelligent Automation for Bangalore's Tech Leaders",
-            subtitle: "Boost productivity. Reduce manual errors. We bring secure AI and workflow automation to India's Silicon Valley.",
+            title: "AI Automation Services in Bangalore",
+            subtitle:
+                "Replace repetitive manual work with intelligent automation designed for speed, reliability, and scale.",
         },
+
         overview: {
-            title: "Leading the AI Revolution in Bangalore Business",
-            text: "Bangalore's tech-savvy businesses are rapidly adopting AI to stay ahead. Ekanostudio brings high-level AI automation to your office. Using tools like n8n and OpenAI, we build custom workflows that automate administrative tasks, customer triage, and data analysis—saving your firm significant time and capital.",
+            title: "Building Smarter Operations in Bangalore’s Tech Ecosystem",
+            text:
+                "Bangalore is home to some of the fastest-growing startups and technology-driven companies in India. To stay competitive, businesses need systems that move as fast as they do. Ekanostudio helps Bangalore-based teams implement AI automation using tools like n8n and OpenAI—streamlining internal operations, customer workflows, and data handling without disrupting existing systems.",
         },
+
         whyChoose: {
-            title: "Why Automate with Ekanostudio?",
+            title: "Why Choose AI Automation with Ekanostudio",
             points: [
-                { title: "Expert n8n Workflow Design", desc: "Build connections between all your current business tools." },
-                { title: "Custom AI Solutions", desc: "Tailored agents that understand your specific company needs." },
-                { title: "Reliable Integration", desc: "Stable automation flows that scale as you grow." }
-            ]
+                {
+                    title: "Automation Built for Scale",
+                    desc:
+                        "We design workflows that support rapid growth, high volumes, and evolving business needs.",
+                },
+                {
+                    title: "Custom AI, Not Templates",
+                    desc:
+                        "Each automation is tailored to your tools, processes, and objectives—no one-size-fits-all setups.",
+                },
+                {
+                    title: "Stable & Secure Integrations",
+                    desc:
+                        "Our n8n-based automations are reliable, maintainable, and easy to extend as your systems grow.",
+                },
+            ],
         },
+
         deliverables: [
-            "Operation & Workflow Audit",
-            "Custom n8n Workflows",
-            "AI Chatbot & Support Automation",
-            "Secure API Integration",
-            "Automated Reporting",
-            "Training and Documentation"
+            "Business process & automation audit",
+            "Custom n8n workflow development",
+            "AI-powered chatbots and task automation",
+            "Secure API and tool integrations",
+            "Automated analytics and reporting",
+            "Team training and technical documentation",
         ],
+
         process: {
-            title: "Your Path to Automation",
+            title: "Our AI Automation Process",
             steps: [
-                { title: "Audit", desc: "Identifying manual friction in your Bangalore operations." },
-                { title: "Design", desc: "Crafting a secure and scalable automated path." },
-                { title: "Execute", desc: "Developing and staging your custom AI flows." },
-                { title: "Handoff", desc: "Final deployment and training your team." }
-            ]
+                {
+                    title: "Assessment",
+                    desc:
+                        "We identify repetitive tasks and inefficiencies across your Bangalore operations.",
+                },
+                {
+                    title: "Workflow Design",
+                    desc:
+                        "We plan scalable, secure automation flows aligned with your business goals.",
+                },
+                {
+                    title: "Development & Testing",
+                    desc:
+                        "Automations are built, tested, and refined for accuracy and performance.",
+                },
+                {
+                    title: "Deployment & Enablement",
+                    desc:
+                        "We deploy the solution and ensure your team knows how to manage and scale it.",
+                },
+            ],
         },
+
         cta: {
-            title: "Want to save hundreds of hours?",
-            text: "Request a free automation audit for your Bangalore firm today."
+            title: "Ready to automate and move faster?",
+            text:
+                "Book a free AI automation consultation for your Bangalore-based business.",
         },
+
         relatedServices: [
-            { title: "Web development", link: "/services/web-design-development/website-development" },
-            { title: "Digital Marketing", link: "/services/digital-marketing/digital-marketing" },
-            { title: "CRM Setup", link: "/services/email-automation/crm-setup" }
-        ]
-    }
+            {
+                title: "Website Development",
+                link: "/services/web-design-development/website-development",
+            },
+            {
+                title: "Digital Marketing",
+                link: "/services/digital-marketing/digital-marketing",
+            },
+            {
+                title: "CRM Setup & Automation",
+                link: "/services/email-automation/crm-setup",
+            },
+        ],
+    },
 };

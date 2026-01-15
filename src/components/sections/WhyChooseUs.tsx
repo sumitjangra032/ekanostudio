@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
             via: "#ff006a",
             to: "#8b5cf6",
           }}
-          className="text-[32px] md:text-[42px] font-bold mb-3"
+          className="text-[32px] md:text-[42px] font-bold mb-3 font-satoshi"
         />
 
         {/* Description */}
