@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Strategisches SEO für den österreichischen Markt",
-            text: "Um in Österreich online gefunden zu werden, benötigen Sie eine fundierte SEO-Strategie. Ekanostudio unterstützt Unternehmen dabei, ihre organische Reichweite zu maximieren. Wir optimieren Ihre Technik, Ihre Inhalte und Ihre lokale Präsenz, damit Sie in Wien, Graz, Linz und ganz Österreich ganz oben stehen.",
+            text: "Um in Österreich online gefunden zu werden, benötigen Sie eine fundierte SEO-Strategie. ekanostudio unterstützt Unternehmen dabei, ihre organische Reichweite zu maximieren. Wir optimieren Ihre Technik, Ihre Inhalte und Ihre lokale Präsenz, damit Sie in Wien, Graz, Linz und ganz Österreich ganz oben stehen.",
         },
         whyChoose: {
             title: "Warum SEO mit Uns?",

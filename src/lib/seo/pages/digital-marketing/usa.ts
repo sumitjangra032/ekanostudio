@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Scaling Revenue in the United States",
-            text: "Advertising in the US is expensive. You can't afford wasted clicks. Ekanostudio brings a data-obsessed approach to digital marketing. We optimize for Customer Lifetime Value (LTV) and Customer Acquisition Cost (CAC), ensuring your campaigns in New York, Texas, or Florida are profitable from day one.",
+            text: "Advertising in the US is expensive. You can't afford wasted clicks. ekanostudio brings a data-obsessed approach to digital marketing. We optimize for Customer Lifetime Value (LTV) and Customer Acquisition Cost (CAC), ensuring your campaigns in New York, Texas, or Florida are profitable from day one.",
         },
         whyChoose: {
             title: "Why US Brands Hire Us",

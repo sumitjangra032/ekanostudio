@@ -45,11 +45,11 @@ export const data: SeoPageData = {
         overview: {
             title: "Operational Efficiency in a Service-Driven Economy",
             text:
-                "UK organisations operate in a highly regulated, service-oriented environment where efficiency and accuracy matter. Ekanostudio helps businesses across the United Kingdom adopt AI automation using n8n and OpenAI. We streamline processes such as invoicing, CRM updates, customer queries, and internal reporting—helping teams work faster while maintaining compliance and data control.",
+                "UK organisations operate in a highly regulated, service-oriented environment where efficiency and accuracy matter. ekanostudio helps businesses across the United Kingdom adopt AI automation using n8n and OpenAI. We streamline processes such as invoicing, CRM updates, customer queries, and internal reporting—helping teams work faster while maintaining compliance and data control.",
         },
 
         whyChoose: {
-            title: "Why UK Companies Automate with Ekanostudio",
+            title: "Why UK Companies Automate with ekanostudio",
             points: [
                 {
                     title: "Compliance-First Automation",

@@ -33,7 +33,7 @@ export async function POST(req: Request) {
 
     // 📩 EMAIL TO COMPANY (WITH DETAILS)
     await transporter.sendMail({
-      from: `"EkanoStudio Careers" <${process.env.SMTP_USER}>`,
+      from: `"ekanostudio Careers" <${process.env.SMTP_USER}>`,
       to: "careers@ekanostudio.com", // Specific careers email
       replyTo: email,
       subject: `📋 New Career Application – ${position}`,
@@ -105,7 +105,7 @@ export async function POST(req: Request) {
               </div>
 
               <div class="footer">
-                <p>This application was submitted via the EkanoStudio Careers Portal.</p>
+                <p>This application was submitted via the ekanostudio Careers Portal.</p>
                 <p style="margin: 5px 0;">Click <a href="mailto:${email}" style="color: #6366f1;">here</a> to reply directly to the candidate.</p>
                 <p style="font-size: 11px; color: #9ca3af; margin-top: 15px;">
                   Application ID: APP-${Date.now().toString().slice(-6)}
@@ -127,9 +127,9 @@ export async function POST(req: Request) {
 
     // 📩 PROFESSIONAL THANK YOU EMAIL TO CANDIDATE
     await transporter.sendMail({
-      from: `"EkanoStudio Careers" <careers@ekanostudio.com>`,
+      from: `"ekanostudio Careers" <careers@ekanostudio.com>`,
       to: email,
-      subject: `Application Received – ${position} Role at EkanoStudio`,
+      subject: `Application Received – ${position} Role at ekanostudio`,
       html: `
         <!DOCTYPE html>
         <html>
@@ -157,7 +157,7 @@ export async function POST(req: Request) {
         <body>
           <div class="container">
             <div class="header">
-              <h1 style="margin: 0; font-size: 32px; font-weight: 700;">EkanoStudio</h1>
+              <h1 style="margin: 0; font-size: 32px; font-weight: 700;">ekanostudio</h1>
               <p style="margin: 10px 0 0; opacity: 0.9; font-size: 18px;">Building Digital Excellence</p>
             </div>
             
@@ -216,16 +216,16 @@ export async function POST(req: Request) {
               
               <p style="color: #4b5563; margin-top: 30px;">
                 We appreciate your interest in joining our team and look forward to learning more about your 
-                qualifications and how you could contribute to EkanoStudio's success.
+                qualifications and how you could contribute to ekanostudio's success.
               </p>
               
               <p style="color: #4b5563;">
                 Best regards,<br/>
-                <strong>The EkanoStudio Talent Team</strong>
+                <strong>The ekanostudio Talent Team</strong>
               </p>
               
               <div class="social-links">
-                <a href="https://ekanostudio.com">Website</a> • 
+                <a href="https://www.ekanostudio.com">Website</a> • 
                 <a href="https://linkedin.com/company/ekanostudio">LinkedIn</a> • 
                 <a href="https://twitter.com/ekanostudio">Twitter</a>
               </div>
@@ -233,7 +233,7 @@ export async function POST(req: Request) {
             
             <div class="footer">
               <p style="margin: 0 0 10px;">
-                EkanoStudio • Building Digital Experiences That Matter<br/>
+                ekanostudio • Building Digital Experiences That Matter<br/>
                 Remote-First • Global Team
               </p>
               <p style="margin: 0; font-size: 11px; color: #9ca3af;">

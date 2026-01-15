@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Data-Driven Growth in the World's Most Active Market",
-            text: "Digital marketing in India requires a combination of high-intent search and high-reach social. Ekanostudio provides rigorous performance marketing services. We build integrated marketing funnels that span Google Search, Meta, and Email, ensuring every rupee spent contributes to your bottom line.",
+            text: "Digital marketing in India requires a combination of high-intent search and high-reach social. ekanostudio provides rigorous performance marketing services. We build integrated marketing funnels that span Google Search, Meta, and Email, ensuring every rupee spent contributes to your bottom line.",
         },
         whyChoose: {
             title: "Our Marketing Advantage",

@@ -1,19 +1,19 @@
 export const REFUND_POLICY_CONTENT = {
     title: "REFUND POLICY",
     lastUpdated: "15-11-2025",
-    introduction: `This Refund Policy governs all payments made to Ekanostudio for any services, subscriptions, retainers, consultations, or deliverables provided globally. This Policy is intended to operate uniformly across jurisdictions, subject only to mandatory local laws that cannot be contractually excluded.
+    introduction: `This Refund Policy governs all payments made to ekanostudio for any services, subscriptions, retainers, consultations, or deliverables provided globally. This Policy is intended to operate uniformly across jurisdictions, subject only to mandatory local laws that cannot be contractually excluded.
 
 By engaging our services or making any payment, you confirm that you have read, understood, and agreed to this Refund Policy in full.`,
     sections: [
         {
             title: "1. NATURE OF SERVICES",
-            content: `Ekanostudio provides professional digital services including, but not limited to, website development, design, branding, marketing, advertising management, consulting, analytics, automation, content creation, and strategic advisory services. These services are customized, time-based, and intangible in nature.
+            content: `ekanostudio provides professional digital services including, but not limited to, website development, design, branding, marketing, advertising management, consulting, analytics, automation, content creation, and strategic advisory services. These services are customized, time-based, and intangible in nature.
 
 Due to this nature, refunds are inherently limited once services are initiated.`
         },
         {
             title: "2. GENERAL NO-REFUND PRINCIPLE",
-            content: `Unless expressly stated otherwise in a written agreement signed by an authorized representative of Ekanostudio, all payments made to the Company are non-refundable. This includes advance payments, deposits, retainers, milestone payments, subscription fees, and consultation charges.`
+            content: `Unless expressly stated otherwise in a written agreement signed by an authorized representative of ekanostudio, all payments made to the Company are non-refundable. This includes advance payments, deposits, retainers, milestone payments, subscription fees, and consultation charges.`
         },
         {
             title: "3. COMMENCEMENT OF WORK",
@@ -21,11 +21,11 @@ Due to this nature, refunds are inherently limited once services are initiated.`
         },
         {
             title: "4. PRE-COMMENCEMENT CANCELLATION",
-            content: `If a Client requests cancellation before commencement of work, a refund may be considered at the sole discretion of Ekanostudio. Administrative, onboarding, consultation, and processing costs may be deducted. There is no automatic entitlement to a refund.`
+            content: `If a Client requests cancellation before commencement of work, a refund may be considered at the sole discretion of ekanostudio. Administrative, onboarding, consultation, and processing costs may be deducted. There is no automatic entitlement to a refund.`
         },
         {
             title: "5. PERFORMANCE DISCLAIMER",
-            content: `Ekanostudio does not guarantee specific results, rankings, traffic levels, revenue outcomes, or performance metrics. Dissatisfaction with results or expectations does not constitute grounds for a refund.`
+            content: `ekanostudio does not guarantee specific results, rankings, traffic levels, revenue outcomes, or performance metrics. Dissatisfaction with results or expectations does not constitute grounds for a refund.`
         },
         {
             title: "6. THIRD-PARTY COSTS",
@@ -49,7 +49,7 @@ Due to this nature, refunds are inherently limited once services are initiated.`
         },
         {
             title: "11. REVIEW AND DECISION AUTHORITY",
-            content: `All refund requests are reviewed on a case-by-case basis. The decision of Ekanostudio shall be final and binding.`
+            content: `All refund requests are reviewed on a case-by-case basis. The decision of ekanostudio shall be final and binding.`
         },
         {
             title: "12. CURRENCY AND FEES",
@@ -61,7 +61,7 @@ Due to this nature, refunds are inherently limited once services are initiated.`
         },
         {
             title: "14. MODIFICATIONS",
-            content: `Ekanostudio reserves the right to update this Policy at any time. The version in effect at the time of payment shall apply.`
+            content: `ekanostudio reserves the right to update this Policy at any time. The version in effect at the time of payment shall apply.`
         },
         {
             title: "15. CONTACT",

@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Precision SEO for the Global Hub",
-            text: "Luxembourg's search landscape is unique and highly multilingual. To win, you need to rank across multiple languages and high-competition sectors. Ekanostudio delivers targeted SEO campaigns that leverage deep technical expertise and multi-lingual link-building to secure top positions in the Grand Duchy.",
+            text: "Luxembourg's search landscape is unique and highly multilingual. To win, you need to rank across multiple languages and high-competition sectors. ekanostudio delivers targeted SEO campaigns that leverage deep technical expertise and multi-lingual link-building to secure top positions in the Grand Duchy.",
         },
         whyChoose: {
             title: "Our Luxembourg SEO Advantage",

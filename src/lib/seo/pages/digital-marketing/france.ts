@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Croissance Numérique en France",
-            text: "Digital marketing in France is evolving fast. You need a partner who understands the local ecosystem. Ekanostudio provides rigorous performance marketing services. We manage campaigns across Google, Meta, and LinkedIn, ensuring strict adherence to RGPD (GDPR) while delivering maximum ROI for your budget.",
+            text: "Digital marketing in France is evolving fast. You need a partner who understands the local ecosystem. ekanostudio provides rigorous performance marketing services. We manage campaigns across Google, Meta, and LinkedIn, ensuring strict adherence to RGPD (GDPR) while delivering maximum ROI for your budget.",
         },
         whyChoose: {
             title: "Notre Approche",

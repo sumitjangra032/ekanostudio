@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Surgical SEO for Pune's Competitive Market",
-            text: "Competition in Pune's IT and manufacturing sectors is fierce. Generic SEO just doesn't cut it. Ekanostudio provides specialized SEO services in Pune, from technical on-page audits to high-authority backlink building, ensuring your business stays ahead of the curve.",
+            text: "Competition in Pune's IT and manufacturing sectors is fierce. Generic SEO just doesn't cut it. ekanostudio provides specialized SEO services in Pune, from technical on-page audits to high-authority backlink building, ensuring your business stays ahead of the curve.",
         },
         whyChoose: {
             title: "Our Pune SEO Edge",

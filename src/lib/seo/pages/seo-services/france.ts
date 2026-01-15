@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Référencement Naturel Stratégique",
-            text: "Ranking in France requires mastering French search intent and semantic structure. Ekanostudio offers dedicated SEO services for the French market. We optimize your content for Google.fr, build high-quality links from French domains, and ensure your technical foundation supports your growth across the country.",
+            text: "Ranking in France requires mastering French search intent and semantic structure. ekanostudio offers dedicated SEO services for the French market. We optimize your content for Google.fr, build high-quality links from French domains, and ensure your technical foundation supports your growth across the country.",
         },
         whyChoose: {
             title: "Nos Atouts SEO",

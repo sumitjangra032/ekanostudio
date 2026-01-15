@@ -4,7 +4,7 @@ import { Metadata } from "next";
 const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
-  title: "Sitemap - All Pages | Ekanostudio",
+  title: "Sitemap - All Pages | ekanostudio",
   description: "Complete overview of our digital services, resources, and company pages.",
   robots: {
     index: false,

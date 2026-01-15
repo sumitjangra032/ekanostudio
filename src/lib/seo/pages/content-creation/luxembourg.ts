@@ -46,7 +46,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Content Designed for Trust, Clarity, and Authority",
             text:
-                "Luxembourg operates at the intersection of finance, regulation, and international business. Content here must be precise, credible, and strategically positioned. Ekanostudio creates high-authority content for firms operating in finance, consulting, investment, and cross-border services—helping brands communicate clearly, reinforce credibility, and support long-term growth.",
+                "Luxembourg operates at the intersection of finance, regulation, and international business. Content here must be precise, credible, and strategically positioned. ekanostudio creates high-authority content for firms operating in finance, consulting, investment, and cross-border services—helping brands communicate clearly, reinforce credibility, and support long-term growth.",
         },
 
         whyChoose: {

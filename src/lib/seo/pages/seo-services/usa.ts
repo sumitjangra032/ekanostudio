@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Ranking in the World's Toughest Market",
-            text: "Ranking in the USA requires impeccable technical execution and authority building. There is no room for error. Ekanostudio uses advanced semantic SEO and entity mapping to align your content with US search intent. We help you capture high-value queries whether you are targeting a specific state or the entire nation.",
+            text: "Ranking in the USA requires impeccable technical execution and authority building. There is no room for error. ekanostudio uses advanced semantic SEO and entity mapping to align your content with US search intent. We help you capture high-value queries whether you are targeting a specific state or the entire nation.",
         },
         whyChoose: {
             title: "Our US SEO Expertise",
@@ -61,7 +61,7 @@ export const data: SeoPageData = {
         },
         cta: {
             title: "Ready to expand nationwide?",
-            text: "Start your US growth campaign with Ekanostudio."
+            text: "Start your US growth campaign with ekanostudio."
         },
         relatedServices: [
             { title: "Content Marketing", link: "/services/content-creation/content-writing" },

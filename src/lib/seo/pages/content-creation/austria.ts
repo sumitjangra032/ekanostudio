@@ -46,11 +46,11 @@ export const data: SeoPageData = {
         overview: {
             title: "Content mit Substanz – nicht nur Reichweite",
             text:
-                "Im österreichischen Markt zählen Glaubwürdigkeit, Qualität und klare Kommunikation. Ekanostudio unterstützt Unternehmen dabei, Inhalte zu entwickeln, die nicht nur gut aussehen, sondern wirken. Von durchdachtem Copywriting über visuelles Storytelling bis hin zu Video-Content erstellen wir digitale Assets, die Ihre Marke professionell positionieren und langfristig Vertrauen aufbauen.",
+                "Im österreichischen Markt zählen Glaubwürdigkeit, Qualität und klare Kommunikation. ekanostudio unterstützt Unternehmen dabei, Inhalte zu entwickeln, die nicht nur gut aussehen, sondern wirken. Von durchdachtem Copywriting über visuelles Storytelling bis hin zu Video-Content erstellen wir digitale Assets, die Ihre Marke professionell positionieren und langfristig Vertrauen aufbauen.",
         },
 
         whyChoose: {
-            title: "Warum Content von Ekanostudio?",
+            title: "Warum Content von ekanostudio?",
             points: [
                 {
                     title: "Muttersprachliche Inhalte",

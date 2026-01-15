@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Maßgeschneidertes Webdesign für Österreich",
-            text: "Der österreichische Markt verlangt nach Präzision und Verlässlichkeit. Ihre Website ist Ihr digitales Aushängeschild. Ekanostudio bietet professionelles Webdesign, das genau auf die Bedürfnisse österreichischer KMUs und etablierter Marken zugeschnitten ist – von Wien bis Salzburg.",
+            text: "Der österreichische Markt verlangt nach Präzision und Verlässlichkeit. Ihre Website ist Ihr digitales Aushängeschild. ekanostudio bietet professionelles Webdesign, das genau auf die Bedürfnisse österreichischer KMUs und etablierter Marken zugeschnitten ist – von Wien bis Salzburg.",
         },
         whyChoose: {
             title: "Ihre Vorteile mit Uns",

@@ -1,7 +1,7 @@
 import CreateOnlineMarketplaceBlog from "@/components/blogs/how-to-create-online-marketplace";
 import { Metadata } from "next";
 
-const SITE_URL = "https://ekanostudio.com";
+const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
   title: "How to Create an Online Marketplace: Strategy, Monetization, Trust & Growth",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "How to Create an Online Marketplace: Strategy, Monetization, Trust & Growth",
     description: "A complete in-depth guide on how to create an online marketplace.",
     url: `${SITE_URL}/how-to-create-online-marketplace`,
-    siteName: "Ekanostudio",
+    siteName: "ekanostudio",
     type: "article",
   },
   twitter: {
@@ -36,5 +36,5 @@ export const metadata: Metadata = {
 };
 
 export default function CreateOnlineMarketplaceBlogPage() {
-    return <CreateOnlineMarketplaceBlog />;
+  return <CreateOnlineMarketplaceBlog />;
 }

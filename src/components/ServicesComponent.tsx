@@ -82,14 +82,13 @@ export default function ServicesComponent() {
           </div>
         </div>
 
-        {/* DESCRIPTION ONLY (NO REPEATED TITLE) */}
         <div className="text-center">
-          <p
+          <div
             className="max-w-3xl mx-auto text-sm md:text-base"
             style={{ color: theme.subtext }}
           >
             <AnimatedLine text={description} delay={0.15} />
-          </p>
+          </div>
         </div>
 
         {/* SEARCH */}

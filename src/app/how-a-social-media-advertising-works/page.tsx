@@ -1,7 +1,7 @@
 import SocialMediaAdvertisingBlog from "@/components/blogs/how-a-social-media-advertising-works";
 import { Metadata } from "next";
 
-const SITE_URL = "https://ekanostudio.com";
+const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
   title: "The Paid Social Master Class: Creative, Data, and Scaling",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "The Paid Social Master Class: Creative, Data, and Scaling",
     description: "A deep dive into modern social media advertising, focusing on algorithm mechanics, server-side tracking (CAPI), and high-volume creative testing for Meta and TikTok.",
     url: `${SITE_URL}/how-a-social-media-advertising-works`,
-    siteName: "Ekanostudio",
+    siteName: "ekanostudio",
     type: "article",
   },
   twitter: {
@@ -38,5 +38,5 @@ export const metadata: Metadata = {
 
 
 export default function SocialMediaAdvertisingPage() {
-    return <SocialMediaAdvertisingBlog />;
+  return <SocialMediaAdvertisingBlog />;
 }

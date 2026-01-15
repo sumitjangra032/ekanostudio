@@ -1,7 +1,7 @@
 import EmailMarketingMasterclass from "@/components/blogs/how-to-start-email-marketing";
 import { Metadata } from "next";
 
-const SITE_URL = "https://ekanostudio.com";
+const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
   title: "Email Marketing Master Class: From Strategy to Automated Revenue Flows",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Email Marketing Master Class: From Strategy to Automated Revenue Flows",
     description: "A complete guide on how to start and scale email marketing.",
     url: `${SITE_URL}/how-to-start-email-marketing`,
-    siteName: "Ekanostudio",
+    siteName: "ekanostudio",
     type: "article",
   },
   twitter: {
@@ -34,5 +34,5 @@ export const metadata: Metadata = {
   },
 };
 export default function EmailMarketingMasterclassPage() {
-    return <EmailMarketingMasterclass />;
+  return <EmailMarketingMasterclass />;
 }

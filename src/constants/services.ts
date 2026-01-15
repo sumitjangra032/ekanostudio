@@ -240,6 +240,11 @@ export interface IServiceType {
   slug: string;
   title: string;
   seo?: string;
+  description?: string;
+  meta?: {
+    title?: string;
+    description?: string;
+  };
   sections: IServiceSection[];
 }
 

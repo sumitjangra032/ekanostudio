@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Corporate-Grade Web Design in the Capital",
-            text: "Delhi is the political and corporate powerhouse of India. Your digital presence needs to reflect that stature. At Ekanostudio, we specialize in crafting premium, secure, and scalable websites for Delhi's diverse business landscape—whether you are a policy think-tank, a luxury retailer, or a manufacturing giant.",
+            text: "Delhi is the political and corporate powerhouse of India. Your digital presence needs to reflect that stature. At ekanostudio, we specialize in crafting premium, secure, and scalable websites for Delhi's diverse business landscape—whether you are a policy think-tank, a luxury retailer, or a manufacturing giant.",
         },
         whyChoose: {
             title: "Why Delhi's Top Firms Choose Us",

@@ -45,11 +45,11 @@ export const data: SeoPageData = {
         overview: {
             title: "Driving Operational Efficiency with AI Automation",
             text:
-                "Delhi is home to large enterprises, established brands, and high-volume operations where efficiency directly impacts margins. Ekanostudio helps Delhi-based organizations implement AI automation using tools like n8n and OpenAI. From lead processing and reporting to internal approvals and customer workflows, we design systems that reduce errors, save time, and bring structure to complex operations.",
+                "Delhi is home to large enterprises, established brands, and high-volume operations where efficiency directly impacts margins. ekanostudio helps Delhi-based organizations implement AI automation using tools like n8n and OpenAI. From lead processing and reporting to internal approvals and customer workflows, we design systems that reduce errors, save time, and bring structure to complex operations.",
         },
 
         whyChoose: {
-            title: "Why Choose Ekanostudio for AI Automation",
+            title: "Why Choose ekanostudio for AI Automation",
             points: [
                 {
                     title: "Business-Rule Driven Automation",

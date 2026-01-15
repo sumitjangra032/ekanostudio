@@ -45,7 +45,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Automisation Intelligente des Processus Métiers",
             text:
-                "Les entreprises françaises adoptent l’automatisation pour rester compétitives tout en maintenant des standards élevés de qualité et de conformité. Ekanostudio accompagne les organisations en France dans la mise en place de solutions d’automatisation IA basées sur n8n et OpenAI. Nous automatisons des processus clés comme le support client, le traitement des données et les tâches administratives, tout en respectant les exigences de sécurité et de souveraineté des données.",
+                "Les entreprises françaises adoptent l’automatisation pour rester compétitives tout en maintenant des standards élevés de qualité et de conformité. ekanostudio accompagne les organisations en France dans la mise en place de solutions d’automatisation IA basées sur n8n et OpenAI. Nous automatisons des processus clés comme le support client, le traitement des données et les tâches administratives, tout en respectant les exigences de sécurité et de souveraineté des données.",
         },
 
         whyChoose: {

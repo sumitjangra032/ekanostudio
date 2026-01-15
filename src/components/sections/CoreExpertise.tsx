@@ -7,6 +7,7 @@ import { CORE_EXPERTISE_CONTENT } from "@/constants/coreExpertise";
 import AnimatedLine from "../animated/AnimatedLine";
 import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "../../constants/theme";
+import Link from "next/link";
 import GlowBeam from "../effects/GlowBeam";
 
 export default function CoreExpertise() {
@@ -73,16 +74,18 @@ export default function CoreExpertise() {
                 {/* Stacked Cards Container */}
                 <div className="relative  pb-40">
                     {CORE_EXPERTISE_CONTENT.cards.map((card, index) => {
-                        const targetScale = 1 - ((CORE_EXPERTISE_CONTENT.cards.length - index) * 0.05);
+                        const total = CORE_EXPERTISE_CONTENT.cards.length;
+                        const targetScale = 1 - ((total - index) * 0.04);
+                        const step = 1 / total;
                         return (
                             <CoreExpertiseCard
                                 key={index}
                                 card={card}
                                 index={index}
-                                total={CORE_EXPERTISE_CONTENT.cards.length}
+                                total={total}
                                 theme={theme}
                                 progress={scrollYProgress}
-                                range={[index * 0.25, 1]}
+                                range={[index * step, 1]}
                                 targetScale={targetScale}
                             />
                         )
@@ -129,7 +132,7 @@ function CoreExpertiseCard({
                 className={`
           relative overflow-hidden rounded-3xl
           flex flex-col ${isEven ? "md:flex-row" : "md:flex-row-reverse"}
-          h-auto md:h-[520px]
+          h-auto md:h-[540px]
           border border-white/10
           bg-black/40
           backdrop-blur-xl
@@ -165,15 +168,15 @@ function CoreExpertiseCard({
                         {card.title}
                     </h3>
 
-                    <p
-                        className="text-[16px] leading-relaxed mb-8 max-w-xl"
-                        style={{
-                            color: theme.subtext,
-                            fontFamily: "var(--font-inter)",
-                        }}
-                    >
-                        {card.description}
-                    </p>
+                    <div className="mb-8">
+                        <AnimatedLine
+                            text={card.description}
+                            isHeading={false}
+                            textColor={theme.subtext}
+                            className="text-[16px] leading-relaxed max-w-xl"
+                            highlightStyle={{ color: theme.accents.a, fontWeight: 500 }}
+                        />
+                    </div>
 
                     {/* Tags */}
                     <div className="flex flex-wrap gap-3 mt-auto">

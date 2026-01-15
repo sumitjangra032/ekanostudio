@@ -1,7 +1,7 @@
 import ApiIntegrationsBlog from "@/components/blogs/how-api-integrations-work";
 import { Metadata } from "next";
 
-const SITE_URL = "https://ekanostudio.com";
+const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
   title: "The Complete Guide to API Integrations: Protocols, Security & Strategy",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "The Complete Guide to API Integrations: Protocols, Security & Strategy",
     description: "A technical and strategic deep dive into building, managing, and securing vital API connections.",
     url: `${SITE_URL}/how-api-integrations-work`,
-    siteName: "Ekanostudio",
+    siteName: "ekanostudio",
     type: "article",
   },
   twitter: {
@@ -41,5 +41,5 @@ export const metadata: Metadata = {
 
 
 export default function ApiIntegrationsBlogpage() {
-    return <ApiIntegrationsBlog />;
+  return <ApiIntegrationsBlog />;
 }

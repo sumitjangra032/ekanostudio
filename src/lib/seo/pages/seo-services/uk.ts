@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Data-Driven SEO for the UK Economy",
-            text: "Navigating the UK search landscape requires local nuance. Terms, spelling, and search intent differ significantly from the US. Ekanostudio delivers specialized UK SEO services. We optimize for British English queries, build links from .co.uk domains, and ensure your business appears in local packs from London to Edinburgh.",
+            text: "Navigating the UK search landscape requires local nuance. Terms, spelling, and search intent differ significantly from the US. ekanostudio delivers specialized UK SEO services. We optimize for British English queries, build links from .co.uk domains, and ensure your business appears in local packs from London to Edinburgh.",
         },
         whyChoose: {
             title: "Our UK SEO Edge",

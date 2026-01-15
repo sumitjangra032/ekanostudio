@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Strategic SEO for the Capital's Market",
-            text: "Competition in Delhi is fierce across every vertical—from real estate to healthcare. Generic SEO strategies don't cut it here. Ekanostudio delivers surgical SEO campaigns that target high-value commercial intent keywords, ensuring your business stays visible to the decision-makers in Delhi NCR.",
+            text: "Competition in Delhi is fierce across every vertical—from real estate to healthcare. Generic SEO strategies don't cut it here. ekanostudio delivers surgical SEO campaigns that target high-value commercial intent keywords, ensuring your business stays visible to the decision-makers in Delhi NCR.",
         },
         whyChoose: {
             title: "Why Delhi Businesses Rely on Us",

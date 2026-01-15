@@ -106,7 +106,7 @@ export default function CancellationPolicyContent() {
                     className="pt-12 text-center"
                 >
                     <p className="text-sm opacity-50" style={{ color: theme.subtext }}>
-                        © {new Date().getFullYear()} Ekanostudio. All rights reserved.
+                        © {new Date().getFullYear()} ekanostudio. All rights reserved.
                     </p>
                 </motion.div>
 

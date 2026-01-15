@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Bespoke Web Design for the UK Market",
-            text: "The UK market balances heritage with innovation. Your website needs to reflect quality and trust. Ekanostudio provides end-to-end web design solutions tailored for British businesses—from London fintechs to Manchester manufacturing. We prioritize clean aesthetics, strict GDPR compliance, and seamless functionality.",
+            text: "The UK market balances heritage with innovation. Your website needs to reflect quality and trust. ekanostudio provides end-to-end web design solutions tailored for British businesses—from London fintechs to Manchester manufacturing. We prioritize clean aesthetics, strict GDPR compliance, and seamless functionality.",
         },
         whyChoose: {
             title: "Why UK SMEs Partner With Us",

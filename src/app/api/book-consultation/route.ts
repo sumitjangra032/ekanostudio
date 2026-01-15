@@ -32,7 +32,7 @@ export async function POST(req: Request) {
 
         // 📩 INTERNAL NOTIFICATION TO TEAM
         await transporter.sendMail({
-            from: `"EkanoStudio Strategy Desk" <info@ekanostudio.com>`,
+            from: `"ekanostudio Strategy Desk" <info@ekanostudio.com>`,
             to: "info@ekanostudio.com",
             cc: ["info@ekanostudio.com", "info@ekanostudio.com"],
             replyTo: email,
@@ -181,7 +181,7 @@ export async function POST(req: Request) {
 
                         <div class="footer">
                             <p style="margin: 0 0 8px 0;">Reference ID: CONSULT-${Date.now().toString().slice(-6)}</p>
-                            <p style="margin: 0; font-size: 11px;">This notification was generated from the EkanoStudio Strategy Portal</p>
+                            <p style="margin: 0; font-size: 11px;">This notification was generated from the ekanostudio Strategy Portal</p>
                         </div>
                     </div>
                 </body>
@@ -191,7 +191,7 @@ export async function POST(req: Request) {
 
         // 📩 PROFESSIONAL CONFIRMATION TO CLIENT
         await transporter.sendMail({
-            from: `"EkanoStudio Strategy Team" <info@ekanostudio.com>`,
+            from: `"ekanostudio Strategy Team" <info@ekanostudio.com>`,
             to: email,
             replyTo: "info@ekanostudio.com",
             subject: `Your Strategy Session Request Confirmation - ${service}`,
@@ -235,14 +235,14 @@ export async function POST(req: Request) {
                 <body>
                     <div class="container">
                         <div class="header">
-                            <h1 style="margin: 0; font-size: 36px; font-weight: 800;">EkanoStudio</h1>
+                            <h1 style="margin: 0; font-size: 36px; font-weight: 800;">ekanostudio</h1>
                             <p style="margin: 8px 0 0 0; opacity: 0.9; font-size: 18px;">Strategic Digital Excellence</p>
                         </div>
 
                         <div class="content">
                             <h2 class="greeting">Dear ${name},</h2>
                             <p class="intro-text">
-                                Thank you for requesting a strategy session with EkanoStudio. We're excited about the 
+                                Thank you for requesting a strategy session with ekanostudio. We're excited about the 
                                 opportunity to explore <strong>${service}</strong> and discuss how we can help transform your vision 
                                 into digital success.
                             </p>
@@ -317,7 +317,7 @@ export async function POST(req: Request) {
 
                             <div class="cta-section">
                                 <p style="color: #4a5568; margin-bottom: 24px;">While you wait, explore our recent strategic work:</p>
-                                <a href="https://ekanostudio.com/case-studies" class="cta-button">View Strategic Case Studies</a>
+                                <a href="https://www.ekanostudio.com/case-studies" class="cta-button">View Strategic Case Studies</a>
                             </div>
 
                             <div style="color: #718096; font-size: 14px; line-height: 1.7; margin-top: 40px;">
@@ -333,7 +333,7 @@ export async function POST(req: Request) {
 
                         <div class="contact-info">
                             <p style="margin: 0 0 16px 0;">
-                                <strong>EkanoStudio Strategy Team</strong><br>
+                                <strong>ekanostudio Strategy Team</strong><br>
                                 Building Digital Experiences That Drive Growth
                             </p>
                             <div class="reference-id">

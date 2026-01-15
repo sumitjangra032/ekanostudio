@@ -205,7 +205,7 @@ export default function ServiceForm() {
                             </p>
                         </div>
 
-                        {/* Why Ekanostudio List */}
+                        {/* Why ekanostudio List */}
                         <div className="space-y-4 pt-4">
                             <h4 className="text-xs font-bold uppercase tracking-widest opacity-50" style={{ color: theme.text }}>
                                 Why partner with us?

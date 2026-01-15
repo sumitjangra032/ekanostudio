@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Strategic SEO for the Corporate Capital",
-            text: "In Gurgaon, visibility is everything. Whether you are in real estate on Golf Course Road or a tech giant in Cyber City, ranking for the right keywords drives growth. Ekanostudio offers data-backed SEO services in Gurgaon, focusing on high-intent B2B keywords and technical excellence to outpace your competition.",
+            text: "In Gurgaon, visibility is everything. Whether you are in real estate on Golf Course Road or a tech giant in Cyber City, ranking for the right keywords drives growth. ekanostudio offers data-backed SEO services in Gurgaon, focusing on high-intent B2B keywords and technical excellence to outpace your competition.",
         },
         whyChoose: {
             title: "Our Gurgaon SEO Edge",

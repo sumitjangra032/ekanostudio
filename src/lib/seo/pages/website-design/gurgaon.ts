@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Enterprise-Grade Web Design in Gurgaon",
-            text: "Gurgaon (Gurugram) is India's premier corporate and tech destination. Your brand needs a digital presence that matches the scale of Cyber City. Ekanostudio delivers world-class web design for Gurgaon's MNCs, financial firms, and high-growth startups, focusing on performance, scalability, and premium aesthetics.",
+            text: "Gurgaon (Gurugram) is India's premier corporate and tech destination. Your brand needs a digital presence that matches the scale of Cyber City. ekanostudio delivers world-class web design for Gurgaon's MNCs, financial firms, and high-growth startups, focusing on performance, scalability, and premium aesthetics.",
         },
         whyChoose: {
             title: "Why Gurgaon's Global Firms Choose Us",

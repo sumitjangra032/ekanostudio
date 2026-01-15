@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Scaling Brands in the UK Digital Economy",
-            text: "The UK is one of the world's most advanced e-commerce and digital service markets. To standout, you need precision. Ekanostudio offers full-stack digital marketing solutions. From Google Ads targeting specific London boroughs to nationwide Meta campaigns, we help you reach your ideal British customer efficiently.",
+            text: "The UK is one of the world's most advanced e-commerce and digital service markets. To standout, you need precision. ekanostudio offers full-stack digital marketing solutions. From Google Ads targeting specific London boroughs to nationwide Meta campaigns, we help you reach your ideal British customer efficiently.",
         },
         whyChoose: {
             title: "Our Marketing Approach",

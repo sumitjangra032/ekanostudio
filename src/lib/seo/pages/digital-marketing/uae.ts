@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Growth Marketing in the Emirates",
-            text: "The UAE audience is mobile-first and socially active. To reach them, you need a smart strategy. Ekanostudio provides data-driven digital marketing services. We combine precision targeting on Instagram and TikTok with high-intent Google Ads to ensure your brand captures the booming demand in Dubai and Abu Dhabi.",
+            text: "The UAE audience is mobile-first and socially active. To reach them, you need a smart strategy. ekanostudio provides data-driven digital marketing services. We combine precision targeting on Instagram and TikTok with high-intent Google Ads to ensure your brand captures the booming demand in Dubai and Abu Dhabi.",
         },
         whyChoose: {
             title: "Our UAE Marketing Edge",

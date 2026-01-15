@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Gezieltes Wachstum in der Alpenrepublik",
-            text: "Österreichs Online-Markt bietet große Chancen. Ekanostudio unterstützt Sie dabei, diese zu nutzen. Wir entwickeln integrierte Marketing-Strategien, die exakt auf das Konsumverhalten in Österreich abgestimmt sind – von datengetriebenen Google Ads bis hin zu wirksamen Social-Media-Kampagnen.",
+            text: "Österreichs Online-Markt bietet große Chancen. ekanostudio unterstützt Sie dabei, diese zu nutzen. Wir entwickeln integrierte Marketing-Strategien, die exakt auf das Konsumverhalten in Österreich abgestimmt sind – von datengetriebenen Google Ads bis hin zu wirksamen Social-Media-Kampagnen.",
         },
         whyChoose: {
             title: "Unsere Marketing-Power",

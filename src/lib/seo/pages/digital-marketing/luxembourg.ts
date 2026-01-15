@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Growth Marketing for B2B Leaders",
-            text: "Digital marketing in Luxembourg requires a surgical approach. You aren't just looking for clicks; you're looking for decision-makers. Ekanostudio provides full-stack marketing solutions that combine the reach of LinkedIn Ads with the high-intent of Google Search, all while maintaining perfect data compliance.",
+            text: "Digital marketing in Luxembourg requires a surgical approach. You aren't just looking for clicks; you're looking for decision-makers. ekanostudio provides full-stack marketing solutions that combine the reach of LinkedIn Ads with the high-intent of Google Search, all while maintaining perfect data compliance.",
         },
         whyChoose: {
             title: "Our Marketing Advantage",

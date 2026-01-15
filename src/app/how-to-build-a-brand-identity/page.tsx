@@ -1,7 +1,7 @@
 import BrandingMasterclass from "@/components/blogs/how-to-build-a-brand-identity";
 import { Metadata } from "next";
 
-const SITE_URL = "https://ekanostudio.com";
+const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
   title: "How to Build a Brand Identity: Strategy, Psychology & Visuals",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "How to Build a Brand Identity: Strategy, Psychology & Visuals",
     description: "A comprehensive master class on how to build a powerful brand identity.",
     url: `${SITE_URL}/how-to-build-a-brand-identity`,
-    siteName: "Ekanostudio",
+    siteName: "ekanostudio",
     type: "article",
   },
   twitter: {
@@ -36,5 +36,5 @@ export const metadata: Metadata = {
 };
 
 export default function BrandingMasterclassPage() {
-    return <BrandingMasterclass />;
+  return <BrandingMasterclass />;
 }

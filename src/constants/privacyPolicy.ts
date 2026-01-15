@@ -1,13 +1,13 @@
 export const PRIVACY_POLICY_CONTENT = {
     title: "PRIVACY POLICY",
     lastUpdated: "15-11-2025",
-    introduction: `This Privacy Policy describes how Ekanostudio collects, uses, processes, stores, discloses, and protects personal information and business-related data of individuals and entities that access our website, communicate with us, or engage our services globally. This Policy is intended to be jurisdiction-neutral and aligned with internationally recognized data protection principles.
+    introduction: `This Privacy Policy describes how ekanostudio collects, uses, processes, stores, discloses, and protects personal information and business-related data of individuals and entities that access our website, communicate with us, or engage our services globally. This Policy is intended to be jurisdiction-neutral and aligned with internationally recognized data protection principles.
 
 By accessing our website, communicating with us, or using our services, you acknowledge that you have read, understood, and agreed to the terms of this Privacy Policy.`,
     sections: [
         {
             title: "1. SCOPE AND APPLICABILITY",
-            content: `This Policy applies to all visitors, clients, prospects, partners, contractors, vendors, and representatives who interact with Ekanostudio in any capacity. It applies regardless of geographic location, subject to mandatory local data protection laws that cannot be contractually excluded.
+            content: `This Policy applies to all visitors, clients, prospects, partners, contractors, vendors, and representatives who interact with ekanostudio in any capacity. It applies regardless of geographic location, subject to mandatory local data protection laws that cannot be contractually excluded.
 
 This Policy covers personal information collected online and offline, including through our website, email communications, service engagements, contracts, and other business interactions.`
         },

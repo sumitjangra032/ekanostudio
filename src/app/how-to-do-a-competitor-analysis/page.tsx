@@ -1,7 +1,7 @@
 import CompetitorAnalysisPage from "@/components/blogs/how-to-do-a-competitor-analysis";
 import { Metadata } from "next";
 
-const SITE_URL = "https://ekanostudio.com";
+const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
   title: "The Competitor Analysis Master Class: War Game Your Market",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "The Competitor Analysis Master Class: War Game Your Market",
     description: "A deep dive into competitor analysis, using strategic frameworks, digital espionage, and psychological audits.",
     url: `${SITE_URL}/how-to-do-a-competitor-analysis`,
-    siteName: "Ekanostudio",
+    siteName: "ekanostudio",
     type: "article",
   },
   twitter: {
@@ -35,5 +35,5 @@ export const metadata: Metadata = {
 };
 
 export default function CompetitorAnalysisBlog() {
-    return <CompetitorAnalysisPage />;
+  return <CompetitorAnalysisPage />;
 }   

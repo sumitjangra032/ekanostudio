@@ -45,7 +45,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Intelligente Automatisierung für nachhaltige Effizienz",
             text:
-                "Immer mehr österreichische Unternehmen setzen auf digitale Prozessoptimierung. Ekanostudio unterstützt Sie dabei mit moderner KI-Automatisierung auf Basis von n8n und OpenAI. Wir entwickeln sichere Workflows zur Automatisierung von Datenverarbeitung, Lead-Management und Kundenkommunikation – individuell angepasst an Ihre Geschäftsabläufe.",
+                "Immer mehr österreichische Unternehmen setzen auf digitale Prozessoptimierung. ekanostudio unterstützt Sie dabei mit moderner KI-Automatisierung auf Basis von n8n und OpenAI. Wir entwickeln sichere Workflows zur Automatisierung von Datenverarbeitung, Lead-Management und Kundenkommunikation – individuell angepasst an Ihre Geschäftsabläufe.",
         },
 
         whyChoose: {

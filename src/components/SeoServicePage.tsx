@@ -3,6 +3,7 @@
 import { SeoPageData } from "@/lib/seo/content-generator";
 import ServicePageClient from "@/components/service-sections/ServicePageClient";
 import { IServiceType } from "@/constants/services";
+import { SERVICE_PRICING } from "@/constants/servicePricing";
 
 import { FaChartLine, FaRocket, FaGlobe, FaClock } from "react-icons/fa";
 
@@ -129,7 +130,7 @@ export default function SeoServicePage({ data }: { data: SeoPageData }) {
                 type: "pricing",
                 data: {
                     heading: "Flexible Pricing Plans",
-                    plans: [
+                    plans: SERVICE_PRICING[data.service.targetServiceSlug] || [
                         {
                             name: "Starter",
                             price: "$499+",

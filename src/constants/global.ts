@@ -1,6 +1,6 @@
 // GLOBAL BRAND CONSTANTS
 export const BRAND = {
-  name: "EkanoStudio",
+  name: "ekanostudio",
   // logo: "https://framerusercontent.com/images/KBXmurAlNWp1ASYIJBZflcRzcyQ.svg",
   favicon: "/favicon.ico",
 };

@@ -95,7 +95,7 @@ export default function Comparison() {
                 color: "#22c55e",
               }}
             >
-              EkanoStudio
+              ekanostudio
             </div>
 
             <div
@@ -129,7 +129,7 @@ export default function Comparison() {
                       {feature}
                     </div>
 
-                    {/* EkanoStudio — ALWAYS GREEN CHECK */}
+                    {/* ekanostudio — ALWAYS GREEN CHECK */}
                     <div className="flex justify-center">
                       <Check size={20} color="#22c55e" />
                     </div>

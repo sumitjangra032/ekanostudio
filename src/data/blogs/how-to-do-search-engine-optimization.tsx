@@ -898,7 +898,7 @@ export const SEO_DATA: {
                     XI. THE SEO MAINTENANCE ROUTINE
                 </h2>
                 <div className="space-y-4 text-gray-300">
-                    <p>SEO is not a one-time setup; it is a gym membership. You have to keep showing up. Ekanostudio is here to help you maintain your SEO. Best SEO services in Hisar Haryana.</p>
+                    <p>SEO is not a one-time setup; it is a gym membership. You have to keep showing up. ekanostudio is here to help you maintain your SEO. Best SEO services in Hisar Haryana.</p>
 
                     <div className="space-y-6 mt-6">
                         <div className="bg-gray-900 p-5 rounded-lg">

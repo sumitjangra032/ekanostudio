@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Growth Marketing Tailored for Bangalore",
-            text: "Scaling in Bangalore requires a data-first approach. Ekanostudio provides end-to-end digital marketing solutions. From managing Google Ads for SaaS firms to running performance marketing for D2C brands in Indiranagar, we deliver ROI-focused results.",
+            text: "Scaling in Bangalore requires a data-first approach. ekanostudio provides end-to-end digital marketing solutions. From managing Google Ads for SaaS firms to running performance marketing for D2C brands in Indiranagar, we deliver ROI-focused results.",
         },
         whyChoose: {
             title: "Our Marketing Advantage",

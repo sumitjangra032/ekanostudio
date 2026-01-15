@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Search Dominance for Dubai & Abu Dhabi",
-            text: "The UAE digital landscape is unique, requiring a dual-language strategy. Ekanostudio specializes in SEO for the Emirates. We help real estate, tourism, and corporate clients rank for high-value terms in both English and Arabic, ensuring you reach the entire expatriate and local population.",
+            text: "The UAE digital landscape is unique, requiring a dual-language strategy. ekanostudio specializes in SEO for the Emirates. We help real estate, tourism, and corporate clients rank for high-value terms in both English and Arabic, ensuring you reach the entire expatriate and local population.",
         },
         whyChoose: {
             title: "Our UAE SEO Expertise",

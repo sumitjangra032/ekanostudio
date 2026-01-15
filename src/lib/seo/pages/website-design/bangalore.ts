@@ -21,7 +21,7 @@ export const data: SeoPageData = {
         traits: ["tech startups", "innovative businesses", "IT hubs"],
     },
     meta: {
-        title: "Best Website Design Company in Bangalore | Ekanostudio",
+        title: "Best Website Design Company in Bangalore | ekanostudio",
         description: "Looking for premium website design in Bangalore? We craft stunning, high-performance websites tailored for Bangalore's tech-savvy startups and enterprises.",
         canonical: "/website-design-bangalore",
     },
@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Elevate Your Brand in Bangalore's Tech Ecosystem",
-            text: "In a city buzzing with innovation, your website needs to do more than just exist—it needs to perform. As a premier Bangalore web design agency, Ekanostudio combines cutting-edge aesthetics with robust technology to deliver sites that stand out in the competitive landscape of Karnataka's capital.",
+            text: "In a city buzzing with innovation, your website needs to do more than just exist—it needs to perform. As a premier Bangalore web design agency, ekanostudio combines cutting-edge aesthetics with robust technology to deliver sites that stand out in the competitive landscape of Karnataka's capital.",
         },
         whyChoose: {
             title: "Why Bangalore Businesses Trust Us",

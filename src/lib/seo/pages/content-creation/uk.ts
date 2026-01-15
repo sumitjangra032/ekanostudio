@@ -46,7 +46,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Content That Connects With UK Audiences",
             text:
-                "UK audiences value clarity, credibility, and relevance. Loud marketing and exaggerated claims rarely perform well. Ekanostudio creates content grounded in strategy—designed to inform, engage, and convert. From SEO-led blog articles to polished corporate video and social media assets, our content is built to support long-term brand authority and measurable growth across the UK market.",
+                "UK audiences value clarity, credibility, and relevance. Loud marketing and exaggerated claims rarely perform well. ekanostudio creates content grounded in strategy—designed to inform, engage, and convert. From SEO-led blog articles to polished corporate video and social media assets, our content is built to support long-term brand authority and measurable growth across the UK market.",
         },
 
         whyChoose: {

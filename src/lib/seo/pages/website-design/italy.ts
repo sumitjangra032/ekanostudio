@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Web Design di Classe per Brand Italiani",
-            text: "L'Italia è sinonimo di stile e qualità. Il tuo sito web deve rispecchiare questa eredità. Ekanostudio realizza siti web moderni, veloci e ottimizzati per il mercato italiano, curando ogni dettaglio estetico e funzionale per garantire il successo della tua azienda online.",
+            text: "L'Italia è sinonimo di stile e qualità. Il tuo sito web deve rispecchiare questa eredità. ekanostudio realizza siti web moderni, veloci e ottimizzati per il mercato italiano, curando ogni dettaglio estetico e funzionale per garantire il successo della tua azienda online.",
         },
         whyChoose: {
             title: "Perché Scegliere Noi",

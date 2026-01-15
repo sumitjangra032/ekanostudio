@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Full-Funnel Growth in Delhi NCR",
-            text: "To win in Delhi, you need more than just Facebook likes. You need a cohesive strategy that follows your customer from discovery to purchase. Ekanostudio provides end-to-end digital marketing services—combining the precision of Google Ads with the reach of Social Media—to ensure you saturate the market effectively.",
+            text: "To win in Delhi, you need more than just Facebook likes. You need a cohesive strategy that follows your customer from discovery to purchase. ekanostudio provides end-to-end digital marketing services—combining the precision of Google Ads with the reach of Social Media—to ensure you saturate the market effectively.",
         },
         whyChoose: {
             title: "Our Marketing Advantage",

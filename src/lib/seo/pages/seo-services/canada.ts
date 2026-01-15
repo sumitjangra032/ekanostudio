@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Strategic SEO for the Canadian Landscape",
-            text: "Ranking in Canada means understanding the unique blend of US influence and local preference. Ekanostudio's SEO experts specialize in Google.ca algorithms. We help you target high-value Canadian keywords, optimize for local intent in major cities, and navigate the bilingual SEO requirements of the Quebec market.",
+            text: "Ranking in Canada means understanding the unique blend of US influence and local preference. ekanostudio's SEO experts specialize in Google.ca algorithms. We help you target high-value Canadian keywords, optimize for local intent in major cities, and navigate the bilingual SEO requirements of the Quebec market.",
         },
         whyChoose: {
             title: "Our Canadian SEO Advantage",

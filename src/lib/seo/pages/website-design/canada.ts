@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Web Design Tailored for Canada",
-            text: "Canada's digital economy is diverse and rapidly evolving. Unifying English and French markets requires a strategic approach. Ekanostudio delivers premium web design services that cater to Canadian standards of accessibility (AODA) and performance. We help startups and established firms in Canada stand out globally.",
+            text: "Canada's digital economy is diverse and rapidly evolving. Unifying English and French markets requires a strategic approach. ekanostudio delivers premium web design services that cater to Canadian standards of accessibility (AODA) and performance. We help startups and established firms in Canada stand out globally.",
         },
         whyChoose: {
             title: "Why Canadian Firms Choose Us",

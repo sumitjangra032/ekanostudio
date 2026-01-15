@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Modern Web Design for Pune's Business Landscape",
-            text: "Pune is a unique blend of heritage, industry, and cutting-edge tech. Your website needs to bridge that gap. Ekanostudio provides high-end web design services tailored for Pune's diverse sectors—whether you are a scaling tech startup, an educational institute, or a global manufacturing giant.",
+            text: "Pune is a unique blend of heritage, industry, and cutting-edge tech. Your website needs to bridge that gap. ekanostudio provides high-end web design services tailored for Pune's diverse sectors—whether you are a scaling tech startup, an educational institute, or a global manufacturing giant.",
         },
         whyChoose: {
             title: "Why Pune's Best Businesses Choose Us",

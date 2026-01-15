@@ -32,10 +32,10 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Strategie SEO per il Successo in Italia",
-            text: "In un mercato competitivo come quello italiano, essere visibili online è fondamentale. Ekanostudio offre servizi SEO completi, dall'analisi tecnica alla creazione di contenuti ottimizzati, per garantire che la tua azienda sia la prima scelta degli utenti in Italia.",
+            text: "In un mercato competitivo come quello italiano, essere visibili online è fondamentale. ekanostudio offre servizi SEO completi, dall'analisi tecnica alla creazione di contenuti ottimizzati, per garantire che la tua azienda sia la prima scelta degli utenti in Italia.",
         },
         whyChoose: {
-            title: "Perché Partner SEO Ekanostudio",
+            title: "Perché Partner SEO ekanostudio",
             points: [
                 { title: "Local SEO Focus", desc: "Ottimizziamo la tua presenza per le ricerche locali in tutta Italia." },
                 { title: "Link Building Etica", desc: "Otteniamo backlink da domini .it autorevoli e pertinenti." },

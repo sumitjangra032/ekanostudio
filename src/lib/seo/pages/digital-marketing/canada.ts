@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Data-Driven Growth in Canada",
-            text: "The Canadian digital market is sophisticated. Ekanostudio helps you navigate it with precision. We build integrated marketing funnels that span Google Search, Facebook, LinkedIn, and Email. Our focus is on lowering your CAC (Customer Acquisition Cost) while maximizing LTV (Lifetime Value) in CAD.",
+            text: "The Canadian digital market is sophisticated. ekanostudio helps you navigate it with precision. We build integrated marketing funnels that span Google Search, Facebook, LinkedIn, and Email. Our focus is on lowering your CAC (Customer Acquisition Cost) while maximizing LTV (Lifetime Value) in CAD.",
         },
         whyChoose: {
             title: "Our Marketing Approach",

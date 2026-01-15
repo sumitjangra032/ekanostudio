@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Growth Marketing Tailored for Pune",
-            text: "Scaling in Pune requires a smart mix of local targeting and global reach. Ekanostudio provides end-to-end digital marketing solutions. From managing Google Ads for recruitment firms to running Instagram campaigns for luxury brands in Koregaon Park, we deliver ROI-focused results.",
+            text: "Scaling in Pune requires a smart mix of local targeting and global reach. ekanostudio provides end-to-end digital marketing solutions. From managing Google Ads for recruitment firms to running Instagram campaigns for luxury brands in Koregaon Park, we deliver ROI-focused results.",
         },
         whyChoose: {
             title: "Our Marketing Advantage",

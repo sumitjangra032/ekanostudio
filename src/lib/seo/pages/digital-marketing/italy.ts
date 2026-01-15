@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Crescita Gestita per Imprese Italiane",
-            text: "Il marketing digitale in Italia richiede una profonda conoscenza dei canali e delle abitudini degli utenti locali. Ekanostudio offre soluzioni di marketing a 360 gradi, integrando pubblicità sui social media, campagne search e strategie di fidelizzazione via email per coprire ogni fase del customer journey.",
+            text: "Il marketing digitale in Italia richiede una profonda conoscenza dei canali e delle abitudini degli utenti locali. ekanostudio offre soluzioni di marketing a 360 gradi, integrando pubblicità sui social media, campagne search e strategie di fidelizzazione via email per coprire ogni fase del customer journey.",
         },
         whyChoose: {
             title: "Il Nostro Vantaggio Competitivo",

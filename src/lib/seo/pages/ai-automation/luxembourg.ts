@@ -45,11 +45,11 @@ export const data: SeoPageData = {
         overview: {
             title: "Enterprise-Grade Automation for Regulated Operations",
             text:
-                "Luxembourg is a global hub for finance, investment firms, and multinational headquarters where accuracy, security, and compliance are critical. Ekanostudio helps organizations in Luxembourg implement AI automation using n8n and OpenAI. From document verification and reporting to multilingual customer workflows, our solutions reduce manual workload while maintaining strict control over data and processes.",
+                "Luxembourg is a global hub for finance, investment firms, and multinational headquarters where accuracy, security, and compliance are critical. ekanostudio helps organizations in Luxembourg implement AI automation using n8n and OpenAI. From document verification and reporting to multilingual customer workflows, our solutions reduce manual workload while maintaining strict control over data and processes.",
         },
 
         whyChoose: {
-            title: "Why Enterprises Choose Ekanostudio",
+            title: "Why Enterprises Choose ekanostudio",
             points: [
                 {
                     title: "Secure, Self-Hosted Architecture",

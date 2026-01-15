@@ -46,7 +46,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Lo Storytelling come Vantaggio Competitivo",
             text:
-                "In Italia, il contenuto non è solo comunicazione: è percezione, stile e fiducia. Ekanostudio supporta aziende e brand nella creazione di contenuti digitali che uniscono estetica e strategia. Dalla scrittura SEO-oriented alla produzione video professionale, sviluppiamo asset pensati per rafforzare l’identità del brand e generare risultati concreti nel tempo.",
+                "In Italia, il contenuto non è solo comunicazione: è percezione, stile e fiducia. ekanostudio supporta aziende e brand nella creazione di contenuti digitali che uniscono estetica e strategia. Dalla scrittura SEO-oriented alla produzione video professionale, sviluppiamo asset pensati per rafforzare l’identità del brand e generare risultati concreti nel tempo.",
         },
 
         whyChoose: {

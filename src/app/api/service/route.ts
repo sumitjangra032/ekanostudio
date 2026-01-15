@@ -194,7 +194,7 @@ const createInternalEmailTemplate = (data: any, referenceId: string) => {
             <div class="footer">
                 <p style="margin: 0 0 8px 0;">Submitted: ${format(new Date(), "MMM do, yyyy 'at' h:mm a")}</p>
                 <div class="reference-id" style="margin-bottom: 8px;">Reference: ${referenceId}</div>
-                <p style="margin: 0; font-size: 11px;">This inquiry was submitted via EkanoStudio Service Portal</p>
+                <p style="margin: 0; font-size: 11px;">This inquiry was submitted via ekanostudio Service Portal</p>
             </div>
         </div>
     </body>
@@ -217,7 +217,7 @@ const createClientEmailTemplate = (data: any, referenceId: string) => {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Thank You for Your Inquiry - EkanoStudio</title>
+        <title>Thank You for Your Inquiry - ekanostudio</title>
         <style>
             * { margin: 0; padding: 0; box-sizing: border-box; }
             body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #1a202c; background: #f7fafc; }
@@ -260,14 +260,14 @@ const createClientEmailTemplate = (data: any, referenceId: string) => {
     <body>
         <div class="container">
             <div class="header">
-                <h1 style="margin: 0; font-size: 36px; font-weight: 800;">EkanoStudio</h1>
+                <h1 style="margin: 0; font-size: 36px; font-weight: 800;">ekanostudio</h1>
                 <p style="margin: 8px 0 0 0; opacity: 0.9; font-size: 18px;">Digital Excellence. Delivered.</p>
             </div>
             
             <div class="content">
                 <h2 class="greeting">Hello ${escapedData.name},</h2>
                 <p class="intro-text">
-                    Thank you for choosing <strong>EkanoStudio</strong> for your <strong>${escapedData.service}</strong> project. 
+                    Thank you for choosing <strong>ekanostudio</strong> for your <strong>${escapedData.service}</strong> project. 
                     We're excited to help bring your vision to life with our professional digital solutions.
                 </p>
                 
@@ -333,7 +333,7 @@ const createClientEmailTemplate = (data: any, referenceId: string) => {
                 <div class="whatsapp-section">
                     <h4 style="color: #2d3748; margin: 0 0 12px 0;">💬 Prefer Faster Communication?</h4>
                     <p style="color: #4a5568; margin: 0 0 16px 0; font-size: 14px;">Click below to chat with us directly on WhatsApp for instant responses:</p>
-                    <a href="https://wa.me/1234567890?text=Hi%20EkanoStudio%2C%20I%20submitted%20an%20inquiry%20with%20reference%20${referenceId}" 
+                    <a href="https://wa.me/1234567890?text=Hi%20ekanostudio%2C%20I%20submitted%20an%20inquiry%20with%20reference%20${referenceId}" 
                        class="whatsapp-button" 
                        target="_blank" 
                        rel="noopener noreferrer">
@@ -344,7 +344,7 @@ const createClientEmailTemplate = (data: any, referenceId: string) => {
                 
                 <div class="cta-section">
                     <p style="color: #4a5568; margin-bottom: 24px;">Explore our work while you wait:</p>
-                    <a href="https://ekanostudio.com/portfolio" class="cta-button">View Our Portfolio</a>
+                    <a href="https://www.ekanostudio.com/portfolio" class="cta-button">View Our Portfolio</a>
                 </div>
                 
                 <div style="color: #718096; font-size: 14px; line-height: 1.7; margin-top: 40px;">
@@ -360,7 +360,7 @@ const createClientEmailTemplate = (data: any, referenceId: string) => {
             
             <div class="contact-info">
                 <p style="margin: 0 0 16px 0;">
-                    <strong>EkanoStudio Project Team</strong><br>
+                    <strong>ekanostudio Project Team</strong><br>
                     Transforming Ideas into Digital Success
                 </p>
                 <div class="reference-id">Reference: ${referenceId}</div>
@@ -441,7 +441,7 @@ export async function POST(req: Request) {
 
         // Send internal notification email
         const internalMailOptions = {
-            from: `"EkanoStudio Service Desk" <${process.env.SMTP_USER || 'noreply@ekanostudio.com'}>`,
+            from: `"ekanostudio Service Desk" <${process.env.SMTP_USER || 'noreply@ekanostudio.com'}>`,
             to: process.env.NOTIFICATION_EMAIL || 'info@ekanostudio.com',
             cc: process.env.CC_EMAILS?.split(',') || [],
             replyTo: email,
@@ -473,10 +473,10 @@ Please respond within 12 hours.
 
         // Send client confirmation email
         const clientMailOptions = {
-            from: `"EkanoStudio" <${process.env.SMTP_USER || 'info@ekanostudio.com'}>`,
+            from: `"ekanostudio" <${process.env.SMTP_USER || 'info@ekanostudio.com'}>`,
             to: email,
             replyTo: process.env.REPLY_TO_EMAIL || 'info@ekanostudio.com',
-            subject: `✅ Inquiry Confirmation - ${referenceId} - EkanoStudio`,
+            subject: `✅ Inquiry Confirmation - ${referenceId} - ekanostudio`,
             html: createClientEmailTemplate(body, referenceId),
             text: `
 Thank you for your inquiry - ${referenceId}
@@ -484,7 +484,7 @@ Thank you for your inquiry - ${referenceId}
 
 Hello ${name},
 
-Thank you for choosing EkanoStudio for your ${service} project.
+Thank you for choosing ekanostudio for your ${service} project.
 
 We've received your inquiry and our team is reviewing your requirements.
 
@@ -499,12 +499,12 @@ What happens next:
 3. Custom proposal delivery
 4. Project kickoff
 
-While you wait, explore our portfolio at: https://ekanostudio.com/portfolio
+While you wait, explore our portfolio at: https://www.ekanostudio.com/portfolio
 
 Need to update your inquiry? Simply reply to this email.
 
 Best regards,
-The EkanoStudio Team
+The ekanostudio Team
             `
         };
 

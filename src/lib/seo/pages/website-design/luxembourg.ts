@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Premium Web Design for the Grand Duchy",
-            text: "Luxembourg is a global financial powerhouse where trust and prestige are paramount. Your digital presence must reflect this status. Ekanostudio specializes in high-end web design for Luxembourgish firms, focusing on elegant aesthetics, multi-lingual support, and enterprise-grade performance.",
+            text: "Luxembourg is a global financial powerhouse where trust and prestige are paramount. Your digital presence must reflect this status. ekanostudio specializes in high-end web design for Luxembourgish firms, focusing on elegant aesthetics, multi-lingual support, and enterprise-grade performance.",
         },
         whyChoose: {
             title: "Why Luxembourg's Elite Choose Us",

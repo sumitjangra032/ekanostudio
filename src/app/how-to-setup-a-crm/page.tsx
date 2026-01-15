@@ -1,7 +1,7 @@
 import CreateOnlineMarketplaceBlog from "@/components/blogs/how-to-setup-a-crm";
 import { Metadata } from "next";
 
-const SITE_URL = "https://ekanostudio.com";
+const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
   title: "CRM Implementation Master Class: Strategy, Architecture, Automation, and Adoption",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "CRM Implementation Master Class: Strategy, Architecture, Automation, and Adoption",
     description: "A complete guide on how to implement a high-performance CRM.",
     url: `${SITE_URL}/how-to-setup-a-crm`,
-    siteName: "Ekanostudio",
+    siteName: "ekanostudio",
     type: "article",
   },
   twitter: {
@@ -35,5 +35,5 @@ export const metadata: Metadata = {
 };
 
 export default function CrmImplementationMasterclassPage() {
-    return <CreateOnlineMarketplaceBlog />;
+  return <CreateOnlineMarketplaceBlog />;
 }

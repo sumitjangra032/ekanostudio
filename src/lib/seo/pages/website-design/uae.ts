@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Digital Excellence for the Emirates",
-            text: "The UAE is a global hub of innovation and luxury. Your digital presence must reflect this high standard. Ekanostudio creates premium websites that cater to the diverse and sophisticated audience of the UAE. From bilingual corporate sites in Abu Dhabi to high-fashion e-commerce in Dubai, we deliver excellence.",
+            text: "The UAE is a global hub of innovation and luxury. Your digital presence must reflect this high standard. ekanostudio creates premium websites that cater to the diverse and sophisticated audience of the UAE. From bilingual corporate sites in Abu Dhabi to high-fashion e-commerce in Dubai, we deliver excellence.",
         },
         whyChoose: {
             title: "Why UAE Visionaries Choose Us",

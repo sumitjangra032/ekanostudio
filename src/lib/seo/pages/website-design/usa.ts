@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Digital Excellence for the American Market",
-            text: "The US digital landscape is the most competitive in the world. Good enough isn't enough. Ekanostudio provides American businesses with cutting-edge web design that exceeds user expectations. We understand US accessibility laws (ADA), privacy standards (CCPA), and the high aesthetic bar set by top tech firms.",
+            text: "The US digital landscape is the most competitive in the world. Good enough isn't enough. ekanostudio provides American businesses with cutting-edge web design that exceeds user expectations. We understand US accessibility laws (ADA), privacy standards (CCPA), and the high aesthetic bar set by top tech firms.",
         },
         whyChoose: {
             title: "Why US Companies Partner With Us",

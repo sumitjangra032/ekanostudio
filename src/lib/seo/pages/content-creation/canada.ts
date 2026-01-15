@@ -46,7 +46,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Content Built on Trust and Clarity",
             text:
-                "Canadian audiences value honesty, inclusivity, and clear communication. Ekanostudio helps brands across Canada create content that feels genuine and consistent across channels. From corporate storytelling and educational blogs to high-quality video and social content, we focus on building long-term brand trust rather than short-term attention.",
+                "Canadian audiences value honesty, inclusivity, and clear communication. ekanostudio helps brands across Canada create content that feels genuine and consistent across channels. From corporate storytelling and educational blogs to high-quality video and social content, we focus on building long-term brand trust rather than short-term attention.",
         },
 
         whyChoose: {

@@ -1,7 +1,7 @@
 import SEOMasterclassPage from "@/components/blogs/how-to-do-search-engine-optimization";
 import { Metadata } from "next";
 
-const SITE_URL = "https://ekanostudio.com";
+const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
   title: "The SEO Master Class: Technical, Content, and Authority",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "The SEO Master Class: Technical, Content, and Authority",
     description: "A deep dive into the technical infrastructure, content strategy, and link building required to master modern SEO.",
     url: `${SITE_URL}/how-to-do-search-engine-optimization`,
-    siteName: "Ekanostudio",
+    siteName: "ekanostudio",
     type: "article",
   },
   twitter: {
@@ -34,5 +34,5 @@ export const metadata: Metadata = {
   },
 };
 export default function SeoMasterclassPage() {
-    return <SEOMasterclassPage />;
+  return <SEOMasterclassPage />;
 }

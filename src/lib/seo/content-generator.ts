@@ -38,7 +38,7 @@ export function generateSeoContent(service: Service, location: Location): SeoPag
 
     // Metadata Generation
     const metaTitle = `${service.name} in ${regionName} | ${location.metaTitleSuffix}`;
-    const metaDesc = `Looking for ${service.name} in ${regionName}? Ekanostudio provides top-tier ${service.keywords[0]} and ${service.keywords[1]} services tailored for businesses ${location.context}.`;
+    const metaDesc = `Looking for ${service.name} in ${regionName}? ekanostudio provides top-tier ${service.keywords[0]} and ${service.keywords[1]} services tailored for businesses ${location.context}.`;
 
     // Generate Related Services (Link to Core Services of OTHER services)
     const relatedLinks = SEO_SERVICES.filter(s => s.slug !== service.slug)
@@ -64,10 +64,10 @@ export function generateSeoContent(service: Service, location: Location): SeoPag
             },
             overview: {
                 title: `Comprehensive ${service.name} for ${regionName} Businesses`, // H2
-                text: `In the competitive landscape of ${regionName}, having a robust ${service.name.toLowerCase()} strategy is crucial. At Ekanostudio, we specialize in delivering ${service.description} Our team understands the unique dynamics of the ${location.adjective} market, ensuring your brand stands out amongst ${location.traits[2]}.`,
+                text: `In the competitive landscape of ${regionName}, having a robust ${service.name.toLowerCase()} strategy is crucial. At ekanostudio, we specialize in delivering ${service.description} Our team understands the unique dynamics of the ${location.adjective} market, ensuring your brand stands out amongst ${location.traits[2]}.`,
             },
             whyChoose: {
-                title: `Why Choose Ekanostudio for ${service.name} in ${regionName}?`, // H2
+                title: `Why Choose ekanostudio for ${service.name} in ${regionName}?`, // H2
                 points: [
                     {
                         title: "Local Market Understanding",
@@ -95,7 +95,7 @@ export function generateSeoContent(service: Service, location: Location): SeoPag
             },
             cta: {
                 title: `Ready to Elevate Your Business in ${regionName}?`,
-                text: `Partner with Ekanostudio for premium ${service.name} services today.`
+                text: `Partner with ekanostudio for premium ${service.name} services today.`
             },
             relatedServices: relatedLinks
         }

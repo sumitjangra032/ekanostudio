@@ -2,6 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Link from "next/link";
 
 interface Gradient {
   from: string;
@@ -62,24 +63,24 @@ export default function AnimatedLine({
       }}
     >
       {words.map((word, i) => {
-        // Now 'word' could be "[Why Choose Us ?]" or "Why"
-        // We still need to check if it matches the bracket pattern to determine IsTarget
-
         const isTarget =
           (word.startsWith("{") && word.endsWith("}")) ||
           (word.startsWith("[") && word.endsWith("]"));
 
-        const cleanText = isTarget
-          ? word.slice(1, -1)
-          : word;
+        let cleanText = isTarget ? word.slice(1, -1) : word;
+        let linkUrl: string | null = null;
 
-        // If it is a target (bracketed), we render it as one highlighted block
-        // If not, it's just a normal word
+        if (isTarget && cleanText.includes("|")) {
+          const parts = cleanText.split("|");
+          cleanText = parts[0];
+          linkUrl = parts[1];
+        }
 
-        return (
+        const content = (
           <motion.span
             key={i}
-            className={`inline-block mr-2 ${isTarget ? highlightClassName : ""} px-[0.045em]`}
+            className={`inline-block mr-2 ${isTarget ? highlightClassName : ""} px-[0.045em] ${linkUrl ? "hover:underline cursor-pointer" : ""
+              }`}
             initial={{ opacity: 0, y: 8 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{
@@ -95,6 +96,16 @@ export default function AnimatedLine({
             {cleanText}
           </motion.span>
         );
+
+        if (linkUrl) {
+          return (
+            <Link key={i} href={linkUrl} className="inline-block">
+              {content}
+            </Link>
+          );
+        }
+
+        return content;
       })}
     </div>
   );

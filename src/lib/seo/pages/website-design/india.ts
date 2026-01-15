@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Web Design for the World's Fastest Growing Economy",
-            text: "India's digital landscape is vast and incredibly diverse. To succeed, you need a website that is as fast as it is beautiful. Ekanostudio delivers premium web design services across India, focusing on mobile-first architecture, superior speed, and world-class aesthetics that resonate with the modern Indian consumer.",
+            text: "India's digital landscape is vast and incredibly diverse. To succeed, you need a website that is as fast as it is beautiful. ekanostudio delivers premium web design services across India, focusing on mobile-first architecture, superior speed, and world-class aesthetics that resonate with the modern Indian consumer.",
         },
         whyChoose: {
             title: "Why India's Best Brands Choose Us",

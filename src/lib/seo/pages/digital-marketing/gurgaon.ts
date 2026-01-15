@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Precision Marketing for the Corporate Capital",
-            text: "Digital marketing in Gurgaon requires an enterprise-level approach. Ekanostudio provides rigorous performance marketing solutions. We specialize in B2B lead generation via LinkedIn and high-intent Google Search campaigns, ensuring your marketing spend in Cyber City translates into real-world business results.",
+            text: "Digital marketing in Gurgaon requires an enterprise-level approach. ekanostudio provides rigorous performance marketing solutions. We specialize in B2B lead generation via LinkedIn and high-intent Google Search campaigns, ensuring your marketing spend in Cyber City translates into real-world business results.",
         },
         whyChoose: {
             title: "Our Marketing Advantage",

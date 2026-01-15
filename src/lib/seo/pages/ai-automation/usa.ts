@@ -46,7 +46,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Automation Built for a High-Cost, High-Scale Market",
             text:
-                "In the United States, labor is expensive and expectations are high. Automation is no longer optional—it’s a competitive advantage. Ekanostudio helps American businesses deploy AI-powered workflows using n8n and OpenAI. From customer support and lead qualification to internal reporting and data processing, our systems act as reliable digital operators that work continuously without increasing payroll.",
+                "In the United States, labor is expensive and expectations are high. Automation is no longer optional—it’s a competitive advantage. ekanostudio helps American businesses deploy AI-powered workflows using n8n and OpenAI. From customer support and lead qualification to internal reporting and data processing, our systems act as reliable digital operators that work continuously without increasing payroll.",
         },
 
         whyChoose: {

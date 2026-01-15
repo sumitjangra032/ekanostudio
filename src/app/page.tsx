@@ -11,7 +11,7 @@ import KeyTakeaways from "@/components/sections/KeyTakeaways";
 import CTA from "@/components/sections/CTA";
 import { Metadata } from "next";
 
-const SITE_URL = "https://ekanostudio.com";
+const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
   title: "ekanostudio – Digital Transformation, Web Design & Consulting Agency",

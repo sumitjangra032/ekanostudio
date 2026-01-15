@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Strategic SEO for the Modern Indian Brand",
-            text: "With a billion internet users, India's search market is the most competitive in the world. Ekanostudio's SEO experts provide end-to-end solutions—from technical architecture to high-authority backlink building—ensuring your brand is the first choice for customers across India.",
+            text: "With a billion internet users, India's search market is the most competitive in the world. ekanostudio's SEO experts provide end-to-end solutions—from technical architecture to high-authority backlink building—ensuring your brand is the first choice for customers across India.",
         },
         whyChoose: {
             title: "Our India SEO Advantage",

@@ -23,46 +23,99 @@ export async function generateStaticParams() {
   return params;
 }
 
-const SITE_URL = "https://ekanostudio.com";
+const SITE_URL = "https://www.ekanostudio.com";
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata(
+  { params }: PageProps
+): Promise<Metadata> {
   const { category, service } = await params;
+
   const meta = findServiceByCategoryAndSlug(category, service);
   const serviceData = meta ? await loadServiceBySlug(category, service) : null;
 
+  // ❌ Hard stop for invalid routes (SEO-safe)
   if (!serviceData || !meta) {
     return {
-      title: "Service Not Found | Ekanostudio",
+      title: "Service Not Found | ekanostudio",
       description: "The requested service could not be found.",
       robots: {
         index: false,
+        follow: false,
       },
     };
   }
 
-  // Find hero section for description
-  const heroSection = serviceData.sections.find(s => s.type === "hero");
-  const heroDescription = heroSection?.data?.subheadline || heroSection?.data?.headline;
   const url = `${SITE_URL}/services/${category}/${service}`;
 
+  /**
+   * 🔒 SEO-SAFE TITLE STRATEGY
+   * Prevents Google rewriting
+   * Optimized for CTR + intent
+   */
+  const seoTitle = `${serviceData.title} Services | ${meta.title} Experts | ekanostudio`;
+
+  /**
+   * 🔒 SEO-SAFE DESCRIPTION STRATEGY
+   * Avoid animated / UI copy
+   * Prefer explicit business intent
+   */
+  const seoDescription =
+    serviceData.meta?.description ||
+    serviceData.description ||
+    `Professional ${meta.title} services by ekanostudio. We deliver scalable, performance-driven solutions designed to grow your business with measurable results.`;
+
   return {
-    title: `${serviceData.title} | Ekanostudio`,
-    description: heroDescription || `Professional ${meta.title} services by Ekanostudio.`,
-    keywords: [meta.title, `${meta.title} services`, "Ekanostudio"],
-    openGraph: {
-      title: `${serviceData.title} | Ekanostudio`,
-      description: heroDescription || `Professional ${meta.title} services by Ekanostudio.`,
-      url: url,
-      siteName: "Ekanostudio",
-      type: "website",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: `${serviceData.title} | Ekanostudio`,
-      description: heroDescription || `Professional ${meta.title} services by Ekanostudio.`,
-    },
+    title: seoTitle,
+    description: seoDescription,
+
+    /**
+     * Meta keywords still help:
+     * - Bing
+     * - Internal relevance signals
+     * - OpenGraph context
+     */
+    keywords: [
+      meta.title,
+      `${meta.title} services`,
+      `${meta.title} company`,
+      `${meta.title} agency`,
+      `${meta.title} solutions`,
+      "ekanostudio",
+    ],
+
     alternates: {
       canonical: url,
+    },
+
+    openGraph: {
+      title: seoTitle,
+      description: seoDescription,
+      url,
+      siteName: "ekanostudio",
+      type: "website",
+      locale: "en_US",
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: seoTitle,
+      description: seoDescription,
+    },
+
+    /**
+     * ✅ Google Search Essentials compliant
+     * Explicit crawling + preview control
+     */
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-snippet": -1,
+        "max-image-preview": "large",
+        "max-video-preview": -1,
+      },
     },
   };
 }

@@ -32,7 +32,7 @@ export const data: SeoPageData = {
         },
         overview: {
             title: "Conception Web Sur Mesure",
-            text: "In France, aesthetics and functionality must go hand in hand. Ekanostudio provides high-end web design services for French businesses. Whether you operate in Paris fashion, Bordeaux wine, or Lyon tech, we create digital experiences that resonate with your discerning audience. We ensure full GDPR (RGPD) compliance and French language localization.",
+            text: "In France, aesthetics and functionality must go hand in hand. ekanostudio provides high-end web design services for French businesses. Whether you operate in Paris fashion, Bordeaux wine, or Lyon tech, we create digital experiences that resonate with your discerning audience. We ensure full GDPR (RGPD) compliance and French language localization.",
         },
         whyChoose: {
             title: "Pourquoi Nous Choisir",
