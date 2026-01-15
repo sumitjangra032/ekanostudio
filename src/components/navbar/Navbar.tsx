@@ -33,7 +33,7 @@ export default function Navbar() {
   return (
     <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-7xl ">
       {/* Under Development Notice */}
-<div
+{/* <div
   className="absolute -top-4 left-1/2 -translate-x-1/2 px-6 py-1.5 rounded-full text-[11px] md:text-xs font-semibold tracking-[0.15em] uppercase"
   style={{
     background:
@@ -45,10 +45,10 @@ export default function Navbar() {
   }}
 >
   🚧 Website Under Active Development — Features Are Being Updated
-</div>
+</div> */}
 
       <nav
-        className="mx-auto w-full rounded-[40px] flex items-center justify-between px-4 py-2 mt-4 relative transition-all duration-300"
+        className="mx-auto w-full rounded-[40px] flex items-center justify-between px-4 py-2 relative transition-all duration-300"
         style={
           {
             "--text": theme.text,
