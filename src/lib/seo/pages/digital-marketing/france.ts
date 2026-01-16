@@ -7,9 +7,17 @@ export const data: SeoPageData = {
         slug: "digital-marketing",
         targetServiceSlug: "social-media-strategy",
         categorySlug: "social-media-marketing",
-        keywords: ["Online Marketing", "Performance Marketing", "Brand Growth"],
-        description: "Comprehensive digital marketing solutions to scale your business across all online channels.",
+        keywords: [
+            "Marketing Digital France",
+            "Agence Marketing France",
+            "Performance Marketing France",
+            "Publicité Google France",
+            "Agence Social Media France"
+        ],
+        description:
+            "Comprehensive digital marketing solutions to scale your business across all online channels.",
     },
+
     location: {
         name: "France",
         slug: "france",
@@ -20,53 +28,85 @@ export const data: SeoPageData = {
         metaTitleSuffix: "France | Agence Numérique",
         traits: ["luxury brands", "art & culture", "european market"],
     },
+
     meta: {
-        title: "Marketing Digital France | Publicité & Croissance",
-        description: "Accélérez votre croissance en France. We manage high-performance campaigns on Google and Social Media suited for the French market.",
+        title: "Marketing Digital France | Publicité, Performance & Croissance",
+        description:
+            "Boostez votre croissance en France. Campagnes Google Ads, Social Media et stratégie digitale optimisées pour le marché français.",
         canonical: "/digital-marketing-france",
     },
+
     content: {
         hero: {
-            title: "Performance Marketing pour le Marché Français",
-            subtitle: "Reach the right audience. We drive measurable results for businesses across France.",
+            title: "Marketing Digital Haute Performance pour la France",
+            subtitle:
+                "Touchez la bonne audience au bon moment. Nous générons des résultats mesurables pour les entreprises partout en France.",
         },
+
         overview: {
-            title: "Croissance Numérique en France",
-            text: "Digital marketing in France is evolving fast. You need a partner who understands the local ecosystem. ekanostudio provides rigorous performance marketing services. We manage campaigns across Google, Meta, and LinkedIn, ensuring strict adherence to RGPD (GDPR) while delivering maximum ROI for your budget.",
+            title: "Croissance Digitale Adaptée au Marché Français",
+            text:
+                "Le marketing digital en France est unique : un marché sophistiqué, un public exigeant, et une réglementation stricte (RGPD). Ekanostudio accompagne les entreprises françaises avec des stratégies data-driven mêlant Google Ads, Meta Ads, LinkedIn et email marketing. Chaque campagne est optimisée pour un ROI maximal, tout en respectant les normes européennes.",
         },
+
         whyChoose: {
-            title: "Notre Approche",
+            title: "Pourquoi Nous Choisir",
             points: [
-                { title: "Respect RGPD", desc: "Privacy-first marketing strategies." },
-                { title: "Local Platforms", desc: "Experience with French consumer behaviors." },
-                { title: "Reporting Clair", desc: "Transparent metrics on your growth." }
-            ]
+                {
+                    title: "Conformité RGPD",
+                    desc: "Des stratégies marketing pensées pour la confidentialité et la sécurité.",
+                },
+                {
+                    title: "Expertise Locale",
+                    desc: "Compréhension approfondie des comportements consommateurs français.",
+                },
+                {
+                    title: "Transparence Totale",
+                    desc: "Rapports clairs, KPI suivis et optimisation continue.",
+                },
+            ],
         },
+
         deliverables: [
-            "Stratégie Digitale Globale",
-            "Campagnes Google Ads",
-            "Publicité Réseaux Sociaux",
-            "Email Marketing Automatisé",
-            "Optimisation du Taux de Conversion",
-            "Tableaux de Bord de Performance"
+            "Stratégie Digitale Complète",
+            "Google Search & Display Ads",
+            "Publicité Réseaux Sociaux (Meta, LinkedIn)",
+            "Email Marketing & Automatisation",
+            "Optimisation du Taux de Conversion (CRO)",
+            "Tableaux de Bord & Reporting",
         ],
+
         process: {
-            title: "Cycle de Croissance",
+            title: "Méthodologie de Croissance",
             steps: [
-                { title: "Analyse", desc: "Understanding your French competitors and audience." },
-                { title: "Lancement", desc: "Deploying targeted ad campaigns." },
-                { title: "Optimisation", desc: "Refining for better CPA and ROI." },
-                { title: "Scale", desc: "Expanding your reach nationwide." }
-            ]
+                {
+                    title: "Analyse",
+                    desc: "Étude de vos concurrents et personas en France.",
+                },
+                {
+                    title: "Lancement",
+                    desc: "Mise en place des campagnes et tracking avancé.",
+                },
+                {
+                    title: "Optimisation",
+                    desc: "Ajustements continus pour un meilleur CPA.",
+                },
+                {
+                    title: "Scale",
+                    desc: "Extension de vos campagnes à grande échelle.",
+                },
+            ],
         },
+
         cta: {
-            title: "Prêt à croître ?",
-            text: "Demandez votre audit marketing gratuit."
+            title: "Prêt à accélérer votre croissance ?",
+            text: "Demandez un audit marketing gratuit pour votre entreprise en France.",
         },
+
         relatedServices: [
             { title: "SEO", link: "/services/seo/on-page-seo" },
             { title: "Création de Contenu", link: "/services/content-creation/content-writing" },
-            { title: "Création Site Web", link: "/services/web-design-development/website-development" }
-        ]
-    }
+            { title: "Création de Site Web", link: "/services/web-design-development/website-development" },
+        ],
+    },
 };

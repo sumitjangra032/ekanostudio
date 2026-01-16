@@ -7,9 +7,18 @@ export const data: SeoPageData = {
         slug: "digital-marketing",
         targetServiceSlug: "social-media-strategy",
         categorySlug: "social-media-marketing",
-        keywords: ["Online Marketing", "Performance Marketing", "Brand Growth"],
-        description: "Comprehensive digital marketing solutions to scale your business across all online channels.",
+        keywords: [
+            "Digital Marketing Luxembourg",
+            "Marketing Agency Luxembourg",
+            "B2B Marketing Luxembourg",
+            "Performance Marketing Luxembourg",
+            "Lead Generation Luxembourg",
+            "LinkedIn Ads Luxembourg"
+        ],
+        description:
+            "Precision-focused digital marketing solutions designed for Luxembourg’s corporate, financial, and B2B sectors.",
     },
+
     location: {
         name: "Luxembourg",
         slug: "luxembourg",
@@ -20,53 +29,85 @@ export const data: SeoPageData = {
         metaTitleSuffix: "Luxembourg | Premium Agency",
         traits: ["financial sector", "high-end business", "european hub"],
     },
+
     meta: {
-        title: "Digital Marketing Luxembourg | Precision & Performance",
-        description: "Scale your revenue in the Grand Duchy. We manage high-performance integrated marketing campaigns for Luxembourg's corporate and B2B sectors.",
+        title: "Digital Marketing Agency Luxembourg | B2B Growth & Performance",
+        description:
+            "Drive qualified B2B leads in Luxembourg with data-driven digital marketing. We manage LinkedIn, Google Ads, and conversion funnels for enterprise brands.",
         canonical: "/digital-marketing-luxembourg",
     },
+
     content: {
         hero: {
-            title: "Precision Marketing for Global Business",
-            subtitle: "Maximize your reach across Europe. We drive high-value leads for Luxembourg's smartest companies.",
+            title: "High-Precision Digital Marketing for Luxembourg Businesses",
+            subtitle:
+                "Reach decision-makers, not just clicks. We build performance-driven marketing systems for Luxembourg’s corporate and financial sectors.",
         },
+
         overview: {
-            title: "Growth Marketing for B2B Leaders",
-            text: "Digital marketing in Luxembourg requires a surgical approach. You aren't just looking for clicks; you're looking for decision-makers. ekanostudio provides full-stack marketing solutions that combine the reach of LinkedIn Ads with the high-intent of Google Search, all while maintaining perfect data compliance.",
+            title: "B2B Growth Marketing Built for Luxembourg",
+            text:
+                "Luxembourg’s business landscape is international, regulated, and highly competitive. Success requires precision, compliance, and strategic targeting. Ekanostudio delivers performance marketing solutions designed for B2B and enterprise environments—combining LinkedIn Ads, Google Search, and conversion-focused funnels to reach senior decision-makers across Europe.",
         },
+
         whyChoose: {
-            title: "Our Marketing Advantage",
+            title: "Why Companies Choose Ekanostudio",
             points: [
-                { title: "B2B Focus", desc: "Strategies designed to reach high-value corporate clients." },
-                { title: "Data Compliance", desc: "Adhering to strict Luxembourgish and EU privacy laws." },
-                { title: "ROI Visibility", desc: "Clear reporting on your cost-per-acquisition and growth." }
-            ]
+                {
+                    title: "B2B & Enterprise Focus",
+                    desc: "Marketing strategies built specifically for corporate, finance, and professional services.",
+                },
+                {
+                    title: "EU & Data Compliance",
+                    desc: "Privacy-first execution aligned with GDPR and Luxembourg regulations.",
+                },
+                {
+                    title: "Measurable ROI",
+                    desc: "Clear reporting on lead quality, acquisition cost, and revenue impact.",
+                },
+            ],
         },
+
         deliverables: [
-            "Integrated Marketing Strategy",
-            "LinkedIn & Google Ad Management",
-            "Performance Social Marketing",
-            "Lead Capture & Funnel Architecture",
-            "Email Marketing Automation",
-            "Executive Performance Dashboards"
+            "B2B Digital Marketing Strategy",
+            "LinkedIn Ads & Google Ads Management",
+            "High-Intent Lead Generation Funnels",
+            "Performance Social Campaigns",
+            "Email Marketing & Lead Nurturing",
+            "Executive-Level Performance Dashboards",
         ],
+
         process: {
-            title: "Growth Implementation",
+            title: "Our Growth Execution Framework",
             steps: [
-                { title: "Audience Mapping", desc: "Identifying your target niches in Luxembourg and beyond." },
-                { title: "Channel Setup", desc: "Deploying high-impact ads across key business channels." },
-                { title: "Optimization", desc: "Continuous testing to lower lead costs and improve quality." },
-                { title: "Scaling", desc: "Increasing budget on your most profitable campaigns." }
-            ]
+                {
+                    title: "Audience Intelligence",
+                    desc: "Identifying decision-makers and niche segments within Luxembourg and EU markets.",
+                },
+                {
+                    title: "Campaign Architecture",
+                    desc: "Structuring compliant, conversion-focused ad systems.",
+                },
+                {
+                    title: "Optimization",
+                    desc: "Continuous testing to improve lead quality and reduce acquisition cost.",
+                },
+                {
+                    title: "Scale",
+                    desc: "Expanding budgets on proven, high-performing channels.",
+                },
+            ],
         },
+
         cta: {
-            title: "Ready to scale your business?",
-            text: "Request a strategic marketing audit from our Luxembourg team."
+            title: "Looking for qualified B2B leads?",
+            text: "Book a strategic marketing consultation with our Luxembourg team.",
         },
+
         relatedServices: [
             { title: "SEO", link: "/services/seo/on-page-seo" },
             { title: "Content Creation", link: "/services/content-creation/content-writing" },
-            { title: "AI Automation", link: "/services/ai-automation/ai-automation-n8n" }
-        ]
-    }
+            { title: "AI Automation", link: "/services/ai-automation/ai-automation-n8n" },
+        ],
+    },
 };

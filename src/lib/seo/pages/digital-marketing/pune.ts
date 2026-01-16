@@ -7,66 +7,107 @@ export const data: SeoPageData = {
         slug: "digital-marketing",
         targetServiceSlug: "social-media-strategy",
         categorySlug: "social-media-marketing",
-        keywords: ["Online Marketing", "Performance Marketing", "Brand Growth"],
-        description: "Comprehensive digital marketing solutions to scale your business across all online channels.",
+        keywords: [
+            "Digital Marketing Agency Pune",
+            "Performance Marketing Pune",
+            "Lead Generation Pune",
+            "Google Ads Pune",
+            "Social Media Marketing Pune",
+            "Growth Marketing Pune"
+        ],
+        description:
+            "Result-driven digital marketing services designed to help Pune businesses generate leads, sales, and measurable growth.",
     },
+
     location: {
         name: "Pune",
         slug: "pune",
         type: "city",
         country: "India",
         adjective: "Pune-based",
-        context: "in the Oxford of the East",
+        context: "in Pune",
         metaTitleSuffix: "Pune | Expert Solutions",
         traits: ["education sector", "manufacturing hubs", "IT parks"],
     },
+
     meta: {
-        title: "Digital Marketing Agency in Pune | Growth & lead Gen",
-        description: "Scale your revenue in Pune. Our digital marketing services include Google Ads, Social Ads, and Email Automation specifically optimized for Pune's market.",
+        title: "Digital Marketing Agency Pune | Lead Generation & Growth",
+        description:
+            "Grow your Pune business with performance-focused digital marketing. We manage Google Ads, social campaigns, and conversion funnels that deliver ROI.",
         canonical: "/digital-marketing-pune",
     },
+
     content: {
         hero: {
-            title: "Performance Marketing for Pune's Dynamic Economy",
-            subtitle: "Reach the right customers. Maximize your ROAS. We drive digital growth for Pune's smartest firms.",
+            title: "Performance-Driven Digital Marketing for Pune Businesses",
+            subtitle:
+                "Generate qualified leads, increase sales, and scale faster with data-backed digital marketing built for Pune’s competitive market.",
         },
+
         overview: {
-            title: "Growth Marketing Tailored for Pune",
-            text: "Scaling in Pune requires a smart mix of local targeting and global reach. ekanostudio provides end-to-end digital marketing solutions. From managing Google Ads for recruitment firms to running Instagram campaigns for luxury brands in Koregaon Park, we deliver ROI-focused results.",
+            title: "Growth Marketing Built for Pune’s Business Ecosystem",
+            text:
+                "Pune is home to IT parks, manufacturing clusters, educational institutes, and fast-growing local brands. Each requires a different growth strategy. Ekanostudio builds performance marketing systems that combine high-intent Google Search, targeted social media advertising, and conversion-optimized landing pages—helping Pune businesses turn traffic into revenue.",
         },
+
         whyChoose: {
-            title: "Our Marketing Advantage",
+            title: "Why Pune Brands Choose Ekanostudio",
             points: [
-                { title: "Data-Driven ROI", desc: "Every campaign is optimized for conversion, not just clicks." },
-                { title: "Omnichannel strategy", desc: "A unified presence across Google, Meta, and LinkedIn." },
-                { title: "Transparent Reporting", desc: "Live dashboards so you always know your CAC and ROAS." }
-            ]
+                {
+                    title: "Local + Performance Focus",
+                    desc: "Campaigns tailored to Pune audiences with clear conversion goals.",
+                },
+                {
+                    title: "Multi-Channel Execution",
+                    desc: "Seamless strategy across Google, Meta, LinkedIn, and Email.",
+                },
+                {
+                    title: "Transparent ROI Tracking",
+                    desc: "Clear visibility into leads, costs, and return on ad spend.",
+                },
+            ],
         },
+
         deliverables: [
-            "Full-Stack Digital Strategy",
-            "Google Ads (PPC) Management",
-            "Social Media Advertising",
-            "Lead Nurturing Automation",
-            "Conversion Rate Optimization",
-            "Weekly Performance Calls"
+            "Pune-Focused Digital Marketing Strategy",
+            "Google Ads & Search Campaign Management",
+            "Social Media Lead Generation Campaigns",
+            "Marketing Automation & Lead Nurturing",
+            "Conversion Rate Optimization (CRO)",
+            "Monthly Performance Reporting & Reviews",
         ],
+
         process: {
-            title: "Market Launch Cycle",
+            title: "Our Growth Execution Process",
             steps: [
-                { title: "Analyze", desc: "In-depth research on Pune's demographic and competitors." },
-                { title: "Setup", desc: "Deploying tracking pixels and creative assets." },
-                { title: "Launch", desc: "Going live with targeted campaigns." },
-                { title: "Scale", desc: "Refining and growing the budgets for winning ad sets." }
-            ]
+                {
+                    title: "Market Research",
+                    desc: "Understanding Pune’s audience behavior, demand, and competition.",
+                },
+                {
+                    title: "Campaign Setup",
+                    desc: "Building high-conversion ads, creatives, and tracking systems.",
+                },
+                {
+                    title: "Optimization",
+                    desc: "Continuous improvement to reduce CPL and improve lead quality.",
+                },
+                {
+                    title: "Scale",
+                    desc: "Increasing budgets on proven channels for sustainable growth.",
+                },
+            ],
         },
+
         cta: {
-            title: "Ready to scale your business?",
-            text: "Get a free marketing consultation for your Pune brand."
+            title: "Looking for consistent leads?",
+            text: "Book a free digital marketing consultation for your Pune business.",
         },
+
         relatedServices: [
             { title: "SEO", link: "/services/seo/on-page-seo" },
             { title: "Content Creation", link: "/services/content-creation/content-writing" },
-            { title: "Web Design", link: "/services/web-design-development/landing-page-development" }
-        ]
-    }
+            { title: "Web Design", link: "/services/web-design-development/landing-page-development" },
+        ],
+    },
 };

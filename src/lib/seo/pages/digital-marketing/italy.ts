@@ -7,66 +7,107 @@ export const data: SeoPageData = {
         slug: "digital-marketing",
         targetServiceSlug: "social-media-strategy",
         categorySlug: "social-media-marketing",
-        keywords: ["Online Marketing", "Performance Marketing", "Brand Growth"],
-        description: "Comprehensive digital marketing solutions to scale your business across all online channels.",
+        keywords: [
+            "Marketing Digitale Italia",
+            "Agenzia Digital Marketing Italia",
+            "Google Ads Italia",
+            "Social Media Marketing Italia",
+            "Performance Marketing Italia",
+            "Lead Generation Italia"
+        ],
+        description:
+            "Soluzioni complete di digital marketing per far crescere il tuo business online nel mercato italiano.",
     },
+
     location: {
         name: "Italy",
         slug: "italy",
         type: "country",
         country: "Italy",
         adjective: "Italian",
-        context: "in Italy",
-        metaTitleSuffix: "Italy | Servizi Digitali",
+        context: "in Italia",
+        metaTitleSuffix: "Italia | Servizi Digitali",
         traits: ["design excellence", "fashion & industry", "creative market"],
     },
+
     meta: {
-        title: "Marketing Digitale Italia | Crescita e Performance Online",
-        description: "Accellera la crescita della tua azienda in Italia. Gestiamo campagne Google Ads, Social e Email Marketing ottimizzate per il mercato italiano.",
+        title: "Agenzia di Marketing Digitale in Italia | Crescita & Performance",
+        description:
+            "Accelera la crescita del tuo business in Italia con strategie di digital marketing orientate ai risultati. Gestiamo Google Ads, Social Media ed email automation per aziende italiane.",
         canonical: "/digital-marketing-italy",
     },
+
     content: {
         hero: {
-            title: "Strategie di Marketing per il Successo in Italia",
-            subtitle: "Non cerchiamo solo visualizzazioni: guidiamo risultati concreti e vendite per la tua attività in Italia.",
+            title: "Marketing Digitale Orientato ai Risultati per il Mercato Italiano",
+            subtitle:
+                "Non puntiamo solo alla visibilità. Costruiamo strategie che generano lead, vendite e crescita reale per il tuo business in Italia.",
         },
+
         overview: {
-            title: "Crescita Gestita per Imprese Italiane",
-            text: "Il marketing digitale in Italia richiede una profonda conoscenza dei canali e delle abitudini degli utenti locali. ekanostudio offre soluzioni di marketing a 360 gradi, integrando pubblicità sui social media, campagne search e strategie di fidelizzazione via email per coprire ogni fase del customer journey.",
+            title: "Strategie Digitali su Misura per le Aziende Italiane",
+            text:
+                "Il mercato digitale italiano è competitivo e guidato dalla fiducia. Per ottenere risultati servono strategia, dati e creatività. Ekanostudio sviluppa sistemi di marketing digitale completi, combinando Google Ads, social advertising e funnel di conversione per accompagnare il cliente dalla scoperta all’acquisto.",
         },
+
         whyChoose: {
-            title: "Il Nostro Vantaggio Competitivo",
+            title: "Perché Sceglierci",
             points: [
-                { title: "Performance Data-Driven", desc: "Monitoriamo ogni euro investito per massimizzare il ROAS." },
-                { title: "Approccio Multicanale", desc: "Siamo presenti dove si trovano i tuoi clienti italiani." },
-                { title: "Personalizzazione Totale", desc: "Nessuna strategia preconfezionata, solo soluzioni su misura." }
-            ]
+                {
+                    title: "Performance Basate sui Dati",
+                    desc: "Ogni campagna è monitorata e ottimizzata per massimizzare ROAS e conversioni.",
+                },
+                {
+                    title: "Approccio Multicanale",
+                    desc: "Integriamo Search, Social ed Email per coprire l’intero customer journey.",
+                },
+                {
+                    title: "Strategie Personalizzate",
+                    desc: "Ogni business è diverso: costruiamo piani su misura per il mercato italiano.",
+                },
+            ],
         },
+
         deliverables: [
-            "Strategia di Crescita Digitale",
-            "Gestione Google Ads (Search & Display)",
-            "Social Media Advertising (Meta, LinkedIn, Tik Tok)",
-            "Email Marketing e Automation",
-            "Conversion Rate Optimization (CRO)",
-            "Supporto Strategico Continuo"
+            "Strategia di Marketing Digitale Personalizzata",
+            "Gestione Google Ads (Search, Display, Shopping)",
+            "Social Media Advertising (Meta, LinkedIn, TikTok)",
+            "Email Marketing & Marketing Automation",
+            "Ottimizzazione del Tasso di Conversione (CRO)",
+            "Analisi e Supporto Strategico Continuo",
         ],
+
         process: {
-            title: "Il Tuo Ciclo di Crescita",
+            title: "Il Nostro Metodo di Crescita",
             steps: [
-                { title: "Pianificazione", desc: "Definiamo il piano d’azione basato sul target italiano." },
-                { title: "Esecuzione", desc: "Lanciamo campagne targetizzate con creatività coinvolgenti." },
-                { title: "Ottimizzazione", desc: "Affinamento continuo delle audience e dei messaggi." },
-                { title: "Reporting", desc: "Dati chiari e trasparenti sui progressi ottenuti." }
-            ]
+                {
+                    title: "Analisi",
+                    desc: "Studio del target italiano, dei competitor e del posizionamento di mercato.",
+                },
+                {
+                    title: "Implementazione",
+                    desc: "Lancio delle campagne con creatività e messaggi ad alta conversione.",
+                },
+                {
+                    title: "Ottimizzazione",
+                    desc: "Miglioramento continuo di audience, annunci e funnel.",
+                },
+                {
+                    title: "Reporting",
+                    desc: "Report chiari e trasparenti sui risultati ottenuti.",
+                },
+            ],
         },
+
         cta: {
-            title: "Pronto a scalare il tuo business?",
-            text: "Parla con un nostro esperto di marketing digitale in Italia."
+            title: "Vuoi far crescere il tuo business in Italia?",
+            text: "Prenota una consulenza gratuita con i nostri esperti di marketing digitale.",
         },
+
         relatedServices: [
             { title: "SEO", link: "/services/seo/on-page-seo" },
             { title: "Creazione Contenuti", link: "/services/content-creation/content-writing" },
-            { title: "AI Automation", link: "/services/ai-automation/ai-automation-n8n" }
-        ]
-    }
+            { title: "AI Automation", link: "/services/ai-automation/ai-automation-n8n" },
+        ],
+    },
 };

@@ -7,64 +7,105 @@ export const data: SeoPageData = {
         slug: "digital-marketing",
         targetServiceSlug: "social-media-strategy",
         categorySlug: "social-media-marketing",
-        keywords: ["Online Marketing", "Performance Marketing", "Brand Growth"],
-        description: "Comprehensive digital marketing solutions to scale your business across all online channels.",
+        keywords: [
+            "Digital Marketing USA",
+            "Performance Marketing Agency USA",
+            "Google Ads Management USA",
+            "Meta Ads USA",
+            "Lead Generation Agency USA",
+            "Growth Marketing US"
+        ],
+        description:
+            "Revenue-focused digital marketing solutions built for the high-competition US market, designed to maximize ROAS and lifetime value.",
     },
+
     location: {
         name: "USA",
         slug: "usa",
         type: "country",
         country: "USA",
         adjective: "American",
-        context: "in the US market",
-        metaTitleSuffix: "USA | Global Agency",
+        context: "in the United States market",
+        metaTitleSuffix: "USA | Global Growth Partner",
         traits: ["competitive market", "innovation leaders", "high-value customers"],
     },
+
     meta: {
-        title: "Digital Marketing Agency for US Businesses | Growth & ROI",
-        description: "Performance marketing for the US market. We manage Google Ads, Meta Ads, and Email campaigns that drive dollars, not just clicks.",
+        title: "Digital Marketing Agency USA | Performance, Growth & ROI",
+        description:
+            "Scale faster in the United States. We manage Google Ads, Meta Ads, and Email campaigns built to convert traffic into measurable revenue.",
         canonical: "/digital-marketing-usa",
     },
+
     content: {
         hero: {
-            title: "Performance Marketing for the US Economy",
-            subtitle: "Maximize your ad spend. We implement high-ROAS campaigns tailored for the high-cpc American market.",
+            title: "High-Performance Digital Marketing for US Businesses",
+            subtitle:
+                "Win in the world’s most competitive ad market with data-driven campaigns built for scale, speed, and profitability.",
         },
+
         overview: {
-            title: "Scaling Revenue in the United States",
-            text: "Advertising in the US is expensive. You can't afford wasted clicks. ekanostudio brings a data-obsessed approach to digital marketing. We optimize for Customer Lifetime Value (LTV) and Customer Acquisition Cost (CAC), ensuring your campaigns in New York, Texas, or Florida are profitable from day one.",
+            title: "Revenue-Driven Growth in the United States",
+            text:
+                "The US digital advertising landscape is high-cost and unforgiving. Success requires more than traffic—it requires precision. Ekanostudio helps American businesses compete by engineering performance marketing systems optimized for Customer Acquisition Cost (CAC), Customer Lifetime Value (LTV), and real revenue. Whether you’re targeting buyers in California, Texas, New York, or nationwide, every campaign is designed to scale profitably.",
         },
+
         whyChoose: {
-            title: "Why US Brands Hire Us",
+            title: "Why US Companies Work With Us",
             points: [
-                { title: "Cost Arbitrage", desc: "Get top-tier ad management at a fraction of US agency fees." },
-                { title: "24/7 Optimization", desc: "We monitor your campaigns while the US sleeps." },
-                { title: "Platform Expertise", desc: "Certified partners for Google, Meta, and LinkedIn." }
+                {
+                    title: "Built for High CPC Markets",
+                    desc: "Strategies engineered specifically for expensive US ad auctions.",
+                },
+                {
+                    title: "Always-On Optimization",
+                    desc: "Campaigns are actively monitored and improved across time zones.",
+                },
+                {
+                    title: "Platform-Level Expertise",
+                    desc: "Deep experience across Google Ads, Meta, LinkedIn, and email funnels.",
+                }
             ]
         },
+
         deliverables: [
-            "Media Buying Strategy",
-            "Conversion Rate Optimization",
-            "Funnel Architecture",
-            "Retargeting Setup",
-            "Advanced Analytics Setup",
-            "Daily/Weekly Reporting"
+            "US Market Media Buying Strategy",
+            "Conversion Rate Optimization (CRO)",
+            "High-Converting Funnel Architecture",
+            "Advanced Retargeting & Lookalike Setup",
+            "Analytics & Attribution Configuration",
+            "Weekly Performance & Revenue Reports"
         ],
+
         process: {
-            title: "US Market Launch",
+            title: "US Growth Execution Framework",
             steps: [
-                { title: "Research", desc: "Analyzing US demographic data for your niche." },
-                { title: "Setup", desc: "Configuring pixel perfect tracking and attribution." },
-                { title: "Test", desc: "Rapid A/B testing of US-centric creatives." },
-                { title: "Scale", desc: "Increasing budget on winning ad sets." }
+                {
+                    title: "Market Research",
+                    desc: "Deep analysis of US audience behavior, intent, and competition.",
+                },
+                {
+                    title: "Infrastructure Setup",
+                    desc: "Implementing clean tracking, attribution, and conversion events.",
+                },
+                {
+                    title: "Creative Testing",
+                    desc: "Rapid A/B testing of US-specific messaging and offers.",
+                },
+                {
+                    title: "Scalable Growth",
+                    desc: "Increasing spend only on consistently profitable campaigns.",
+                }
             ]
         },
+
         cta: {
-            title: "Stop wasting ad budget.",
-            text: "Get a free audit of your current US campaigns."
+            title: "Stop burning ad spend.",
+            text: "Get a free audit of your current US digital marketing campaigns."
         },
+
         relatedServices: [
-            { title: "SEO", link: "/services/seo/on-page-seo" },
+            { title: "SEO Services", link: "/services/seo/on-page-seo" },
             { title: "Email Automation", link: "/services/email-automation/email-marketing" },
             { title: "Content Creation", link: "/services/content-creation/content-writing" }
         ]

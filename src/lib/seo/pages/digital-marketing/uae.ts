@@ -7,9 +7,18 @@ export const data: SeoPageData = {
         slug: "digital-marketing",
         targetServiceSlug: "social-media-strategy",
         categorySlug: "social-media-marketing",
-        keywords: ["Online Marketing", "Performance Marketing", "Brand Growth"],
-        description: "Comprehensive digital marketing solutions to scale your business across all online channels.",
+        keywords: [
+            "Digital Marketing Dubai",
+            "Performance Marketing UAE",
+            "Lead Generation UAE",
+            "Google Ads Dubai",
+            "Social Media Marketing UAE",
+            "Dubai Marketing Agency"
+        ],
+        description:
+            "High-performance digital marketing tailored for Dubai, Abu Dhabi, and the wider UAE business ecosystem.",
     },
+
     location: {
         name: "UAE",
         slug: "uae",
@@ -20,53 +29,85 @@ export const data: SeoPageData = {
         metaTitleSuffix: "UAE | Dubai & Abu Dhabi",
         traits: ["luxury market", "rapid development", "global business hub"],
     },
+
     meta: {
         title: "Digital Marketing Agency Dubai | UAE Performance Marketing",
-        description: "Accelerate your growth in the UAE. We manage high-ROI advertising campaigns across Google, Instagram, and LinkedIn for Dubai & Abu Dhabi businesses.",
+        description:
+            "Grow faster in the UAE. We manage premium Google Ads, Instagram Ads, and LinkedIn campaigns tailored for Dubai & Abu Dhabi’s high-value audience.",
         canonical: "/digital-marketing-uae",
     },
+
     content: {
         hero: {
-            title: "High-Performance Marketing for the UAE",
-            subtitle: "Drive real business results. We help UAE companies turn clicks into loyal customers.",
+            title: "High-Performance Digital Marketing for UAE Brands",
+            subtitle:
+                "Reach premium audiences. Convert high-intent leads. We help UAE businesses achieve measurable, scalable digital growth.",
         },
+
         overview: {
-            title: "Growth Marketing in the Emirates",
-            text: "The UAE audience is mobile-first and socially active. To reach them, you need a smart strategy. ekanostudio provides data-driven digital marketing services. We combine precision targeting on Instagram and TikTok with high-intent Google Ads to ensure your brand captures the booming demand in Dubai and Abu Dhabi.",
+            title: "Marketing Built for the UAE’s Luxury & High-Growth Market",
+            text:
+                "The UAE market is one of the most competitive in the world—defined by luxury spending, fast digital adoption, and culturally diverse audiences. Ekanostudio builds ROI-focused campaigns that combine high-intent Google Search ads with conversion-ready Instagram, TikTok, and Snapchat strategies. Whether you're targeting tourists, expats, or Emirati buyers, our marketing systems help your brand stay ahead in Dubai and Abu Dhabi.",
         },
+
         whyChoose: {
-            title: "Our UAE Marketing Edge",
+            title: "Why UAE Businesses Choose Us",
             points: [
-                { title: "Platform Mastery", desc: "Expertise in Instagram, Snapchat, and TikTok ads tailored for GCC." },
-                { title: "High-Value Targeting", desc: "Strategies to reach HNIs and corporate decision makers." },
-                { title: "Bilingual Ads", desc: "Campaigns running in both English and Arabic." }
-            ]
+                {
+                    title: "GCC-Specific Strategy",
+                    desc: "Ad creatives and messaging aligned with cultural norms, privacy rules, and regional buying psychology.",
+                },
+                {
+                    title: "High-Net-Worth Targeting",
+                    desc: "Advanced segmentation to reach luxury buyers, investors, and corporate decision-makers.",
+                },
+                {
+                    title: "Arabic + English Campaigns",
+                    desc: "Native-quality bilingual ads for maximum reach across UAE demographics.",
+                },
+            ],
         },
+
         deliverables: [
-            "Integrated Digital Strategy",
-            "Performance Ad Management",
-            "Social Media Marketing",
-            "Lead Generation Funnels",
-            "Influencer Collaboration",
-            "ROI Reporting Dashboard"
+            "UAE-Focused Digital Strategy",
+            "Google & YouTube Ads Management",
+            "Instagram, TikTok & Snapchat Advertising",
+            "LinkedIn B2B Lead Generation",
+            "Automated Lead Funnels",
+            "ROI & Analytics Dashboard"
         ],
+
         process: {
-            title: "UAE Growth Cycle",
+            title: "Our UAE Growth Framework",
             steps: [
-                { title: "Analyze", desc: "Understanding your audience in the Emirates." },
-                { title: "Launch", desc: "Deploying targeted ads across key channels." },
-                { title: "optimize", desc: "Refining campaigns for lower CPA and higher ROI." },
-                { title: "Scale", desc: "Expanding reach across the Gulf region." }
-            ]
+                {
+                    title: "Market Mapping",
+                    desc: "Understanding buyer intent across Dubai, Abu Dhabi, and the wider Emirates.",
+                },
+                {
+                    title: "Launch",
+                    desc: "Deploying high-impact creatives with platform-specific targeting.",
+                },
+                {
+                    title: "Optimize",
+                    desc: "Daily refinement to reduce CPA, increase ROAS, and improve audience accuracy.",
+                },
+                {
+                    title: "Scale",
+                    desc: "Expanding into GCC markets and high-performing channels.",
+                },
+            ],
         },
+
         cta: {
-            title: "Ready to grow your revenue?",
-            text: "Book a consultation with our Dubai marketing team."
+            title: "Want predictable growth in the UAE?",
+            text: "Schedule a strategy call with our Dubai performance marketing team.",
         },
+
         relatedServices: [
             { title: "SEO", link: "/services/seo/on-page-seo" },
             { title: "Content Creation", link: "/services/content-creation/content-writing" },
             { title: "AI Automation", link: "/services/ai-automation/ai-automation-n8n" }
-        ]
-    }
+        ],
+    },
 };

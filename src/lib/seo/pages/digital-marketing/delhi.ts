@@ -7,66 +7,123 @@ export const data: SeoPageData = {
         slug: "digital-marketing",
         targetServiceSlug: "social-media-strategy",
         categorySlug: "social-media-marketing",
-        keywords: ["Online Marketing", "Performance Marketing", "Brand Growth"],
-        description: "Comprehensive digital marketing solutions to scale your business across all online channels.",
+        keywords: [
+            "Digital Marketing Agency Delhi",
+            "Performance Marketing Delhi NCR",
+            "Online Marketing Services Delhi",
+            "PPC Agency Delhi",
+            "Growth Marketing Delhi"
+        ],
+        description:
+            "End-to-end digital marketing services in Delhi NCR focused on performance, lead generation, and scalable revenue growth across paid and organic channels.",
     },
+
     location: {
         name: "Delhi",
         slug: "delhi",
         type: "city",
         country: "India",
         adjective: "Delhi-based",
-        context: "in the heart of India's capital",
-        metaTitleSuffix: "Delhi | Premium Services",
+        context: "across Delhi NCR",
+        metaTitleSuffix: "Delhi NCR | Performance Marketing Experts",
         traits: ["corporate enterprises", "established brands", "growing businesses"],
     },
+
     meta: {
-        title: "360° Digital Marketing Agency in Delhi | Performance & Growth",
-        description: "Accelerate your growth with Delhi's premier digital agency. We integrate PPC, Social, and Email to drive measurable revenue for businesses in NCR.",
+        title: "Digital Marketing Agency Delhi NCR | Performance, Leads & Growth",
+        description:
+            "Performance-driven digital marketing agency in Delhi NCR. We help brands grow with Google Ads, Social Media, PPC, and full-funnel growth strategies.",
         canonical: "/digital-marketing-delhi",
     },
+
     content: {
         hero: {
-            title: "Integrated Marketing for Delhi's Fast-Paced Economy",
-            subtitle: "We don't just run ads. We build digital ecosystems that drive leads, sales, and loyalty for Delhi's smartest businesses.",
+            title: "Performance-Driven Digital Marketing for Delhi NCR",
+            subtitle:
+                "From visibility to revenue. We build integrated marketing systems that convert Delhi’s traffic into measurable business growth.",
         },
+
         overview: {
-            title: "Full-Funnel Growth in Delhi NCR",
-            text: "To win in Delhi, you need more than just Facebook likes. You need a cohesive strategy that follows your customer from discovery to purchase. ekanostudio provides end-to-end digital marketing services—combining the precision of Google Ads with the reach of Social Media—to ensure you saturate the market effectively.",
+            title: "Full-Funnel Digital Growth for Delhi Businesses",
+            text:
+                "Delhi NCR is one of India’s most competitive business markets. Winning here requires precision, speed, and consistency across channels. Ekanostudio designs full-funnel digital marketing strategies that guide your audience from first interaction to final conversion. By combining Google Ads, Social Media advertising, email nurturing, and CRO, we help Delhi-based brands scale sustainably while maintaining strong ROI.",
         },
+
         whyChoose: {
-            title: "Our Marketing Advantage",
+            title: "Why Delhi Brands Work With Us",
             points: [
-                { title: "Data-First Approach", desc: "Every rupee spent is tracked and optimized for ROAS." },
-                { title: "Omnichannel Strategy", desc: "Seamless presence across Google, LinkedIn, Meta, and Email." },
-                { title: "B2B & B2C Expertise", desc: "Proven success with both consumer brands and industrial clients." }
-            ]
+                {
+                    title: "Performance-First Strategy",
+                    desc:
+                        "Every campaign is optimized for ROAS, leads, and revenue—not vanity metrics.",
+                },
+                {
+                    title: "Omnichannel Execution",
+                    desc:
+                        "Unified presence across Google, LinkedIn, Meta, Email, and Display networks.",
+                },
+                {
+                    title: "B2B & B2C Expertise",
+                    desc:
+                        "Proven experience with startups, enterprises, and industrial brands across Delhi NCR.",
+                },
+            ],
         },
+
         deliverables: [
-            "Comprehensive Marketing Strategy",
-            "Cross-Channel Ad Setup",
-            "Performance Dashboards (Looker)",
-            "Audience Segmentation Lists",
-            "Creative Ad Sets (A/B Testing)",
-            "Weekly Optimization Logs"
+            "Custom Digital Marketing Strategy",
+            "Google Ads & PPC Campaign Management",
+            "Paid Social Advertising (Meta, LinkedIn, YouTube)",
+            "Advanced Performance Dashboards (Looker Studio)",
+            "Audience Segmentation & Retargeting Lists",
+            "Continuous A/B Testing & Optimization",
         ],
+
         process: {
-            title: "Growth Marketing Cycle",
+            title: "Delhi Growth Marketing Framework",
             steps: [
-                { title: "Blueprint", desc: "Mapping your customer avatars in the Delhi region." },
-                { title: "Launch", desc: "Going live with targeted campaigns across selected channels." },
-                { title: "Analyze", desc: "Reviewing click-through and conversion data daily." },
-                { title: "Scale", desc: "Doubling down on winning creatives and audiences." }
-            ]
+                {
+                    title: "Blueprint",
+                    desc:
+                        "Defining buyer personas, funnels, and channel priorities for the Delhi NCR market.",
+                },
+                {
+                    title: "Launch",
+                    desc:
+                        "Deploying campaigns with precise targeting, creatives, and tracking.",
+                },
+                {
+                    title: "Analyze",
+                    desc:
+                        "Monitoring performance data daily to identify scale opportunities.",
+                },
+                {
+                    title: "Scale",
+                    desc:
+                        "Increasing budgets and reach on high-performing ads and audiences.",
+                },
+            ],
         },
+
         cta: {
-            title: "Ready to scale your revenue?",
-            text: "Book a strategy session with Delhi's growth experts."
+            title: "Ready to scale your revenue in Delhi?",
+            text:
+                "Book a free strategy consultation with our Delhi NCR growth specialists.",
         },
+
         relatedServices: [
-            { title: "SEO Services", link: "/services/seo/on-page-seo" },
-            { title: "AI Automation", link: "/services/ai-automation/ai-automation-n8n" },
-            { title: "Video Editing", link: "/services/content-creation/video-editing" }
-        ]
-    }
+            {
+                title: "SEO Services",
+                link: "/services/seo/on-page-seo",
+            },
+            {
+                title: "AI Automation",
+                link: "/services/ai-automation/ai-automation-n8n",
+            },
+            {
+                title: "Video Editing",
+                link: "/services/content-creation/video-editing",
+            },
+        ],
+    },
 };

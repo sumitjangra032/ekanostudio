@@ -7,66 +7,123 @@ export const data: SeoPageData = {
         slug: "digital-marketing",
         targetServiceSlug: "social-media-strategy",
         categorySlug: "social-media-marketing",
-        keywords: ["Online Marketing", "Performance Marketing", "Brand Growth"],
-        description: "Comprehensive digital marketing solutions to scale your business across all online channels.",
+        keywords: [
+            "Digital Marketing Austria",
+            "Online Marketing Agency Austria",
+            "Performance Marketing Österreich",
+            "Google Ads Agentur Österreich",
+            "Social Media Marketing Austria"
+        ],
+        description:
+            "Result-driven digital marketing services in Austria focused on performance, lead generation, and measurable business growth across paid and organic channels.",
     },
+
     location: {
         name: "Austria",
         slug: "austria",
         type: "country",
         country: "Austria",
         adjective: "Austrian",
-        context: "in Austria",
-        metaTitleSuffix: "Austria | Digital Solutions",
+        context: "across the Austrian digital market",
+        metaTitleSuffix: "Austria | Performance Marketing Experts",
         traits: ["central european business", "quality focused", "innovation"],
     },
+
     meta: {
-        title: "Digital Marketing Österreich | Performance & Wachstum",
-        description: "Skalieren Sie Ihr Unternehmen in Österreich. Wir steuern effiziente Werbekampagnen auf Google und Social Media für maximale ROI.",
+        title: "Digital Marketing Agentur Österreich | Performance & Wachstum",
+        description:
+            "Performance-orientierte Digital Marketing Agentur in Österreich. Wir skalieren Marken mit Google Ads, Social Media Werbung und datengetriebenen Strategien.",
         canonical: "/digital-marketing-austria",
     },
+
     content: {
         hero: {
-            title: "Performance Marketing für den österreichischen Markt",
-            subtitle: "Wir sorgen dafür, dass Ihr Marketing-Budget in Österreich echte Ergebnisse und messbares Wachstum liefert.",
+            title: "Digital Marketing, das in Österreich Ergebnisse liefert",
+            subtitle:
+                "Mehr Leads, mehr Umsatz, volle Transparenz – datengetriebene Marketing-Strategien für nachhaltiges Wachstum im österreichischen Markt.",
         },
+
         overview: {
-            title: "Gezieltes Wachstum in der Alpenrepublik",
-            text: "Österreichs Online-Markt bietet große Chancen. ekanostudio unterstützt Sie dabei, diese zu nutzen. Wir entwickeln integrierte Marketing-Strategien, die exakt auf das Konsumverhalten in Österreich abgestimmt sind – von datengetriebenen Google Ads bis hin zu wirksamen Social-Media-Kampagnen.",
+            title: "Messbares Online-Wachstum für österreichische Unternehmen",
+            text:
+                "Der digitale Wettbewerb in Österreich wächst stetig. Um sichtbar zu bleiben, braucht es mehr als Reichweite – es braucht Performance. Ekanostudio entwickelt zielgerichtete Digital-Marketing-Strategien für österreichische Unternehmen, die auf messbare Ergebnisse ausgelegt sind. Von Google Ads über Social Media Kampagnen bis hin zu Conversion-Optimierung sorgen wir dafür, dass Ihr Marketing-Budget effizient eingesetzt wird und echtes Geschäftswachstum erzielt.",
         },
+
         whyChoose: {
-            title: "Unsere Marketing-Power",
+            title: "Warum Ekanostudio für Digital Marketing?",
             points: [
-                { title: "Maximaler ROI", desc: "Fokus auf Conversions und reale Geschäftsergebnisse." },
-                { title: "DACH-Markt Erfahrung", desc: "Tiefes Verständnis für die regionale Dynamik." },
-                { title: "Vollständige Transparenz", desc: "Regelmäßige Insights in Ihre Performance-Daten." }
-            ]
+                {
+                    title: "Performance-Fokus",
+                    desc:
+                        "Jede Kampagne ist auf Conversions, Leads und Umsatz optimiert – nicht auf leere Klicks.",
+                },
+                {
+                    title: "DACH-Marktexpertise",
+                    desc:
+                        "Erfahrung mit Konsumverhalten, Wettbewerb und Plattformen im österreichischen Markt.",
+                },
+                {
+                    title: "Volle Transparenz",
+                    desc:
+                        "Klare Reportings und verständliche KPIs statt Blackbox-Marketing.",
+                },
+            ],
         },
+
         deliverables: [
-            "Ganzheitliche Marketing-Strategie",
-            "Google Search & Display Ads",
-            "Paid Social (Meta, LinkedIn, TikTok)",
-            "Email Marketing & Funnel-Bau",
-            "Conversion-Rate-Optimierung",
-            "Maßgeschneiderte Analysedashboards"
+            "Individuelle Digital-Marketing-Strategie",
+            "Google Ads (Search, Display & YouTube)",
+            "Paid Social Kampagnen (Meta, LinkedIn, TikTok)",
+            "E-Mail Marketing & Funnel Automatisierung",
+            "Conversion-Rate-Optimierung (CRO)",
+            "Live Performance Dashboards & Reports",
         ],
+
         process: {
-            title: "Ihr Weg zu mehr Umsatz",
+            title: "Unser Performance-Marketing-Prozess",
             steps: [
-                { title: "Targeting", desc: "Definition Ihrer Zielgruppe in Österreich." },
-                { title: "Setup", desc: "Einrichtung der Kampagnen mit messbarem Tracking." },
-                { title: "Optimierung", desc: "Laufende Anpassung für beste Ergebnisse." },
-                { title: "Reporting", desc: "Klarer Überblick über Ihren Erfolg." }
-            ]
+                {
+                    title: "Analyse & Zieldefinition",
+                    desc:
+                        "Definition Ihrer Zielgruppen, Ziele und KPIs für den österreichischen Markt.",
+                },
+                {
+                    title: "Kampagnen-Setup",
+                    desc:
+                        "Technisches Setup von Tracking, Ads und Conversion-Pfaden.",
+                },
+                {
+                    title: "Optimierung & Skalierung",
+                    desc:
+                        "Kontinuierliche Verbesserung auf Basis von Daten und Nutzerverhalten.",
+                },
+                {
+                    title: "Reporting & Insights",
+                    desc:
+                        "Regelmäßige Auswertungen mit klaren Handlungsempfehlungen.",
+                },
+            ],
         },
+
         cta: {
-            title: "Bereit für mehr Wachstum?",
-            text: "Lassen Sie uns Ihre Marketing-Strategie für Österreich besprechen."
+            title: "Bereit für profitables Online-Wachstum?",
+            text:
+                "Lassen Sie uns Ihre Digital-Marketing-Strategie für Österreich gemeinsam entwickeln.",
         },
+
         relatedServices: [
-            { title: "SEO", link: "/services/seo/on-page-seo" },
-            { title: "Content Erstellung", link: "/services/content-creation/content-writing" },
-            { title: "Webdesign", link: "/services/web-design-development/website-development" }
-        ]
-    }
+            {
+                title: "SEO",
+                link: "/services/seo/on-page-seo",
+            },
+            {
+                title: "Content Erstellung",
+                link: "/services/content-creation/content-writing",
+            },
+            {
+                title: "Webdesign",
+                link: "/services/web-design-development/website-development",
+            },
+        ],
+    },
 };

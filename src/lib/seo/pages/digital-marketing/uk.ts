@@ -7,9 +7,18 @@ export const data: SeoPageData = {
         slug: "digital-marketing",
         targetServiceSlug: "social-media-strategy",
         categorySlug: "social-media-marketing",
-        keywords: ["Online Marketing", "Performance Marketing", "Brand Growth"],
-        description: "Comprehensive digital marketing solutions to scale your business across all online channels.",
+        keywords: [
+            "Digital Marketing UK",
+            "PPC Agency UK",
+            "Social Media Advertising UK",
+            "Lead Generation UK",
+            "Google Ads London",
+            "Performance Marketing UK"
+        ],
+        description:
+            "UK-focused digital marketing solutions designed to increase revenue, reduce acquisition costs, and build long-term brand trust.",
     },
+
     location: {
         name: "UK",
         slug: "uk",
@@ -20,53 +29,85 @@ export const data: SeoPageData = {
         metaTitleSuffix: "UK | Trusted Partners",
         traits: ["established businesses", "digital transformation", "service sector"],
     },
+
     meta: {
         title: "Digital Marketing Agency UK | Growth & Performance",
-        description: "Drive revenue in the UK. Our digital marketing services include PPC, Social Media Ads, and Email Automation tailored for the British market.",
+        description:
+            "Grow your business in the United Kingdom. We offer PPC, Social Media Advertising, and Email Automation carefully tailored to British markets and buying behaviour.",
         canonical: "/digital-marketing-uk",
     },
+
     content: {
         hero: {
-            title: "Performance Marketing for UK Growth",
-            subtitle: "Optimize your spend. Maximize your returns. We run efficient digital campaigns for businesses across the United Kingdom.",
+            title: "High-Performance Digital Marketing for UK Brands",
+            subtitle:
+                "Maximise efficiency. Improve conversions. We build and manage data-driven campaigns for businesses across the UK.",
         },
+
         overview: {
-            title: "Scaling Brands in the UK Digital Economy",
-            text: "The UK is one of the world's most advanced e-commerce and digital service markets. To standout, you need precision. ekanostudio offers full-stack digital marketing solutions. From Google Ads targeting specific London boroughs to nationwide Meta campaigns, we help you reach your ideal British customer efficiently.",
+            title: "Building Growth in the UK’s Digital-First Economy",
+            text:
+                "The UK is one of the most competitive digital landscapes—driven by e-commerce, fintech, and service-led industries. To stand out, your marketing must blend precision targeting with a tone that resonates with British audiences. Ekanostudio creates full-funnel marketing systems, whether you’re targeting busy professionals in London, local customers in Manchester, or nationwide buyers across England, Scotland, Wales, and Northern Ireland.",
         },
+
         whyChoose: {
-            title: "Our Marketing Approach",
+            title: "Why British Brands Choose Us",
             points: [
-                { title: "Data Privacy First", desc: "Strict adherence to UK GDPR and PECR regulations." },
-                { title: "Platform Expertise", desc: "Deep knowledge of the UK's most popular platforms." },
-                { title: "Transparent Reporting", desc: "Clear insights into your CAC and ROI in GBP." }
-            ]
+                {
+                    title: "GDPR + PECR Compliant",
+                    desc: "All campaigns follow strict UK data and communication regulations.",
+                },
+                {
+                    title: "Performance-Driven Strategy",
+                    desc: "Optimised campaigns built to lower your CPA and increase revenue in GBP.",
+                },
+                {
+                    title: "UK Market Insight",
+                    desc: "Culturally aligned messaging crafted for British preferences and humour.",
+                },
+            ],
         },
+
         deliverables: [
-            "Digital Strategy Roadmap",
-            "PPC Campaign Management",
-            "Social Media Advertising",
-            "Email Marketing Automation",
-            "Conversion Rate Optimization",
-            "Real-time Dashboard Access"
+            "UK-Specific Digital Strategy",
+            "PPC Management (Google & Microsoft Ads)",
+            "Meta, LinkedIn & TikTok Advertising",
+            "Email Marketing & Automation (UK-compliant)",
+            "Conversion Rate Optimisation",
+            "Real-Time Analytics Dashboard"
         ],
+
         process: {
-            title: "UK Market Launch",
+            title: "Our UK Growth Process",
             steps: [
-                { title: "Targeting", desc: "Defining your UK audience segments." },
-                { title: "Creative", desc: "Designing ads that appeal to British sensibilities." },
-                { title: "Launch", desc: "Going live with controlled budgets." },
-                { title: "Optimize", desc: "Refining bids and creatives for maximum efficiency." }
-            ]
+                {
+                    title: "Audience Mapping",
+                    desc: "Identifying your ideal customer personas within UK regions.",
+                },
+                {
+                    title: "Creative Production",
+                    desc: "Crafting ads tailored to British buying behaviour and cultural tone.",
+                },
+                {
+                    title: "Campaign Launch",
+                    desc: "Executing structured campaigns with controlled spending.",
+                },
+                {
+                    title: "Optimisation",
+                    desc: "Constant refinement of bids, audiences, and messaging for higher ROAS.",
+                },
+            ],
         },
+
         cta: {
-            title: "Ready to grow in the UK?",
-            text: "Book a strategy call with our digital experts."
+            title: "Looking to scale in the UK?",
+            text: "Book a strategy call and discover how we can grow your brand across the United Kingdom.",
         },
+
         relatedServices: [
             { title: "SEO Services", link: "/services/seo/on-page-seo" },
             { title: "Content Creation", link: "/services/content-creation/content-writing" },
             { title: "Web Design", link: "/services/web-design-development/website-design-uiux" }
-        ]
-    }
+        ],
+    },
 };
