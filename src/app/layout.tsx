@@ -1,12 +1,15 @@
 import "./globals.css";
 import { ReactNode } from "react";
 import { cabinet, generalSans, inter, satoshi, telma } from "./fonts";
-import SmoothScroll from "@/components/commons/SmoothScroll";
+
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/sections/Footer";
 import Script from "next/script";
 import { Metadata } from "next";
+import { LazyMotionProvider } from "@/components/providers/LazyMotionProvider";
+
+import SmoothScroll from "@/components/commons/SmoothScroll";
 
 const SITE_URL = "https://www.ekanostudio.com";
 
@@ -66,8 +69,22 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
- 
-       <Script
+        <link
+          rel="preload"
+          href="/fonts/satoshi/Satoshi-Bold.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/cabinet/CabinetGrotesk-Bold.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-0T7Z4PX35H"
         />
@@ -124,13 +141,15 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           Skip to main content
         </a>
         <SmoothScroll />
-        <ThemeProvider>
-          <Navbar />
-          <main id="main-content">
-            {children}
-          </main>
-          <Footer />
-        </ThemeProvider>
+        <LazyMotionProvider>
+          <ThemeProvider>
+            <Navbar />
+            <main id="main-content">
+              {children}
+            </main>
+            <Footer />
+          </ThemeProvider>
+        </LazyMotionProvider>
       </body>
 
     </html>

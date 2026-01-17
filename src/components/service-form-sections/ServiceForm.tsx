@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { Briefcase, Phone, Star, Check, Mail, Loader2, Info, ShieldCheck, Zap, Clock, ArrowRight } from "lucide-react";
 import ProjectScroller from "../book-consultation-sections/ProjectScroller";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -216,7 +216,7 @@ export default function ServiceForm() {
                                     { icon: Clock, title: "24h Response Time", desc: "We review every inquiry within one business day." },
                                     { icon: Star, title: "Expert Implementation", desc: "Work with senior designers and developers." }
                                 ].map((item, i) => (
-                                    <motion.div
+                                    <m.div
                                         key={i}
                                         initial={{ opacity: 0, y: 20 }}
                                         animate={{ opacity: 1, y: 0 }}
@@ -231,7 +231,7 @@ export default function ServiceForm() {
                                             <h5 className="font-bold text-sm truncate" style={{ color: theme.text }}>{item.title}</h5>
                                             <p className="text-xs opacity-60 mt-0.5 line-clamp-2" style={{ color: theme.subtext }}>{item.desc}</p>
                                         </div>
-                                    </motion.div>
+                                    </m.div>
                                 ))}
                             </div>
                         </div>

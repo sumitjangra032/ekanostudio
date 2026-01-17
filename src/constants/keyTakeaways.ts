@@ -5,11 +5,11 @@ import {
   CalendarClock,
   PiggyBank,
 } from "lucide-react";
-import { HiMiniSparkles } from "react-icons/hi2";
+import { SparklesIcon } from "@/components/icons/LocalIcons";
 
 export const KEY_TAKEWAYS_CONTENT = {
   tag: {
-    icon: HiMiniSparkles,
+    icon: SparklesIcon,
     label: "KEY TAKEAWAYS",
   },
 

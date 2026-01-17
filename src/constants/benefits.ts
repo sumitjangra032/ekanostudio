@@ -1,10 +1,9 @@
 // constants/benefits.ts
-import { IoSparkles } from "react-icons/io5";
-import { GoZap } from "react-icons/go";
+import { SparklesIcon, ZapIcon } from "@/components/icons/LocalIcons";
 
 export const BENEFITS_CONTENT = {
   tag: {
-    icon: IoSparkles,
+    icon: SparklesIcon,
     label: "BENEFITS",
   },
 
@@ -13,7 +12,7 @@ export const BENEFITS_CONTENT = {
   description:
     "Leverage a single powerhouse team for everything digital — designed to {elevate} your brand, accelerate your growth, and deliver measurable results across your entire online ecosystem.",
 
-  benefitsIcon: GoZap,
+  benefitsIcon: ZapIcon,
 
   benefitsList: [
     {

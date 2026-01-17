@@ -1,9 +1,9 @@
 // constants/whyChooseUs.ts
-import { FaStar } from "react-icons/fa";
+import { StarIcon } from "../components/icons/LocalIcons";
 
 export const WHY_US_CONTENT = {
   tag: {
-    icon: FaStar,
+    icon: StarIcon,
     label: "WHY CHOOSE US?",
   },
 

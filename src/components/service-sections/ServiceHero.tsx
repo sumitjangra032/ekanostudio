@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { m, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import AnimatedLine from "@/components/animated/AnimatedLine";
 import AnimatedRotateButton from "@/components/animated/AnimatedRotateButton";
@@ -52,7 +52,7 @@ export default function ServiceHero({ data }: { data: any }) {
 
       <div className="relative max-w-4xl mx-auto px-6 py-20 md:py-32 mt-16 md:mt-24">
         {/* Animation Wrapper */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -137,7 +137,7 @@ export default function ServiceHero({ data }: { data: any }) {
               className="w-full sm:w-auto"
             />
           </div>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

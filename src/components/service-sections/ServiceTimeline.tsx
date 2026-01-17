@@ -1,7 +1,7 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { FaClock } from "react-icons/fa";
+import { ClockIcon } from "../icons/LocalIcons";
 import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
 import AnimatedLine from "../animated/AnimatedLine";

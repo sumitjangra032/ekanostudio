@@ -1,8 +1,8 @@
-import { FaTable } from "react-icons/fa";
+import { TableIcon } from "@/components/icons/LocalIcons";
 
 export const COMPARISON_CONTENT = {
   tag: {
-    icon: FaTable,
+    icon: TableIcon,
     label: "COMPARISON",
   },
 

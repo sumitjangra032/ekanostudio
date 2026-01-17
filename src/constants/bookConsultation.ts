@@ -1,8 +1,8 @@
-import { IoCallOutline } from "react-icons/io5";
+import { PhoneIcon } from "@/components/icons/LocalIcons";
 
 export const BOOK_CONSULTATION_CONTENT = {
   tag: {
-    icon: IoCallOutline,
+    icon: PhoneIcon,
     label: "Book a consultation",
   },
 

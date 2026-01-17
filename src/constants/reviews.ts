@@ -1,8 +1,8 @@
-import { FaStar } from "react-icons/fa";
+import { StarIcon } from "../components/icons/LocalIcons";
 
 export const REVIEW_CONTENT = {
   tag: {
-    icon: FaStar,
+    icon: StarIcon,
     label: "CLIENT REVIEWS",
   },
 

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { HiOutlineChevronRight } from "react-icons/hi2";
+import { ChevronRightIcon } from "@/components/icons/LocalIcons";
 
 interface ContactButtonProps {
   text?: string;
@@ -88,9 +88,8 @@ export default function AnimatedRotateButton({
     >
       {/* TEXT */}
       <div
-        className={`relative h-6 whitespace-nowrap overflow-hidden ${
-          fullWidth ? "flex-1" : ""
-        }`}
+        className={`relative h-6 whitespace-nowrap overflow-hidden ${fullWidth ? "flex-1" : ""
+          }`}
       >
         <span className="opacity-0">{text}</span>
         <AnimatePresence initial={false}>
@@ -132,7 +131,7 @@ export default function AnimatedRotateButton({
               transition={{ duration: 0.28 }}
               className="absolute"
             >
-              <HiOutlineChevronRight size={iconSize} />
+              <ChevronRightIcon size={iconSize} />
             </motion.div>
           ) : (
             <motion.div
@@ -143,7 +142,7 @@ export default function AnimatedRotateButton({
               transition={{ duration: 0.28 }}
               className="absolute"
             >
-              <HiOutlineChevronRight size={iconSize} />
+              <ChevronRightIcon size={iconSize} />
             </motion.div>
           )}
         </AnimatePresence>

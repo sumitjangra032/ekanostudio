@@ -1,8 +1,8 @@
-import { IoMdImages } from "react-icons/io";
+import { ImagesIcon } from "@/components/icons/LocalIcons";
 
 export const WORK_CONTENT = {
     tag: {
-        icon: IoMdImages,
+        icon: ImagesIcon,
         label: "SELECTED WORK",
     },
     title: "[Our] [Selected] [Work]",

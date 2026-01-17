@@ -9,6 +9,7 @@ export const generalSans = localFont({
     { path: "./fonts/general-sans/GeneralSans-Bold.woff2", weight: "700" },
   ],
   variable: "--font-general-sans",
+  display: "swap",
 });
 
 export const satoshi = localFont({

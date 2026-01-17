@@ -8,7 +8,7 @@ import { useTheme } from "@/components/providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
 import Link from "next/link";
 import AnimatedLine from "./animated/AnimatedLine";
-import { FiSearch } from "react-icons/fi";
+import { SearchIcon } from "@/components/icons/LocalIcons";
 
 
 export default function ServicesComponent() {
@@ -99,7 +99,7 @@ export default function ServicesComponent() {
           transition={{ duration: 0.6 }}
           className="max-w-xl mx-auto relative"
         >
-          <FiSearch
+          <SearchIcon
             className="absolute left-4 top-1/2 -translate-y-1/2"
             size={20}
             style={{ color: theme.subtext }}

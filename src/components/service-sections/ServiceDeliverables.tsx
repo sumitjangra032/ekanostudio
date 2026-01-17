@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
 import AnimatedLine from "../animated/AnimatedLine";
-import { FaBoxOpen, FaCheckCircle } from "react-icons/fa";
+import { BoxOpenIcon, CheckCircleIcon } from "../icons/LocalIcons";
 
 export default function ServiceDeliverables({ data }: { data: any }) {
     const { themeName } = useTheme();
@@ -108,9 +108,8 @@ export default function ServiceDeliverables({ data }: { data: any }) {
                                     border: `1px solid ${theme.accents.a}30`,
                                 }}
                             >
-                                <FaCheckCircle
+                                <CheckCircleIcon
                                     size={18}
-                                    style={{ color: theme.accents.a }}
                                 />
                             </div>
 

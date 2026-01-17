@@ -14,8 +14,8 @@ import { useState, useEffect } from "react";
 import AnimatedRotateButton from "../animated/AnimatedRotateButton";
 import ButtonVibrator from "../animated/ButtonVibrator";
 
-import { AnimatePresence, motion } from "framer-motion";
-import { HiOutlineChevronDown, HiOutlineX, HiOutlineMenu } from "react-icons/hi";
+import { AnimatePresence, m } from "framer-motion";
+import { ChevronDownIcon, CloseIcon, MenuIcon } from "../icons/LocalIcons";
 
 export default function Navbar() {
   const { themeName } = useTheme();
@@ -106,13 +106,13 @@ export default function Navbar() {
                 </Link>
 
                 {link.megaMenu && (
-                  <motion.div
+                  <m.div
                     animate={{ rotate: isOpen ? 180 : 0 }}
                     transition={{ duration: 0.25, ease: "easeInOut" }}
                     className="flex items-center"
                   >
-                    <HiOutlineChevronDown size={15} color={theme.text} />
-                  </motion.div>
+                    <ChevronDownIcon size={15} className="" />
+                  </m.div>
                 )}
               </div>
             );
@@ -136,13 +136,13 @@ export default function Navbar() {
           style={{ color: theme.text }}
           aria-label="Open menu"
         >
-          <HiOutlineMenu size={22} />
+          <MenuIcon size={22} />
         </button>
       </nav>
 
       <AnimatePresence>
         {mobileOpen && (
-          <motion.div
+          <m.div
             initial={{ opacity: 100, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
@@ -183,7 +183,7 @@ export default function Navbar() {
                 />
               </div>
             </div>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
 

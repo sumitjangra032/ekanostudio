@@ -5,7 +5,7 @@ import ServicePageClient from "@/components/service-sections/ServicePageClient";
 import { IServiceType } from "@/constants/services";
 import { SERVICE_PRICING } from "@/constants/servicePricing";
 
-import { FaChartLine, FaRocket, FaGlobe, FaClock } from "react-icons/fa";
+import { ChartLineIcon, RocketIcon, GlobeIcon, ClockIcon } from "@/components/icons/LocalIcons";
 
 export default function SeoServicePage({ data }: { data: SeoPageData }) {
 
@@ -33,10 +33,10 @@ export default function SeoServicePage({ data }: { data: SeoPageData }) {
                     heading: `${data.service.name} Impact`,
                     subheading: `Delivering measurable results for businesses in ${data.location.name}.`,
                     items: [
-                        { icon: FaChartLine, value: "100%+", label: "Client Satisfaction" },
-                        { icon: FaRocket, value: "2.5x", label: "Average ROI" },
-                        { icon: FaGlobe, value: "50+", label: `Projects in ${data.location.name}` },
-                        { icon: FaClock, value: "24/7", label: "Support & Maintenance" }
+                        { icon: ChartLineIcon, value: "100%+", label: "Client Satisfaction" },
+                        { icon: RocketIcon, value: "2.5x", label: "Average ROI" },
+                        { icon: GlobeIcon, value: "50+", label: `Projects in ${data.location.name}` },
+                        { icon: ClockIcon, value: "24/7", label: "Support & Maintenance" }
                     ]
                 }
             },

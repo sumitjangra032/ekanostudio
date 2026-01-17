@@ -105,21 +105,28 @@ export default function Hero() {
               md:text-[52px]
               lg:text-[64px]
               xl:text-[72px]
+              hero-headline
             "
           >
-            {HERO_CONTENT.headline.map((line, index) => (
-              <AnimatedLine
-                key={index}
-                text={line}
-                delay={index * 0.25}
-                isHeading
-                gradient={{
-                  from: "#fac175",
-                  via: "#ff006a",
-                  to: "#8b5cf6",
-                }}
-              />
-            ))}
+            {HERO_CONTENT.headline.map((line, index) => {
+              const words = line.match(/(\[[^\]]+\]|\{[^}]+\}|\S+)/g) || [];
+              return (
+                <div key={index} className="block font-[var(--font-cabinet)]">
+                  {words.map((word, i) => {
+                    const isTarget = (word.startsWith("{") && word.endsWith("}")) || (word.startsWith("[") && word.endsWith("]"));
+                    const cleanText = isTarget ? word.slice(1, -1) : word;
+                    return (
+                      <span
+                        key={i}
+                        className={`inline-block mr-2 px-[0.045em] ${isTarget ? 'gradient-text' : ''}`}
+                      >
+                        {cleanText}
+                      </span>
+                    );
+                  })}
+                </div>
+              );
+            })}
           </h1>
 
           {/* Supporting Description */}

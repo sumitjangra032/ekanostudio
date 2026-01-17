@@ -3,7 +3,7 @@
 import { useTheme } from "@/components/providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
 import AnimatedLine from "@/components/animated/AnimatedLine";
-import { FiMapPin, FiMail, FiPhone } from "react-icons/fi";
+import { MapPinIcon, MailIcon, PhoneIcon } from "@/components/icons/LocalIcons";
 
 export default function AboutPageClient() {
   const { themeName } = useTheme();
@@ -146,7 +146,7 @@ export default function AboutPageClient() {
 
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div className="rounded-3xl p-8 bg-black/40 border border-white/10 backdrop-blur-xl flex flex-col items-center gap-3">
-              <FiMapPin size={26} style={{ color: theme.accents.a }} />
+              <MapPinIcon size={26} style={{ color: theme.accents.a }} />
               <h4 className="text-lg font-semibold">Address</h4>
               <p className="text-sm" style={{ color: theme.subtext }}>
                 Hisar, Haryana<br />India
@@ -154,7 +154,7 @@ export default function AboutPageClient() {
             </div>
 
             <div className="rounded-3xl p-8 bg-black/40 border border-white/10 backdrop-blur-xl flex flex-col items-center gap-3">
-              <FiMail size={26} style={{ color: theme.accents.a }} />
+              <MailIcon size={26} style={{ color: theme.accents.a }} />
               <h4 className="text-lg font-semibold">Email</h4>
               <p className="text-sm" style={{ color: theme.subtext }}>
                 info@ekanostudio.com<br />
@@ -163,7 +163,7 @@ export default function AboutPageClient() {
             </div>
 
             <div className="rounded-3xl p-8 bg-black/40 border border-white/10 backdrop-blur-xl flex flex-col items-center gap-2">
-              <FiPhone size={26} style={{ color: theme.accents.a }} />
+              <PhoneIcon size={26} style={{ color: theme.accents.a }} />
               <h4 className="text-lg font-semibold">Phone</h4>
               <p className="text-sm" style={{ color: theme.subtext }}>
                 +91 9034817987

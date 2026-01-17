@@ -1,7 +1,7 @@
 "use client";
 
 import {
-  motion,
+  m,
   useInView,
   useScroll,
   useSpring,
@@ -48,32 +48,19 @@ export default function ProjectTimeline() {
       style={{ backgroundColor: theme.background }}
     >
       <div className="max-w-6xl mx-auto">
-
-        {/* Header */}
         <div className="flex flex-col items-center text-center mb-20">
           <div
-            className="
-            inline-flex items-center gap-1
-            px-4 py-2
-            rounded-full
-            border
-            text-sm font-light
-            mb-3
-            backdrop-blur-xs
-            "
+            className="inline-flex items-center gap-1 px-4 py-2 rounded-full border text-sm font-light mb-3 backdrop-blur-xs"
             style={{
               borderColor: "#22c55e",
               background: "rgba(34,197,94,0.08)",
             }}
           >
             <div className="pulse green" />
-
             <span className="text-green-500">
               {PROJECT_TIMELINE_CONTENT.tag.label}
             </span>
           </div>
-
-
           <h2
             className="text-[32px] md:text-[42px] font-bold"
             style={{ color: theme.text }}
@@ -89,7 +76,6 @@ export default function ProjectTimeline() {
               }}
             />
           </h2>
-
           <div className="max-w-3xl mt-4">
             <AnimatedLine
               text={PROJECT_TIMELINE_CONTENT.description}
@@ -118,7 +104,7 @@ export default function ProjectTimeline() {
           />
 
           {/* Active Line */}
-          <motion.div
+          <m.div
             className="absolute left-4 md:left-1/2 w-[3px] -translate-x-1/2 origin-top rounded-full"
             style={{
               top: "180px",
@@ -174,7 +160,7 @@ function TimelinePhase({
   });
 
   return (
-    <motion.div
+    <m.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-10%" }}
@@ -182,7 +168,7 @@ function TimelinePhase({
       className={`relative flex flex-col md:flex-row ${isEven ? "md:flex-row-reverse" : ""}`}
     >
       {/* Timeline Dot */}
-      <motion.div
+      <m.div
         ref={dotRef}
         className="absolute left-4 md:left-1/2 top-1/2 w-4 h-4 rounded-full -translate-x-1/2 -translate-y-1/2 z-10"
         initial={{ scale: 1 }}
@@ -287,6 +273,6 @@ function TimelinePhase({
           </ul>
         </div>
       </div>
-    </motion.div>
+    </m.div>
   );
 }

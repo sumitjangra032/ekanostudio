@@ -1,7 +1,7 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { FaToolbox } from "react-icons/fa";
+import { ToolboxIcon } from "../icons/LocalIcons";
 import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
 import AnimatedLine from "../animated/AnimatedLine";

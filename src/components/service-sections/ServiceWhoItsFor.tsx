@@ -5,7 +5,7 @@ import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
 import AnimatedLine from "../animated/AnimatedLine";
 import { Check } from "lucide-react";
-import { FaUserTie } from "react-icons/fa";
+import { UserTieIcon } from "../icons/LocalIcons";
 
 export default function ServiceWhoItsFor({ data }: { data: any }) {
     const { themeName } = useTheme();

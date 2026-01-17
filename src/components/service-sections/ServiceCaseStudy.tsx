@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
 import AnimatedLine from "../animated/AnimatedLine";
-import { FaTrophy } from "react-icons/fa";
+import { TrophyIcon } from "../icons/LocalIcons";
 import RandomGradientGlow from "../effects/RandomGradientGlow";
 import ParallaxBackground from "../animated/ParallaxBackground";
 
@@ -34,7 +34,7 @@ export default function ServiceCaseStudy({ data }: { data: any }) {
                     className="flex justify-center items-center gap-2 font-semibold uppercase mb-4"
                     style={{ y: yText, color: theme.primary }}
                 >
-                    <FaTrophy size={16} />
+                    <TrophyIcon size={16} />
                     Case Study
                 </motion.div>
 

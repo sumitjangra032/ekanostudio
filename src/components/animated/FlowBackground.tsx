@@ -1,11 +1,18 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function FlowBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    setIsMobile(window.innerWidth < 1024);
+  }, []);
+
+  useEffect(() => {
+    if (isMobile) return;
+
     const canvas = canvasRef.current;
     if (!canvas) return;
 
@@ -50,7 +57,7 @@ export default function FlowBackground() {
           const y =
             wave.y +
             Math.sin(x * wave.length + time * wave.speed + wave.phase) *
-              wave.amplitude;
+            wave.amplitude;
           ctx.lineTo(x, y);
         }
         ctx.stroke();
@@ -65,7 +72,13 @@ export default function FlowBackground() {
     return () => {
       window.removeEventListener("resize", resize);
     };
-  }, []);
+  }, [isMobile]);
+
+  if (isMobile) {
+    return (
+      <div className="absolute inset-0 w-full h-full bg-[#0b0b0b]" />
+    );
+  }
 
   return (
     <canvas

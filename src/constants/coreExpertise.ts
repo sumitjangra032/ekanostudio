@@ -1,9 +1,9 @@
 
-import { FaLayerGroup } from "react-icons/fa";
+import { LayerGroupIcon } from "@/components/icons/LocalIcons";
 
 export const CORE_EXPERTISE_CONTENT = {
   tag: {
-    icon: FaLayerGroup,
+    icon: LayerGroupIcon,
     label: "CORE EXPERTISE",
   },
   title: "[Mastering] [the] [Digital] [Landscape]",

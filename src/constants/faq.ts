@@ -1,9 +1,9 @@
 
-import { IoIosCheckbox } from "react-icons/io";
+import { CheckboxIcon } from "@/components/icons/LocalIcons";
 
 export const FAQ_CONTENT = {
   tag: {
-    icon: IoIosCheckbox,
+    icon: CheckboxIcon,
     label: "FAQ’S",
   },
 

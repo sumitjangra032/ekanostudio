@@ -15,7 +15,7 @@ import AnimatedLine from "../animated/AnimatedLine";
 import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
 import AnimateDownloadedSVG from "../animated/AnimateDownloadedSVG";
-import { TiFlowMerge } from "react-icons/ti";
+import { FlowMergeIcon, TrophyIcon, AnalyticsIcon } from "../icons/LocalIcons";
 import RandomGradientGlow from "../effects/RandomGradientGlow";
 import FloatingParticles from "../animated/FloatingParticles";
 import ParallaxBackground from "../animated/ParallaxBackground";

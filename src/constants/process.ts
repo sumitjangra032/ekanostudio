@@ -1,8 +1,8 @@
-import { PiCloverFill } from "react-icons/pi";
+import { CloverIcon } from "../components/icons/LocalIcons";
 
 export const PROCESS_CONTENT = {
   tag: {
-    icon: PiCloverFill,
+    icon: CloverIcon,
     label: "PROCESS",
   },
 

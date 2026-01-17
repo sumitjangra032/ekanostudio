@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
 import AnimatedLine from "../animated/AnimatedLine";
-import { FaHeart } from "react-icons/fa";
+import { HeartIcon } from "../icons/LocalIcons";
 
 export default function ServiceWhyMatters({ data }: { data: any }) {
     const { themeName } = useTheme();

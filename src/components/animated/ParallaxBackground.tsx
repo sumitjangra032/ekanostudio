@@ -1,7 +1,5 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
-
 interface ParallaxBackgroundProps {
   speed?: number;
   image: string;
@@ -11,7 +9,7 @@ interface ParallaxBackgroundProps {
   backgroundRepeat?: string;
   className?: string;
   zIndex?: number;
-  heightMultiplier?: number; // NEW
+  heightMultiplier?: number;
 }
 
 export default function ParallaxBackground({
@@ -22,21 +20,13 @@ export default function ParallaxBackground({
   backgroundPosition = "center",
   backgroundRepeat = "no-repeat",
   zIndex = 0,
-  heightMultiplier = 2, // 2x viewport height
+  heightMultiplier = 2,
 }: ParallaxBackgroundProps) {
-  const { scrollY } = useScroll();
-
-  const y = useTransform(
-    scrollY,
-    [0, 1200],
-    [0, -120 * speed]
-  );
-
   return (
-    <motion.div
-      className="absolute left-0 w-full pointer-events-none will-change-transform"
+    <div
+      className="absolute left-0 w-full pointer-events-none"
       style={{
-        y, zIndex,
+        zIndex,
         top: "-50vh",
         height: `${heightMultiplier * 100}vh`,
       }}
@@ -51,6 +41,6 @@ export default function ParallaxBackground({
           opacity,
         }}
       />
-    </motion.div>
+    </div>
   );
 }

@@ -1,10 +1,10 @@
 import {
-  FaInstagram,
-  FaTwitter,
-  FaTiktok,
-} from "react-icons/fa";
-import { FiLinkedin } from "react-icons/fi";
-import { IoLogoYoutube } from "react-icons/io";
+  InstagramIcon,
+  TwitterIcon,
+  TiktokIcon,
+  LinkedInIcon,
+  YouTubeIcon,
+} from "@/components/icons/LocalIcons";
 
 export const FOOTER_CONTENT = {
   year: "2024",
@@ -45,10 +45,10 @@ export const FOOTER_CONTENT = {
   ],
 
   socials: [
-    { icon: FaInstagram, href: "#" },
-    { icon: FaTwitter, href: "#" },
-    { icon: FiLinkedin, href: "#" },
-    { icon: IoLogoYoutube, href: "#" },
-    { icon: FaTiktok, href: "#" },
+    { icon: InstagramIcon, href: "#" },
+    { icon: TwitterIcon, href: "#" },
+    { icon: LinkedInIcon, href: "#" },
+    { icon: YouTubeIcon, href: "#" },
+    { icon: TiktokIcon, href: "#" },
   ],
 };

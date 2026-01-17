@@ -1,10 +1,8 @@
-import {
-  PiCalendarCheckFill,
-} from "react-icons/pi";
+import { CalendarCheckIcon } from "../components/icons/LocalIcons";
 
 export const PROJECT_TIMELINE_CONTENT = {
   tag: {
-    icon: PiCalendarCheckFill,
+    icon: CalendarCheckIcon,
     label: "PROJECT TIMELINE",
   },
   title: "[From Concept to Launch]",

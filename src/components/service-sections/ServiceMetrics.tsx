@@ -7,7 +7,7 @@ import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
 
 import AnimateDownloadedSVG from "../animated/AnimateDownloadedSVG";
-import { IoAnalytics } from "react-icons/io5";
+import { AnalyticsIcon } from "../icons/LocalIcons";
 import AnimatedLine from "../animated/AnimatedLine";
 import { AnimatedNumber } from "../animated/AnimatedNumber";
 

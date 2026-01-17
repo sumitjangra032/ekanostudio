@@ -1,8 +1,8 @@
-import { FaTag } from "react-icons/fa";
+import { TagIcon } from "../components/icons/LocalIcons";
 
 export const PRICING_CONTENT = {
   tag: {
-    icon: FaTag,
+    icon: TagIcon,
     label: "PRICING",
   },
 
