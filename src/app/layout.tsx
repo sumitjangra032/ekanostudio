@@ -67,14 +67,18 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <head>
  
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0T7Z4PX35H"></script>
-          <script>
+       <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-0T7Z4PX35H"
+        />
+        <Script id="ga4" strategy="afterInteractive">
+          {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-          
             gtag('config', 'G-0T7Z4PX35H');
-         </script>
+          `}
+        </Script>
 
         {/* Schema.org - LocalBusiness */}
         <Script
