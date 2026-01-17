@@ -66,12 +66,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
-        {/* Google Analytics */}
-        <Script
+ 
+       <Script
+          async
           src="https://www.googletagmanager.com/gtag/js?id=G-0T7Z4PX35H"
-          strategy="afterInteractive"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="ga4" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
