@@ -7,66 +7,109 @@ export const data: SeoPageData = {
         slug: "seo-services",
         targetServiceSlug: "on-page-seo",
         categorySlug: "seo",
-        keywords: ["Search Engine Optimization", "Keyword Ranking", "Organic Traffic Growth"],
-        description: "Boost your search engine rankings and drive organic traffic with our data-driven SEO strategies.",
+        keywords: [
+            "SEO Services UAE",
+            "SEO Dubai",
+            "SEO Abu Dhabi",
+            "Arabic SEO",
+            "English SEO UAE",
+            "Local SEO UAE",
+            "Dubai SEO Company",
+            "Abu Dhabi SEO Agency"
+        ],
+        description:
+            "Advanced SEO services in the UAE for English and Arabic audiences, designed to improve rankings, visibility, and qualified leads.",
     },
+
     location: {
         name: "UAE",
         slug: "uae",
         type: "country",
         country: "UAE",
         adjective: "UAE",
-        context: "in the United Arab Emirates",
+        context: "across Dubai, Abu Dhabi, and the Emirates",
         metaTitleSuffix: "UAE | Dubai & Abu Dhabi",
         traits: ["luxury market", "rapid development", "global business hub"],
     },
+
     meta: {
-        title: "SEO Services UAE | Rank #1 in Dubai & Abu Dhabi",
-        description: "Dominate search results in the UAE. We offer Arabic and English SEO strategies to help your business capture the booming Gulf market.",
+        title: "SEO Agency UAE | Arabic & English SEO for Dubai & Abu Dhabi",
+        description:
+            "Rank higher on Google in the UAE. Our bilingual SEO strategies in English and Arabic help businesses win organic traffic across Dubai and Abu Dhabi.",
         canonical: "/seo-services-uae",
     },
+
     content: {
         hero: {
-            title: "Leading SEO Agency in the UAE",
-            subtitle: "Capture the GCC market. We help businesses rank high for English and Arabic keywords across the Emirates.",
+            title: "Top-Rated SEO Agency in the UAE",
+            subtitle:
+                "Grow your business across the GCC. We help companies dominate English and Arabic search results in Dubai and Abu Dhabi.",
         },
+
         overview: {
-            title: "Search Dominance for Dubai & Abu Dhabi",
-            text: "The UAE digital landscape is unique, requiring a dual-language strategy. ekanostudio specializes in SEO for the Emirates. We help real estate, tourism, and corporate clients rank for high-value terms in both English and Arabic, ensuring you reach the entire expatriate and local population.",
+            title: "Bilingual SEO for Dubai, Abu Dhabi & the Emirates",
+            text:
+                "The UAE’s search ecosystem is one of the most diverse in the world, balancing expatriate audiences with native Arabic speakers. ekanostudio delivers specialized SEO for the UAE market—optimizing your website for English and Arabic search intent, improving rankings for competitive commercial keywords, and strengthening your online authority across Dubai, Abu Dhabi, and the GCC.",
         },
+
         whyChoose: {
-            title: "Our UAE SEO Expertise",
+            title: "Why UAE Businesses Trust Our SEO",
             points: [
-                { title: "Bilingual SEO", desc: "Ranking strategies for both English and Arabic queries." },
-                { title: "Local Authority", desc: "Building citations and links from trusted UAE domains." },
-                { title: "Sector Focus", desc: "Experience in Real Estate, Setup Services, and Luxury." }
-            ]
+                {
+                    title: "Arabic + English SEO",
+                    desc: "Optimized content and keywords for both languages to reach all UAE demographics.",
+                },
+                {
+                    title: "Local UAE Authority",
+                    desc: "Backlink building from trusted .ae, GCC, and regional publications.",
+                },
+                {
+                    title: "Industry-Specific Expertise",
+                    desc: "Proven results for Real Estate, Tourism, Corporate Services, Luxury, and E-commerce.",
+                },
+            ],
         },
+
         deliverables: [
-            "Bilingual Keyword Research",
-            "Technical SEO Audit",
-            "Arabic Content Optimization",
-            "Google Maps (Local SEO)",
-            "Backlink Building (GCC)",
-            "Competitor Analysis"
+            "English & Arabic Keyword Research",
+            "Full Technical SEO Audit",
+            "Arabic SEO & Localization",
+            "Local SEO for Dubai & Abu Dhabi",
+            "GCC High-Authority Backlinks",
+            "Competitor & SERP Intelligence"
         ],
+
         process: {
-            title: "UAE Ranking Strategy",
+            title: "Our UAE SEO Framework",
             steps: [
-                { title: "Audit", desc: "Analyzing your visibility in UAE search results." },
-                { title: "Target", desc: "Identifying high-intent keywords in EN and AR." },
-                { title: "Optimize", desc: "Fine-tuning your site structure and content." },
-                { title: "Grow", desc: "Building authority to secure top positions." }
-            ]
+                {
+                    title: "Audit",
+                    desc: "Assessing your current EN/AR search performance across UAE regions.",
+                },
+                {
+                    title: "Target",
+                    desc: "Identifying profitable bilingual keywords and high-intent search clusters.",
+                },
+                {
+                    title: "Optimize",
+                    desc: "Improving on-page SEO, technical elements, and Arabic/English content structure.",
+                },
+                {
+                    title: "Grow",
+                    desc: "Building lasting authority through regional backlinks and content expansion.",
+                },
+            ],
         },
+
         cta: {
-            title: "Want more leads in UAE?",
-            text: "Get a free SEO consultation for your business."
+            title: "Want more leads in the UAE?",
+            text: "Book a free SEO strategy session for your Dubai or Abu Dhabi business.",
         },
+
         relatedServices: [
             { title: "Digital Marketing", link: "/services/digital-marketing/digital-marketing" },
             { title: "PPC Management", link: "/services/performance-marketing/google-ads" },
-            { title: "Web Development", link: "/services/web-design-development/website-development" }
-        ]
-    }
+            { title: "Web Development", link: "/services/web-design-development/website-development" },
+        ],
+    },
 };

@@ -1,8 +1,5 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 // Import images
 import figmaIcon from "../Logo_imgs/figma.png";
@@ -32,17 +29,12 @@ const logos = [
 const SoftwareLogos = () => {
     return (
         <section className="py-8 border-b border-white/5 overflow-hidden pb-32">
-
-            {/* Original carousel section */}
             <div className="flex">
-                <motion.div
+                <div
                     className="flex flex-shrink-0 gap-8 md:gap-16 px-6 md:px-8"
-                    initial={{ x: 0 }}
-                    animate={{ x: "-100%" }}
-                    transition={{
-                        repeat: Infinity,
-                        ease: "linear",
-                        duration: 60
+                    style={{
+                        animation: "marquee-left 60s linear infinite",
+                        display: "flex",
                     }}
                 >
                     {[...logos, ...logos, ...logos].map((logo, index) => (
@@ -54,38 +46,20 @@ const SoftwareLogos = () => {
                                     className="w-full h-full object-contain rounded-xl opacity-80 group-hover:opacity-100 transition-opacity duration-300"
                                     width={80}
                                     height={80}
+                                    sizes="(max-width: 768px) 64px, 80px"
                                 />
                             </div>
                             <span className="text-xs md:text-sm font-medium text-white/40 group-hover:text-white transition-colors duration-300">{logo.name}</span>
                         </div>
                     ))}
-                </motion.div>
-                <motion.div
-                    className="flex flex-shrink-0 gap-8 md:gap-16 px-6 md:px-8"
-                    initial={{ x: 0 }}
-                    animate={{ x: "-100%" }}
-                    transition={{
-                        repeat: Infinity,
-                        ease: "linear",
-                        duration: 60
-                    }}
-                >
-                    {[...logos, ...logos, ...logos].map((logo, index) => (
-                        <div key={`dup-${index}`} className="flex flex-col items-center gap-3 group shrink-0 cursor-default">
-                            <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 lg:w-22 lg:h-22 flex items-center justify-center">
-                                <Image
-                                    src={logo.icon}
-                                    alt={logo.name}
-                                    className="w-full h-full object-contain rounded-xl opacity-80 group-hover:opacity-100 transition-opacity duration-300"
-                                    width={80}
-                                    height={80}
-                                />
-                            </div>
-                            <span className="text-xs md:text-sm font-medium text-white/40 group-hover:text-white transition-colors duration-300">{logo.name}</span>
-                        </div>
-                    ))}
-                </motion.div>
+                </div>
             </div>
+            <style>{`
+                @keyframes marquee-left {
+                    0% { transform: translateX(0); }
+                    100% { transform: translateX(-33.33%); }
+                }
+            `}</style>
         </section>
     )
 }

@@ -7,62 +7,105 @@ export const data: SeoPageData = {
         slug: "seo-services",
         targetServiceSlug: "on-page-seo",
         categorySlug: "seo",
-        keywords: ["Search Engine Optimization", "Keyword Ranking", "Organic Traffic Growth"],
-        description: "Boost your search engine rankings and drive organic traffic with our data-driven SEO strategies.",
+        keywords: [
+            "SEO Agency UK",
+            "SEO Services UK",
+            "SEO Company London",
+            "Local SEO UK",
+            "National SEO UK",
+            "Google.co.uk SEO",
+            "British SEO Agency",
+            "UK Search Engine Optimization"
+        ],
+        description:
+            "Professional SEO services in the UK focused on Google.co.uk rankings, local visibility, and long-term organic growth.",
     },
+
     location: {
         name: "UK",
         slug: "uk",
         type: "country",
         country: "UK",
         adjective: "UK",
-        context: "across the United Kingdom",
-        metaTitleSuffix: "UK | Trusted Partners",
+        context: "across England, Scotland, Wales, and Northern Ireland",
+        metaTitleSuffix: "UK | Trusted SEO Agency",
         traits: ["established businesses", "digital transformation", "service sector"],
     },
+
     meta: {
-        title: "SEO Agency UK | Rank Higher on Google.co.uk",
-        description: "Increase your visibility in the United Kingdom. We specialize in UK local SEO and national campaigns to drive relevant British traffic.",
+        title: "SEO Agency UK | Google.co.uk Rankings & Organic Growth",
+        description:
+            "Rank higher on Google.co.uk with a UK-focused SEO agency. We drive qualified British traffic through local and national SEO strategies.",
         canonical: "/seo-services-uk",
     },
+
     content: {
         hero: {
-            title: "Dominating Google.co.uk Search Results",
-            subtitle: "Strategic SEO for forward-thinking UK companies. We help you capture high-intent leads across England, Scotland, Wales, and NI.",
+            title: "SEO Services Built for the UK Market",
+            subtitle:
+                "From local visibility to national dominance — we help UK businesses rank higher, attract quality traffic, and convert leads.",
         },
+
         overview: {
-            title: "Data-Driven SEO for the UK Economy",
-            text: "Navigating the UK search landscape requires local nuance. Terms, spelling, and search intent differ significantly from the US. ekanostudio delivers specialized UK SEO services. We optimize for British English queries, build links from .co.uk domains, and ensure your business appears in local packs from London to Edinburgh.",
+            title: "Search Engine Optimisation for the United Kingdom",
+            text:
+                "The UK search landscape demands precision. British spelling, regional intent, and competitive industries require a tailored SEO approach. ekanostudio delivers UK-specific SEO strategies focused on Google.co.uk — optimising technical performance, content relevance, and authoritative backlinks to help businesses win visibility across England, Scotland, Wales, and Northern Ireland.",
         },
+
         whyChoose: {
-            title: "Our UK SEO Edge",
+            title: "Why UK Businesses Choose Our SEO",
             points: [
-                { title: "British English Optimization", desc: "Content optimized for UK spelling (colour vs color) and idioms." },
-                { title: "Local Citations", desc: "Building trust with UK-specific directories and listings." },
-                { title: "Technical Precision", desc: "Ensuring site speed and structure meets Google's high standards." }
-            ]
+                {
+                    title: "UK Search Intent Expertise",
+                    desc: "We optimise for British English, local phrasing, and regional buying behaviour.",
+                },
+                {
+                    title: "Trusted UK Authority Building",
+                    desc: "Backlinks from reputable .co.uk and UK industry publications.",
+                },
+                {
+                    title: "Conversion-Focused SEO",
+                    desc: "Ranking is not enough — we optimise for enquiries, calls, and revenue.",
+                },
+            ],
         },
+
         deliverables: [
-            "Technical Site Audit",
-            "UK Keyword Research Map",
-            "Content Optimization (British English)",
-            "Local SEO Setup (GMB)",
-            "Backlink Building (.co.uk/.uk)",
-            "Monthly Performance Reports"
+            "Comprehensive Technical SEO Audit",
+            "UK Keyword Research & Search Intent Mapping",
+            "On-Page SEO (British English)",
+            "Local SEO & Google Business Profile Optimisation",
+            "UK Authority Link Building (.co.uk)",
+            "Monthly SEO Growth & Conversion Reports"
         ],
+
         process: {
-            title: "UK Ranking Strategy",
+            title: "Our UK SEO Execution Framework",
             steps: [
-                { title: "Audit", desc: "Analyzing your current standing in the UK SERPs." },
-                { title: "Localize", desc: "Adapting content and metadata for the British audience." },
-                { title: "Build", desc: "Acquiring high-quality links from UK industry sites." },
-                { title: "Report", desc: "Monitoring traffic and leads from the UK region." }
+                {
+                    title: "Audit",
+                    desc: "Evaluating your visibility, competitors, and technical health on Google.co.uk.",
+                },
+                {
+                    title: "Localise",
+                    desc: "Aligning content, structure, and metadata with UK search behaviour.",
+                },
+                {
+                    title: "Optimise",
+                    desc: "Improving site speed, content relevance, and on-page performance.",
+                },
+                {
+                    title: "Scale",
+                    desc: "Building authority and expanding rankings across priority UK keywords.",
+                }
             ]
         },
+
         cta: {
-            title: "Want more UK traffic?",
-            text: "Start your SEO campaign with our expert team."
+            title: "Ready to rank higher in the UK?",
+            text: "Get a free UK SEO audit and growth roadmap today.",
         },
+
         relatedServices: [
             { title: "Digital Marketing", link: "/services/digital-marketing/digital-marketing" },
             { title: "Web Development", link: "/services/web-design-development/website-development" },

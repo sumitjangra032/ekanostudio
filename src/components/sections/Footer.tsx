@@ -1,20 +1,15 @@
-"use client";
-
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { FOOTER_CONTENT } from "@/constants/footer";
 import { BRAND } from "@/constants/global";
-import { useTheme } from "../providers/ThemeProvider";
-import { THEMES } from "../../constants/theme";
+import { THEMES, currentTheme } from "../../constants/theme";
 
 export default function Footer() {
-  const { themeName } = useTheme();
-  const theme = THEMES[themeName];
+  const theme = THEMES[currentTheme as keyof typeof THEMES];
 
   return (
     <footer
       className="relative w-full"
-      style={{ backgroundColor: theme.background }}
+      style={{ backgroundColor: "var(--theme-background)" }}
     >
       {/* TOP DIVIDER (ALWAYS VISIBLE) */}
       <div className="absolute top-0 left-0 w-full h-[1px] z-20">
@@ -33,7 +28,7 @@ export default function Footer() {
         style={{
           background: `radial-gradient(
             1100px circle at bottom center,
-            ${theme.accents.a}12,
+            rgba(255, 60, 40, 0.07),
             transparent 65%
           )`,
         }}
@@ -42,23 +37,21 @@ export default function Footer() {
       {/* CENTERED CONTENT WRAPPER */}
       <div className="relative z-10">
         <div className="mx-auto max-w-7xl px-6 py-20">
-
-          {/* MAIN GRID (PROPER 12-COLUMN MATH) */}
+          {/* MAIN GRID */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-14">
-
             {/* BRAND — 5 COLS */}
             <div className="lg:col-span-5 flex flex-col gap-2">
               <Link
                 href="/"
                 className="text-2xl font-semibold tracking-tight"
-                style={{ color: theme.text }}
+                style={{ color: "var(--theme-text)" }}
               >
                 {BRAND.name}
               </Link>
 
               <p
                 className="text-sm leading-relaxed max-w-md"
-                style={{ color: theme.subtext }}
+                style={{ color: "var(--theme-subtext)" }}
               >
                 {FOOTER_CONTENT.tagline}
               </p>
@@ -66,20 +59,19 @@ export default function Footer() {
               {/* SOCIALS */}
               <div className="flex gap-4 pt-2">
                 {FOOTER_CONTENT.socials.map((item, i) => (
-                  <motion.a
+                  <a
                     key={i}
                     href={item.href}
-                    whileHover={{ y: -3 }}
-                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                    className="p-2 rounded-full"
+                    className="p-2 rounded-full transition-all duration-300 hover:-translate-y-1"
                     style={{
                       background: "rgba(255,255,255,0.04)",
                       border: "1px solid rgba(255,255,255,0.08)",
-                      color: theme.subtext,
+                      color: "var(--theme-subtext)",
                     }}
+                    aria-label={`Visit our ${item.href.split('.').slice(-2, -1)}`}
                   >
                     <item.icon size={18} />
-                  </motion.a>
+                  </a>
                 ))}
               </div>
             </div>
@@ -88,7 +80,7 @@ export default function Footer() {
             <div className="lg:col-span-2 flex flex-col gap-3">
               <h4
                 className="text-xs font-semibold uppercase tracking-widest"
-                style={{ color: theme.text }}
+                style={{ color: "var(--theme-text)" }}
               >
                 Company
               </h4>
@@ -106,7 +98,7 @@ export default function Footer() {
             <div className="lg:col-span-2 flex flex-col gap-3">
               <h4
                 className="text-xs font-semibold uppercase tracking-widest"
-                style={{ color: theme.text }}
+                style={{ color: "var(--theme-text)" }}
               >
                 Services
               </h4>
@@ -124,7 +116,7 @@ export default function Footer() {
             <div className="lg:col-span-3 flex flex-col gap-3">
               <h4
                 className="text-xs font-semibold uppercase tracking-widest"
-                style={{ color: theme.text }}
+                style={{ color: "var(--theme-text)" }}
               >
                 Legal
               </h4>
@@ -150,7 +142,7 @@ export default function Footer() {
             "
             style={{
               borderColor: "rgba(255,255,255,0.08)",
-              color: theme.subtext,
+              color: "var(--theme-subtext)",
             }}
           >
             <p>
@@ -158,20 +150,18 @@ export default function Footer() {
             </p>
             <span className="opacity-80">Made with ❤️ in India</span>
           </div>
-
         </div>
       </div>
     </footer>
   );
 }
 
-/* 🔥 FOOTER LINK — SAME HOVER ANIMATION AS NAVBAR */
 function FooterLink({ link, theme }: any) {
   return (
     <Link
       href={link.href}
       className="group relative inline-flex items-center gap-2 text-sm font-light"
-      style={{ color: theme.subtext }}
+      style={{ color: "var(--theme-subtext)" }}
     >
       <span className="relative z-10">{link.label}</span>
 
@@ -194,8 +184,8 @@ function FooterLink({ link, theme }: any) {
         <span
           className="text-[10px] px-2 py-0.5 rounded-md font-semibold uppercase"
           style={{
-            background: `${theme.accents.a}22`,
-            color: theme.accents.a,
+            background: "rgba(255, 60, 40, 0.13)",
+            color: "var(--theme-accent-a)",
           }}
         >
           {link.badge}
@@ -204,3 +194,4 @@ function FooterLink({ link, theme }: any) {
     </Link>
   );
 }
+

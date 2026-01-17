@@ -33,7 +33,7 @@ export default function Navbar() {
   return (
     <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-7xl ">
       {/* Under Development Notice */}
-{/* <div
+      {/* <div
   className="absolute -top-4 left-1/2 -translate-x-1/2 px-6 py-1.5 rounded-full text-[11px] md:text-xs font-semibold tracking-[0.15em] uppercase"
   style={{
     background:
@@ -134,6 +134,7 @@ export default function Navbar() {
           onClick={() => setMobileOpen(true)}
           className="md:hidden flex items-center justify-center w-10 h-10 rounded-full"
           style={{ color: theme.text }}
+          aria-label="Open menu"
         >
           <HiOutlineMenu size={22} />
         </button>

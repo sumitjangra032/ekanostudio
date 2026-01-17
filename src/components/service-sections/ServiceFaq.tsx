@@ -5,7 +5,7 @@ import { Plus, X } from "lucide-react";
 import { motion, AnimatePresence, useInView, useScroll, useTransform } from "framer-motion";
 import AnimatedLine from "../animated/AnimatedLine";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import GlowBeam from "../effects/GlowBeam";
+
 import RandomGradientGlow from "../effects/RandomGradientGlow";
 
 export default function ServiceFaq({ data, theme }: { data: any; theme: any }) {
@@ -84,7 +84,7 @@ export default function ServiceFaq({ data, theme }: { data: any; theme: any }) {
         style={{ y: yWrap }}
         className="relative max-w-4xl mx-auto mt-16"
       >
-        <GlowBeam color={theme.accents.a} />
+
         <RandomGradientGlow
           colorA={theme.accents.a}
           colorB={theme.accents.b}

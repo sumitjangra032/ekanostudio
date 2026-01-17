@@ -46,7 +46,7 @@ import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
 import { BOOK_CONSULTATION_CONTENT } from "@/constants/bookConsultation";
 import AnimatedLine from "../animated/AnimatedLine";
-import GlowBeam from "../effects/GlowBeam";
+
 import RandomGradientGlow from "../effects/RandomGradientGlow";
 import { COUNTRIES } from "@/constants/countries";
 import { Label } from "@/components/ui/label";
@@ -220,7 +220,7 @@ export default function BookConsultationForm() {
                     <div className="lg:col-span-2 space-y-8">
                         {submittedData ? (
                             <div className="relative w-full rounded-xl">
-                                <GlowBeam color={theme.accents.a} />
+
                                 <RandomGradientGlow colorA={theme.accents.a} colorB={theme.accents.b} />
                                 <Card
                                     style={{
@@ -300,7 +300,7 @@ export default function BookConsultationForm() {
 
                                     {/* Card 1: Personal Details */}
                                     <div className="relative w-full rounded-xl">
-                                        <GlowBeam color={theme.accents.a} />
+
                                         <RandomGradientGlow colorA={theme.accents.a} colorB={theme.accents.b} />
                                         <Card
                                             style={{
@@ -604,7 +604,7 @@ export default function BookConsultationForm() {
 
                                     {/* Card 2: Service Selector */}
                                     <div className="relative w-full rounded-xl">
-                                        <GlowBeam color={theme.accents.a} />
+
                                         <RandomGradientGlow colorA={theme.accents.b} colorB={theme.accents.a} />
                                         <Card style={{
                                             background: theme.cardBg,
@@ -716,7 +716,7 @@ export default function BookConsultationForm() {
 
                                     {/* Card 3: Contact Preferences */}
                                     <div className="relative w-full rounded-xl">
-                                        <GlowBeam color={theme.accents.a} />
+
                                         <RandomGradientGlow colorA={theme.accents.a} colorB={theme.accents.b} />
                                         <Card style={{
                                             background: theme.cardBg,
@@ -828,7 +828,7 @@ export default function BookConsultationForm() {
                         <div className="sticky top-24 space-y-8">
                             {/* Why Choose Us Card */}
                             <div className="relative w-full rounded-xl">
-                                <GlowBeam color={theme.accents.b} />
+
                                 <Card style={{
                                     background: theme.cardBg,
                                     border: `1px solid ${theme.text}22`,
@@ -862,7 +862,7 @@ export default function BookConsultationForm() {
 
                             {/* Projects Card */}
                             <div className="relative w-full rounded-xl">
-                                <GlowBeam color={theme.accents.b} />
+
                                 <Card style={{
                                     background: theme.cardBg,
                                     border: `1px solid ${theme.text}22`,
@@ -889,7 +889,7 @@ export default function BookConsultationForm() {
 
                             {/* Contact Card */}
                             <div className="relative w-full rounded-xl">
-                                <GlowBeam color={theme.accents.b} />
+
                                 <Card style={{
                                     background: theme.cardBg,
                                     border: `1px solid ${theme.text}22`,

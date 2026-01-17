@@ -7,9 +7,18 @@ export const data: SeoPageData = {
         slug: "seo-services",
         targetServiceSlug: "on-page-seo",
         categorySlug: "seo",
-        keywords: ["Search Engine Optimization", "Keyword Ranking", "Organic Traffic Growth"],
-        description: "Boost your search engine rankings and drive organic traffic with our data-driven SEO strategies.",
+        keywords: [
+            "Agence SEO France",
+            "SEO Google.fr",
+            "Référencement Naturel France",
+            "SEO pour Entreprises Françaises",
+            "Optimisation Mots-clés FR",
+            "Consultant SEO France"
+        ],
+        description:
+            "SEO spécialisé pour le marché français. Maximisez vos positions sur Google.fr grâce à nos stratégies data-driven et adaptées à la culture française.",
     },
+
     location: {
         name: "France",
         slug: "france",
@@ -20,53 +29,85 @@ export const data: SeoPageData = {
         metaTitleSuffix: "France | Agence Numérique",
         traits: ["luxury brands", "art & culture", "european market"],
     },
+
     meta: {
-        title: "Agence SEO France | Référencement Naturel Google.fr",
-        description: "Boost your visibility on Google France. We offer specialized French SEO services to help you rank for high-value keywords in L'Hexagone.",
+        title: "Agence SEO France | Experts en Référencement Google.fr",
+        description:
+            "Augmentez votre visibilité en France. Nous proposons des stratégies SEO avancées pour vous positionner sur les requêtes à forte intention sur Google.fr.",
         canonical: "/seo-services-france",
     },
+
     content: {
         hero: {
-            title: "Expertise SEO pour le Marché Français",
-            subtitle: "Dominate search results on Google.fr. We help French companies capture organic traffic and leads.",
+            title: "Stratégies SEO Avancées pour le Marché Français",
+            subtitle:
+                "Renforcez votre visibilité sur Google.fr. Nous accompagnons les entreprises françaises vers des résultats SEO mesurables et durables.",
         },
+
         overview: {
-            title: "Référencement Naturel Stratégique",
-            text: "Ranking in France requires mastering French search intent and semantic structure. ekanostudio offers dedicated SEO services for the French market. We optimize your content for Google.fr, build high-quality links from French domains, and ensure your technical foundation supports your growth across the country.",
+            title: "Un SEO Aligné avec les Exigences du Marché Français",
+            text:
+                "Le référencement en France repose sur une compréhension précise de la recherche sémantique, des habitudes linguistiques et du comportement digital hexagonal. Nous optimisons vos contenus en français natif, renforçons votre autorité avec des backlinks FR de qualité, et améliorons la performance technique de votre site pour offrir une expérience adaptée au public français et conforme aux standards européens.",
         },
+
         whyChoose: {
-            title: "Nos Atouts SEO",
+            title: "Pourquoi Choisir Notre Agence SEO en France ?",
             points: [
-                { title: "French Native SEO", desc: "Optimization for correct French grammar and idioms." },
-                { title: "Local Netlinking", desc: "Acquiring backlinks from trusted French media sites." },
-                { title: "Technical Excellence", desc: "Optimizing Core Web Vitals for European users." }
-            ]
+                {
+                    title: "SEO 100% Français",
+                    desc: "Rédaction, optimisation et balisage en parfait français, sans traduction approximative.",
+                },
+                {
+                    title: "Backlinks FR de Confiance",
+                    desc: "Partenariats avec sites français, médias locaux et annuaires professionnels.",
+                },
+                {
+                    title: "Performance Européenne",
+                    desc: "Optimisation technique adaptée aux normes UX, RGPD et Core Web Vitals en Europe.",
+                },
+            ],
         },
+
         deliverables: [
-            "Audit SEO Technique",
-            "Recherche de Mots-clés",
-            "Optimisation de Contenu (FR)",
-            "Netlinking & Relations Presse",
-            "Référencement Local (Maps)",
-            "Rapport Mensuel de Positionnement"
+            "Audit Technique SEO (FR)",
+            "Étude de Mots-clés pour Google.fr",
+            "Optimisation On-Page en Français",
+            "Stratégie de Netlinking Locale",
+            "SEO Local pour Google Maps",
+            "Rapports Mensuels de Performance",
         ],
+
         process: {
-            title: "Stratégie de Référencement",
+            title: "Notre Méthodologie SEO France",
             steps: [
-                { title: "Audit", desc: "Analyzing your current visibility in France." },
-                { title: "Optimisation", desc: "Improving site structure and content." },
-                { title: "Autorité", desc: "Building trust through quality backlinks." },
-                { title: "Suivi", desc: "Monitoring traffic and conversions." }
-            ]
+                {
+                    title: "Analyse",
+                    desc: "Évaluation de votre visibilité actuelle sur Google.fr et vos concurrents français.",
+                },
+                {
+                    title: "Optimisation",
+                    desc: "Révision du contenu, du maillage interne et de la structure technique.",
+                },
+                {
+                    title: "Autorité",
+                    desc: "Acquisition de backlinks qualitatifs provenant de domaines français.",
+                },
+                {
+                    title: "Suivi",
+                    desc: "Mesure continue du trafic, des mots-clés et des conversions.",
+                },
+            ],
         },
+
         cta: {
-            title: "Vous voulez plus de trafic ?",
-            text: "Analysez votre site gratuitement aujourd'hui."
+            title: "Prêt à gagner en visibilité ?",
+            text: "Recevez une analyse SEO gratuite de votre site dès aujourd’hui.",
         },
+
         relatedServices: [
             { title: "Marketing Digital", link: "/services/digital-marketing/digital-marketing" },
             { title: "Rédaction Web", link: "/services/content-creation/content-writing" },
-            { title: "Développement Web", link: "/services/web-design-development/website-development" }
-        ]
-    }
+            { title: "Développement Web", link: "/services/web-design-development/website-development" },
+        ],
+    },
 };

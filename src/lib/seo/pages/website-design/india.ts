@@ -10,6 +10,7 @@ export const data: SeoPageData = {
         keywords: ["UI/UX Design", "Responsive Web Design", "Custom Website Design"],
         description: "Create a stunning, high-performance website that captures your brand's essence and converts visitors into customers.",
     },
+
     location: {
         name: "India",
         slug: "india",
@@ -20,20 +21,27 @@ export const data: SeoPageData = {
         metaTitleSuffix: "India | #1 Digital Agency",
         traits: ["rapidly growing market", "diverse audience", "digital-first consumers"],
     },
+
     meta: {
         title: "Website Design Agency India | Premium UI/UX & Development",
-        description: "Transform your digital presence in India. We build high-performance, mobile-first websites for India's scaling startups and global brands.",
+        description:
+            "Transform your digital presence in India. We build high-performance, mobile-first websites for India's scaling startups and global brands.",
         canonical: "/website-design-india",
     },
+
     content: {
         hero: {
             title: "Digital Excellence for the Indian Market",
-            subtitle: "We design websites that drive growth, capture hearts, and lead the digital revolution in India.",
+            subtitle:
+                "We design websites that drive growth, capture hearts, and lead the digital revolution in India.",
         },
+
         overview: {
             title: "Web Design for the World's Fastest Growing Economy",
-            text: "India's digital landscape is vast and incredibly diverse. To succeed, you need a website that is as fast as it is beautiful. ekanostudio delivers premium web design services across India, focusing on mobile-first architecture, superior speed, and world-class aesthetics that resonate with the modern Indian consumer.",
+            text:
+                "India's digital landscape is vast and incredibly diverse. To succeed, you need a website that is as fast as it is beautiful. ekanostudio delivers premium web design services across India, focusing on mobile-first architecture, superior speed, and world-class aesthetics that resonate with the modern Indian consumer.",
         },
+
         whyChoose: {
             title: "Why India's Best Brands Choose Us",
             points: [
@@ -42,6 +50,7 @@ export const data: SeoPageData = {
                 { title: "Cost-Effective Excellence", desc: "High-end solutions with a focus on value and performance." }
             ]
         },
+
         deliverables: [
             "Bespoke UI/UX Design",
             "Next.js High-Performance Development",
@@ -50,6 +59,7 @@ export const data: SeoPageData = {
             "E-commerce Support (Shopify/Next.js)",
             "Lifetime Technical Support"
         ],
+
         process: {
             title: "Our Seamless Design Process",
             steps: [
@@ -59,10 +69,12 @@ export const data: SeoPageData = {
                 { title: "Scalability", desc: "Launching and preparing for nationwide growth." }
             ]
         },
+
         cta: {
             title: "Ready to go digital in India?",
             text: "Partner with India's leading web design experts today."
         },
+
         relatedServices: [
             { title: "SEO Services", link: "/services/seo/technical-seo" },
             { title: "App Development", link: "/services/app-development/mobile-app-development" },

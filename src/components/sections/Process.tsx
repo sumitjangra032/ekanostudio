@@ -1,41 +1,31 @@
-"use client";
-
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
 import { PROCESS_CONTENT } from "@/constants/process";
 import AnimatedLine from "../animated/AnimatedLine";
-import { useTheme } from "../providers/ThemeProvider";
-import { THEMES } from "../../constants/theme";
-import GlowBeam from "../effects/GlowBeam";
+import { THEMES, currentTheme } from "../../constants/theme";
+import SectionEntrance from "../animated/SectionEntrance";
 
 export default function ProcessSection() {
-  const { themeName } = useTheme();
-  const theme = THEMES[themeName];
-
-  const cardsRef = useRef<HTMLDivElement | null>(null);
-  const cardsInView = useInView(cardsRef, { once: true, margin: "-10% 0px" });
+  const theme = THEMES[currentTheme as keyof typeof THEMES];
 
   return (
     <section
       id="process"
       className="relative w-full py-28 px-6"
-      style={{ backgroundColor: theme.background }}
+      style={{ backgroundColor: "var(--theme-background)" }}
     >
       <div className="max-w-6xl mx-auto w-full">
-
         {/* Top Tag */}
         <div
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6"
           style={{
-            background: `${theme.accents.a}08`,
-            border: `1px solid ${theme.accents.a}20`,
+            background: "rgba(255, 60, 40, 0.03)",
+            border: "1px solid rgba(255, 60, 40, 0.15)",
             backdropFilter: "blur(4px)",
           }}
         >
-          <div className="pulse red" />
+          <div className="pulse red" aria-hidden="true" />
           <span
             className="text-xs font-medium tracking-wide"
-            style={{ color: theme.accents.a }}
+            style={{ color: "var(--theme-accent-a)" }}
           >
             {PROCESS_CONTENT.tag.label}
           </span>
@@ -44,7 +34,7 @@ export default function ProcessSection() {
         {/* Title */}
         <h2
           className="text-[32px] md:text-[42px] font-bold"
-          style={{ color: theme.text }}
+          style={{ color: "var(--theme-text)" }}
         >
           <AnimatedLine
             text={PROCESS_CONTENT.title}
@@ -64,18 +54,12 @@ export default function ProcessSection() {
             text={PROCESS_CONTENT.description}
             delay={0.1}
             isHeading={false}
-            textColor={theme.subtext}
+            textColor="var(--theme-subtext)"
           />
         </div>
 
         {/* PROCESS CARDS */}
-        <motion.div
-          ref={cardsRef}
-          initial={{ opacity: 0, y: 60 }}
-          animate={cardsInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-8"
-        >
+        <SectionEntrance className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {PROCESS_CONTENT.processSteps.map((item, idx) => (
             <div
               key={idx}
@@ -89,9 +73,6 @@ export default function ProcessSection() {
                 hover:-translate-y-1
               "
             >
-              {/* Accent Glow */}
-              <GlowBeam color={theme.accents.a} />
-
               {/* Left Accent Line */}
               <div
                 className="absolute left-0 top-0 h-full w-[2px]"
@@ -99,7 +80,7 @@ export default function ProcessSection() {
                   background: `linear-gradient(
                     to bottom,
                     transparent,
-                    ${theme.accents.a},
+                    var(--theme-accent-a),
                     transparent
                   )`,
                 }}
@@ -109,9 +90,9 @@ export default function ProcessSection() {
               <div
                 className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold mb-6"
                 style={{
-                  background: `${theme.accents.a}14`,
-                  color: theme.accents.a,
-                  border: `1px solid ${theme.accents.a}30`,
+                  background: "rgba(255, 60, 40, 0.08)",
+                  color: "var(--theme-accent-a)",
+                  border: "1px solid rgba(255, 60, 40, 0.2)",
                 }}
               >
                 <span className="opacity-70">Step</span>
@@ -122,7 +103,7 @@ export default function ProcessSection() {
               <h3
                 className="text-2xl font-semibold mb-5 tracking-tight"
                 style={{
-                  color: theme.text,
+                  color: "var(--theme-text)",
                   fontFamily: "var(--font-general-sans)",
                 }}
               >
@@ -139,14 +120,14 @@ export default function ProcessSection() {
                     {/* Dot */}
                     <span
                       className="mt-2 w-2 h-2 rounded-full flex-shrink-0"
-                      style={{ background: theme.accents.a }}
+                      style={{ background: "var(--theme-accent-a)" }}
                     />
 
                     {/* Text */}
                     <p
                       className="text-[15px] leading-relaxed font-light w-full max-w-none"
                       style={{
-                        color: theme.subtext,
+                        color: "var(--theme-subtext)",
                         fontFamily: "var(--font-inter)",
                       }}
                     >
@@ -167,15 +148,16 @@ export default function ProcessSection() {
                 style={{
                   background: `radial-gradient(
                     600px circle at top right,
-                    ${theme.accents.a}10,
+                    rgba(255, 60, 40, 0.07),
                     transparent 45%
                   )`,
                 }}
               />
             </div>
           ))}
-        </motion.div>
+        </SectionEntrance>
       </div>
     </section>
   );
 }
+

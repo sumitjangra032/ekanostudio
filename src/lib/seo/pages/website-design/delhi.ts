@@ -7,9 +7,17 @@ export const data: SeoPageData = {
         slug: "website-design",
         targetServiceSlug: "website-design-uiux",
         categorySlug: "web-design-development",
-        keywords: ["UI/UX Design", "Responsive Web Design", "Custom Website Design"],
-        description: "Create a stunning, high-performance website that captures your brand's essence and converts visitors into customers.",
+        keywords: [
+            "Website Design Delhi",
+            "Corporate Web Design Delhi",
+            "UI UX Design Delhi",
+            "Custom Website Design Delhi",
+            "Responsive Website Design Delhi"
+        ],
+        description:
+            "Build a premium, high-performance website that reflects your brand authority and converts your Delhi audience into customers.",
     },
+
     location: {
         name: "Delhi",
         slug: "delhi",
@@ -20,49 +28,81 @@ export const data: SeoPageData = {
         metaTitleSuffix: "Delhi | Premium Services",
         traits: ["corporate enterprises", "established brands", "growing businesses"],
     },
+
     meta: {
-        title: "Premium Website Design Agency in Delhi | Corporate & Brand Focused",
-        description: "Looking for elite website design in Delhi? We build sophisticated, high-converting websites for Delhi's leading corporates and established brands.",
+        title: "Best Website Design Company in Delhi | Corporate & Enterprise Web Design",
+        description:
+            "Premium website design agency in Delhi delivering high-conversion, secure, and brand-focused websites for corporates, enterprises, and fast-growing Delhi businesses.",
         canonical: "/website-design-delhi",
     },
+
     content: {
         hero: {
-            title: "Digital Excellence for Delhi's Leading Brands",
-            subtitle: "From Connaught Place to Cyber City, we design websites that command authority and drive serious business growth.",
+            title: "Website Design Excellence for Delhi's Leading Brands",
+            subtitle:
+                "From Connaught Place to South Delhi and Cyber Hub, we build authoritative, high-performing websites for India’s capital city.",
         },
+
         overview: {
-            title: "Corporate-Grade Web Design in the Capital",
-            text: "Delhi is the political and corporate powerhouse of India. Your digital presence needs to reflect that stature. At ekanostudio, we specialize in crafting premium, secure, and scalable websites for Delhi's diverse business landscape—whether you are a policy think-tank, a luxury retailer, or a manufacturing giant.",
+            title: "Enterprise-Level Web Design for Delhi Businesses",
+            text:
+                "Delhi is home to India’s top corporate houses, government units, global MNCs, and luxury brands. Your website must reflect credibility, precision, and trust. ekanostudio provides advanced website design solutions tailored to the capital’s competitive environment—combining strong UI/UX, fast performance, and airtight security.",
         },
+
         whyChoose: {
-            title: "Why Delhi's Top Firms Choose Us",
+            title: "Why Delhi Businesses Trust Our Web Design",
             points: [
-                { title: "Enterprise Reliability", desc: "Secure, scalable hosting and architecture fitting for large organizations." },
-                { title: "Brand Authority", desc: "Designs that communicate trust, prestige, and market leadership." },
-                { title: "Bilingual Experience", desc: "Capabilities to create multi-lingual sites for diverse audiences." }
-            ]
+                {
+                    title: "Enterprise-Ready Architecture",
+                    desc: "Secure, scalable, and future-proof systems ideal for corporates and large brands.",
+                },
+                {
+                    title: "Authority-Led Design",
+                    desc: "Modern layouts that communicate trust, reliability, and premium brand value.",
+                },
+                {
+                    title: "Multi-Lingual & Multi-Region Ready",
+                    desc: "Support for Hindi, English, and regional languages for diverse Delhi audiences.",
+                }
+            ],
         },
+
         deliverables: [
-            "Custom Next.js Architecture",
-            "Enterprise Security Setup",
-            "CMS Integration (Sanity/Strapi)",
-            "Detailed Brand Guidelines",
-            "Load Testing Report",
-            "Accessibility Compliance (WCAG)"
+            "Custom Next.js Website",
+            "Enterprise-Grade Security Setup",
+            "CMS Integration (Sanity / Strapi / WordPress)",
+            "Brand Guidelines & UI Kits",
+            "Load & Performance Testing Reports",
+            "Accessibility Compliance (WCAG 2.1)"
         ],
+
         process: {
-            title: "Our Enterprise Design Process",
+            title: "Our Web Design Process for Delhi Enterprises",
             steps: [
-                { title: "Consultation", desc: "In-depth workshops to align with your corporate objectives." },
-                { title: "Strategy", desc: "Developing a user journey that speaks to high-value stakeholders." },
-                { title: "Development", desc: "Building robust systems with a focus on security and speed." },
-                { title: "Deployment", desc: "Seamless launch with zero downtime protocols." }
-            ]
+                {
+                    title: "Consultation",
+                    desc: "Workshops to define business goals, audiences, and brand direction.",
+                },
+                {
+                    title: "Strategy",
+                    desc: "Crafting high-conversion user journeys and corporate-aligned design systems.",
+                },
+                {
+                    title: "Development",
+                    desc: "Building high-performance, secure websites using modern frameworks.",
+                },
+                {
+                    title: "Deployment",
+                    desc: "Launching with zero downtime, performance optimization, and SEO readiness.",
+                }
+            ],
         },
+
         cta: {
-            title: "Ready to upgrade your digital footprint?",
-            text: "Partner with Delhi's most trusted digital design agency."
+            title: "Ready to Elevate Your Brand Online?",
+            text: "Work with the top web design agency trusted by Delhi’s corporates and premium brands.",
         },
+
         relatedServices: [
             { title: "Digital Marketing", link: "/services/digital-marketing/digital-marketing" },
             { title: "Consulting", link: "/services/consulting/digital-strategy-consulting" },

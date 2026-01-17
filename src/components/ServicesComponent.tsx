@@ -9,7 +9,7 @@ import { THEMES } from "@/constants/theme";
 import Link from "next/link";
 import AnimatedLine from "./animated/AnimatedLine";
 import { FiSearch } from "react-icons/fi";
-import GlowBeam from "@/components/effects/GlowBeam";
+
 
 export default function ServicesComponent() {
   const { themeName } = useTheme();
@@ -171,7 +171,7 @@ export default function ServicesComponent() {
                 hover:-translate-y-1
               "
             >
-              <GlowBeam color={theme.accents.a} />
+
 
               <div
                 className="absolute left-0 top-0 h-full w-[2px]"

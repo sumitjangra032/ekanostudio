@@ -7,62 +7,104 @@ export const data: SeoPageData = {
         slug: "seo-services",
         targetServiceSlug: "on-page-seo",
         categorySlug: "seo",
-        keywords: ["Search Engine Optimization", "Keyword Ranking", "Organic Traffic Growth"],
-        description: "Boost your search engine rankings and drive organic traffic with our data-driven SEO strategies.",
+        keywords: [
+            "SEO Services USA",
+            "National SEO United States",
+            "Local SEO USA",
+            "American SEO Agency",
+            "Google SEO USA",
+            "SEO for US Businesses",
+            "US Search Engine Optimization"
+        ],
+        description:
+            "Strategic SEO services for the US market, focused on national ranking, local visibility, and long-term organic authority.",
     },
+
     location: {
         name: "USA",
         slug: "usa",
         type: "country",
         country: "USA",
         adjective: "American",
-        context: "in the US market",
-        metaTitleSuffix: "USA | Global Agency",
+        context: "across the United States",
+        metaTitleSuffix: "USA | Global SEO Specialists",
         traits: ["competitive market", "innovation leaders", "high-value customers"],
     },
+
     meta: {
-        title: "USA SEO Services | Rank National & Local in United States",
-        description: "Scale your US traffic. We specialize in ranking businesses across states, from California to New York, using white-hat, data-driven SEO.",
+        title: "SEO Services USA | Rank Nationwide on Google.com",
+        description:
+            "Dominate Google.com with US-focused SEO. We help businesses rank nationally and locally across all 50 states using advanced, white-hat SEO strategies.",
         canonical: "/seo-services-usa",
     },
+
     content: {
         hero: {
-            title: "National SEO for the United States Market",
-            subtitle: "Break through the saturation. We help US businesses dominate Google search results from coast to coast.",
+            title: "SEO Services Built for the United States",
+            subtitle:
+                "From Silicon Valley startups to East Coast enterprises — we help American businesses achieve national and state-level dominance.",
         },
+
         overview: {
-            title: "Ranking in the World's Toughest Market",
-            text: "Ranking in the USA requires impeccable technical execution and authority building. There is no room for error. ekanostudio uses advanced semantic SEO and entity mapping to align your content with US search intent. We help you capture high-value queries whether you are targeting a specific state or the entire nation.",
+            title: "Winning SEO for the American Search Landscape",
+            text:
+                "Ranking in the United States is uniquely challenging. Competitors are stronger, search intent is broader, and Google’s US algorithms demand high technical accuracy. ekanostudio builds US-centric SEO strategies powered by semantic optimization, entity-based targeting, and large-scale content architecture — giving your brand the authority needed to rank across all 50 states.",
         },
+
         whyChoose: {
-            title: "Our US SEO Expertise",
+            title: "Why US Companies Choose Us",
             points: [
-                { title: "Entity-Based Strategy", desc: "Leveraging Google's Knowledge Graph for deeper relevance." },
-                { title: "National & Local", desc: "Campaigns structured for state-level or country-wide dominance." },
-                { title: "White Label Ready", desc: "We also support other US agencies with backend SEO execution." }
-            ]
+                {
+                    title: "Semantic & Entity SEO",
+                    desc: "We align your site with Google's US Knowledge Graph for maximum topical relevance.",
+                },
+                {
+                    title: "National + Local Coverage",
+                    desc: "Structured SEO to rank in major states like California, Texas, Florida, and New York.",
+                },
+                {
+                    title: "Scalable US Operations",
+                    desc: "From enterprise sites to agencies — our systems support large-volume SEO execution.",
+                }
+            ],
         },
+
         deliverables: [
-            "Technical SEO Roadmap",
-            "National Keyword Strategy",
-            "Schema Markup Implementation",
-            "Core Web Vitals Optimization",
-            "Link Building (US Sites)",
-            "Looker Studio Reporting"
+            "Technical SEO & Crawl Architecture",
+            "National Keyword Strategy (50-State Coverage)",
+            "Local SEO for Multi-Location Businesses",
+            "Schema & Entity Markup Implementation",
+            "US-Based Authority Link Building",
+            "Looker Studio Reports & KPI Dashboards"
         ],
+
         process: {
-            title: "Winning in the USA",
+            title: "Our US SEO Execution Framework",
             steps: [
-                { title: "Audit", desc: "Comprehensive analysis of US competitors like Yelp/Angi/Giants." },
-                { title: "Fix", desc: "Resolving crawl budget and indexation issues." },
-                { title: "Optimize", desc: "Updating pages to meet E-E-A-T guidelines." },
-                { title: "Amplify", desc: "Driving authority through relevant industry mentions." }
+                {
+                    title: "Audit",
+                    desc: "Analyzing US competitors, SERP volatility, and site performance on Google.com.",
+                },
+                {
+                    title: "Fix",
+                    desc: "Solving crawl budget issues, Core Web Vitals, and structural indexing gaps.",
+                },
+                {
+                    title: "Optimize",
+                    desc: "Enhancing content, metadata, and E-E-A-T signals for US search behavior.",
+                },
+                {
+                    title: "Scale",
+                    desc: "Building strong US links, digital PR, and expanding rankings nationwide.",
+                }
             ]
         },
+
         cta: {
-            title: "Ready to expand nationwide?",
-            text: "Start your US growth campaign with ekanostudio."
+            title: "Ready to scale across the USA?",
+            text: "Get your free SEO growth plan for national and local ranking in the United States.",
         },
+
         relatedServices: [
             { title: "Content Marketing", link: "/services/content-creation/content-writing" },
             { title: "PPC Management", link: "/services/performance-marketing/google-ads" },

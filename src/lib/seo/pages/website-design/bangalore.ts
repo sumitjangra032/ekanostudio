@@ -7,9 +7,18 @@ export const data: SeoPageData = {
         slug: "website-design",
         targetServiceSlug: "website-design-uiux",
         categorySlug: "web-design-development",
-        keywords: ["UI/UX Design", "Responsive Web Design", "Custom Website Design"],
-        description: "Create a stunning, high-performance website that captures your brand's essence and converts visitors into customers.",
+        keywords: [
+            "Website Design Bangalore",
+            "UI UX Design Company Bangalore",
+            "Startup Website Design",
+            "Next.js Website Development",
+            "Responsive Web Design Bangalore",
+            "High Performance Websites India"
+        ],
+        description:
+            "High-performance website design services in Bangalore for startups, SaaS companies, and enterprises. We design fast, scalable, conversion-focused websites.",
     },
+
     location: {
         name: "Bangalore",
         slug: "bangalore",
@@ -17,56 +26,88 @@ export const data: SeoPageData = {
         country: "India",
         adjective: "Bangalore-based",
         context: "in the Silicon Valley of India",
-        metaTitleSuffix: "Bangalore | Top Rated Agency",
+        metaTitleSuffix: "Bangalore | Startup-Focused Web Design",
         traits: ["tech startups", "innovative businesses", "IT hubs"],
     },
+
     meta: {
-        title: "Best Website Design Company in Bangalore | ekanostudio",
-        description: "Looking for premium website design in Bangalore? We craft stunning, high-performance websites tailored for Bangalore's tech-savvy startups and enterprises.",
+        title: "Website Design Company in Bangalore | UI/UX & Performance",
+        description:
+            "Top website design company in Bangalore. We build fast, scalable, and conversion-optimized websites for startups, SaaS, and tech-driven businesses.",
         canonical: "/website-design-bangalore",
     },
+
     content: {
         hero: {
-            title: "World-Class Web Design for Bangalore's Innovators",
-            subtitle: "From Koramangala startups to Whitefield MNCs, we build digital experiences that define brands in India's Silicone Valley.",
+            title: "High-Performance Web Design for Bangalore’s Tech Leaders",
+            subtitle:
+                "From early-stage startups to global tech companies, we design websites that scale with Bangalore’s fast-moving digital ecosystem.",
         },
+
         overview: {
-            title: "Elevate Your Brand in Bangalore's Tech Ecosystem",
-            text: "In a city buzzing with innovation, your website needs to do more than just exist—it needs to perform. As a premier Bangalore web design agency, ekanostudio combines cutting-edge aesthetics with robust technology to deliver sites that stand out in the competitive landscape of Karnataka's capital.",
+            title: "Websites Built for Bangalore’s Startup & Tech Economy",
+            text:
+                "Bangalore is one of the most competitive digital markets in India. A slow or outdated website can cost you users, investors, and credibility. ekanostudio designs modern, performance-driven websites that align with how Bangalore’s tech-savvy audience thinks, clicks, and converts — whether you’re a SaaS startup, product company, or enterprise brand.",
         },
+
         whyChoose: {
-            title: "Why Bangalore Businesses Trust Us",
+            title: "Why Bangalore Companies Choose ekanostudio",
             points: [
-                { title: "Startup-Ready Speed", desc: "We deploy MVPs and full-scale sites at the speed of Bangalore's startup ecosystem." },
-                { title: "Tech-Forward Design", desc: "Our designs reflect the modern, innovative spirit of the city." },
-                { title: "Local Support", desc: "We are available for in-person consultations across Bangalore." }
-            ]
+                {
+                    title: "Startup & SaaS Expertise",
+                    desc: "We understand product-led growth, onboarding flows, and conversion funnels.",
+                },
+                {
+                    title: "Performance-First Development",
+                    desc: "Websites optimized for speed, Core Web Vitals, and scalability from day one.",
+                },
+                {
+                    title: "Tech-Native Design Thinking",
+                    desc: "UI/UX built for developers, founders, and decision-makers alike.",
+                }
+            ],
         },
+
         deliverables: [
-            "Next.js Source Code",
-            "Figma UI/UX Files",
-            "Speed Optimization Report (>95)",
-            "Mobile Responsive Testing",
-            "Vercel Deployment Setup",
-            "Google Analytics 4 Integration"
+            "Custom UI/UX Design (Figma)",
+            "Next.js / React Website Development",
+            "Mobile-First & Responsive Design",
+            "Speed Optimization (90+ Lighthouse)",
+            "SEO-Ready Architecture",
+            "Analytics & Conversion Tracking Setup"
         ],
+
         process: {
-            title: "Our Bangalore Web Design Process",
+            title: "Our Website Design Process in Bangalore",
             steps: [
-                { title: "Discovery", desc: "Coffee meeting or call to understand your brand's vision." },
-                { title: "Wireframing", desc: "Blueprinting your site's structure for maximum conversion." },
-                { title: "Development", desc: "Coding pixel-perfect interfaces using modern tech stacks." },
-                { title: "Launch", desc: "Going live with full SEO and performance checks." }
+                {
+                    title: "Product & Market Discovery",
+                    desc: "Understanding your users, competitors, and growth goals.",
+                },
+                {
+                    title: "UX Architecture",
+                    desc: "Designing user journeys and wireframes focused on conversions.",
+                },
+                {
+                    title: "Development",
+                    desc: "Building fast, secure, and scalable interfaces using modern frameworks.",
+                },
+                {
+                    title: "Launch & Optimize",
+                    desc: "SEO checks, performance audits, and continuous improvements.",
+                }
             ]
         },
+
         cta: {
-            title: "Ready to dominate the Bangalore market?",
-            text: "Let's build a website that puts you ahead of the competition."
+            title: "Ready to build a scalable website?",
+            text: "Let’s design a website that matches Bangalore’s pace of innovation.",
         },
+
         relatedServices: [
             { title: "SEO Services", link: "/services/seo/on-page-seo" },
             { title: "App Development", link: "/services/app-development/mobile-app-development" },
-            { title: "Social Media", link: "/services/social-media-marketing/social-media-management" }
+            { title: "Digital Marketing", link: "/services/digital-marketing/digital-marketing" }
         ]
     }
 };

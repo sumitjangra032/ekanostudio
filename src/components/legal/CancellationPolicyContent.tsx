@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import AnimatedLine from "../animated/AnimatedLine";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import GlowBeam from "../effects/GlowBeam";
+
 
 export default function CancellationPolicyContent() {
     const { themeName } = useTheme();

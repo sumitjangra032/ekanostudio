@@ -1,43 +1,34 @@
-"use client";
-
 import { Check, X } from "lucide-react";
 import { COMPARISON_CONTENT } from "@/constants/comparison";
 import AnimatedLine from "../animated/AnimatedLine";
-import { motion } from "framer-motion";
 import { ScrollArea } from "@/components/ui/scroll-area";
-
-import { useTheme } from "../providers/ThemeProvider";
-import { THEMES } from "../../constants/theme";
-import GlowBeam from "../effects/GlowBeam";
+import { THEMES, currentTheme } from "../../constants/theme";
 import RandomGradientGlow from "../effects/RandomGradientGlow";
+import SectionEntrance from "../animated/SectionEntrance";
 
 export default function Comparison() {
-  const { themeName } = useTheme();
-  const theme = THEMES[themeName];
-
   const { tag, title, description, features } = COMPARISON_CONTENT;
 
   return (
     <section
       id="comparison"
       className="relative w-full py-32 px-6"
-      style={{ backgroundColor: theme.background }}
+      style={{ backgroundColor: "var(--theme-background)" }}
     >
       <div className="max-w-6xl mx-auto text-center">
-
         {/* Tag with existing pulse class */}
         <div
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6"
           style={{
-            background: `${theme.accents.a}08`,
-            border: `1px solid ${theme.accents.a}20`,
+            background: "rgba(255, 60, 40, 0.03)",
+            border: "1px solid rgba(255, 60, 40, 0.15)",
             backdropFilter: "blur(4px)",
           }}
         >
-          <div className="pulse red" />
+          <div className="pulse red" aria-hidden="true" />
           <span
             className="text-xs font-medium tracking-wide"
-            style={{ color: theme.accents.a }}
+            style={{ color: "var(--theme-accent-a)" }}
           >
             {tag.label}
           </span>
@@ -46,7 +37,7 @@ export default function Comparison() {
         {/* Title */}
         <h2
           className="text-[32px] md:text-[42px] font-bold"
-          style={{ color: theme.text }}
+          style={{ color: "var(--theme-text)" }}
         >
           <AnimatedLine text={title} delay={0.1} isHeading gradient={{
             from: "#fac175",
@@ -58,17 +49,13 @@ export default function Comparison() {
         {/* Description */}
         <div
           className="max-w-3xl mx-auto mt-4 leading-relaxed"
-          style={{ color: theme.subtext }}
+          style={{ color: "var(--theme-subtext)" }}
         >
-          <AnimatedLine text={description} delay={0.1} textColor={theme.subtext} />
+          <AnimatedLine text={description} delay={0.1} textColor="var(--theme-subtext)" />
         </div>
 
         {/* Comparison Table */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true, amount: 0.3 }}
+        <SectionEntrance
           className="
             relative mt-20 rounded-3xl overflow-hidden
             bg-black/40
@@ -76,10 +63,9 @@ export default function Comparison() {
             backdrop-blur-xl
           "
         >
-          <GlowBeam color={theme.accents.a} />
           <RandomGradientGlow
-            colorA={theme.accents.a}
-            colorB={theme.accents.b}
+            colorA="var(--theme-accent-a)"
+            colorB="var(--theme-accent-b)"
             variant="right"
             opacity={0.35}
           />
@@ -91,7 +77,7 @@ export default function Comparison() {
             <div
               className="mx-3 py-2 rounded-xl"
               style={{
-                background: "#22c55e22",
+                background: "rgba(34, 197, 94, 0.13)",
                 color: "#22c55e",
               }}
             >
@@ -101,7 +87,6 @@ export default function Comparison() {
             <div
               className="mx-3 py-2"
               style={{
-                // background: "#ef444422",
                 color: "#ef4444",
               }}
             >
@@ -124,7 +109,7 @@ export default function Comparison() {
                     {/* Feature */}
                     <div
                       className="text-left text-sm"
-                      style={{ color: theme.text }}
+                      style={{ color: "var(--theme-text)" }}
                     >
                       {feature}
                     </div>
@@ -147,8 +132,9 @@ export default function Comparison() {
               })}
             </div>
           </ScrollArea>
-        </motion.div>
+        </SectionEntrance>
       </div>
     </section>
   );
 }
+

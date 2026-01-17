@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
 import Image from "next/image";
-import GlowBeam from "../effects/GlowBeam";
+
 import { Star } from "lucide-react";
 import RandomGradientGlow from "../effects/RandomGradientGlow";
 
@@ -85,7 +85,7 @@ function ReviewCard({ text, name, role, img, stars }: any) {
       }}
     >
       {/* ... (rest of ReviewCard content) ... */}
-      <GlowBeam color={theme.accents.a} />
+
       <RandomGradientGlow colorA={theme.accents.a} colorB={theme.accents.b} />
 
       {stars && (

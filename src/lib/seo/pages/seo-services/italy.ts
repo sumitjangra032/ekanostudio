@@ -7,66 +7,107 @@ export const data: SeoPageData = {
         slug: "seo-services",
         targetServiceSlug: "on-page-seo",
         categorySlug: "seo",
-        keywords: ["Search Engine Optimization", "Keyword Ranking", "Organic Traffic Growth"],
-        description: "Boost your search engine rankings and drive organic traffic with our data-driven SEO strategies.",
+        keywords: [
+            "SEO Italia",
+            "Agenzia SEO Italia",
+            "Servizi SEO Google.it",
+            "SEO Nazionale Italia",
+            "Posizionamento Organico Italia",
+            "Crescita Organica SEO"
+        ],
+        description:
+            "Servizi SEO avanzati per il mercato italiano. Miglioriamo il posizionamento su Google.it, aumentiamo l’autorità del brand e generiamo traffico organico qualificato.",
     },
+
     location: {
         name: "Italy",
         slug: "italy",
         type: "country",
         country: "Italy",
         adjective: "Italian",
-        context: "in Italy",
-        metaTitleSuffix: "Italy | Servizi Digitali",
+        context: "in Italia",
+        metaTitleSuffix: "Italia | Servizi Digitali",
         traits: ["design excellence", "fashion & industry", "creative market"],
     },
+
     meta: {
-        title: "Agenzia SEO Italia | Posizionamento su Google.it",
-        description: "Migliora la visibilità del tuo business in Italia. Strategie SEO data-driven per scalare le classifiche di Google.it e attirare traffico qualificato.",
+        title: "Agenzia SEO Italia | Posizionamento Google.it & Crescita Organica",
+        description:
+            "Scala le SERP italiane con strategie SEO data-driven. Aiutiamo le aziende in Italia a posizionarsi su Google.it e a generare traffico organico ad alto valore.",
         canonical: "/seo-services-italy",
     },
+
     content: {
         hero: {
-            title: "Domina le Ricerche in Italia",
-            subtitle: "Portiamo il tuo sito in prima pagina su Google.it per connetterti con migliaia di potenziali clienti italiani.",
+            title: "SEO Strategico per il Mercato Italiano",
+            subtitle:
+                "Visibilità, autorevolezza e crescita organica. Portiamo il tuo brand in prima pagina su Google.it.",
         },
+
         overview: {
-            title: "Strategie SEO per il Successo in Italia",
-            text: "In un mercato competitivo come quello italiano, essere visibili online è fondamentale. ekanostudio offre servizi SEO completi, dall'analisi tecnica alla creazione di contenuti ottimizzati, per garantire che la tua azienda sia la prima scelta degli utenti in Italia.",
+            title: "SEO Costruito per Competere in Italia",
+            text:
+                "Il mercato digitale italiano è competitivo e fortemente orientato alla qualità. Per ottenere risultati duraturi non basta ottimizzare qualche parola chiave. ekanostudio sviluppa strategie SEO complete per l’Italia, combinando analisi tecnica, search intent, contenuti autorevoli e link building etico per aiutare le aziende a dominare le ricerche nazionali e locali.",
         },
+
         whyChoose: {
-            title: "Perché Partner SEO ekanostudio",
+            title: "Perché Scegliere ekanostudio per la SEO in Italia",
             points: [
-                { title: "Local SEO Focus", desc: "Ottimizziamo la tua presenza per le ricerche locali in tutta Italia." },
-                { title: "Link Building Etica", desc: "Otteniamo backlink da domini .it autorevoli e pertinenti." },
-                { title: "Analisi di Mercato", desc: "Studiamo i competitor italiani per superare i loro risultati." }
-            ]
+                {
+                    title: "SEO Nazionale e Locale",
+                    desc: "Strategie mirate per keyword nazionali e ricerche locali in tutte le regioni italiane.",
+                },
+                {
+                    title: "Ottimizzazione Tecnica Avanzata",
+                    desc: "Miglioriamo velocità, struttura e indicizzazione per siti di ogni dimensione.",
+                },
+                {
+                    title: "Crescita di Autorità a Lungo Termine",
+                    desc: "Link building white-hat e contenuti che rafforzano la reputazione del brand.",
+                },
+            ],
         },
+
         deliverables: [
-            "Audit SEO Tecnico",
-            "Ricerca Parole Chiave strategiche",
-            "SEO On-Page e Ottimizzazione Contenuti",
-            "Strategia di Link Building",
-            "Ottimizzazione Google Business Profile",
-            "Reporting Mensile dettagliato"
+            "Audit SEO Tecnico Completo",
+            "Ricerca Keyword e Search Intent (Italia)",
+            "Ottimizzazione On-Page e Contenuti",
+            "Link Building da Domini Autorevoli .it",
+            "SEO Locale e Google Business Profile",
+            "Dashboard di Monitoraggio e Report Mensili",
         ],
+
         process: {
-            title: "Il Nostro Percorso SEO",
+            title: "Il Nostro Metodo SEO per l’Italia",
             steps: [
-                { title: "Analisi", desc: "Esaminiamo il tuo sito e il panorama competitivo italiano." },
-                { title: "Ottimizzazione", desc: "Interveniamo sulla struttura e sui testi per piacere a Google." },
-                { title: "Crescita", desc: "Aumentiamo l'autorità del tuo dominio con link di valore." },
-                { title: "Risultati", desc: "Monitoriamo costantemente il traffico e le conversioni." }
-            ]
+                {
+                    title: "Analisi",
+                    desc: "Valutazione approfondita del sito, dei competitor e del mercato italiano.",
+                },
+                {
+                    title: "Ottimizzazione",
+                    desc: "Interventi tecnici e contenutistici per migliorare ranking e UX.",
+                },
+                {
+                    title: "Autorità",
+                    desc: "Costruzione di segnali di fiducia tramite link e citazioni di qualità.",
+                },
+                {
+                    title: "Scalabilità",
+                    desc: "Espansione continua delle keyword e crescita costante del traffico.",
+                },
+            ],
         },
+
         cta: {
-            title: "Vuoi scalare i risultati di ricerca?",
-            text: "Richiedi un'analisi SEO gratuita del tuo sito web."
+            title: "Vuoi crescere organicamente in Italia?",
+            text: "Richiedi una consulenza SEO gratuita e scopri il tuo potenziale.",
         },
+
         relatedServices: [
             { title: "Marketing Digitale", link: "/services/digital-marketing/digital-marketing" },
             { title: "Content Creation", link: "/services/content-creation/content-writing" },
-            { title: "Web Design", link: "/services/web-design-development/website-design-uiux" }
-        ]
-    }
+            { title: "Web Design", link: "/services/web-design-development/website-design-uiux" },
+        ],
+    },
 };

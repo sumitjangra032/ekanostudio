@@ -7,66 +7,107 @@ export const data: SeoPageData = {
         slug: "seo-services",
         targetServiceSlug: "on-page-seo",
         categorySlug: "seo",
-        keywords: ["Search Engine Optimization", "Keyword Ranking", "Organic Traffic Growth"],
-        description: "Boost your search engine rankings and drive organic traffic with our data-driven SEO strategies.",
+        keywords: [
+            "SEO Luxembourg",
+            "SEO Agency Luxembourg",
+            "Search Engine Optimization Luxembourg",
+            "Corporate SEO Europe",
+            "Financial SEO",
+            "Multilingual SEO Luxembourg"
+        ],
+        description:
+            "Advanced SEO services for Luxembourg. We help enterprises rank higher, build authority, and capture organic traffic across multilingual search environments.",
     },
+
     location: {
         name: "Luxembourg",
         slug: "luxembourg",
         type: "country",
         country: "Luxembourg",
         adjective: "Luxembourg",
-        context: "in Luxembourg",
+        context: "in the Grand Duchy of Luxembourg",
         metaTitleSuffix: "Luxembourg | Premium Agency",
         traits: ["financial sector", "high-end business", "european hub"],
     },
+
     meta: {
-        title: "SEO Agency Luxembourg | Rank in the Grand Duchy",
-        description: "Scale your visibility in Luxembourg's competitive market. We provide data-driven SEO strategies to rank your business for high-value financial and corporate keywords.",
+        title: "SEO Agency Luxembourg | Multilingual SEO & Corporate Ranking",
+        description:
+            "Grow your visibility in Luxembourg’s high-competition market. We specialize in multilingual, corporate, and finance-sector SEO tailored for the Grand Duchy.",
         canonical: "/seo-services-luxembourg",
     },
+
     content: {
         hero: {
-            title: "Search Dominance for Luxembourg Enterprises",
-            subtitle: "Be the first choice for global decision-makers. Strategic SEO tailored for the Luxembourg market.",
+            title: "Precision SEO for Luxembourg’s Corporate Ecosystem",
+            subtitle:
+                "Rank higher, attract decision-makers, and build authority across Europe with multilingual, enterprise-grade SEO.",
         },
+
         overview: {
-            title: "Precision SEO for the Global Hub",
-            text: "Luxembourg's search landscape is unique and highly multilingual. To win, you need to rank across multiple languages and high-competition sectors. ekanostudio delivers targeted SEO campaigns that leverage deep technical expertise and multi-lingual link-building to secure top positions in the Grand Duchy.",
+            title: "Strategic SEO Built for the Grand Duchy",
+            text:
+                "With its trilingual landscape and global corporate presence, Luxembourg requires SEO strategies that go far beyond traditional optimization. ekanostudio delivers multilingual, technical and authority-driven SEO solutions designed specifically for Luxembourg’s financial, legal, and international business sectors. We help you become discoverable in French, German, and English while ensuring maximum technical compliance for European markets.",
         },
+
         whyChoose: {
-            title: "Our Luxembourg SEO Advantage",
+            title: "Why Leading Luxembourg Companies Choose Us",
             points: [
-                { title: "Multi-Lingual SEO", desc: "Ranking your business in French, German, and English." },
-                { title: "Niche Authority", desc: "Expertise in Finance, Law, and Technology sectors." },
-                { title: "Global Reach", desc: "Optimizing for both local Luxembourg and international search intent." }
-            ]
+                {
+                    title: "Multilingual SEO Framework",
+                    desc: "Optimized ranking strategies for FR / DE / EN, tailored to Luxembourg’s diverse audience.",
+                },
+                {
+                    title: "Corporate & Finance Expertise",
+                    desc: "Deep experience with high-value SEO in finance, law, and technology sectors.",
+                },
+                {
+                    title: "Local + Global Visibility",
+                    desc: "Positioning your brand for both Luxembourgish searches and international intent.",
+                },
+            ],
         },
+
         deliverables: [
-            "Technical Domain Audit",
-            "Multi-Lingual Keyword Strategy",
-            "Entity-Based Content Optimization",
-            "High-Authority Backlink Acquisition",
-            "Bespoke Analytics Dashboards",
-            "Quarterly Strategic Reviews"
+            "Full Technical SEO Audit",
+            "Multilingual Keyword Research (FR/DE/EN)",
+            "Entity & Semantic SEO Optimization",
+            "High-Authority EU Backlink Acquisition",
+            "Enterprise Analytics Dashboard",
+            "Quarterly Strategic SEO Reports",
         ],
+
         process: {
-            title: "Winning in search",
+            title: "Our SEO Methodology for Luxembourg",
             steps: [
-                { title: "Analysis", desc: "Evaluating your current footprint in the Luxembourg SERPs." },
-                { title: "Localization", desc: "Adapting technical elements for regional search nuances." },
-                { title: "Authority", desc: "Building trust through relevant, high-quality links." },
-                { title: "Growth", desc: "Scaling visibility for your most profitable keywords." }
-            ]
+                {
+                    title: "Audit",
+                    desc: "Analyzing your visibility across multilingual SERPs in Luxembourg.",
+                },
+                {
+                    title: "Localization",
+                    desc: "Optimizing site architecture, hreflang, and content for regional nuances.",
+                },
+                {
+                    title: "Authority",
+                    desc: "Building trust with industry-relevant, high-quality EU backlinks.",
+                },
+                {
+                    title: "Scale",
+                    desc: "Expanding rankings across new languages, keywords, and markets.",
+                },
+            ],
         },
+
         cta: {
-            title: "Want to outrank the competition?",
-            text: "Discuss your SEO growth roadmap with our specialists."
+            title: "Ready to lead Luxembourg’s search results?",
+            text: "Request a multilingual SEO strategy session with our specialists.",
         },
+
         relatedServices: [
             { title: "Digital Marketing", link: "/services/digital-marketing/digital-marketing" },
             { title: "Content Creation", link: "/services/content-creation/content-writing" },
-            { title: "Web development", link: "/services/web-design-development/website-development" }
-        ]
-    }
+            { title: "Web Development", link: "/services/web-design-development/website-development" }
+        ],
+    },
 };

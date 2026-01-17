@@ -1,38 +1,29 @@
-"use client";
-
-import { motion } from "framer-motion";
-import Image from "next/image";
 import { CTA_CONTENT } from "@/constants/cta";
 import AnimatedLine from "../animated/AnimatedLine";
-import { ArrowUpRight } from "lucide-react";
 import { BRAND, GLOBAL_CTA_CONTENT } from "@/constants/global";
-
-import { useTheme } from "../providers/ThemeProvider";
-import { THEMES } from "../../constants/theme";
+import { THEMES, currentTheme } from "../../constants/theme";
 import AnimatedRotateButton from "../animated/AnimatedRotateButton";
 import Link from "next/link";
 
 export default function CTA() {
-  const { themeName } = useTheme();
-  const theme = THEMES[themeName];
+  const theme = THEMES[currentTheme as keyof typeof THEMES];
 
   return (
     <section
       className="w-full py-32 px-6 text-center"
       style={{
-        // backgroundImage: theme.gradient2,
-        backgroundColor: theme.background,
+        backgroundColor: "var(--theme-background)",
       }}
     >
       <div className="relative max-w-3xl mx-auto">
-        <Link href="/" className="flex items-center justify-center font-bold text-3xl mb-6" style={{ color: theme.text }}>
+        <Link href="/" className="flex items-center justify-center font-bold text-3xl mb-6" style={{ color: "var(--theme-text)" }}>
           {BRAND.name}
         </Link>
 
         {/* HEADLINE */}
         <div
           className="text-4xl font-light leading-tight space-y-1"
-          style={{ color: theme.text }}
+          style={{ color: "var(--theme-text)" }}
         >
           <AnimatedLine text={CTA_CONTENT.title} delay={0.1} gradient={{
             from: "#fac175",
@@ -44,9 +35,9 @@ export default function CTA() {
         {/* DESCRIPTION */}
         <div
           className="mt-6 text-lg font-medium leading-relaxed max-w-2xl mx-auto mb-6"
-          style={{ color: theme.subtext }}
+          style={{ color: "var(--theme-subtext)" }}
         >
-          <AnimatedLine text={CTA_CONTENT.description} delay={0.4} textColor={theme.subtext} />
+          <AnimatedLine text={CTA_CONTENT.description} delay={0.4} textColor="var(--theme-subtext)" />
         </div>
 
         <AnimatedRotateButton
@@ -59,3 +50,4 @@ export default function CTA() {
     </section>
   );
 }
+

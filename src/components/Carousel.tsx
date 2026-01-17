@@ -1,6 +1,5 @@
-"use client";
 import React from "react";
-import { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface CarouselProps {
     images: (string | StaticImageData)[];
@@ -26,14 +25,14 @@ export const Carousel: React.FC<CarouselProps> = ({ images }) => {
                 }}
             >
                 {duplicatedImages.map((img, index) => {
-                    const src = typeof img === "string" ? img : img.src;
-
                     return (
-                        <div key={index} className="shrink-0 flex items-center">
-                            <img
-                                src={src}
+                        <div key={index} className="shrink-0 flex items-center relative h-[420px] w-[600px]">
+                            <Image
+                                src={img}
                                 alt=""
-                                className="max-h-[420px] w-auto object-contain rounded-lg"
+                                fill
+                                className="object-contain rounded-lg"
+                                sizes="(max-width: 768px) 300px, 600px"
                             />
                         </div>
                     );
@@ -51,6 +50,8 @@ export const Carousel: React.FC<CarouselProps> = ({ images }) => {
           }
         }
       `}</style>
+
         </div>
     );
 };
+

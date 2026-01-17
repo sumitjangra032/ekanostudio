@@ -1,17 +1,13 @@
-"use client";
-
-import { motion } from "framer-motion";
 import AnimatedLine from "@/components/animated/AnimatedLine";
 import { HERO_CONTENT } from "@/constants/hero";
-import { useTheme } from "../providers/ThemeProvider";
-import { THEMES } from "../../constants/theme";
+import { THEMES, currentTheme } from "../../constants/theme";
 import AnimatedRotateButton from "../animated/AnimatedRotateButton";
 import { GLOBAL_CTA_CONTENT } from "@/constants/global";
 import FloatingParticles from "../animated/FloatingParticles";
+import HeroEntrance from "../animated/HeroEntrance";
 
 export default function Hero() {
-  const { themeName } = useTheme();
-  const theme = THEMES[themeName];
+  const theme = THEMES[currentTheme as keyof typeof THEMES];
 
   return (
     <section
@@ -23,12 +19,12 @@ export default function Hero() {
         px-4 pt-16 sm:px-6
       "
       style={{
-        backgroundColor: theme.background,
-        color: theme.text,
+        backgroundColor: "var(--theme-background)",
+        color: "var(--theme-text)",
       }}
     >
       {/* Background */}
-      <div className="absolute inset-0 flex justify-center pointer-events-none">
+      <div className="absolute inset-0 flex justify-center pointer-events-none" aria-hidden="true">
         <div
           className="h-full w-full max-w-[1400px]"
           style={{
@@ -89,15 +85,10 @@ export default function Hero() {
       </div>
 
       {/* Floating Particles */}
-      <FloatingParticles count={30} />
+      <FloatingParticles count={20} />
 
       <div className="relative max-w-7xl mx-auto w-full text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="max-w-5xl mx-auto"
-        >
+        <HeroEntrance>
           {/* Top Badge (SEO-safe) */}
           <div className="mb-4 flex justify-center">
             <span className="text-xs sm:text-sm tracking-wide bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
@@ -106,7 +97,7 @@ export default function Hero() {
           </div>
 
           {/* H1 Headline */}
-          <div
+          <h1
             className="
               font-medium italic leading-tight
               text-[32px]
@@ -129,15 +120,15 @@ export default function Hero() {
                 }}
               />
             ))}
-          </div>
+          </h1>
 
-          {/* Supporting Description (NEW but SAFE) */}
+          {/* Supporting Description */}
           <div className="mt-4 max-w-3xl mx-auto">
             {HERO_CONTENT.description.map((desc, i) => (
               <p
                 key={i}
                 className="text-sm sm:text-base leading-relaxed"
-                style={{ color: theme.subtext }}
+                style={{ color: "var(--theme-subtext)" }}
               >
                 {desc}
               </p>
@@ -150,7 +141,7 @@ export default function Hero() {
               <p
                 key={i}
                 className="text-xs sm:text-sm italic"
-                style={{ color: theme.subtext }}
+                style={{ color: "var(--theme-subtext)" }}
               >
                 {note}
               </p>
@@ -166,8 +157,9 @@ export default function Hero() {
               accent={theme.accents}
             />
           </div>
-        </motion.div>
+        </HeroEntrance>
       </div>
     </section>
   );
 }
+

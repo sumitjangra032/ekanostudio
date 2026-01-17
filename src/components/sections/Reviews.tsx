@@ -1,32 +1,17 @@
-"use client";
-
 import AnimatedLine from "../animated/AnimatedLine";
 import { REVIEW_CONTENT } from "@/constants/reviews";
-import { useTheme } from "../providers/ThemeProvider";
-import { THEMES } from "../../constants/theme";
+import { THEMES, currentTheme } from "../../constants/theme";
 import ReviewCardScroller from "../commons/ReviewCardScroller";
-import { useMemo } from "react";
 
 export default function Reviews() {
-  const { themeName } = useTheme();
-  const theme = THEMES[themeName];
-
-  // Responsive duration for scroller based on screen size
-  const scrollDuration = useMemo(() => {
-    if (typeof window === 'undefined') return 60;
-
-    const width = window.innerWidth;
-    if (width < 640) return 40; // Mobile: faster
-    if (width < 1024) return 50; // Tablet: medium speed
-    return 60; // Desktop: normal speed
-  }, []);
+  const theme = THEMES[currentTheme as keyof typeof THEMES];
 
   return (
     <section
       id="reviews"
       className="w-full py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
       style={{
-        backgroundColor: theme.background,
+        backgroundColor: "var(--theme-background)",
       }}
     >
       {/* Background Image - Responsive */}
@@ -46,7 +31,7 @@ export default function Reviews() {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: `radial-gradient(circle at 50% 50%, transparent 30%, ${theme.background} 70%)`,
+          background: `radial-gradient(circle at 50% 50%, transparent 30%, var(--theme-background) 70%)`,
         }}
       />
 
@@ -57,15 +42,15 @@ export default function Reviews() {
           <div
             className="inline-flex items-center justify-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full mb-4 md:mb-6"
             style={{
-              background: `${theme.accents.a}08`,
-              border: `1px solid ${theme.accents.a}20`,
+              background: "rgba(255, 60, 40, 0.03)",
+              border: "1px solid rgba(255, 60, 40, 0.15)",
               backdropFilter: "blur(4px)",
             }}
           >
             <div className="pulse w-2 h-2 sm:w-2.5 sm:h-2.5" />
             <span
               className="text-xs sm:text-sm font-medium tracking-wide"
-              style={{ color: theme.accents.a }}
+              style={{ color: "var(--theme-accent-a)" }}
             >
               {REVIEW_CONTENT.tag.label}
             </span>
@@ -74,7 +59,7 @@ export default function Reviews() {
           {/* Title with gradient */}
           <h2
             className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold mt-2 md:mt-3 px-2"
-            style={{ color: theme.text }}
+            style={{ color: "var(--theme-text)" }}
           >
             <AnimatedLine
               text={REVIEW_CONTENT.title}
@@ -91,12 +76,12 @@ export default function Reviews() {
           {/* Description */}
           <div
             className="text-base sm:text-lg md:text-xl max-w-2xl md:max-w-3xl mx-auto mt-3 md:mt-4 leading-relaxed px-4"
-            style={{ color: theme.subtext }}
+            style={{ color: "var(--theme-subtext)" }}
           >
             <AnimatedLine
               text={REVIEW_CONTENT.description}
               delay={0.1}
-              textColor={theme.subtext}
+              textColor="var(--theme-subtext)"
             />
           </div>
         </div>
@@ -106,7 +91,7 @@ export default function Reviews() {
           <ReviewCardScroller
             reviews={REVIEW_CONTENT.reviews}
             direction="left"
-            duration={scrollDuration}
+            duration={60} // Default duration, the scroller component should handle internal responsiveness if needed
             className="py-4"
           />
         </div>
@@ -116,51 +101,13 @@ export default function Reviews() {
           <div className="flex items-center gap-2">
             <span
               className="text-xs opacity-70"
-              style={{ color: theme.subtext }}
+              style={{ color: "var(--theme-subtext)" }}
             >
               ← Scroll →
             </span>
           </div>
         </div>
       </div>
-
-      {/* Responsive spacing helper */}
-      <style jsx>{`
-        @media (max-width: 640px) {
-          .pulse {
-            animation: pulse 2s infinite;
-          }
-        }
-        
-        @media (max-width: 768px) {
-          #reviews {
-            scroll-margin-top: 2rem;
-          }
-        }
-        
-        .pulse {
-          width: 10px;
-          height: 10px;
-          border-radius: 50%;
-          background: ${theme.accents.a};
-          animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-          0% {
-            opacity: 1;
-            transform: scale(1);
-          }
-          50% {
-            opacity: 0.7;
-            transform: scale(1.1);
-          }
-          100% {
-            opacity: 1;
-            transform: scale(1);
-          }
-        }
-      `}</style>
     </section>
   );
 }

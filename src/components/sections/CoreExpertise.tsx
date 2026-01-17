@@ -8,7 +8,7 @@ import AnimatedLine from "../animated/AnimatedLine";
 import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "../../constants/theme";
 import Link from "next/link";
-import GlowBeam from "../effects/GlowBeam";
+
 
 export default function CoreExpertise() {
     const { themeName } = useTheme();
@@ -141,7 +141,7 @@ function CoreExpertiseCard({
         `}
             >
                 {/* Ambient Glow */}
-                <GlowBeam color={theme.accents.a} />
+
 
                 {/* Left Accent Line */}
                 <div

@@ -7,9 +7,18 @@ export const data: SeoPageData = {
         slug: "seo-services",
         targetServiceSlug: "on-page-seo",
         categorySlug: "seo",
-        keywords: ["Search Engine Optimization", "Keyword Ranking", "Organic Traffic Growth"],
-        description: "Boost your search engine rankings and drive organic traffic with our data-driven SEO strategies.",
+        keywords: [
+            "SEO Services Pune",
+            "SEO Company Pune",
+            "Search Engine Optimization Pune",
+            "Local SEO Pune",
+            "IT Company SEO Pune",
+            "Manufacturing SEO Pune"
+        ],
+        description:
+            "Advanced SEO services in Pune designed to increase rankings, organic traffic, and qualified leads through data-driven and technical optimization.",
     },
+
     location: {
         name: "Pune",
         slug: "pune",
@@ -20,53 +29,85 @@ export const data: SeoPageData = {
         metaTitleSuffix: "Pune | Expert Solutions",
         traits: ["education sector", "manufacturing hubs", "IT parks"],
     },
+
     meta: {
-        title: "SEO Services in Pune | Rank #1 on Google for Your Business",
-        description: "Boost your visibility in Pune and beyond. Our SEO experts deliver surgical keyword strategies and technical audits to rank your business higher.",
+        title: "SEO Services Pune | Local & Enterprise SEO Experts",
+        description:
+            "Rank higher on Google in Pune with expert SEO services. We help IT companies, manufacturers, and startups drive consistent organic growth.",
         canonical: "/seo-services-pune",
     },
+
     content: {
         hero: {
-            title: "Dominate Search Results in Pune",
-            subtitle: "Capture high-intent traffic from the Oxford of the East. Strategic SEO for Pune's top businesses.",
+            title: "High-Impact SEO for Pune Businesses",
+            subtitle:
+                "Turn search visibility into revenue. Precision SEO strategies built for Pune’s IT, education, and industrial sectors.",
         },
+
         overview: {
-            title: "Surgical SEO for Pune's Competitive Market",
-            text: "Competition in Pune's IT and manufacturing sectors is fierce. Generic SEO just doesn't cut it. ekanostudio provides specialized SEO services in Pune, from technical on-page audits to high-authority backlink building, ensuring your business stays ahead of the curve.",
+            title: "Strategic SEO for Pune’s Growth Economy",
+            text:
+                "Pune’s digital landscape is highly competitive, especially across IT services, SaaS, manufacturing, and education sectors. ekanostudio delivers advanced SEO strategies tailored for Pune-based businesses—combining technical SEO, content authority, and local search dominance to ensure long-term ranking stability and lead generation.",
         },
+
         whyChoose: {
-            title: "Our Pune SEO Edge",
+            title: "Why Pune Companies Choose Our SEO",
             points: [
-                { title: "Keyword Dominance", desc: "Targeting high-volume Pune-centric and global queries." },
-                { title: "Technical Excellence", desc: "Audit and fix core web vitals and crawl errors." },
-                { title: "Local Presence", desc: "Boosting your visibility on Google Maps for Pune." }
-            ]
+                {
+                    title: "Local + National Keyword Strategy",
+                    desc: "Ranking for Pune-specific intent while scaling nationwide keywords.",
+                },
+                {
+                    title: "Technical SEO Mastery",
+                    desc: "Deep audits covering Core Web Vitals, indexing, and site architecture.",
+                },
+                {
+                    title: "Maps & Local Visibility",
+                    desc: "Optimized Google Business Profile for high-conversion local searches.",
+                },
+            ],
         },
+
         deliverables: [
-            "Comprehensive Technical SEO Audit",
-            "Keyword Research & Mapping",
-            "Content Optimization Strategy",
-            "Local SEO Setup (GBP)",
-            "High-Authority Backlink Acquisition",
-            "Monthly Performance Reporting"
+            "Advanced Technical SEO Audit",
+            "Pune-Focused Keyword Research & Mapping",
+            "On-Page & Content Optimization",
+            "Google Business Profile Optimization",
+            "High-Quality Backlink Building",
+            "Monthly SEO Performance Reports",
         ],
+
         process: {
-            title: "Our SEO Methodology",
+            title: "Our SEO Execution Framework",
             steps: [
-                { title: "Audit", desc: "Analyzing your current standing and competitor gaps." },
-                { title: "Implement", desc: "Optimizing your site's technical and content health." },
-                { title: "Build", desc: "Acquiring authority through high-quality links." },
-                { title: "Report", desc: "Monitoring traffic and conversion growth regularly." }
-            ]
+                {
+                    title: "Discovery",
+                    desc: "Evaluating your current rankings, competitors, and Pune search demand.",
+                },
+                {
+                    title: "Optimization",
+                    desc: "Fixing technical gaps and strengthening content relevance.",
+                },
+                {
+                    title: "Authority",
+                    desc: "Building trust through industry-relevant backlinks.",
+                },
+                {
+                    title: "Scale",
+                    desc: "Expanding rankings across new keywords and locations.",
+                },
+            ],
         },
+
         cta: {
-            title: "Want more organic leads?",
-            text: "Get a free SEO roadmap for your Pune business."
+            title: "Ready to rank higher in Pune?",
+            text: "Request a free SEO strategy session for your Pune business.",
         },
+
         relatedServices: [
             { title: "Digital Marketing", link: "/services/digital-marketing/digital-marketing" },
             { title: "Content Creation", link: "/services/content-creation/content-writing" },
-            { title: "Web development", link: "/services/web-design-development/website-development" }
-        ]
-    }
+            { title: "Web Development", link: "/services/web-design-development/website-development" }
+        ],
+    },
 };

@@ -7,62 +7,104 @@ export const data: SeoPageData = {
         slug: "website-design",
         targetServiceSlug: "website-design-uiux",
         categorySlug: "web-design-development",
-        keywords: ["UI/UX Design", "Responsive Web Design", "Custom Website Design"],
-        description: "Create a stunning, high-performance website that captures your brand's essence and converts visitors into customers.",
+        keywords: [
+            "Webdesign Österreich",
+            "UI/UX Agentur Österreich",
+            "Responsive Webdesign",
+            "Corporate Website Austria",
+            "Next.js Website Development",
+            "Barrierefreies Webdesign",
+            "SEO Friendly Webdesign"
+        ],
+        description:
+            "Premium Webdesign und UI/UX-Lösungen für österreichische Unternehmen. Schnelle, moderne und DSGVO-konforme Websites, die Besucher in zahlende Kunden verwandeln.",
     },
+
     location: {
         name: "Austria",
         slug: "austria",
         type: "country",
         country: "Austria",
         adjective: "Austrian",
-        context: "in Austria",
-        metaTitleSuffix: "Austria | Digital Solutions",
+        context: "in Österreich",
+        metaTitleSuffix: "Österreich | Premium Webdesign",
         traits: ["central european business", "quality focused", "innovation"],
     },
+
     meta: {
-        title: "Webdesign Agentur Österreich | Premium UI/UX Design",
-        description: "Exzellentes Webdesign für den österreichischen Markt. Wir entwickeln moderne, schnelle und barrierefreie Websites für Unternehmen in Österreich.",
+        title: "Webdesign Agentur Österreich | Premium Websites & UI/UX",
+        description:
+            "Exzellentes Webdesign für Österreich. Wir erstellen schnelle, hochwertige und DSGVO-konforme Websites für KMUs und Unternehmen in Wien, Graz, Linz und Salzburg.",
         canonical: "/website-design-austria",
     },
+
     content: {
         hero: {
-            title: "Digitale Exzellenz für österreichische Unternehmen",
-            subtitle: "Wir verbinden innovatives Webdesign mit höchster Qualität, um Ihr Business in Österreich online zum Erfolg zu führen.",
+            title: "Modernes Webdesign für österreichische Unternehmen",
+            subtitle:
+                "Wir entwickeln leistungsstarke Websites, die Vertrauen schaffen, professionell aussehen und messbare Ergebnisse liefern.",
         },
+
         overview: {
-            title: "Maßgeschneidertes Webdesign für Österreich",
-            text: "Der österreichische Markt verlangt nach Präzision und Verlässlichkeit. Ihre Website ist Ihr digitales Aushängeschild. ekanostudio bietet professionelles Webdesign, das genau auf die Bedürfnisse österreichischer KMUs und etablierter Marken zugeschnitten ist – von Wien bis Salzburg.",
+            title: "Professionelle Websites für den österreichischen Markt",
+            text:
+                "In Österreich zählt Qualität, Präzision und Benutzerfreundlichkeit. Ihre Website muss nicht nur gut aussehen – sie muss performant, sicher und intuitiv sein. ekanostudio entwickelt maßgeschneiderte Webdesigns, die perfekt auf österreichische Marken und KMUs abgestimmt sind, egal ob in Wien, Innsbruck oder Salzburg.",
         },
+
         whyChoose: {
-            title: "Ihre Vorteile mit Uns",
+            title: "Warum Unternehmen in Österreich uns wählen",
             points: [
-                { title: "Höchste Qualität", desc: "Design und Code nach modernsten österreichischen und EU-Standards." },
-                { title: "DSGVO-Konformität", desc: "Sichere Websites, die alle Datenschutzbestimmungen erfüllen." },
-                { title: "Mobile Optimierung", desc: "Perfekte Darstellung auf allen Geräten für Ihre Kunden." }
-            ]
+                {
+                    title: "Modernste UI/UX Standards",
+                    desc: "Benutzerfreundliche, konversionsstarke Designs, optimiert für österreichische Nutzer.",
+                },
+                {
+                    title: "DSGVO & Sicherheitskonform",
+                    desc: "Hosting, Tracking & Cookies – alles rechtskonform für den österreichischen Markt.",
+                },
+                {
+                    title: "Mobil & Performance Optimiert",
+                    desc: "Schnelle Ladezeiten, perfekte Mobile-Darstellung und Top-Werte bei Core Web Vitals.",
+                }
+            ],
         },
+
         deliverables: [
             "Individuelles UI/UX Design",
-            "Next.js Frontend-Entwicklung",
-            "Content Management System (CMS)",
-            "Suchmaschinenoptimierung (SEO)",
-            "Barrierefreies Design (WCAG)",
-            "Schnelle Ladezeiten (Core Web Vitals)"
+            "Next.js / React Website Entwicklung",
+            "CMS-Integration (Headless, WordPress oder Custom)",
+            "SEO-Basisoptimierung & Strukturaufbau",
+            "Barrierefreies Webdesign (WCAG)",
+            "Performance-Optimierung (Core Web Vitals)"
         ],
+
         process: {
-            title: "Unser Weg zum Erfolg",
+            title: "Unser Website-Prozess",
             steps: [
-                { title: "Beratung", desc: "Wir analysieren Ihre Ziele für den österreichischen Markt." },
-                { title: "Konzept", desc: "Erstellung von Wireframes und Design-Entwürfen." },
-                { title: "Umsetzung", desc: "Präzise Programmierung mit Fokus auf Performance." },
-                { title: "Go-Live", desc: "Sicherer Launch und fortlaufende Betreuung." }
+                {
+                    title: "Analyse",
+                    desc: "Verstehen Ihrer Ziele, Branche und österreichischen Zielgruppe.",
+                },
+                {
+                    title: "Design",
+                    desc: "Erstellung eines klar strukturierten UI/UX-Konzepts mit Wireframes & Prototypen.",
+                },
+                {
+                    title: "Entwicklung",
+                    desc: "Sauberer, skalierbarer Code für höchste Geschwindigkeit und Sicherheit.",
+                },
+                {
+                    title: "Launch",
+                    desc: "Sicheres Go-Live, Monitoring & fortlaufende Optimierung.",
+                }
             ]
         },
+
         cta: {
-            title: "Bereit für Ihre neue Website?",
-            text: "Kontaktieren Sie uns für ein unverbindliches Erstgespräch in Österreich."
+            title: "Starten wir Ihr Webprojekt in Österreich",
+            text: "Fordern Sie ein unverbindliches Beratungsgespräch an und erfahren Sie, wie wir Ihre neue Website realisieren können.",
         },
+
         relatedServices: [
             { title: "SEO Services", link: "/services/seo/technical-seo" },
             { title: "Digital Marketing", link: "/services/digital-marketing/social-media-strategy" },

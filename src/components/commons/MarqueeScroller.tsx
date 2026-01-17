@@ -1,9 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { useTheme } from "../providers/ThemeProvider";
-import { THEMES } from "../../constants/theme";
-
 interface MarqueeProps {
   items: string[];
   direction?: "left" | "right";
@@ -19,34 +13,16 @@ export default function MarqueeScroller({
   className = "",
   textColor,
 }: MarqueeProps) {
-  const { themeName } = useTheme();
-  const theme = THEMES[themeName];
-
   // Repeat items for seamless loop
   const list = [...items, ...items, ...items];
 
-  const animate =
-    direction === "left"
-      ? { x: ["0%", "-33.33%"] }
-      : { x: ["-33.33%", "0%"] };
-
   return (
-    <div
-      className="relative w-full overflow-hidden py-2 bg-black"
-    // style={{
-    //   WebkitMaskImage:
-    //     "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
-    //   maskImage:
-    //     "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
-    // }}
-    >
-      <motion.div
+    <div className="relative w-full overflow-hidden py-2 bg-black">
+      <div
         className={`flex gap-10 w-max ${className}`}
-        animate={animate}
-        transition={{
-          duration,
-          ease: "linear",
-          repeat: Infinity,
+        style={{
+          animation: `marquee-${direction} ${duration}s linear infinite`,
+          display: "flex",
         }}
       >
         {list.map((item, idx) => (
@@ -64,18 +40,25 @@ export default function MarqueeScroller({
               border border-white/10
             "
             style={{
-              background: "#000000/20",
-              color: textColor || theme.subtext,
+              background: "rgba(0, 0, 0, 0.2)",
+              color: textColor || "var(--theme-subtext)",
             }}
           >
-
-            {/* Text */}
             <span>{item}</span>
-
-
           </div>
         ))}
-      </motion.div>
+      </div>
+      <style>{`
+        @keyframes marquee-left {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-33.33%); }
+        }
+        @keyframes marquee-right {
+          0% { transform: translateX(-33.33%); }
+          100% { transform: translateX(0); }
+        }
+      `}</style>
     </div>
   );
 }
+

@@ -7,9 +7,18 @@ export const data: SeoPageData = {
         slug: "seo-services",
         targetServiceSlug: "on-page-seo",
         categorySlug: "seo",
-        keywords: ["Search Engine Optimization", "Keyword Ranking", "Organic Traffic Growth"],
-        description: "Boost your search engine rankings and drive organic traffic with our data-driven SEO strategies.",
+        keywords: [
+            "SEO Services Canada",
+            "SEO Agency Canada",
+            "Google.ca Ranking",
+            "Local SEO Canada",
+            "Canadian SEO Experts",
+            "SEO for Canadian Businesses"
+        ],
+        description:
+            "Advanced SEO strategies tailored for Canadian businesses. Improve your visibility on Google.ca and attract high-intent organic traffic nationwide.",
     },
+
     location: {
         name: "Canada",
         slug: "canada",
@@ -20,53 +29,85 @@ export const data: SeoPageData = {
         metaTitleSuffix: "Canada | Digital Experts",
         traits: ["tech innovation", "diverse economy", "growth sector"],
     },
+
     meta: {
-        title: "SEO Services Canada | Rank on Google.ca",
-        description: "Increase your organic visibility in Canada. We specialize in Canadian SEO strategies that target local and national search intent effectively.",
+        title: "SEO Agency Canada | Rank Higher on Google.ca",
+        description:
+            "Grow your organic traffic across Canada. We specialize in Canadian search behaviour, local keyword targeting, and bilingual optimization for national reach.",
         canonical: "/seo-services-canada",
     },
+
     content: {
         hero: {
-            title: "Dominating Google.ca Search Results",
-            subtitle: "Reach customers in Ontario, BC, Quebec, and beyond. Precision SEO for the Canadian market.",
+            title: "SEO Strategies Built for Google.ca",
+            subtitle:
+                "Reach customers across Ontario, British Columbia, Alberta, and Quebec with performance-driven SEO tailored to Canada’s digital ecosystem.",
         },
+
         overview: {
-            title: "Strategic SEO for the Canadian Landscape",
-            text: "Ranking in Canada means understanding the unique blend of US influence and local preference. ekanostudio's SEO experts specialize in Google.ca algorithms. We help you target high-value Canadian keywords, optimize for local intent in major cities, and navigate the bilingual SEO requirements of the Quebec market.",
+            title: "SEO That Matches How Canadians Search",
+            text:
+                "Canada’s search landscape is uniquely shaped by regional needs, bilingual audiences, and province-specific trends. To rank on Google.ca, you need localized keyword research, culturally accurate messaging, and technical optimization built for Canadian browsing behaviour. Our SEO team helps brands grow organically across Toronto, Vancouver, Montreal, Calgary, Ottawa, and beyond—ensuring you connect with audiences coast to coast.",
         },
+
         whyChoose: {
-            title: "Our Canadian SEO Advantage",
+            title: "Why Canadian Brands Choose Us",
             points: [
-                { title: "Local Nuance", desc: "Targeting Canadian spelling and terminology." },
-                { title: "Regional Strategy", desc: "Specific tactics for Western Canada vs The Maritimes." },
-                { title: ".ca Authority", desc: "Building links from trusted Canadian domains." }
-            ]
+                {
+                    title: "Canadian Search Nuance",
+                    desc: "We optimize for Canadian spelling, terminology, and province-specific search intent.",
+                },
+                {
+                    title: "Provincial SEO Strategy",
+                    desc: "Tailored tactics for Western Canada, Central Canada, Atlantic Canada, and Quebec.",
+                },
+                {
+                    title: ".ca Domain Authority Building",
+                    desc: "Acquiring relevant backlinks from trusted Canadian websites and directories.",
+                },
+            ],
         },
+
         deliverables: [
-            "Canadian Keyword Research",
-            "Bilingual SEO Roadmap",
-            "Local SEO (Google Business Profile)",
-            "Technical Audit (Speed & Core Web Vitals)",
-            "Backlink Acquisition (.ca)",
-            "Monthly Growth Reports"
+            "Canadian Keyword Opportunity Map",
+            "English & French SEO Strategy",
+            "Local SEO Setup (Google Business Profile)",
+            "Technical SEO & Core Web Vitals Optimization",
+            "Authority Link Building (.ca Domains)",
+            "Monthly Performance Reports & Insights",
         ],
+
         process: {
-            title: "Canada Ranking Strategy",
+            title: "Canada-Focused SEO Framework",
             steps: [
-                { title: "Audit", desc: "Analyzing your current presence on Google.ca." },
-                { title: "Localize", desc: "Adapting content for Canadian audiences." },
-                { title: "Optimize", desc: "Fixing technical barriers to indexing." },
-                { title: "Grow", desc: "Building authority through Canadian partnerships." }
-            ]
+                {
+                    title: "Analyze",
+                    desc: "Auditing your rankings, competition, and visibility on Google.ca.",
+                },
+                {
+                    title: "Localize",
+                    desc: "Optimizing content for Canadian spelling, phrasing, and regional voice.",
+                },
+                {
+                    title: "Optimize",
+                    desc: "Improving site structure, speed, schema, and on-page SEO.",
+                },
+                {
+                    title: "Expand",
+                    desc: "Building Canadian authority through partnerships and contextual link acquisition.",
+                },
+            ],
         },
+
         cta: {
-            title: "Want more Canadian traffic?",
-            text: "Start your national SEO campaign today."
+            title: "Ready to increase your Canadian traffic?",
+            text: "Start growing with a Canada-focused SEO strategy.",
         },
+
         relatedServices: [
             { title: "Content Writing", link: "/services/content-creation/content-writing" },
             { title: "Digital Marketing", link: "/services/digital-marketing/digital-marketing" },
-            { title: "Web Development", link: "/services/web-design-development/website-development" }
-        ]
-    }
+            { title: "Web Development", link: "/services/web-design-development/website-development" },
+        ],
+    },
 };

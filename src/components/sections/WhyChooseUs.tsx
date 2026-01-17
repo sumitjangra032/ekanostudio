@@ -1,35 +1,23 @@
-"use client";
-
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
 import MarqueeScroller from "../commons/MarqueeScroller";
 import { WHY_US_CONTENT } from "@/constants/whyChooseUs";
-
-import { useTheme } from "../providers/ThemeProvider";
-import { THEMES } from "../../constants/theme";
+import { THEMES, currentTheme } from "../../constants/theme";
 import AnimateDownloadedSVG from "../animated/AnimateDownloadedSVG";
 import AnimatedLine from "../animated/AnimatedLine";
-import GlowBeam from "../effects/GlowBeam";
+import SectionEntrance from "../animated/SectionEntrance";
 
 export default function WhyChooseUs() {
-  const { themeName } = useTheme();
-  const theme = THEMES[themeName];
-
-  const cardsRef = useRef<HTMLDivElement | null>(null);
-  const cardsInView = useInView(cardsRef, { once: true, margin: "-10% 0px" });
+  const theme = THEMES[currentTheme as keyof typeof THEMES];
 
   return (
     <div
       id="why-us"
       className="relative w-full py-32 px-6 overflow-hidden"
-      style={{ backgroundColor: theme.background }
-      }
+      style={{ backgroundColor: "var(--theme-background)" }}
     >
       {/* Top divider */}
-      < div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+      <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent" aria-hidden="true" />
 
       <div className="relative max-w-7xl mx-auto z-10">
-
         {/* Title */}
         <AnimatedLine
           text={WHY_US_CONTENT.title}
@@ -49,17 +37,11 @@ export default function WhyChooseUs() {
           delay={0.1}
           isHeading={false}
           className="mt-2 mb-10 max-w-3xl"
-          textColor={theme.subtext}
+          textColor="var(--theme-subtext)"
         />
 
         {/* Cards */}
-        <motion.div
-          ref={cardsRef}
-          initial={{ opacity: 0, y: 40 }}
-          animate={cardsInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8"
-        >
+        <SectionEntrance className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {WHY_US_CONTENT.cards.map((card, i) => (
             <div
               key={i}
@@ -73,9 +55,6 @@ export default function WhyChooseUs() {
                 hover:-translate-y-1
               "
             >
-              {/* Ambient Glow */}
-              <GlowBeam color={theme.accents.a} />
-
               {/* Left Accent Line */}
               <div
                 className="absolute left-0 top-0 h-full w-[2px]"
@@ -83,7 +62,7 @@ export default function WhyChooseUs() {
                   background: `linear-gradient(
                     to bottom,
                     transparent,
-                    ${theme.accents.a},
+                    var(--theme-accent-a),
                     transparent
                   )`,
                 }}
@@ -95,7 +74,7 @@ export default function WhyChooseUs() {
                 style={{
                   background: `radial-gradient(
                     500px circle at top right,
-                    ${theme.accents.a}12,
+                    rgba(255, 60, 40, 0.07),
                     transparent 45%
                   )`,
                 }}
@@ -112,14 +91,14 @@ export default function WhyChooseUs() {
                   group-hover:scale-110
                 "
                 style={{
-                  background: `${theme.accents.a}14`,
-                  border: `1px solid ${theme.accents.a}30`,
+                  background: `rgba(255, 60, 40, 0.08)`,
+                  border: `1px solid rgba(255, 60, 40, 0.15)`,
                 }}
               >
                 <AnimateDownloadedSVG
                   src={card.icon}
                   size={30}
-                  stroke={theme.accents.a}
+                  stroke="var(--theme-accent-a)"
                 />
               </div>
 
@@ -127,7 +106,7 @@ export default function WhyChooseUs() {
               <h3
                 className="text-2xl font-semibold mb-4 tracking-tight"
                 style={{
-                  color: theme.text,
+                  color: "var(--theme-text)",
                   fontFamily: "var(--font-general-sans)",
                 }}
               >
@@ -137,7 +116,7 @@ export default function WhyChooseUs() {
               <p
                 className="text-[15px] leading-relaxed font-light"
                 style={{
-                  color: theme.subtext,
+                  color: "var(--theme-subtext)",
                   fontFamily: "var(--font-inter)",
                 }}
               >
@@ -145,7 +124,7 @@ export default function WhyChooseUs() {
               </p>
             </div>
           ))}
-        </motion.div>
+        </SectionEntrance>
 
         {/* Marquee */}
         <div className="mt-24 pt-10 border-t border-white/5">
@@ -153,11 +132,11 @@ export default function WhyChooseUs() {
             items={[...WHY_US_CONTENT.tagsRow1, ...WHY_US_CONTENT.tagsRow2]}
             direction="left"
             duration={40}
-            textColor={theme.subtext}
-          // iconColor={theme.accents.a}
+            textColor="var(--theme-subtext)"
           />
         </div>
       </div>
-    </div >
+    </div>
   );
 }
+

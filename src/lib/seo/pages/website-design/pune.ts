@@ -8,8 +8,10 @@ export const data: SeoPageData = {
         targetServiceSlug: "website-design-uiux",
         categorySlug: "web-design-development",
         keywords: ["UI/UX Design", "Responsive Web Design", "Custom Website Design"],
-        description: "Create a stunning, high-performance website that captures your brand's essence and converts visitors into customers.",
+        description:
+            "Create a stunning, high-performance website that captures your brand's essence and converts visitors into customers.",
     },
+
     location: {
         name: "Pune",
         slug: "pune",
@@ -20,49 +22,81 @@ export const data: SeoPageData = {
         metaTitleSuffix: "Pune | Expert Solutions",
         traits: ["education sector", "manufacturing hubs", "IT parks"],
     },
+
     meta: {
         title: "Website Design Agency in Pune | UI/UX & Web Development",
-        description: "Looking for top web design in Pune? We build high-performance, mobile-responsive websites for Pune's leading IT, education, and manufacturing sectors.",
+        description:
+            "Looking for premium web design in Pune? We build fast, mobile-responsive, conversion-focused websites for Pune’s leading IT, education, and manufacturing brands.",
         canonical: "/website-design-pune",
     },
+
     content: {
         hero: {
-            title: "Digital Excellence for Pune's Hub of Innovation",
-            subtitle: "From Hinjewadi to Magarpatta, we design websites that drive business growth in the Oxford of the East.",
+            title: "High-Performance Web Design for Pune’s Innovation Hub",
+            subtitle:
+                "From Hinjewadi tech parks to Magarpatta enterprises, we design websites that fuel growth in the Oxford of the East.",
         },
+
         overview: {
-            title: "Modern Web Design for Pune's Business Landscape",
-            text: "Pune is a unique blend of heritage, industry, and cutting-edge tech. Your website needs to bridge that gap. ekanostudio provides high-end web design services tailored for Pune's diverse sectors—whether you are a scaling tech startup, an educational institute, or a global manufacturing giant.",
+            title: "Modern Web Design for Pune’s Digital Ecosystem",
+            text:
+                "Pune blends academia, industry, and technology—and your website must reflect that dynamic environment. ekanostudio creates high-performance websites tailored for Pune’s evolving business landscape, whether you’re a tech startup, an educational institution, or a manufacturing leader expanding globally.",
         },
+
         whyChoose: {
-            title: "Why Pune's Best Businesses Choose Us",
+            title: "Why Pune Businesses Trust Our Web Design Expertise",
             points: [
-                { title: "Tech-Forward Design", desc: "Utilizing the latest stacks like Next.js for superior speed and SEO." },
-                { title: "Mobile Optimized", desc: "Perfectly responsive sites for an audience that is always on the go." },
-                { title: "Local Insight", desc: "Understanding the Pune market from IT hubs to institutional needs." }
-            ]
+                {
+                    title: "Future-Ready Technology",
+                    desc: "Built with modern frameworks like Next.js for unmatched speed, SEO, and scalability.",
+                },
+                {
+                    title: "Mobile-First Interfaces",
+                    desc: "Designed for a fast-growing, on-the-move audience across Pune’s urban districts.",
+                },
+                {
+                    title: "Local Market Insight",
+                    desc: "Strategic understanding of Pune’s IT, education, and industrial ecosystem.",
+                },
+            ],
         },
+
         deliverables: [
             "Custom UI/UX Design (Figma)",
-            "High-Performance Web Development",
-            "SEO-Friendly Infrastructure",
-            "Scalable CMS Integration",
-            "Security & SSL Setup",
-            "Launch & Post-Launch Support"
+            "High-Performance Next.js Development",
+            "SEO-Optimized Web Architecture",
+            "Scalable CMS (Sanity / Strapi)",
+            "Security & SSL Configuration",
+            "Launch Support + Post-Launch Maintenance"
         ],
+
         process: {
-            title: "Our Design Journey",
+            title: "Our End-to-End Web Design Workflow",
             steps: [
-                { title: "Consult", desc: "Understanding your vision for the Pune and global market." },
-                { title: "Blueprint", desc: "Creating the structure and user journeys." },
-                { title: "Craft", desc: "Designing and developing with precision." },
-                { title: "Go Live", desc: "Seamless launch and optimization." }
-            ]
+                {
+                    title: "Consult",
+                    desc: "Understanding your goals for Pune and global audiences.",
+                },
+                {
+                    title: "Blueprint",
+                    desc: "Mapping user journeys and defining conversion-focused layouts.",
+                },
+                {
+                    title: "Craft",
+                    desc: "Designing and developing clean, high-quality interfaces.",
+                },
+                {
+                    title: "Go Live",
+                    desc: "Launching with full optimization and performance checks.",
+                },
+            ],
         },
+
         cta: {
-            title: "Ready to upgrade your online presence?",
-            text: "Partner with Pune's trusted digital design agency."
+            title: "Ready to elevate your digital presence?",
+            text: "Work with Pune’s trusted web design and development experts.",
         },
+
         relatedServices: [
             { title: "SEO Services", link: "/services/seo/technical-seo" },
             { title: "Digital Marketing", link: "/services/digital-marketing/social-media-strategy" },

@@ -8,8 +8,10 @@ export const data: SeoPageData = {
         targetServiceSlug: "website-design-uiux",
         categorySlug: "web-design-development",
         keywords: ["UI/UX Design", "Responsive Web Design", "Custom Website Design"],
-        description: "Create a stunning, high-performance website that captures your brand's essence and converts visitors into customers.",
+        description:
+            "Create a stunning, high-performance website that captures your brand's essence and converts visitors into customers.",
     },
+
     location: {
         name: "UAE",
         slug: "uae",
@@ -20,49 +22,81 @@ export const data: SeoPageData = {
         metaTitleSuffix: "UAE | Dubai & Abu Dhabi",
         traits: ["luxury market", "rapid development", "global business hub"],
     },
+
     meta: {
         title: "Web Design Agency UAE | Dubai & Abu Dhabi | Premium UI/UX",
-        description: "World-class website design for the UAE market. We create stunning, bilingual (Arabic/English) websites tailored for Dubai's luxury and corporate sectors.",
+        description:
+            "Premium web design for UAE brands. We build bilingual (Arabic/English), high-performance websites for Dubai’s luxury market and Abu Dhabi’s corporate sector.",
         canonical: "/website-design-uae",
     },
+
     content: {
         hero: {
-            title: "Exquisite Web Design for UAE Brands",
-            subtitle: "Merging innovation with luxury. We build digital experiences that standout in Dubai and Abu Dhabi.",
+            title: "Luxury Web Design for the UAE’s Most Ambitious Brands",
+            subtitle:
+                "Where innovation meets opulence—digital experiences crafted for Dubai, Abu Dhabi, and the Emirates.",
         },
+
         overview: {
-            title: "Digital Excellence for the Emirates",
-            text: "The UAE is a global hub of innovation and luxury. Your digital presence must reflect this high standard. ekanostudio creates premium websites that cater to the diverse and sophisticated audience of the UAE. From bilingual corporate sites in Abu Dhabi to high-fashion e-commerce in Dubai, we deliver excellence.",
+            title: "High-End Web Design for the UAE Digital Landscape",
+            text:
+                "The UAE sets global standards for luxury, technology, and consumer experience. Your website must match that prestige. ekanostudio builds bilingual, performance-optimized websites for UAE businesses—from Dubai’s high-fashion retail to Abu Dhabi’s corporate and governmental sectors. Our designs blend elegance, speed, and cultural relevance for both local and international audiences.",
         },
+
         whyChoose: {
-            title: "Why UAE Visionaries Choose Us",
+            title: "Why Leading UAE Brands Work With Us",
             points: [
-                { title: "Bilingual Capable", desc: "Expertise in RTL (Right-to-Left) layouts for Arabic content." },
-                { title: "Premium Aesthetics", desc: "Designs that match the high expectations of the UAE market." },
-                { title: "Speed & Security", desc: "Hosting solutions optimized for the GCC region." }
-            ]
+                {
+                    title: "Native Bilingual Experience",
+                    desc: "Full support for Arabic (RTL) and English interfaces with flawless cultural accuracy.",
+                },
+                {
+                    title: "Luxury-Centric Design",
+                    desc: "Minimalist, high-end UI/UX crafted for premium industries like real estate, hospitality, and finance.",
+                },
+                {
+                    title: "GCC-Optimized Performance",
+                    desc: "Lightning-fast hosting and security tailored for the Middle Eastern market.",
+                },
+            ],
         },
+
         deliverables: [
-            "Bilingual Website (EN/AR Support)",
-            "RTL Layout Optimization",
-            "High-End UI/UX Design",
+            "Bilingual Website (EN/AR)",
+            "Advanced RTL Layout Engineering",
+            "Luxury UI/UX Design System",
             "Mobile-First Architecture",
-            "CMS Integration",
-            "SEO-Ready Structure"
+            "Scalable CMS Integration",
+            "SEO-Ready & Schema-Optimized Structure"
         ],
+
         process: {
-            title: "Our UAE Design Process",
+            title: "Our Refined UAE Web Design Process",
             steps: [
-                { title: "Vision", desc: "Understanding your goals for the GCC market." },
-                { title: "Design", desc: "Creating prototypes that blend modern trends with local culture." },
-                { title: "Develop", desc: "Coding robust sites with full bilingual support." },
-                { title: "Launch", desc: "Deploying and ensuring perfect performance across the Emirates." }
-            ]
+                {
+                    title: "Vision",
+                    desc: "Understanding your goals and audience across Dubai, Abu Dhabi, and the wider GCC.",
+                },
+                {
+                    title: "Design",
+                    desc: "Crafting prototypes that merge UAE cultural elegance with modern global aesthetics.",
+                },
+                {
+                    title: "Develop",
+                    desc: "Building secure, scalable, and bilingual-ready websites using cutting-edge frameworks.",
+                },
+                {
+                    title: "Launch",
+                    desc: "Deploying with high-speed hosting optimized for the Emirates and conducting final QA.",
+                },
+            ],
         },
+
         cta: {
-            title: "Ready to impress Dubai?",
-            text: "Partner with us for your premium web project."
+            title: "Ready to stand out in Dubai’s digital landscape?",
+            text: "Let’s create a luxury-driven website that defines your brand in the UAE.",
         },
+
         relatedServices: [
             { title: "App Development", link: "/services/app-development/mobile-app-development" },
             { title: "Branding", link: "/services/branding/brand-identity-design" },

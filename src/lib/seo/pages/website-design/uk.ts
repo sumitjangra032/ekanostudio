@@ -8,8 +8,10 @@ export const data: SeoPageData = {
         targetServiceSlug: "website-design-uiux",
         categorySlug: "web-design-development",
         keywords: ["UI/UX Design", "Responsive Web Design", "Custom Website Design"],
-        description: "Create a stunning, high-performance website that captures your brand's essence and converts visitors into customers.",
+        description:
+            "Create a stunning, high-performance website that captures your brand's essence and converts visitors into customers.",
     },
+
     location: {
         name: "UK",
         slug: "uk",
@@ -20,49 +22,81 @@ export const data: SeoPageData = {
         metaTitleSuffix: "UK | Trusted Partners",
         traits: ["established businesses", "digital transformation", "service sector"],
     },
+
     meta: {
-        title: "Website Design Agency for UK Businesses | London & Beyond",
-        description: "Premium web design services for the UK market. We build GDPR-compliant, accessible, and high-performance websites for British brands.",
+        title: "Website Design Agency UK | London, Manchester & Nationwide",
+        description:
+            "High-performance website design for UK businesses. We create GDPR-compliant, accessible, and conversion-focused websites for British brands.",
         canonical: "/website-design-uk",
     },
+
     content: {
         hero: {
-            title: "Digital Craftsmanship for British Brands",
-            subtitle: "Elegant, functional, and compliant. We design websites that resonate with the UK's sophisticated digital audience.",
+            title: "Premium Website Design for the UK Market",
+            subtitle:
+                "Built on trust, performance, and compliance—websites designed for modern British businesses.",
         },
+
         overview: {
-            title: "Bespoke Web Design for the UK Market",
-            text: "The UK market balances heritage with innovation. Your website needs to reflect quality and trust. ekanostudio provides end-to-end web design solutions tailored for British businesses—from London fintechs to Manchester manufacturing. We prioritize clean aesthetics, strict GDPR compliance, and seamless functionality.",
+            title: "Web Design Built for British Audiences",
+            text:
+                "The UK digital landscape demands credibility, usability, and compliance. ekanostudio designs high-performing websites tailored to British user behaviour, industry standards, and regulatory requirements. From London-based service firms to nationwide enterprises, we craft digital platforms that combine clarity, speed, and long-term scalability.",
         },
+
         whyChoose: {
-            title: "Why UK SMEs Partner With Us",
+            title: "Why UK Businesses Choose ekanostudio",
             points: [
-                { title: "GDPR Compliance", desc: "Built-in privacy controls and cookie management for UK law." },
-                { title: "Modern Aesthetics", desc: "Clean, minimal designs that align with European sensibilities." },
-                { title: "Reliable Support", desc: "Consistent communication and project updates." }
-            ]
+                {
+                    title: "Compliance-First Architecture",
+                    desc: "GDPR-ready builds with structured consent management and data protection by design.",
+                },
+                {
+                    title: "Conversion-Led UX",
+                    desc: "User journeys optimised for British search intent and decision-making behaviour.",
+                },
+                {
+                    title: "Reliable Delivery",
+                    desc: "Clear timelines, structured processes, and dependable post-launch support.",
+                },
+            ],
         },
+
         deliverables: [
-            "GDPR-Ready Framer/Next.js Site",
-            "Cookie Consent Integration",
-            "Accessibility (WCAG 2.1 AA)",
-            "Mobile Responsive Design",
-            "Speed Optimization (Core Web Vitals)",
-            "CMS Training (Sanity/Wordpress)"
+            "Custom UI/UX Design System",
+            "Next.js or Framer Development",
+            "GDPR & Cookie Consent Framework",
+            "WCAG 2.1 AA Accessibility",
+            "Core Web Vitals Optimisation",
+            "CMS Setup & Editorial Training"
         ],
+
         process: {
-            title: "Our UK Design Process",
+            title: "Our UK Website Design Workflow",
             steps: [
-                { title: "Brief", desc: "Understanding your brand position in the UK market." },
-                { title: "Structure", desc: "Wireframing user journeys for British consumers." },
-                { title: "Craft", desc: "Developing with precision and clean code." },
-                { title: "Launch", desc: "Deploying on UK-optimized servers for speed." }
-            ]
+                {
+                    title: "Discovery",
+                    desc: "Understanding your market position, audience, and objectives within the UK.",
+                },
+                {
+                    title: "Planning",
+                    desc: "Structuring content and navigation for clarity and compliance.",
+                },
+                {
+                    title: "Build",
+                    desc: "Developing fast, secure, and maintainable websites with clean architecture.",
+                },
+                {
+                    title: "Release",
+                    desc: "Launching with performance validation, SEO readiness, and quality assurance.",
+                },
+            ],
         },
+
         cta: {
-            title: "Ready to elevate your online presence?",
-            text: "Get a quote for your UK web project today."
+            title: "Planning a new website for the UK market?",
+            text: "Let’s design a platform that supports your growth across the UK.",
         },
+
         relatedServices: [
             { title: "SEO Services", link: "/services/seo/technical-seo" },
             { title: "Content Creation", link: "/services/content-creation/content-writing" },

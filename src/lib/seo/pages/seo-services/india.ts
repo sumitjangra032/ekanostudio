@@ -7,9 +7,18 @@ export const data: SeoPageData = {
         slug: "seo-services",
         targetServiceSlug: "on-page-seo",
         categorySlug: "seo",
-        keywords: ["Search Engine Optimization", "Keyword Ranking", "Organic Traffic Growth"],
-        description: "Boost your search engine rankings and drive organic traffic with our data-driven SEO strategies.",
+        keywords: [
+            "SEO Services India",
+            "SEO Agency India",
+            "National SEO India",
+            "Enterprise SEO India",
+            "Pan India SEO",
+            "Organic Growth India"
+        ],
+        description:
+            "Nationwide SEO services built for India’s scale. Rank for high-intent keywords, grow authority, and capture organic demand across every major Indian market.",
     },
+
     location: {
         name: "India",
         slug: "india",
@@ -20,53 +29,85 @@ export const data: SeoPageData = {
         metaTitleSuffix: "India | #1 Digital Agency",
         traits: ["rapidly growing market", "diverse audience", "digital-first consumers"],
     },
+
     meta: {
-        title: "SEO Services India | Rank #1 with Our Experts",
-        description: "Boost your organic visibility across India. We provide data-driven SEO strategies to rank your business for high-volume keywords and drive growth.",
+        title: "SEO Services India | National Rankings & Organic Growth",
+        description:
+            "Dominate search results across India. We deliver enterprise-grade SEO strategies to rank your business for competitive keywords and drive sustainable organic growth.",
         canonical: "/seo-services-india",
     },
+
     content: {
         hero: {
-            title: "Dominating Search Results Across India",
-            subtitle: "Capture massive traffic. Build lasting authority. Performance-led SEO for the Indian market.",
+            title: "Nationwide SEO for India’s Most Competitive Markets",
+            subtitle:
+                "From metros to tier-2 cities—our SEO strategies help Indian brands capture demand, authority, and long-term organic growth.",
         },
+
         overview: {
-            title: "Strategic SEO for the Modern Indian Brand",
-            text: "With a billion internet users, India's search market is the most competitive in the world. ekanostudio's SEO experts provide end-to-end solutions—from technical architecture to high-authority backlink building—ensuring your brand is the first choice for customers across India.",
+            title: "SEO Built for India’s Scale and Complexity",
+            text:
+                "India’s search ecosystem is vast, multilingual, and fiercely competitive. Ranking nationally requires far more than basic keyword optimization. ekanostudio delivers advanced SEO strategies designed for scale—combining technical excellence, search-intent mapping, and authority-driven content to help Indian brands win across industries, regions, and buyer journeys.",
         },
+
         whyChoose: {
-            title: "Our India SEO Advantage",
+            title: "Why Brands Choose Us for India SEO",
             points: [
-                { title: "Nationwide Ranking", desc: "Expertise in ranking for competitive pan-India keywords." },
-                { title: "Data-Led Insights", desc: "Using advanced tools to uncover high-volume gaps." },
-                { title: "White-Hat Growth", desc: "Focusing on long-term authority and sustainable traffic." }
-            ]
+                {
+                    title: "Pan-India Keyword Strategy",
+                    desc: "Targeting high-volume national keywords while balancing regional intent and competition.",
+                },
+                {
+                    title: "Scalable Technical SEO",
+                    desc: "Optimized architectures for large websites, marketplaces, and multi-location businesses.",
+                },
+                {
+                    title: "Long-Term Authority Building",
+                    desc: "White-hat backlinks, digital PR, and content that compound growth month after month.",
+                },
+            ],
         },
+
         deliverables: [
-            "Technical SEO Infrastructure Fixes",
-            "Aggressive Keyword Research",
-            "Content Scaling Strategy",
-            "High-Authority Backlink Acquisition",
-            "Google Maps & Local Dominance",
-            "Comprehensive Growth Dashboards"
+            "Comprehensive Technical SEO Audit",
+            "National Keyword & Search Intent Mapping",
+            "Scalable Content & Topical Authority Plan",
+            "High-Authority Link Building & Digital PR",
+            "Google Maps & Multi-Location SEO",
+            "Advanced SEO Reporting & Growth Dashboards",
         ],
+
         process: {
-            title: "Our SEO Roadmap",
+            title: "Our India SEO Execution Framework",
             steps: [
-                { title: "Analyze", desc: "Auditing your current search footprint across India." },
-                { title: "Optimize", desc: "Fixing technical barriers and content gaps immediately." },
-                { title: "Build", desc: "Increasing authority through strategic PR and links." },
-                { title: "Scale", desc: "Continuous monitoring and scaling for more keywords." }
-            ]
+                {
+                    title: "Analyze",
+                    desc: "Evaluating your current rankings, competitors, and market opportunities across India.",
+                },
+                {
+                    title: "Optimize",
+                    desc: "Fixing technical issues, improving content depth, and strengthening internal structure.",
+                },
+                {
+                    title: "Build",
+                    desc: "Increasing domain authority through high-quality links and brand mentions.",
+                },
+                {
+                    title: "Scale",
+                    desc: "Expanding keyword coverage and traffic through continuous optimization and testing.",
+                },
+            ],
         },
+
         cta: {
-            title: "Want more organic customers?",
-            text: "Discuss your SEO roadmap with our specialists in India."
+            title: "Ready to scale organic growth across India?",
+            text: "Speak with our SEO specialists and build a national ranking strategy.",
         },
+
         relatedServices: [
             { title: "Digital Marketing", link: "/services/digital-marketing/digital-marketing" },
             { title: "Content Creation", link: "/services/content-creation/content-writing" },
-            { title: "Web development", link: "/services/web-design-development/website-development" }
-        ]
-    }
+            { title: "Web Development", link: "/services/web-design-development/website-development" },
+        ],
+    },
 };

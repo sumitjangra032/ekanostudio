@@ -7,66 +7,107 @@ export const data: SeoPageData = {
         slug: "seo-services",
         targetServiceSlug: "on-page-seo",
         categorySlug: "seo",
-        keywords: ["Search Engine Optimization", "Keyword Ranking", "Organic Traffic Growth"],
-        description: "Boost your search engine rankings and drive organic traffic with our data-driven SEO strategies.",
+        keywords: [
+            "SEO Agentur Österreich",
+            "Suchmaschinenoptimierung Österreich",
+            "Google Ranking verbessern Österreich",
+            "SEO Wien",
+            "SEO Graz",
+            "SEO Linz"
+        ],
+        description:
+            "SEO-Strategien, die Sichtbarkeit schaffen, Rankings verbessern und nachhaltigen organischen Traffic für österreichische Unternehmen aufbauen.",
     },
+
     location: {
         name: "Austria",
         slug: "austria",
         type: "country",
         country: "Austria",
         adjective: "Austrian",
-        context: "in Austria",
+        context: "in Österreich",
         metaTitleSuffix: "Austria | Digital Solutions",
         traits: ["central european business", "quality focused", "innovation"],
     },
+
     meta: {
-        title: "SEO Agentur Österreich | Top-Rankings auf Google.at",
-        description: "Steigern Sie Ihre Sichtbarkeit in Österreich. Wir bieten datengetriebene SEO-Strategien, um Ihre Zielgruppe auf Google.at gezielt zu erreichen.",
+        title: "SEO Agentur Österreich | Google.at Rankings für Ihr Business",
+        description:
+            "Erreichen Sie mehr Kunden auf Google.at. Wir bieten maßgeschneiderte SEO-Services für Unternehmen in Wien, Graz, Linz und ganz Österreich.",
         canonical: "/seo-services-austria",
     },
+
     content: {
         hero: {
-            title: "Dominieren Sie die Suchergebnisse in Österreich",
-            subtitle: "Wir bringen Ihre Website auf die erste Seite von Google.at und verwandeln Klicks in treue Kunden.",
+            title: "Top-Platzierungen auf Google.at für Ihr Unternehmen",
+            subtitle:
+                "Mit präziser Suchmaschinenoptimierung sorgen wir dafür, dass österreichische Kunden Ihre Website zuerst finden.",
         },
+
         overview: {
-            title: "Strategisches SEO für den österreichischen Markt",
-            text: "Um in Österreich online gefunden zu werden, benötigen Sie eine fundierte SEO-Strategie. ekanostudio unterstützt Unternehmen dabei, ihre organische Reichweite zu maximieren. Wir optimieren Ihre Technik, Ihre Inhalte und Ihre lokale Präsenz, damit Sie in Wien, Graz, Linz und ganz Österreich ganz oben stehen.",
+            title: "SEO, abgestimmt auf den österreichischen Markt",
+            text:
+                "Österreich hat ein anspruchsvolles, qualitätsorientiertes Online-Publikum. Um hier sichtbar zu werden, benötigt Ihr Unternehmen eine SEO-Strategie, die lokale Suchanfragen, regionale Suchabsichten und das Nutzerverhalten in Wien, Graz, Linz, Salzburg und Innsbruck versteht. Unser Team optimiert technische Faktoren, Inhalte und Autorität, um Ihre Website langfristig auf Google.at nach vorne zu bringen.",
         },
+
         whyChoose: {
-            title: "Warum SEO mit Uns?",
+            title: "Ihre Vorteile mit Ekanostudio",
             points: [
-                { title: "Local SEO Expertise", desc: "Gewinnen Sie Kunden in Ihrer Region durch gezielte lokale Optimierung." },
-                { title: "Nachhaltiges Linkbuilding", desc: "Aufbau von Autorität durch hochwertige Links aus dem DACH-Raum." },
-                { title: "Data-First Ansatz", desc: "Transparente Analyse von Keywords und Wettbewerbern in Österreich." }
-            ]
+                {
+                    title: "Österreich-spezifische Keyword-Strategien",
+                    desc: "Gezielte Optimierung für Suchanfragen aus dem gesamten DACH-Raum – mit Fokus auf Google.at.",
+                },
+                {
+                    title: "Nachhaltiger Autoritätsaufbau",
+                    desc: "Erprobtes Linkbuilding aus relevanten österreichischen und deutschsprachigen Quellen.",
+                },
+                {
+                    title: "Transparente Daten & Analysen",
+                    desc: "Klar verständliche SEO-Reports, basierend auf österreichischen Suchintentionen.",
+                },
+            ],
         },
+
         deliverables: [
-            "Technisches SEO Audit",
-            "Regionalspezifische Keyword-Recherche",
-            "On-Page & Content Optimierung",
-            "Google Business Profile Management",
-            "Performance SEO & Monitoring",
-            "Monatliche Reporting-Updates"
+            "Detailliertes SEO-Technik-Audit",
+            "Österreich-spezifische Keyword-Analyse",
+            "On-Page Optimierung (Title, Meta, Struktur)",
+            "Content-Optimierung & Topic-Clusters",
+            "Google Business Profile Optimierung",
+            "Laufende SEO-Betreuung & Performance-Tracking",
         ],
+
         process: {
-            title: "Unsere SEO-Methodik",
+            title: "Unser SEO-Prozess für Österreich",
             steps: [
-                { title: "Status-Quo", desc: "Analyse Ihrer aktuellen Performance in Österreich." },
-                { title: "Optimierung", desc: "Anpassung aller relevanten Ranking-Faktoren." },
-                { title: "Autorität", desc: "Stärkung Ihres digitalen Profils im DACH-Markt." },
-                { title: "Wachstum", desc: "Kontinuierliche Steigerung von Traffic und Leads." }
-            ]
+                {
+                    title: "Analyse",
+                    desc: "Bewertung Ihrer Rankings, Website-Struktur und Konkurrenz in Österreich.",
+                },
+                {
+                    title: "Optimierung",
+                    desc: "Verbesserung von Technik, Inhalten und User Experience.",
+                },
+                {
+                    title: "Autorität",
+                    desc: "Aufbau relevanter Backlinks und lokaler Signale.",
+                },
+                {
+                    title: "Skalierung",
+                    desc: "Nachhaltige Steigerung von Keywords, Traffic und qualifizierten Anfragen.",
+                },
+            ],
         },
+
         cta: {
-            title: "Wollen Sie mehr Anfragen über Google?",
-            text: "Fordern Sie jetzt Ihre kostenlose SEO-Analyse an."
+            title: "Mehr Sichtbarkeit auf Google.at?",
+            text: "Fordern Sie Ihre kostenlose SEO-Analyse für Österreich an.",
         },
+
         relatedServices: [
-            { title: "Content Erstellung", link: "/services/content-creation/content-writing" },
+            { title: "Content Creation", link: "/services/content-creation/content-writing" },
             { title: "Digital Marketing", link: "/services/digital-marketing/digital-marketing" },
-            { title: "Webdesign", link: "/services/web-design-development/website-design-uiux" }
-        ]
-    }
+            { title: "Webdesign", link: "/services/web-design-development/website-design-uiux" },
+        ],
+    },
 };

@@ -39,7 +39,7 @@ import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
 import { BOOK_CONSULTATION_CONTENT } from "@/constants/bookConsultation";
 import AnimatedLine from "../animated/AnimatedLine";
-import GlowBeam from "../effects/GlowBeam";
+
 import RandomGradientGlow from "../effects/RandomGradientGlow";
 import { COUNTRIES } from "@/constants/countries";
 import { Label } from "@/components/ui/label";
@@ -272,7 +272,7 @@ export default function ServiceForm() {
                     <div className="lg:col-span-7">
                         {submittedData ? (
                             <div className="relative w-full rounded-xl">
-                                <GlowBeam color={theme.accents.a} />
+
                                 <RandomGradientGlow colorA={theme.accents.a} colorB={theme.accents.b} />
                                 <Card
                                     style={{
@@ -341,7 +341,7 @@ export default function ServiceForm() {
                                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 lg:space-y-8">
                                     {/* Service & Package Card */}
                                     <div className="relative w-full rounded-xl">
-                                        <GlowBeam color={theme.accents.b} />
+
                                         <RandomGradientGlow colorA={theme.accents.b} colorB={theme.accents.a} />
                                         <Card style={{
                                             background: theme.cardBg,
@@ -609,7 +609,7 @@ export default function ServiceForm() {
 
                                     {/* Personal & Contact Details Card */}
                                     <div className="relative w-full rounded-xl">
-                                        <GlowBeam color={theme.accents.a} />
+
                                         <RandomGradientGlow colorA={theme.accents.a} colorB={theme.accents.b} />
                                         <Card style={{
                                             background: theme.cardBg,

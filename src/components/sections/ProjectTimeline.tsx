@@ -14,7 +14,7 @@ import { PROJECT_TIMELINE_CONTENT } from "@/constants/projectTimeline";
 import AnimatedLine from "../animated/AnimatedLine";
 import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "../../constants/theme";
-import GlowBeam from "../effects/GlowBeam";
+
 import AnimateDownloadedSVG from "../animated/AnimateDownloadedSVG";
 
 export default function ProjectTimeline() {
@@ -219,7 +219,7 @@ function TimelinePhase({
             ${isEven ? "md:mr-12" : "md:ml-12"}
           `}
         >
-          <GlowBeam color={theme.accents.a} />
+
 
           {/* Left Accent Line */}
           <div

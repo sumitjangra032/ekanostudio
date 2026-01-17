@@ -8,7 +8,6 @@
    CSS VARIABLES (light + dark)
 --------------------------------------------------------- */
 :root {
-
   /* Your actual fonts (from next/font) */
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -42,16 +41,22 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  /* Custom Theme Variables */
+  --theme-background: #000000;
+  --theme-text: #FFFFFF;
+  --theme-subtext: #A7A7A7;
+  --theme-button-bg: #000000;
+  --theme-accent-a: #FF3C28;
+  --theme-accent-b: #1E78FF;
+  --theme-specialtext: #FF7A45;
 }
 
 /* ---------------------------------------------------------
    BASE STYLES
 --------------------------------------------------------- */
 
-html {
-  /* scroll-behavior: smooth; <- REMOVED. This causes "scroll-back-to-top" animation on navigation. Lenis handles in-page smoothness. */
-}
-
+/* Base styles */
 body {
   font-family: var(--font-inter), sans-serif;
 }
@@ -154,49 +159,7 @@ h6 {
   }
 }
 
-.glow-beam-border {
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  pointer-events: none;
 
-  --border-angle: 0turn;
-  --beam-color: red;
-  /* default, overwritten by props */
-
-  /* the beam only along border */
-  --beam: conic-gradient(from var(--border-angle),
-      transparent 0deg,
-      var(--beam-color) 20deg,
-      transparent 40deg);
-
-  /* Paint beam ONLY in border area */
-  background: var(--beam) border-box;
-
-  /* Mask interior so beam never shows inside the card */
-  -webkit-mask:
-    linear-gradient(#000 0 0) content-box,
-    linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-
-  padding: 1px;
-  /* thickness of border */
-
-  animation: rotateBeam 6s linear infinite;
-}
-
-@keyframes rotateBeam {
-  to {
-    --border-angle: 1turn;
-  }
-}
-
-@property --border-angle {
-  syntax: "<angle>";
-  inherits: true;
-  initial-value: 0turn;
-}
 
 .font-telma {
   font-family: var(--font-telma);
@@ -241,14 +204,7 @@ h6 {
   animation: gradientSlow 20s ease infinite;
 }
 
-
-
-
-@keyframes opacity-animation {
-  0% {
-    opacity: 0;
-  }
-}
+@keyframes opacity-animation {}
 
 @keyframes pulse-animation {
   0% {

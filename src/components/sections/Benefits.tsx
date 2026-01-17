@@ -8,7 +8,7 @@ import AnimatedLine from "../animated/AnimatedLine";
 import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "../../constants/theme";
 import AnimateDownloadedSVG from "../animated/AnimateDownloadedSVG";
-import GlowBeam from "../effects/GlowBeam";
+
 import RandomGradientGlow from "../effects/RandomGradientGlow";
 
 
@@ -74,7 +74,7 @@ export default function Benefits() {
                   border: `1px solid ${theme.text}15`,
                 }}
               >
-                <GlowBeam color={theme.accents.a} />
+
 
                 {/* Main Icon */}
 

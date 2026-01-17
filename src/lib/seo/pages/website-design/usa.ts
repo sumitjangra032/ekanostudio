@@ -8,8 +8,10 @@ export const data: SeoPageData = {
         targetServiceSlug: "website-design-uiux",
         categorySlug: "web-design-development",
         keywords: ["UI/UX Design", "Responsive Web Design", "Custom Website Design"],
-        description: "Create a stunning, high-performance website that captures your brand's essence and converts visitors into customers.",
+        description:
+            "Create a stunning, high-performance website that captures your brand's essence and converts visitors into customers.",
     },
+
     location: {
         name: "USA",
         slug: "usa",
@@ -20,53 +22,85 @@ export const data: SeoPageData = {
         metaTitleSuffix: "USA | Global Agency",
         traits: ["competitive market", "innovation leaders", "high-value customers"],
     },
+
     meta: {
-        title: "Top Rated Website Design Agency for USA | US-Standard UI/UX",
-        description: "We deliver Silicon Valley quality web design at competitive rates. Custom, high-performance websites tailored for the rigorous US market.",
+        title: "Website Design Agency USA | Premium UI/UX for American Brands",
+        description:
+            "High-performance, ADA-compliant websites built for the American market. Silicon-Valley-grade UI/UX, fast delivery, and enterprise-ready architecture.",
         canonical: "/website-design-usa",
     },
+
     content: {
         hero: {
-            title: "World-Class Web Design for US Brands",
-            subtitle: "Merging American innovation standards with global efficiency. We build websites that compete on the global stage.",
+            title: "World-Class Website Design for American Businesses",
+            subtitle:
+                "Combining US-standard innovation with global execution speed. We build digital experiences that stand out across the United States.",
         },
+
         overview: {
-            title: "Digital Excellence for the American Market",
-            text: "The US digital landscape is the most competitive in the world. Good enough isn't enough. ekanostudio provides American businesses with cutting-edge web design that exceeds user expectations. We understand US accessibility laws (ADA), privacy standards (CCPA), and the high aesthetic bar set by top tech firms.",
+            title: "High-Performance Web Design for the US Market",
+            text:
+                "The United States has the most demanding digital landscape in the world. Your website needs to meet high standards for accessibility, performance, aesthetics, and compliance. ekanostudio builds enterprise-grade websites tailored for American audiences—optimized for ADA accessibility, CCPA privacy compliance, and the design expectations of top US brands.",
         },
+
         whyChoose: {
-            title: "Why US Companies Partner With Us",
+            title: "Why US Companies Choose Us",
             points: [
-                { title: "Time Zone Agility", desc: "We work while you sleep, ensuring rapid turnaround times." },
-                { title: "US-Standard Quality", desc: "Code quality and design fidelity that matches Silicon Valley agencies." },
-                { title: "Cost Efficiency", desc: "Premium output without the NYC/SF agency price tag." }
-            ]
+                {
+                    title: "Silicon Valley Quality",
+                    desc: "Clean architecture, pixel-perfect UI, and performance that matches leading US tech firms.",
+                },
+                {
+                    title: "Time Zone Friendly",
+                    desc: "Flexible overlap with EST, CST, and PST for smooth communication.",
+                },
+                {
+                    title: "Cost-Efficient Excellence",
+                    desc: "Agency-level quality without the high overhead of NYC/SF studios.",
+                },
+            ],
         },
+
         deliverables: [
-            "ADA Compliant Design",
-            "Next.js / React Framework",
-            "CCPA/GDPR Ready Setup",
-            "Mobile-First Architecture",
-            "High-Fidelity Prototyping",
-            "Speed Index < 1.5s"
+            "ADA-Compliant Design Systems",
+            "Next.js / React Development",
+            "CCPA & GDPR Ready Architecture",
+            "Mobile-First Responsive Layouts",
+            "High-Fidelity Figma Prototypes",
+            "Core Web Vitals Optimization"
         ],
+
         process: {
-            title: "Our Cross-Border Workflow",
+            title: "Our US-Focused Workflow",
             steps: [
-                { title: "Sync", desc: "Kickoff calls aligned with your US time zone (EST/PST/CST)." },
-                { title: "Design", desc: "Iterative prototyping with Loom updates for async feedback." },
-                { title: "Build", desc: "Agile development sprints with weekly demos." },
-                { title: "Scale", desc: "Infrastructure setup on AWS/Vercel for US traffic handling." }
-            ]
+                {
+                    title: "Sync",
+                    desc: "Smooth onboarding with scheduled calls matching US time zones.",
+                },
+                {
+                    title: "Design",
+                    desc: "Iterative, high-fidelity prototyping with async feedback loops.",
+                },
+                {
+                    title: "Build",
+                    desc: "Agile, sprint-based development ensuring quality and speed.",
+                },
+                {
+                    title: "Scale",
+                    desc: "Optimized deployment on AWS or Vercel for fast US nationwide performance.",
+                },
+            ],
         },
+
         cta: {
-            title: "Looking for top-tier talent?",
-            text: "Get a US-standard website built by global experts."
+            title: "Need a high-performance American website?",
+            text: "Get a world-class website built for the US market.",
         },
+
         relatedServices: [
             { title: "App Development", link: "/services/app-development/mobile-app-development" },
-            { title: "SaaS Design", link: "/services/web-design-development/saas-development" },
-            { title: "SEO", link: "/services/seo/technical-seo" }
+            { title: "SaaS Development", link: "/services/web-design-development/saas-development" },
+            { title: "SEO Services", link: "/services/seo/technical-seo" }
         ]
     }
 };

@@ -1,10 +1,6 @@
-"use client"
-
-
-
 export default function HedgeBackground() {
     return (
-        <div className="fixed inset-0 z-[-1] overflow-hidden bg-[#030503] pointer-events-none">
+        <div className="fixed inset-0 z-[-1] overflow-hidden bg-[#030503] pointer-events-none" aria-hidden="true">
             {/* Abstract Gradient Orbs for depth */}
             <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-emerald-950/30 blur-[100px]" />
             <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] rounded-full bg-teal-950/20 blur-[100px]" />
@@ -53,3 +49,4 @@ export default function HedgeBackground() {
         </div>
     )
 }
+

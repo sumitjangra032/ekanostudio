@@ -1,46 +1,37 @@
-"use client";
-
-import { motion } from "framer-motion";
 import AnimatedLine from "../animated/AnimatedLine";
 import { KEY_TAKEWAYS_CONTENT } from "@/constants/keyTakeaways";
-
-import { useTheme } from "../providers/ThemeProvider";
-import { THEMES } from "../../constants/theme";
+import { THEMES, currentTheme } from "../../constants/theme";
 import AnimatedRotateButton from "../animated/AnimatedRotateButton";
 import { GLOBAL_CTA_CONTENT } from "@/constants/global";
-import GlowBeam from "../effects/GlowBeam";
 
 export default function KeyTakeaways() {
-  const { themeName } = useTheme();
-  const theme = THEMES[themeName];
-
-  const repeat = (arr: any[]) => [...arr, ...arr, ...arr];
+  const theme = THEMES[currentTheme as keyof typeof THEMES];
+  const takeawaysList = [...KEY_TAKEWAYS_CONTENT.takeways, ...KEY_TAKEWAYS_CONTENT.takeways, ...KEY_TAKEWAYS_CONTENT.takeways];
 
   return (
     <section
       id="key-takeaways"
       className="relative w-full py-32 px-6 overflow-hidden"
       style={{
-        backgroundColor: theme.background,
+        backgroundColor: "var(--theme-background)",
       }}
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-top">
-
         {/* LEFT SIDE */}
         <div className="space-y-6 relative">
           {/* Tag with pulse */}
           <div
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full"
             style={{
-              background: `${theme.accents.a}08`,
-              border: `1px solid ${theme.accents.a}20`,
+              background: "rgba(255, 60, 40, 0.03)",
+              border: "1px solid rgba(255, 60, 40, 0.15)",
               backdropFilter: "blur(4px)",
             }}
           >
-            <div className="pulse red" />
+            <div className="pulse red" aria-hidden="true" />
             <span
               className="text-xs font-medium tracking-wide"
-              style={{ color: theme.accents.a }}
+              style={{ color: "var(--theme-accent-a)" }}
             >
               {KEY_TAKEWAYS_CONTENT.tag.label}
             </span>
@@ -49,7 +40,7 @@ export default function KeyTakeaways() {
           {/* Title with gradient */}
           <h2
             className="text-[32px] md:text-[42px] font-bold leading-tight"
-            style={{ color: theme.text }}
+            style={{ color: "var(--theme-text)" }}
           >
             <AnimatedLine
               text={KEY_TAKEWAYS_CONTENT.title}
@@ -65,12 +56,12 @@ export default function KeyTakeaways() {
           {/* Description */}
           <div
             className="text-md max-w-md leading-relaxed"
-            style={{ color: theme.subtext }}
+            style={{ color: "var(--theme-subtext)" }}
           >
             <AnimatedLine
               text={KEY_TAKEWAYS_CONTENT.description}
               delay={0.15}
-              textColor={theme.subtext}
+              textColor="var(--theme-subtext)"
             />
           </div>
 
@@ -86,27 +77,21 @@ export default function KeyTakeaways() {
         <div
           className="relative h-[520px] overflow-hidden pt-6"
           style={{
-            maskImage:
-              "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)",
-            WebkitMaskImage:
-              "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)",
+            maskImage: "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)",
+            WebkitMaskImage: "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)",
           }}
         >
-          <GlowBeam color={theme.accents.a} />
-
           {/* Scrolling List */}
-          <motion.div
+          <div
             className="space-y-6"
-            animate={{ y: ["0%", "-33.33%"] }}
-            transition={{
-              duration: 14,
-              ease: "linear",
-              repeat: Infinity,
+            style={{
+              animation: "marquee-vertical 20s linear infinite",
+              display: "flex",
+              flexDirection: "column",
             }}
           >
-            {repeat(KEY_TAKEWAYS_CONTENT.takeways).map((item, index) => {
+            {takeawaysList.map((item, index) => {
               const Icon = item.icon;
-
               return (
                 <div
                   key={index}
@@ -119,6 +104,7 @@ export default function KeyTakeaways() {
                     border border-white/10
                     backdrop-blur-xl
                     overflow-hidden
+                    shrink-0
                   "
                 >
                   {/* Left accent */}
@@ -128,7 +114,7 @@ export default function KeyTakeaways() {
                       background: `linear-gradient(
                         to bottom,
                         transparent,
-                        ${theme.accents.a},
+                        var(--theme-accent-a),
                         transparent
                       )`,
                     }}
@@ -136,7 +122,7 @@ export default function KeyTakeaways() {
 
                   <span
                     className="font-medium"
-                    style={{ color: theme.text }}
+                    style={{ color: "var(--theme-text)" }}
                   >
                     {item.text}
                   </span>
@@ -144,14 +130,21 @@ export default function KeyTakeaways() {
                   <Icon
                     size={24}
                     strokeWidth={2.2}
-                    style={{ color: theme.accents.a }}
+                    style={{ color: "var(--theme-accent-a)" }}
                   />
                 </div>
               );
             })}
-          </motion.div>
+          </div>
         </div>
       </div>
+      <style>{`
+        @keyframes marquee-vertical {
+          0% { transform: translateY(0); }
+          100% { transform: translateY(-33.33%); }
+        }
+      `}</style>
     </section>
   );
 }
+
