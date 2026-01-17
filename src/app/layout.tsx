@@ -66,19 +66,15 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
-        {/* Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-0T7Z4PX35H"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
+ 
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0T7Z4PX35H"></script>
+          <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
+          
             gtag('config', 'G-0T7Z4PX35H');
-          `}
-        </Script>
+         </script>
 
         {/* Schema.org - LocalBusiness */}
         <Script
