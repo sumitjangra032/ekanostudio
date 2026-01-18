@@ -1,3 +1,5 @@
+"use client";
+
 import AnimatedLine from "../animated/AnimatedLine";
 import { REVIEW_CONTENT } from "@/constants/reviews";
 import { THEMES, currentTheme } from "../../constants/theme";

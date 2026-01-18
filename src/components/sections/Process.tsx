@@ -1,3 +1,5 @@
+"use client";
+
 import { PROCESS_CONTENT } from "@/constants/process";
 import AnimatedLine from "../animated/AnimatedLine";
 import { THEMES, currentTheme } from "../../constants/theme";

@@ -1,8 +1,8 @@
 export const NAV_LINKS = [
   { label: "Home", href: "/", megaMenu: false },
   { label: "Services", href: "/services", megaMenu: true },
-  { label: "Blogs", href: "#blogs", megaMenu: true },
-  { label: "Legal", href: "/privacy-policy", megaMenu: true },
+  { label: "Blogs", href: "/blogs", megaMenu: true },
+  { label: "Legal", href: "/legal", megaMenu: true },
   { label: "Portfolio", href: "/portfolio", megaMenu: false },
   // { label: "Pricing", href: "#pricing", megaMenu: false },
   { label: "Careers", href: "/careers", megaMenu: false },

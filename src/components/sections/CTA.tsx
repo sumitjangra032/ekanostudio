@@ -1,9 +1,12 @@
+"use client";
+
 import { CTA_CONTENT } from "@/constants/cta";
 import AnimatedLine from "../animated/AnimatedLine";
 import Image from "next/image";
 import { BRAND, GLOBAL_CTA_CONTENT, BRAND_LOGO } from "@/constants/global";
 import { THEMES, currentTheme } from "../../constants/theme";
 import AnimatedRotateButton from "../animated/AnimatedRotateButton";
+
 import Link from "next/link";
 
 export default function CTA() {

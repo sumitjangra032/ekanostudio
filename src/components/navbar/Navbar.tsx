@@ -14,7 +14,6 @@ import { useState, useEffect } from "react";
 import AnimatedRotateButton from "../animated/AnimatedRotateButton";
 import ButtonVibrator from "../animated/ButtonVibrator";
 
-import { AnimatePresence, m } from "framer-motion";
 import { ChevronDownIcon, CloseIcon, MenuIcon } from "../icons/LocalIcons";
 import Image from "next/image";
 
@@ -113,13 +112,12 @@ export default function Navbar() {
                 </Link>
 
                 {link.megaMenu && (
-                  <m.div
-                    animate={{ rotate: isOpen ? 180 : 0 }}
-                    transition={{ duration: 0.25, ease: "easeInOut" }}
-                    className="flex items-center"
+                  <div
+                    className={`flex items-center transition-transform duration-250 ease-in-out ${isOpen ? "rotate-180" : "rotate-0"}`}
+                    style={{ color: theme.text }}
                   >
-                    <ChevronDownIcon size={15} className="" />
-                  </m.div>
+                    <ChevronDownIcon size={15} />
+                  </div>
                 )}
               </div>
             );
@@ -147,52 +145,49 @@ export default function Navbar() {
         </button>
       </nav>
 
-      <AnimatePresence>
-        {mobileOpen && (
-          <m.div
-            initial={{ opacity: 100, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.25 }}
-            className="md:hidden fixed inset-0 z-[60] "
-          >
-            <div
-              className="absolute inset-0  "
-              onClick={() => setMobileOpen(false)}
+      {/* Mobile Menu - CSS Transition */}
+      <div
+        className={`
+          md:hidden fixed inset-0 z-[60] transition-all duration-300 ease-in-out
+          ${mobileOpen ? "opacity-100 visible pointer-events-auto" : "opacity-0 invisible pointer-events-none"}
+        `}
+      >
+        <div
+          className="absolute inset-0"
+          onClick={() => setMobileOpen(false)}
+        />
+        <div
+          className={`
+            relative mx-auto mt-20 w-[92%] rounded-3xl p-6 transition-transform duration-300 ease-out
+            ${mobileOpen ? "translate-y-0" : "-translate-y-5"}
+          `}
+          style={{ background: "black" }}
+        >
+          <div className="flex flex-col gap-4">
+            {NAV_LINKS.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                onClick={() => setMobileOpen(false)}
+                className="text-sm font-medium flex items-center justify-between border-b border-[rgba(255,255,255,0.1)] pb-1"
+                style={{ color: theme.text }}
+              >
+                <span>{link.label}</span>
+                <ArrowUpRight size={14} />
+              </Link>
+            ))}
+          </div>
+
+          <div className="mt-6">
+            <AnimatedRotateButton
+              text="Book a Call"
+              href={GLOBAL_CTA_CONTENT.getStarted.href}
+              color={theme.buttonBg}
+              accent={theme.accents}
             />
-            <div
-              className="relative mx-auto mt-20 w-[92%] rounded-3xl p-6"
-              style={{ background: "black" }}
-            >
-
-              <div className="flex flex-col gap-4  ">
-
-                {NAV_LINKS.map((link) => (
-                  <Link
-                    key={link.label}
-                    href={link.href}
-                    onClick={() => setMobileOpen(false)}
-                    className="text-sm font-medium flex items-center justify-between border-b border-[rgba(255,255,255,0.1)] pb-1"
-                    style={{ color: theme.text }}
-                  >
-                    <span>{link.label}</span>
-                    <ArrowUpRight size={14} />
-                  </Link>
-                ))}
-              </div>
-
-              <div className="mt-6">
-                <AnimatedRotateButton
-                  text="Book a Call"
-                  href={GLOBAL_CTA_CONTENT.getStarted.href}
-                  color={theme.buttonBg}
-                  accent={theme.accents}
-                />
-              </div>
-            </div>
-          </m.div>
-        )}
-      </AnimatePresence>
+          </div>
+        </div>
+      </div>
 
       <NavbarServices menuKey={openMenu} setMenuKey={setOpenMenu} />
       <NavbarLegal menuKey={openMenu} setMenuKey={setOpenMenu} />

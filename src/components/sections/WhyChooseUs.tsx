@@ -1,3 +1,5 @@
+"use client";
+
 import MarqueeScroller from "../commons/MarqueeScroller";
 import { WHY_US_CONTENT } from "@/constants/whyChooseUs";
 import { THEMES, currentTheme } from "../../constants/theme";

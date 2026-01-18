@@ -1,3 +1,5 @@
+"use client";
+
 import { PRICING_CONTENT } from "@/constants/pricing";
 import AnimatedLine from "../animated/AnimatedLine";
 import { THEMES, currentTheme } from "../../constants/theme";

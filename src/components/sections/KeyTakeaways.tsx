@@ -1,3 +1,5 @@
+"use client";
+
 import AnimatedLine from "../animated/AnimatedLine";
 import { KEY_TAKEWAYS_CONTENT } from "@/constants/keyTakeaways";
 import { THEMES, currentTheme } from "../../constants/theme";

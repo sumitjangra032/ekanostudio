@@ -137,11 +137,19 @@ export default function SitemapPageClient() {
                         <div
                             key={idx}
                             /* Cleaned up className to prevent hydration mismatch */
-                            className="relative p-8 rounded-3xl bg-black/40 border border-white/10 backdrop-blur-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
+                            className="relative p-8 rounded-3xl bg-black/40 border border-white/10 backdrop-blur-xl overflow-hidden transition-all duration-300 hover:-translate-y-1"
                         >
                             {/* Left Accent Line */}
                             <div
                                 className="absolute left-0 top-0 h-full w-[2px]"
+                                style={{
+                                    background: `linear-gradient(
+                                        to bottom,
+                                        transparent,
+                                        ${theme.accents.a},
+                                        transparent
+                                    )`,
+                                }}
                             />
 
                             <h2

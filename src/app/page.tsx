@@ -1,17 +1,17 @@
 import Hero from "@/components/sections/Hero";
 import { Metadata } from "next";
-import dynamic from "next/dynamic";
-
-const WhyChooseUs = dynamic(() => import("@/components/sections/WhyChooseUs"));
-const Process = dynamic(() => import("@/components/sections/Process"));
-const CoreExpertise = dynamic(() => import("@/components/sections/CoreExpertise"));
-const ProjectTimeline = dynamic(() => import("@/components/sections/ProjectTimeline"));
-const Comparison = dynamic(() => import("@/components/sections/Comparison"));
-const Pricing = dynamic(() => import("@/components/sections/Pricing"));
-const FAQ = dynamic(() => import("@/components/sections/FAQ"));
-const Reviews = dynamic(() => import("@/components/sections/Reviews"));
-const KeyTakeaways = dynamic(() => import("@/components/sections/KeyTakeaways"));
-const CTA = dynamic(() => import("@/components/sections/CTA"));
+import {
+  WhyChooseUs,
+  Process,
+  CoreExpertise,
+  ProjectTimeline,
+  Comparison,
+  Pricing,
+  FAQ,
+  Reviews,
+  KeyTakeaways,
+  CTA
+} from "@/components/LazySections";
 
 const SITE_URL = "https://www.ekanostudio.com";
 

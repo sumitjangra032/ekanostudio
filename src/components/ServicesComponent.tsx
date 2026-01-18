@@ -100,7 +100,7 @@ export default function ServicesComponent() {
           className="max-w-xl mx-auto relative"
         >
           <SearchIcon
-            className="absolute left-4 top-1/2 -translate-y-1/2"
+            className="absolute left-4 top-1/2 -translate-y-1/2 z-10"
             size={20}
             style={{ color: theme.subtext }}
           />

@@ -1,4 +1,7 @@
+"use client";
+
 import { Check, X } from "lucide-react";
+
 import { COMPARISON_CONTENT } from "@/constants/comparison";
 import AnimatedLine from "../animated/AnimatedLine";
 import { ScrollArea } from "@/components/ui/scroll-area";

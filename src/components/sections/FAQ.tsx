@@ -1,3 +1,5 @@
+"use client";
+
 import { FAQ_CONTENT } from "@/constants/faq";
 import AnimatedLine from "../animated/AnimatedLine";
 import { THEMES, currentTheme } from "../../constants/theme";
