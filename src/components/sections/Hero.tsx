@@ -1,14 +1,8 @@
-import dynamic from "next/dynamic";
-
 import { HERO_CONTENT } from "@/constants/hero";
 import { THEMES, currentTheme } from "../../constants/theme";
 import AnimatedRotateButton from "../animated/AnimatedRotateButton";
 import { GLOBAL_CTA_CONTENT } from "@/constants/global";
-
-// Lazy load heavy visual components
-const FloatingParticles = dynamic(() => import("../animated/FloatingParticles"), {
-  ssr: false,
-});
+import HeroParticles from "./HeroParticles";
 
 export default function Hero() {
   const theme = THEMES[currentTheme as keyof typeof THEMES];
@@ -89,7 +83,7 @@ export default function Hero() {
       </div>
 
       {/* Floating Particles - Lazy Loaded */}
-      <FloatingParticles count={20} />
+      <HeroParticles />
 
       <div className="relative max-w-7xl mx-auto w-full text-center">
         {/* CSS Animation Wrapper instead of HeroEntrance JS */}
