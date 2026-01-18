@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import { easeInOut, motion, useInView, Transition } from "framer-motion";
+import { easeInOut, m, useInView, Transition } from "framer-motion";
 
 export default function AnimateDownloadedSVG({
   src,
@@ -57,7 +57,7 @@ export default function AnimateDownloadedSVG({
 
       doc.querySelectorAll("path").forEach((p, i) =>
         elements.push(
-          <motion.path
+          <m.path
             key={"path" + i}
             d={attr(p, "d", "")}
             fill={attr(p, "fill", "none")}
@@ -70,7 +70,7 @@ export default function AnimateDownloadedSVG({
 
       doc.querySelectorAll("circle").forEach((c, i) =>
         elements.push(
-          <motion.circle
+          <m.circle
             key={"circle" + i}
             cx={attr(c, "cx")}
             cy={attr(c, "cy")}
@@ -85,7 +85,7 @@ export default function AnimateDownloadedSVG({
 
       doc.querySelectorAll("rect").forEach((r, i) =>
         elements.push(
-          <motion.rect
+          <m.rect
             key={"rect" + i}
             x={attr(r, "x")}
             y={attr(r, "y")}
@@ -103,7 +103,7 @@ export default function AnimateDownloadedSVG({
 
       doc.querySelectorAll("line").forEach((l, i) =>
         elements.push(
-          <motion.line
+          <m.line
             key={"line" + i}
             x1={attr(l, "x1")}
             y1={attr(l, "y1")}
@@ -118,7 +118,7 @@ export default function AnimateDownloadedSVG({
 
       doc.querySelectorAll("polygon").forEach((p, i) =>
         elements.push(
-          <motion.polygon
+          <m.polygon
             key={"polygon" + i}
             points={attr(p, "points", "")}
             fill={attr(p, "fill", "none")}
@@ -131,7 +131,7 @@ export default function AnimateDownloadedSVG({
 
       doc.querySelectorAll("polyline").forEach((p, i) =>
         elements.push(
-          <motion.polyline
+          <m.polyline
             key={"polyline" + i}
             points={attr(p, "points", "")}
             fill={attr(p, "fill", "none")}

@@ -1,5 +1,5 @@
 "use client";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { m, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 import { useTheme } from "../providers/ThemeProvider";
@@ -29,7 +29,7 @@ export default function ServiceDeliverables({ data }: { data: any }) {
         >
             <div className="max-w-5xl mx-auto">
 
-                <motion.div
+                <m.div
                     className="text-center"
                     style={{ y: yText }}
                 >
@@ -68,8 +68,8 @@ export default function ServiceDeliverables({ data }: { data: any }) {
                             }}
                         />
                     </h2>
-                </motion.div>
-                <motion.div
+                </m.div>
+                <m.div
                     className="grid md:grid-cols-2 gap-6"
                     style={{ y: yList }}
                 >
@@ -121,7 +121,7 @@ export default function ServiceDeliverables({ data }: { data: any }) {
                             </div>
                         </div>
                     ))}
-                </motion.div>
+                </m.div>
             </div>
         </section>
     );

@@ -1,11 +1,12 @@
 "use client";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { m, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
 import AnimatedLine from "../animated/AnimatedLine";
 import AnimatedRotateButton from "../animated/AnimatedRotateButton";
-import { BRAND, GLOBAL_CTA_CONTENT } from "@/constants/global";
+import Image from "next/image";
+import { BRAND, GLOBAL_CTA_CONTENT, BRAND_LOGO } from "@/constants/global";
 import Link from "next/link";
 
 export default function ServiceCta({ data }: { data: any }) {
@@ -29,13 +30,18 @@ export default function ServiceCta({ data }: { data: any }) {
             className="py-10 px-6 text-center"
         >
             <div className="max-w-3xl mx-auto">
-                <motion.div style={{ y: yText }}>
+                <m.div style={{ y: yText }}>
                     <Link
                         href="/"
-                        className="flex items-center justify-center font-bold text-3xl mb-6"
-                        style={{ color: theme.text }}
+                        className="flex items-center justify-center mb-6"
                     >
-                        {BRAND.name}
+                        <Image
+                            src={BRAND_LOGO.src}
+                            alt={BRAND.name}
+                            width={BRAND_LOGO.centered.width}
+                            height={BRAND_LOGO.centered.height}
+                            className={BRAND_LOGO.centered.className}
+                        />
                     </Link>
 
                     <h2
@@ -69,7 +75,7 @@ export default function ServiceCta({ data }: { data: any }) {
                             accent={theme.accents}
                         />
                     </div>
-                </motion.div>
+                </m.div>
 
             </div>
         </section>

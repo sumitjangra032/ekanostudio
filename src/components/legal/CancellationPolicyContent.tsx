@@ -3,7 +3,7 @@
 import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
 import { CANCELLATION_POLICY_CONTENT } from "@/constants/cancellationPolicy";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import AnimatedLine from "../animated/AnimatedLine";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
@@ -29,7 +29,7 @@ export default function CancellationPolicyContent() {
 
                 {/* Header */}
                 <div className="space-y-6 text-center">
-                    <motion.div
+                    <m.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         className="inline-block"
@@ -43,11 +43,11 @@ export default function CancellationPolicyContent() {
                         <p className="text-sm font-medium uppercase tracking-widest opacity-60" style={{ color: theme.subtext }}>
                             Last Updated: {CANCELLATION_POLICY_CONTENT.lastUpdated}
                         </p>
-                    </motion.div>
+                    </m.div>
                 </div>
 
                 {/* Introduction */}
-                <motion.div
+                <m.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.1 }}
@@ -61,12 +61,12 @@ export default function CancellationPolicyContent() {
                             {CANCELLATION_POLICY_CONTENT.introduction}
                         </CardContent>
                     </Card>
-                </motion.div>
+                </m.div>
 
                 {/* Sections */}
                 <div className="space-y-8">
                     {CANCELLATION_POLICY_CONTENT.sections.map((section, index) => (
-                        <motion.div
+                        <m.div
                             key={index}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -94,12 +94,12 @@ export default function CancellationPolicyContent() {
                                     </CardContent>
                                 </Card>
                             </div>
-                        </motion.div>
+                        </m.div>
                     ))}
                 </div>
 
                 {/* Footer/Contact CTA */}
-                <motion.div
+                <m.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
@@ -108,7 +108,7 @@ export default function CancellationPolicyContent() {
                     <p className="text-sm opacity-50" style={{ color: theme.subtext }}>
                         © {new Date().getFullYear()} ekanostudio. All rights reserved.
                     </p>
-                </motion.div>
+                </m.div>
 
             </div>
         </div>

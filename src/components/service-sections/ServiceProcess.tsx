@@ -1,7 +1,7 @@
 "use client";
 
 import {
-    motion,
+    m,
     useInView,
     useScroll,
     useSpring,
@@ -112,7 +112,7 @@ export default function ServiceProcess({ data }: { data: any }) {
             <FloatingParticles count={15} />
             <div className="max-w-6xl mx-auto">
 
-                <motion.div
+                <m.div
                     className="flex flex-col items-center text-center"
                     style={{ y: yText }}
                 >
@@ -151,9 +151,9 @@ export default function ServiceProcess({ data }: { data: any }) {
                             }}
                         />
                     </h2>
-                </motion.div>
+                </m.div>
 
-                <motion.div
+                <m.div
                     ref={containerRef}
                     className="relative mt-20"
                     style={{ y: yTimeline }}
@@ -167,7 +167,7 @@ export default function ServiceProcess({ data }: { data: any }) {
                         }}
                     />
 
-                    <motion.div
+                    <m.div
                         className="absolute left-4 md:left-[50%] w-[3px] -translate-x-1/2 origin-top rounded-full"
                         style={{
                             top: lineStyle.top,
@@ -191,7 +191,7 @@ export default function ServiceProcess({ data }: { data: any }) {
                             />
                         ))}
                     </div>
-                </motion.div>
+                </m.div>
             </div>
         </section>
     );
@@ -230,7 +230,7 @@ function ProcessStep({
     }, [onDotMount]);
 
     return (
-        <motion.div
+        <m.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-10% 0px" }}
@@ -238,7 +238,7 @@ function ProcessStep({
             className={`relative flex flex-col md:flex-row gap-8 md:gap-0 ${isEven ? "md:flex-row-reverse" : ""}`}
         >
             {/* Timeline Dot */}
-            <motion.div
+            <m.div
                 ref={dotRef}
                 className="absolute left-4 md:left-[50%] top-1/2 w-4 h-4 rounded-full -translate-x-1/2 -translate-y-1/2 z-10"
                 initial={{
@@ -352,6 +352,6 @@ function ProcessStep({
                     </div>
                 </div>
             </div>
-        </motion.div>
+        </m.div>
     );
 }

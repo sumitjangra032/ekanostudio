@@ -1,5 +1,5 @@
 "use client";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { m, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
@@ -28,7 +28,7 @@ export default function ServiceWhoItsFor({ data }: { data: any }) {
             className="py-20 px-6"
         >
             <div className="max-w-4xl mx-auto">
-                <motion.div
+                <m.div
                     className="text-center"
                     style={{ y: yText }}
                 >
@@ -68,14 +68,14 @@ export default function ServiceWhoItsFor({ data }: { data: any }) {
                             }}
                         />
                     </h2>
-                </motion.div>
+                </m.div>
 
-                <motion.div
+                <m.div
                     className="grid md:grid-cols-2 gap-6"
                     style={{ y: yCards }}
                 >
                     {data.items.map((item: string, i: number) => (
-                        <motion.div
+                        <m.div
                             key={i}
                             className="
                                 group relative flex items-start gap-4 p-6 rounded-2xl
@@ -118,9 +118,9 @@ export default function ServiceWhoItsFor({ data }: { data: any }) {
                             >
                                 <AnimatedLine text={item} delay={0.1} />
                             </div>
-                        </motion.div>
+                        </m.div>
                     ))}
-                </motion.div>
+                </m.div>
             </div>
         </section>
     );

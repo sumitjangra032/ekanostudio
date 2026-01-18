@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { m, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 import { useTheme } from "../providers/ThemeProvider";
@@ -62,7 +62,7 @@ export default function ServiceMetrics({ data }: { data: any }) {
 
             <div className="max-w-7xl mx-auto w-full relative z-10">
                 {/* Header Section - Perfectly Centered */}
-                <motion.div
+                <m.div
                     className="text-center mb-12 md:mb-16 px-4"
                     style={{ y: yText }}
                 >
@@ -107,15 +107,15 @@ export default function ServiceMetrics({ data }: { data: any }) {
                     >
                         <AnimatedLine text={data.subheading} />
                     </div>
-                </motion.div>
+                </m.div>
 
                 {/* Cards Grid - Perfectly Centered */}
-                <motion.div
+                <m.div
                     className={`grid ${getGridConfig()} gap-4 md:gap-6 lg:gap-8 justify-items-center`}
                     style={{ y: yCards }}
                 >
                     {data.items.map((item: any, i: number) => (
-                        <motion.div
+                        <m.div
                             key={i}
                             className="
                                 group relative p-5 md:p-7 lg:p-8 rounded-2xl md:rounded-3xl
@@ -274,9 +274,9 @@ export default function ServiceMetrics({ data }: { data: any }) {
                                     background: `linear-gradient(90deg, transparent, ${theme.accents.a}, transparent)`,
                                 }}
                             />
-                        </motion.div>
+                        </m.div>
                     ))}
-                </motion.div>
+                </m.div>
 
                 {/* Decorative elements */}
                 <div className="absolute top-10 left-1/2 -translate-x-1/2 w-64 h-64 rounded-full blur-3xl opacity-10 pointer-events-none"

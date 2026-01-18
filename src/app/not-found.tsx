@@ -3,7 +3,7 @@
 import { useTheme } from "@/components/providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
 import AnimatedRotateButton from "@/components/animated/AnimatedRotateButton";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 export default function NotFound() {
     const { themeName } = useTheme();
@@ -20,7 +20,7 @@ export default function NotFound() {
                 style={{ background: theme.accents.a }}
             />
 
-            <motion.h1
+            <m.h1
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 0.05, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
@@ -28,9 +28,9 @@ export default function NotFound() {
                 style={{ color: theme.text }}
             >
                 404
-            </motion.h1>
+            </m.h1>
 
-            <motion.div
+            <m.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
@@ -52,7 +52,7 @@ export default function NotFound() {
                         accent={theme.accents}
                     />
                 </div>
-            </motion.div>
+            </m.div>
         </div>
     );
 }

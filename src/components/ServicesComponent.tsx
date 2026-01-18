@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo, useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { m, useInView } from "framer-motion";
 import { SERVICES_CONTENT } from "@/constants/services";
 import { ALL_SERVICES_CONTENT } from "@/constants/allServices";
 import { useTheme } from "@/components/providers/ThemeProvider";
@@ -92,7 +92,7 @@ export default function ServicesComponent() {
         </div>
 
         {/* SEARCH */}
-        <motion.div
+        <m.div
           ref={searchRef}
           initial={{ opacity: 0, y: 40 }}
           animate={searchInView ? { opacity: 1, y: 0 } : {}}
@@ -118,10 +118,10 @@ export default function ServicesComponent() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
-        </motion.div>
+        </m.div>
 
         {/* FILTER TAGS */}
-        <motion.div
+        <m.div
           ref={tagsRef}
           initial={{ opacity: 0, y: 40 }}
           animate={tagsInView ? { opacity: 1, y: 0 } : {}}
@@ -147,10 +147,10 @@ export default function ServicesComponent() {
               </button>
             );
           })}
-        </motion.div>
+        </m.div>
 
         {/* SERVICE CARDS */}
-        <motion.div
+        <m.div
           ref={cardsRef}
           initial={{ opacity: 0, y: 40 }}
           animate={cardsInView ? { opacity: 1, y: 0 } : {}}
@@ -240,7 +240,7 @@ export default function ServicesComponent() {
               />
             </Link>
           ))}
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

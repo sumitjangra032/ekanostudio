@@ -14,7 +14,7 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from "@/components/ui/popover";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 import {
     Card,
@@ -183,7 +183,7 @@ export default function BookConsultationForm() {
         }}>
             <div className="max-w-7xl w-full space-y-8 mt-20">
                 <div className="flex flex-col items-center justify-center ">
-                    <motion.div
+                    <m.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
@@ -200,7 +200,7 @@ export default function BookConsultationForm() {
                         >
                             CONTACT US
                         </span>
-                    </motion.div>
+                    </m.div>
                     <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-cabinet leading-[1.05] tracking-tighter mb-2 lg:mb-8">
                         <span style={{ color: theme.text }}>Book  </span>
                         <span style={{ color: theme.accents.a }}>Consultation</span>
@@ -236,14 +236,14 @@ export default function BookConsultationForm() {
                                     }}
                                 >
                                     <CardContent className="space-y-6 pt-8 pb-8">
-                                        <motion.div
+                                        <m.div
                                             initial={{ scale: 0 }}
                                             animate={{ scale: 1 }}
                                             transition={{ type: "spring", stiffness: 200 }}
                                             className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4"
                                         >
                                             <AnimateDownloadedSVG src={BOOK_CONSULTATION_CONTENT.confirmationPage.icon} size={35} stroke={theme.primary} />
-                                        </motion.div>
+                                        </m.div>
                                         <div className="text-center">
                                             <h2 className="text-3xl font-bold mb-2">
                                                 <AnimatedLine text={BOOK_CONSULTATION_CONTENT.confirmationPage.title} textSize="text-3xl" />

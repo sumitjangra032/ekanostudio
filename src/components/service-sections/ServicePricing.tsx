@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { m, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
 import { useTheme } from "../providers/ThemeProvider";
@@ -43,7 +43,7 @@ export default function ServicePricing({ data, theme }: { data: any; theme: any 
       <FloatingParticles count={15} />
 
       <div className="max-w-6xl mx-auto relative z-10">
-        <motion.div
+        <m.div
           className="text-center"
           style={{ y: yText }}
         >
@@ -83,14 +83,14 @@ export default function ServicePricing({ data, theme }: { data: any; theme: any 
               }}
             />
           </h2>
-        </motion.div>
+        </m.div>
 
-        <motion.div
+        <m.div
           className="flex flex-wrap justify-center gap-8 mt-16 items-stretch"
           style={{ y: yCards }}
         >
           {data.plans?.map((p: any, i: number) => (
-            <motion.div
+            <m.div
               key={i}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -168,9 +168,9 @@ export default function ServicePricing({ data, theme }: { data: any; theme: any 
                   className="w-full text-center py-4 text-sm font-bold uppercase tracking-widest"
                 />
               </div>
-            </motion.div>
+            </m.div>
           ))}
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

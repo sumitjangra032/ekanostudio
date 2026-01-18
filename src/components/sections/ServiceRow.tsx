@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import {
-  motion,
+  m,
   AnimatePresence,
   useTransform,
   useMotionValueEvent,
@@ -61,7 +61,7 @@ export default function ServiceRow({
           {String(index + 1).padStart(2, "0")}.
         </span>
 
-        <motion.h3
+        <m.h3
           className="mr-10 md:mr-12 font-semibold text-right"
           animate={{ x: isActive && isDesktop ? -18 : 0 }}
           transition={{ duration: 0.36, ease: NAKULA_EASE }}
@@ -72,10 +72,10 @@ export default function ServiceRow({
           }}
         >
           {item.title}
-        </motion.h3>
+        </m.h3>
 
         <div className="absolute right-4 md:right-6">
-          <motion.div
+          <m.div
             animate={{ rotate: isActive ? 45 : 0 }}
             transition={{ duration: 0.4, ease: NAKULA_EASE }}
             className="relative w-4 h-4 md:w-5 md:h-5"
@@ -88,13 +88,13 @@ export default function ServiceRow({
               className="absolute inset-0 m-auto w-[2px] h-full"
               style={{ backgroundColor: theme.primary }}
             />
-          </motion.div>
+          </m.div>
         </div>
       </div>
 
       <AnimatePresence>
         {isActive && (
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 60 }}
@@ -102,11 +102,10 @@ export default function ServiceRow({
               y: { duration: 0.55, ease: NAKULA_EASE },
               opacity: { duration: 0.3, delay: 0.05 },
             }}
-            className={`${
-              isDesktop
+            className={`${isDesktop
                 ? "absolute left-0 right-0 top-full z-20"
                 : "relative"
-            }`}
+              }`}
           >
             <div
               className="mx-auto max-w-6xl mt-6 md:mt-10 border"
@@ -140,7 +139,7 @@ export default function ServiceRow({
                   </div>
                 </div>
 
-                <motion.div
+                <m.div
                   initial={{ scale: 0.2 }}
                   animate={{ scale: 1 }}
                   transition={{ duration: 0.6, ease: NAKULA_EASE }}
@@ -152,10 +151,10 @@ export default function ServiceRow({
                     fill
                     className="object-cover"
                   />
-                </motion.div>
+                </m.div>
               </div>
             </div>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
     </div>

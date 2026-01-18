@@ -1,6 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FOOTER_CONTENT } from "@/constants/footer";
-import { BRAND } from "@/constants/global";
+import { BRAND, BRAND_LOGO } from "@/constants/global";
 import { THEMES, currentTheme } from "../../constants/theme";
 
 export default function Footer() {
@@ -43,10 +44,15 @@ export default function Footer() {
             <div className="lg:col-span-5 flex flex-col gap-2">
               <Link
                 href="/"
-                className="text-2xl font-semibold tracking-tight"
-                style={{ color: "var(--theme-text)" }}
+                className="text-2xl font-semibold tracking-tight block relative"
               >
-                {BRAND.name}
+                <Image
+                  src={BRAND_LOGO.src}
+                  alt={BRAND.name}
+                  width={BRAND_LOGO.footer.width}
+                  height={BRAND_LOGO.footer.height}
+                  className={BRAND_LOGO.footer.className}
+                />
               </Link>
 
               <p

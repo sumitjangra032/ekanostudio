@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Plus, X } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function FAQList({ faqData, theme }: { faqData: any[], theme: any }) {
@@ -54,7 +54,7 @@ function FAQItem({
     const showAnswer = isOpen || isHovered;
 
     return (
-        <motion.div
+        <m.div
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             className="group relative px-8 py-6 transition-all"
@@ -72,7 +72,7 @@ function FAQItem({
                     {item.q}
                 </span>
 
-                <motion.div
+                <m.div
                     animate={{ rotate: showAnswer ? 90 : 0 }}
                     transition={{ duration: 0.25, ease: "easeOut" }}
                     className="mt-1 flex-shrink-0"
@@ -82,12 +82,12 @@ function FAQItem({
                     ) : (
                         <Plus size={18} style={{ color: "var(--theme-accent-a)" }} />
                     )}
-                </motion.div>
+                </m.div>
             </button>
 
             <AnimatePresence initial={false}>
                 {showAnswer && (
-                    <motion.div
+                    <m.div
                         initial={{ height: 0, opacity: 0 }}
                         animate={{ height: "auto", opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
@@ -100,9 +100,9 @@ function FAQItem({
                         >
                             {item.a}
                         </p>
-                    </motion.div>
+                    </m.div>
                 )}
             </AnimatePresence>
-        </motion.div>
+        </m.div>
     );
 }

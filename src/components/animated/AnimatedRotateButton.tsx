@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { ChevronRightIcon } from "@/components/icons/LocalIcons";
 
@@ -43,7 +43,7 @@ export default function AnimatedRotateButton({
   const [hover, setHover] = useState(false);
 
   const ButtonContent = (
-    <motion.div
+    <m.div
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       className={`
@@ -94,7 +94,7 @@ export default function AnimatedRotateButton({
         <span className="opacity-0">{text}</span>
         <AnimatePresence initial={false}>
           {!hover ? (
-            <motion.span
+            <m.span
               key="normal"
               className="absolute left-1/2 -translate-x-1/2"
               initial={{ y: -20 }}
@@ -103,9 +103,9 @@ export default function AnimatedRotateButton({
               transition={{ duration: 0.28 }}
             >
               {text}
-            </motion.span>
+            </m.span>
           ) : (
-            <motion.span
+            <m.span
               key="hover"
               className="absolute left-1/2 -translate-x-1/2"
               initial={{ y: 20 }}
@@ -114,7 +114,7 @@ export default function AnimatedRotateButton({
               transition={{ duration: 0.28 }}
             >
               {text}
-            </motion.span>
+            </m.span>
           )}
         </AnimatePresence>
       </div>
@@ -123,7 +123,7 @@ export default function AnimatedRotateButton({
       <div className="relative h-5 w-5 overflow-hidden">
         <AnimatePresence initial={false}>
           {!hover ? (
-            <motion.div
+            <m.div
               key="arrow-normal"
               initial={{ x: 20 }}
               animate={{ x: 0 }}
@@ -132,9 +132,9 @@ export default function AnimatedRotateButton({
               className="absolute"
             >
               <ChevronRightIcon size={iconSize} />
-            </motion.div>
+            </m.div>
           ) : (
-            <motion.div
+            <m.div
               key="arrow-hover"
               initial={{ x: -20 }}
               animate={{ x: 0 }}
@@ -143,11 +143,11 @@ export default function AnimatedRotateButton({
               className="absolute"
             >
               <ChevronRightIcon size={iconSize} />
-            </motion.div>
+            </m.div>
           )}
         </AnimatePresence>
       </div>
-    </motion.div>
+    </m.div>
   );
 
   /* ✅ LINK MODE — UNCHANGED */

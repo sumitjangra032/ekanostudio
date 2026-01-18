@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
+import { m, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { BENEFITS_CONTENT } from "@/constants/benefits";
 import AnimatedLine from "../animated/AnimatedLine";
@@ -56,7 +56,7 @@ export default function Benefits() {
         </div>
 
         {/* CARD GRID */}
-        <motion.div
+        <m.div
           ref={cardsRef}
           initial={{ opacity: 0, y: 60 }}
           animate={cardsInView ? { opacity: 1, y: 0 } : {}}
@@ -98,7 +98,7 @@ export default function Benefits() {
               </div>
             );
           })}
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { BRAND, GLOBAL_CTA_CONTENT } from "@/constants/global";
+import { BRAND, GLOBAL_CTA_CONTENT, BRAND_LOGO } from "@/constants/global";
 import { NAV_LINKS } from "@/constants/navbar";
 import NavbarServices from "./NavbarServices";
 import NavbarLegal from "./NavbarLegal";
@@ -16,6 +16,7 @@ import ButtonVibrator from "../animated/ButtonVibrator";
 
 import { AnimatePresence, m } from "framer-motion";
 import { ChevronDownIcon, CloseIcon, MenuIcon } from "../icons/LocalIcons";
+import Image from "next/image";
 
 export default function Navbar() {
   const { themeName } = useTheme();
@@ -64,9 +65,15 @@ export default function Navbar() {
         <Link
           href="/"
           className="flex items-center font-medium text-lg md:text-xl"
-          style={{ color: theme.text }}
         >
-          {BRAND.name}
+          <Image
+            src={BRAND_LOGO.src}
+            alt={BRAND.name}
+            width={BRAND_LOGO.navbar.width}
+            height={BRAND_LOGO.navbar.height}
+            priority
+            className={BRAND_LOGO.navbar.className}
+          />
         </Link>
 
         <div className="hidden md:flex items-center gap-1 ">

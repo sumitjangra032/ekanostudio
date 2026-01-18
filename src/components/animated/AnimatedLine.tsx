@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
+import { m, useInView } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
 
@@ -77,7 +77,7 @@ export default function AnimatedLine({
         }
 
         const content = (
-          <motion.span
+          <m.span
             key={i}
             className={`inline-block mr-2 ${isTarget ? highlightClassName : ""} px-[0.045em] ${linkUrl ? "hover:underline cursor-pointer" : ""
               }`}
@@ -94,7 +94,7 @@ export default function AnimatedLine({
             }}
           >
             {cleanText}
-          </motion.span>
+          </m.span>
         );
 
         if (linkUrl) {

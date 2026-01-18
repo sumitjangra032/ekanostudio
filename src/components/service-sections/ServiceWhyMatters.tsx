@@ -1,5 +1,5 @@
 "use client";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { m, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 import { useTheme } from "../providers/ThemeProvider";
@@ -36,7 +36,7 @@ export default function ServiceWhyMatters({ data }: { data: any }) {
         >
             <div className="max-w-6xl mx-auto">
 
-                <motion.div
+                <m.div
                     className="text-center"
                     style={{ y: yText }}
                 >
@@ -76,14 +76,14 @@ export default function ServiceWhyMatters({ data }: { data: any }) {
                             }}
                         />
                     </h2>
-                </motion.div>
+                </m.div>
 
-                <motion.div
+                <m.div
                     className={`grid ${getGridClass()} gap-6`}
                     style={{ y: yCards }}
                 >
                     {data.items.map((item: string, i: number) => (
-                        <motion.div
+                        <m.div
                             key={i}
                             className="
                                 group relative p-8 rounded-3xl
@@ -134,9 +134,9 @@ export default function ServiceWhyMatters({ data }: { data: any }) {
                                     <AnimatedLine text={item} delay={0.1 * i} />
                                 </h3>
                             </div>
-                        </motion.div>
+                        </m.div>
                     ))}
-                </motion.div>
+                </m.div>
             </div>
         </section>
     );

@@ -19,7 +19,7 @@ import {
   CheckCircle,
   Loader2
 } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 
 const COUNTRY_CODES = [
   { name: "United States", code: "+1", flag: "🇺🇸" },
@@ -160,7 +160,7 @@ export default function CareersPageClient() {
       <div className="relative max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12 lg:mb-20">
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -177,9 +177,9 @@ export default function CareersPageClient() {
             >
               CAREERS • REMOTE ONLY
             </span>
-          </motion.div>
+          </m.div>
 
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -197,14 +197,14 @@ export default function CareersPageClient() {
               Join a global team of innovators building digital experiences that matter.
               Remote-first, results-driven.
             </p>
-          </motion.div>
+          </m.div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 xl:gap-16">
           {/* Left Column: Benefits & Info */}
           <div className="lg:col-span-5 space-y-10 lg:sticky lg:top-32 lg:h-fit">
             {/* Benefits Grid */}
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -213,7 +213,7 @@ export default function CareersPageClient() {
               <h3 className="text-2xl sm:text-3xl font-bold font-satoshi tracking-tight">Why Join Our Team?</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {BENEFITS.map((benefit, index) => (
-                  <motion.div
+                  <m.div
                     key={benefit.title}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -232,13 +232,13 @@ export default function CareersPageClient() {
                         </p>
                       </div>
                     </div>
-                  </motion.div>
+                  </m.div>
                 ))}
               </div>
-            </motion.div>
+            </m.div>
 
             {/* Stats */}
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
@@ -260,10 +260,10 @@ export default function CareersPageClient() {
                 <div className="text-3xl md:text-4xl font-bold font-cabinet mb-2" style={{ color: theme.accents.a }}>100+</div>
                 <div className="text-sm opacity-80 font-medium" style={{ color: theme.subtext }}>Projects</div>
               </div>
-            </motion.div>
+            </m.div>
 
             {/* Process Steps */}
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
@@ -298,12 +298,12 @@ export default function CareersPageClient() {
                   </div>
                 ))}
               </div>
-            </motion.div>
+            </m.div>
           </div>
 
           {/* Right Column: Application Form */}
           <div className="lg:col-span-7">
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
@@ -318,7 +318,7 @@ export default function CareersPageClient() {
                 }}
               >
                 {success ? (
-                  <motion.div
+                  <m.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     className="text-center py-16 sm:py-20"
@@ -341,7 +341,7 @@ export default function CareersPageClient() {
                         accent={theme.accents}
                       />
                     </div>
-                  </motion.div>
+                  </m.div>
                 ) : (
                   <>
                     <div className="mb-8 lg:mb-10">
@@ -500,7 +500,7 @@ export default function CareersPageClient() {
                             />
                           </label>
                         ) : (
-                          <motion.div
+                          <m.div
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             className="flex items-center justify-between p-5 rounded-2xl border group hover:border-primary/50 transition-colors"
@@ -530,12 +530,12 @@ export default function CareersPageClient() {
                             >
                               <X size={20} />
                             </button>
-                          </motion.div>
+                          </m.div>
                         )}
                       </div>
 
                       {formError && (
-                        <motion.div
+                        <m.div
                           initial={{ opacity: 0, y: -10 }}
                           animate={{ opacity: 1, y: 0 }}
                           className="p-4 rounded-lg border text-sm font-medium text-center"
@@ -546,7 +546,7 @@ export default function CareersPageClient() {
                           }}
                         >
                           {formError}
-                        </motion.div>
+                        </m.div>
                       )}
 
                       <div className="pt-4">
@@ -576,7 +576,7 @@ export default function CareersPageClient() {
                   </>
                 )}
               </div>
-            </motion.div>
+            </m.div>
           </div>
         </div>
       </div>
@@ -715,7 +715,7 @@ function CountryCodeSelect({
 
       <AnimatePresence>
         {open && (
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 8, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 8, scale: 0.98 }}
@@ -775,7 +775,7 @@ function CountryCodeSelect({
                 </div>
               )}
             </div>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
     </div>

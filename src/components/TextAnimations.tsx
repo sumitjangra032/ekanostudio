@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState, useRef } from "react"
-import { motion, useInView, Variants } from "framer-motion"
+import { m, useInView, Variants } from "framer-motion"
 
 const CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+"
 
@@ -74,7 +74,7 @@ interface FadeInBlockProps {
 
 export function FadeInBlock({ children, className = "", delay = 0 }: FadeInBlockProps) {
     return (
-        <motion.div
+        <m.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-10%" }}
@@ -86,6 +86,6 @@ export function FadeInBlock({ children, className = "", delay = 0 }: FadeInBlock
             className={className}
         >
             {children}
-        </motion.div>
+        </m.div>
     )
 }

@@ -2,7 +2,7 @@
 
 import { useState, useRef } from "react";
 import { Plus, X } from "lucide-react";
-import { motion, AnimatePresence, useInView, useScroll, useTransform } from "framer-motion";
+import { m, AnimatePresence, useInView, useScroll, useTransform } from "framer-motion";
 import AnimatedLine from "../animated/AnimatedLine";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
@@ -39,7 +39,7 @@ export default function ServiceFaq({ data, theme }: { data: any; theme: any }) {
     >
       {/* HEADER */}
       <div className="max-w-4xl mx-auto text-center relative z-10">
-        <motion.div
+        <m.div
           className="text-center"
           style={{ y: yText }}
         >
@@ -76,11 +76,11 @@ export default function ServiceFaq({ data, theme }: { data: any; theme: any }) {
               }}
             />
           </h2>
-        </motion.div>
+        </m.div>
       </div>
 
       {/* FAQ LIST */}
-      <motion.div
+      <m.div
         style={{ y: yWrap }}
         className="relative max-w-4xl mx-auto mt-16"
       >
@@ -91,7 +91,7 @@ export default function ServiceFaq({ data, theme }: { data: any; theme: any }) {
           opacity={0.35}
         />
 
-        <motion.div
+        <m.div
           ref={listRef}
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -122,8 +122,8 @@ export default function ServiceFaq({ data, theme }: { data: any; theme: any }) {
               })}
             </div>
           </ScrollArea>
-        </motion.div>
-      </motion.div>
+        </m.div>
+      </m.div>
     </section>
   );
 }
@@ -147,7 +147,7 @@ function FAQItem({
   const showAnswer = isOpen || isHovered;
 
   return (
-    <motion.div
+    <m.div
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       className="group relative px-8 py-6 transition-all"
@@ -165,7 +165,7 @@ function FAQItem({
           {item.q}
         </span>
 
-        <motion.div
+        <m.div
           animate={{ rotate: showAnswer ? 90 : 0 }}
           transition={{ duration: 0.25, ease: "easeOut" }}
           className="mt-1 flex-shrink-0"
@@ -175,13 +175,13 @@ function FAQItem({
           ) : (
             <Plus size={18} style={{ color: theme.accents.a }} />
           )}
-        </motion.div>
+        </m.div>
       </button>
 
       {/* ANSWER */}
       <AnimatePresence initial={false}>
         {showAnswer && (
-          <motion.div
+          <m.div
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
@@ -194,9 +194,9 @@ function FAQItem({
             >
               {item.a}
             </p>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
-    </motion.div>
+    </m.div>
   );
 }

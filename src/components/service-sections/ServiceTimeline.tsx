@@ -1,5 +1,5 @@
 "use client";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { m, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { ClockIcon } from "../icons/LocalIcons";
 import { useTheme } from "../providers/ThemeProvider";
@@ -28,7 +28,7 @@ export default function ServiceTimeline({ data }: { data: any }) {
             className="py-20 px-6 relative"
         >
 
-            <motion.div
+            <m.div
                 className="max-w-4xl mx-auto text-center"
                 style={{ y: yText }}
             >
@@ -68,14 +68,14 @@ export default function ServiceTimeline({ data }: { data: any }) {
                         }}
                     />
                 </h2>
-            </motion.div>
+            </m.div>
 
-            <motion.div
+            <m.div
                 className="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-stretch gap-6 px-4"
                 style={{ y: yCards }}
             >
                 {data.items.map((item: any, i: number) => (
-                    <motion.div
+                    <m.div
                         key={i}
                         className="
                             group relative w-full md:flex-1 p-8 rounded-3xl
@@ -117,9 +117,9 @@ export default function ServiceTimeline({ data }: { data: any }) {
                         >
                             {item.duration}
                         </p>
-                    </motion.div>
+                    </m.div>
                 ))}
-            </motion.div>
+            </m.div>
         </section>
     );
 }

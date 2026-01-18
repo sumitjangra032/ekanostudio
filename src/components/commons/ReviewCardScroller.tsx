@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
 import Image from "next/image";
@@ -49,7 +49,7 @@ export default function ReviewCardScroller({
         }}
       />
 
-      <motion.div
+      <m.div
         className={`flex gap-8 w-max ${className}`}
         animate={animate}
         transition={{
@@ -64,7 +64,7 @@ export default function ReviewCardScroller({
             <ReviewCard {...review} />
           </div>
         ))}
-      </motion.div>
+      </m.div>
     </div>
   );
 }

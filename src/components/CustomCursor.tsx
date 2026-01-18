@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import { m, useMotionValue, useSpring } from "framer-motion";
 
 export const CustomCursor = () => {
     const cursorX = useMotionValue(-100);
@@ -25,7 +25,7 @@ export const CustomCursor = () => {
     }, [cursorX, cursorY]);
 
     return (
-        <motion.div
+        <m.div
             className="fixed pointer-events-none z-50 mix-blend-difference"
             style={{
                 x: cursorXSpring,
@@ -33,6 +33,6 @@ export const CustomCursor = () => {
             }}
         >
             <div className="w-8 h-8 rounded-full bg-white" />
-        </motion.div>
+        </m.div>
     );
 };

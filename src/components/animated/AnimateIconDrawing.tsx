@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { cloneElement } from "react";
 
 interface AnimateIconDrawingProps {
@@ -24,32 +24,32 @@ export default function AnimateIconDrawing({
 
   const animatedChildren = Array.isArray((rendered as any).props.children)
     ? (rendered as any).props.children.map((child: any, i: number) =>
-        child?.type === "path" ? (
-          <motion.path
-            key={i}
-            {...child.props}
-            initial={{ pathLength: 0, opacity: 0 }}
-            animate={{ pathLength: 1, opacity: 1 }}
-            transition={{
-              duration: 1.2,
-              ease: "easeInOut",
-              delay: i * 0.2,
-            }}
-          />
-        ) : (
-          child
-        )
-      )
-    : (rendered as any).props.children?.type === "path" ? (
-        <motion.path
-          {...(rendered as any).props.children.props}
+      child?.type === "path" ? (
+        <m.path
+          key={i}
+          {...child.props}
           initial={{ pathLength: 0, opacity: 0 }}
           animate={{ pathLength: 1, opacity: 1 }}
-          transition={{ duration: 1.2, ease: "easeInOut" }}
+          transition={{
+            duration: 1.2,
+            ease: "easeInOut",
+            delay: i * 0.2,
+          }}
         />
       ) : (
-        (rendered as any).props.children
-      );
+        child
+      )
+    )
+    : (rendered as any).props.children?.type === "path" ? (
+      <m.path
+        {...(rendered as any).props.children.props}
+        initial={{ pathLength: 0, opacity: 0 }}
+        animate={{ pathLength: 1, opacity: 1 }}
+        transition={{ duration: 1.2, ease: "easeInOut" }}
+      />
+    ) : (
+      (rendered as any).props.children
+    );
 
   return cloneElement(rendered, {
     width: size,

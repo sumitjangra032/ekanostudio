@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { useEffect, useState } from "react";
 
 interface Particle {
@@ -31,7 +31,7 @@ export default function FloatingParticles({ count = 20 }: { count?: number }) {
     return (
         <div className="absolute inset-0 overflow-hidden pointer-events-none z-10">
             {particles.map((particle) => (
-                <motion.div
+                <m.div
                     key={particle.id}
                     className="absolute bg-white rounded-full opacity-20"
                     style={{

@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 import { workImages } from "@/work_list_imgs/index";
 import { Carousel } from "./Carousel";
 import { StaticImageData } from "next/image";
@@ -88,7 +88,7 @@ export const WorkList = () => {
 
             <div className="w-full">
                 {projects.map((project, index) => (
-                    <motion.div
+                    <m.div
                         key={index}
                         onMouseEnter={() => handleMouseEnter(index)}
                         onMouseLeave={handleMouseLeave}
@@ -100,7 +100,7 @@ export const WorkList = () => {
                         transition={{ duration: 0.35, ease: "easeOut" }}
                     >
                         {/* ROW */}
-                        <motion.div
+                        <m.div
                             initial={false}
                             animate={{
                                 opacity: hoverIndex === index ? 0 : 1,
@@ -125,12 +125,12 @@ export const WorkList = () => {
                                 ))}
                                 <div className="mt-2 text-white/70">{project.location}</div>
                             </div>
-                        </motion.div>
+                        </m.div>
 
                         {/* DROPDOWN */}
                         <AnimatePresence>
                             {hoverIndex === index && (
-                                <motion.div
+                                <m.div
                                     initial={{ height: 0, opacity: 0 }}
                                     animate={{ height: "auto", opacity: 1 }}
                                     exit={{ height: 0, opacity: 0 }}
@@ -183,10 +183,10 @@ export const WorkList = () => {
 
 
                                     </div>
-                                </motion.div>
+                                </m.div>
                             )}
                         </AnimatePresence>
-                    </motion.div>
+                    </m.div>
                 ))}
             </div>
         </section>

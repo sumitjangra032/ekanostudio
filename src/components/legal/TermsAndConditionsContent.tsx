@@ -3,7 +3,7 @@
 import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
 import { TERMS_AND_CONDITIONS_CONTENT } from "@/constants/termsAndConditions";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import AnimatedLine from "../animated/AnimatedLine";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
@@ -29,25 +29,27 @@ export default function TermsAndConditionsContent() {
 
                 {/* Header */}
                 <div className="space-y-6 text-center">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        className="inline-block"
-                    >
-                        <h1
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold font-cabinet mb-4 mt-10"
-                            style={{ color: theme.text }}
+                    <div className="space-y-6 text-center">
+                        <m.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            className="inline-block"
                         >
-                            <AnimatedLine text={TERMS_AND_CONDITIONS_CONTENT.title} />
-                        </h1>
-                        <p className="text-sm font-medium uppercase tracking-widest opacity-60" style={{ color: theme.subtext }}>
-                            Last Updated: {TERMS_AND_CONDITIONS_CONTENT.lastUpdated}
-                        </p>
-                    </motion.div>
+                            <h1
+                                className="text-4xl md:text-5xl lg:text-6xl font-bold font-cabinet mb-4 mt-10"
+                                style={{ color: theme.text }}
+                            >
+                                <AnimatedLine text={TERMS_AND_CONDITIONS_CONTENT.title} />
+                            </h1>
+                            <p className="text-sm font-medium uppercase tracking-widest opacity-60" style={{ color: theme.subtext }}>
+                                Last Updated: {TERMS_AND_CONDITIONS_CONTENT.lastUpdated}
+                            </p>
+                        </m.div>
+                    </div>
                 </div>
 
                 {/* Introduction */}
-                <motion.div
+                <m.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.1 }}
@@ -61,12 +63,12 @@ export default function TermsAndConditionsContent() {
                             {TERMS_AND_CONDITIONS_CONTENT.introduction}
                         </CardContent>
                     </Card>
-                </motion.div>
+                </m.div>
 
                 {/* Sections */}
                 <div className="space-y-8">
                     {TERMS_AND_CONDITIONS_CONTENT.sections.map((section, index) => (
-                        <motion.div
+                        <m.div
                             key={index}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -94,12 +96,12 @@ export default function TermsAndConditionsContent() {
                                     </CardContent>
                                 </Card>
                             </div>
-                        </motion.div>
+                        </m.div>
                     ))}
                 </div>
 
                 {/* Footer/Contact CTA */}
-                <motion.div
+                <m.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
@@ -108,7 +110,7 @@ export default function TermsAndConditionsContent() {
                     <p className="text-sm opacity-50" style={{ color: theme.subtext }}>
                         © {new Date().getFullYear()} ekanostudio. All rights reserved.
                     </p>
-                </motion.div>
+                </m.div>
 
             </div>
         </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 export default function AutoScrollRow({
   items,
@@ -11,7 +11,7 @@ export default function AutoScrollRow({
 }) {
   return (
     <div className="overflow-hidden w-full whitespace-nowrap">
-      <motion.div
+      <m.div
         className="flex gap-6"
         animate={{
           x: reverse ? ["0%", "-50%"] : ["0%", "50%"],
@@ -38,7 +38,7 @@ export default function AutoScrollRow({
             {item}
           </div>
         ))}
-      </motion.div>
+      </m.div>
     </div>
   );
 }

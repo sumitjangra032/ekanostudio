@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
+import { m, useInView } from "framer-motion";
 import { useRef } from "react";
 
 export default function SectionEntrance({
@@ -14,7 +14,7 @@ export default function SectionEntrance({
     const isInView = useInView(ref, { once: true, margin: "-10% 0px" });
 
     return (
-        <motion.div
+        <m.div
             ref={ref}
             initial={{ opacity: 0, y: 40 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -22,6 +22,6 @@ export default function SectionEntrance({
             className={className}
         >
             {children}
-        </motion.div>
+        </m.div>
     );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
 import { FolderGit2 } from "lucide-react";
@@ -30,7 +30,7 @@ export default function ProjectScroller({ projects }: ProjectScrollerProps) {
                     background: `linear-gradient(to left, ${theme.cardBg}, transparent)`,
                 }}
             />
-            <motion.div
+            <m.div
                 className="flex gap-3 w-max"
                 animate={{ x: [0, "-33.3333%"] }}
                 transition={{
@@ -63,7 +63,7 @@ export default function ProjectScroller({ projects }: ProjectScrollerProps) {
                         </div>
                     </div>
                 ))}
-            </motion.div>
+            </m.div>
         </div>
     );
 }

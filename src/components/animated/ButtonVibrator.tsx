@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { useEffect, useState } from "react";
 
 export default function ButtonVibrator({
@@ -19,7 +19,7 @@ export default function ButtonVibrator({
   }, []);
 
   return (
-    <motion.div
+    <m.div
       key={key}
       animate={{
         x: [0, -6, 6, -6, 6, -3, 3, 0],
@@ -31,6 +31,6 @@ export default function ButtonVibrator({
       }}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }

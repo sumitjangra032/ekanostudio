@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 export default function ScrollingTags() {
   const row1 = [
@@ -33,7 +33,7 @@ export default function ScrollingTags() {
       <div className="pointer-events-none absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-[#E5EED7] to-transparent z-10"></div>
 
       {/* ROW 1 - moves left */}
-      <motion.div
+      <m.div
         className="flex gap-8 w-max mb-10"
         animate={{ x: ["0%", "-33.33%"] }}
         transition={{
@@ -47,10 +47,10 @@ export default function ScrollingTags() {
             {tag}
           </div>
         ))}
-      </motion.div>
+      </m.div>
 
       {/* ROW 2 - moves right */}
-      <motion.div
+      <m.div
         className="flex gap-8 w-max"
         animate={{ x: ["-33.33%", "0%"] }}
         transition={{
@@ -64,7 +64,7 @@ export default function ScrollingTags() {
             {tag}
           </div>
         ))}
-      </motion.div>
+      </m.div>
     </div>
   );
 }

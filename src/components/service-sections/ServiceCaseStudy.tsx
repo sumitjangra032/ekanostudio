@@ -1,5 +1,5 @@
 "use client";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { m, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
@@ -30,22 +30,22 @@ export default function ServiceCaseStudy({ data }: { data: any }) {
         >
 
             <div className="max-w-4xl mx-auto">
-                <motion.div
+                <m.div
                     className="flex justify-center items-center gap-2 font-semibold uppercase mb-4"
                     style={{ y: yText, color: theme.primary }}
                 >
                     <TrophyIcon size={16} />
                     Case Study
-                </motion.div>
+                </m.div>
 
-                <motion.h2
+                <m.h2
                     className="text-4xl font-bold text-center mb-10"
                     style={{ y: yText, color: theme.text }}
                 >
                     <AnimatedLine text={data.heading} delay={0.1} isHeading={true} />
-                </motion.h2>
+                </m.h2>
 
-                <motion.div
+                <m.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -67,7 +67,7 @@ export default function ServiceCaseStudy({ data }: { data: any }) {
                             <AnimatedLine text={data.content} delay={0.2} textSize="text-lg md:text-xl" textColor={theme.subtext} />
                         </div>
                     </div>
-                </motion.div>
+                </m.div>
             </div>
         </section>
     );

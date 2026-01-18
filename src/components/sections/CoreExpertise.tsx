@@ -2,7 +2,7 @@
 import Image from "next/image";
 
 import { useRef } from "react";
-import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
+import { m, useScroll, useTransform, MotionValue } from "framer-motion";
 import { CORE_EXPERTISE_CONTENT } from "@/constants/coreExpertise";
 import AnimatedLine from "../animated/AnimatedLine";
 import { useTheme } from "../providers/ThemeProvider";
@@ -117,7 +117,7 @@ function CoreExpertiseCard({
     const scale = useTransform(progress, range, [1, targetScale]);
 
     return (
-        <motion.div
+        <m.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-10%" }}
@@ -134,7 +134,7 @@ function CoreExpertiseCard({
           flex flex-col ${isEven ? "md:flex-row" : "md:flex-row-reverse"}
           h-auto md:h-[540px]
           border border-white/10
-          bg-black/40
+          bg-black
           backdrop-blur-xl
           transition-all duration-500
           hover:-translate-y-1
@@ -215,10 +215,10 @@ function CoreExpertiseCard({
                         src={card.image}
                         alt={card.title}
                         fill
-                        className="object-cover opacity-80"
+                        className="object-cover opacity-100"
                     />
                 </div>
             </div>
-        </motion.div>
+        </m.div>
     );
 }

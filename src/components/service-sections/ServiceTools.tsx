@@ -1,5 +1,5 @@
 "use client";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { m, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { ToolboxIcon } from "../icons/LocalIcons";
 import { useTheme } from "../providers/ThemeProvider";
@@ -27,7 +27,7 @@ export default function ServiceTools({ data }: { data: any }) {
             className="py-20 px-6"
         >
             <div className="max-w-7xl mx-auto text-center">
-                <motion.div
+                <m.div
                     className="text-center"
                     style={{ y: yText }}
                 >
@@ -67,9 +67,9 @@ export default function ServiceTools({ data }: { data: any }) {
                             }}
                         />
                     </h2>
-                </motion.div>
+                </m.div>
 
-                <motion.div
+                <m.div
                     className="flex flex-wrap justify-center gap-4"
                     style={{ y: yItems }}
                 >
@@ -85,7 +85,7 @@ export default function ServiceTools({ data }: { data: any }) {
                             {item}
                         </div>
                     ))}
-                </motion.div>
+                </m.div>
             </div>
         </section>
     );

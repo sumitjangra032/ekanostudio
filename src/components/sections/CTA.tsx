@@ -1,6 +1,7 @@
 import { CTA_CONTENT } from "@/constants/cta";
 import AnimatedLine from "../animated/AnimatedLine";
-import { BRAND, GLOBAL_CTA_CONTENT } from "@/constants/global";
+import Image from "next/image";
+import { BRAND, GLOBAL_CTA_CONTENT, BRAND_LOGO } from "@/constants/global";
 import { THEMES, currentTheme } from "../../constants/theme";
 import AnimatedRotateButton from "../animated/AnimatedRotateButton";
 import Link from "next/link";
@@ -16,8 +17,14 @@ export default function CTA() {
       }}
     >
       <div className="relative max-w-3xl mx-auto">
-        <Link href="/" className="flex items-center justify-center font-bold text-3xl mb-6" style={{ color: "var(--theme-text)" }}>
-          {BRAND.name}
+        <Link href="/" className="flex items-center justify-center mb-6">
+          <Image
+            src={BRAND_LOGO.src}
+            alt={BRAND.name}
+            width={BRAND_LOGO.centered.width}
+            height={BRAND_LOGO.centered.height}
+            className={BRAND_LOGO.centered.className}
+          />
         </Link>
 
         {/* HEADLINE */}

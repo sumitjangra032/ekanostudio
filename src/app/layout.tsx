@@ -34,6 +34,11 @@ export const metadata: Metadata = {
   authors: [{ name: "ekanostudio" }],
   creator: "ekanostudio",
   publisher: "ekanostudio",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
     type: "website",
     locale: "en_IN",
@@ -42,12 +47,21 @@ export const metadata: Metadata = {
     title: "ekanostudio - Digital Transformation Services & Consulting",
     description:
       "ekanostudio helps businesses grow with SEO, web development, branding, and digital marketing services across India.",
+      images: [
+        {
+          url: "/logo.png",
+          width: 800,
+          height: 600,
+          alt: "ekanostudio Logo",
+        },
+      ],
   },
   twitter: {
     card: "summary_large_image",
     title: "ekanostudioDigital Transformation Services & Consulting",
     description:
       "ekanostudio helps businesses grow with SEO, web development, branding, and digital marketing services across India.",
+    images: ["/logo.png"],
   },
   robots: {
     index: true,

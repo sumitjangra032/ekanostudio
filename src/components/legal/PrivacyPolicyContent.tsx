@@ -3,7 +3,7 @@
 import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
 import { PRIVACY_POLICY_CONTENT } from "@/constants/privacyPolicy";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import AnimatedLine from "../animated/AnimatedLine";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -27,7 +27,7 @@ export default function PrivacyPolicyContent() {
 
                 {/* Header */}
                 <div className="space-y-6 text-center">
-                    <motion.div
+                    <m.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         className="inline-block"
@@ -41,11 +41,11 @@ export default function PrivacyPolicyContent() {
                         <p className="text-sm font-medium uppercase tracking-widest opacity-60" style={{ color: theme.subtext }}>
                             Last Updated: {PRIVACY_POLICY_CONTENT.lastUpdated}
                         </p>
-                    </motion.div>
+                    </m.div>
                 </div>
 
                 {/* Introduction */}
-                <motion.div
+                <m.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.1 }}
@@ -59,12 +59,12 @@ export default function PrivacyPolicyContent() {
                             {PRIVACY_POLICY_CONTENT.introduction}
                         </CardContent>
                     </Card>
-                </motion.div>
+                </m.div>
 
                 {/* Sections */}
                 <div className="space-y-8">
                     {PRIVACY_POLICY_CONTENT.sections.map((section, index) => (
-                        <motion.div
+                        <m.div
                             key={index}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -92,12 +92,12 @@ export default function PrivacyPolicyContent() {
                                     </CardContent>
                                 </Card>
                             </div>
-                        </motion.div>
+                        </m.div>
                     ))}
                 </div>
 
                 {/* Footer/Contact CTA */}
-                <motion.div
+                <m.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
@@ -106,7 +106,7 @@ export default function PrivacyPolicyContent() {
                     <p className="text-sm opacity-50" style={{ color: theme.subtext }}>
                         © {new Date().getFullYear()} ekanostudio. All rights reserved.
                     </p>
-                </motion.div>
+                </m.div>
 
             </div>
         </div>
