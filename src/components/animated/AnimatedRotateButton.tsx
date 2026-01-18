@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { m, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { ChevronRightIcon } from "@/components/icons/LocalIcons";
 
@@ -17,8 +16,6 @@ interface ContactButtonProps {
     b: string;
   };
   variant?: "primary" | "secondary";
-
-  /* ✅ SAFE ADDITION */
   type?: "button" | "submit";
   onClick?: () => void;
 }
@@ -35,19 +32,14 @@ export default function AnimatedRotateButton({
     b: "#000000",
   },
   variant = "primary",
-
-  /* ✅ DEFAULT DOES NOT AFFECT EXISTING BUTTONS */
   type = "button",
   onClick,
 }: ContactButtonProps) {
-  const [hover, setHover] = useState(false);
 
   const ButtonContent = (
-    <m.div
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
+    <div
       className={`
-        relative overflow-hidden
+        group relative overflow-hidden
         px-3 py-2 rounded-md font-semibold
         flex items-center justify-center gap-1 text-white
         ${fullWidth ? "w-full justify-between" : "inline-flex"}
@@ -88,74 +80,33 @@ export default function AnimatedRotateButton({
     >
       {/* TEXT */}
       <div
-        className={`relative h-6 whitespace-nowrap overflow-hidden ${fullWidth ? "flex-1" : ""
-          }`}
+        className={`relative h-6 whitespace-nowrap overflow-hidden flex flex-col items-center ${fullWidth ? "flex-1" : ""}`}
       >
-        <span className="opacity-0">{text}</span>
-        <AnimatePresence initial={false}>
-          {!hover ? (
-            <m.span
-              key="normal"
-              className="absolute left-1/2 -translate-x-1/2"
-              initial={{ y: -20 }}
-              animate={{ y: 0 }}
-              exit={{ y: -20 }}
-              transition={{ duration: 0.28 }}
-            >
-              {text}
-            </m.span>
-          ) : (
-            <m.span
-              key="hover"
-              className="absolute left-1/2 -translate-x-1/2"
-              initial={{ y: 20 }}
-              animate={{ y: 0 }}
-              exit={{ y: 20 }}
-              transition={{ duration: 0.28 }}
-            >
-              {text}
-            </m.span>
-          )}
-        </AnimatePresence>
+        <span className="opacity-0">{text}</span> {/* Spacer */}
+        <span className="absolute left-1/2 -translate-x-1/2 top-0 transition-transform duration-300 ease-in-out group-hover:translate-y-[-150%]">
+          {text}
+        </span>
+        <span className="absolute left-1/2 -translate-x-1/2 top-full transition-transform duration-300 ease-in-out group-hover:translate-y-[-200%]">
+          {text}
+        </span>
       </div>
 
       {/* ICON */}
       <div className="relative h-5 w-5 overflow-hidden">
-        <AnimatePresence initial={false}>
-          {!hover ? (
-            <m.div
-              key="arrow-normal"
-              initial={{ x: 20 }}
-              animate={{ x: 0 }}
-              exit={{ x: 20 }}
-              transition={{ duration: 0.28 }}
-              className="absolute"
-            >
-              <ChevronRightIcon size={iconSize} />
-            </m.div>
-          ) : (
-            <m.div
-              key="arrow-hover"
-              initial={{ x: -20 }}
-              animate={{ x: 0 }}
-              exit={{ x: -20 }}
-              transition={{ duration: 0.28 }}
-              className="absolute"
-            >
-              <ChevronRightIcon size={iconSize} />
-            </m.div>
-          )}
-        </AnimatePresence>
+        <div className="absolute inset-0 transition-transform duration-300 ease-in-out group-hover:translate-x-[-150%]">
+          <ChevronRightIcon size={iconSize} />
+        </div>
+        <div className="absolute inset-0 translate-x-[150%] transition-transform duration-300 ease-in-out group-hover:translate-x-0">
+          <ChevronRightIcon size={iconSize} />
+        </div>
       </div>
-    </m.div>
+    </div>
   );
 
-  /* ✅ LINK MODE — UNCHANGED */
   if (href) {
     return <Link href={href}>{ButtonContent}</Link>;
   }
 
-  /* ✅ BUTTON / SUBMIT MODE — FIX */
   return (
     <button type={type} onClick={onClick} className={fullWidth ? "w-full" : ""}>
       {ButtonContent}

@@ -1,15 +1,17 @@
 import Hero from "@/components/sections/Hero";
-import WhyChooseUs from "@/components/sections/WhyChooseUs";
-import Process from "@/components/sections/Process";
-import CoreExpertise from "@/components/sections/CoreExpertise";
-import ProjectTimeline from "@/components/sections/ProjectTimeline";
-import Comparison from "@/components/sections/Comparison";
-import Pricing from "@/components/sections/Pricing";
-import FAQ from "@/components/sections/FAQ";
-import Reviews from "@/components/sections/Reviews";
-import KeyTakeaways from "@/components/sections/KeyTakeaways";
-import CTA from "@/components/sections/CTA";
 import { Metadata } from "next";
+import dynamic from "next/dynamic";
+
+const WhyChooseUs = dynamic(() => import("@/components/sections/WhyChooseUs"));
+const Process = dynamic(() => import("@/components/sections/Process"));
+const CoreExpertise = dynamic(() => import("@/components/sections/CoreExpertise"));
+const ProjectTimeline = dynamic(() => import("@/components/sections/ProjectTimeline"));
+const Comparison = dynamic(() => import("@/components/sections/Comparison"));
+const Pricing = dynamic(() => import("@/components/sections/Pricing"));
+const FAQ = dynamic(() => import("@/components/sections/FAQ"));
+const Reviews = dynamic(() => import("@/components/sections/Reviews"));
+const KeyTakeaways = dynamic(() => import("@/components/sections/KeyTakeaways"));
+const CTA = dynamic(() => import("@/components/sections/CTA"));
 
 const SITE_URL = "https://www.ekanostudio.com";
 

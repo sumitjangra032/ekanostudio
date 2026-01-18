@@ -23,6 +23,7 @@ export default function MarqueeScroller({
         style={{
           animation: `marquee-${direction} ${duration}s linear infinite`,
           display: "flex",
+          willChange: "transform",
         }}
       >
         {list.map((item, idx) => (

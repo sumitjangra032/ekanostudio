@@ -1,6 +1,6 @@
 import "./globals.css";
 import { ReactNode } from "react";
-import { cabinet, generalSans, inter, satoshi, telma } from "./fonts";
+// Fonts are now loaded via global.css and preloaded manually below
 
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import Navbar from "@/components/navbar/Navbar";
@@ -47,14 +47,14 @@ export const metadata: Metadata = {
     title: "ekanostudio - Digital Transformation Services & Consulting",
     description:
       "ekanostudio helps businesses grow with SEO, web development, branding, and digital marketing services across India.",
-      images: [
-        {
-          url: "/logo.png",
-          width: 800,
-          height: 600,
-          alt: "ekanostudio Logo",
-        },
-      ],
+    images: [
+      {
+        url: "/logo.png",
+        width: 800,
+        height: 600,
+        alt: "ekanostudio Logo",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -83,6 +83,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
+        {/* Manual Font Preloading for Performance */}
+        <link
+          rel="preload"
+          href="/fonts/satoshi/Satoshi-Medium.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
         <link
           rel="preload"
           href="/fonts/satoshi/Satoshi-Bold.woff2"
@@ -93,6 +101,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link
           rel="preload"
           href="/fonts/cabinet/CabinetGrotesk-Bold.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/cabinet/CabinetGrotesk-Extrabold.woff2"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
@@ -145,9 +160,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </Script>
       </head>
 
-      <body
-        className={`${generalSans.variable} ${satoshi.variable} ${inter.variable} ${telma.variable} ${cabinet.variable}`}
-      >
+      <body>
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-white focus:text-black focus:rounded-md shadow-lg"

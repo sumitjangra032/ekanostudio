@@ -42,7 +42,7 @@ export default function SmoothScroll() {
         };
       } else {
         // Fallback for browsers that don't support requestIdleCallback
-        const timeoutId = setTimeout(initLenis, 1);
+        const timeoutId = setTimeout(initLenis, 2000); // 2s delay fallback for mobile/unsupported, ensures LCP is prioritized.
         return () => {
           clearTimeout(timeoutId); // Cleanup for setTimeout
           if (rafIdRef.current) {

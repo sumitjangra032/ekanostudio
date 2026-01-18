@@ -1,10 +1,14 @@
-import AnimatedLine from "@/components/animated/AnimatedLine";
+import dynamic from "next/dynamic";
+
 import { HERO_CONTENT } from "@/constants/hero";
 import { THEMES, currentTheme } from "../../constants/theme";
 import AnimatedRotateButton from "../animated/AnimatedRotateButton";
 import { GLOBAL_CTA_CONTENT } from "@/constants/global";
-import FloatingParticles from "../animated/FloatingParticles";
-import HeroEntrance from "../animated/HeroEntrance";
+
+// Lazy load heavy visual components
+const FloatingParticles = dynamic(() => import("../animated/FloatingParticles"), {
+  ssr: false,
+});
 
 export default function Hero() {
   const theme = THEMES[currentTheme as keyof typeof THEMES];
@@ -84,11 +88,13 @@ export default function Hero() {
         />
       </div>
 
-      {/* Floating Particles */}
+      {/* Floating Particles - Lazy Loaded */}
       <FloatingParticles count={20} />
 
       <div className="relative max-w-7xl mx-auto w-full text-center">
-        <HeroEntrance>
+        {/* CSS Animation Wrapper instead of HeroEntrance JS */}
+        {/* OPTIMIZATION: Removed 'animate-in fade-in zoom-in' to prevent LCP delay. Text is visible instantly. */}
+        <div className="opacity-100">
           {/* Top Badge (SEO-safe) */}
           <div className="mb-4 flex justify-center">
             <span className="text-xs sm:text-sm tracking-wide bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
@@ -164,7 +170,7 @@ export default function Hero() {
               accent={theme.accents}
             />
           </div>
-        </HeroEntrance>
+        </div>
       </div>
     </section>
   );

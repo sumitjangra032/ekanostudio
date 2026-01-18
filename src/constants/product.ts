@@ -1,4 +1,4 @@
-// import { PiPackageFill } from "react-icons/pi";
+
 
 // export const PRODUCT_CONTENT = {
 //   tag: {
