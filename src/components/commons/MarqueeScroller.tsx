@@ -51,12 +51,12 @@ export default function MarqueeScroller({
       </div>
       <style>{`
         @keyframes marquee-left {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-33.33%); }
+          0% { transform: translate3d(0, 0, 0); }
+          100% { transform: translate3d(-33.33%, 0, 0); }
         }
         @keyframes marquee-right {
-          0% { transform: translateX(-33.33%); }
-          100% { transform: translateX(0); }
+          0% { transform: translate3d(-33.33%, 0, 0); }
+          100% { transform: translate3d(0, 0, 0); }
         }
       `}</style>
     </div>

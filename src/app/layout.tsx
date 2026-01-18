@@ -4,7 +4,8 @@ import { ReactNode } from "react";
 
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import Navbar from "@/components/navbar/Navbar";
-import Footer from "@/components/sections/Footer";
+import dynamic from "next/dynamic";
+const Footer = dynamic(() => import("@/components/sections/Footer"), { ssr: true });
 import Script from "next/script";
 import { Metadata } from "next";
 import { LazyMotionProvider } from "@/components/providers/LazyMotionProvider";
@@ -108,6 +109,20 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link
           rel="preload"
           href="/fonts/cabinet/CabinetGrotesk-Extrabold.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/satoshi/Satoshi-Black.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/general-sans/GeneralSans-Medium.woff2"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
