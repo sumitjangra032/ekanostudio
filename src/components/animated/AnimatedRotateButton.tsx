@@ -86,7 +86,7 @@ export default function AnimatedRotateButton({
         <span className="absolute left-1/2 -translate-x-1/2 top-0 transition-transform duration-300 ease-in-out group-hover:translate-y-[-150%]">
           {text}
         </span>
-        <span className="absolute left-1/2 -translate-x-1/2 top-full transition-transform duration-300 ease-in-out group-hover:translate-y-[-200%]">
+        <span className="absolute left-1/2 -translate-x-1/2 top-full transition-transform duration-300 ease-in-out group-hover:translate-y-[-100%]">
           {text}
         </span>
       </div>
