@@ -14,7 +14,7 @@ export const BRAND_LOGO = {
     // 'h-14' (56px) keeps the navbar slim.
     // 'scale-[2.8]' zooms the logo in to make it look big (compensating for whitespace).
     // 'origin-left' keeps it aligned to the left side.
-    className: "object-contain w-auto h-14 scale-[2.8] origin-left ml-4"
+    className: "object-contain w-auto origin-left ml-1 md:ml-4 h-12 scale-[2.8] pt-1 md:h-14 md:scale-[2.8]"
   },
   footer: {
     width: 200,

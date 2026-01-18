@@ -39,17 +39,23 @@ export default function Hero() {
             </span>
           </div>
 
+          {/* Critical CSS for Hero H1 - Inlined for Instant Paint */}
+          <style dangerouslySetInnerHTML={{
+            __html: `
+            #hero-h1 {
+              font-size: 32px;
+              line-height: 1.1;
+            }
+            @media (min-width: 640px) { #hero-h1 { font-size: 40px; } }
+            @media (min-width: 768px) { #hero-h1 { font-size: 52px; } }
+            @media (min-width: 1024px) { #hero-h1 { font-size: 64px; } }
+            @media (min-width: 1280px) { #hero-h1 { font-size: 72px; } }
+          `}} />
+
           {/* H1 Headline */}
           <h1
-            className="
-              font-medium italic leading-tight
-              text-[32px]
-              sm:text-[40px]
-              md:text-[52px]
-              lg:text-[64px]
-              xl:text-[72px]
-              hero-headline
-            "
+            id="hero-h1"
+            className="font-medium italic hero-headline"
             style={{
               fontFamily: "'Cabinet Grotesk', sans-serif",
               fontWeight: 700,

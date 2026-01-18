@@ -70,7 +70,10 @@ export default function Navbar() {
             alt={BRAND.name}
             width={BRAND_LOGO.navbar.width}
             height={BRAND_LOGO.navbar.height}
-            priority
+            loading="lazy"
+            decoding="async"
+            // @ts-ignore - fetchpriority is valid but not yet in React types
+            fetchpriority="low"
             className={BRAND_LOGO.navbar.className}
           />
         </Link>

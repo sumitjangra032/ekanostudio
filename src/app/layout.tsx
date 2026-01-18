@@ -136,8 +136,19 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-0T7Z4PX35H');
+            
+            if ('requestIdleCallback' in window) {
+              requestIdleCallback(function() {
+                gtag('js', new Date());
+                gtag('config', 'G-0T7Z4PX35H');
+              });
+            } else {
+              // Fallback
+              setTimeout(function() {
+                 gtag('js', new Date());
+                 gtag('config', 'G-0T7Z4PX35H');
+              }, 2000);
+            }
           `}
         </Script>
 
