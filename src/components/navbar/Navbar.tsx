@@ -70,15 +70,13 @@ export default function Navbar() {
             alt={BRAND.name}
             width={BRAND_LOGO.navbar.width}
             height={BRAND_LOGO.navbar.height}
-            loading="lazy"
-            decoding="async"
-            // @ts-ignore - fetchpriority is valid but not yet in React types
-            fetchpriority="low"
+            priority
             className={BRAND_LOGO.navbar.className}
+            style={{ width: "auto" }}
           />
         </Link>
 
-        <div className="hidden md:flex items-center gap-1 ">
+        <div className="hidden md:pl-20 md:flex items-center gap-1 ">
           {NAV_LINKS.map((link) => {
             const isOpen = openMenu === link.label;
             const isHighlighted =

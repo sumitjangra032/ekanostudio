@@ -29,7 +29,8 @@ export default function AnimateIconDrawing({
           key={i}
           {...child.props}
           initial={{ pathLength: 0, opacity: 0 }}
-          animate={{ pathLength: 1, opacity: 1 }}
+          whileInView={{ pathLength: 1, opacity: 1 }}
+          viewport={{ once: true, margin: "-10%" }}
           transition={{
             duration: 1.2,
             ease: "easeInOut",
@@ -44,7 +45,8 @@ export default function AnimateIconDrawing({
       <m.path
         {...(rendered as any).props.children.props}
         initial={{ pathLength: 0, opacity: 0 }}
-        animate={{ pathLength: 1, opacity: 1 }}
+        whileInView={{ pathLength: 1, opacity: 1 }}
+        viewport={{ once: true, margin: "-10%" }}
         transition={{ duration: 1.2, ease: "easeInOut" }}
       />
     ) : (

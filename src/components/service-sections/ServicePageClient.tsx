@@ -31,9 +31,12 @@ export default function ServicePageClient({ serviceData }: ServicePageClientProp
 
             {/* ALL SECTIONS ON TOP */}
             <div className="relative z-10">
-                {serviceData.sections.map((section: IServiceSection, i: number) => (
-                    <SectionRenderer key={i} section={section} theme={theme} />
-                ))}
+                {serviceData.sections.map((section: IServiceSection, i: number) => {
+                    const heroSection = serviceData.sections.find((s) => s.type === "hero");
+                    const heroCta = heroSection?.data?.serviceCta;
+
+                    return <SectionRenderer key={i} section={section} theme={theme} heroCta={heroCta} />;
+                })}
             </div>
         </div>
     );

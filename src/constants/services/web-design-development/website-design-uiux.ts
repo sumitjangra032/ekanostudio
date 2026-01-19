@@ -184,10 +184,50 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
       data: {
         heading: "Pricing & [Packages]",
         plans: [
-          { name: "Starter", price: "$299 – $499", description: "Landing page design or 1–2 pages." },
-          { name: "Standard", price: "$799 – $1,399", description: "Full business website design." },
-          { name: "Premium", price: "$1,800 – $3,500", description: "Advanced UI/UX and ecommerce websites." },
-          { name: "Enterprise", price: "$4,500+", description: "Global web design agency solutions." },
+          {
+            name: "Starter",
+            price: "$299 – $499",
+            description: "Landing page design or 1–2 pages.",
+            features: [
+              "Custom UI/UX Design",
+              "Mobile Responsive",
+              "Figma Source Files",
+              "Up to 2 Revisions"
+            ]
+          },
+          {
+            name: "Standard",
+            price: "$799 – $1,399",
+            description: "Full business website design.",
+            features: [
+              "Multi-page UI/UX Design",
+              "Interactive Prototypes",
+              "Design Systems",
+              "Up to 5 Revisions"
+            ]
+          },
+          {
+            name: "Premium",
+            price: "$1,800 – $3,500",
+            description: "Advanced UI/UX and ecommerce websites.",
+            features: [
+              "Advanced User Research",
+              "High-Fidelity Wireframes",
+              "E-commerce Flow Design",
+              "Unlimited Revisions"
+            ]
+          },
+          {
+            name: "Enterprise",
+            price: "$4,500+",
+            description: "Global web design agency solutions.",
+            features: [
+              "Full Product Design",
+              "Accessibility Audits",
+              "Dedicated Designer",
+              "Global Design Standards"
+            ]
+          },
         ],
       },
     },

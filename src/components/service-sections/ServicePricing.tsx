@@ -3,6 +3,7 @@
 import { m, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 import { useTheme } from "../providers/ThemeProvider";
 import { THEMES } from "@/constants/theme";
 import AnimatedLine from "../animated/AnimatedLine";
@@ -12,8 +13,14 @@ import RandomGradientGlow from "../effects/RandomGradientGlow";
 import FloatingParticles from "../animated/FloatingParticles";
 import ParallaxBackground from "../animated/ParallaxBackground";
 
-export default function ServicePricing({ data, theme }: { data: any; theme: any }) {
+export default function ServicePricing({ data, theme, heroCta }: { data: any; theme: any, heroCta?: any }) {
   if (!data?.plans?.length) return null;
+
+  const params = useParams();
+  const category = data.category || params?.category;
+  const service = data.serviceSlug || params?.service;
+
+  const dynamicHref = `${GLOBAL_CTA_CONTENT.serviceForm.href}?category=${category}&service=${service}`;
 
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -162,7 +169,7 @@ export default function ServicePricing({ data, theme }: { data: any; theme: any 
 
                 <AnimatedRotateButton
                   text="Get Started"
-                  href={GLOBAL_CTA_CONTENT.serviceForm.href}
+                  href={dynamicHref}
                   color={theme.buttonBg}
                   accent={theme.accents}
                   className="w-full text-center py-4 text-sm font-bold uppercase tracking-widest"

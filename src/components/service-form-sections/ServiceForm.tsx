@@ -91,7 +91,6 @@ export default function ServiceForm() {
     const [loadingService, setLoadingService] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submissionError, setSubmissionError] = useState<string | null>(null);
-    const [isUrlPreselected, setIsUrlPreselected] = useState(false);
 
     const form = useForm<ServiceFormValues>({
         resolver: zodResolver(serviceFormSchema),
@@ -123,7 +122,6 @@ export default function ServiceForm() {
         if (categoryFromUrl && serviceFromUrl) {
             form.setValue("category", categoryFromUrl);
             form.setValue("service", serviceFromUrl);
-            setIsUrlPreselected(true);
         }
     }, [categoryFromUrl, serviceFromUrl, form]);
 
@@ -362,119 +360,102 @@ export default function ServiceForm() {
                                                 </div>
                                             </CardHeader>
                                             <CardContent className="space-y-6 pt-2">
-                                                {isUrlPreselected ? (
-                                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                                                        <div className="space-y-2">
-                                                            <div className="text-xs font-bold uppercase tracking-widest opacity-60" style={{ color: theme.text }}>Category</div>
-                                                            <div className="p-3 rounded-lg border text-sm font-medium truncate" style={{ borderColor: theme.text + "22", color: theme.text }}>
-                                                                {SERVICES_CONTENT.categories.find(c => c.slug === categoryFromUrl)?.name || categoryFromUrl}
-                                                            </div>
-                                                        </div>
-                                                        <div className="space-y-2">
-                                                            <div className="text-xs font-bold uppercase tracking-widest opacity-60" style={{ color: theme.text }}>Service</div>
-                                                            <div className="p-3 rounded-lg border text-sm font-medium truncate" style={{ borderColor: theme.text + "22", color: theme.text }}>
-                                                                {serviceData?.title || serviceFromUrl}
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                ) : (
-                                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                                        <FormField
-                                                            control={form.control}
-                                                            name="category"
-                                                            render={({ field }) => (
-                                                                <FormItem>
-                                                                    <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">
-                                                                        Category
-                                                                    </FormLabel>
-                                                                    <Select
-                                                                        onValueChange={(value) => {
-                                                                            field.onChange(value);
-                                                                            form.setValue("service", "");
-                                                                            form.setValue("package", "");
+                                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                                    <FormField
+                                                        control={form.control}
+                                                        name="category"
+                                                        render={({ field }) => (
+                                                            <FormItem>
+                                                                <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">
+                                                                    Category
+                                                                </FormLabel>
+                                                                <Select
+                                                                    onValueChange={(value) => {
+                                                                        field.onChange(value);
+                                                                        form.setValue("service", "");
+                                                                        form.setValue("package", "");
+                                                                    }}
+                                                                    value={field.value}
+                                                                >
+                                                                    <FormControl>
+                                                                        <SelectTrigger
+                                                                            className="w-full h-11"
+                                                                            style={{
+                                                                                border: `1px solid ${theme.text}22`,
+                                                                                background: `${theme.cardBg}80`,
+                                                                            }}
+                                                                        >
+                                                                            <SelectValue placeholder="Select a category" />
+                                                                        </SelectTrigger>
+                                                                    </FormControl>
+                                                                    <SelectContent
+                                                                        className="max-h-[300px]"
+                                                                        style={{
+                                                                            backgroundColor: theme.background,
+                                                                            borderColor: theme.text + "22",
+                                                                            color: theme.text,
                                                                         }}
-                                                                        value={field.value}
                                                                     >
-                                                                        <FormControl>
-                                                                            <SelectTrigger
-                                                                                className="w-full h-11"
-                                                                                style={{
-                                                                                    border: `1px solid ${theme.text}22`,
-                                                                                    background: `${theme.cardBg}80`,
-                                                                                }}
-                                                                            >
-                                                                                <SelectValue placeholder="Select a category" />
-                                                                            </SelectTrigger>
-                                                                        </FormControl>
-                                                                        <SelectContent
-                                                                            className="max-h-[300px]"
-                                                                            style={{
-                                                                                backgroundColor: theme.background,
-                                                                                borderColor: theme.text + "22",
-                                                                                color: theme.text,
-                                                                            }}
-                                                                        >
-                                                                            {SERVICES_CONTENT.categories.map((cat) => (
-                                                                                <SelectItem key={cat.slug} value={cat.slug}>
-                                                                                    {cat.name}
-                                                                                </SelectItem>
-                                                                            ))}
-                                                                        </SelectContent>
-                                                                    </Select>
-                                                                    <FormMessage />
-                                                                </FormItem>
-                                                            )}
-                                                        />
+                                                                        {SERVICES_CONTENT.categories.map((cat) => (
+                                                                            <SelectItem key={cat.slug} value={cat.slug}>
+                                                                                {cat.name}
+                                                                            </SelectItem>
+                                                                        ))}
+                                                                    </SelectContent>
+                                                                </Select>
+                                                                <FormMessage />
+                                                            </FormItem>
+                                                        )}
+                                                    />
 
-                                                        <FormField
-                                                            control={form.control}
-                                                            name="service"
-                                                            render={({ field }) => (
-                                                                <FormItem>
-                                                                    <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">
-                                                                        Service
-                                                                    </FormLabel>
-                                                                    <Select
-                                                                        onValueChange={field.onChange}
-                                                                        value={field.value}
-                                                                        disabled={!selectedCategorySlug}
-                                                                    >
-                                                                        <FormControl>
-                                                                            <SelectTrigger
-                                                                                className="w-full h-11"
-                                                                                style={{
-                                                                                    border: `1px solid ${theme.text}22`,
-                                                                                    background: `${theme.cardBg}80`,
-                                                                                }}
-                                                                            >
-                                                                                <SelectValue
-                                                                                    placeholder={selectedCategorySlug ? "Select a service" : "Select a category first"}
-                                                                                />
-                                                                            </SelectTrigger>
-                                                                        </FormControl>
-                                                                        <SelectContent
-                                                                            className="max-h-[300px]"
+                                                    <FormField
+                                                        control={form.control}
+                                                        name="service"
+                                                        render={({ field }) => (
+                                                            <FormItem>
+                                                                <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">
+                                                                    Service
+                                                                </FormLabel>
+                                                                <Select
+                                                                    onValueChange={field.onChange}
+                                                                    value={field.value}
+                                                                    disabled={!selectedCategorySlug}
+                                                                >
+                                                                    <FormControl>
+                                                                        <SelectTrigger
+                                                                            className="w-full h-11"
                                                                             style={{
-                                                                                backgroundColor: theme.background,
-                                                                                borderColor: theme.text + "22",
-                                                                                color: theme.text,
+                                                                                border: `1px solid ${theme.text}22`,
+                                                                                background: `${theme.cardBg}80`,
                                                                             }}
                                                                         >
-                                                                            {availableServices.map((service) => (
-                                                                                <SelectItem key={service.slug} value={service.slug}>
-                                                                                    <div className="flex items-center gap-2">
-                                                                                        <span className="truncate">{service.title}</span>
-                                                                                    </div>
-                                                                                </SelectItem>
-                                                                            ))}
-                                                                        </SelectContent>
-                                                                    </Select>
-                                                                    <FormMessage />
-                                                                </FormItem>
-                                                            )}
-                                                        />
-                                                    </div>
-                                                )}
+                                                                            <SelectValue
+                                                                                placeholder={selectedCategorySlug ? "Select a service" : "Select a category first"}
+                                                                            />
+                                                                        </SelectTrigger>
+                                                                    </FormControl>
+                                                                    <SelectContent
+                                                                        className="max-h-[300px]"
+                                                                        style={{
+                                                                            backgroundColor: theme.background,
+                                                                            borderColor: theme.text + "22",
+                                                                            color: theme.text,
+                                                                        }}
+                                                                    >
+                                                                        {availableServices.map((service) => (
+                                                                            <SelectItem key={service.slug} value={service.slug}>
+                                                                                <div className="flex items-center gap-2">
+                                                                                    <span className="truncate">{service.title}</span>
+                                                                                </div>
+                                                                            </SelectItem>
+                                                                        ))}
+                                                                    </SelectContent>
+                                                                </Select>
+                                                                <FormMessage />
+                                                            </FormItem>
+                                                        )}
+                                                    />
+                                                </div>
 
                                                 {/* Project Requirements */}
                                                 <FormField

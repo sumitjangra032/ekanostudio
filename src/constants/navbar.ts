@@ -78,7 +78,7 @@ export const NAVBAR_SERVICES = [
       {
         name: "Website Design (UI/UX)",
         description: "Modern, responsive UI & visual design",
-        slug: "website-design",
+        slug: "website-design-uiux",
         icon: LaptopCodeIcon,
       },
       {
@@ -90,7 +90,7 @@ export const NAVBAR_SERVICES = [
       {
         name: "Landing Page Development",
         description: "High-converting landing pages",
-        slug: "landing-page-design",
+        slug: "landing-page-development",
         icon: MobileAltIcon,
       },
       {
@@ -108,7 +108,7 @@ export const NAVBAR_SERVICES = [
       {
         name: "Website Speed Optimization",
         description: "Performance tuning for SEO & UX",
-        slug: "speed-optimization",
+        slug: "website-speed-optimization",
         icon: BoltIcon,
       },
     ],
@@ -204,7 +204,7 @@ export const NAVBAR_SERVICES = [
       {
         name: "Conversion Optimization",
         description: "Improve conversion rates",
-        slug: "conversion-optimization",
+        slug: "conversion-rate-optimization",
         icon: ChartLineIcon,
       },
     ],

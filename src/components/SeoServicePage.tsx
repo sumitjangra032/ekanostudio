@@ -130,6 +130,8 @@ export default function SeoServicePage({ data }: { data: SeoPageData }) {
                 type: "pricing",
                 data: {
                     heading: "Flexible Pricing Plans",
+                    category: data.service.categorySlug,
+                    serviceSlug: data.service.targetServiceSlug,
                     plans: SERVICE_PRICING[data.service.targetServiceSlug] || [
                         {
                             name: "Starter",

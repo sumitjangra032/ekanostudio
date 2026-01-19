@@ -8,7 +8,7 @@ export default function AnimateDownloadedSVG({
   size = 100,
   stroke = "currentColor",
   duration = 1.5,
-  repeat = true
+  repeat = false
 }: {
   src: string;
   size?: number | string;
@@ -36,10 +36,8 @@ export default function AnimateDownloadedSVG({
 
       const makeAnim = (i: number) => ({
         initial: { pathLength: 0, opacity: 0 },
-        animate: {
-          pathLength: inView ? 1 : 0,
-          opacity: inView ? 1 : 0
-        },
+        whileInView: { pathLength: 1, opacity: 1 },
+        viewport: { once: true, margin: "-20% 0px" },
         transition: {
           duration,
           ease: easeInOut,

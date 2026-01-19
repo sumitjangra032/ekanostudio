@@ -29,9 +29,8 @@ export const SECTION_COMPONENTS: Partial<Record<ISectionType, any>> = {
   cta: ServiceCta,
 };
 
-export default function SectionRenderer({ section, theme }: { section: IServiceSection, theme: any }) {
+export default function SectionRenderer({ section, theme, heroCta }: { section: IServiceSection, theme: any, heroCta?: any }) {
   const Component = SECTION_COMPONENTS[section.type];
   if (!Component) return null;
-
-  return <Component data={section.data} theme={theme} />;
+  return <Component data={section.data} theme={theme} heroCta={heroCta} />;
 }

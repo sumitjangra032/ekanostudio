@@ -106,6 +106,7 @@ export default function ServiceDeliverables({ data }: { data: any }) {
                                 style={{
                                     background: `${theme.accents.a}14`,
                                     border: `1px solid ${theme.accents.a}30`,
+                                    color: theme.accents.a,
                                 }}
                             >
                                 <CheckCircleIcon

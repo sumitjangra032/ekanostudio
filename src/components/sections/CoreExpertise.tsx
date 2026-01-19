@@ -169,12 +169,11 @@ function CoreExpertiseCard({
                     </h3>
 
                     <div className="mb-8">
-                        <AnimatedLine
+                        <StaticLine
                             text={card.description}
-                            isHeading={false}
                             textColor={theme.subtext}
+                            highlightColor={theme.accents.a}
                             className="text-[16px] leading-relaxed max-w-xl"
-                            highlightStyle={{ color: theme.accents.a, fontWeight: 500 }}
                         />
                     </div>
 
@@ -220,5 +219,63 @@ function CoreExpertiseCard({
                 </div>
             </div>
         </m.div>
+    );
+}
+
+function StaticLine({
+    text,
+    textColor,
+    highlightColor,
+    className
+}: {
+    text: string;
+    textColor: string;
+    highlightColor: string;
+    className?: string;
+}) {
+    // Regex to match:
+    // 1. [...] segments
+    // 2. {...} segments
+    // 3. Or sequence of non-whitespace characters (words)
+    const regex = /(\[[^\]]+\]|\{[^}]+\}|\S+)/g;
+    const words = text ? (text.match(regex) || []) : [];
+
+    return (
+        <p className={className} style={{ color: textColor }}>
+            {words.map((word, i) => {
+                const isTarget =
+                    (word.startsWith("{") && word.endsWith("}")) ||
+                    (word.startsWith("[") && word.endsWith("]"));
+
+                let cleanText = isTarget ? word.slice(1, -1) : word;
+                let linkUrl: string | null = null;
+
+                if (isTarget && cleanText.includes("|")) {
+                    const parts = cleanText.split("|");
+                    cleanText = parts[0];
+                    linkUrl = parts[1];
+                }
+
+                const content = (
+                    <span
+                        key={i}
+                        className={`inline-block mr-2 px-[0.045em] ${isTarget ? "font-medium" : ""} ${linkUrl ? "hover:underline cursor-pointer" : ""}`}
+                        style={isTarget ? { color: highlightColor } : undefined}
+                    >
+                        {cleanText}
+                    </span>
+                );
+
+                if (linkUrl) {
+                    return (
+                        <Link key={i} href={linkUrl} className="inline-block">
+                            {content}
+                        </Link>
+                    );
+                }
+
+                return content;
+            })}
+        </p>
     );
 }
