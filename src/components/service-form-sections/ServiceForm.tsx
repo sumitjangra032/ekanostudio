@@ -83,7 +83,12 @@ function formatPriceToK(priceStr: string): string {
     });
 }
 
-export default function ServiceForm() {
+interface ServiceFormProps {
+    initialCategory?: string;
+    initialService?: string;
+}
+
+export default function ServiceForm({ initialCategory, initialService }: ServiceFormProps) {
     const { themeName } = useTheme();
     const theme = THEMES[themeName];
     const [submittedData, setSubmittedData] = useState<ServiceFormValues | null>(null);
@@ -92,6 +97,26 @@ export default function ServiceForm() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submissionError, setSubmissionError] = useState<string | null>(null);
 
+    const searchParams = useSearchParams();
+    const categoryFromUrl = searchParams.get("category") || initialCategory;
+    const serviceFromUrl = searchParams.get("service") || initialService;
+
+    // Determine initial values
+    let initialCat = categoryFromUrl || "";
+    let initialServ = serviceFromUrl || "";
+
+    if (!initialCat && initialServ) {
+        const found = SERVICES_CONTENT.categories.find(c =>
+            c.items.some(i => i.slug === initialServ)
+        );
+        if (found) initialCat = found.slug;
+    }
+
+    if (!initialCat && !initialServ) {
+        initialCat = SERVICES_CONTENT.categories[0].slug;
+        initialServ = SERVICES_CONTENT.categories[0].items[0].slug;
+    }
+
     const form = useForm<ServiceFormValues>({
         resolver: zodResolver(serviceFormSchema),
         defaultValues: {
@@ -99,8 +124,8 @@ export default function ServiceForm() {
             phone: "",
             country: "",
             email: "",
-            category: "",
-            service: "",
+            category: initialCat,
+            service: initialServ,
             package: "",
             contactMethod: "whatsapp",
             requirements: "",
@@ -114,24 +139,34 @@ export default function ServiceForm() {
         return SERVICES_CONTENT.categories.find((c) => c.slug === selectedCategorySlug)?.items || [];
     }, [selectedCategorySlug]);
 
-    const searchParams = useSearchParams();
-    const categoryFromUrl = searchParams.get("category");
-    const serviceFromUrl = searchParams.get("service");
-
+    // Sync form with URL params if they change
     useEffect(() => {
-        if (categoryFromUrl && serviceFromUrl) {
-            form.setValue("category", categoryFromUrl);
+        if (categoryFromUrl) form.setValue("category", categoryFromUrl);
+        if (serviceFromUrl) {
             form.setValue("service", serviceFromUrl);
+            // If category is not set but service is, find and set category
+            if (!categoryFromUrl) {
+                const found = SERVICES_CONTENT.categories.find(c =>
+                    c.items.some(i => i.slug === serviceFromUrl)
+                );
+                if (found) form.setValue("category", found.slug);
+            }
         }
     }, [categoryFromUrl, serviceFromUrl, form]);
 
+    // Load service data when selection changes
     useEffect(() => {
         if (selectedCategorySlug && selectedServiceSlug) {
             setLoadingService(true);
             loadServiceBySlug(selectedCategorySlug, selectedServiceSlug)
                 .then((data) => {
                     setServiceData(data);
-                    form.setValue("package", "");
+                    // Reset package ONLY if current package doesn't exist in new data
+                    const pricing = data?.sections?.find((s: IServiceSection) => s.type === "pricing")?.data;
+                    const packageExists = pricing?.plans?.some((p: any) => p.name === form.getValues("package"));
+                    if (!packageExists) {
+                        form.setValue("package", "");
+                    }
                 })
                 .finally(() => setLoadingService(false));
         } else {

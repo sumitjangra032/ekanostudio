@@ -612,44 +612,6 @@ export default function CareersPageClient() {
           height: auto;
         }
 
-        /* Fix for autofill in dark themes */
-        input:-webkit-autofill,
-        input:-webkit-autofill:hover, 
-        input:-webkit-autofill:focus,
-        input:-webkit-autofill:active {
-          -webkit-text-fill-color: ${theme?.text || '#ffffff'} !important;
-          -webkit-background-clip: text !important;
-          background-clip: text !important;
-          transition: background-color 5000s ease-in-out 0s !important;
-          box-shadow: 0 0 0px 1000px ${theme?.background + "80" || 'rgba(0, 0, 0, 0.5)'} inset !important;
-          border: 1px solid ${theme?.text + "20" || 'rgba(255, 255, 255, 0.2)'} !important;
-          color: ${theme?.text || '#ffffff'} !important;
-        }
-
-        /* Firefox autofill fix */
-        input:-moz-autofill,
-        input:-moz-autofill:hover,
-        input:-moz-autofill:focus {
-          background-color: ${theme?.background + "80" || 'rgba(0, 0, 0, 0.5)'} !important;
-          color: ${theme?.text || '#ffffff'} !important;
-          border: 1px solid ${theme?.text + "20" || 'rgba(255, 255, 255, 0.2)'} !important;
-        }
-
-        /* Standard autofill fix */
-        input:autofill,
-        input:autofill:hover,
-        input:autofill:focus {
-          background-color: ${theme?.background + "80" || 'rgba(0, 0, 0, 0.5)'} !important;
-          color: ${theme?.text || '#ffffff'} !important;
-          border: 1px solid ${theme?.text + "20" || 'rgba(255, 255, 255, 0.2)'} !important;
-        }
-
-        /* Make autofilled text visible on focus */
-        .form-input:-webkit-autofill:focus {
-          -webkit-text-fill-color: ${theme?.text || '#ffffff'} !important;
-          background-color: ${theme?.background + "80" || 'rgba(0, 0, 0, 0.5)'} !important;
-        }
-
         :root {
           --focus-color: ${theme?.accents?.a || '#3b82f6'};
           --focus-shadow: ${theme?.accents?.a || '#3b82f6'}20;

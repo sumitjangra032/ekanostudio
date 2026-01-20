@@ -112,26 +112,6 @@ export default function BookConsultationForm() {
     }, [selectedCategorySlug]);
 
     // Fix 1: Autofill background color fix
-    useEffect(() => {
-        const style = document.createElement('style');
-        style.textContent = `
-            input:-webkit-autofill {
-                -webkit-box-shadow: 0 0 0 1000px ${theme.background} inset !important;
-                -webkit-text-fill-color: ${theme.text} !important;
-                box-shadow: 0 0 0 1000px ${theme.background} inset !important;
-            }
-            input:-webkit-autofill:focus {
-                -webkit-box-shadow: 0 0 0 1000px ${theme.background} inset !important;
-                -webkit-text-fill-color: ${theme.text} !important;
-                box-shadow: 0 0 0 1000px ${theme.background} inset !important;
-            }
-        `;
-        document.head.appendChild(style);
-
-        return () => {
-            document.head.removeChild(style);
-        };
-    }, [theme.background, theme.text]);
 
     useEffect(() => {
         if (categoryFromUrl) {
