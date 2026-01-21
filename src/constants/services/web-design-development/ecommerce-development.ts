@@ -11,7 +11,7 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
         headline:
           "E-Commerce Development transforms your products into a high-performance online store engineered for {sales}, speed, and scale.",
         subheadline:
-          "We build conversion-focused shopping experiences that turn visitors into loyal customers and maximize your revenue potential.",
+          "We provide ecommerce development services focused on building high-conversion ecommerce websites, custom ecommerce solutions, and scalable online store development that turn visitors into loyal customers and maximize your revenue potential.",
         serviceCta: { text: "Build My Online Store", href: "#contact" },
       },
     },
@@ -19,7 +19,7 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
       type: "metrics",
       data: {
         heading: "Built to Deliver [Results]",
-        subheading: "{Results} from our e-commerce development workflows",
+        subheading: "{Results} from our ecommerce development workflows",
         items: [
           {
             value: "220+",
@@ -28,17 +28,17 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
           },
           {
             value: "7–18 Days",
-            label: "Avg. Store Development Time",
+            label: "Avg. Store Development Time (Shopify, WooCommerce & Custom)",
             icon: "/icons/zap.svg",
           },
           {
             value: "97%",
-            label: "Client Satisfaction Rate",
+            label: "Client Satisfaction Rate Across Ecommerce Projects",
             icon: "/icons/shield-check.svg",
           },
           {
             value: "1.8M+",
-            label: "Orders Processed Through Our Builds",
+            label: "Orders Processed Through Our Ecommerce Builds",
             icon: "/icons/trending-up.svg",
           },
         ],
@@ -49,7 +49,7 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
       data: {
         heading: "E-Commerce Development",
         content:
-          "Ecommerce development services are the backbone of your digital {sales engine}. We design and develop secure, scalable, and conversion-optimized online stores specializing in Shopify development, WooCommerce development, and online store development. From product presentation to checkout experience, payment gateways, inventory systems, and order automation—we engineer every element to drive higher sales, better user experience, and long-term scalability for your business.",
+          "Ecommerce development services are the backbone of your digital {sales engine}. Our ecommerce website development solutions include Shopify ecommerce development, WooCommerce ecommerce development, custom ecommerce development, and ecommerce web development services. We design secure, scalable, conversion-optimized ecommerce platforms with intuitive product pages, fast checkout experiences, payment gateway integration, inventory automation, and ecommerce order management systems. Whether it’s a custom ecommerce website development project or a marketplace build, we engineer every detail to increase sales, improve user experience, and support long-term scalability.",
       },
     },
     {
@@ -57,16 +57,16 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
       data: {
         heading: "What you [see] on this page (User-Facing Elements)",
         items: [
-          "Hero section featuring high-conversion store previews",
+          "Hero section featuring high-conversion ecommerce store previews",
           "{Store} UI mockups for desktop, tablet & mobile",
           "Product page design & layout demonstrations",
-          "Checkout & payment {workflow} previews",
-          "Cart, wishlist & upsell flow examples",
-          "Speed & performance optimization indicators",
+          "Checkout & payment {workflow} previews with secure checkout system",
+          "Cart, wishlist & upsell flow examples for higher conversions",
+          "Speed, performance & ecommerce optimization indicators",
           "“Projects Completed” sales & reliability metrics",
-          "Step-by-step store development workflow",
-          "Deliverables checklist",
-          "FAQs about payments, security & scalability",
+          "Step-by-step ecommerce website development workflow",
+          "Ecommerce development deliverables checklist",
+          "FAQs about payments, security, ecommerce scaling & integrations",
           "Contact form with “Launch My Store” CTA",
         ],
       },
@@ -76,20 +76,20 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
       data: {
         heading: "Start-to-Finish [Deliverables]",
         items: [
-          "Ecommerce website design & UI/UX",
-          "Custom ecommerce solutions (Shopify, WooCommerce, Custom)",
-          "Product category & product page creation",
-          "Secure {checkout} & cart system",
-          "Payment gateway integrations (Stripe, Razorpay, PayPal, etc.)",
-          "Inventory & stock {management} system",
-          "Shipping, tax & order automation setup",
-          "Coupon, discount & promotional systems",
-          "Upsell, cross-sell & recommendation logic",
-          "Mobile-optimized shopping experience",
-          "Admin dashboard & order management system",
-          "Security hardening & data protection setup",
-          "Analytics, conversion & revenue tracking",
-          "Full handover documentation & training",
+          "Ecommerce website design & UI/UX for high-conversion stores",
+          "Custom ecommerce solutions (Shopify, WooCommerce, Laravel, Custom Frameworks)",
+          "Product category creation, product setup & ecommerce site development",
+          "Secure {checkout} & ecommerce cart development",
+          "Ecommerce payment gateway integration (Stripe, Razorpay, PayPal, etc.)",
+          "Inventory & stock {management} system with ecommerce automation",
+          "Shipping, tax & ecommerce order management automation",
+          "Coupon, discount & promotional systems for scaling sales",
+          "Upsell, cross-sell & product recommendation logic",
+          "Mobile-optimized ecommerce shopping experience",
+          "Admin dashboard & ecommerce web application management",
+          "Security hardening, data protection & fraud prevention",
+          "Analytics, conversion tracking & ecommerce performance insights",
+          "Full handover documentation, training & support",
         ],
       },
     },
@@ -98,13 +98,13 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
       data: {
         heading: "Why This Matters to [you]",
         items: [
-          "Turns your website into a 24/7 {revenue} machine",
-          "Improves customer {trust} with secure checkout",
-          "Increases average order value using smart upsells",
-          "Reduces cart abandonment through optimized UX",
-          "Enables automated order & inventory management",
-          "Supports business {scaling} without operational chaos",
-          "Builds long-term online sales sustainability",
+          "Turns your website into a 24/7 {revenue} machine using strategic ecommerce development",
+          "Improves customer {trust} with secure checkout systems",
+          "Increases average order value through optimized upsells & cross-sells",
+          "Reduces cart abandonment with ecommerce UX optimization",
+          "Enables ecommerce automation for orders & inventory",
+          "Supports business {scaling} with reliable ecommerce platform development",
+          "Builds long-term online sales sustainability with custom ecommerce development",
         ],
       },
     },
@@ -117,37 +117,37 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
           {
             title: "Discovery & Business [Analysis]",
             description:
-              "We understand your products, target audience, competition, and {sales goals}.",
+              "We understand your products, target audience, competition, and {sales goals} to plan the right ecommerce solution.",
             icon: "/icons/search.svg",
           },
           {
             title: "Platform Selection & [Architecture]",
             description:
-              "Shopify, WooCommerce, or custom solution selection based on {scalability} needs.",
+              "Shopify ecommerce development, WooCommerce ecommerce development, or custom ecommerce platform development selected based on {scalability} needs.",
             icon: "/icons/wrench.svg",
           },
           {
             title: "UI/UX Design & Store [Structure]",
             description:
-              "Product pages, category flow, checkout UX, and navigation {planning}.",
+              "Product pages, category flow, ecommerce website navigation & checkout UX {planning}.",
             icon: "/icons/brush.svg",
           },
           {
             title: "Development & [Integrations]",
             description:
-              "Payment gateways, inventory systems, shipping {tools} & automation.",
+              "Ecommerce web development, payment gateways, shipping integrations, inventory systems & automation {tools}.",
             icon: "/icons/code-xml.svg",
           },
           {
             title: "Testing & [Optimization]",
             description:
-              "Speed, security, mobile experience, checkout flow & bug {testing}.",
+              "Speed, security, mobile UX, checkout flow & ecommerce bug {testing}.",
             icon: "/icons/shield-check.svg",
           },
           {
             title: "Launch & Post-Launch [Support]",
             description:
-              "Store goes live with monitoring, training, and performance {optimization}.",
+              "Your store goes live with performance monitoring, ecommerce training & growth {optimization}.",
             icon: "/icons/rocket.svg",
           },
         ],
@@ -171,9 +171,9 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
         items: [
           "New brands launching online sales",
           "DTC & consumer product businesses",
-          "Manufacturers & wholesalers going digital",
-          "Subscription-based commerce models",
-          "High-volume & multi-vendor marketplace owners",
+          "Manufacturers & wholesalers entering ecommerce",
+          "Subscription-based ecommerce business models",
+          "High-volume, multi-vendor & ecommerce marketplace owners",
         ],
       },
     },
@@ -183,11 +183,11 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
         heading: "[Tools] We Use",
         items: [
           "Shopify, WooCommerce, Custom Commerce Frameworks",
-          "Stripe, Razorpay, PayPal",
-          "Inventory & ERP Integrations",
-          "GA4 & E-Commerce Conversion Tracking",
-          "CDN, Security & Performance Tools",
-          "API-based logistics & courier systems",
+          "Stripe, Razorpay, PayPal, Secure Payment Systems",
+          "Inventory, ERP & ecommerce integration tools",
+          "GA4 & Ecommerce Conversion Tracking",
+          "CDN, Security & Performance Optimization Tools",
+          "API-based logistics, courier & automation systems",
         ],
       },
     },
@@ -196,7 +196,7 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
       data: {
         heading: "Measured Product [Outcomes]",
         content:
-          "A lifestyle product brand migrated from offline sales to a full Shopify store built by us. Within 90 days of launch, monthly online {revenue} crossed $180,000, cart abandonment dropped by 42%, and repeat purchases increased by 36%.",
+          "A lifestyle product brand migrated from offline sales to a full Shopify ecommerce website development setup. Within 90 days, monthly online {revenue} crossed $180,000, cart abandonment dropped by 42%, and repeat purchases increased by 36% using strategic ecommerce development and UX optimization.",
       },
     },
     {
@@ -208,25 +208,25 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
             name: "Starter",
             price: "$699 – $1,199",
             description:
-              "Basic Shopify or WooCommerce store with up to 15 products.",
+              "Basic Shopify or WooCommerce ecommerce website with up to 15 products.",
           },
           {
             name: "Standard",
             price: "$1,499 – $2,800",
             description:
-              "Fully customized store with payment, shipping & automation.",
+              "Customized ecommerce web development with payment, shipping & automation.",
           },
           {
             name: "Premium",
             price: "$3,200 – $6,000",
             description:
-              "Advanced e-commerce system with upsells, analytics & performance optimization.",
+              "Advanced ecommerce system with upsells, analytics, optimization & integrations.",
           },
           {
             name: "Enterprise",
             price: "$8,000+",
             description:
-              "Ecommerce platform development, marketplaces & large-scale integrations.",
+              "Full-scale ecommerce platform development, marketplaces & large integrations.",
           },
         ],
       },
@@ -238,19 +238,19 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
         items: [
           {
             q: "Can I manage products and orders myself after launch?",
-            a: "Yes, you get a full admin panel with training and documentation.",
+            a: "Yes, you get a full admin panel with training, documentation & ecommerce order management tools.",
           },
           {
             q: "Are payments and customer data secure?",
-            a: "Yes, we implement SSL, encrypted transactions, and secure gateways.",
+            a: "Yes, we use encrypted transactions, SSL, secure gateways & ecommerce data protection.",
           },
           {
             q: "Do you integrate shipping and courier services?",
-            a: "Yes, we integrate real-time shipping, tracking & logistics systems.",
+            a: "Yes, we integrate real-time shipping, logistics APIs & ecommerce shipping automation.",
           },
           {
             q: "Can my store scale for high traffic and large orders?",
-            a: "Yes, all stores are built with scalability and performance in mind.",
+            a: "Yes, we build ecommerce web applications for scalability, high-volume performance & growth.",
           },
         ],
       },

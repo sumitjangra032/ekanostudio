@@ -11,12 +11,17 @@ const ServiceForm = dynamic(() => import("@/components/service-form-sections/Ser
     loading: () => <div className="py-40 text-center">Loading form...</div>
 });
 
-export default function ServiceFormClient() {
-    const { themeName } = useTheme();
-    const theme = THEMES[themeName];
+function ServiceFormContent() {
     const searchParams = useSearchParams();
     const category = searchParams.get("category") || undefined;
     const service = searchParams.get("service") || undefined;
+
+    return <ServiceForm initialCategory={category} initialService={service} />;
+}
+
+export default function ServiceFormClient() {
+    const { themeName } = useTheme();
+    const theme = THEMES[themeName];
 
     return (
         <Suspense fallback={
@@ -27,7 +32,7 @@ export default function ServiceFormClient() {
                 Loading...
             </div>}
         >
-            <ServiceForm initialCategory={category} initialService={service} />
+            <ServiceFormContent />
         </Suspense>
     )
 }
