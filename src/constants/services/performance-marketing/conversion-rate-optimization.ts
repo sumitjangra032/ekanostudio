@@ -8,8 +8,10 @@ const CONVERSION_RATE_OPTIMIZATION: IServiceType = {
       type: "hero",
       data: {
         title: "Conversion Optimization (CRO)",
-        headline: "Conversion Rate Optimization (CRO) transforms your existing traffic into more leads, sign-ups, and sales—without increasing ad spend.",
-        subheadline: "We scientifically analyze user behavior with conversion rate optimization services and {optimize} every interaction point to maximize {revenue} and performance.",
+        headline:
+          "Conversion Rate Optimization (CRO) transforms your existing traffic into more leads, sign-ups, and sales—without increasing ad spend.",
+        subheadline:
+          "We scientifically analyze user behavior with conversion rate optimization services, website conversion optimization, ecommerce conversion optimization and {optimize} every interaction point to maximize {revenue} and performance.",
         serviceCta: { text: "Optimize My Conversions", href: "#contact" },
       },
     },
@@ -30,7 +32,8 @@ const CONVERSION_RATE_OPTIMIZATION: IServiceType = {
       type: "overview",
       data: {
         heading: "Conversion Optimization (CRO)",
-        content: "Conversion Rate Optimization (CRO) is the process of improving your website’s ability to turn visitors into customers. Instead of spending more on traffic acquisition, our cro services focuses on fixing {friction} points, improving user experience, refining messaging, strengthening CTAs, and optimizing page layouts. We use data, psychology, and {experimentation} with website conversion optimization to systematically improve your conversion rates across landing page optimization, ecommerce conversion optimization, and marketing {funnels}.",
+        content:
+          "Conversion Rate Optimization (CRO) is the process of improving your website’s ability to turn visitors into customers. Instead of spending more on traffic acquisition, our cro services and conversion optimization services focus on fixing {friction} points, improving user experience, refining messaging, strengthening CTAs, and optimizing page layouts. We use data, psychology, and {experimentation} with website conversion optimization, landing page optimization, ecommerce conversion optimization and marketing {funnels} to systematically increase your conversion rate.",
       },
     },
     {
@@ -95,17 +98,20 @@ const CONVERSION_RATE_OPTIMIZATION: IServiceType = {
         steps: [
           {
             title: "CRO Audit & Data [Collection]",
-            description: "We {analyze} traffic behavior, heatmaps, recordings, funnel analytics, and conversion paths.",
+            description:
+              "We {analyze} traffic behavior, heatmaps, recordings, funnel analytics, and conversion paths.",
             icon: "/icons/search.svg",
           },
           {
             title: "Hypothesis & Strategy [Development]",
-            description: "We {identify} friction points and define test hypotheses for improvement.",
+            description:
+              "We {identify} friction points and define test hypotheses for improvement using conversion optimization strategies.",
             icon: "/icons/target.svg",
           },
           {
             title: "UX, UI & Copy [Optimizations]",
-            description: "CTA placement, messaging clarity, layout improvements, and trust signals are {refined}.",
+            description:
+              "CTA placement, messaging clarity, layout improvements, and trust signals are {refined}.",
             icon: "/icons/gauge.svg",
           },
           {
@@ -120,7 +126,8 @@ const CONVERSION_RATE_OPTIMIZATION: IServiceType = {
           },
           {
             title: "Scaling & Continuous [Optimization]",
-            description: "Winning experiments are {rolled} out across the website and funnels.",
+            description:
+              "Winning experiments are {rolled} out across the website and funnels for consistent conversion rate optimization.",
             icon: "/icons/trending-up.svg",
           },
         ],
@@ -143,11 +150,11 @@ const CONVERSION_RATE_OPTIMIZATION: IServiceType = {
       data: {
         heading: "Target [Audience]",
         items: [
-          "E-commerce brands increasing sales & checkout {conversions}",
+          "E-commerce brands increasing sales & checkout {conversions} with ecommerce conversion optimization",
           "SaaS platforms improving trial-to-paid conversion",
           "Lead-generation websites improving form {submissions}",
           "Businesses running paid ads with low ROI",
-          "Startups validating product-market fit",
+          "Startups validating product-market fit through conversion optimization",
         ],
       },
     },
@@ -169,7 +176,8 @@ const CONVERSION_RATE_OPTIMIZATION: IServiceType = {
       type: "caseStudy",
       data: {
         heading: "Measured Product [Outcomes]",
-        content: "An e-commerce store struggling with cart abandonment applied our CRO framework across its product and checkout pages. Within 45 days, conversion rate increased by {64%}, average order value rose by {21%}, and ROAS improved by {48%}.",
+        content:
+          "An e-commerce store struggling with cart abandonment applied our CRO framework across its product and checkout pages. Within 45 days, conversion rate increased by {64%}, average order value rose by {21%}, and ROAS improved by {48%}.",
       },
     },
     {
@@ -180,22 +188,26 @@ const CONVERSION_RATE_OPTIMIZATION: IServiceType = {
           {
             name: "Starter",
             price: "$399 – $699",
-            description: "CRO audit, heatmap analysis, and quick-win optimization plan.",
+            description:
+              "CRO audit, heatmap analysis, and quick-win optimization plan.",
           },
           {
             name: "Standard",
             price: "$899 – $1,499",
-            description: "Full funnel audit, UX + copy optimization, 1–2 A/B test cycles.",
+            description:
+              "Full funnel audit, UX + copy optimization, 1–2 A/B test cycles.",
           },
           {
             name: "Premium",
             price: "$1,800 – $3,600",
-            description: "End-to-end CRO program with continuous testing and conversion dashboards.",
+            description:
+              "End-to-end CRO program with continuous testing and conversion dashboards.",
           },
           {
             name: "Enterprise",
             price: "$5,000+",
-            description: "Multi-funnel optimization, SaaS & marketplace CRO, long-term experimentation roadmap.",
+            description:
+              "Multi-funnel optimization, SaaS & marketplace CRO, long-term experimentation roadmap.",
           },
         ],
       },
@@ -228,7 +240,8 @@ const CONVERSION_RATE_OPTIMIZATION: IServiceType = {
       type: "cta",
       data: {
         heading: "Stop wasting traffic and start maximizing revenue.",
-        subheading: "Launch your Conversion Rate Optimization program today and unlock {hidden} growth inside your existing visitors.",
+        subheading:
+          "Launch your Conversion Rate Optimization program today and unlock {hidden} growth inside your existing visitors.",
       },
     },
   ],

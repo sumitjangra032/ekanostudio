@@ -11,7 +11,7 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
         headline:
           "Website Maintenance keeps your website fast, secure, updated, and running flawlessly—{24/7}.",
         subheadline:
-          "We proactively manage updates, security, backups, performance, and uptime so your business never faces downtime, data loss, or technical breakdowns.",
+          "We provide website maintenance services, website support and maintenance, and WordPress maintenance services to ensure your site stays secure, updated, and fully functional without downtime, data loss, or technical failures.",
         serviceCta: { text: "Maintain My Website", href: "#contact" },
       },
     },
@@ -23,22 +23,22 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
         items: [
           {
             value: "610+",
-            label: "Websites Under Active Maintenance",
+            label: "Websites Under Active Website Maintenance",
             icon: "/icons/rocket.svg",
           },
           {
             value: "24/7",
-            label: "Real-Time Website Monitoring",
+            label: "Real-Time Monitoring During Site Maintenance",
             icon: "/icons/zap.svg",
           },
           {
             value: "99.9%",
-            label: "Avg. Uptime Maintained",
+            label: "Avg. Uptime Maintained Through Web Maintenance Services",
             icon: "/icons/shield-check.svg",
           },
           {
             value: "3.5M+",
-            label: "Threats & Errors Prevented",
+            label: "Threats & Errors Prevented With Ongoing Web Maintenance",
             icon: "/icons/trending-up.svg",
           },
         ],
@@ -49,7 +49,7 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
       data: {
         heading: "Website Maintenance",
         content:
-          "Website maintenance services are not optional—it’s {mission-critical} for business continuity, security, and performance. Every website, whether built on WordPress, custom frameworks, or SaaS platforms, requires continuous updates, vulnerability patching, backup systems, and performance monitoring. We offer website support and maintenance, including ecommerce website maintenance, to safeguard your website from hacks, crashes, broken updates, slowdowns, and compatibility issues—ensuring your users always get a smooth, secure experience.",
+          "Website maintenance services are {mission-critical} for security, stability, and long-term performance. Whether it’s a WordPress website maintenance project, custom web maintenance, or ecommerce website maintenance, every website requires continuous updates, malware protection, backups, and speed optimization. As a professional website maintenance company, we protect your site from hacks, crashes, outdated plugins, slow loading, and technical failures—ensuring your website never enters emergency maintenance mode or unexpected downtime.",
       },
     },
     {
@@ -62,12 +62,12 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
           "Security firewall & malware protection visuals",
           "Backup system & disaster {recovery} flow",
           "Speed & performance health indicator samples",
-          "Update management & version control previews",
+          "Update management & version control previews for website maintenance services",
           "“Projects Completed” & uptime protection metrics",
-          "Step-by-step maintenance workflow timeline",
+          "Step-by-step web maintenance workflow timeline",
           "Full maintenance deliverables checklist",
-          "FAQ section for support clarity",
-          "Contact form + emergency support CTA",
+          "FAQ section for maintenance support clarity",
+          "Contact form + emergency website maintenance CTA",
         ],
       },
     },
@@ -77,18 +77,18 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
         heading: "Start-to-Finish [Deliverables]",
         items: [
           "Website uptime monitoring & performance tracking",
-          "WordPress maintenance services, core, theme & plugin updates",
+          "WordPress maintenance services: core, theme & plugin updates",
           "Website security and maintenance, patching & firewall configuration",
           "Malware scans, cleanup & intrusion prevention",
           "Reliable website backup services (daily & weekly)",
-          "One-click website restore & disaster recovery",
+          "One-click restore & disaster recovery for website on maintenance cases",
           "Speed & Core Web Vitals performance optimization",
-          "Broken link detection & error resolution",
+          "Broken link detection & error resolution during web maintenance",
           "Database optimization & cleanup",
-          "Compatibility checks after all updates",
-          "Monthly website health & security reports",
+          "Compatibility checks after updates, preventing maintenance web page issues",
+          "Monthly website health, security reports & maintenance logs",
           "Priority technical {support} & issue resolution",
-          "Staging environment testing before live updates",
+          "Staging environment testing before live website maintenance updates",
         ],
       },
     },
@@ -97,13 +97,13 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
       data: {
         heading: "Why This Matters to [you]",
         items: [
-          "Prevents website {downtime} & revenue loss",
+          "Prevents website {downtime}, maintenance mode issues & revenue loss",
           "Protects customer data & business reputation",
           "Keeps your website compatible with new browsers & devices",
           "Maintains fast loading {speed} & SEO performance",
-          "Ensures seamless user experience at all times",
-          "Eliminates risks from outdated plugins & vulnerabilities",
-          "Saves internal team time & IT operational costs",
+          "Ensures seamless user experience through continuous web maintenance",
+          "Eliminates risks from outdated plugins, broken updates & vulnerabilities",
+          "Saves internal team time & reduces website maintenance cost",
         ],
       },
     },
@@ -116,37 +116,37 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
           {
             title: "Website Audit & Risk [Assessment]",
             description:
-              "We analyze your current website {health}, vulnerabilities, stack & performance.",
+              "We analyze your current website {health}, vulnerabilities, performance & maintenance needs.",
             icon: "/icons/search.svg",
           },
           {
             title: "Backup & Security [Setup]",
             description:
-              "Automated backups, firewalls, malware scanners & access {controls} configured.",
+              "Automated backups, firewalls, malware scanners & access {controls} configured to prevent website in maintenance incidents.",
             icon: "/icons/cloud-sync.svg",
           },
           {
             title: "Update & Compatibility [Management]",
             description:
-              "Core system, plugins, libraries & frameworks {updated} safely.",
+              "Core system, plugins, libraries & frameworks {updated} safely to avoid website maintenance mode errors.",
             icon: "/icons/brush.svg",
           },
           {
             title: "Performance & Speed [Optimization]",
             description:
-              "Caching, database optimization & {Core Web Vitals} improvements.",
+              "Caching, database cleanup, optimization & {Core Web Vitals} improvements as part of web maintenance services.",
             icon: "/icons/gauge.svg",
           },
           {
             title: "Monitoring, Alerts & Incident [Response]",
             description:
-              "Real-time uptime, error logs & immediate issue {resolution}.",
+              "Real-time uptime alerts, error tracking & immediate incident {resolution}, preventing website down or maintenance messages.",
             icon: "/icons/shield-check.svg",
           },
           {
             title: "Reporting, Optimization & [Scaling]",
             description:
-              "Monthly health reports, recommendations & long-term stability {planning}.",
+              "Monthly maintenance reports, security updates & long-term stability {planning}.",
             icon: "/icons/rocket.svg",
           },
         ],
@@ -157,7 +157,7 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
       data: {
         heading: "Estimated [Timeline]",
         items: [
-          { label: "Initial Maintenance Setup", duration: "1–2 days" },
+          { label: "Initial Website Maintenance Setup", duration: "1–2 days" },
           { label: "Ongoing Monitoring & Updates", duration: "Continuous" },
           {
             label: "Major Maintenance Cycles",
@@ -171,11 +171,11 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
       data: {
         heading: "Target [Audience]",
         items: [
-          "Business & corporate websites",
-          "E-commerce stores & marketplaces",
-          "SaaS platforms & web applications",
-          "High-traffic blogs & media portals",
-          "Agencies managing multiple client websites",
+          "Business & corporate websites needing site maintenance services",
+          "E-commerce stores & marketplaces requiring continuous updates",
+          "SaaS platforms & web applications needing 24/7 monitoring",
+          "High-traffic blogs & media portals requiring web maintenance",
+          "Agencies managing multiple client websites under maintenance packages",
         ],
       },
     },
@@ -184,9 +184,9 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
       data: {
         heading: "[Tools] We Use",
         items: [
-          "UptimeRobot, Pingdom",
-          "WordPress & custom CMS monitoring tools",
-          "Malware scanners & WAF firewalls",
+          "UptimeRobot, Pingdom for website undergoing maintenance monitoring",
+          "WordPress & custom CMS maintenance tools",
+          "Malware scanners, firewalls & WAF systems",
           "Backup & server snapshot systems",
           "GA4 & PageSpeed monitoring tools",
           "Server logs & error tracking platforms",
@@ -198,7 +198,7 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
       data: {
         heading: "Measured Product [Outcomes]",
         content:
-          "An e-commerce store repeatedly crashed during sale events due to outdated plugins and overload. After moving to our Website Maintenance service, uptime {stabilized} at 99.98%, checkout failures dropped by 92%, and monthly revenue grew by 41% with zero downtime {incidents}.",
+          "An e-commerce site repeatedly entered maintenance web page mode during sale events. After shifting to our website maintenance services, uptime {stabilized} at 99.98%, checkout failures dropped by 92%, and monthly revenue grew by 41% while eliminating all critical maintenance {incidents}.",
       },
     },
     {
@@ -209,25 +209,26 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
           {
             name: "Starter",
             price: "$49 – $99 / month",
-            description: "Core updates, backups & basic monitoring.",
+            description:
+              "Basic web maintenance services, core updates, backups & monitoring.",
           },
           {
             name: "Standard",
             price: "$149 – $299 / month",
             description:
-              "Full updates, security, speed checks & priority support.",
+              "Full website maintenance services: security, performance checks & priority support.",
           },
           {
             name: "Premium",
             price: "$399 – $799 / month",
             description:
-              "Advanced security, performance optimization & emergency support.",
+              "Advanced security, website maintenance packages, optimization & emergency support.",
           },
           {
             name: "Enterprise",
             price: "$1,200+ / month",
             description:
-              "High-traffic platforms, SLA-backed uptime & 24/7 dedicated support.",
+              "High-traffic platforms with full website maintenance services company support & 24/7 response.",
           },
         ],
       },
@@ -239,11 +240,11 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
         items: [
           {
             q: "What happens if my website goes down?",
-            a: "Our real-time monitoring triggers instant alerts and immediate recovery action.",
+            a: "Our monitoring identifies issues instantly, preventing unwanted maintenance web page errors.",
           },
           {
             q: "Do you take backups before updates?",
-            a: "Yes, every update is backed up with full restore capability.",
+            a: "Yes, every update is backed up, preventing site in maintenance failures.",
           },
           {
             q: "Will this affect my website SEO?",
@@ -251,7 +252,7 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
           },
           {
             q: "Can you maintain custom-built websites too?",
-            a: "Yes, we support WordPress, custom CMS, SaaS & enterprise-grade platforms.",
+            a: "Yes, we support WordPress maintenance, custom CMS, SaaS & enterprise-grade platforms.",
           },
         ],
       },

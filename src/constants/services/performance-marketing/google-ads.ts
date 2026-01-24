@@ -8,8 +8,10 @@ const GOOGLE_ADS: IServiceType = {
       type: "hero",
       data: {
         title: "Google Ads (Search & Display)",
-        headline: "Google Ads puts your business directly in front of customers who are actively searching for your products or services.",
-        subheadline: "We provide google ads management services to build high-converting search, display, and remarketing campaigns that deliver immediate traffic, qualified leads, and measurable {ROI}.",
+        headline:
+          "Google Ads puts your business directly in front of customers who are actively searching for your products or services.",
+        subheadline:
+          "We provide Google Ads management services as a certified Google Ads agency, running high-converting search ads, Google display ads, and remarketing campaigns to deliver immediate traffic, qualified leads, and measurable {ROI}.",
         serviceCta: { text: "Launch My Google Ads", href: "#contact" },
       },
     },
@@ -30,7 +32,8 @@ const GOOGLE_ADS: IServiceType = {
       type: "overview",
       data: {
         heading: "Google Ads (Search & Display)",
-        content: "Google Ads is one of the fastest ways to generate high-intent traffic and immediate sales. As a google ppc agency we create and manage data-driven {PPC} campaigns via ppc management services across Search, Display, Shopping, and Remarketing networks. From search ads management, display advertising services to shopping ads management our pay per click services cover keyword research and ad copy to landing page alignment, conversion testing, and bid optimization—every element is engineered for maximum {return}, lowest possible cost per acquisition, and scalable performance.",
+        content:
+          "Google Ads is one of the fastest and most reliable ways to generate high-intent traffic through Google Search Ads, Google Display Ads, Google Shopping Ads, and remarketing. As a dedicated Google Ads expert and Google PPC specialist, we manage targeted campaigns using Google Ads Keyword Planner research, audience insights, bid optimization, and conversion-focused ad creation. Our Google advertising services deliver scalable growth, predictable lead generation, and high return on ad spend through well-structured Google PPC campaigns engineered for minimal {PPC} waste and maximum profitability.",
       },
     },
     {
@@ -40,14 +43,14 @@ const GOOGLE_ADS: IServiceType = {
         items: [
           "Clear hero explaining intent-driven paid {traffic}",
           "Search ad examples with keyword-to-ad alignment",
-          "Display & remarketing banner {previews}",
+          "Google Display Network & remarketing banner {previews}",
           "Shopping ad product feed demonstrations",
           "Conversion tracking & funnel attribution snapshots",
-          "Cost-per-click (CPC), CPA & ROAS performance {examples}",
+          "CPC, CPA, ROAS & Google Ads performance {examples}",
           "“Projects Completed” & profitability metrics",
-          "Step-by-step Google Ads execution workflow",
+          "Step-by-step Google Ads campaign execution workflow",
           "Deliverables checklist",
-          "FAQs about budget, bidding & results",
+          "FAQs about budget, Google Ads pricing & bidding",
           "Contact form with “Run My Google Ads” CTA",
         ],
       },
@@ -57,19 +60,18 @@ const GOOGLE_ADS: IServiceType = {
       data: {
         heading: "Start-to-Finish [Deliverables]",
         items: [
-          "Google Ads account setup or performance {audit}",
-          "Keyword research & competitor bidding analysis",
-          "Campaign structure (Search, Display, Shopping, Remarketing)",
-          "Search ads management & Shopping ads management",
-          "High-converting ad copy & extensions",
-          "Audience targeting & demographic layering",
-          "Conversion tracking & GA4 integration",
-          "Landing page alignment & CRO {recommendations}",
-          "Smart bidding & budget optimization",
-          "Negative keyword & waste-spend control",
-          "Geo-targeting & device bid adjustments",
+          "Google Ads account setup, structure creation or performance {audit}",
+          "Keyword research via Google Ads Keyword Planner & competitive intent analysis",
+          "Campaign architecture for Search, Display, Shopping & Remarketing",
+          "High-converting ad copy for Google Adwords, Search Ads & Display Ads",
+          "Audience segmentation, targeting & demographic refinement",
+          "Conversion tracking setup with GA4 & Google Tag Manager",
+          "Landing page alignment with Google Ads best practices",
+          "Smart bidding strategy, quality score optimization & budget control",
+          "Negative keyword filtering & waste-spend reduction",
+          "Geo-targeting, device optimization & custom bid adjustments",
           "Weekly performance monitoring & {optimization}",
-          "Monthly reports with ROAS, CPA & growth insights",
+          "Monthly reports showing Google PPC performance, ROAS & CPA improvements",
         ],
       },
     },
@@ -78,13 +80,13 @@ const GOOGLE_ADS: IServiceType = {
       data: {
         heading: "Why This Matters to [You]",
         items: [
-          "Delivers instant, high-intent {traffic}",
-          "Generates predictable leads & sales",
-          "Provides full control over ad budget & targeting",
-          "Offers clear, trackable {ROI}",
-          "Scales quickly once profitable",
-          "Supports both local and global business growth",
-          "Complements SEO with immediate visibility",
+          "Delivers instant, high-intent search {traffic}",
+          "Provides predictable leads & measurable revenue",
+          "Allows full control over budget, targeting & placements",
+          "Shows clear, trackable {ROI} through detailed analytics",
+          "Scales rapidly once profitable Google Ads campaigns stabilize",
+          "Supports both local and global visibility through paid search",
+          "Works as the fastest alternative to SEO for immediate exposure",
         ],
       },
     },
@@ -96,32 +98,38 @@ const GOOGLE_ADS: IServiceType = {
         steps: [
           {
             title: "Business & Market [Discovery]",
-            description: "We {understand} your offers, profit margins, goals, and competitive landscape.",
+            description:
+              "We {understand} your offers, margins, audience, competitors, and Google advertising potential.",
             icon: "/icons/search.svg",
           },
           {
             title: "Keyword & Intent [Research]",
-            description: "High-buying-intent keywords and audience segments are {identified}.",
+            description:
+              "Search terms, buying-intent keywords, Google PPC opportunities, and audiences are {identified}.",
             icon: "/icons/target.svg",
           },
           {
             title: "Campaign Architecture & Ad [Creation]",
-            description: "Campaigns, ad groups, ads, and extensions are {structured} for Quality Score.",
+            description:
+              "Google Ads campaigns, ad groups, responsive search ads, display ads & extensions are {structured} for maximum relevance.",
             icon: "/icons/megaphone.svg",
           },
           {
             title: "Conversion Tracking & Funnel [Setup]",
-            description: "GA4, GTM & conversion goals are {implemented} for ROI tracking.",
+            description:
+              "GA4, GTM, and event-based conversion goals are {implemented} for full-funnel ROI tracking.",
             icon: "/icons/settings.svg",
           },
           {
             title: "Launch & Smart Bidding [Optimization]",
-            description: "Campaigns go live with aggressive data-driven bid {adjustments}.",
+            description:
+              "Campaigns go live with data-driven bid {adjustments}, monitoring & performance tuning.",
             icon: "/icons/rocket.svg",
           },
           {
             title: "Scaling & Profit [Optimization]",
-            description: "Winners are {scaled}, waste is eliminated, and ROAS is maximized.",
+            description:
+              "Profitable ads are scaled while cost inefficiencies are eliminated to maximize ROAS.",
             icon: "/icons/trending-up.svg",
           },
         ],
@@ -144,10 +152,10 @@ const GOOGLE_ADS: IServiceType = {
         heading: "Target [Audience]",
         items: [
           "Businesses needing immediate leads & {sales}",
-          "E-commerce brands scaling online revenue",
-          "Service providers targeting local & national customers",
-          "SaaS companies driving demos & signups",
-          "Brands running {time-sensitive} promotions",
+          "E-commerce brands scaling through Google Shopping Ads",
+          "Local businesses using Google Ads for business visibility",
+          "SaaS companies driving demos & signups through paid search",
+          "Brands running {time-sensitive} promotions with Google PPC",
         ],
       },
     },
@@ -156,12 +164,12 @@ const GOOGLE_ADS: IServiceType = {
       data: {
         heading: "[Tools] We Use",
         items: [
-          "Google Ads Manager",
-          "Google Keyword Planner & Auction Insights",
-          "Google Analytics 4 & Tag Manager",
-          "Conversion tracking & call tracking tools",
+          "Google Ads Manager & Google Ads Manager Accounts",
+          "Google Keyword Planner & Google Ads Auction Insights",
+          "Google Analytics 4 & Google Tag Manager",
+          "Conversion tracking tools & Google Campaign Manager",
           "Landing page CRO platforms",
-          "Automated bid management systems",
+          "Automated bidding & optimization systems",
         ],
       },
     },
@@ -169,7 +177,8 @@ const GOOGLE_ADS: IServiceType = {
       type: "caseStudy",
       data: {
         heading: "Measured Product [Outcomes]",
-        content: "A home services company launched geo-targeted Google Search Ads with our optimization framework. Within 45 days, cost per lead dropped by {38%}, monthly booked jobs increased by {64%}, and overall ROAS stabilized at {4.6x}.",
+        content:
+          "A home services company launched geo-targeted Google Search Ads with our optimization framework. Within 45 days, cost per lead dropped by {38%}, monthly booked jobs increased by {64%}, and overall ROAS stabilized at {4.6x}.",
       },
     },
     {
@@ -180,22 +189,26 @@ const GOOGLE_ADS: IServiceType = {
           {
             name: "Starter",
             price: "$349 – $599",
-            description: "Basic campaign setup, keyword research & tracking.",
+            description:
+              "Basic Google Ads campaign setup, keyword research & tracking integration.",
           },
           {
             name: "Standard",
             price: "$799 – $1,399",
-            description: "Full campaign management with weekly optimizations & reporting.",
+            description:
+              "Full Google Ads management with weekly optimizations, negative keywords & reporting.",
           },
           {
             name: "Premium",
             price: "$1,600 – $3,200",
-            description: "Advanced multi-campaign scaling, CRO alignment & profitable growth systems.",
+            description:
+              "Advanced scaling, CRO alignment, multiset campaign management & PPC growth systems.",
           },
           {
             name: "Enterprise",
             price: "$4,500+",
-            description: "Large ad budgets, multi-location targeting, custom automation & reporting.",
+            description:
+              "Large budgets, national targeting, automation scripts & enterprise-level Google Ads management.",
           },
         ],
       },
@@ -207,19 +220,19 @@ const GOOGLE_ADS: IServiceType = {
         items: [
           {
             q: "How much budget do I need to start Google Ads?",
-            a: "You can start with as little as $300–$500/month, depending on your industry.",
+            a: "Campaigns can start from $300–$500/month depending on industry CPC and competition.",
           },
           {
             q: "How quickly will I see results?",
-            a: "Leads and traffic start immediately; optimized profitability typically stabilizes within 2–4 weeks.",
+            a: "You get traffic immediately; stable conversions typically appear within 2–4 weeks.",
           },
           {
-            q: "Do you provide landing pages for ads?",
-            a: "Yes, we offer landing page design & CRO as an add-on service.",
+            q: "Do you build landing pages for Google Ads?",
+            a: "Yes, landing page optimization & CRO support are available as add-on services.",
           },
           {
-            q: "Will I have full access to my Ads account?",
-            a: "Yes, your ad account always remains fully owned by you.",
+            q: "Will I have full access to my Google Ads account?",
+            a: "Yes, your Google Ads account always remains 100% owned and accessible by you.",
           },
         ],
       },
@@ -228,7 +241,8 @@ const GOOGLE_ADS: IServiceType = {
       type: "cta",
       data: {
         heading: "Turn search intent into real revenue.",
-        subheading: "Launch your Google Ads campaigns today and start generating high-quality leads and sales {immediately}.",
+        subheading:
+          "Launch your Google Ads campaigns today and start generating high-quality leads and sales {immediately}.",
       },
     },
   ],

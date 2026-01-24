@@ -11,7 +11,7 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
         headline:
           "Website Speed Optimization transforms slow, underperforming websites into lightning-fast digital {experiences}.",
         subheadline:
-          "We provide top-tier website speed optimization services to eliminate technical bottlenecks, optimize assets, and fine-tune performance so your site loads instantly, ranks higher, and converts better.",
+          "We use advanced website speed optimization techniques, web speed optimization, and page speed optimization strategies to eliminate bottlenecks, improve website speed, and boost Core Web Vitals so your site loads instantly, ranks higher, and converts better.",
         serviceCta: { text: "Speed Up My Website", href: "#contact" },
       },
     },
@@ -23,22 +23,22 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
         items: [
           {
             value: "470+",
-            label: "Websites Accelerated",
+            label: "Websites Accelerated with Website Performance Optimization",
             icon: "/icons/rocket.svg",
           },
           {
             value: "2–6 Days",
-            label: "Avg. Speed Optimization Time",
+            label: "Avg. Speed Optimization Time for site speed optimization",
             icon: "/icons/zap.svg",
           },
           {
             value: "99%",
-            label: "Performance Stability Rate",
+            label: "Performance Stability Rate after page speed optimisation",
             icon: "/icons/shield-check.svg",
           },
           {
             value: "68%",
-            label: "Avg. Page Load Time Reduction",
+            label: "Avg. Page Load Time Reduction using web speed optimization",
             icon: "/icons/trending-up.svg",
           },
         ],
@@ -49,7 +49,7 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
       data: {
         heading: "Website Speed Optimization",
         content:
-          "Page speed optimization directly impacts user experience, SEO rankings, ad performance, and conversion rates. A delay of even one second can cause massive drop-offs in traffic and {revenue}. We deliver website performance optimization and a slow website speed fix by optimizing every layer—server, code, media, scripts, caching, CDN, databases, and Core Web Vitals—ensuring your site loads fast across mobile and desktop, even under heavy traffic.",
+          "Page speed optimization and website performance optimization directly impact user experience, SEO, ad performance, and conversions. Slow websites fail Core Web Vitals and lose traffic. We fix slow websites using site speed optimisation, speed optimization in WordPress, optimize Shopify speed strategies, database cleanup, caching, CDN setup, script control, and page speed and SEO enhancements. Whether it's WordPress speed optimization, Shopify optimization, or custom platforms, we improve site speed across all devices.",
       },
     },
     {
@@ -58,13 +58,13 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
         heading: "What you [see] on this page (User-Facing Elements)",
         items: [
           "Hero section highlighting instant speed & performance gains",
-          "Before/after PageSpeed & Lighthouse score improvements",
+          "Before/after PageSpeed & Lighthouse score improvements from website speed optimisation",
           "Core Web Vitals (LCP, CLS, INP) performance {visuals}",
           "Mobile vs desktop speed comparison charts",
           "Server response time & CDN performance samples",
           "Render-blocking resource {diagnostics}",
           "“Projects Completed” & speed improvement metrics",
-          "Step-by-step optimization workflow timeline",
+          "Step-by-step page speed optimisation workflow timeline",
           "Full optimization deliverables checklist",
           "FAQ section for technical clarity",
           "Contact form + urgent speed-fix CTA",
@@ -76,19 +76,19 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
       data: {
         heading: "Start-to-Finish [Deliverables]",
         items: [
-          "Full website speed & performance {audit}",
-          "Core web vitals optimization services (LCP, CLS, INP)",
+          "Full website speed optimization test & performance {audit}",
+          "Core Web Vitals optimization services (LCP, CLS, INP)",
           "Image compression & next-gen format conversion (WebP/AVIF)",
           "{Lazy loading} for images & videos",
           "Minification of CSS, JS & HTML",
           "Removal of render-blocking resources",
           "Database optimization & query cleanup",
-          "Advanced browser caching & server-side caching",
+          "Advanced caching & site speed optimisation",
           "CDN integration & configuration",
-          "Font loading & third-party script optimization",
+          "Font loading, preloading & script optimization",
           "{Server response time} (TTFB) optimization",
-          "Google page speed optimization reports (PageSpeed, GTmetrix) before/after",
-          "Ecommerce speed optimization & performance summary",
+          "Google page speed optimization reports (PageSpeed, GTmetrix)",
+          "Shopify speed optimization & ecommerce performance tuning",
         ],
       },
     },
@@ -97,12 +97,12 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
       data: {
         heading: "Why This Matters to [you]",
         items: [
-          "Improves Google {rankings} due to Core Web Vitals",
-          "Reduces {bounce rate} and increases engagement",
-          "Boosts conversion rate and ad ROI",
-          "Enhances mobile user experience dramatically",
+          "Improves Google {rankings} because page speed for SEO is a major factor",
+          "Reduces {bounce rate} by eliminating slow load issues",
+          "Boosts conversion rate and paid ad ROI",
+          "Improves mobile performance using site speed optimization",
           "Handles high traffic without slowdowns",
-          "Improves crawl {budget} for search engines",
+          "Enhances crawl {budget} & SEO website speed performance",
           "Creates a premium, frictionless browsing experience",
         ],
       },
@@ -116,37 +116,37 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
           {
             title: "Performance Audit & Bottleneck [Analysis]",
             description:
-              "We scan your site for speed issues, heavy scripts, server delays & layout {shifts}.",
+              "We scan your site for speed issues, heavy scripts, server delays & layout {shifts} using page speed optimization test tools.",
             icon: "/icons/gauge.svg",
           },
           {
             title: "Asset & Media [Optimization]",
             description:
-              "Images, videos, fonts & third-party {assets} are compressed & optimized.",
+              "Images, videos, fonts & third-party {assets} compressed using website speed optimisation best practices.",
             icon: "/icons/chevrons-up.svg",
           },
           {
             title: "Code & Script [Optimization]",
             description:
-              "Minification, deferring, async loading & unused {resource} cleanup.",
+              "Minification, defer, async loading & unused script cleanup to improve site speed.",
             icon: "/icons/code-xml.svg",
           },
           {
             title: "Caching & CDN [Implementation]",
             description:
-              "Browser caching, server caching & edge {delivery} activated.",
+              "Browser caching, server caching & edge {delivery} applied for web speed optimization.",
             icon: "/icons/shield-check.svg",
           },
           {
             title: "Server & Database [Optimization]",
             description:
-              "TTFB reduction, PHP/Node {tuning} & database cleanup.",
+              "TTFB reduction, PHP/Node {tuning}, database cleanup & site speed optimisation strategies.",
             icon: "/icons/rocket.svg",
           },
           {
             title: "Testing, Validation & [Monitoring]",
             description:
-              "Cross-device testing, score validation & ongoing performance {tracking}.",
+              "Cross-device testing, score validation, pagespeed optimizer checks & ongoing performance {tracking}.",
             icon: "/icons/ticket-check.svg",
           },
         ],
@@ -168,12 +168,12 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
       data: {
         heading: "Target [Audience]",
         items: [
-          "Businesses with slow-loading websites",
-          "E-commerce stores losing sales due to speed",
+          "Businesses with slow-loading websites needing page speed optimisation",
+          "E-commerce stores needing optimize Shopify speed solutions",
           "Websites failing Core Web Vitals",
           "High-traffic media & content platforms",
           "SaaS platforms with performance bottlenecks",
-          "Brands running paid ads needing faster landing pages",
+          "Brands running paid ads needing faster landing page optimizer improvements",
         ],
       },
     },
@@ -182,11 +182,11 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
       data: {
         heading: "[Tools] We Use",
         items: [
-          "Google PageSpeed Insights & Lighthouse",
-          "GTmetrix & WebPageTest",
+          "Google PageSpeed Insights & Lighthouse for website speed optimisation",
+          "GTmetrix, WebPageTest & page speed optimization test tools",
           "Cloudflare, BunnyCDN & Fastly",
           "Redis, Varnish & server cache systems",
-          "Image optimization & script minification tools",
+          "Image compression & script minification tools",
           "GA4 & real-user monitoring platforms",
         ],
       },
@@ -196,7 +196,7 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
       data: {
         heading: "Measured Product [Outcomes]",
         content:
-          "A Shopify store struggling with slow mobile load times implemented our Website Speed Optimization system. Mobile page speed {improved} by 72%, bounce rate dropped by 46%, and conversion rate increased by 38% within 21 {days}.",
+          "A Shopify store using our page speed optimization techniques saw mobile page speed improve by 72%, bounce rate drop by 46%, and conversion rate increase by 38%—powered by website speed optimisation and speed optimization in WordPress & Shopify systems.",
       },
     },
     {
@@ -207,23 +207,24 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
           {
             name: "Starter",
             price: "$149 – $299",
-            description: "Core Web Vitals fixes & basic optimization.",
+            description: "Core Web Vitals fixes & basic site speed optimisation.",
           },
           {
             name: "Standard",
             price: "$499 – $899",
-            description: "Full asset, caching & script optimization.",
+            description: "Full website performance optimisation & caching.",
           },
           {
             name: "Premium",
             price: "$1,200 – $2,500",
-            description: "Advanced server, CDN & database optimization.",
+            description:
+              "Advanced server, CDN, database optimization & speed optimize audits.",
           },
           {
             name: "Enterprise",
             price: "$3,500+",
             description:
-              "High-traffic platforms, load balancing & enterprise performance tuning.",
+              "High-traffic websites, load balancing & enterprise-grade website speed optimisation.",
           },
         ],
       },
@@ -235,19 +236,19 @@ const SERVICES_DYNAMIC_CONTENT: IServiceType = {
         items: [
           {
             q: "Will speed optimization improve my SEO rankings?",
-            a: "Yes, speed and Core Web Vitals are direct Google ranking factors.",
+            a: "Yes, page speed and SEO are directly connected—faster sites rank higher.",
           },
           {
             q: "Will my website design break after optimization?",
-            a: "No, all changes are tested in staging before going live.",
+            a: "No. All changes are tested safely using website speed optimization test methods.",
           },
           {
             q: "Do you optimize both mobile and desktop performance?",
-            a: "Yes, mobile-first performance is a core focus of our process.",
+            a: "Yes, mobile-first website speed optimisation is a priority.",
           },
           {
             q: "Can you optimize websites built on WordPress, Shopify & custom code?",
-            a: "Yes, we optimize all major platforms and custom-built systems.",
+            a: "Yes, we offer WordPress speed optimisation, optimize Shopify speed, and custom web performance tuning.",
           },
         ],
       },

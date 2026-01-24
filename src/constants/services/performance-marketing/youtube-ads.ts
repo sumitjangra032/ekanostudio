@@ -8,8 +8,10 @@ const YOUTUBE_ADS: IServiceType = {
       type: "hero",
       data: {
         title: "YouTube Ads",
-        headline: "YouTube Ads put your brand in front of highly engaged audiences through powerful video storytelling and intent-based targeting.",
-        subheadline: "We build profit-driven youtube ads management services campaigns that capture attention, drive {action}, and scale {revenue}.",
+        headline:
+          "YouTube Ads put your brand in front of highly engaged audiences through powerful video storytelling and intent-based targeting.",
+        subheadline:
+          "We build profit-driven youtube ads management services and youtube advertising agency strategies that capture attention, drive {action}, and scale {revenue}.",
         serviceCta: { text: "Launch My YouTube Ads", href: "#contact" },
       },
     },
@@ -30,7 +32,8 @@ const YOUTUBE_ADS: IServiceType = {
       type: "overview",
       data: {
         heading: "YouTube Ads",
-        content: "YouTube Ads combine the power of video with precision targeting to influence customers at every stage of the buying {journey}. From brand awareness and product launches to youtube remarketing ads and direct conversions, as a youtube advertising agency we build complete google youtube ads ecosystems. Our video ads marketing services strategy focuses on audience intent, watch behavior, creative hooks, and funnel alignment—ensuring every view has a business {purpose}, not just impressions.",
+        content:
+          "YouTube Ads combine the power of video with precision targeting to influence customers across the entire buying {journey}. As a youtube advertising agency, we create full youtube ads management systems using google youtube ads, in-stream ads, discovery ads, Shorts placements, and youtube remarketing ads. Our video ads marketing services focus on intent, watch behavior, hooks, and funnel alignment—ensuring every view supports measurable business {purpose}.",
       },
     },
     {
@@ -39,15 +42,15 @@ const YOUTUBE_ADS: IServiceType = {
         heading: "What you [see] on this page (User-Facing Elements)",
         items: [
           "Hero section showcasing high-retention video ad {performance}",
-          "Skippable, non-skippable & Shorts ad examples",
+          "Examples of skippable, non-skippable & YouTube Shorts ads",
           "Audience intent targeting & in-market segment previews",
-          "Funnel-based YouTube campaign structure visuals",
+          "Funnel-based YouTube ads campaign structure visuals",
           "View rate, CPV & conversion tracking {dashboards}",
-          "Retargeting & sequential video ad flow examples",
+          "YouTube remarketing ads & sequential video funnel demonstrations",
           "“Projects Completed” & revenue growth metrics",
           "Step-by-step YouTube Ads execution workflow",
-          "Full deliverables checklist",
-          "FAQs on creatives, budgets & ad formats",
+          "Full youtube ads services deliverables checklist",
+          "FAQ on creatives, budgets & ad formats",
           "Contact form with “Run My YouTube Ads” CTA",
         ],
       },
@@ -59,16 +62,16 @@ const YOUTUBE_ADS: IServiceType = {
         items: [
           "Google Ads & YouTube Ads account setup or {audit}",
           "Conversion tracking, GA4 & pixel integration",
-          "Audience research & intent-based targeting",
-          "In-stream, discovery & Shorts ad ad setup",
-          "Youtube ads for ecommerce & youtube video advertising services",
+          "Audience research & youtube ads targeting strategy",
+          "In-stream, discovery & Shorts ad setup",
+          "YouTube ads for ecommerce & youtube video advertising services",
           "Video ad script guidance & creative direction",
           "Hook optimization for first 5 seconds",
           "Campaign funnel structuring (TOF, MOF, BOF)",
-          "Retargeting & video view-based {audiences}",
+          "Retargeting & video-view-based {audiences}",
           "Budget planning & bid strategy optimization",
           "Daily performance monitoring & waste-spend control",
-          "Weekly creative testing & scaling",
+          "Weekly creative testing & youtube ads optimization",
           "Monthly performance, CPA, CPV & ROAS {reporting}",
         ],
       },
@@ -79,12 +82,12 @@ const YOUTUBE_ADS: IServiceType = {
         heading: "Why This Matters to [You]",
         items: [
           "Builds massive brand awareness at {scale}",
-          "Drives high-quality traffic with strong intent",
+          "Targets high-intent buyers using YouTube’s audience signals",
           "Educates customers before purchase decisions",
-          "Improves remarketing performance across platforms",
-          "Reduces cost per acquisition through video {trust}",
+          "Improves cross-platform remarketing performance",
+          "Reduces acquisition costs through video {trust}",
           "Strengthens brand recall & emotional connection",
-          "Complements search & display advertising perfectly",
+          "Complements Search, Display & Meta ads perfectly",
         ],
       },
     },
@@ -96,32 +99,38 @@ const YOUTUBE_ADS: IServiceType = {
         steps: [
           {
             title: "Brand, Offer & Funnel [Analysis]",
-            description: "We {study} your audience mindset, offer economics & conversion journey.",
+            description:
+              "We {study} your audience mindset, offer economics & conversion journey.",
             icon: "/icons/search.svg",
           },
           {
             title: "Audience Targeting & Media [Planning]",
-            description: "In-market, custom intent, placements & demographic targeting {mapped}.",
+            description:
+              "In-market, custom intent, placements & demographic targeting {mapped}.",
             icon: "/icons/target.svg",
           },
           {
             title: "Creative & Hook [Strategy]",
-            description: "Video angles, storytelling hooks & CTA strategy {designed}.",
+            description:
+              "Video angles, storytelling hooks & CTA strategy {designed}.",
             icon: "/icons/play.svg",
           },
           {
             title: "Campaign Setup & [Tracking]",
-            description: "Conversion actions, goals, bidding & audience layers {configured}.",
+            description:
+              "Conversion actions, goals, bidding & audience layers {configured}.",
             icon: "/icons/settings.svg",
           },
           {
             title: "Testing & Optimization [Phase]",
-            description: "Creative, audience & bid testing for data-backed {scaling}.",
+            description:
+              "Creative, audience & bid testing for data-backed {scaling}.",
             icon: "/icons/shield-check.svg",
           },
           {
             title: "Scaling, Profit Optimization & [Reporting]",
-            description: "Winning ads scaled with continuous ROAS-based {optimization}.",
+            description:
+              "Winning ads scaled using structured youtube ads optimization & ROAS-based {growth}.",
             icon: "/icons/trending-up.svg",
           },
         ],
@@ -168,7 +177,8 @@ const YOUTUBE_ADS: IServiceType = {
       type: "caseStudy",
       data: {
         heading: "Measured Product [Outcomes]",
-        content: "A D2C electronics brand launched YouTube Ads for product education and remarketing. Within 60 days, brand search volume increased by {74%}, assisted conversions grew by {2.8x}, and blended ROAS reached {4.2x} across Google Ads.",
+        content:
+          "A D2C electronics brand launched YouTube Ads using our video ads marketing services and funnel strategy. Within 60 days, brand search volume increased by {74%}, assisted conversions grew by {2.8x}, and blended ROAS reached {4.2x} across Google Ads.",
       },
     },
     {
@@ -184,17 +194,20 @@ const YOUTUBE_ADS: IServiceType = {
           {
             name: "Standard",
             price: "$899 – $1,499",
-            description: "Full YouTube campaign management with optimization & reporting.",
+            description:
+              "Full YouTube campaign management with optimization & reporting.",
           },
           {
             name: "Premium",
             price: "$1,800 – $3,500",
-            description: "Funnel-based YouTube ads with creative testing & aggressive scaling.",
+            description:
+              "Funnel-based YouTube ads with creative testing & aggressive scaling.",
           },
           {
             name: "Enterprise",
             price: "$4,800+",
-            description: "High-budget YouTube ad accounts, brand scaling & multi-country campaigns.",
+            description:
+              "High-budget YouTube ad accounts, brand scaling & multi-country campaigns.",
           },
         ],
       },
@@ -227,7 +240,8 @@ const YOUTUBE_ADS: IServiceType = {
       type: "cta",
       data: {
         heading: "Dominate attention on the world’s largest video platform.",
-        subheading: "Start your YouTube Ads campaign today and turn views into trust, traffic, and scalable {revenue}.",
+        subheading:
+          "Start your YouTube Ads campaign today and turn views into trust, traffic, and scalable {revenue}.",
       },
     },
   ],
