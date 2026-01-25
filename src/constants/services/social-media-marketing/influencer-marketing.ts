@@ -8,8 +8,10 @@ const INFLUENCER_MARKETING: IServiceType = {
       type: "hero",
       data: {
         title: "Influencer Marketing",
-        headline: "Influencer Marketing builds {trust} at scale by placing your brand in front of highly engaged audiences through authentic creator partnerships.",
-        subheadline: "We design data-driven {influencer} campaigns including instagram influencer marketing and youtube influencer marketing that drive awareness, credibility, and direct sales.",
+        headline:
+          "Influencer Marketing builds {trust} at scale by placing your brand in front of highly engaged audiences through authentic creator partnerships.",
+        subheadline:
+          "We design data-driven {influencer} campaigns as a professional influencer marketing agency, including instagram influencer marketing and youtube influencer marketing, that drive awareness, credibility, and direct sales.",
         serviceCta: { text: "Launch My Influencer Campaign", href: "#contact" },
       },
     },
@@ -17,12 +19,29 @@ const INFLUENCER_MARKETING: IServiceType = {
       type: "metrics",
       data: {
         heading: "Built to Deliver [Results]",
-        subheading: "{Results} from our influencer marketing workflows",
+        subheading:
+          "{Results} from our influencer marketing workflows and influencer agency systems",
         items: [
-          { value: "415+", label: "Influencer Campaigns Executed", icon: "/icons/rocket.svg" },
-          { value: "5–10 Days", label: "Avg. Campaign Setup Time", icon: "/icons/zap.svg" },
-          { value: "96%", label: "Client Satisfaction Rate", icon: "/icons/star.svg" },
-          { value: "22M+", label: "Influencer Reach Generated", icon: "/icons/trending-up.svg" },
+          {
+            value: "415+",
+            label: "Influencer Campaigns Executed",
+            icon: "/icons/rocket.svg",
+          },
+          {
+            value: "5–10 Days",
+            label: "Avg. Campaign Setup Time",
+            icon: "/icons/zap.svg",
+          },
+          {
+            value: "96%",
+            label: "Client Satisfaction Rate",
+            icon: "/icons/star.svg",
+          },
+          {
+            value: "22M+",
+            label: "Influencer Reach Generated",
+            icon: "/icons/trending-up.svg",
+          },
         ],
       },
     },
@@ -30,7 +49,8 @@ const INFLUENCER_MARKETING: IServiceType = {
       type: "overview",
       data: {
         heading: "Influencer Marketing",
-        content: "Our influencer marketing services connect your brand with creators who already have audience trust and buying influence. We act as a creator marketing agency and manage end-to-end influencer campaign management including creator {discovery}, negotiation, content strategy, contracts, execution, tracking, and performance optimization. Whether your goal is brand awareness, micro influencer campaigns, app installs, product launches, or direct e-commerce sales—we ensure every collaboration is structured for measurable {ROI}, not just vanity metrics.",
+        content:
+          "Our influencer marketing services connect your brand with creators who already have audience trust and buying influence. As a full-service influencer agency and influencer management agency, we manage end-to-end influencer campaign management including creator {discovery}, negotiation, content strategy, contracts, execution, tracking, and performance optimization. Whether your goal is brand awareness, micro influencer campaigns, app installs, product launches, or direct e-commerce sales—we ensure every collaboration is structured for measurable {ROI}, not just vanity metrics.",
       },
     },
     {
@@ -95,32 +115,38 @@ const INFLUENCER_MARKETING: IServiceType = {
         steps: [
           {
             title: "Brand & Audience [Discovery]",
-            description: "We {analyze} your product, target audience, positioning, and campaign objectives.",
+            description:
+              "We {analyze} your product, target audience, positioning, and campaign objectives.",
             icon: "/icons/search.svg",
           },
           {
             title: "Influencer Research & [Vetting]",
-            description: "Audience authenticity, engagement quality & niche relevance are {verified}.",
+            description:
+              "Audience authenticity, engagement quality & niche relevance are {verified}.",
             icon: "/icons/book-open.svg",
           },
           {
             title: "Campaign Strategy & Creative [Direction]",
-            description: "Content types, tone, messaging, and platform selection are {finalized}.",
+            description:
+              "Content types, tone, messaging, and platform selection are {finalized}.",
             icon: "/icons/brush.svg",
           },
           {
             title: "Influencer Outreach & [Contracting]",
-            description: "Communication, rate negotiation, and legal agreements are {managed}.",
+            description:
+              "Communication, rate negotiation, and legal agreements are {managed}.",
             icon: "/icons/briefcase.svg",
           },
           {
             title: "Content Production & [Publishing]",
-            description: "Creators {produce} and publish approved content on schedule.",
+            description:
+              "Creators {produce} and publish approved content on schedule.",
             icon: "/icons/file-text.svg",
           },
           {
             title: "Tracking, Optimization & [Reporting]",
-            description: "Performance is tracked in real time with ROI-focused {optimization}.",
+            description:
+              "Performance is tracked in real time with ROI-focused {optimization}.",
             icon: "/icons/trending-up.svg",
           },
         ],
@@ -168,7 +194,8 @@ const INFLUENCER_MARKETING: IServiceType = {
       type: "caseStudy",
       data: {
         heading: "Measured Product [Outcomes]",
-        content: "A fitness apparel brand launched a micro-influencer campaign with 42 creators across Instagram and YouTube. Within 30 days, the campaign generated {1.1M+} targeted impressions, increased website traffic by {68%}, and drove a {3.9x} ROI through tracked influencer promo codes.",
+        content:
+          "A fitness apparel brand launched a micro-influencer campaign with 42 creators across Instagram and YouTube. Within 30 days, the campaign generated {1.1M+} targeted impressions, increased website traffic by {68%}, and drove a {3.9x} ROI through tracked influencer promo codes.",
       },
     },
     {
@@ -179,22 +206,26 @@ const INFLUENCER_MARKETING: IServiceType = {
           {
             name: "Starter",
             price: "$399 – $749",
-            description: "Micro-influencer discovery, outreach & single-platform campaign.",
+            description:
+              "Micro-influencer discovery, outreach & single-platform campaign.",
           },
           {
             name: "Standard",
             price: "$899 – $1,699",
-            description: "Multi-creator campaigns with content strategy & performance tracking.",
+            description:
+              "Multi-creator campaigns with content strategy & performance tracking.",
           },
           {
             name: "Premium",
             price: "$1,900 – $3,800",
-            description: "Full-scale influencer launch campaigns with UGC repurposing & ROI tracking.",
+            description:
+              "Full-scale influencer launch campaigns with UGC repurposing & ROI tracking.",
           },
           {
             name: "Enterprise",
             price: "$5,500+",
-            description: "Celebrity & multi-market influencer marketing with brand ambassadorship programs.",
+            description:
+              "Celebrity & multi-market influencer marketing with brand ambassadorship programs.",
           },
         ],
       },
@@ -227,7 +258,8 @@ const INFLUENCER_MARKETING: IServiceType = {
       type: "cta",
       data: {
         heading: "Turn creators into your most powerful sales force.",
-        subheading: "Launch your Influencer Marketing campaign today and scale your brand with energetic, trust-driven {growth}.",
+        subheading:
+          "Launch your Influencer Marketing campaign today and scale your brand with energetic, trust-driven {growth}.",
       },
     },
   ],

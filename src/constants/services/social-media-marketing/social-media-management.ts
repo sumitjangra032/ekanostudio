@@ -8,8 +8,10 @@ const SOCIAL_MEDIA_MANAGEMENT: IServiceType = {
       type: "hero",
       data: {
         title: "Social Media Management",
-        headline: "Social Media Management transforms your social presence into a consistent growth engine.",
-        subheadline: "We manage, grow, and {scale} your brand across platforms with social media management services, strategic content, community engagement, and performance-driven execution that builds {authority} and drives real business results.",
+        headline:
+          "Social Media Management transforms your social presence into a consistent growth engine.",
+        subheadline:
+          "We manage, grow, and {scale} your brand across platforms with social media management services, professional social media mgmt workflows, strategic content, community engagement, and performance-driven execution that builds {authority} and drives real business results.",
         serviceCta: { text: "Manage My Social Media", href: "#contact" },
       },
     },
@@ -17,12 +19,29 @@ const SOCIAL_MEDIA_MANAGEMENT: IServiceType = {
       type: "metrics",
       data: {
         heading: "Built to Deliver [Results]",
-        subheading: "{Results} from our social media management workflows",
+        subheading:
+          "{Results} from our social media management frameworks and multi-platform social media and management systems",
         items: [
-          { value: "480+", label: "Brands Managed Across Platforms", icon: "/icons/rocket.svg" },
-          { value: "30–90 Days", label: "Avg. Visible Growth Window", icon: "/icons/zap.svg" },
-          { value: "97%", label: "Client Retention Rate", icon: "/icons/shield-check.svg" },
-          { value: "76M+", label: "Total Reach Generated", icon: "/icons/trending-up.svg" },
+          {
+            value: "480+",
+            label: "Brands Managed Across Platforms",
+            icon: "/icons/rocket.svg",
+          },
+          {
+            value: "30–90 Days",
+            label: "Avg. Visible Growth Window",
+            icon: "/icons/zap.svg",
+          },
+          {
+            value: "97%",
+            label: "Client Retention Rate",
+            icon: "/icons/shield-check.svg",
+          },
+          {
+            value: "76M+",
+            label: "Total Reach Generated",
+            icon: "/icons/trending-up.svg",
+          },
         ],
       },
     },
@@ -30,7 +49,8 @@ const SOCIAL_MEDIA_MANAGEMENT: IServiceType = {
       type: "overview",
       data: {
         heading: "Social Media Management",
-        content: "Social Media Management is not just about posting—it’s about {strategic} brand positioning, consistent storytelling, audience engagement, and conversion-focused content. As a social media marketing agency, we manage your presence across platforms with instagram management services, facebook page management, linkedin content management, and TikTok strategies. Our team of professional social media managers combines content creation, scheduling, analytics, community management, and growth {optimization} to turn your social platforms into trust-building, lead-generating, and revenue-supporting assets.",
+        content:
+          "Social Media Management is not just about posting—it’s about {strategic} brand positioning, consistent storytelling, audience engagement, and conversion-focused content. As a social media marketing agency, we provide full-service social media management across platforms with instagram management services, facebook page management, linkedin content management, and TikTok strategies. Our team uses top social media management platforms including Meta Business Suite, Zoho Social, and Sprout Social social media tools to handle content creation, scheduling, analytics, community management, and growth {optimization}. This turns your social platforms into trust-building, lead-generating, and revenue-supporting assets.",
       },
     },
     {
@@ -95,32 +115,38 @@ const SOCIAL_MEDIA_MANAGEMENT: IServiceType = {
         steps: [
           {
             title: "Brand & Audience [Discovery]",
-            description: "We {understand} your brand voice, audience behavior, competitors, and growth objectives.",
+            description:
+              "We {understand} your brand voice, audience behavior, competitors, and growth objectives.",
             icon: "/icons/search.svg",
           },
           {
             title: "Content Strategy & Calendar [Planning]",
-            description: "Platform-wise content themes, posting {frequency} & creative direction.",
+            description:
+              "Platform-wise content themes, posting {frequency} & creative direction, using social media management platforms for efficient workflow.",
             icon: "/icons/calendar-check.svg",
           },
           {
             title: "Content Creation & [Design]",
-            description: "Visual posts, reels, stories, captions & hashtags are {produced}.",
+            description:
+              "Visual posts, reels, stories, captions & hashtags are {produced}.",
             icon: "/icons/brush.svg",
           },
           {
             title: "Scheduling & [Publishing]",
-            description: "Content is {posted} using optimized timing across platforms.",
+            description:
+              "Content is {posted} using optimized timing across platforms with Meta Business Suite, Zoho Social, or Sprout Social.",
             icon: "/icons/clock.svg",
           },
           {
             title: "Community Management & [Engagement]",
-            description: "Replies, comments, DMs & follower interaction {handled} professionally.",
+            description:
+              "Replies, comments, DMs & follower interaction {handled} professionally.",
             icon: "/icons/users-round.svg",
           },
           {
             title: "Analytics, Reporting & [Optimization]",
-            description: "Performance tracking, insights & strategy {refinements}.",
+            description:
+              "Performance tracking, insights & strategy {refinements}.",
             icon: "/icons/trending-up.svg",
           },
         ],
@@ -155,10 +181,11 @@ const SOCIAL_MEDIA_MANAGEMENT: IServiceType = {
       data: {
         heading: "[Tools] We Use",
         items: [
-          "Meta Business Suite",
-          "Hootsuite, Buffer & Sprout Social",
+          "Meta Business Suite (formerly Facebook Business Manager)",
+          "Sprout Social",
+          "Zoho Social",
+          "Hootsuite & Buffer",
           "Canva Pro, Adobe Creative Tools",
-          "Google Drive & Content Workflow Tools",
           "GA4 & Platform Analytics",
           "Social listening & engagement tracking platforms",
         ],
@@ -168,7 +195,8 @@ const SOCIAL_MEDIA_MANAGEMENT: IServiceType = {
       type: "caseStudy",
       data: {
         heading: "Measured Product [Outcomes]",
-        content: "A local service brand implemented our Social Media Management strategy across Instagram and Facebook. Within 90 days, follower growth increased by {214%}, inbound DM enquiries grew by {3.1x}, and monthly sales inquiries doubled without paid ads.",
+        content:
+          "A service brand implemented our Social Media Management frameworks across Instagram and Facebook. Within 90 days, follower growth increased by {214%}, inbound DM enquiries grew by {3.1x}, and monthly sales inquiries doubled without paid ads.",
       },
     },
     {
@@ -179,22 +207,26 @@ const SOCIAL_MEDIA_MANAGEMENT: IServiceType = {
           {
             name: "Starter",
             price: "$199 – $399 / month",
-            description: "8–10 posts, captions, hashtags & basic reporting.",
+            description:
+              "8–10 posts, captions, hashtags & basic reporting.",
           },
           {
             name: "Standard",
             price: "$599 – $1,099 / month",
-            description: "12–20 posts, reels, community engagement & growth tracking.",
+            description:
+              "12–20 posts, reels, community engagement & growth tracking.",
           },
           {
             name: "Premium",
             price: "$1,400 – $2,800 / month",
-            description: "Full content production, daily engagement, reels strategy & monthly growth reporting.",
+            description:
+              "Full content production, daily engagement, reels strategy & monthly growth reporting.",
           },
           {
             name: "Enterprise",
             price: "$4,000+ / month",
-            description: "Multi-platform management, brand collaborations, influencer coordination & performance dashboards.",
+            description:
+              "Multi-platform management, brand collaborations, influencer coordination & performance dashboards.",
           },
         ],
       },
@@ -227,7 +259,8 @@ const SOCIAL_MEDIA_MANAGEMENT: IServiceType = {
       type: "cta",
       data: {
         heading: "Turn your social media into a powerful growth [channel].",
-        subheading: "Start your Social Media Management today and build an engaged, loyal {audience} that fuels your brand’s long-term success.",
+        subheading:
+          "Start your Social Media Management today and build an engaged, loyal {audience} that fuels your brand’s long-term success.",
       },
     },
   ],
