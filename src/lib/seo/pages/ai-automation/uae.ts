@@ -45,7 +45,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Smart Automation for a Digital-First Economy",
             text:
-                "The UAE is a global leader in technology adoption, real estate, logistics, and service-driven industries where speed and accuracy are critical. ekanostudio helps UAE-based organizations implement AI automation using n8n and OpenAI. From customer inquiries and lead qualification to operations reporting and internal workflows, our solutions reduce manual effort while supporting high-volume, round-the-clock operations.",
+                "The UAE is a global leader in technology adoption, real estate, logistics, and service-driven industries where speed and accuracy are critical. Ekanostudio helps UAE-based organizations implement AI automation using n8n and OpenAI. From customer inquiries and lead qualification to operations reporting and internal workflows, our solutions reduce manual effort while supporting high-volume, round-the-clock operations.",
         },
 
         whyChoose: {

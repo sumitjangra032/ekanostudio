@@ -46,11 +46,11 @@ export const data: SeoPageData = {
         overview: {
             title: "Une Approche Éditoriale Exigeante",
             text:
-                "En France, le contenu est un vecteur d’image autant qu’un levier marketing. ekanostudio accompagne les marques françaises dans la création de contenus à forte valeur ajoutée. Rédaction web, storytelling de marque, production vidéo ou supports visuels : chaque contenu est pensé pour respecter les codes culturels, la langue et les attentes d’un public exigeant.",
+                "En France, le contenu est un vecteur d’image autant qu’un levier marketing. Ekanostudio accompagne les marques françaises dans la création de contenus à forte valeur ajoutée. Rédaction web, storytelling de marque, production vidéo ou supports visuels : chaque contenu est pensé pour respecter les codes culturels, la langue et les attentes d’un public exigeant.",
         },
 
         whyChoose: {
-            title: "Pourquoi Choisir ekanostudio",
+            title: "Pourquoi Choisir Ekanostudio",
             points: [
                 {
                     title: "Maîtrise Culturelle & Linguistique",

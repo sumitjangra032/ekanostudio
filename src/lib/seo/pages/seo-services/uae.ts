@@ -49,7 +49,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Bilingual SEO for Dubai, Abu Dhabi & the Emirates",
             text:
-                "The UAE’s search ecosystem is one of the most diverse in the world, balancing expatriate audiences with native Arabic speakers. ekanostudio delivers specialized SEO for the UAE market—optimizing your website for English and Arabic search intent, improving rankings for competitive commercial keywords, and strengthening your online authority across Dubai, Abu Dhabi, and the GCC.",
+                "The UAE’s search ecosystem is one of the most diverse in the world, balancing expatriate audiences with native Arabic speakers. Ekanostudio delivers specialized SEO for the UAE market—optimizing your website for English and Arabic search intent, improving rankings for competitive commercial keywords, and strengthening your online authority across Dubai, Abu Dhabi, and the GCC.",
         },
 
         whyChoose: {

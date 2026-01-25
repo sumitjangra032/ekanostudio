@@ -45,7 +45,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Efficienza Operativa e Innovazione con l’Intelligenza Artificiale",
             text:
-                "Il tessuto imprenditoriale italiano è composto da PMI, brand orientati al design e realtà industriali che richiedono efficienza e affidabilità. ekanostudio supporta le aziende in Italia nell’adozione dell’automazione IA attraverso tecnologie come n8n e OpenAI. Automatizziamo processi chiave come la gestione dei lead, il customer service, la fatturazione e il reporting, garantendo sicurezza, controllo e continuità operativa.",
+                "Il tessuto imprenditoriale italiano è composto da PMI, brand orientati al design e realtà industriali che richiedono efficienza e affidabilità. Ekanostudio supporta le aziende in Italia nell’adozione dell’automazione IA attraverso tecnologie come n8n e OpenAI. Automatizziamo processi chiave come la gestione dei lead, il customer service, la fatturazione e il reporting, garantendo sicurezza, controllo e continuità operativa.",
         },
 
         whyChoose: {

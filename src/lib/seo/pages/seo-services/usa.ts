@@ -48,7 +48,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Winning SEO for the American Search Landscape",
             text:
-                "Ranking in the United States is uniquely challenging. Competitors are stronger, search intent is broader, and Google’s US algorithms demand high technical accuracy. ekanostudio builds US-centric SEO strategies powered by semantic optimization, entity-based targeting, and large-scale content architecture — giving your brand the authority needed to rank across all 50 states.",
+                "Ranking in the United States is uniquely challenging. Competitors are stronger, search intent is broader, and Google’s US algorithms demand high technical accuracy. Ekanostudio builds US-centric SEO strategies powered by semantic optimization, entity-based targeting, and large-scale content architecture — giving your brand the authority needed to rank across all 50 states.",
         },
 
         whyChoose: {

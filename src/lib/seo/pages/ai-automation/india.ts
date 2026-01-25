@@ -45,11 +45,11 @@ export const data: SeoPageData = {
         overview: {
             title: "Building Scalable Automation for India’s Diverse Business Landscape",
             text:
-                "India’s business ecosystem spans startups, enterprises, and multi-location organizations operating at massive scale. ekanostudio helps businesses across India adopt AI automation using n8n and OpenAI. Our solutions streamline operations such as lead management, customer support workflows, reporting, and internal processes—helping organizations maintain consistency and efficiency across teams, cities, and regions.",
+                "India’s business ecosystem spans startups, enterprises, and multi-location organizations operating at massive scale. Ekanostudio helps businesses across India adopt AI automation using n8n and OpenAI. Our solutions streamline operations such as lead management, customer support workflows, reporting, and internal processes—helping organizations maintain consistency and efficiency across teams, cities, and regions.",
         },
 
         whyChoose: {
-            title: "Why Businesses Across India Choose ekanostudio",
+            title: "Why Businesses Across India Choose Ekanostudio",
             points: [
                 {
                     title: "Automation Built for Scale",

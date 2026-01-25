@@ -47,11 +47,11 @@ export const data: SeoPageData = {
         overview: {
             title: "SEO Costruito per Competere in Italia",
             text:
-                "Il mercato digitale italiano è competitivo e fortemente orientato alla qualità. Per ottenere risultati duraturi non basta ottimizzare qualche parola chiave. ekanostudio sviluppa strategie SEO complete per l’Italia, combinando analisi tecnica, search intent, contenuti autorevoli e link building etico per aiutare le aziende a dominare le ricerche nazionali e locali.",
+                "Il mercato digitale italiano è competitivo e fortemente orientato alla qualità. Per ottenere risultati duraturi non basta ottimizzare qualche parola chiave. Ekanostudio sviluppa strategie SEO complete per l’Italia, combinando analisi tecnica, search intent, contenuti autorevoli e link building etico per aiutare le aziende a dominare le ricerche nazionali e locali.",
         },
 
         whyChoose: {
-            title: "Perché Scegliere ekanostudio per la SEO in Italia",
+            title: "Perché Scegliere Ekanostudio per la SEO in Italia",
             points: [
                 {
                     title: "SEO Nazionale e Locale",

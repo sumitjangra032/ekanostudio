@@ -45,11 +45,11 @@ export const data: SeoPageData = {
         overview: {
             title: "Practical AI Automation for Pune’s Engineering Ecosystem",
             text:
-                "Pune is known for its strong engineering talent, manufacturing units, and IT service organizations where structured processes and accuracy matter. ekanostudio helps Pune-based businesses implement AI automation using n8n and OpenAI. We design workflows that automate lead handling, reporting, invoicing, and internal operations—helping teams reduce manual effort while maintaining process control.",
+                "Pune is known for its strong engineering talent, manufacturing units, and IT service organizations where structured processes and accuracy matter. Ekanostudio helps Pune-based businesses implement AI automation using n8n and OpenAI. We design workflows that automate lead handling, reporting, invoicing, and internal operations—helping teams reduce manual effort while maintaining process control.",
         },
 
         whyChoose: {
-            title: "Why Pune Businesses Choose ekanostudio",
+            title: "Why Pune Businesses Choose Ekanostudio",
             points: [
                 {
                     title: "Process-Focused Automation",

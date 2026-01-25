@@ -40,11 +40,11 @@ export const data: SeoPageData = {
         overview: {
             title: "Web Design Built for British Audiences",
             text:
-                "The UK digital landscape demands credibility, usability, and compliance. ekanostudio designs high-performing websites tailored to British user behaviour, industry standards, and regulatory requirements. From London-based service firms to nationwide enterprises, we craft digital platforms that combine clarity, speed, and long-term scalability.",
+                "The UK digital landscape demands credibility, usability, and compliance. Ekanostudio designs high-performing websites tailored to British user behaviour, industry standards, and regulatory requirements. From London-based service firms to nationwide enterprises, we craft digital platforms that combine clarity, speed, and long-term scalability.",
         },
 
         whyChoose: {
-            title: "Why UK Businesses Choose ekanostudio",
+            title: "Why UK Businesses Choose Ekanostudio",
             points: [
                 {
                     title: "Compliance-First Architecture",

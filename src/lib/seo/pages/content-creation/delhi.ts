@@ -46,7 +46,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Content That Commands Attention in the Capital",
             text:
-                "Delhi is one of India’s most competitive and diverse markets, where credibility matters as much as creativity. ekanostudio helps organisations craft content that communicates authority, clarity, and professionalism. From corporate communication and brand films to long-form content and digital campaigns, we support established businesses and institutions in shaping a strong public narrative.",
+                "Delhi is one of India’s most competitive and diverse markets, where credibility matters as much as creativity. Ekanostudio helps organisations craft content that communicates authority, clarity, and professionalism. From corporate communication and brand films to long-form content and digital campaigns, we support established businesses and institutions in shaping a strong public narrative.",
         },
 
         whyChoose: {

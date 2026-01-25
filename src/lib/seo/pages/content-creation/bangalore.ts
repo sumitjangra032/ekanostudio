@@ -46,7 +46,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Content That Builds Trust in a Competitive Tech Market",
             text:
-                "Bangalore is crowded with products, platforms, and promises. Standing out requires clarity, credibility, and consistency. ekanostudio helps startups and technology-driven companies create content that explains complex ideas simply, positions founders as experts, and supports long sales cycles. From technical blogs and case studies to founder videos and brand narratives, our content is built for informed decision-makers.",
+                "Bangalore is crowded with products, platforms, and promises. Standing out requires clarity, credibility, and consistency. Ekanostudio helps startups and technology-driven companies create content that explains complex ideas simply, positions founders as experts, and supports long sales cycles. From technical blogs and case studies to founder videos and brand narratives, our content is built for informed decision-makers.",
         },
 
         whyChoose: {

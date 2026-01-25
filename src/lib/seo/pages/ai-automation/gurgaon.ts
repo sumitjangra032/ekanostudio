@@ -45,7 +45,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Enterprise Automation for High-Volume Operations",
             text:
-                "Gurgaon is home to multinational corporations, finance teams, and operations-heavy enterprises where speed, accuracy, and reliability are critical. ekanostudio helps Gurgaon-based organizations implement AI automation using n8n and OpenAI. We design workflows that automate sales qualification, document handling, finance operations, and internal reporting—helping teams operate efficiently at scale.",
+                "Gurgaon is home to multinational corporations, finance teams, and operations-heavy enterprises where speed, accuracy, and reliability are critical. Ekanostudio helps Gurgaon-based organizations implement AI automation using n8n and OpenAI. We design workflows that automate sales qualification, document handling, finance operations, and internal reporting—helping teams operate efficiently at scale.",
         },
 
         whyChoose: {

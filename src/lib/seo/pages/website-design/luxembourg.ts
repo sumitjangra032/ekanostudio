@@ -40,7 +40,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Premium Web Design for the Grand Duchy",
             text:
-                "Luxembourg is a global financial powerhouse where trust and prestige are essential. Your website must reflect this reputation. ekanostudio delivers high-end web design for Luxembourgish firms with elegant aesthetics, multi-lingual user journeys, and enterprise-grade performance.",
+                "Luxembourg is a global financial powerhouse where trust and prestige are essential. Your website must reflect this reputation. Ekanostudio delivers high-end web design for Luxembourgish firms with elegant aesthetics, multi-lingual user journeys, and enterprise-grade performance.",
         },
 
         whyChoose: {

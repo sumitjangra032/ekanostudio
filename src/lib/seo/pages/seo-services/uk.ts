@@ -49,7 +49,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Search Engine Optimisation for the United Kingdom",
             text:
-                "The UK search landscape demands precision. British spelling, regional intent, and competitive industries require a tailored SEO approach. ekanostudio delivers UK-specific SEO strategies focused on Google.co.uk — optimising technical performance, content relevance, and authoritative backlinks to help businesses win visibility across England, Scotland, Wales, and Northern Ireland.",
+                "The UK search landscape demands precision. British spelling, regional intent, and competitive industries require a tailored SEO approach. Ekanostudio delivers UK-specific SEO strategies focused on Google.co.uk — optimising technical performance, content relevance, and authoritative backlinks to help businesses win visibility across England, Scotland, Wales, and Northern Ireland.",
         },
 
         whyChoose: {

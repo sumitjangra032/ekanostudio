@@ -47,7 +47,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Strategic SEO for Pune’s Growth Economy",
             text:
-                "Pune’s digital landscape is highly competitive, especially across IT services, SaaS, manufacturing, and education sectors. ekanostudio delivers advanced SEO strategies tailored for Pune-based businesses—combining technical SEO, content authority, and local search dominance to ensure long-term ranking stability and lead generation.",
+                "Pune’s digital landscape is highly competitive, especially across IT services, SaaS, manufacturing, and education sectors. Ekanostudio delivers advanced SEO strategies tailored for Pune-based businesses—combining technical SEO, content authority, and local search dominance to ensure long-term ranking stability and lead generation.",
         },
 
         whyChoose: {

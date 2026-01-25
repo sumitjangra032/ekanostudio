@@ -47,7 +47,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Strategic SEO Built for the Grand Duchy",
             text:
-                "With its trilingual landscape and global corporate presence, Luxembourg requires SEO strategies that go far beyond traditional optimization. ekanostudio delivers multilingual, technical and authority-driven SEO solutions designed specifically for Luxembourg’s financial, legal, and international business sectors. We help you become discoverable in French, German, and English while ensuring maximum technical compliance for European markets.",
+                "With its trilingual landscape and global corporate presence, Luxembourg requires SEO strategies that go far beyond traditional optimization. Ekanostudio delivers multilingual, technical and authority-driven SEO solutions designed specifically for Luxembourg’s financial, legal, and international business sectors. We help you become discoverable in French, German, and English while ensuring maximum technical compliance for European markets.",
         },
 
         whyChoose: {

@@ -45,7 +45,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Smarter Operations Through AI Automation",
             text:
-                "Canadian businesses operate in competitive and often regulated environments where efficiency and reliability matter. ekanostudio helps organizations across Canada implement AI automation using tools like n8n and OpenAI. Our solutions automate tasks such as customer support routing, reporting, onboarding, and internal workflows—without disrupting existing systems or compromising data security.",
+                "Canadian businesses operate in competitive and often regulated environments where efficiency and reliability matter. Ekanostudio helps organizations across Canada implement AI automation using tools like n8n and OpenAI. Our solutions automate tasks such as customer support routing, reporting, onboarding, and internal workflows—without disrupting existing systems or compromising data security.",
         },
 
         whyChoose: {

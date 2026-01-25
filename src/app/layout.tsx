@@ -17,13 +17,14 @@ const SITE_URL = "https://www.ekanostudio.com";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "ekanostudio - Digital Transformation Services & Consulting",
-    template: "ekanostudio - %s",
+    default: "Ekanostudio - Digital Transformation Services & Consulting",
+    template: "Ekanostudio - %s",
   },
   description:
-    "Accelerate your digital growth with ekanostudio. We provide expert SEO, web development, branding, and digital marketing services across India.",
+    "Accelerate your digital growth with Ekanostudio. We provide expert SEO, web development, branding, and digital marketing services across India.",
   keywords: [
     "digital transformation",
+    "Ekanostudio",
     "SEO agency",
     "web development",
     "digital marketing",
@@ -32,9 +33,9 @@ export const metadata: Metadata = {
     "India",
     "Hisar",
   ],
-  authors: [{ name: "ekanostudio" }],
-  creator: "ekanostudio",
-  publisher: "ekanostudio",
+  authors: [{ name: "Ekanostudio" }],
+  creator: "Ekanostudio",
+  publisher: "Ekanostudio",
   icons: {
     icon: "/logo.png",
     shortcut: "/logo.png",
@@ -44,24 +45,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: SITE_URL,
-    siteName: "ekanostudio",
-    title: "ekanostudio - Digital Transformation Services & Consulting",
+    siteName: "Ekanostudio",
+    title: "Ekanostudio - Digital Transformation Services & Consulting",
     description:
-      "ekanostudio helps businesses grow with SEO, web development, branding, and digital marketing services across India.",
+      "Ekanostudio helps businesses grow with SEO, web development, branding, and digital marketing services across India.",
     images: [
       {
         url: "/logo.png",
         width: 800,
         height: 600,
-        alt: "ekanostudio Logo",
+        alt: "Ekanostudio Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ekanostudioDigital Transformation Services & Consulting",
+    title: "Ekanostudio - Digital Transformation Services & Consulting",
     description:
-      "ekanostudio helps businesses grow with SEO, web development, branding, and digital marketing services across India.",
+      "Ekanostudio helps businesses grow with SEO, web development, branding, and digital marketing services across India.",
     images: ["/logo.png"],
   },
   robots: {
@@ -76,7 +77,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: SITE_URL,
+    canonical: "./",
   },
 };
 
@@ -152,34 +153,58 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           `}
         </Script>
 
-        {/* Schema.org - LocalBusiness */}
+        {/* Schema.org - Organization (Enhanced for Google Graph) */}
         <Script
-          id="schema-local-business"
+          id="schema-organization"
           type="application/ld+json"
           strategy="afterInteractive"
         >
           {`
           {
             "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "@id": "https://www.ekanostudio.com/#business",
-            "name": "ekanostudio",
-            "url": "https://www.ekanostudio.com",
-            "logo": "https://www.ekanostudio.com/logo.png",
-            "description": "ekanostudio is an SEO and web development agency based in Hisar, Haryana serving businesses across India.",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Hisar",
-              "addressRegion": "Haryana",
-              "addressCountry": "IN"
-            },
-            "areaServed": {
-              "@type": "Country",
-              "name": "India"
-            },
-            "sameAs": [
-              "https://www.instagram.com/ekanostudio",
-              "https://www.linkedin.com/company/ekanostudio"
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://www.ekanostudio.com/#organization",
+                "name": "Ekanostudio",
+                "url": "https://www.ekanostudio.com",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://www.ekanostudio.com/logo.png",
+                  "width": 800,
+                  "height": 600
+                },
+                "sameAs": [
+                  "https://www.instagram.com/ekanostudio",
+                  "https://www.linkedin.com/company/ekanostudio"
+                ],
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "contactType": "customer support",
+                  "areaServed": "IN",
+                  "availableLanguage": "en"
+                }
+              },
+              {
+                "@type": "LocalBusiness",
+                "@parent": "https://www.ekanostudio.com/#organization",
+                "name": "Ekanostudio",
+                "image": "https://www.ekanostudio.com/logo.png",
+                "url": "https://www.ekanostudio.com",
+                "telephone": "",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Hisar",
+                  "addressRegion": "Haryana",
+                  "addressCountry": "IN"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "29.1492",
+                  "longitude": "75.7217" 
+                },
+                "priceRange": "$$"
+              }
             ]
           }
           `}

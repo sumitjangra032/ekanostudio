@@ -46,7 +46,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Enterprise-Level Web Design for Delhi Businesses",
             text:
-                "Delhi is home to India’s top corporate houses, government units, global MNCs, and luxury brands. Your website must reflect credibility, precision, and trust. ekanostudio provides advanced website design solutions tailored to the capital’s competitive environment—combining strong UI/UX, fast performance, and airtight security.",
+                "Delhi is home to India’s top corporate houses, government units, global MNCs, and luxury brands. Your website must reflect credibility, precision, and trust. Ekanostudio provides advanced website design solutions tailored to the capital’s competitive environment—combining strong UI/UX, fast performance, and airtight security.",
         },
 
         whyChoose: {

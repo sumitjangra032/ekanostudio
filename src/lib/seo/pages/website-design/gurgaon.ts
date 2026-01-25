@@ -46,11 +46,11 @@ export const data: SeoPageData = {
         overview: {
             title: "Corporate & Enterprise Website Design in Gurgaon",
             text:
-                "Gurgaon is the headquarters of India’s most powerful corporations, global MNCs, and fast-scaling startups. Your website must reflect credibility, scale, and trust. ekanostudio delivers enterprise-grade web design solutions in Gurgaon with a focus on performance, security, UX precision, and global brand alignment. Our websites are built to support high traffic, complex user journeys, and long-term growth.",
+                "Gurgaon is the headquarters of India’s most powerful corporations, global MNCs, and fast-scaling startups. Your website must reflect credibility, scale, and trust. Ekanostudio delivers enterprise-grade web design solutions in Gurgaon with a focus on performance, security, UX precision, and global brand alignment. Our websites are built to support high traffic, complex user journeys, and long-term growth.",
         },
 
         whyChoose: {
-            title: "Why Gurgaon's Enterprises Choose ekanostudio",
+            title: "Why Gurgaon's Enterprises Choose Ekanostudio",
             points: [
                 {
                     title: "Global Corporate Standards",

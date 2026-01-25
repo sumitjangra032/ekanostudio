@@ -46,7 +46,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Content Built for a Luxury-Driven Market",
             text:
-                "The UAE is a market where presentation, precision, and perception matter. ekanostudio works with businesses that operate at a global standard—delivering content that reflects ambition and credibility. From executive brand films to bilingual digital campaigns, we create assets that align with the expectations of decision-makers, investors, and premium audiences across the Emirates.",
+                "The UAE is a market where presentation, precision, and perception matter. Ekanostudio works with businesses that operate at a global standard—delivering content that reflects ambition and credibility. From executive brand films to bilingual digital campaigns, we create assets that align with the expectations of decision-makers, investors, and premium audiences across the Emirates.",
         },
 
         whyChoose: {

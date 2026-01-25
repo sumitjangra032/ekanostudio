@@ -46,7 +46,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Building Brands in a High-Volume Content Market",
             text:
-                "India is one of the most competitive content markets in the world, with audiences spread across languages, platforms, and formats. ekanostudio helps brands create content that balances scale with substance. From short-form social videos and campaign creatives to long-form blogs, case studies, and brand narratives, our content is designed to engage, inform, and build lasting trust.",
+                "India is one of the most competitive content markets in the world, with audiences spread across languages, platforms, and formats. Ekanostudio helps brands create content that balances scale with substance. From short-form social videos and campaign creatives to long-form blogs, case studies, and brand narratives, our content is designed to engage, inform, and build lasting trust.",
         },
 
         whyChoose: {

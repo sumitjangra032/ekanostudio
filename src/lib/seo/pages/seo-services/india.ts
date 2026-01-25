@@ -47,7 +47,7 @@ export const data: SeoPageData = {
         overview: {
             title: "SEO Built for India’s Scale and Complexity",
             text:
-                "India’s search ecosystem is vast, multilingual, and fiercely competitive. Ranking nationally requires far more than basic keyword optimization. ekanostudio delivers advanced SEO strategies designed for scale—combining technical excellence, search-intent mapping, and authority-driven content to help Indian brands win across industries, regions, and buyer journeys.",
+                "India’s search ecosystem is vast, multilingual, and fiercely competitive. Ranking nationally requires far more than basic keyword optimization. Ekanostudio delivers advanced SEO strategies designed for scale—combining technical excellence, search-intent mapping, and authority-driven content to help Indian brands win across industries, regions, and buyer journeys.",
         },
 
         whyChoose: {

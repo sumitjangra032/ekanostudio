@@ -40,7 +40,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Modern Web Design for Pune’s Digital Ecosystem",
             text:
-                "Pune blends academia, industry, and technology—and your website must reflect that dynamic environment. ekanostudio creates high-performance websites tailored for Pune’s evolving business landscape, whether you’re a tech startup, an educational institution, or a manufacturing leader expanding globally.",
+                "Pune blends academia, industry, and technology—and your website must reflect that dynamic environment. Ekanostudio creates high-performance websites tailored for Pune’s evolving business landscape, whether you’re a tech startup, an educational institution, or a manufacturing leader expanding globally.",
         },
 
         whyChoose: {

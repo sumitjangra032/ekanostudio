@@ -40,7 +40,7 @@ export const data: SeoPageData = {
         overview: {
             title: "High-End Web Design for the UAE Digital Landscape",
             text:
-                "The UAE sets global standards for luxury, technology, and consumer experience. Your website must match that prestige. ekanostudio builds bilingual, performance-optimized websites for UAE businesses—from Dubai’s high-fashion retail to Abu Dhabi’s corporate and governmental sectors. Our designs blend elegance, speed, and cultural relevance for both local and international audiences.",
+                "The UAE sets global standards for luxury, technology, and consumer experience. Your website must match that prestige. Ekanostudio builds bilingual, performance-optimized websites for UAE businesses—from Dubai’s high-fashion retail to Abu Dhabi’s corporate and governmental sectors. Our designs blend elegance, speed, and cultural relevance for both local and international audiences.",
         },
 
         whyChoose: {

@@ -45,11 +45,11 @@ export const data: SeoPageData = {
         overview: {
             title: "Building Smarter Operations in Bangalore’s Tech Ecosystem",
             text:
-                "Bangalore is home to some of the fastest-growing startups and technology-driven companies in India. To stay competitive, businesses need systems that move as fast as they do. ekanostudio helps Bangalore-based teams implement AI automation using tools like n8n and OpenAI—streamlining internal operations, customer workflows, and data handling without disrupting existing systems.",
+                "Bangalore is home to some of the fastest-growing startups and technology-driven companies in India. To stay competitive, businesses need systems that move as fast as they do. Ekanostudio helps Bangalore-based teams implement AI automation using tools like n8n and OpenAI—streamlining internal operations, customer workflows, and data handling without disrupting existing systems.",
         },
 
         whyChoose: {
-            title: "Why Choose AI Automation with ekanostudio",
+            title: "Why Choose AI Automation with Ekanostudio",
             points: [
                 {
                     title: "Automation Built for Scale",

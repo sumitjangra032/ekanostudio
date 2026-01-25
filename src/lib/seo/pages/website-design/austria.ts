@@ -48,7 +48,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Professionelle Websites für den österreichischen Markt",
             text:
-                "In Österreich zählt Qualität, Präzision und Benutzerfreundlichkeit. Ihre Website muss nicht nur gut aussehen – sie muss performant, sicher und intuitiv sein. ekanostudio entwickelt maßgeschneiderte Webdesigns, die perfekt auf österreichische Marken und KMUs abgestimmt sind, egal ob in Wien, Innsbruck oder Salzburg.",
+                "In Österreich zählt Qualität, Präzision und Benutzerfreundlichkeit. Ihre Website muss nicht nur gut aussehen – sie muss performant, sicher und intuitiv sein. Ekanostudio entwickelt maßgeschneiderte Webdesigns, die perfekt auf österreichische Marken und KMUs abgestimmt sind, egal ob in Wien, Innsbruck oder Salzburg.",
         },
 
         whyChoose: {

@@ -46,7 +46,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Content That Reflects Pune’s Academic and Industrial Strength",
             text:
-                "Pune is known for its universities, IT parks, and manufacturing ecosystem. Content here must balance creativity with substance. ekanostudio creates structured, high-impact content for organizations that need to educate, inform, and convert—from institutional storytelling to B2B-focused digital media that supports reputation and trust.",
+                "Pune is known for its universities, IT parks, and manufacturing ecosystem. Content here must balance creativity with substance. Ekanostudio creates structured, high-impact content for organizations that need to educate, inform, and convert—from institutional storytelling to B2B-focused digital media that supports reputation and trust.",
         },
 
         whyChoose: {

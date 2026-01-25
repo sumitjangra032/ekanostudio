@@ -46,7 +46,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Content Built for Corporate Credibility",
             text:
-                "Gurgaon is home to multinational corporations, consulting firms, and financial leaders where credibility and clarity matter more than noise. ekanostudio helps enterprise teams communicate complex ideas with precision. From executive thought leadership and investor-ready narratives to polished corporate videos, our content supports reputation, trust, and long-term brand positioning.",
+                "Gurgaon is home to multinational corporations, consulting firms, and financial leaders where credibility and clarity matter more than noise. Ekanostudio helps enterprise teams communicate complex ideas with precision. From executive thought leadership and investor-ready narratives to polished corporate videos, our content supports reputation, trust, and long-term brand positioning.",
         },
 
         whyChoose: {

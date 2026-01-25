@@ -46,11 +46,11 @@ export const data: SeoPageData = {
         overview: {
             title: "Content Built for the American Digital Landscape",
             text:
-                "The US market moves fast and competition is intense. To stand out, content must be clear, authentic, and designed for performance. ekanostudio helps US businesses scale their content production without sacrificing quality. From short-form video and paid ad creatives to long-form blogs and thought leadership, we create assets that support visibility, trust, and conversion across US audiences.",
+                "The US market moves fast and competition is intense. To stand out, content must be clear, authentic, and designed for performance. Ekanostudio helps US businesses scale their content production without sacrificing quality. From short-form video and paid ad creatives to long-form blogs and thought leadership, we create assets that support visibility, trust, and conversion across US audiences.",
         },
 
         whyChoose: {
-            title: "Why US Brands Choose ekanostudio",
+            title: "Why US Brands Choose Ekanostudio",
             points: [
                 {
                     title: "US-Market Writing Standards",

@@ -40,7 +40,7 @@ export const data: SeoPageData = {
         overview: {
             title: "High-Performance Web Design for the US Market",
             text:
-                "The United States has the most demanding digital landscape in the world. Your website needs to meet high standards for accessibility, performance, aesthetics, and compliance. ekanostudio builds enterprise-grade websites tailored for American audiences—optimized for ADA accessibility, CCPA privacy compliance, and the design expectations of top US brands.",
+                "The United States has the most demanding digital landscape in the world. Your website needs to meet high standards for accessibility, performance, aesthetics, and compliance. Ekanostudio builds enterprise-grade websites tailored for American audiences—optimized for ADA accessibility, CCPA privacy compliance, and the design expectations of top US brands.",
         },
 
         whyChoose: {

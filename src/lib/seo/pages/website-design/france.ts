@@ -46,7 +46,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Création de Sites Web Sur Mesure en France",
             text:
-                "En France, l’esthétique et la cohérence de marque jouent un rôle essentiel. Votre site doit allier élégance française, fluidité, et excellence technique. ekanostudio propose des solutions web premium adaptées aux secteurs du luxe, de la mode, de la gastronomie, du tourisme et de la technologie. Nous assurons également une conformité RGPD irréprochable et une localisation linguistique parfaite.",
+                "En France, l’esthétique et la cohérence de marque jouent un rôle essentiel. Votre site doit allier élégance française, fluidité, et excellence technique. Ekanostudio propose des solutions web premium adaptées aux secteurs du luxe, de la mode, de la gastronomie, du tourisme et de la technologie. Nous assurons également une conformité RGPD irréprochable et une localisation linguistique parfaite.",
         },
 
         whyChoose: {

@@ -47,7 +47,7 @@ export const data: SeoPageData = {
         overview: {
             title: "Web Design Built for the Canadian Market",
             text:
-                "Canada’s digital landscape demands speed, accessibility, and bilingual readiness. ekanostudio delivers enterprise-grade websites that meet AODA compliance, support English–French localization, and are optimized for global reach. Whether you're in SaaS, eCommerce, or professional services, we craft websites that perform across all Canadian provinces.",
+                "Canada’s digital landscape demands speed, accessibility, and bilingual readiness. Ekanostudio delivers enterprise-grade websites that meet AODA compliance, support English–French localization, and are optimized for global reach. Whether you're in SaaS, eCommerce, or professional services, we craft websites that perform across all Canadian provinces.",
         },
 
         whyChoose: {

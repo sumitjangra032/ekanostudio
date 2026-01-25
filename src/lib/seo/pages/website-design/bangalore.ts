@@ -47,11 +47,11 @@ export const data: SeoPageData = {
         overview: {
             title: "Websites Built for Bangalore’s Startup & Tech Economy",
             text:
-                "Bangalore is one of the most competitive digital markets in India. A slow or outdated website can cost you users, investors, and credibility. ekanostudio designs modern, performance-driven websites that align with how Bangalore’s tech-savvy audience thinks, clicks, and converts — whether you’re a SaaS startup, product company, or enterprise brand.",
+                "Bangalore is one of the most competitive digital markets in India. A slow or outdated website can cost you users, investors, and credibility. Ekanostudio designs modern, performance-driven websites that align with how Bangalore’s tech-savvy audience thinks, clicks, and converts — whether you’re a SaaS startup, product company, or enterprise brand.",
         },
 
         whyChoose: {
-            title: "Why Bangalore Companies Choose ekanostudio",
+            title: "Why Bangalore Companies Choose Ekanostudio",
             points: [
                 {
                     title: "Startup & SaaS Expertise",
