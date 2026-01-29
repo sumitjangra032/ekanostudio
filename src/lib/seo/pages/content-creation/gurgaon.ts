@@ -30,7 +30,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Content Creation Agency Gurgaon | Corporate Video & Thought Leadership",
+        title: "Content Creation Gurgaon | Video & Thought Leadership",
         description:
             "Content creation for Gurgaon enterprises. We produce corporate videos, executive content, and authoritative copy for B2B and enterprise brands.",
         canonical: "/content-creation-gurgaon",

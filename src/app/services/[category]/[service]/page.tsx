@@ -36,7 +36,7 @@ export async function generateMetadata(
   // ❌ Hard stop for invalid routes (SEO-safe)
   if (!serviceData || !meta) {
     return {
-      title: "Service Not Found | ekanostudio",
+      title: "Service Not Found | Ekanostudio",
       description: "The requested service could not be found.",
       robots: {
         index: false,
@@ -52,7 +52,7 @@ export async function generateMetadata(
    * Prevents Google rewriting
    * Optimized for CTR + intent
    */
-  const seoTitle = `${serviceData.title} Services | ${meta.title} Experts | ekanostudio`;
+  const seoTitle = `${serviceData.title} Services | ${meta.title} Experts | Ekanostudio`;
 
   /**
    * 🔒 SEO-SAFE DESCRIPTION STRATEGY
@@ -62,7 +62,7 @@ export async function generateMetadata(
   const seoDescription =
     serviceData.meta?.description ||
     serviceData.description ||
-    `Professional ${meta.title} services by ekanostudio. We deliver scalable, performance-driven solutions designed to grow your business with measurable results.`;
+    `Professional ${meta.title} services by Ekanostudio. We deliver scalable, performance-driven solutions designed to grow your business with measurable results.`;
 
   return {
     title: seoTitle,
@@ -80,7 +80,7 @@ export async function generateMetadata(
       `${meta.title} company`,
       `${meta.title} agency`,
       `${meta.title} solutions`,
-      "ekanostudio",
+      "Ekanostudio",
     ],
 
     alternates: {
@@ -91,7 +91,7 @@ export async function generateMetadata(
       title: seoTitle,
       description: seoDescription,
       url,
-      siteName: "ekanostudio",
+      siteName: "Ekanostudio",
       type: "website",
       locale: "en_US",
     },

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "The Competitor Analysis Master Class: War Game Your Market",
     description: "A deep dive into competitor analysis, using strategic frameworks, digital espionage, and psychological audits.",
     url: `${SITE_URL}/how-to-do-a-competitor-analysis`,
-    siteName: "ekanostudio",
+    siteName: "Ekanostudio",
     type: "article",
   },
   twitter: {

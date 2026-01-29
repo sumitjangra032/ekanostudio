@@ -4,7 +4,7 @@ import { Metadata } from "next";
 const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
-  title: "CRM Implementation Master Class: Strategy, Architecture, Automation, and Adoption",
+  title: "CRM Implementation Master Class: Strategy & Adoption",
   description:
     "A complete guide on how to implement a high-performance CRM. Learn about selecting the right platform, data architecture, process mapping, automation logic, and driving user adoption to ensure success.",
   keywords: [
@@ -18,15 +18,15 @@ export const metadata: Metadata = {
     "CRM selection matrix",
   ],
   openGraph: {
-    title: "CRM Implementation Master Class: Strategy, Architecture, Automation, and Adoption",
+    title: "CRM Implementation Master Class: Strategy & Adoption",
     description: "A complete guide on how to implement a high-performance CRM.",
     url: `${SITE_URL}/how-to-setup-a-crm`,
-    siteName: "ekanostudio",
+    siteName: "Ekanostudio",
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    title: "CRM Implementation Master Class: Strategy, Architecture, Automation, and Adoption",
+    title: "CRM Implementation Master Class: Strategy & Adoption",
     description: "A complete guide on how to implement a high-performance CRM.",
   },
   alternates: {

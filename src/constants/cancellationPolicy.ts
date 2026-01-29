@@ -1,7 +1,7 @@
 export const CANCELLATION_POLICY_CONTENT = {
     title: "CANCELLATION POLICY",
     lastUpdated: "15-11-2025",
-    introduction: `This Cancellation Policy governs the terms, conditions, procedures, and consequences relating to the cancellation or termination of services provided by ekanostudio. This Policy applies globally to all clients, customers, subscribers, and contracting entities, irrespective of geographic location, unless otherwise required by mandatory local law.
+    introduction: `This Cancellation Policy governs the terms, conditions, procedures, and consequences relating to the cancellation or termination of services provided by Ekanostudio. This Policy applies globally to all clients, customers, subscribers, and contracting entities, irrespective of geographic location, unless otherwise required by mandatory local law.
 
 By engaging our services, making any payment, or continuing to use our services, you acknowledge that you have read, understood, and agreed to this Cancellation Policy in full.`,
     sections: [
@@ -17,13 +17,13 @@ By engaging our services, making any payment, or continuing to use our services,
         },
         {
             title: "3. GENERAL CANCELLATION PRINCIPLE",
-            content: `Services provided by ekanostudio are professional, customized, and resource-intensive. Accordingly, cancellation is not an automatic right and does not imply entitlement to refunds. Cancellation does not relieve the Client of financial or contractual obligations incurred prior to cancellation.`
+            content: `Services provided by Ekanostudio are professional, customized, and resource-intensive. Accordingly, cancellation is not an automatic right and does not imply entitlement to refunds. Cancellation does not relieve the Client of financial or contractual obligations incurred prior to cancellation.`
         },
         {
             title: "4. CLIENT-INITIATED CANCELLATION",
             content: `All cancellation requests must be submitted in writing. Verbal communication, informal messages, or inactivity do not constitute valid cancellation.
 
-If cancellation occurs before commencement of services, ekanostudio may consider the request at its sole discretion. Administrative, onboarding, consultation, and planning costs may still apply.
+If cancellation occurs before commencement of services, Ekanostudio may consider the request at its sole discretion. Administrative, onboarding, consultation, and planning costs may still apply.
 
 If cancellation occurs after commencement of services, no refunds shall be issued. All payments made remain non-refundable and any outstanding invoices become immediately due.`
         },
@@ -33,11 +33,11 @@ If cancellation occurs after commencement of services, no refunds shall be issue
         },
         {
             title: "6. COMPANY-INITIATED CANCELLATION",
-            content: `ekanostudio reserves the right to cancel services in cases of non-payment, breach of agreement, misuse of services, unlawful activity, or abusive conduct. In such cases, no refunds shall be issued and outstanding payments remain payable.`
+            content: `Ekanostudio reserves the right to cancel services in cases of non-payment, breach of agreement, misuse of services, unlawful activity, or abusive conduct. In such cases, no refunds shall be issued and outstanding payments remain payable.`
         },
         {
             title: "7. EFFECT OF CANCELLATION",
-            content: `Upon cancellation, access to services or deliverables may be restricted. ekanostudio is under no obligation to complete unfinished work or provide proprietary materials unless contractually required.`
+            content: `Upon cancellation, access to services or deliverables may be restricted. Ekanostudio is under no obligation to complete unfinished work or provide proprietary materials unless contractually required.`
         },
         {
             title: "8. THIRD-PARTY COSTS",

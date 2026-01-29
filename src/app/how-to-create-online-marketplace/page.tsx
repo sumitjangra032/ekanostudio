@@ -4,7 +4,7 @@ import { Metadata } from "next";
 const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
-  title: "How to Create an Online Marketplace: Strategy, Monetization, Trust & Growth",
+  title: "Create an Online Marketplace: Strategy & Growth",
   description:
     "A complete in-depth guide on how to create an online marketplace. Learn marketplace strategy, cold start solutions, network effects, monetization models, trust systems, payments, liquidity metrics, and defensive moats.",
   keywords: [
@@ -19,15 +19,15 @@ export const metadata: Metadata = {
     "managed marketplace",
   ],
   openGraph: {
-    title: "How to Create an Online Marketplace: Strategy, Monetization, Trust & Growth",
+    title: "Create an Online Marketplace: Strategy & Growth",
     description: "A complete in-depth guide on how to create an online marketplace.",
     url: `${SITE_URL}/how-to-create-online-marketplace`,
-    siteName: "ekanostudio",
+    siteName: "Ekanostudio",
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    title: "How to Create an Online Marketplace: Strategy, Monetization, Trust & Growth",
+    title: "Create an Online Marketplace: Strategy & Growth",
     description: "A complete in-depth guide on how to create an online marketplace.",
   },
   alternates: {

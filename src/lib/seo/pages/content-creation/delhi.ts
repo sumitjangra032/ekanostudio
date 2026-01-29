@@ -30,7 +30,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Professional Content Creation Agency in Delhi | Video & Copywriting",
+        title: "Content Creation Agency Delhi | Video & Copywriting",
         description:
             "Content creation for Delhi NCR businesses. We produce corporate videos, multilingual copy, and digital content built for credibility and impact.",
         canonical: "/content-creation-delhi",

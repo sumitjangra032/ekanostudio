@@ -30,7 +30,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Content Creation Services Canada | Video, Copy & Brand Content",
+        title: "Content Creation Canada | Video, Copy & Brand Content",
         description:
             "Professional content creation for Canadian brands. We produce videos, copy, and digital content that resonates across regions and cultures.",
         canonical: "/content-creation-canada",

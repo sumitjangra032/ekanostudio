@@ -4,7 +4,7 @@ import { Metadata } from "next";
 const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
-  title: "The Complete Guide to API Integrations: Protocols, Security & Strategy",
+  title: "API Integrations Guide: Protocols & Security",
   description:
     "A technical and strategic deep dive into building, managing, and securing vital API connections. Covers REST, OAuth 2.0, Webhooks, Rate Limiting, and the future of the API economy.",
   keywords: [
@@ -23,15 +23,15 @@ export const metadata: Metadata = {
     "OpenAPI"
   ],
   openGraph: {
-    title: "The Complete Guide to API Integrations: Protocols, Security & Strategy",
+    title: "API Integrations Guide: Protocols & Security",
     description: "A technical and strategic deep dive into building, managing, and securing vital API connections.",
     url: `${SITE_URL}/how-api-integrations-work`,
-    siteName: "ekanostudio",
+    siteName: "Ekanostudio",
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Complete Guide to API Integrations: Protocols, Security & Strategy",
+    title: "API Integrations Guide: Protocols & Security",
     description: "A technical and strategic deep dive into building, managing, and securing vital API connections.",
   },
   alternates: {

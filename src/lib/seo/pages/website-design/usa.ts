@@ -24,7 +24,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Website Design Agency USA | Premium UI/UX for American Brands",
+        title: "Website Design USA | Premium UI/UX for American Brands",
         description:
             "High-performance, ADA-compliant websites built for the American market. Silicon-Valley-grade UI/UX, fast delivery, and enterprise-ready architecture.",
         canonical: "/website-design-usa",

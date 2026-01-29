@@ -30,7 +30,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Création de Contenu France | Vidéo, Rédaction & Image de Marque",
+        title: "Création de Contenu France | Vidéo & Image de Marque",
         description:
             "Studio de création de contenu pour les marques françaises. Vidéos, rédaction SEO et contenus visuels pensés pour l’élégance, la crédibilité et la performance.",
         canonical: "/content-creation-france",

@@ -16,9 +16,9 @@ import {
 const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
-  title: "ekanostudio – Digital Transformation, Web Design & Consulting Agency",
+  title: "Ekanostudio – Digital Transformation & Web Design Agency",
   description:
-    "ekanostudio is a digital transformation and consulting agency helping businesses scale with web development, branding, digital marketing, UI/UX design, and strategic growth solutions.",
+    "Ekanostudio is a digital transformation and consulting agency helping businesses scale with web development, branding, digital marketing, UI/UX design, and strategic growth solutions.",
   keywords: [
     "digital transformation agency",
     "web design agency",
@@ -29,18 +29,18 @@ export const metadata: Metadata = {
     "SEO services",
   ],
   openGraph: {
-    title: "ekanostudio – Digital Transformation & Consulting Agency",
+    title: "Ekanostudio – Digital Transformation & Consulting Agency",
     description:
-      "ekanostudio helps modern businesses grow through digital transformation, web development, branding, digital marketing, and strategic consulting.",
+      "Ekanostudio helps modern businesses grow through digital transformation, web development, branding, digital marketing, and strategic consulting.",
     url: SITE_URL,
-    siteName: "ekanostudio",
+    siteName: "Ekanostudio",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ekanostudio – Digital Transformation & Consulting Agency",
+    title: "Ekanostudio – Digital Transformation & Consulting Agency",
     description:
-      "ekanostudio helps modern businesses grow through digital transformation, web development, branding, digital marketing, and consulting.",
+      "Ekanostudio helps modern businesses grow through digital transformation, web development, branding, digital marketing, and consulting.",
   },
   alternates: {
     canonical: SITE_URL,

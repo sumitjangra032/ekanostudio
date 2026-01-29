@@ -26,7 +26,7 @@ export default function AboutPageClient() {
               color: theme.accents.a,
             }}
           >
-            About ekanostudio
+            About Ekanostudio
           </div>
         </div>
 
@@ -43,7 +43,7 @@ export default function AboutPageClient() {
             className="max-w-3xl mx-auto text-base leading-relaxed"
             style={{ color: theme.subtext }}
           >
-            ekanostudio is a modern digital services studio focused on building
+            Ekanostudio is a modern digital services studio focused on building
             high-performance digital experiences for brands, startups, and
             growing businesses. We combine strategy, design, and technology to
             create scalable digital solutions that deliver real business impact.
@@ -55,7 +55,7 @@ export default function AboutPageClient() {
           <div className="rounded-3xl p-8 bg-black/40 border border-white/10 backdrop-blur-xl">
             <h3 className="text-2xl font-semibold mb-4">Our Approach</h3>
             <p className="text-sm leading-relaxed" style={{ color: theme.subtext }}>
-              Every project at ekanostudio starts with clarity. Before design or
+              Every project at Ekanostudio starts with clarity. Before design or
               development, we focus on understanding your business goals,
               audience, and long-term vision. This ensures everything we build
               is intentional, scalable, and performance-driven.
@@ -109,7 +109,7 @@ export default function AboutPageClient() {
             {[
               {
                 year: "2023",
-                text: "ekanostudio was founded with a focus on clean design and scalable development.",
+                text: "Ekanostudio was founded with a focus on clean design and scalable development.",
               },
               {
                 year: "2024",
@@ -179,7 +179,7 @@ export default function AboutPageClient() {
           </h3>
           <p className="text-sm" style={{ color: theme.subtext }}>
             If you're looking for a digital partner who understands design,
-            technology, and business — ekanostudio is ready.
+            technology, and business — Ekanostudio is ready.
           </p>
         </div>
 

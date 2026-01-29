@@ -29,7 +29,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Automazione IA in Italia | Workflow n8n e Soluzioni Intelligenti",
+        title: "Automazione IA Italia | Workflow n8n & Soluzioni",
         description:
             "Soluzioni di automazione IA per aziende italiane. Progettiamo workflow n8n e sistemi intelligenti per aumentare l’efficienza e ridurre i costi operativi.",
         canonical: "/ai-automation-italy",

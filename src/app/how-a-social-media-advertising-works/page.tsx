@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "The Paid Social Master Class: Creative, Data, and Scaling",
     description: "A deep dive into modern social media advertising, focusing on algorithm mechanics, server-side tracking (CAPI), and high-volume creative testing for Meta and TikTok.",
     url: `${SITE_URL}/how-a-social-media-advertising-works`,
-    siteName: "ekanostudio",
+    siteName: "Ekanostudio",
     type: "article",
   },
   twitter: {

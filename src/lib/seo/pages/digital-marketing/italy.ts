@@ -31,7 +31,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Agenzia di Marketing Digitale in Italia | Crescita & Performance",
+        title: "Marketing Digitale Italia | Crescita & Performance",
         description:
             "Accelera la crescita del tuo business in Italia con strategie di digital marketing orientate ai risultati. Gestiamo Google Ads, Social Media ed email automation per aziende italiane.",
         canonical: "/digital-marketing-italy",

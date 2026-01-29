@@ -30,7 +30,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "AI Automation Services USA | Scalable n8n & AI Workflow Solutions",
+        title: "AI Automation USA | Scalable n8n & Workflows",
         description:
             "AI automation for US companies. We design custom n8n workflows and AI agents that replace repetitive tasks, reduce overhead, and scale operations.",
         canonical: "/ai-automation-usa",

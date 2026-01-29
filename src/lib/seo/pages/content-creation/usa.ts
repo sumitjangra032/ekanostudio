@@ -30,7 +30,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Content Creation Services USA | Video, Copywriting & Strategy",
+        title: "Content Creation USA | Video, Copywriting & Strategy",
         description:
             "US-focused content creation agency delivering video, SEO copywriting, and scalable brand content tailored for American audiences and search intent.",
         canonical: "/content-creation-usa",

@@ -31,7 +31,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Website Design Agency Canada | Toronto • Vancouver • Montreal",
+        title: "Website Design Canada | Toronto • Vancouver • Montreal",
         description:
             "Premium website design services in Canada. We build fast, accessible, bilingual-ready websites using modern frameworks like Next.js, Shopify, and WordPress.",
         canonical: "/website-design-canada",

@@ -4,7 +4,7 @@ import { Metadata } from "next";
 const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
-  title: "How to Build a Brand Identity: Strategy, Psychology & Visuals",
+  title: "How to Build a Brand Identity: Strategy & Visuals",
   description:
     "A comprehensive master class on how to build a powerful brand identity. Covers brand psychology, mission, vision, logo design, visual systems, voice, digital presence, and measuring brand equity.",
   keywords: [
@@ -19,15 +19,15 @@ export const metadata: Metadata = {
     "rebranding risks",
   ],
   openGraph: {
-    title: "How to Build a Brand Identity: Strategy, Psychology & Visuals",
+    title: "How to Build a Brand Identity: Strategy & Visuals",
     description: "A comprehensive master class on how to build a powerful brand identity.",
     url: `${SITE_URL}/how-to-build-a-brand-identity`,
-    siteName: "ekanostudio",
+    siteName: "Ekanostudio",
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    title: "How to Build a Brand Identity: Strategy, Psychology & Visuals",
+    title: "How to Build a Brand Identity: Strategy & Visuals",
     description: "A comprehensive master class on how to build a powerful brand identity.",
   },
   alternates: {

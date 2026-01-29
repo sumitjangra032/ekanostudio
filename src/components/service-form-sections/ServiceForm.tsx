@@ -238,7 +238,7 @@ export default function ServiceForm({ initialCategory, initialService }: Service
                             </p>
                         </div>
 
-                        {/* Why ekanostudio List */}
+                        {/* Why Ekanostudio List */}
                         <div className="space-y-4 pt-4">
                             <h4 className="text-xs font-bold uppercase tracking-widest opacity-50" style={{ color: theme.text }}>
                                 Why partner with us?

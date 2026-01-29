@@ -31,7 +31,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Agenzia SEO Italia | Posizionamento Google.it & Crescita Organica",
+        title: "Agenzia SEO Italia | Posizionamento Google & Crescita",
         description:
             "Scala le SERP italiane con strategie SEO data-driven. Aiutiamo le aziende in Italia a posizionarsi su Google.it e a generare traffico organico ad alto valore.",
         canonical: "/seo-services-italy",

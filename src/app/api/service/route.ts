@@ -194,7 +194,7 @@ const createInternalEmailTemplate = (data: any, referenceId: string) => {
             <div class="footer">
                 <p style="margin: 0 0 8px 0;">Submitted: ${format(new Date(), "MMM do, yyyy 'at' h:mm a")}</p>
                 <div class="reference-id" style="margin-bottom: 8px;">Reference: ${referenceId}</div>
-                <p style="margin: 0; font-size: 11px;">This inquiry was submitted via ekanostudio Service Portal</p>
+                <p style="margin: 0; font-size: 11px;">This inquiry was submitted via Ekanostudio Service Portal</p>
             </div>
         </div>
     </body>
@@ -217,7 +217,7 @@ const createClientEmailTemplate = (data: any, referenceId: string) => {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Thank You for Your Inquiry - ekanostudio</title>
+        <title>Thank You for Your Inquiry - Ekanostudio</title>
         <style>
             * { margin: 0; padding: 0; box-sizing: border-box; }
             body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #1a202c; background: #f7fafc; }
@@ -260,14 +260,14 @@ const createClientEmailTemplate = (data: any, referenceId: string) => {
     <body>
         <div class="container">
             <div class="header">
-                <h1 style="margin: 0; font-size: 36px; font-weight: 800;">ekanostudio</h1>
+                <h1 style="margin: 0; font-size: 36px; font-weight: 800;">Ekanostudio</h1>
                 <p style="margin: 8px 0 0 0; opacity: 0.9; font-size: 18px;">Digital Excellence. Delivered.</p>
             </div>
             
             <div class="content">
                 <h2 class="greeting">Hello ${escapedData.name},</h2>
                 <p class="intro-text">
-                    Thank you for choosing <strong>ekanostudio</strong> for your <strong>${escapedData.service}</strong> project. 
+                    Thank you for choosing <strong>Ekanostudio</strong> for your <strong>${escapedData.service}</strong> project. 
                     We're excited to help bring your vision to life with our professional digital solutions.
                 </p>
                 
@@ -360,7 +360,7 @@ const createClientEmailTemplate = (data: any, referenceId: string) => {
             
             <div class="contact-info">
                 <p style="margin: 0 0 16px 0;">
-                    <strong>ekanostudio Project Team</strong><br>
+                    <strong>Ekanostudio Project Team</strong><br>
                     Transforming Ideas into Digital Success
                 </p>
                 <div class="reference-id">Reference: ${referenceId}</div>
@@ -441,7 +441,7 @@ export async function POST(req: Request) {
 
         // Send internal notification email
         const internalMailOptions = {
-            from: `"ekanostudio Service Desk" <${process.env.SMTP_USER || 'noreply@ekanostudio.com'}>`,
+            from: `"Ekanostudio Service Desk" <${process.env.SMTP_USER || 'noreply@ekanostudio.com'}>`,
             to: process.env.NOTIFICATION_EMAIL || 'info@ekanostudio.com',
             cc: process.env.CC_EMAILS?.split(',') || [],
             replyTo: email,
@@ -473,10 +473,10 @@ Please respond within 12 hours.
 
         // Send client confirmation email
         const clientMailOptions = {
-            from: `"ekanostudio" <${process.env.SMTP_USER || 'info@ekanostudio.com'}>`,
+            from: `"Ekanostudio" <${process.env.SMTP_USER || 'info@ekanostudio.com'}>`,
             to: email,
             replyTo: process.env.REPLY_TO_EMAIL || 'info@ekanostudio.com',
-            subject: `✅ Inquiry Confirmation - ${referenceId} - ekanostudio`,
+            subject: `✅ Inquiry Confirmation - ${referenceId} - Ekanostudio`,
             html: createClientEmailTemplate(body, referenceId),
             text: `
 Thank you for your inquiry - ${referenceId}
@@ -484,7 +484,7 @@ Thank you for your inquiry - ${referenceId}
 
 Hello ${name},
 
-Thank you for choosing ekanostudio for your ${service} project.
+Thank you for choosing Ekanostudio for your ${service} project.
 
 We've received your inquiry and our team is reviewing your requirements.
 
@@ -504,7 +504,7 @@ While you wait, explore our portfolio at: https://www.ekanostudio.com/portfolio
 Need to update your inquiry? Simply reply to this email.
 
 Best regards,
-The ekanostudio Team
+The Ekanostudio Team
             `
         };
 

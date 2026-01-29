@@ -29,7 +29,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "AI Automation Solutions in Delhi | Enterprise Workflow Automation",
+        title: "AI Automation Delhi | Enterprise Workflows",
         description:
             "AI automation services for Delhi businesses. We design secure n8n workflows and AI systems to reduce operational overhead, improve accuracy, and scale efficiently.",
         canonical: "/ai-automation-delhi",

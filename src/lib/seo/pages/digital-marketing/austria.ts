@@ -30,7 +30,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Digital Marketing Agentur Österreich | Performance & Wachstum",
+        title: "Digital Marketing Österreich | Performance & Wachstum",
         description:
             "Performance-orientierte Digital Marketing Agentur in Österreich. Wir skalieren Marken mit Google Ads, Social Media Werbung und datengetriebenen Strategien.",
         canonical: "/digital-marketing-austria",

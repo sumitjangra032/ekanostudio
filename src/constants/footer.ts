@@ -8,7 +8,7 @@ import {
 
 export const FOOTER_CONTENT = {
   year: "2024",
-  brand: "ekanostudio",
+  brand: "Ekanostudio",
   tagline: "Empowering businesses with cutting-edge digital solutions. We transform your vision into scalable, high-performance reality through design, development, and strategic innovation.",
 
   columns: [

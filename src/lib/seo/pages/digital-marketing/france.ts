@@ -30,7 +30,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Marketing Digital France | Publicité, Performance & Croissance",
+        title: "Marketing Digital France | Publicité & Croissance",
         description:
             "Boostez votre croissance en France. Campagnes Google Ads, Social Media et stratégie digitale optimisées pour le marché français.",
         canonical: "/digital-marketing-france",

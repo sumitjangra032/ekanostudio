@@ -31,7 +31,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Digital Marketing Agency Luxembourg | B2B Growth & Performance",
+        title: "Digital Marketing Luxembourg | B2B Growth & ROI",
         description:
             "Drive qualified B2B leads in Luxembourg with data-driven digital marketing. We manage LinkedIn, Google Ads, and conversion funnels for enterprise brands.",
         canonical: "/digital-marketing-luxembourg",

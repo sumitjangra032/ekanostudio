@@ -30,7 +30,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Content Creation Agency India | Video, Copywriting & Strategy",
+        title: "Content Creation India | Video, Copywriting & Strategy",
         description:
             "Content creation for Indian brands at scale. We produce videos, copy, and digital content designed for reach, credibility, and consistent growth.",
         canonical: "/content-creation-india",

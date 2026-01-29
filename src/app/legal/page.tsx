@@ -4,17 +4,17 @@ import { Metadata } from "next";
 const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
-    title: "Legal Information | ekanostudio",
+    title: "Legal Information | Ekanostudio",
     description: "View our legal documents including Privacy Policy, Terms & Conditions, and Refund Policies.",
     robots: {
         index: false,
         follow: true
     },
     openGraph: {
-        title: "Legal Information | ekanostudio",
+        title: "Legal Information | Ekanostudio",
         description: "View our legal documents including Privacy Policy, Terms & Conditions, and Refund Policies.",
         url: `${SITE_URL}/legal`,
-        siteName: "ekanostudio",
+        siteName: "Ekanostudio",
         type: "website",
     },
     alternates: {

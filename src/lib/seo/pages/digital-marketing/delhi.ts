@@ -30,7 +30,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Digital Marketing Agency Delhi NCR | Performance, Leads & Growth",
+        title: "Digital Marketing Delhi NCR | Performance & Growth",
         description:
             "Performance-driven digital marketing agency in Delhi NCR. We help brands grow with Google Ads, Social Media, PPC, and full-funnel growth strategies.",
         canonical: "/digital-marketing-delhi",

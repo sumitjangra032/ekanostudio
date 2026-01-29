@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "The SEO Master Class: Technical, Content, and Authority",
     description: "A deep dive into the technical infrastructure, content strategy, and link building required to master modern SEO.",
     url: `${SITE_URL}/how-to-do-search-engine-optimization`,
-    siteName: "ekanostudio",
+    siteName: "Ekanostudio",
     type: "article",
   },
   twitter: {

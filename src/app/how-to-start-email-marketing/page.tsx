@@ -4,7 +4,7 @@ import { Metadata } from "next";
 const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
-  title: "Email Marketing Master Class: From Strategy to Automated Revenue Flows",
+  title: "Email Marketing Master Class: Strategy to Revenue",
   description:
     "A complete guide on how to start and scale email marketing. Learn technical setup (SPF/DKIM), list building (Lead Magnets), copywriting, and automated revenue flows (Welcome, Abandoned Cart).",
   keywords: [
@@ -18,15 +18,15 @@ export const metadata: Metadata = {
     "abandoned cart flow setup",
   ],
   openGraph: {
-    title: "Email Marketing Master Class: From Strategy to Automated Revenue Flows",
+    title: "Email Marketing Master Class: Strategy to Revenue",
     description: "A complete guide on how to start and scale email marketing.",
     url: `${SITE_URL}/how-to-start-email-marketing`,
-    siteName: "ekanostudio",
+    siteName: "Ekanostudio",
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Email Marketing Master Class: From Strategy to Automated Revenue Flows",
+    title: "Email Marketing Master Class: Strategy to Revenue",
     description: "A complete guide on how to start and scale email marketing.",
   },
   alternates: {

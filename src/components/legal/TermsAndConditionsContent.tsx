@@ -108,7 +108,7 @@ export default function TermsAndConditionsContent() {
                     className="pt-12 text-center"
                 >
                     <p className="text-sm opacity-50" style={{ color: theme.subtext }}>
-                        © {new Date().getFullYear()} ekanostudio. All rights reserved.
+                        © {new Date().getFullYear()} Ekanostudio. All rights reserved.
                     </p>
                 </m.div>
 

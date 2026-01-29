@@ -29,7 +29,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "AI Automation Services in Gurgaon | Enterprise Workflow Automation",
+        title: "AI Automation Gurgaon | Enterprise Workflows",
         description:
             "AI automation solutions for Gurgaon enterprises. We design secure n8n workflows and AI systems that improve efficiency, reduce errors, and scale operations.",
         canonical: "/ai-automation-gurgaon",

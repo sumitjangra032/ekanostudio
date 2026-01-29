@@ -31,7 +31,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Digital Marketing Agency Gurgaon | B2B Lead Gen & Performance",
+        title: "Digital Marketing Gurgaon | B2B Lead Gen & ROI",
         description:
             "Accelerate your growth in Gurgaon. High-performance Google Ads, LinkedIn Ads, and omnichannel strategies for Cyber City’s top enterprises.",
         canonical: "/digital-marketing-gurgaon",

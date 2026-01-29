@@ -30,7 +30,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Content Erstellung Österreich | Video, Copywriting & Brand Content",
+        title: "Content Erstellung Österreich | Video & Brand Content",
         description:
             "Professionelle Content-Erstellung für österreichische Unternehmen. Wir produzieren Videos, Texte und Designs mit klarer Strategie und messbarer Wirkung.",
         canonical: "/content-creation-austria",

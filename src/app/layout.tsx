@@ -79,6 +79,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "./",
   },
+  applicationName: "Ekanostudio",
+  appleWebApp: {
+    capable: true,
+    title: "Ekanostudio",
+    statusBarStyle: "default",
+  },
+  formatDetection: {
+    telephone: false,
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

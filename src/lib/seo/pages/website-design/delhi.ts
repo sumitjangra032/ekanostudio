@@ -30,7 +30,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Best Website Design Company in Delhi | Corporate & Enterprise Web Design",
+        title: "Website Design Delhi | Corporate & Enterprise Design",
         description:
             "Premium website design agency in Delhi delivering high-conversion, secure, and brand-focused websites for corporates, enterprises, and fast-growing Delhi businesses.",
         canonical: "/website-design-delhi",

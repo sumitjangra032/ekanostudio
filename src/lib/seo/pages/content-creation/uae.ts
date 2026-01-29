@@ -30,7 +30,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Content Creation Services UAE | Video, Copywriting & Branding",
+        title: "Content Creation UAE | Video, Copywriting & Branding",
         description:
             "High-end content creation in the UAE. We produce corporate videos, bilingual copy, and premium digital content for brands in Dubai and Abu Dhabi.",
         canonical: "/content-creation-uae",
