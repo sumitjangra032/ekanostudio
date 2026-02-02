@@ -1,0 +1,960 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
+/* Portfolio Specific Styles */
+/* Scoped to avoid affecting the main site */
+
+.portfolio-wrapper {
+    background-color: #000;
+    font-family: 'Satoshi', sans-serif;
+    color: white;
+    overflow-x: hidden;
+    /* Critical for the horizontal scroll section */
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Reset for portfolio wrapper */
+.portfolio-wrapper h1,
+.portfolio-wrapper h2,
+.portfolio-wrapper h3,
+.portfolio-wrapper h4,
+.portfolio-wrapper h5,
+.portfolio-wrapper h6,
+.portfolio-wrapper p,
+.portfolio-wrapper ul,
+.portfolio-wrapper ol,
+.portfolio-wrapper li,
+.portfolio-wrapper figure,
+.portfolio-wrapper figcaption,
+.portfolio-wrapper blockquote,
+.portfolio-wrapper dl,
+.portfolio-wrapper dd {
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-wrapper img,
+.portfolio-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.portfolio-wrapper h1 {
+    font-weight: 500;
+    font-size: 58px;
+}
+
+/* Visibility Toggling */
+.mobile-view-wrapper {
+    display: none;
+}
+
+.desktop-view-wrapper {
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .mobile-view-wrapper {
+        display: block;
+    }
+
+    .desktop-view-wrapper {
+        display: none;
+    }
+}
+
+.portfolio-wrapper p,
+.portfolio-wrapper a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    transition: color 0.3s;
+}
+
+/* =========================
+   Desktop (original layout)
+   ========================= */
+.portfolio-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.portfolio-nav-items {
+    position: fixed;
+    top: 2em;
+    left: 40%;
+    display: flex;
+    gap: 0.25em;
+    z-index: 100;
+}
+
+.portfolio-nav a,
+.portfolio-nav-items a {
+    text-transform: none;
+}
+
+.whitespace.w-1 {
+    width: 100vw;
+    height: 50vh;
+}
+
+.whitespace.w-2 {
+    width: 100vw;
+    height: 45vh;
+}
+
+.gallery {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20em;
+}
+
+.project {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.index {
+    flex: 1;
+    padding-left: 2em;
+    height: 0;
+}
+
+.images {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    height: 100vh;
+}
+
+.img {
+    flex: 1;
+    width: 200px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.img img,
+.img video,
+.preview-img video {
+    opacity: 0.9;
+}
+
+.index .mask {
+    position: absolute;
+    top: 0;
+    left: 2em;
+    height: 70px;
+    overflow: hidden;
+    will-change: transform;
+}
+
+.index .mask .h1 {
+    position: relative;
+    will-change: transform;
+}
+
+.index .mask h1 span {
+    position: relative;
+    display: inline-block;
+    will-change: transform;
+}
+
+.digit-wrapper,
+.digit-wrapper span {
+    display: inline-block;
+    position: relative;
+    will-change: transform;
+    color: aliceblue;
+}
+
+/* fixed UI elements */
+.project-names {
+    position: fixed;
+    width: 200px;
+    top: 50vh;
+    left: 40%;
+    transform: translateX(0%);
+    z-index: 50;
+}
+
+.indicator {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    will-change: transform;
+}
+
+.symbol {
+    width: 12px;
+    height: 12px;
+    background-color: green;
+    clip-path: polygon(0 50%, 100% 100%, 100% 0);
+}
+
+.name p {
+    color: gray;
+}
+
+.name.active p {
+    color: lightblue;
+}
+
+.preview-img {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    max-width: 50vw;
+    width: 45vw;
+    height: calc(50vh - 2em);
+    opacity: 0.9;
+    z-index: 9999;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    min-width: 400px;
+}
+
+.preview-img img,
+.preview-img video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+.portfolio-footer p {
+    position: fixed;
+    bottom: 2em;
+    left: 40%;
+    text-transform: none;
+    z-index: 100;
+}
+
+/* Portfolio heading */
+.portfolio-heading {
+    position: fixed;
+    top: 80px;
+    /* Offset for navbar */
+    left: 0;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.portfolio-text {
+    font-size: clamp(100px, 15vw, 220px);
+    font-weight: 400;
+    color: rgba(229, 30, 8, 0.95);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    will-change: transform;
+    transform: scaleX(1.2);
+    overflow: hidden;
+    line-height: 1;
+}
+
+@keyframes rampUp {
+    0% {
+        transform: translate3d(-30%, 100%, 0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+/* Animations */
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.animate-slideUp {
+    animation: slideUp 0.3s ease-out;
+}
+
+/* =========================================================
+   Responsive UI-frame layout (ONLY for small screens)
+   ========================================================= */
+@media (max-width: 900px) {
+
+    /* NUCLEAR OPTION - OVERRIDE EVERYTHING FOR SCROLL */
+    html {
+        overflow-y: scroll !important;
+        -webkit-overflow-scrolling: touch !important;
+        touch-action: pan-y !important;
+    }
+
+    body {
+        overflow-y: scroll !important;
+        -webkit-overflow-scrolling: touch !important;
+        touch-action: pan-y !important;
+    }
+
+    /* Kill all pointer event blockers */
+    .gallery-mobile,
+    .project-mobile,
+    .images-mobile,
+    .index-mobile,
+    .mask-mobile,
+    .digit-wrapper-mobile,
+    .digit-first,
+    .digit-second {
+        touch-action: pan-y !important;
+    }
+
+    /* Images are clickable but DON'T block scroll */
+    .img-mobile {
+        touch-action: manipulation !important;
+    }
+
+    /* Media elements NEVER block scroll */
+    .video-mobile,
+    .img-element-mobile,
+    video,
+    img {
+        pointer-events: none !important;
+        touch-action: pan-y !important;
+    }
+
+    /* GSAP pin spacer MUST allow scroll */
+    .gsap-pin-spacer {
+        touch-action: pan-y !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+
+    /* Index elements NEVER block scroll */
+    .index-mobile *,
+    .mask-mobile *,
+    .digit-wrapper-mobile * {
+        pointer-events: none !important;
+    }
+
+    /* Hardware acceleration */
+    * {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    /* ==========================================
+     PORTFOLIO HEADING (Top Fixed)
+     ========================================== */
+    .portfolio-heading-mobile {
+        position: fixed;
+        top: 70px;
+        /* Offset for main navbar */
+        left: 0;
+        width: 100%;
+        height: clamp(60px, 8vh, 80px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 200;
+        background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.95) 70%, rgba(0, 0, 0, 0) 100%);
+        pointer-events: none;
+    }
+
+    .portfolio-text-mobile {
+        font-size: clamp(28px, 7vw, 44px);
+        font-weight: 500;
+        color: rgba(229, 30, 8, 0.95);
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin: 0;
+        padding-top: clamp(8px, 2vh, 14px);
+    }
+
+    /* ==========================================
+     PROGRESS BAR (Right Side)
+     ========================================== */
+    .progress-bar-mobile {
+        position: fixed;
+        top: clamp(70px, 10vh, 100px);
+        right: clamp(12px, 3vw, 20px);
+        width: 3px;
+        height: calc(100vh - clamp(140px, 20vh, 200px));
+        background: linear-gradient(180deg, rgba(229, 30, 8, 0.4) 0%, rgba(229, 30, 8, 0.9) 100%);
+        transform: scaleY(0);
+        transform-origin: top;
+        z-index: 210;
+        border-radius: 10px;
+        pointer-events: none;
+    }
+
+    .name-mobile {
+        opacity: 0.7 !important;
+        /* Increased from 0.4 for better visibility */
+    }
+
+    .name-mobile.active {
+        opacity: 1;
+    }
+
+    .dot-mobile {
+        opacity: 0 !important;
+    }
+
+    .name-mobile.active .dot-mobile {
+        opacity: 1 !important;
+        width: 8px !important;
+        height: 8px !important;
+        background: rgba(229, 30, 8, 0.95) !important;
+        box-shadow: 0 0 10px rgba(229, 30, 8, 0.6), 0 0 20px rgba(229, 30, 8, 0.3) !important;
+    }
+
+    .project-name-text {
+        color: rgba(255, 255, 255, 1) !important;
+        /* Brighter white for contrast */
+    }
+
+    .name-mobile.active .project-name-text {
+        color: rgba(229, 30, 8, 0.9) !important;
+    }
+
+    /* ==========================================
+     GALLERY CONTAINER - MUST SCROLL
+     ========================================== */
+    .gallery-mobile {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: clamp(100px, 20vh, 180px);
+        padding-top: clamp(140px, 20vh, 180px);
+        padding-bottom: clamp(80px, 12vh, 120px);
+        touch-action: pan-y !important;
+        overflow: visible !important;
+    }
+
+    /* ==========================================
+     PROJECT CONTAINER - MUST SCROLL
+     ========================================== */
+    .project-mobile {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+        gap: clamp(12px, 2.5vw, 20px);
+        isolation: isolate;
+        touch-action: pan-y !important;
+    }
+
+    /* ==========================================
+     PROJECT INDEX NUMBER (Left Column)
+     ========================================== */
+    .index-mobile {
+        position: relative;
+        flex: 0 0 clamp(60px, 14vw, 85px);
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: clamp(8px, 2vw, 16px);
+        padding-top: clamp(20px, 4vh, 30px);
+        z-index: 15;
+        pointer-events: none !important;
+    }
+
+    .mask-mobile {
+        overflow: hidden;
+        height: clamp(50px, 10vh, 75px);
+        width: 100%;
+        pointer-events: none !important;
+    }
+
+    .mask-mobile.pin-active {
+        position: fixed !important;
+        top: 10% !important;
+        z-index: 50 !important;
+        pointer-events: none !important;
+    }
+
+    .digit-wrapper-mobile {
+        font-size: clamp(40px, 8.5vw, 64px);
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.1);
+        margin: 0;
+        line-height: 1;
+        letter-spacing: -0.05em;
+        display: flex;
+        pointer-events: none !important;
+    }
+
+    .digit-first,
+    .digit-second {
+        display: inline-block;
+        pointer-events: none !important;
+    }
+
+    /* ==========================================
+     IMAGES GRID (Right Column - MUST SCROLL)
+     ========================================== */
+    .images-mobile {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: clamp(14px, 3vh, 22px);
+        padding-right: clamp(16px, 4vw, 28px);
+        padding-top: clamp(10px, 2vh, 16px);
+        touch-action: pan-y !important;
+        overflow-y: visible !important;
+    }
+
+    .img-mobile {
+        width: 100%;
+        aspect-ratio: 9/16;
+        border-radius: clamp(10px, 2.2vw, 16px);
+        overflow: hidden;
+        background: rgba(20, 20, 20, 1);
+        position: relative;
+        opacity: 1;
+        transform: translateY(0);
+        cursor: pointer;
+        touch-action: manipulation !important;
+        pointer-events: auto !important;
+    }
+
+    .img-mobile::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(229, 30, 8, 0.03) 0%, transparent 100%);
+        z-index: 1;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .img-mobile:active::before {
+        opacity: 1;
+    }
+
+    .video-mobile,
+    .img-element-mobile,
+    .img-mobile video,
+    .img-mobile img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        display: block !important;
+        background: #000;
+        pointer-events: none !important;
+        user-select: none !important;
+        -webkit-user-select: none !important;
+        -webkit-touch-callout: none !important;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+
+    /* ==========================================
+     LET'S COLLAB SECTION
+     ========================================== */
+    .lets-collab-mobile {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: clamp(50px, 10vh, 90px) clamp(24px, 6vw, 40px);
+        background: #000;
+        overflow: hidden;
+    }
+
+    .lets-collab-mobile::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80%;
+        height: 80%;
+        background: radial-gradient(circle, rgba(229, 30, 8, 0.08) 0%, transparent 70%);
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+    }
+
+    .collab-content-mobile {
+        text-align: center;
+        max-width: 600px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .collab-badge-mobile {
+        display: inline-block;
+        font-size: clamp(9px, 2.2vw, 11px);
+        color: rgba(255, 255, 255, 0.5);
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        padding: clamp(6px, 1.5vh, 10px) clamp(14px, 3.5vw, 20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 50px;
+        margin-bottom: clamp(24px, 5vh, 36px);
+        font-weight: 500;
+    }
+
+    .collab-title-mobile {
+        font-size: clamp(36px, 9vw, 64px);
+        font-weight: 400;
+        color: #fff;
+        line-height: 1.2;
+        margin-bottom: clamp(20px, 4vh, 30px);
+        letter-spacing: -0.02em;
+    }
+
+    .collab-highlight {
+        background: linear-gradient(135deg, rgba(229, 30, 8, 0.9) 0%, rgba(229, 30, 8, 0.6) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        display: inline-block;
+    }
+
+    .collab-description-mobile {
+        font-size: clamp(13px, 3.2vw, 16px);
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 1.7;
+        margin-bottom: clamp(36px, 7vh, 50px);
+        text-transform: none;
+        font-weight: 400;
+    }
+
+    .collab-button-mobile {
+        display: inline-flex;
+        align-items: center;
+        gap: clamp(8px, 2vw, 12px);
+        padding: clamp(14px, 3vh, 18px) clamp(28px, 7vw, 40px);
+        background: rgba(229, 30, 8, 0.9);
+        color: #fff;
+        font-size: clamp(12px, 3vw, 15px);
+        font-weight: 500;
+        border-radius: 50px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        border: none;
+        cursor: pointer;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 8px 30px rgba(229, 30, 8, 0.3);
+    }
+
+    .collab-button-mobile:active {
+        transform: scale(0.96);
+        box-shadow: 0 4px 20px rgba(229, 30, 8, 0.4);
+    }
+
+    .collab-button-mobile svg {
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .collab-button-mobile:active svg {
+        transform: translateX(4px);
+    }
+
+    /* ==========================================
+     CONTACT FORM MODAL
+     ========================================== */
+    .backdrop-mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.92);
+        backdrop-filter: blur(12px);
+        z-index: 300;
+        animation: fadeIn-mobile 0.3s ease;
+    }
+
+    .modal-mobile {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100vw - 40px);
+        max-width: 480px;
+        max-height: 85vh;
+        overflow-y: auto;
+        background: rgba(10, 10, 10, 0.98);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: clamp(20px, 4vw, 28px);
+        padding: clamp(28px, 6vh, 40px) clamp(24px, 5vw, 32px);
+        z-index: 310;
+        animation: slideUp-mobile 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+    }
+
+    .close-btn-mobile {
+        position: absolute;
+        top: clamp(16px, 3vh, 20px);
+        right: clamp(16px, 3vh, 20px);
+        width: 38px;
+        height: 38px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        color: rgba(255, 255, 255, 0.7);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+    .close-btn-mobile:active {
+        background: rgba(255, 255, 255, 0.1);
+        transform: scale(0.95);
+    }
+
+    .modal-header-mobile {
+        margin-bottom: clamp(28px, 6vh, 36px);
+    }
+
+    .modal-header-mobile h2 {
+        font-size: clamp(22px, 5vw, 28px);
+        color: #fff;
+        margin: 0;
+        font-weight: 400;
+        line-height: 1.3;
+    }
+
+    .form-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(14px, 3vh, 18px);
+    }
+
+    .form-group-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-mobile,
+    .textarea-mobile {
+        padding: clamp(14px, 3vh, 18px) clamp(16px, 3.5vw, 20px);
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: clamp(10px, 2vw, 14px);
+        color: #fff;
+        font-size: clamp(14px, 3.5vw, 16px);
+        font-family: 'Satoshi', sans-serif;
+        transition: all 0.3s ease;
+        font-weight: 400;
+    }
+
+    .input-mobile:focus,
+    .textarea-mobile:focus {
+        outline: none;
+        border-color: rgba(229, 30, 8, 0.5);
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 0 0 0 4px rgba(229, 30, 8, 0.1);
+    }
+
+    .textarea-mobile {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    .input-mobile::placeholder,
+    .textarea-mobile::placeholder {
+        color: rgba(255, 255, 255, 0.3);
+    }
+
+    .submit-btn-mobile {
+        margin-top: clamp(12px, 3vh, 18px);
+        padding: clamp(14px, 3vh, 18px) clamp(24px, 5vw, 32px);
+        background: rgba(229, 30, 8, 0.9);
+        color: #fff;
+        font-size: clamp(13px, 3.2vw, 15px);
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        border: none;
+        border-radius: clamp(10px, 2vw, 14px);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .submit-btn-mobile:active {
+        transform: scale(0.98);
+        background: rgba(229, 30, 8, 1);
+    }
+
+    /* ==========================================
+     ANIMATIONS
+     ========================================== */
+    @keyframes fadeIn-mobile {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideUp-mobile {
+        from {
+            opacity: 0;
+            transform: translate(-50%, -45%) scale(0.95);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .portfolio-text-mobile {
+        font-size: 24px;
+    }
+
+    .collab-title-mobile {
+        font-size: 32px;
+    }
+
+    .index-mobile {
+        flex: 0 0 55px;
+    }
+}
+
+
+/* ==========================================
+   PRELOADER STYLES
+   ========================================== */
+
+.preloader-fancy {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(60, 66, 55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10000;
+}
+
+.progress-container {
+    width: 300px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.progress-bar-fancy {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background: rgb(230, 225, 215);
+}
+
+.percentage-fancy {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: clamp(8rem, 25vw, 25rem);
+    line-height: 0.8;
+    color: rgb(230, 225, 215);
+    opacity: 0.1;
+}
+
+.text-container {
+    height: 3em;
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+    width: 200px;
+}
+
+.loading-text {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    color: rgb(230, 225, 215);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.loading-text.initial {
+    transform: translateY(0);
+}
+
+.loading-text.complete {
+    transform: translateY(100%);
+}
+
+.loading-text .char {
+    display: inline-block;
+}

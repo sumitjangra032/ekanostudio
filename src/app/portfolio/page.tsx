@@ -1,4 +1,4 @@
-import PortfolioClient from "./portfolio-client";
+import PortfolioNew from "@/components/portfolio-new/PortfolioNew";
 import { Metadata } from "next";
 
 const SITE_URL = "https://www.ekanostudio.com";
@@ -25,5 +25,5 @@ export const metadata: Metadata = {
 };
 
 export default function PortfolioPage() {
-  return <PortfolioClient />;
+  return <PortfolioNew />;
 }
