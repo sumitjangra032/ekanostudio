@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import Script from 'next/script';
 import Preloader from './Preloader';
 
 // Desktop Components
@@ -40,16 +39,57 @@ export default function PortfolioNew() {
         return () => window.removeEventListener('resize', checkMobile);
     }, []);
 
-    // Check if all scripts are loaded
+    // Load animation libraries via dynamic imports instead of external CDNs
     useEffect(() => {
-        const checkScripts = setInterval(() => {
-            if ((window as any).gsap && (window as any).ScrollTrigger && (window as any).Lenis && (window as any).SplitType) {
-                clearInterval(checkScripts);
+        let cancelled = false;
+
+        const loadScripts = async () => {
+            try {
+                const gsapModule = await import('gsap');
+                const scrollTriggerModule = await import('gsap/ScrollTrigger');
+                const lenisModule = await import('@studio-freight/lenis');
+                const splitTypeModule = await import('split-type');
+
+                if (cancelled) return;
+
+                const w = window as any;
+
+                // Normalise module shapes and expose as globals for existing animation code
+                w.gsap =
+                    (gsapModule as any).default ||
+                    (gsapModule as any).gsap ||
+                    gsapModule;
+
+                w.ScrollTrigger =
+                    (scrollTriggerModule as any).ScrollTrigger ||
+                    (scrollTriggerModule as any).default ||
+                    scrollTriggerModule;
+
+                w.Lenis =
+                    (lenisModule as any).default ||
+                    (lenisModule as any).Lenis ||
+                    lenisModule;
+
+                w.SplitType =
+                    (splitTypeModule as any).default ||
+                    (splitTypeModule as any).SplitType ||
+                    splitTypeModule;
+
+                setScriptsLoaded(true);
+            } catch (error) {
+                console.error('Failed to load portfolio animation scripts', error);
+                // Allow the page to render even if animations fail
                 setScriptsLoaded(true);
             }
-        }, 100);
+        };
 
-        return () => clearInterval(checkScripts);
+        if (typeof window !== 'undefined') {
+            loadScripts();
+        }
+
+        return () => {
+            cancelled = true;
+        };
     }, []);
 
     const handlePreloaderComplete = () => {
@@ -58,24 +98,6 @@ export default function PortfolioNew() {
 
     return (
         <div className="portfolio-wrapper">
-            {/* Load all scripts first */}
-            <Script
-                src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
-                strategy="beforeInteractive"
-            />
-            <Script
-                src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
-                strategy="beforeInteractive"
-            />
-            <Script
-                src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"
-                strategy="beforeInteractive"
-            />
-            <Script
-                src="https://unpkg.com/split-type"
-                strategy="beforeInteractive"
-            />
-
             {/* Show preloader only when scripts are loaded */}
             {scriptsLoaded && loading && <Preloader onComplete={handlePreloaderComplete} />}
 
