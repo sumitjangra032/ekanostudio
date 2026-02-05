@@ -32,7 +32,7 @@ export const data: SeoPageData = {
     meta: {
         title: "Agence Web Design France | Création de Sites Premium",
         description:
-            "Agence de création de site web premium en France. Nous concevons des sites élégants, rapides et conformes au RGPD pour les marques françaises et entreprises haut de gamme.",
+            "Agence de création de site web premium en France. Nous concevons des sites élégants, rapides, performants et entièrement conformes au RGPD.",
         canonical: "/website-design-france",
     },
 

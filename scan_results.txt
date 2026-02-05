@@ -1,0 +1,47 @@
+[LONG] src\constants\benefits.ts: 184 chars
+"Leverage a single powerhouse team for everything digital — designed to {elevate} your brand, acceler..."
+---
+[LONG] src\constants\bookConsultation.ts: 178 chars
+"We make technology simple. By {blending} smart tools with real human expertise, we help your busines..."
+---
+[LONG] src\constants\coreExpertise.ts: 640 chars
+"Building high-performance, [visually stunning websites|/services/web-design-development/website-desi..."
+---
+[LONG] src\constants\coreExpertise.ts: 484 chars
+"Optimizing your digital presence to [rank higher on search engines|/services/seo/on-page-seo], drivi..."
+---
+[LONG] src\constants\coreExpertise.ts: 539 chars
+"Crafting engaging [social strategies|/services/social-media-marketing/social-media-strategy] that bu..."
+---
+[LONG] src\constants\coreExpertise.ts: 507 chars
+"Data-backed [advertising campaigns|/services/performance-marketing/google-ads] designed to maximize ..."
+---
+[LONG] src\constants\coreExpertise.ts: 496 chars
+"Engage your audience with [compelling content|/services/content-creation/content-writing] that tells..."
+---
+[LONG] src\constants\coreExpertise.ts: 429 chars
+"Streamline your operations with cutting-edge [AI automation|/services/ai-automation/ai-automation-n8..."
+---
+[LONG] src\constants\projectTimeline.ts: 211 chars
+"We begin by understanding your goals, audience, challenges, and expectations. Through detailed discu..."
+---
+[LONG] src\constants\projectTimeline.ts: 229 chars
+"We create a structured action plan, finalize deliverables, estimate timelines, and define the techni..."
+---
+[LONG] src\constants\projectTimeline.ts: 230 chars
+"Our team develops user-focused designs, content structures, and brand-aligned visuals. We explore cr..."
+---
+[LONG] src\constants\projectTimeline.ts: 240 chars
+"We transform approved concepts into functional solutions—whether websites, ads, videos, or content s..."
+---
+[LONG] src\constants\projectTimeline.ts: 238 chars
+"We perform detailed testing for performance, responsiveness, compatibility, and overall reliability...."
+---
+[LONG] src\constants\projectTimeline.ts: 215 chars
+"After final approval, we execute a smooth launch, set up performance monitoring, and provide continu..."
+---
+[LONG] src\constants\services\web-design-development\website-development.ts: 213 chars
+"We {understand} functionality, scale, integrations & business logic to decide whether you need stati..."
+---
+[LONG] src\constants\whyChooseUs.ts: 176 chars
+"We make technology simple. By blending smart tools with real human expertise, we help your business ..."

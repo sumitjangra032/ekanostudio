@@ -33,7 +33,7 @@ export const data: SeoPageData = {
     meta: {
         title: "Digital Marketing Agency UK | Growth & Performance",
         description:
-            "Grow your business in the United Kingdom. We offer PPC, Social Media Advertising, and Email Automation carefully tailored to British markets and buying behaviour.",
+            "Grow your business in the UK. We offer PPC, Social Media Advertising, and Email Automation tailored to British markets.",
         canonical: "/digital-marketing-uk",
     },
 

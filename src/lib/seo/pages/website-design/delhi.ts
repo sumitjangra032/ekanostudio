@@ -32,7 +32,7 @@ export const data: SeoPageData = {
     meta: {
         title: "Website Design Delhi | Corporate & Enterprise Design",
         description:
-            "Premium website design agency in Delhi delivering high-conversion, secure, and brand-focused websites for corporates, enterprises, and fast-growing Delhi businesses.",
+            "Premium website design agency in Delhi. Delivering high-conversion, secure, and brand-focused websites for large enterprises and established brands.",
         canonical: "/website-design-delhi",
     },
 

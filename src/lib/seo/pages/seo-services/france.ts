@@ -33,7 +33,7 @@ export const data: SeoPageData = {
     meta: {
         title: "Agence SEO France | Experts en Référencement Google.fr",
         description:
-            "Augmentez votre visibilité en France. Nous proposons des stratégies SEO avancées pour vous positionner sur les requêtes à forte intention sur Google.fr.",
+            "Augmentez votre visibilité en France. Stratégies SEO avancées pour vous positionner sur les requêtes à forte intention sur Google.fr.",
         canonical: "/seo-services-france",
     },
 

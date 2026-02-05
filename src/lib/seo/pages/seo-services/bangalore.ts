@@ -33,7 +33,7 @@ export const data: SeoPageData = {
     meta: {
         title: "SEO Agency Bangalore | Rank Faster & Convert More",
         description:
-            "Win the rankings battle in the Silicon Valley of India. Our SEO specialists help Bangalore startups, SaaS companies, and enterprises achieve top positions on Google.",
+            "Win the rankings battle in the Silicon Valley of India. Our SEO experts help Bangalore startups and enterprises achieve top Google positions.",
         canonical: "/seo-services-bangalore",
     },
 

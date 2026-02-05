@@ -26,7 +26,7 @@ export const data: SeoPageData = {
     meta: {
         title: "Website Design Luxembourg | Premium Digital Agency",
         description:
-            "Luxury web design for Luxembourg's financial and corporate sectors. We build sophisticated, high-performance websites for the Grand Duchy's elite businesses.",
+            "Luxury web design for Luxembourg's financial sectors. We build sophisticated, high-performance websites for elite businesses and global firms.",
         canonical: "/website-design-luxembourg",
     },
 

@@ -1,15 +1,21 @@
 import {
   InstagramIcon,
   TwitterIcon,
-  TiktokIcon,
   LinkedInIcon,
-  YouTubeIcon,
 } from "@/components/icons/LocalIcons";
 
 export const FOOTER_CONTENT = {
   year: "2024",
   brand: "Ekanostudio",
   tagline: "Empowering businesses with cutting-edge digital solutions. We transform your vision into scalable, high-performance reality through design, development, and strategic innovation.",
+  address: {
+    label: "Address:",
+    lines: [
+      "Red Square Market, Mehta Nagar",
+      "Hisar, Haryana 125001",
+      "India",
+    ],
+  },
 
   columns: [
     {
@@ -45,10 +51,8 @@ export const FOOTER_CONTENT = {
   ],
 
   socials: [
-    { icon: InstagramIcon, href: "#" },
-    { icon: TwitterIcon, href: "#" },
-    { icon: LinkedInIcon, href: "#" },
-    { icon: YouTubeIcon, href: "#" },
-    { icon: TiktokIcon, href: "#" },
+    { icon: InstagramIcon, href: "https://www.instagram.com/connectekanostudio/" },
+    { icon: TwitterIcon, href: "https://x.com/connectekano" },
+    { icon: LinkedInIcon, href: "https://www.linkedin.com/in/ekano-studio-50670b3aa/" },
   ],
 };

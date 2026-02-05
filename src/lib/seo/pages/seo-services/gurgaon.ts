@@ -33,7 +33,7 @@ export const data: SeoPageData = {
     meta: {
         title: "SEO Agency in Gurgaon | Enterprise Ranking & Lead Growth",
         description:
-            "Dominate search in Gurugram’s competitive landscape. We provide precision SEO for MNCs, B2B firms, and high-growth startups in Cyber City and beyond.",
+            "Dominate Gurugram’s search landscape. Precision SEO for MNCs, B2B firms, and high-growth startups in one of India's most competitive markets.",
         canonical: "/seo-services-gurgaon",
     },
 

@@ -26,7 +26,7 @@ export const data: SeoPageData = {
     meta: {
         title: "Web Design Agency UAE | Dubai & Abu Dhabi | Premium UI/UX",
         description:
-            "Premium web design for UAE brands. We build bilingual (Arabic/English), high-performance websites for Dubai’s luxury market and Abu Dhabi’s corporate sector.",
+            "Premium web design for UAE brands. We build bilingual, high-performance websites for Dubai’s luxury market and Abu Dhabi’s corporate sector.",
         canonical: "/website-design-uae",
     },
 

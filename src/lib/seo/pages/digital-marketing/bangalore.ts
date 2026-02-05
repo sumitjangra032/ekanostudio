@@ -32,7 +32,7 @@ export const data: SeoPageData = {
     meta: {
         title: "Digital Marketing Bangalore | Performance & Growth",
         description:
-            "Performance-first digital marketing agency in Bangalore. We help SaaS, D2C, and tech companies scale revenue with data-driven advertising and precise targeting.",
+            "Performance-first digital marketing agency in Bangalore. We help SaaS, D2C, and tech companies scale revenue with data-driven advertising.",
         canonical: "/digital-marketing-bangalore",
     },
 

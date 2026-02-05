@@ -31,7 +31,7 @@ export const data: SeoPageData = {
     meta: {
         title: "AI Automation Services in Canada | Secure n8n Workflows",
         description:
-            "AI automation solutions for Canadian companies. We build secure n8n workflows and AI systems that reduce admin work, improve accuracy, and scale operations.",
+            "AI automation for Canadian companies. We build secure n8n workflows and AI systems to reduce admin work, improve accuracy, and scale operations.",
         canonical: "/ai-automation-canada",
     },
 

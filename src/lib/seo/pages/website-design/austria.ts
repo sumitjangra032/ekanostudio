@@ -34,7 +34,7 @@ export const data: SeoPageData = {
     meta: {
         title: "Webdesign Agentur Österreich | Premium Websites & UI/UX",
         description:
-            "Exzellentes Webdesign für Österreich. Wir erstellen schnelle, hochwertige und DSGVO-konforme Websites für KMUs und Unternehmen in Wien, Graz, Linz und Salzburg.",
+            "Exzellentes Webdesign für Unternehmen in Österreich. Wir erstellen schnelle, hochwertige und DSGVO-konforme Websites für Ihren maximalen Erfolg.",
         canonical: "/website-design-austria",
     },
 

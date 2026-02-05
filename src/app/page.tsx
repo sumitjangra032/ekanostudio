@@ -16,9 +16,9 @@ import {
 const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
-  title: "Ekanostudio – Digital Transformation & Web Design Agency",
+  title: "Ekanostudio – Web Design, SEO & AI Automation Agency",
   description:
-    "Ekanostudio is a digital transformation and consulting agency helping businesses scale with web development, branding, digital marketing, UI/UX design, and strategic growth solutions.",
+    "Accelerate your digital growth with Ekanostudio. Expert Web Design, SEO, AI Automation, and Performance Marketing services to scale your business online.",
   keywords: [
     "digital transformation agency",
     "web design agency",

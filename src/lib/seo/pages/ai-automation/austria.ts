@@ -31,7 +31,7 @@ export const data: SeoPageData = {
     meta: {
         title: "KI-Automatisierung Österreich | Workflows mit n8n",
         description:
-            "Professionelle KI-Automatisierung für Unternehmen in Österreich. Wir entwickeln sichere n8n-Workflows, die Zeit sparen, Prozesse vereinfachen und Kosten senken.",
+            "Professionelle KI-Automatisierung für Unternehmen in Österreich. Wir entwickeln sichere n8n-Workflows, die Zeit sparen und nachhaltig Kosten senken.",
         canonical: "/ai-automation-austria",
     },
 

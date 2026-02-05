@@ -32,11 +32,11 @@ export default function Hero() {
         {/* CSS Animation Wrapper instead of HeroEntrance JS */}
         {/* OPTIMIZATION: Removed 'animate-in fade-in zoom-in' to prevent LCP delay. Text is visible instantly. */}
         <div className="opacity-100">
-          {/* Top Badge (SEO-safe) */}
+          {/* Top Badge (SEO-safe H1) */}
           <div className="mb-4 flex justify-center">
-            <span className="text-xs sm:text-sm tracking-wide bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
-              Digital Growth & Web Solutions Partner
-            </span>
+            <h1 className="text-xs sm:text-sm tracking-wide bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent font-medium uppercase m-0 p-0 inline-block">
+              Digital Growth, SEO & Web Solutions Partner
+            </h1>
           </div>
 
           {/* Critical CSS for Hero H1 - Inlined for Instant Paint */}
@@ -52,8 +52,8 @@ export default function Hero() {
             @media (min-width: 1280px) { #hero-h1 { font-size: 72px; } }
           `}} />
 
-          {/* H1 Headline */}
-          <h1
+          {/* H2 Headline (was H1) */}
+          <h2
             id="hero-h1"
             className="font-medium italic hero-headline"
             style={{
@@ -81,7 +81,7 @@ export default function Hero() {
                 </div>
               );
             })}
-          </h1>
+          </h2>
 
           {/* Supporting Description */}
           <div className="mt-4 max-w-3xl mx-auto">

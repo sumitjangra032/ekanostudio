@@ -33,7 +33,7 @@ export const data: SeoPageData = {
     meta: {
         title: "SEO Agency Luxembourg | Multilingual SEO & Corporate Ranking",
         description:
-            "Grow your visibility in Luxembourg’s high-competition market. We specialize in multilingual, corporate, and finance-sector SEO tailored for the Grand Duchy.",
+            "Grow your visibility in Luxembourg. We specialize in multilingual, corporate, and finance-sector SEO tailored for the Grand Duchy.",
         canonical: "/seo-services-luxembourg",
     },
 

@@ -32,7 +32,7 @@ export const data: SeoPageData = {
     meta: {
         title: "Website Design Company in Gurgaon | Enterprise Web Experts",
         description:
-            "Top website design agency in Gurgaon. We design enterprise-grade, high-performance websites for Cyber City MNCs, startups, and corporate leaders.",
+            "Top website design agency in Gurgaon. We design enterprise-grade, high-performance websites for MNCs, startups, and corporate market leaders.",
         canonical: "/website-design-gurgaon",
     },
 

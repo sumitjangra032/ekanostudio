@@ -31,7 +31,7 @@ export const data: SeoPageData = {
     meta: {
         title: "Automatisation IA en France | Workflows n8n & Chatbots",
         description:
-            "Solutions d’automatisation IA pour les entreprises françaises. Nous concevons des workflows n8n et des agents intelligents pour améliorer la productivité et réduire les coûts.",
+            "Solutions d’automatisation IA. Nous concevons des workflows n8n et des agents intelligents pour améliorer la productivité et réduire les coûts.",
         canonical: "/ai-automation-france",
     },
 

@@ -6,7 +6,7 @@ const SITE_URL = "https://www.ekanostudio.com";
 export const metadata: Metadata = {
   title: "Email Marketing Master Class: Strategy to Revenue",
   description:
-    "A complete guide on how to start and scale email marketing. Learn technical setup (SPF/DKIM), list building (Lead Magnets), copywriting, and automated revenue flows (Welcome, Abandoned Cart).",
+    "A complete guide to starting and scaling email marketing. Learn technical setup (SPF/DKIM), list building, copywriting, and automated revenue flows.",
   keywords: [
     "email marketing strategy",
     "email automation flows",

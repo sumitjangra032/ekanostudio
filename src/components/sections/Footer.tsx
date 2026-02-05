@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FOOTER_CONTENT } from "@/constants/footer";
 import { BRAND, BRAND_LOGO } from "@/constants/global";
+import { MapPin } from "lucide-react";
 import { THEMES, currentTheme } from "../../constants/theme";
 
 export default function Footer() {
@@ -61,6 +62,52 @@ export default function Footer() {
               >
                 {FOOTER_CONTENT.tagline}
               </p>
+
+              {FOOTER_CONTENT.address && (
+                <div
+                  className="mt-4 text-sm space-y-3 relative"
+                  style={{ color: "var(--theme-subtext)" }}
+                >
+                  <div className="leading-relaxed">
+                    {FOOTER_CONTENT.address.lines.map((line, index) => (
+                      <p key={index}>{line}</p>
+                    ))}
+                  </div>
+
+                  <a
+                    href="https://share.google/cP5T8K6ymH0d2APK3"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block relative w-[220px] h-[110px]"
+                  >
+                    <div
+                      className="absolute inset-0 overflow-hidden"
+                      style={{
+                        borderRadius: "22px",
+                        maskImage:
+                          "radial-gradient(circle at 50% 50%, black 60%, transparent 100%)",
+                        WebkitMaskImage:
+                          "radial-gradient(circle at 50% 50%, black 60%, transparent 100%)",
+                      }}
+                    >
+                      <iframe
+                        src="https://www.google.com/maps?q=Red+Square+Market,+Mehta+Nagar,+Hisar&output=embed"
+                        width="200%"
+                        height="200%"
+                        style={{
+                          border: 0,
+                          transform: "scale(1.2)",
+                          filter: "brightness(0.35) contrast(1.1)",
+                          pointerEvents: "none",   // ← VERY IMPORTANT
+                        }}
+                        loading="lazy"
+                      ></iframe>
+                    </div>
+                  </a>
+                </div>
+              )}
+
+
 
               {/* SOCIALS */}
               <div className="flex gap-4 pt-2">

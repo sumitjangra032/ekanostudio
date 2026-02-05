@@ -6,7 +6,7 @@ const SITE_URL = "https://www.ekanostudio.com";
 export const metadata: Metadata = {
   title: "CRM Implementation Master Class: Strategy & Adoption",
   description:
-    "A complete guide on how to implement a high-performance CRM. Learn about selecting the right platform, data architecture, process mapping, automation logic, and driving user adoption to ensure success.",
+    "A complete guide to implementing a high-performance CRM. Learn platform selection, data architecture, automation logic, and user adoption strategies.",
   keywords: [
     "CRM implementation guide",
     "Salesforce vs HubSpot",

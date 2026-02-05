@@ -32,7 +32,7 @@ export const data: SeoPageData = {
     meta: {
         title: "Content Creation Luxembourg | Video & Thought Leadership",
         description:
-            "Premium content creation for Luxembourg businesses. Executive copywriting, corporate video, and strategic content for finance, consulting, and enterprise firms.",
+            "Premium content creation for Luxembourg businesses. Executive copywriting, corporate video, and strategic content for finance and consulting.",
         canonical: "/content-creation-luxembourg",
     },
 

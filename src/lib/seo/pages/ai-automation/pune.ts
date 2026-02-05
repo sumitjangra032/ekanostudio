@@ -31,7 +31,7 @@ export const data: SeoPageData = {
     meta: {
         title: "AI Automation Services in Pune | n8n Workflow Solutions",
         description:
-            "AI automation solutions for Pune businesses. We design reliable n8n workflows and AI systems to reduce errors, improve efficiency, and streamline operations.",
+            "AI automation for Pune businesses. We design reliable n8n workflows and AI systems to reduce errors, improve efficiency, and streamline operations.",
         canonical: "/ai-automation-pune",
     },
 

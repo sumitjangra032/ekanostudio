@@ -6,7 +6,7 @@ const SITE_URL = "https://www.ekanostudio.com";
 export const metadata: Metadata = {
   title: "API Integrations Guide: Protocols & Security",
   description:
-    "A technical and strategic deep dive into building, managing, and securing vital API connections. Covers REST, OAuth 2.0, Webhooks, Rate Limiting, and the future of the API economy.",
+    "A technical deep dive into building and securing API connections. Covers REST, OAuth 2.0, Webhooks, Rate Limiting, and key API security best practices.",
   keywords: [
     "API Integration",
     "REST",

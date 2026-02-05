@@ -180,12 +180,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 "logo": {
                   "@type": "ImageObject",
                   "url": "https://www.ekanostudio.com/logo.png",
-                  "width": 800,
-                  "height": 600
+                  "width": 1000,
+                  "height": 1000
                 },
                 "sameAs": [
-                  "https://www.instagram.com/ekanostudio",
-                  "https://www.linkedin.com/company/ekanostudio"
+                  "https://www.instagram.com/connectekanostudio/",
+                  "https://www.linkedin.com/in/ekano-studio-50670b3aa/"
+                  "https://x.com/connectekano"
                 ],
                 "contactPoint": {
                   "@type": "ContactPoint",
@@ -203,16 +204,17 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 "telephone": "",
                 "address": {
                   "@type": "PostalAddress",
+                  "streetAddress": "Red Square Market, Mehta Nagar",
                   "addressLocality": "Hisar",
                   "addressRegion": "Haryana",
                   "addressCountry": "IN"
                 },
                 "geo": {
                   "@type": "GeoCoordinates",
-                  "latitude": "29.1492",
-                  "longitude": "75.7217" 
+                  "latitude": "29.157610077674295",
+                  "longitude": "75.72107762523662" 
                 },
-                "priceRange": "$$"
+                "priceRange": "₹1000-₹10000"
               }
             ]
           }

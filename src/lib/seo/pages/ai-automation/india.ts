@@ -31,7 +31,7 @@ export const data: SeoPageData = {
     meta: {
         title: "AI Automation Services in India | Scalable n8n Workflows",
         description:
-            "AI automation services for businesses across India. We design secure, scalable n8n workflows and AI systems to improve efficiency, reduce costs, and support growth.",
+            "AI automation services for businesses across India. We design secure, scalable n8n workflows and AI systems to improve efficiency and reduce costs.",
         canonical: "/ai-automation-india",
     },
 

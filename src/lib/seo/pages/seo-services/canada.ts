@@ -33,7 +33,7 @@ export const data: SeoPageData = {
     meta: {
         title: "SEO Agency Canada | Rank Higher on Google.ca",
         description:
-            "Grow your organic traffic across Canada. We specialize in Canadian search behaviour, local keyword targeting, and bilingual optimization for national reach.",
+            "Grow your organic traffic across Canada. We specialize in Canadian search behaviour, local keyword targeting, and bilingual optimization.",
         canonical: "/seo-services-canada",
     },
 

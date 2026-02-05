@@ -26,7 +26,7 @@ export const data: SeoPageData = {
     meta: {
         title: "Website Design Agency in Pune | UI/UX & Web Development",
         description:
-            "Looking for premium web design in Pune? We build fast, mobile-responsive, conversion-focused websites for Pune’s leading IT, education, and manufacturing brands.",
+            "Looking for premium web design in Pune? We build fast, mobile-responsive, and conversion-focused websites for leading brands and enterprises.",
         canonical: "/website-design-pune",
     },
 

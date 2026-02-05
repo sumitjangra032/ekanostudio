@@ -33,7 +33,7 @@ export const data: SeoPageData = {
     meta: {
         title: "Digital Marketing Agency India | Performance, Leads & Growth",
         description:
-            "Grow your revenue across India with high-performance Google Ads, Meta Ads, and ROI-driven digital marketing campaigns designed for the Indian consumer landscape.",
+            "Grow your revenue across India with high-performance Google Ads, Meta Ads, and ROI-driven digital marketing campaigns designed for India.",
         canonical: "/digital-marketing-india",
     },
 

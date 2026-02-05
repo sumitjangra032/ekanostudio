@@ -31,7 +31,7 @@ export const data: SeoPageData = {
     meta: {
         title: "AI Automation UAE | Dubai & Abu Dhabi Workflows",
         description:
-            "AI automation solutions for UAE businesses. We build secure n8n workflows and AI systems to automate operations, improve service speed, and scale efficiently.",
+            "AI automation for UAE businesses. We build secure n8n workflows and AI systems to automate operations, improve service speed, and scale efficiently.",
         canonical: "/ai-automation-uae",
     },
 

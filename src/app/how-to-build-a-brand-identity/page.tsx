@@ -6,7 +6,7 @@ const SITE_URL = "https://www.ekanostudio.com";
 export const metadata: Metadata = {
   title: "How to Build a Brand Identity: Strategy & Visuals",
   description:
-    "A comprehensive master class on how to build a powerful brand identity. Covers brand psychology, mission, vision, logo design, visual systems, voice, digital presence, and measuring brand equity.",
+    "A master class on building a powerful brand identity. Covers brand psychology, logo design, visual systems, voice, and measuring brand equity.",
   keywords: [
     "brand identity",
     "branding strategy",

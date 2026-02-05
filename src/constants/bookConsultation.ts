@@ -35,7 +35,6 @@ export const BOOK_CONSULTATION_CONTENT = {
 
   contact: {
     emails: ["info@ekanostudio.com", "support@ekanostudio.com"],
-    phones: ["+919034817987", "+918168815165"]
+    phones: ["+919034817987"]
   }
-
 };

@@ -6,7 +6,7 @@ const SITE_URL = "https://www.ekanostudio.com";
 export const metadata: Metadata = {
   title: "Create an Online Marketplace: Strategy & Growth",
   description:
-    "A complete in-depth guide on how to create an online marketplace. Learn marketplace strategy, cold start solutions, network effects, monetization models, trust systems, payments, liquidity metrics, and defensive moats.",
+    "A complete guide on creating an online marketplace. Learn strategy, cold start solutions, network effects, monetization, and trust systems.",
   keywords: [
     "create online marketplace",
     "marketplace business model",

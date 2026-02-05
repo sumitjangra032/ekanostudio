@@ -33,7 +33,7 @@ export const data: SeoPageData = {
     meta: {
         title: "SEO Services India | National Rankings & Organic Growth",
         description:
-            "Dominate search results across India. We deliver enterprise-grade SEO strategies to rank your business for competitive keywords and drive sustainable organic growth.",
+            "Dominate search results across India. Enterprise-grade SEO strategies to rank for competitive keywords and drive sustainable organic growth.",
         canonical: "/seo-services-india",
     },
 
