@@ -210,310 +210,403 @@ export default function ServiceForm({ initialCategory, initialService }: Service
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 xl:gap-20 items-start">
                     {/* Left Column: Context & Trust */}
                     <div className="lg:col-span-5 space-y-8 lg:sticky lg:top-32 lg:h-fit">
-                        <div className="space-y-6">
-                            <div
-                                className="inline-flex items-center gap-2 text-xs font-bold uppercase py-2 px-4 rounded-full border"
-                                style={{
-                                    color: theme.primary,
-                                    borderColor: theme.primary + "33",
-                                    background: theme.primary + "11"
-                                }}
-                            >
-                                <Zap size={14} className="animate-pulse" />
-                                Service Inquiry
-                            </div>
-
-                            <div
-                                className="text-3xl md:text-4xl lg:text-5xl font-bold font-cabinet leading-[1.05] tracking-tight"
-                                style={{ color: theme.text }}
-                            >
-                                {serviceData?.title || "Get Your Service Started"}
-                            </div>
-
-                            <p
-                                className="text-base md:text-lg opacity-80 leading-relaxed max-w-lg"
-                                style={{ color: theme.subtext }}
-                            >
-                                Tell us about your vision. We combine strategy, design, and technology to build digital products that perform.
-                            </p>
+                        <div
+                            className="inline-flex items-center gap-2 text-xs font-bold uppercase py-2 px-4 rounded-full border border-[var(--theme-primary)]/20 bg-[var(--theme-primary)]/10 text-[var(--theme-primary)]"
+                        >
+                            <Zap size={14} className="animate-pulse" />
+                            Service Inquiry
                         </div>
 
-                        {/* Why Ekanostudio List */}
-                        <div className="space-y-4 pt-4">
-                            <h4 className="text-xs font-bold uppercase tracking-widest opacity-50" style={{ color: theme.text }}>
-                                Why partner with us?
-                            </h4>
-                            <div className="grid gap-3">
-                                {[
-                                    { icon: ShieldCheck, title: "Secure & Confidential", desc: "Your project details and data are protected." },
-                                    { icon: Clock, title: "24h Response Time", desc: "We review every inquiry within one business day." },
-                                    { icon: Star, title: "Expert Implementation", desc: "Work with senior designers and developers." }
-                                ].map((item, i) => (
-                                    <m.div
-                                        key={i}
-                                        initial={{ opacity: 0, y: 20 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.3, delay: i * 0.1 }}
-                                        className="flex gap-3 p-3 rounded-xl border bg-black/20 backdrop-blur-sm"
-                                        style={{ borderColor: theme.text + "11" }}
-                                    >
-                                        <div className="p-2 rounded-lg bg-primary/10 h-fit">
-                                            <item.icon size={18} className="text-primary" style={{ color: theme.accents.a }} />
-                                        </div>
-                                        <div className="flex-1 min-w-0">
-                                            <h5 className="font-bold text-sm truncate" style={{ color: theme.text }}>{item.title}</h5>
-                                            <p className="text-xs opacity-60 mt-0.5 line-clamp-2" style={{ color: theme.subtext }}>{item.desc}</p>
-                                        </div>
-                                    </m.div>
-                                ))}
-                            </div>
+                        <div
+                            className="text-3xl md:text-4xl lg:text-5xl font-bold font-cabinet leading-[1.05] tracking-tight text-[var(--theme-text)]"
+                        >
+                            {serviceData?.title || "Get Your Service Started"}
                         </div>
 
-                        {/* Recent Success Section */}
-                        <div className="space-y-3 pt-4">
-                            <h4 className="text-xs font-bold uppercase tracking-[0.2em] opacity-40" style={{ color: theme.text }}>
-                                Global Success
-                            </h4>
-                            <div className="relative h-28 overflow-hidden rounded-xl border bg-black/20 backdrop-blur-xl p-4 flex items-center" style={{ borderColor: theme.text + "11" }}>
-                                <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black z-10 pointer-events-none" />
-                                <ProjectScroller projects={BOOK_CONSULTATION_CONTENT.projects.list} />
-                            </div>
-                        </div>
+                        <p
+                            className="text-base md:text-lg opacity-80 leading-relaxed max-w-lg text-[var(--theme-subtext)]"
+                        >
+                            Tell us about your vision. We combine strategy, design, and technology to build digital products that perform.
+                        </p>
+                    </div>
 
-                        {/* Next Steps */}
-                        <div className="p-6 rounded-2xl border bg-gradient-to-br from-primary/5 to-transparent overflow-hidden relative" style={{ borderColor: theme.accents.a + "33" }}>
-                            <div className="absolute -right-4 -bottom-4 opacity-10" style={{ color: theme.accents.a }}>
-                                <Briefcase size={100} />
-                            </div>
-                            <h4 className="font-bold text-sm mb-4" style={{ color: theme.text }}>What happens next?</h4>
-                            <ul className="space-y-3 relative z-10">
-                                {[
-                                    "We analyze your project goals",
-                                    "Our team drafts a custom proposal",
-                                    "We schedule a strategy consultation"
-                                ].map((step, i) => (
-                                    <li key={i} className="flex gap-3 text-sm opacity-80 items-start" style={{ color: theme.subtext }}>
-                                        <div className="w-2 h-2 rounded-full mt-1.5 shrink-0" style={{ backgroundColor: theme.accents.a }} />
-                                        <span className="leading-relaxed">{step}</span>
-                                    </li>
-                                ))}
-                            </ul>
+                    {/* Why Ekanostudio List */}
+                    <div className="space-y-4 pt-4">
+                        <h4 className="text-xs font-bold uppercase tracking-widest opacity-50 text-[var(--theme-text)]">
+                            Why partner with us?
+                        </h4>
+                        <div className="grid gap-3">
+                            {[
+                                { icon: ShieldCheck, title: "Secure & Confidential", desc: "Your project details and data are protected." },
+                                { icon: Clock, title: "24h Response Time", desc: "We review every inquiry within one business day." },
+                                { icon: Star, title: "Expert Implementation", desc: "Work with senior designers and developers." }
+                            ].map((item, i) => (
+                                <m.div
+                                    key={i}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.3, delay: i * 0.1 }}
+                                    className="flex gap-3 p-3 rounded-xl border border-[var(--theme-text)]/10 bg-black/20 backdrop-blur-sm"
+                                >
+                                    <div className="p-2 rounded-lg bg-primary/10 h-fit">
+                                        <item.icon size={18} className="text-[var(--theme-accent-a)]" />
+                                    </div>
+                                    <div className="flex-1 min-w-0">
+                                        <h5 className="font-bold text-sm truncate text-[var(--theme-text)]">{item.title}</h5>
+                                        <p className="text-xs opacity-60 mt-0.5 line-clamp-2 text-[var(--theme-subtext)]">{item.desc}</p>
+                                    </div>
+                                </m.div>
+                            ))}
                         </div>
                     </div>
 
-                    {/* Right Column: The Form */}
-                    <div className="lg:col-span-7">
-                        {submittedData ? (
-                            <div className="relative w-full rounded-xl">
+                    {/* Recent Success Section */}
+                    <div className="space-y-3 pt-4">
+                        <h4 className="text-xs font-bold uppercase tracking-[0.2em] opacity-40 text-[var(--theme-text)]">
+                            Global Success
+                        </h4>
+                        <div className="relative h-28 overflow-hidden rounded-xl border border-[var(--theme-text)]/10 bg-black/20 backdrop-blur-xl p-4 flex items-center">
+                            <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black z-10 pointer-events-none" />
+                            <ProjectScroller projects={BOOK_CONSULTATION_CONTENT.projects.list} />
+                        </div>
+                    </div>
 
-                                <RandomGradientGlow colorA={theme.accents.a} colorB={theme.accents.b} />
-                                <Card
-                                    style={{
-                                        background: theme.cardBg,
-                                        border: `1px solid ${theme.text}22`,
-                                        color: theme.text,
-                                        minHeight: "400px",
-                                    }}
-                                >
-                                    <CardContent className="space-y-6 pt-8 pb-8">
-                                        <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                                            <AnimateDownloadedSVG
-                                                src={BOOK_CONSULTATION_CONTENT.confirmationPage.icon}
-                                                size={35}
-                                                stroke={theme.primary}
-                                            />
-                                        </div>
-                                        <div className="text-center">
-                                            <h2 className="text-3xl font-bold mb-2">
-                                                <AnimatedLine text={BOOK_CONSULTATION_CONTENT.confirmationPage.title} />
-                                            </h2>
-                                            <p className="text-sm opacity-80" style={{ color: theme.subtext }}>
-                                                <AnimatedLine text={BOOK_CONSULTATION_CONTENT.confirmationPage.description} />
-                                            </p>
-                                        </div>
+                    {/* Next Steps */}
+                    <div className="p-6 rounded-2xl border border-[var(--theme-accent-a)]/20 bg-gradient-to-br from-primary/5 to-transparent overflow-hidden relative">
+                        <div className="absolute -right-4 -bottom-4 opacity-10 text-[var(--theme-accent-a)]">
+                            <Briefcase size={100} />
+                        </div>
+                        <h4 className="font-bold text-sm mb-4 text-[var(--theme-text)]">What happens next?</h4>
+                        <ul className="space-y-3 relative z-10">
+                            {[
+                                "We analyze your project goals",
+                                "Our team drafts a custom proposal",
+                                "We schedule a strategy consultation"
+                            ].map((step, i) => (
+                                <li key={i} className="flex gap-3 text-sm opacity-80 items-start text-[var(--theme-subtext)]">
+                                    <div className="w-2 h-2 rounded-full mt-1.5 shrink-0 bg-[var(--theme-accent-a)]" />
+                                    <span className="leading-relaxed">{step}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
 
-                                        <div className="bg-primary/5 p-4 sm:p-6 rounded-lg space-y-3 text-left w-full border" style={{ borderColor: theme.text + "11" }}>
-                                            <h3 className="font-semibold text-sm uppercase tracking-wider mb-4 opacity-70">Submission Details</h3>
-                                            <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
-                                                <span className="opacity-60">Name:</span>
-                                                <span className="font-medium text-right truncate">{submittedData.name}</span>
+                {/* Right Column: The Form */}
+                <div className="lg:col-span-7">
+                    {submittedData ? (
+                        <div className="relative w-full rounded-xl">
 
-                                                <span className="opacity-60">Email:</span>
-                                                <span className="font-medium text-right truncate">{submittedData.email}</span>
-
-                                                <span className="opacity-60">Service:</span>
-                                                <span className="font-medium text-right truncate">
-                                                    {SERVICES_CONTENT.categories.find(c => c.slug === submittedData.category)?.items.find(i => i.slug === submittedData.service)?.title || submittedData.service}
-                                                </span>
-
-                                                <span className="opacity-60">Package:</span>
-                                                <span className="font-medium text-right truncate">{submittedData.package}</span>
-
-                                                <span className="opacity-60">Contact:</span>
-                                                <span className="font-medium text-right truncate capitalize">{submittedData.contactMethod}</span>
-                                            </div>
-                                        </div>
-
-                                        <p className="text-sm text-center" style={{ color: theme.subtext }}>
-                                            You will receive a confirmation email shortly.
+                            <RandomGradientGlow colorA={theme.accents.a} colorB={theme.accents.b} />
+                            <Card
+                                className="form-card-glass min-h-[400px] border-white/20"
+                            >
+                                <CardContent className="space-y-6 pt-8 pb-8">
+                                    <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                                        <AnimateDownloadedSVG
+                                            src={BOOK_CONSULTATION_CONTENT.confirmationPage.icon}
+                                            size={35}
+                                            stroke={theme.primary}
+                                        />
+                                    </div>
+                                    <div className="text-center">
+                                        <h2 className="text-3xl font-bold mb-2">
+                                            <AnimatedLine text={BOOK_CONSULTATION_CONTENT.confirmationPage.title} />
+                                        </h2>
+                                        <p className="text-sm opacity-80 text-[var(--theme-subtext)]">
+                                            <AnimatedLine text={BOOK_CONSULTATION_CONTENT.confirmationPage.description} />
                                         </p>
+                                    </div>
 
-                                        <div className="pt-2 flex justify-center">
-                                            <AnimatedRotateButton
-                                                text="Back to Home"
-                                                href="/"
-                                                color={theme.buttonBg}
-                                                accent={theme.accents}
-                                            />
+                                    <div className="bg-primary/5 p-4 sm:p-6 rounded-lg space-y-3 text-left w-full border border-[var(--theme-text)]/10">
+                                        <h3 className="font-semibold text-sm uppercase tracking-wider mb-4 opacity-70">Submission Details</h3>
+                                        <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+                                            <span className="opacity-60">Name:</span>
+                                            <span className="font-medium text-right truncate">{submittedData.name}</span>
+
+                                            <span className="opacity-60">Email:</span>
+                                            <span className="font-medium text-right truncate">{submittedData.email}</span>
+
+                                            <span className="opacity-60">Service:</span>
+                                            <span className="font-medium text-right truncate">
+                                                {SERVICES_CONTENT.categories.find(c => c.slug === submittedData.category)?.items.find(i => i.slug === submittedData.service)?.title || submittedData.service}
+                                            </span>
+
+                                            <span className="opacity-60">Package:</span>
+                                            <span className="font-medium text-right truncate">{submittedData.package}</span>
+
+                                            <span className="opacity-60">Contact:</span>
+                                            <span className="font-medium text-right truncate capitalize">{submittedData.contactMethod}</span>
                                         </div>
-                                    </CardContent>
-                                </Card>
-                            </div>
-                        ) : (
-                            <Form {...form}>
-                                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 lg:space-y-8">
-                                    {/* Service & Package Card */}
-                                    <div className="relative w-full rounded-xl">
+                                    </div>
 
-                                        <RandomGradientGlow colorA={theme.accents.b} colorB={theme.accents.a} />
-                                        <Card style={{
-                                            background: theme.cardBg,
-                                            border: `1px solid ${theme.text}22`,
-                                            color: theme.text,
-                                        }}>
-                                            <CardHeader className="pb-4">
-                                                <div className="flex items-center gap-3">
-                                                    <div className="p-2 rounded-lg bg-primary/10">
-                                                        <Briefcase className="h-5 w-5" style={{ color: theme.accents.a }} />
-                                                    </div>
-                                                    <div className="flex flex-col gap-1">
-                                                        <CardTitle className="font-satoshi text-lg">Service & Package</CardTitle>
-                                                        <CardDescription className="font-cabinet text-sm" style={{ color: theme.subtext }}>
-                                                            Select the service and package that best fits your needs.
-                                                        </CardDescription>
-                                                    </div>
+                                    <p className="text-sm text-center text-[var(--theme-subtext)]">
+                                        You will receive a confirmation email shortly.
+                                    </p>
+
+                                    <div className="pt-2 flex justify-center">
+                                        <AnimatedRotateButton
+                                            text="Back to Home"
+                                            href="/"
+                                            color={theme.buttonBg}
+                                            accent={theme.accents}
+                                        />
+                                    </div>
+                                </CardContent>
+                            </Card>
+                        </div>
+                    ) : (
+                        <Form {...form}>
+                            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 lg:space-y-8">
+                                {/* Service & Package Card */}
+                                <div className="relative w-full rounded-xl">
+
+                                    <RandomGradientGlow colorA={theme.accents.b} colorB={theme.accents.a} />
+                                    <Card className="form-card-glass border-white/20">
+                                        <CardHeader className="pb-4">
+                                            <div className="flex items-center gap-3">
+                                                <div className="p-2 rounded-lg bg-primary/10">
+                                                    <Briefcase className="h-5 w-5 text-[var(--theme-accent-a)]" />
                                                 </div>
-                                            </CardHeader>
-                                            <CardContent className="space-y-6 pt-2">
-                                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                                    <FormField
-                                                        control={form.control}
-                                                        name="category"
-                                                        render={({ field }) => (
-                                                            <FormItem>
-                                                                <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">
-                                                                    Category
-                                                                </FormLabel>
-                                                                <Select
-                                                                    onValueChange={(value) => {
-                                                                        field.onChange(value);
-                                                                        form.setValue("service", "");
-                                                                        form.setValue("package", "");
-                                                                    }}
-                                                                    value={field.value}
-                                                                >
-                                                                    <FormControl>
-                                                                        <SelectTrigger
-                                                                            className="w-full h-11"
-                                                                            style={{
-                                                                                border: `1px solid ${theme.text}22`,
-                                                                                background: `${theme.cardBg}80`,
-                                                                            }}
-                                                                        >
-                                                                            <SelectValue placeholder="Select a category" />
-                                                                        </SelectTrigger>
-                                                                    </FormControl>
-                                                                    <SelectContent
-                                                                        className="max-h-[300px]"
-                                                                        style={{
-                                                                            backgroundColor: theme.background,
-                                                                            borderColor: theme.text + "22",
-                                                                            color: theme.text,
-                                                                        }}
-                                                                    >
-                                                                        {SERVICES_CONTENT.categories.map((cat) => (
-                                                                            <SelectItem key={cat.slug} value={cat.slug}>
-                                                                                {cat.name}
-                                                                            </SelectItem>
-                                                                        ))}
-                                                                    </SelectContent>
-                                                                </Select>
-                                                                <FormMessage />
-                                                            </FormItem>
-                                                        )}
-                                                    />
-
-                                                    <FormField
-                                                        control={form.control}
-                                                        name="service"
-                                                        render={({ field }) => (
-                                                            <FormItem>
-                                                                <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">
-                                                                    Service
-                                                                </FormLabel>
-                                                                <Select
-                                                                    onValueChange={field.onChange}
-                                                                    value={field.value}
-                                                                    disabled={!selectedCategorySlug}
-                                                                >
-                                                                    <FormControl>
-                                                                        <SelectTrigger
-                                                                            className="w-full h-11"
-                                                                            style={{
-                                                                                border: `1px solid ${theme.text}22`,
-                                                                                background: `${theme.cardBg}80`,
-                                                                            }}
-                                                                        >
-                                                                            <SelectValue
-                                                                                placeholder={selectedCategorySlug ? "Select a service" : "Select a category first"}
-                                                                            />
-                                                                        </SelectTrigger>
-                                                                    </FormControl>
-                                                                    <SelectContent
-                                                                        className="max-h-[300px]"
-                                                                        style={{
-                                                                            backgroundColor: theme.background,
-                                                                            borderColor: theme.text + "22",
-                                                                            color: theme.text,
-                                                                        }}
-                                                                    >
-                                                                        {availableServices.map((service) => (
-                                                                            <SelectItem key={service.slug} value={service.slug}>
-                                                                                <div className="flex items-center gap-2">
-                                                                                    <span className="truncate">{service.title}</span>
-                                                                                </div>
-                                                                            </SelectItem>
-                                                                        ))}
-                                                                    </SelectContent>
-                                                                </Select>
-                                                                <FormMessage />
-                                                            </FormItem>
-                                                        )}
-                                                    />
+                                                <div className="flex flex-col gap-1">
+                                                    <CardTitle className="font-satoshi text-lg text-[var(--theme-text)]">Service & Package</CardTitle>
+                                                    <CardDescription className="font-cabinet text-sm text-[var(--theme-subtext)]">
+                                                        Select the service and package that best fits your needs.
+                                                    </CardDescription>
                                                 </div>
-
-                                                {/* Project Requirements */}
+                                            </div>
+                                        </CardHeader>
+                                        <CardContent className="space-y-6 pt-2">
+                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                                 <FormField
                                                     control={form.control}
-                                                    name="requirements"
+                                                    name="category"
                                                     render={({ field }) => (
                                                         <FormItem>
                                                             <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">
-                                                                Project Requirements
-                                                                <span className="text-xs font-normal opacity-70 ml-1" style={{ color: theme.subtext }}>
-                                                                    (Optional)
-                                                                </span>
+                                                                Category
+                                                            </FormLabel>
+                                                            <Select
+                                                                onValueChange={(value) => {
+                                                                    field.onChange(value);
+                                                                    form.setValue("service", "");
+                                                                    form.setValue("package", "");
+                                                                }}
+                                                                value={field.value}
+                                                            >
+                                                                <FormControl>
+                                                                    <SelectTrigger
+                                                                        className="w-full h-11 border-[var(--theme-text)]/20 bg-[var(--theme-card-bg)]/50 text-[var(--theme-text)]"
+                                                                    >
+                                                                        <SelectValue placeholder="Select a category" />
+                                                                    </SelectTrigger>
+                                                                </FormControl>
+                                                                <SelectContent
+                                                                    className="max-h-[300px] border-[var(--theme-text)]/20 bg-[var(--theme-background)] text-[var(--theme-text)]"
+                                                                >
+                                                                    {SERVICES_CONTENT.categories.map((cat) => (
+                                                                        <SelectItem key={cat.slug} value={cat.slug}>
+                                                                            {cat.name}
+                                                                        </SelectItem>
+                                                                    ))}
+                                                                </SelectContent>
+                                                            </Select>
+                                                            <FormMessage />
+                                                        </FormItem>
+                                                    )}
+                                                />
+
+                                                <FormField
+                                                    control={form.control}
+                                                    name="service"
+                                                    render={({ field }) => (
+                                                        <FormItem>
+                                                            <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">
+                                                                Service
+                                                            </FormLabel>
+                                                            <Select
+                                                                onValueChange={field.onChange}
+                                                                value={field.value}
+                                                                disabled={!selectedCategorySlug}
+                                                            >
+                                                                <FormControl>
+                                                                    <SelectTrigger
+                                                                        className="w-full h-11 border-[var(--theme-text)]/20 bg-[var(--theme-card-bg)]/50 text-[var(--theme-text)]"
+                                                                    >
+                                                                        <SelectValue
+                                                                            placeholder={selectedCategorySlug ? "Select a service" : "Select a category first"}
+                                                                        />
+                                                                    </SelectTrigger>
+                                                                </FormControl>
+                                                                <SelectContent
+                                                                    className="max-h-[300px] border-[var(--theme-text)]/20 bg-[var(--theme-background)] text-[var(--theme-text)]"
+                                                                >
+                                                                    {availableServices.map((service) => (
+                                                                        <SelectItem key={service.slug} value={service.slug}>
+                                                                            <div className="flex items-center gap-2">
+                                                                                <span className="truncate">{service.title}</span>
+                                                                            </div>
+                                                                        </SelectItem>
+                                                                    ))}
+                                                                </SelectContent>
+                                                            </Select>
+                                                            <FormMessage />
+                                                        </FormItem>
+                                                    )}
+                                                />
+                                            </div>
+
+                                            {/* Project Requirements */}
+                                            <FormField
+                                                control={form.control}
+                                                name="requirements"
+                                                render={({ field }) => (
+                                                    <FormItem>
+                                                        <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">
+                                                            Project Requirements
+                                                            <span className="text-xs font-normal opacity-70 ml-1 text-[var(--theme-subtext)]">
+                                                                (Optional)
+                                                            </span>
+                                                        </FormLabel>
+                                                        <FormControl>
+                                                            <Textarea
+                                                                {...field}
+                                                                placeholder="Describe your goals, timeline, references, or any specific requirements"
+                                                                className="min-h-[100px] resize-none border-[var(--theme-text)]/20 text-[var(--theme-text)] bg-[var(--theme-card-bg)]/50"
+                                                            />
+                                                        </FormControl>
+                                                        <FormMessage />
+                                                    </FormItem>
+                                                )}
+                                            />
+
+                                            {/* Package Selection */}
+                                            <FormField
+                                                control={form.control}
+                                                name="package"
+                                                render={({ field }) => (
+                                                    <FormItem className="space-y-3">
+                                                        <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">
+                                                            Select Package
+                                                        </FormLabel>
+
+                                                        {loadingService ? (
+                                                            <div className="flex items-center gap-2 text-sm text-muted-foreground p-4">
+                                                                <Loader2 className="h-4 w-4 animate-spin" />
+                                                                Loading packages...
+                                                            </div>
+                                                        ) : !selectedServiceSlug ? (
+                                                            <div
+                                                                className="text-sm p-4 border rounded-lg border-dashed text-center border-[var(--theme-text)]/20 text-[var(--theme-subtext)]"
+
+                                                            >
+                                                                Please select a service to view available packages.
+                                                            </div>
+                                                        ) : pricingSection?.plans?.length ? (
+                                                            <FormControl>
+                                                                <RadioGroup
+                                                                    onValueChange={field.onChange}
+                                                                    value={field.value}
+                                                                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3"
+                                                                >
+                                                                    {pricingSection.plans.map((plan: { name: string; price: string; description: string }) => {
+                                                                        const isSelected = field.value === plan.name;
+                                                                        const displayPrice = formatPriceToK(plan.price);
+
+                                                                        return (
+                                                                            <FormItem key={plan.name} className="h-full">
+                                                                                <FormControl>
+                                                                                    <div className="relative h-full">
+                                                                                        <RadioGroupItem
+                                                                                            value={plan.name}
+                                                                                            id={`pkg-${plan.name}`}
+                                                                                            className="peer sr-only"
+                                                                                        />
+                                                                                        <Label
+                                                                                            htmlFor={`pkg-${plan.name}`}
+                                                                                            className={cn(
+                                                                                                "flex flex-col h-full items-center justify-center text-center p-4 sm:p-5 rounded-xl border cursor-pointer transition-all duration-300 hover:scale-[1.02]",
+                                                                                                isSelected
+                                                                                                    ? "border-[var(--theme-accent-a)] bg-[var(--theme-accent-a)]/10"
+                                                                                                    : "border-[var(--theme-text)]/20 bg-[var(--theme-background)]/20"
+                                                                                            )}
+                                                                                        >
+                                                                                            <span
+                                                                                                className={cn(
+                                                                                                    "text-xs font-bold uppercase tracking-widest mb-3 font-satoshi truncate w-full",
+                                                                                                    isSelected ? "text-[var(--theme-accent-a)]" : "text-[var(--theme-subtext)]"
+                                                                                                )}
+                                                                                            >
+                                                                                                {plan.name}
+                                                                                            </span>
+
+                                                                                            <span
+                                                                                                className="text-2xl sm:text-3xl font-extrabold font-cabinet mb-3 tracking-tight text-[var(--theme-text)]"
+                                                                                            >
+                                                                                                {displayPrice}
+                                                                                            </span>
+
+                                                                                            <p
+                                                                                                className="text-xs font-medium leading-relaxed opacity-80 line-clamp-3 text-[var(--theme-subtext)]"
+                                                                                            >
+                                                                                                {plan.description}
+                                                                                            </p>
+                                                                                        </Label>
+                                                                                    </div>
+                                                                                </FormControl>
+                                                                            </FormItem>
+                                                                        );
+                                                                    })}
+                                                                </RadioGroup>
+                                                            </FormControl>
+                                                        ) : (
+                                                            <div
+                                                                className="text-sm p-4 border rounded-lg border-dashed text-center border-[var(--theme-text)]/20 text-[var(--theme-subtext)]"
+                                                            >
+                                                                No packages available for this service.
+                                                            </div>
+                                                        )}
+                                                        <FormMessage />
+                                                    </FormItem>
+                                                )}
+                                            />
+                                        </CardContent>
+                                    </Card>
+                                </div>
+
+                                {/* Personal & Contact Details Card */}
+                                <div className="relative w-full rounded-xl">
+
+                                    <RandomGradientGlow colorA={theme.accents.a} colorB={theme.accents.b} />
+                                    <Card className="form-card-glass border-white/20">
+                                        <CardHeader className="pb-4">
+                                            <div className="flex items-center gap-3">
+                                                <div className="p-2 rounded-lg bg-primary/10">
+                                                    <Check className="h-5 w-5 text-[var(--theme-accent-a)]" />
+                                                </div>
+                                                <div className="flex flex-col gap-1">
+                                                    <CardTitle className="font-satoshi text-lg text-[var(--theme-text)]">Personal & Contact Details</CardTitle>
+                                                    <CardDescription className="font-cabinet text-sm text-[var(--theme-subtext)]">
+                                                        How can we reach you?
+                                                    </CardDescription>
+                                                </div>
+                                            </div>
+                                        </CardHeader>
+                                        <CardContent className="space-y-6 pt-2">
+                                            <div className="grid gap-4 md:grid-cols-2">
+                                                <FormField
+                                                    control={form.control}
+                                                    name="name"
+                                                    render={({ field }) => (
+                                                        <FormItem>
+                                                            <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">
+                                                                Full Name
                                                             </FormLabel>
                                                             <FormControl>
-                                                                <Textarea
+                                                                <Input
+                                                                    placeholder="John Doe"
                                                                     {...field}
-                                                                    placeholder="Describe your goals, timeline, references, or any specific requirements"
-                                                                    className="min-h-[100px] resize-none"
-                                                                    style={{
-                                                                        borderColor: theme.text + "22",
-                                                                        color: theme.text,
-                                                                        background: `${theme.cardBg}80`,
-                                                                    }}
+                                                                    className="h-11 border-[var(--theme-text)]/20 bg-[var(--theme-card-bg)]/50 text-[var(--theme-text)]"
                                                                 />
                                                             </FormControl>
                                                             <FormMessage />
@@ -521,334 +614,159 @@ export default function ServiceForm({ initialCategory, initialService }: Service
                                                     )}
                                                 />
 
-                                                {/* Package Selection */}
                                                 <FormField
                                                     control={form.control}
-                                                    name="package"
+                                                    name="email"
                                                     render={({ field }) => (
-                                                        <FormItem className="space-y-3">
+                                                        <FormItem>
                                                             <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">
-                                                                Select Package
-                                                            </FormLabel>
-
-                                                            {loadingService ? (
-                                                                <div className="flex items-center gap-2 text-sm text-muted-foreground p-4">
-                                                                    <Loader2 className="h-4 w-4 animate-spin" />
-                                                                    Loading packages...
-                                                                </div>
-                                                            ) : !selectedServiceSlug ? (
-                                                                <div
-                                                                    className="text-sm p-4 border rounded-lg border-dashed text-center"
-                                                                    style={{ borderColor: theme.text + "22", color: theme.subtext }}
-                                                                >
-                                                                    Please select a service to view available packages.
-                                                                </div>
-                                                            ) : pricingSection?.plans?.length ? (
-                                                                <FormControl>
-                                                                    <RadioGroup
-                                                                        onValueChange={field.onChange}
-                                                                        value={field.value}
-                                                                        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3"
-                                                                    >
-                                                                        {pricingSection.plans.map((plan: { name: string; price: string; description: string }) => {
-                                                                            const isSelected = field.value === plan.name;
-                                                                            const displayPrice = formatPriceToK(plan.price);
-
-                                                                            return (
-                                                                                <FormItem key={plan.name} className="h-full">
-                                                                                    <FormControl>
-                                                                                        <div className="relative h-full">
-                                                                                            <RadioGroupItem
-                                                                                                value={plan.name}
-                                                                                                id={`pkg-${plan.name}`}
-                                                                                                className="peer sr-only"
-                                                                                            />
-                                                                                            <Label
-                                                                                                htmlFor={`pkg-${plan.name}`}
-                                                                                                className="flex flex-col h-full items-center justify-center text-center p-4 sm:p-5 rounded-xl border cursor-pointer transition-all duration-300 hover:scale-[1.02]"
-                                                                                                style={{
-                                                                                                    borderColor: isSelected
-                                                                                                        ? theme.accents.a
-                                                                                                        : theme.text + "30",
-                                                                                                    backgroundColor: isSelected
-                                                                                                        ? theme.accents.a + "0F"
-                                                                                                        : theme.background + "40",
-                                                                                                }}
-                                                                                            >
-                                                                                                <span
-                                                                                                    className="text-xs font-bold uppercase tracking-widest mb-3 font-satoshi truncate w-full"
-                                                                                                    style={{
-                                                                                                        color: isSelected
-                                                                                                            ? theme.accents.a
-                                                                                                            : theme.subtext,
-                                                                                                    }}
-                                                                                                >
-                                                                                                    {plan.name}
-                                                                                                </span>
-
-                                                                                                <span
-                                                                                                    className="text-2xl sm:text-3xl font-extrabold font-cabinet mb-3 tracking-tight"
-                                                                                                    style={{ color: theme.text }}
-                                                                                                >
-                                                                                                    {displayPrice}
-                                                                                                </span>
-
-                                                                                                <p
-                                                                                                    className="text-xs font-medium leading-relaxed opacity-80 line-clamp-3"
-                                                                                                    style={{ color: theme.subtext }}
-                                                                                                >
-                                                                                                    {plan.description}
-                                                                                                </p>
-                                                                                            </Label>
-                                                                                        </div>
-                                                                                    </FormControl>
-                                                                                </FormItem>
-                                                                            );
-                                                                        })}
-                                                                    </RadioGroup>
-                                                                </FormControl>
-                                                            ) : (
-                                                                <div
-                                                                    className="text-sm p-4 border rounded-lg border-dashed text-center"
-                                                                    style={{ borderColor: theme.text + "22", color: theme.subtext }}
-                                                                >
-                                                                    No packages available for this service.
-                                                                </div>
-                                                            )}
-                                                            <FormMessage />
-                                                        </FormItem>
-                                                    )}
-                                                />
-                                            </CardContent>
-                                        </Card>
-                                    </div>
-
-                                    {/* Personal & Contact Details Card */}
-                                    <div className="relative w-full rounded-xl">
-
-                                        <RandomGradientGlow colorA={theme.accents.a} colorB={theme.accents.b} />
-                                        <Card style={{
-                                            background: theme.cardBg,
-                                            border: `1px solid ${theme.text}22`,
-                                            color: theme.text,
-                                        }}>
-                                            <CardHeader className="pb-4">
-                                                <div className="flex items-center gap-3">
-                                                    <div className="p-2 rounded-lg bg-primary/10">
-                                                        <Check className="h-5 w-5" style={{ color: theme.accents.a }} />
-                                                    </div>
-                                                    <div className="flex flex-col gap-1">
-                                                        <CardTitle className="font-satoshi text-lg">Personal & Contact Details</CardTitle>
-                                                        <CardDescription className="font-cabinet text-sm" style={{ color: theme.subtext }}>
-                                                            How can we reach you?
-                                                        </CardDescription>
-                                                    </div>
-                                                </div>
-                                            </CardHeader>
-                                            <CardContent className="space-y-6 pt-2">
-                                                <div className="grid gap-4 md:grid-cols-2">
-                                                    <FormField
-                                                        control={form.control}
-                                                        name="name"
-                                                        render={({ field }) => (
-                                                            <FormItem>
-                                                                <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">
-                                                                    Full Name
-                                                                </FormLabel>
-                                                                <FormControl>
-                                                                    <Input
-                                                                        placeholder="John Doe"
-                                                                        {...field}
-                                                                        className="h-11"
-                                                                        style={{
-                                                                            border: `1px solid ${theme.text}22`,
-                                                                            background: `${theme.cardBg}80`,
-                                                                        }}
-                                                                    />
-                                                                </FormControl>
-                                                                <FormMessage />
-                                                            </FormItem>
-                                                        )}
-                                                    />
-
-                                                    <FormField
-                                                        control={form.control}
-                                                        name="email"
-                                                        render={({ field }) => (
-                                                            <FormItem>
-                                                                <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">
-                                                                    Email Address
-                                                                </FormLabel>
-                                                                <FormControl>
-                                                                    <Input
-                                                                        placeholder="john@example.com"
-                                                                        type="email"
-                                                                        {...field}
-                                                                        className="h-11"
-                                                                        style={{
-                                                                            border: `1px solid ${theme.text}22`,
-                                                                            background: `${theme.cardBg}80`,
-                                                                        }}
-                                                                    />
-                                                                </FormControl>
-                                                                <FormMessage />
-                                                            </FormItem>
-                                                        )}
-                                                    />
-
-                                                    <FormField
-                                                        control={form.control}
-                                                        name="country"
-                                                        render={({ field }) => (
-                                                            <FormItem>
-                                                                <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">
-                                                                    Country
-                                                                </FormLabel>
-                                                                <Select
-                                                                    onValueChange={field.onChange}
-                                                                    defaultValue={field.value}
-                                                                >
-                                                                    <FormControl>
-                                                                        <SelectTrigger
-                                                                            className="h-11 w-full"
-                                                                            style={{
-                                                                                border: `1px solid ${theme.text}22`,
-                                                                                background: `${theme.cardBg}80`,
-                                                                            }}
-                                                                        >
-                                                                            <SelectValue placeholder="Select your country" />
-                                                                        </SelectTrigger>
-                                                                    </FormControl>
-                                                                    <SelectContent
-                                                                        className="max-h-[300px]"
-                                                                        style={{
-                                                                            backgroundColor: theme.background,
-                                                                            borderColor: theme.text + "22",
-                                                                            color: theme.text,
-                                                                        }}
-                                                                    >
-                                                                        {COUNTRIES.map((country) => (
-                                                                            <SelectItem key={country.value} value={country.value}>
-                                                                                <div className="flex items-center gap-2">
-                                                                                    <span>{country.label}</span>
-                                                                                </div>
-                                                                            </SelectItem>
-                                                                        ))}
-                                                                    </SelectContent>
-                                                                </Select>
-                                                                <FormMessage />
-                                                            </FormItem>
-                                                        )}
-                                                    />
-
-                                                    <FormField
-                                                        control={form.control}
-                                                        name="phone"
-                                                        render={({ field }) => (
-                                                            <FormItem>
-                                                                <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">
-                                                                    Phone Number
-                                                                </FormLabel>
-                                                                <FormControl>
-                                                                    <Input
-                                                                        placeholder="123 456 7890"
-                                                                        type="tel"
-                                                                        {...field}
-                                                                        className="h-11"
-                                                                        style={{
-                                                                            border: `1px solid ${theme.text}22`,
-                                                                            background: `${theme.cardBg}80`,
-                                                                        }}
-                                                                    />
-                                                                </FormControl>
-                                                                <FormMessage />
-                                                            </FormItem>
-                                                        )}
-                                                    />
-                                                </div>
-
-                                                <div className="h-px w-full" style={{ backgroundColor: theme.text + "22" }} />
-
-                                                <FormField
-                                                    control={form.control}
-                                                    name="contactMethod"
-                                                    render={({ field }) => (
-                                                        <FormItem className="space-y-3">
-                                                            <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">
-                                                                Preferred Contact Method
+                                                                Email Address
                                                             </FormLabel>
                                                             <FormControl>
-                                                                <RadioGroup
-                                                                    onValueChange={field.onChange}
-                                                                    value={field.value}
-                                                                    className="flex flex-col space-y-2 sm:flex-row sm:space-y-0 sm:space-x-6"
-                                                                >
-                                                                    <div className="flex items-center space-x-2">
-                                                                        <RadioGroupItem
-                                                                            value="whatsapp"
-                                                                            id="whatsapp"
-                                                                            style={{
-                                                                                '--primary': theme.accents.a,
-                                                                                borderColor: theme.text + "44"
-                                                                            } as React.CSSProperties}
-                                                                        />
-                                                                        <Label htmlFor="whatsapp" className="font-normal cursor-pointer text-sm">
-                                                                            WhatsApp Call/Message
-                                                                        </Label>
-                                                                    </div>
-                                                                    <div className="flex items-center space-x-2">
-                                                                        <RadioGroupItem
-                                                                            value="email"
-                                                                            id="email"
-                                                                            style={{
-                                                                                '--primary': theme.accents.a,
-                                                                                borderColor: theme.text + "44"
-                                                                            } as React.CSSProperties}
-                                                                        />
-                                                                        <Label htmlFor="email" className="font-normal cursor-pointer text-sm">
-                                                                            Email
-                                                                        </Label>
-                                                                    </div>
-                                                                </RadioGroup>
+                                                                <Input
+                                                                    placeholder="john@example.com"
+                                                                    type="email"
+                                                                    {...field}
+                                                                    className="h-11 border-[var(--theme-text)]/20 bg-[var(--theme-card-bg)]/50 text-[var(--theme-text)]"
+                                                                />
                                                             </FormControl>
                                                             <FormMessage />
                                                         </FormItem>
                                                     )}
                                                 />
 
-                                                {submissionError && (
-                                                    <p className="text-sm font-medium text-destructive text-center pt-4">
-                                                        {submissionError}
-                                                    </p>
-                                                )}
-                                            </CardContent>
-                                            <CardFooter className="pt-4 border-t" style={{ borderColor: theme.text + "11" }}>
-                                                <Button
-                                                    type="submit"
-                                                    size="lg"
-                                                    className="w-full relative overflow-hidden group h-12 sm:h-14 text-base font-bold transition-all duration-300 hover:scale-[1.02]"
-                                                    style={{ backgroundColor: theme.accents.a, color: theme.primary }}
-                                                    disabled={isSubmitting || !form.formState.isValid}
-                                                >
-                                                    {isSubmitting ? (
-                                                        <>
-                                                            <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                                                            Sending Inquiry...
-                                                        </>
-                                                    ) : (
-                                                        <span className="relative z-10 flex items-center justify-center gap-2">
-                                                            Request a Proposal
-                                                            <ArrowRight size={18} />
-                                                        </span>
+                                                <FormField
+                                                    control={form.control}
+                                                    name="country"
+                                                    render={({ field }) => (
+                                                        <FormItem>
+                                                            <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">
+                                                                Country
+                                                            </FormLabel>
+                                                            <Select
+                                                                onValueChange={field.onChange}
+                                                                defaultValue={field.value}
+                                                            >
+                                                                <FormControl>
+                                                                    <SelectTrigger
+                                                                        className="h-11 w-full border-[var(--theme-text)]/20 bg-[var(--theme-card-bg)]/50 text-[var(--theme-text)]"
+                                                                    >
+                                                                        <SelectValue placeholder="Select your country" />
+                                                                    </SelectTrigger>
+                                                                </FormControl>
+                                                                <SelectContent
+                                                                    className="max-h-[300px] border-[var(--theme-text)]/20 bg-[var(--theme-background)] text-[var(--theme-text)]"
+                                                                >
+                                                                    {COUNTRIES.map((country) => (
+                                                                        <SelectItem key={country.value} value={country.value}>
+                                                                            <div className="flex items-center gap-2">
+                                                                                <span>{country.label}</span>
+                                                                            </div>
+                                                                        </SelectItem>
+                                                                    ))}
+                                                                </SelectContent>
+                                                            </Select>
+                                                            <FormMessage />
+                                                        </FormItem>
                                                     )}
-                                                </Button>
-                                            </CardFooter>
-                                        </Card>
-                                    </div>
-                                </form>
-                            </Form>
-                        )}
-                    </div>
+                                                />
+
+                                                <FormField
+                                                    control={form.control}
+                                                    name="phone"
+                                                    render={({ field }) => (
+                                                        <FormItem>
+                                                            <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">
+                                                                Phone Number
+                                                            </FormLabel>
+                                                            <FormControl>
+                                                                <Input
+                                                                    placeholder="123 456 7890"
+                                                                    type="tel"
+                                                                    {...field}
+                                                                    className="h-11 border-[var(--theme-text)]/20 bg-[var(--theme-card-bg)]/50 text-[var(--theme-text)]"
+                                                                />
+                                                            </FormControl>
+                                                            <FormMessage />
+                                                        </FormItem>
+                                                    )}
+                                                />
+                                            </div>
+
+                                            <div className="h-px w-full bg-[var(--theme-text)]/10" />
+
+                                            <FormField
+                                                control={form.control}
+                                                name="contactMethod"
+                                                render={({ field }) => (
+                                                    <FormItem className="space-y-3">
+                                                        <FormLabel className="text-xs font-bold uppercase tracking-[0.2em] opacity-60">
+                                                            Preferred Contact Method
+                                                        </FormLabel>
+                                                        <FormControl>
+                                                            <RadioGroup
+                                                                onValueChange={field.onChange}
+                                                                value={field.value}
+                                                                className="flex flex-col space-y-2 sm:flex-row sm:space-y-0 sm:space-x-6"
+                                                            >
+                                                                <div className="flex items-center space-x-2">
+                                                                    <RadioGroupItem
+                                                                        value="whatsapp"
+                                                                        id="whatsapp"
+                                                                        className="border-[var(--theme-text)]/40 data-[state=checked]:border-[var(--theme-accent-a)] data-[state=checked]:text-[var(--theme-accent-a)]"
+                                                                    />
+                                                                    <Label htmlFor="whatsapp" className="font-normal cursor-pointer text-sm text-[var(--theme-text)]">
+                                                                        WhatsApp Call/Message
+                                                                    </Label>
+                                                                </div>
+                                                                <div className="flex items-center space-x-2">
+                                                                    <RadioGroupItem
+                                                                        value="email"
+                                                                        id="email"
+                                                                        className="border-[var(--theme-text)]/40 data-[state=checked]:border-[var(--theme-accent-a)] data-[state=checked]:text-[var(--theme-accent-a)]"
+                                                                    />
+                                                                    <Label htmlFor="email" className="font-normal cursor-pointer text-sm text-[var(--theme-text)]">
+                                                                        Email
+                                                                    </Label>
+                                                                </div>
+                                                            </RadioGroup>
+                                                        </FormControl>
+                                                        <FormMessage />
+                                                    </FormItem>
+                                                )}
+                                            />
+
+                                            {submissionError && (
+                                                <p className="text-sm font-medium text-destructive text-center pt-4">
+                                                    {submissionError}
+                                                </p>
+                                            )}
+                                        </CardContent>
+                                        <CardFooter className="pt-4 border-t border-[var(--theme-text)]/10">
+                                            <Button
+                                                type="submit"
+                                                size="lg"
+                                                className="w-full relative overflow-hidden group h-12 sm:h-14 text-base font-bold transition-all duration-300 hover:scale-[1.02] bg-[var(--theme-accent-a)] text-[var(--theme-primary)]"
+                                                disabled={isSubmitting || !form.formState.isValid}
+                                            >
+                                                {isSubmitting ? (
+                                                    <>
+                                                        <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                                                        Sending Inquiry...
+                                                    </>
+                                                ) : (
+                                                    <span className="relative z-10 flex items-center justify-center gap-2">
+                                                        Request a Proposal
+                                                        <ArrowRight size={18} />
+                                                    </span>
+                                                )}
+                                            </Button>
+                                        </CardFooter>
+                                    </Card>
+                                </div>
+                            </form>
+                        </Form>
+                    )}
                 </div>
             </div>
         </div>

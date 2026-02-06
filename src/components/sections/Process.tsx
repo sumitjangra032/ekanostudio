@@ -11,23 +11,16 @@ export default function ProcessSection() {
   return (
     <section
       id="process"
-      className="relative w-full py-28 px-6"
-      style={{ backgroundColor: "var(--theme-background)" }}
+      className="relative w-full py-28 px-6 bg-[var(--theme-background)]"
     >
       <div className="max-w-6xl mx-auto w-full">
         {/* Top Tag */}
         <div
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6"
-          style={{
-            background: "rgba(255, 60, 40, 0.03)",
-            border: "1px solid rgba(255, 60, 40, 0.15)",
-            backdropFilter: "blur(4px)",
-          }}
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 bg-[var(--theme-accent-a)]/5 border border-[var(--theme-accent-a)]/20 backdrop-blur-[4px]"
         >
           <div className="pulse red" aria-hidden="true" />
           <span
-            className="text-xs font-medium tracking-wide"
-            style={{ color: "var(--theme-accent-a)" }}
+            className="text-xs font-medium tracking-wide text-[var(--theme-accent-a)]"
           >
             {PROCESS_CONTENT.tag.label}
           </span>
@@ -35,8 +28,7 @@ export default function ProcessSection() {
 
         {/* Title */}
         <h2
-          className="text-[32px] md:text-[42px] font-bold"
-          style={{ color: "var(--theme-text)" }}
+          className="text-[32px] md:text-[42px] font-bold text-[var(--theme-text)]"
         >
           <AnimatedLine
             text={PROCESS_CONTENT.title}
@@ -77,25 +69,12 @@ export default function ProcessSection() {
             >
               {/* Left Accent Line */}
               <div
-                className="absolute left-0 top-0 h-full w-[2px]"
-                style={{
-                  background: `linear-gradient(
-                    to bottom,
-                    transparent,
-                    var(--theme-accent-a),
-                    transparent
-                  )`,
-                }}
+                className="absolute left-0 top-0 h-full w-[2px] bg-gradient-to-b from-transparent via-[var(--theme-accent-a)] to-transparent"
               />
 
               {/* Step Badge */}
               <div
-                className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold mb-6"
-                style={{
-                  background: "rgba(255, 60, 40, 0.08)",
-                  color: "var(--theme-accent-a)",
-                  border: "1px solid rgba(255, 60, 40, 0.2)",
-                }}
+                className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold mb-6 bg-[var(--theme-accent-a)]/10 text-[var(--theme-accent-a)] border border-[var(--theme-accent-a)]/20"
               >
                 <span className="opacity-70">Step</span>
                 <span>{item.step}</span>
@@ -103,11 +82,7 @@ export default function ProcessSection() {
 
               {/* Card Title */}
               <h3
-                className="text-2xl font-semibold mb-5 tracking-tight"
-                style={{
-                  color: "var(--theme-text)",
-                  fontFamily: "var(--font-general-sans)",
-                }}
+                className="text-2xl font-semibold mb-5 tracking-tight text-[var(--theme-text)] font-[var(--font-general-sans)]"
               >
                 {item.title}
               </h3>
@@ -121,17 +96,12 @@ export default function ProcessSection() {
                   >
                     {/* Dot */}
                     <span
-                      className="mt-2 w-2 h-2 rounded-full flex-shrink-0"
-                      style={{ background: "var(--theme-accent-a)" }}
+                      className="mt-2 w-2 h-2 rounded-full flex-shrink-0 bg-[var(--theme-accent-a)]"
                     />
 
                     {/* Text */}
                     <p
-                      className="text-[15px] leading-relaxed font-light w-full max-w-none"
-                      style={{
-                        color: "var(--theme-subtext)",
-                        fontFamily: "var(--font-inter)",
-                      }}
+                      className="text-[15px] leading-relaxed font-light w-full max-w-none text-[var(--theme-subtext)] font-[var(--font-inter)]"
                     >
                       {String(bullet).replace(/\n+/g, " ")}
                     </p>
@@ -146,14 +116,8 @@ export default function ProcessSection() {
                   hover:opacity-100
                   transition-opacity duration-500
                   pointer-events-none
+                  bg-[radial-gradient(600px_circle_at_top_right,var(--theme-accent-a)_0.07,transparent_45%)]
                 "
-                style={{
-                  background: `radial-gradient(
-                    600px circle at top right,
-                    rgba(255, 60, 40, 0.07),
-                    transparent 45%
-                  )`,
-                }}
               />
             </div>
           ))}

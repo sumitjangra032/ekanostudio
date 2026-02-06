@@ -31,11 +31,7 @@ const SoftwareLogos = () => {
         <section className="py-8 border-b border-white/5 overflow-hidden pb-32">
             <div className="flex">
                 <div
-                    className="flex flex-shrink-0 gap-8 md:gap-16 px-6 md:px-8"
-                    style={{
-                        animation: "marquee-left 60s linear infinite",
-                        display: "flex",
-                    }}
+                    className="flex flex-shrink-0 gap-8 md:gap-16 px-6 md:px-8 animate-[marquee-left_60s_linear_infinite]"
                 >
                     {[...logos, ...logos, ...logos].map((logo, index) => (
                         <div key={index} className="flex flex-col items-center gap-3 group shrink-0 cursor-default">

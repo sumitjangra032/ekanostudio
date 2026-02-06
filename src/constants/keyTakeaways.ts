@@ -44,6 +44,10 @@ export const KEY_TAKEWAYS_CONTENT = {
       icon: WalletCards,
     },
     {
+      text: "Strategic Social Media Marketing & Ads",
+      icon: WalletCards,
+    },
+    {
       text: "Efficient Content & Creative Production",
       icon: Workflow,
     },

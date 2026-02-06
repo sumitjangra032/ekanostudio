@@ -33,10 +33,7 @@ export default function ServiceHero({ data }: { data: any }) {
     <section
       id="hero"
       ref={sectionRef}
-      className=" relative  min-h-screen flex items-center justify-center text-center "
-      style={{
-        color: theme.text,
-      }}
+      className=" relative  min-h-screen flex items-center justify-center text-center text-[var(--theme-text)]"
     >
       <ParallaxBackground
         image="/images/service-page-bg/wave-svg-1.svg"
@@ -62,17 +59,11 @@ export default function ServiceHero({ data }: { data: any }) {
           {Array.isArray(data.category) && (
             <div className="mb-6 flex justify-center">
               <div
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full"
-                style={{
-                  background: `${theme.accents.a}08`,
-                  border: `1px solid ${theme.accents.a}20`,
-                  backdropFilter: "blur(4px)",
-                }}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--theme-accent-a)]/5 border border-[var(--theme-accent-a)]/20 backdrop-blur-[4px]"
               >
                 <div className="pulse red" />
                 <span
-                  className="text-xs font-medium tracking-wide uppercase"
-                  style={{ color: theme.accents.a }}
+                  className="text-xs font-medium tracking-wide uppercase text-[var(--theme-accent-a)]"
                 >
                   {data.category.join(" → ")}
                 </span>
@@ -101,16 +92,14 @@ export default function ServiceHero({ data }: { data: any }) {
 
           {/* Strong Description */}
           <div
-            className="text-xl md:text-2xl font-semibold max-w-3xl mx-auto mb-6"
-            style={{ color: theme.subtext }}
+            className="text-xl md:text-2xl font-semibold max-w-3xl mx-auto mb-6 text-[var(--theme-subtext)]"
           >
             <AnimatedLine text={data.headline} delay={0.3} />
           </div>
 
           {/* Secondary Description */}
           <div
-            className="text-sm md:text-base max-w-2xl mx-auto mb-12"
-            style={{ color: theme.subtext }}
+            className="text-sm md:text-base max-w-2xl mx-auto mb-12 text-[var(--theme-subtext)]"
           >
             <AnimatedLine text={data.subheadline} delay={0.5} />
           </div>

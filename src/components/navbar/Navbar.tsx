@@ -32,33 +32,10 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-7xl ">
-      {/* Under Development Notice */}
-      {/* <div
-  className="absolute -top-4 left-1/2 -translate-x-1/2 px-6 py-1.5 rounded-full text-[11px] md:text-xs font-semibold tracking-[0.15em] uppercase"
-  style={{
-    background:
-      "linear-gradient(90deg, #ff3d3d 0%, #ff9f43 50%, #ffd36e 100%)",
-    color: "#0b0b0b",
-    boxShadow:
-      "0 6px 24px rgba(255, 120, 60, 0.55), inset 0 1px 0 rgba(255,255,255,0.4)",
-    border: "1px solid rgba(0,0,0,0.25)",
-  }}
->
-  🚧 Website Under Active Development — Features Are Being Updated
-</div> */}
+
 
       <nav
-        className="mx-auto w-full rounded-[40px] flex items-center justify-between px-4 py-2 relative transition-all duration-300"
-        style={
-          {
-            "--text": theme.text,
-            "--subtext": theme.subtext,
-            background: "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%)",
-            border: "1px solid rgba(255,255,255,0.05)",
-            backdropFilter: "blur(12px)",
-            boxShadow: "0 4px 20px -2px rgba(0,0,0,0.1)",
-          } as React.CSSProperties
-        }
+        className="mx-auto w-full rounded-[40px] flex items-center justify-between px-4 py-2 relative transition-all duration-300 bg-white/5 border border-white/5 backdrop-blur-xl shadow-[0_4px_20px_-2px_rgba(0,0,0,0.1)] [--text:var(--theme-text)] [--subtext:var(--theme-subtext)]"
       >
 
         <Link
@@ -71,8 +48,7 @@ export default function Navbar() {
             width={BRAND_LOGO.navbar.width}
             height={BRAND_LOGO.navbar.height}
             priority
-            className={BRAND_LOGO.navbar.className}
-            style={{ width: "auto" }}
+            className={`${BRAND_LOGO.navbar.className} w-auto`}
           />
         </Link>
 
@@ -96,26 +72,21 @@ export default function Navbar() {
                   className={`relative py-2 text-[13px] font-medium transition-all
                     ${isHighlighted
                       ? "text-white font-semibold tracking-wide"
-                      : ""
+                      : "text-[var(--theme-text)]/80"
                     }
                   `}
-                  style={!isHighlighted ? { color: theme.text + "cc" } : undefined}
                 >
                   <span className="relative z-10">{link.label}</span>
                   <span className="absolute left-1/2 -translate-x-1/2 bottom-0 w-full h-[4px] overflow-hidden pointer-events-none">
                     <span
-                      className="absolute inset-0 bg-gradient-to-r from-red-500 to-blue-500 scale-x-0 origin-left transition-transform duration-500 ease-out group-hover:scale-x-100"
-                      style={{
-                        clipPath: "polygon(0 40%, 100% 0%, 100% 100%, 0 60%)",
-                      }}
+                      className="absolute inset-0 bg-gradient-to-r from-red-500 to-blue-500 scale-x-0 origin-left transition-transform duration-500 ease-out group-hover:scale-x-100 [clip-path:polygon(0_40%,100%_0%,100%_100%,0_60%)]"
                     />
                   </span>
                 </Link>
 
                 {link.megaMenu && (
                   <div
-                    className={`flex items-center transition-transform duration-250 ease-in-out ${isOpen ? "rotate-180" : "rotate-0"}`}
-                    style={{ color: theme.text }}
+                    className={`flex items-center transition-transform duration-250 ease-in-out text-[var(--theme-text)] ${isOpen ? "rotate-180" : "rotate-0"}`}
                   >
                     <ChevronDownIcon size={15} />
                   </div>
@@ -138,8 +109,7 @@ export default function Navbar() {
 
         <button
           onClick={() => setMobileOpen(true)}
-          className="md:hidden flex items-center justify-center w-10 h-10 rounded-full"
-          style={{ color: theme.text }}
+          className="md:hidden flex items-center justify-center w-10 h-10 rounded-full text-[var(--theme-text)]"
           aria-label="Open menu"
         >
           <MenuIcon size={22} />
@@ -159,10 +129,9 @@ export default function Navbar() {
         />
         <div
           className={`
-            relative mx-auto mt-20 w-[92%] rounded-3xl p-6 transition-transform duration-300 ease-out
+            relative mx-auto mt-20 w-[92%] rounded-3xl p-6 transition-transform duration-300 ease-out bg-black
             ${mobileOpen ? "translate-y-0" : "-translate-y-5"}
           `}
-          style={{ background: "black" }}
         >
           <div className="flex flex-col gap-4">
             {NAV_LINKS.map((link) => (
@@ -170,8 +139,7 @@ export default function Navbar() {
                 key={link.label}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="text-sm font-medium flex items-center justify-between border-b border-[rgba(255,255,255,0.1)] pb-1"
-                style={{ color: theme.text }}
+                className="text-sm font-medium flex items-center justify-between border-b border-white/10 pb-1 text-[var(--theme-text)]"
               >
                 <span>{link.label}</span>
                 <ArrowUpRight size={14} />

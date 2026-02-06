@@ -54,12 +54,12 @@ export default function RandomGradientGlow({
 
   return (
     <div
-      className="absolute inset-0 pointer-events-none rounded-3xl"
+      className="absolute inset-0 pointer-events-none rounded-3xl [background:var(--glow-bg)] [filter:var(--glow-blur)]"
       style={{
-        background: gradients[variant],
-        filter: `blur(${blur}px)`,
+        "--glow-bg": gradients[variant],
+        "--glow-blur": `blur(${blur}px)`,
         opacity,
-      }}
+      } as React.CSSProperties}
     />
   );
 }

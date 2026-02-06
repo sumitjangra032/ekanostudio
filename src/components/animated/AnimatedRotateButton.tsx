@@ -44,39 +44,16 @@ export default function AnimatedRotateButton({
         flex items-center justify-center gap-1 text-white
         ${fullWidth ? "w-full justify-between" : "inline-flex"}
         ${className}
+        transition-all duration-350 ease-in-out
+        ${variant === "secondary"
+          ? "border-[1.5px] border-[var(--local-accent-a)]/30 [background:linear-gradient(90deg,var(--local-accent-a)/0.2,var(--local-accent-b)/0.2)] [box-shadow:0_0_12px_var(--local-accent-a)/0.6]"
+          : "border-2 border-transparent [background:linear-gradient(black,black)_padding-box,conic-gradient(from_230deg,transparent_0%,var(--local-accent-a)_12%,var(--local-accent-a)_50%,transparent_60%,var(--local-accent-b)_65%,transparent_98%)_border-box]"
+        }
       `}
       style={{
-        background:
-          variant === "secondary"
-            ? `
-              linear-gradient(
-                90deg,
-                ${accent.a}33 0%,
-                ${accent.b}33 100%
-              )
-            `
-            : `
-              linear-gradient(black, black) padding-box,
-              conic-gradient(
-                from 230deg,
-                transparent 0%,
-                ${accent.a} 12%,
-                ${accent.a} 50%,
-                transparent 60%,
-                ${accent.b} 65%,
-                transparent 98%
-              ) border-box
-            `,
-        border:
-          variant === "secondary"
-            ? `1.5px solid ${accent.a}55`
-            : "2px solid transparent",
-        boxShadow:
-          variant === "secondary"
-            ? `0 0 12px ${accent.a}a0`
-            : "none",
-        transition: "all 0.35s ease",
-      }}
+        "--local-accent-a": accent.a,
+        "--local-accent-b": accent.b,
+      } as React.CSSProperties}
     >
       {/* TEXT */}
       <div

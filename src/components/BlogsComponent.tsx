@@ -31,28 +31,18 @@ export default function BlogsComponent() {
 
     return (
         <section
-            className="px-4 sm:px-8 pt-28 pb-20 min-h-screen"
-            style={{
-                backgroundColor: theme.background,
-                color: theme.text,
-            }}
+            className="px-4 sm:px-8 pt-28 pb-20 min-h-screen bg-[var(--theme-background)] text-[var(--theme-text)]"
         >
             <div className="max-w-7xl mx-auto space-y-10">
 
                 {/* TOP TAG */}
                 <div className="flex justify-center">
                     <div
-                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full"
-                        style={{
-                            background: `${theme.accents.a}08`,
-                            border: `1px solid ${theme.accents.a}20`,
-                            backdropFilter: "blur(6px)",
-                        }}
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--theme-accent-a)]/5 border border-[var(--theme-accent-a)]/20 backdrop-blur-[6px]"
                     >
                         <div className="pulse red" />
                         <span
-                            className="text-xs font-medium tracking-wide uppercase"
-                            style={{ color: theme.accents.a }}
+                            className="text-xs font-medium tracking-wide uppercase text-[var(--theme-accent-a)]"
                         >
                             Knowledge Hub
                         </span>
@@ -60,12 +50,11 @@ export default function BlogsComponent() {
                 </div>
 
                 <div className="text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "var(--font-cabinet)" }}>
+                    <h1 className="text-4xl md:text-5xl font-bold mb-4 font-cabinet">
                         Our Latest Blogs
                     </h1>
                     <div
-                        className="max-w-3xl mx-auto text-sm md:text-base"
-                        style={{ color: theme.subtext }}
+                        className="max-w-3xl mx-auto text-sm md:text-base text-[var(--theme-subtext)]"
                     >
                         <AnimatedLine text="Insights, guides, and strategies to help you navigate the digital landscape." delay={0.15} />
                     </div>
@@ -80,21 +69,13 @@ export default function BlogsComponent() {
                     className="max-w-xl mx-auto relative"
                 >
                     <SearchIcon
-                        className="absolute left-4 top-1/2 -translate-y-1/2 z-10"
+                        className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-[var(--theme-subtext)]"
                         size={20}
-                        style={{ color: theme.subtext }}
                     />
                     <input
                         type="text"
                         placeholder="Search blogs..."
-                        className="w-full py-3 pl-12 pr-4 rounded-2xl outline-none transition-all"
-                        style={{
-                            background:
-                                "linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02))",
-                            color: theme.text,
-                            border: `1px solid ${theme.text}20`,
-                            backdropFilter: "blur(12px)",
-                        }}
+                        className="w-full py-3 pl-12 pr-4 rounded-2xl outline-none transition-all bg-gradient-to-b from-white/5 to-white/[0.02] text-[var(--theme-text)] border border-[var(--theme-text)]/20 backdrop-blur-xl focus:border-[var(--theme-accent-a)]/50"
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
                     />
@@ -120,66 +101,38 @@ export default function BlogsComponent() {
                 overflow-hidden
                 transition-all duration-500
                 hover:-translate-y-1
+                group
               "
                         >
                             {/* Left Accent Line */}
                             <div
-                                className="absolute left-0 top-0 h-full w-[2px]"
-                                style={{
-                                    background: `linear-gradient(
-                    to bottom,
-                    transparent,
-                    ${theme.accents.a},
-                    transparent
-                  )`,
-                                }}
+                                className="absolute left-0 top-0 h-full w-[2px] bg-gradient-to-b from-transparent via-[var(--theme-accent-a)] to-transparent"
                             />
 
                             <div className="mb-6">
-                                <blog.icon size={32} style={{ color: theme.accents.a }} />
+                                <blog.icon size={32} className="text-[var(--theme-accent-a)]" />
                             </div>
 
                             <h3
-                                className="text-lg font-semibold mb-3 tracking-tight"
-                                style={{
-                                    color: theme.text,
-                                    fontFamily: "var(--font-general-sans)",
-                                }}
+                                className="text-lg font-semibold mb-3 tracking-tight text-[var(--theme-text)] font-sans"
                             >
                                 {blog.name}
                             </h3>
 
                             <p
-                                className="text-[15px] leading-relaxed mb-6"
-                                style={{
-                                    color: theme.subtext,
-                                    fontFamily: "var(--font-inter)",
-                                }}
+                                className="text-[15px] leading-relaxed mb-6 text-[var(--theme-subtext)] font-inter"
                             >
                                 {blog.description}
                             </p>
 
                             <span
-                                className="text-sm font-medium opacity-70 hover:opacity-100 transition"
-                                style={{ color: theme.text }}
+                                className="text-sm font-medium opacity-70 group-hover:opacity-100 transition-opacity text-[var(--theme-text)]"
                             >
                                 Read Article →
                             </span>
 
                             <div
-                                className="
-                  absolute inset-0 opacity-0
-                  hover:opacity-100
-                  transition-opacity duration-500
-                  pointer-events-none
-                "
-                                style={{
-                                    background: `radial-gradient(
-                    600px circle at top right,
-                    ${theme.accents.a}12,
-                    transparent 45%
-                  )`,
-                                }}
+                                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none bg-[radial-gradient(600px_circle_at_top_right,var(--theme-accent-a)_0.08,transparent_45%)]"
                             />
                         </Link>
                     ))}

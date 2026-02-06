@@ -31,8 +31,7 @@ export default function HedgeBackground() {
 
             {/* Noise Overlay */}
             <div
-                className="absolute inset-0 opacity-[0.05]"
-                style={{ filter: 'url(#noiseFilter)' }}
+                className="absolute inset-0 opacity-[0.05] [filter:url(#noiseFilter)]"
             >
                 <svg className="h-full w-full">
                     <filter id="noiseFilter">
@@ -43,8 +42,7 @@ export default function HedgeBackground() {
             </div>
 
             {/* Vignette Mask */}
-            <div className="absolute inset-0 bg-radial-gradient-to-input from-transparent to-black opacity-80"
-                style={{ background: 'radial-gradient(circle at 50% 50%, transparent 40%, #000 100%)' }}
+            <div className="absolute inset-0 opacity-80 [background:radial-gradient(circle_at_50%_50%,transparent_40%,#000_100%)]"
             />
         </div>
     )

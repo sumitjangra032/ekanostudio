@@ -22,20 +22,20 @@ export const FAQ_CONTENT = {
       a: "Yes! We offer flexible integrations with most popular tools, apps, and platforms. If you need something specific, we can customize it for you.",
     },
     {
-      q: "How long does it take to get started?",
-      a: "Most clients get started within 24–48 hours. Our onboarding is simple and quick, so you can begin using the service almost immediately.",
+      q: "How fast can I get started with your service?",
+      a: "Most clients get started within 24–48 hours. Our onboarding process is simple, quick, and designed for efficient digital growth.",
     },
     {
-      q: "What kind of support do you offer?",
-      a: "We provide quick-response support through chat, email, and calls. Whether you have a question or need help with something, our team is always ready to assist.",
+      q: "Do you offer priority support for urgent projects?",
+      a: "Yes! We provide priority support through chat, email, and calls. Our team is always ready to assist with fast-track digital marketing and dev requests.",
     },
     {
-      q: "Is my data secure with you?",
-      a: "Absolutely. We follow strict security practices, use encrypted systems, and ensure your data stays private and protected at all times.",
+      q: "Can I track performance with real-time reporting?",
+      a: "Absolutely! We provide real-time reporting and constant performance insights via a dedicated dashboard, giving you full transparency on your growth.",
     },
     {
-      q: "Do you offer customized plans?",
-      a: "Yes, every business is different. We create custom plans based on your needs, goals, and budget.",
+      q: "Do you handle social media and content creation?",
+      a: "Yes, we offer comprehensive social media management and high-quality content creation services tailored for brands ready to scale.",
     },
     {
       q: "What if I need changes during the project?",

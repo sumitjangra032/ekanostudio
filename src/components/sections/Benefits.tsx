@@ -23,34 +23,28 @@ export default function Benefits() {
   return (
     <section
       id="benefits"
-      className="relative w-full py-28 px-6"
-      style={{
-        backgroundColor: theme.background,
-      }}
+      className="relative w-full py-28 px-6 bg-[var(--theme-background)]"
     >
 
       <div className="max-w-6xl mx-auto">
         {/* Top Tag */}
         <div className="flex items-center gap-2 font-semibold text-sm">
           <BENEFITS_CONTENT.tag.icon
-            className="w-4 h-4"
-            style={{ color: theme.primary }}
+            className="w-4 h-4 text-[var(--theme-primary)]"
           />
-          <span style={{ color: theme.text }}>{BENEFITS_CONTENT.tag.label}</span>
+          <span className="text-[var(--theme-text)]">{BENEFITS_CONTENT.tag.label}</span>
         </div>
 
         {/* Title */}
         <h2
-          className="text-[42px] font-bold mt-3"
-          style={{ color: theme.text }}
+          className="text-[42px] font-bold mt-3 text-[var(--theme-text)]"
         >
           <AnimatedLine text={BENEFITS_CONTENT.title} delay={0.1} isHeading={true} />
         </h2>
 
         {/* Subtitle */}
         <div
-          className="text-lg max-w-3xl mt-4 leading-relaxed"
-          style={{ color: theme.subtext }}
+          className="text-lg max-w-3xl mt-4 leading-relaxed text-[var(--theme-subtext)]"
         >
           <AnimatedLine text={BENEFITS_CONTENT.description} delay={0.1} />
         </div>
@@ -68,11 +62,7 @@ export default function Benefits() {
             return (
               <div
                 key={idx}
-                className="relative rounded-2xl shadow-sm p-8"
-                style={{
-                  background: theme.cardBg,
-                  border: `1px solid ${theme.text}15`,
-                }}
+                className="relative rounded-2xl shadow-sm p-8 bg-[var(--theme-card-bg)] border border-[var(--theme-text)]/10"
               >
 
 
@@ -82,16 +72,14 @@ export default function Benefits() {
 
                 {/* Title */}
                 <h3
-                  className="text-2xl font-medium mt-8 mb-3"
-                  style={{ color: theme.text }}
+                  className="text-2xl font-medium mt-8 mb-3 text-[var(--theme-text)]"
                 >
                   {item.title}
                 </h3>
 
                 {/* Description */}
                 <p
-                  className="leading-relaxed"
-                  style={{ color: theme.subtext }}
+                  className="leading-relaxed text-[var(--theme-subtext)]"
                 >
                   {item.desc}
                 </p>

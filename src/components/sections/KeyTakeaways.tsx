@@ -13,27 +13,18 @@ export default function KeyTakeaways() {
   return (
     <section
       id="key-takeaways"
-      className="relative w-full py-32 px-6 overflow-hidden"
-      style={{
-        backgroundColor: "var(--theme-background)",
-      }}
+      className="relative w-full py-32 px-6 overflow-hidden bg-[var(--theme-background)]"
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-top">
         {/* LEFT SIDE */}
         <div className="space-y-6 relative">
           {/* Tag with pulse */}
           <div
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full"
-            style={{
-              background: "rgba(255, 60, 40, 0.03)",
-              border: "1px solid rgba(255, 60, 40, 0.15)",
-              backdropFilter: "blur(4px)",
-            }}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-400/5 border border-red-400/15 backdrop-blur-[4px]"
           >
             <div className="pulse red" aria-hidden="true" />
             <span
-              className="text-xs font-medium tracking-wide"
-              style={{ color: "var(--theme-accent-a)" }}
+              className="text-xs font-medium tracking-wide text-[var(--theme-accent-a)]"
             >
               {KEY_TAKEWAYS_CONTENT.tag.label}
             </span>
@@ -41,8 +32,7 @@ export default function KeyTakeaways() {
 
           {/* Title with gradient */}
           <h2
-            className="text-[32px] md:text-[42px] font-bold leading-tight"
-            style={{ color: "var(--theme-text)" }}
+            className="text-[32px] md:text-[42px] font-bold leading-tight text-[var(--theme-text)]"
           >
             <AnimatedLine
               text={KEY_TAKEWAYS_CONTENT.title}
@@ -57,8 +47,7 @@ export default function KeyTakeaways() {
 
           {/* Description */}
           <div
-            className="text-md max-w-md leading-relaxed"
-            style={{ color: "var(--theme-subtext)" }}
+            className="text-md max-w-md leading-relaxed text-[var(--theme-subtext)]"
           >
             <AnimatedLine
               text={KEY_TAKEWAYS_CONTENT.description}
@@ -77,20 +66,11 @@ export default function KeyTakeaways() {
 
         {/* RIGHT SIDE — INFINITE VERTICAL SCROLLER */}
         <div
-          className="relative h-[520px] overflow-hidden pt-6"
-          style={{
-            maskImage: "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)",
-            WebkitMaskImage: "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)",
-          }}
+          className="relative h-[520px] overflow-hidden pt-6 [mask-image:linear-gradient(to_bottom,transparent,black_15%,black_85%,transparent)] [-webkit-mask-image:linear-gradient(to_bottom,transparent,black_15%,black_85%,transparent)]"
         >
           {/* Scrolling List */}
           <div
-            className="space-y-6"
-            style={{
-              animation: "marquee-vertical 20s linear infinite",
-              display: "flex",
-              flexDirection: "column",
-            }}
+            className="space-y-6 flex flex-col animate-[marquee-vertical_20s_linear_infinite]"
           >
             {takeawaysList.map((item, index) => {
               const Icon = item.icon;
@@ -111,28 +91,19 @@ export default function KeyTakeaways() {
                 >
                   {/* Left accent */}
                   <div
-                    className="absolute left-0 top-0 h-full w-[2px]"
-                    style={{
-                      background: `linear-gradient(
-                        to bottom,
-                        transparent,
-                        var(--theme-accent-a),
-                        transparent
-                      )`,
-                    }}
+                    className="absolute left-0 top-0 h-full w-[2px] bg-gradient-to-b from-transparent via-[var(--theme-accent-a)] to-transparent"
                   />
 
-                  <span
-                    className="font-medium"
-                    style={{ color: "var(--theme-text)" }}
+                  <h3
+                    className="font-medium text-[16px] md:text-[18px] text-[var(--theme-text)]"
                   >
                     {item.text}
-                  </span>
+                  </h3>
 
                   <Icon
                     size={24}
                     strokeWidth={2.2}
-                    style={{ color: "var(--theme-accent-a)" }}
+                    className="text-[var(--theme-accent-a)]"
                   />
                 </div>
               );

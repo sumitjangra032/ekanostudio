@@ -36,17 +36,11 @@ export default function ReviewCardScroller({
       className="relative w-full overflow-hidden py-8"
     >
       <div
-        className="absolute top-0 left-0 h-full w-[10%] z-20 pointer-events-none"
-        style={{
-          background: `linear-gradient(to right, ${theme.background}, transparent)`,
-        }}
+        className="absolute top-0 left-0 h-full w-[10%] z-20 pointer-events-none bg-gradient-to-r from-[var(--theme-background)] to-transparent"
       />
 
       <div
-        className="absolute top-0 right-0 h-full w-[10%] z-20 pointer-events-none"
-        style={{
-          background: `linear-gradient(to left, ${theme.background}, transparent)`,
-        }}
+        className="absolute top-0 right-0 h-full w-[10%] z-20 pointer-events-none bg-gradient-to-l from-[var(--theme-background)] to-transparent"
       />
 
       <m.div
@@ -76,13 +70,7 @@ function ReviewCard({ text, name, role, img, stars }: any) {
 
   return (
     <div
-      className="relative p-8 rounded-3xl h-full flex flex-col"
-      style={{
-        background: theme.cardBg,
-        border: `1px solid ${theme.text}15`,
-        backdropFilter: "blur(14px)", // This should now work!
-        WebkitBackdropFilter: "blur(14px)", // Ensure vendor prefix is present
-      }}
+      className="relative p-8 rounded-3xl h-full flex flex-col bg-black/40 border border-[var(--theme-text)]/10 backdrop-blur-[14px]"
     >
       {/* ... (rest of ReviewCard content) ... */}
 
@@ -94,8 +82,7 @@ function ReviewCard({ text, name, role, img, stars }: any) {
             <Star
               key={i}
               size={20}
-              fill={theme.accents.a}
-              stroke={theme.accents.a}
+              className="fill-[var(--theme-accent-a)] stroke-[var(--theme-accent-a)]"
             />
           ))}
         </div>
@@ -103,8 +90,7 @@ function ReviewCard({ text, name, role, img, stars }: any) {
 
       {/* QUOTE */}
       <p
-        className="leading-relaxed text-[17px] mb-10 flex-grow"
-        style={{ color: theme.text }}
+        className="leading-relaxed text-[17px] mb-10 flex-grow text-[var(--theme-text)]"
       >
         {text}
       </p>
@@ -125,15 +111,13 @@ function ReviewCard({ text, name, role, img, stars }: any) {
         {/* Name + Role */}
         <div className="flex flex-col">
           <span
-            className="text-[17px] font-semibold"
-            style={{ color: theme.text }}
+            className="text-[17px] font-semibold text-[var(--theme-text)]"
           >
             {name}
           </span>
 
           <span
-            className="text-sm"
-            style={{ color: theme.subtext }}
+            className="text-sm text-[var(--theme-subtext)]"
           >
             {role}
           </span>

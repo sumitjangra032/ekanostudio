@@ -2,9 +2,9 @@ export type ThemeName = keyof typeof THEMES;
 
 export const THEMES = {
   fusionDark: {
-    primary: "#ffffff",
+    primary: "#FF3C28",
     background: "#000000",
-    
+
     gradient1: `
       radial-gradient(circle at 05% 50%, rgba(255, 60, 40, 0.85) 0%, rgba(0,0,0,0) 20%),
       radial-gradient(circle at 100% 50%, rgba(30, 120, 255, 0.85) 0%, rgba(0,0,0,0) 30%)

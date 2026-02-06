@@ -16,31 +16,39 @@ import {
 const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
-  title: "Ekanostudio – Web Design, SEO & AI Automation Agency",
+  title: "SEO, Growth & Web Development | Performance Marketing",
   description:
-    "Accelerate your digital growth with Ekanostudio. Expert Web Design, SEO, AI Automation, and Performance Marketing services to scale your business online.",
+    "Get professional SEO, web development, and growth support. Ekanostudio offers real-time reporting, priority support, and expert digital marketing.",
   keywords: [
-    "digital transformation agency",
-    "web design agency",
-    "branding agency",
-    "digital marketing services",
-    "UI UX design",
-    "business consulting",
-    "SEO services",
+    "SEO",
+    "Growth",
+    "Web Development",
+    "Support",
+    "Performance Marketing",
+    "Content",
+    "How to",
+    "Get started",
+    "Social media",
+    "Real-time reporting",
+    "Priority support",
+    "started get",
+    "get startedget",
+    "startedget started",
+    "get started get",
   ],
   openGraph: {
-    title: "Ekanostudio – Digital Transformation & Consulting Agency",
+    title: "SEO, Growth & Web Development | Performance Marketing",
     description:
-      "Ekanostudio helps modern businesses grow through digital transformation, web development, branding, digital marketing, and strategic consulting.",
+      "Get professional SEO, web development, and growth support. Ekanostudio offers real-time reporting, priority support, and expert digital marketing.",
     url: SITE_URL,
     siteName: "Ekanostudio",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ekanostudio – Digital Transformation & Consulting Agency",
+    title: "SEO, Growth & Web Development | Performance Marketing",
     description:
-      "Ekanostudio helps modern businesses grow through digital transformation, web development, branding, digital marketing, and consulting.",
+      "Get professional SEO, web development, and growth support. Ekanostudio offers real-time reporting, priority support, and expert digital marketing.",
   },
   alternates: {
     canonical: SITE_URL,

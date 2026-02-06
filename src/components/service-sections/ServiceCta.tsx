@@ -45,8 +45,7 @@ export default function ServiceCta({ data }: { data: any }) {
                     </Link>
 
                     <h2
-                        className="text-[32px] md:text-[42px] font-bold leading-tight mb-4"
-                        style={{ color: theme.text }}
+                        className="text-[32px] md:text-[42px] font-bold leading-tight mb-4 text-[var(--theme-text)]"
                     >
                         <AnimatedLine
                             text={data.heading}
@@ -61,8 +60,7 @@ export default function ServiceCta({ data }: { data: any }) {
 
 
                     <div
-                        className="text-lg font-medium leading-relaxed mb-10"
-                        style={{ color: theme.subtext }}
+                        className="text-lg font-medium leading-relaxed mb-10 text-[var(--theme-subtext)]"
                     >
                         <AnimatedLine text={data.subheading} delay={0.3} />
                     </div>

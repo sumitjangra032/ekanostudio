@@ -14,10 +14,7 @@ export default function CTA() {
 
   return (
     <section
-      className="w-full py-32 px-6 text-center"
-      style={{
-        backgroundColor: "var(--theme-background)",
-      }}
+      className="w-full py-32 px-6 text-center bg-[var(--theme-background)]"
     >
       <div className="relative max-w-3xl mx-auto">
         <Link href="/" className="flex items-center justify-center mb-6">
@@ -32,8 +29,7 @@ export default function CTA() {
 
         {/* HEADLINE */}
         <div
-          className="text-4xl font-light leading-tight space-y-1"
-          style={{ color: "var(--theme-text)" }}
+          className="text-4xl font-light leading-tight space-y-1 text-[var(--theme-text)]"
         >
           <AnimatedLine text={CTA_CONTENT.title} delay={0.1} gradient={{
             from: "#fac175",
@@ -44,8 +40,7 @@ export default function CTA() {
 
         {/* DESCRIPTION */}
         <div
-          className="mt-6 text-lg font-medium leading-relaxed max-w-2xl mx-auto mb-6"
-          style={{ color: "var(--theme-subtext)" }}
+          className="mt-6 text-lg font-medium leading-relaxed max-w-2xl mx-auto mb-6 text-[var(--theme-subtext)]"
         >
           <AnimatedLine text={CTA_CONTENT.description} delay={0.4} textColor="var(--theme-subtext)" />
         </div>

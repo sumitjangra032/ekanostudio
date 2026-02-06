@@ -51,25 +51,18 @@ export default function ServiceRow({
         onClick={() =>
           !isDesktop && setActiveIndex(isActive ? null : index)
         }
-        className="relative flex items-center justify-between h-[120px] md:h-[160px] border-t cursor-pointer"
-        style={{ borderColor: `${theme.text}20` }}
+        className="relative flex items-center justify-between h-[120px] md:h-[160px] border-t cursor-pointer border-[var(--theme-text)]/20"
       >
         <span
-          className="ml-4 md:ml-6 text-xl md:text-2xl font-medium"
-          style={{ color: theme.subtext }}
+          className="ml-4 md:ml-6 text-xl md:text-2xl font-medium text-[var(--theme-subtext)]"
         >
           {String(index + 1).padStart(2, "0")}.
         </span>
 
         <m.h3
-          className="mr-10 md:mr-12 font-semibold text-right"
+          className="mr-10 md:mr-12 font-semibold text-right text-[clamp(22px,3vw,42px)] text-[var(--theme-text)] tracking-[-0.01em]"
           animate={{ x: isActive && isDesktop ? -18 : 0 }}
           transition={{ duration: 0.36, ease: NAKULA_EASE }}
-          style={{
-            fontSize: "clamp(22px, 3vw, 42px)",
-            color: theme.text,
-            letterSpacing: "-0.01em",
-          }}
         >
           {item.title}
         </m.h3>
@@ -81,12 +74,10 @@ export default function ServiceRow({
             className="relative w-4 h-4 md:w-5 md:h-5"
           >
             <span
-              className="absolute inset-0 m-auto h-[2px] w-full"
-              style={{ backgroundColor: theme.primary }}
+              className="absolute inset-0 m-auto h-[2px] w-full bg-[var(--theme-primary)]"
             />
             <span
-              className="absolute inset-0 m-auto w-[2px] h-full"
-              style={{ backgroundColor: theme.primary }}
+              className="absolute inset-0 m-auto w-[2px] h-full bg-[var(--theme-primary)]"
             />
           </m.div>
         </div>
@@ -103,22 +94,17 @@ export default function ServiceRow({
               opacity: { duration: 0.3, delay: 0.05 },
             }}
             className={`${isDesktop
-                ? "absolute left-0 right-0 top-full z-20"
-                : "relative"
+              ? "absolute left-0 right-0 top-full z-20"
+              : "relative"
               }`}
           >
             <div
-              className="mx-auto max-w-6xl mt-6 md:mt-10 border"
-              style={{
-                backgroundColor: theme.cardBg,
-                borderColor: `${theme.text}15`,
-              }}
+              className="mx-auto max-w-6xl mt-6 md:mt-10 border bg-[var(--theme-card-bg)] border-[var(--theme-text)]/[0.15]"
             >
               <div className="grid grid-cols-1 md:grid-cols-2">
                 <div className="p-6 md:p-12">
                   <p
-                    className="text-base md:text-lg mb-6"
-                    style={{ color: theme.subtext }}
+                    className="text-base md:text-lg mb-6 text-[var(--theme-subtext)]"
                   >
                     {item.description}
                   </p>
@@ -127,11 +113,7 @@ export default function ServiceRow({
                     {item.tags.map((tag: string, i: number) => (
                       <span
                         key={i}
-                        className="px-3 py-1.5 text-xs md:text-sm border rounded-full"
-                        style={{
-                          borderColor: `${theme.text}20`,
-                          color: theme.subtext,
-                        }}
+                        className="px-3 py-1.5 text-xs md:text-sm border rounded-full border-[var(--theme-text)]/20 text-[var(--theme-subtext)]"
                       >
                         {tag}
                       </span>

@@ -31,16 +31,16 @@ export default function ServiceCaseStudy({ data }: { data: any }) {
 
             <div className="max-w-4xl mx-auto">
                 <m.div
-                    className="flex justify-center items-center gap-2 font-semibold uppercase mb-4"
-                    style={{ y: yText, color: theme.primary }}
+                    className="flex justify-center items-center gap-2 font-semibold uppercase mb-4 text-[var(--theme-text)]"
+                    style={{ y: yText }}
                 >
                     <TrophyIcon size={16} />
                     Case Study
                 </m.div>
 
                 <m.h2
-                    className="text-4xl font-bold text-center mb-10"
-                    style={{ y: yText, color: theme.text }}
+                    className="text-4xl font-bold text-center mb-10 text-[var(--theme-text)]"
+                    style={{ y: yText }}
                 >
                     <AnimatedLine text={data.heading} delay={0.1} isHeading={true} />
                 </m.h2>
@@ -50,19 +50,14 @@ export default function ServiceCaseStudy({ data }: { data: any }) {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
-                    className="p-8 md:p-12 rounded-2xl border relative overflow-hidden group "
-                    style={{
-                        y: yCard,
-                        background: `linear-gradient(145deg, ${theme.cardBg}, ${theme.background})`,
-                        borderColor: `${theme.primary}20`
-                    }}
+                    className="p-8 md:p-12 rounded-2xl border relative overflow-hidden group service-card-gradient"
+                    style={{ y: yCard }}
                 >
                     <RandomGradientGlow colorA={theme.accents.a} colorB={theme.accents.b} />
 
                     <div className="relative z-10">
                         <div
-                            className="text-xl md:text-2xl leading-relaxed text-center"
-                            style={{ color: theme.text }}
+                            className="text-xl md:text-2xl leading-relaxed text-center text-[var(--theme-text)]"
                         >
                             <AnimatedLine text={data.content} delay={0.2} textSize="text-lg md:text-xl" textColor={theme.subtext} />
                         </div>

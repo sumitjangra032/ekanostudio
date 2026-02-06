@@ -16,8 +16,8 @@ export const PROCESS_CONTENT = {
       step: "01",
       title: "Quick Launch Process",
       bullets: [
-        "Start fast with minimal steps and zero complexity.",
-        "Streamlined onboarding built for maximum efficiency.",
+        "Get started fast with minimal steps and zero complexity.",
+        "Streamlined onboarding process built for web development efficiency.",
         "No unnecessary paperwork — get going instantly.",
       ],
     },

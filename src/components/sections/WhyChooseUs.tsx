@@ -13,8 +13,7 @@ export default function WhyChooseUs() {
   return (
     <div
       id="why-us"
-      className="relative w-full py-32 px-6 overflow-hidden"
-      style={{ backgroundColor: "var(--theme-background)" }}
+      className="relative w-full py-32 px-6 overflow-hidden bg-[var(--theme-background)]"
     >
       {/* Top divider */}
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent" aria-hidden="true" />
@@ -59,27 +58,12 @@ export default function WhyChooseUs() {
             >
               {/* Left Accent Line */}
               <div
-                className="absolute left-0 top-0 h-full w-[2px]"
-                style={{
-                  background: `linear-gradient(
-                    to bottom,
-                    transparent,
-                    var(--theme-accent-a),
-                    transparent
-                  )`,
-                }}
+                className="absolute left-0 top-0 h-full w-[2px] bg-gradient-to-b from-transparent via-[var(--theme-accent-a)] to-transparent"
               />
 
               {/* Hover Glow */}
               <div
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                style={{
-                  background: `radial-gradient(
-                    500px circle at top right,
-                    rgba(255, 60, 40, 0.07),
-                    transparent 45%
-                  )`,
-                }}
+                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none bg-[radial-gradient(500px_circle_at_top_right,rgba(255,60,40,0.07),transparent_45%)]"
               />
 
               {/* Icon */}
@@ -90,12 +74,8 @@ export default function WhyChooseUs() {
                   mb-8
                   backdrop-blur-md
                   transition-transform duration-300
-                  group-hover:scale-110
+                  group-hover:scale-110 bg-red-400/10 border border-red-400/15
                 "
-                style={{
-                  background: `rgba(255, 60, 40, 0.08)`,
-                  border: `1px solid rgba(255, 60, 40, 0.15)`,
-                }}
               >
                 <AnimateDownloadedSVG
                   src={card.icon}
@@ -106,21 +86,13 @@ export default function WhyChooseUs() {
 
               {/* Content */}
               <h3
-                className="text-2xl font-semibold mb-4 tracking-tight"
-                style={{
-                  color: "var(--theme-text)",
-                  fontFamily: "var(--font-general-sans)",
-                }}
+                className="text-2xl font-semibold mb-4 tracking-tight text-[var(--theme-text)] font-sans"
               >
                 {card.title}
               </h3>
 
               <p
-                className="text-[15px] leading-relaxed font-light"
-                style={{
-                  color: "var(--theme-subtext)",
-                  fontFamily: "var(--font-inter)",
-                }}
+                className="text-[15px] leading-relaxed font-light text-[var(--theme-subtext)] font-sans"
               >
                 {card.description}
               </p>

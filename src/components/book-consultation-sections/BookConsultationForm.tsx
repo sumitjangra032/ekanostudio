@@ -157,41 +157,32 @@ export default function BookConsultationForm() {
     }
 
     return (
-        <div className="flex items-center justify-center min-h-[calc(100vh-4rem)] p-4" style={{
-            backgroundColor: theme.background,
-            color: theme.text,
-        }}>
+        <div className="flex items-center justify-center min-h-[calc(100vh-4rem)] p-4 bg-[var(--theme-background)] text-[var(--theme-text)]">
             <div className="max-w-7xl w-full space-y-8 mt-20">
                 <div className="flex flex-col items-center justify-center ">
                     <m.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
-                        className="inline-flex items-center gap-1 px-4 py-2 rounded-full mb-6"
-                        style={{
-                            background: `${theme.accents.a}10`,
-                            border: `1px solid ${theme.accents.a}30`,
-                        }}
+                        className="inline-flex items-center gap-1 px-4 py-2 rounded-full mb-6 bg-[var(--theme-accent-a)]/10 border border-[var(--theme-accent-a)]/30"
                     >
-                        <div className="w-2 h-2 rounded-full pulse red" style={{ backgroundColor: theme.accents.a }} />
+                        <div className="w-2 h-2 rounded-full pulse red bg-[var(--theme-accent-a)]" />
                         <span
-                            className="text-xs font-bold uppercase tracking-wider font-satoshi"
-                            style={{ color: theme.accents.a }}
+                            className="text-xs font-bold uppercase tracking-wider font-satoshi text-[var(--theme-accent-a)]"
                         >
                             CONTACT US
                         </span>
                     </m.div>
                     <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-cabinet leading-[1.05] tracking-tighter mb-2 lg:mb-8">
-                        <span style={{ color: theme.text }}>Book  </span>
-                        <span style={{ color: theme.accents.a }}>Consultation</span>
+                        <span className="text-[var(--theme-text)]">Book  </span>
+                        <span className="text-[var(--theme-accent-a)]">Consultation</span>
 
                         <br />
                     </h1>
                     <div
-                        className="text-sm md:text-base lg:text-lg font-medium items-center justify-center leading-tight"
-                        style={{ color: theme.subtext }}
+                        className="text-sm md:text-base lg:text-lg font-medium items-center justify-center leading-tight text-[var(--theme-subtext)]"
                     >
-                        <AnimatedLine text={BOOK_CONSULTATION_CONTENT.description} textSize="text-lg" textColor={theme.subtext} />
+                        <AnimatedLine text={BOOK_CONSULTATION_CONTENT.description} textSize="text-lg" textColor="var(--theme-subtext)" />
                     </div>
                 </div>
 
@@ -203,17 +194,7 @@ export default function BookConsultationForm() {
 
                                 <RandomGradientGlow colorA={theme.accents.a} colorB={theme.accents.b} />
                                 <Card
-                                    style={{
-                                        background: theme.cardBg,
-                                        border: `1px solid ${theme.text}22`,
-                                        color: theme.text,
-                                        minHeight: "400px",
-                                        display: "flex",
-                                        flexDirection: "column",
-                                        alignItems: "center",
-                                        justifyContent: "center",
-                                        textAlign: "center",
-                                    }}
+                                    className="form-card-glass border-[var(--theme-text)]/20 min-h-[400px] flex flex-col items-center justify-center text-center text-[var(--theme-text)]"
                                 >
                                     <CardContent className="space-y-6 pt-8 pb-8">
                                         <m.div
@@ -222,18 +203,18 @@ export default function BookConsultationForm() {
                                             transition={{ type: "spring", stiffness: 200 }}
                                             className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4"
                                         >
-                                            <AnimateDownloadedSVG src={BOOK_CONSULTATION_CONTENT.confirmationPage.icon} size={35} stroke={theme.primary} />
+                                            <AnimateDownloadedSVG src={BOOK_CONSULTATION_CONTENT.confirmationPage.icon} size={35} stroke="var(--theme-primary)" />
                                         </m.div>
                                         <div className="text-center">
                                             <h2 className="text-3xl font-bold mb-2">
                                                 <AnimatedLine text={BOOK_CONSULTATION_CONTENT.confirmationPage.title} textSize="text-3xl" />
                                             </h2>
-                                            <p className="text-sm opacity-80" style={{ color: theme.subtext }}>
+                                            <p className="text-sm opacity-80 text-[var(--theme-subtext)]">
                                                 <AnimatedLine text={BOOK_CONSULTATION_CONTENT.confirmationPage.description} />
                                             </p>
                                         </div>
 
-                                        <div className="bg-primary/5 p-4 sm:p-6 rounded-lg space-y-3 text-left w-full border" style={{ borderColor: theme.text + "11" }}>
+                                        <div className="bg-primary/5 p-4 sm:p-6 rounded-lg space-y-3 text-left w-full border border-[var(--theme-text)]/10">
                                             <h3 className="font-semibold text-sm uppercase tracking-wider mb-4 opacity-70 text-center">Booking Details</h3>
 
                                             <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
@@ -259,7 +240,7 @@ export default function BookConsultationForm() {
                                             </div>
                                         </div>
 
-                                        <p className="text-sm text-center" style={{ color: theme.subtext }}>
+                                        <p className="text-sm text-center text-[var(--theme-subtext)]">
                                             You will receive a confirmation email shortly.
                                         </p>
 
@@ -283,16 +264,12 @@ export default function BookConsultationForm() {
 
                                         <RandomGradientGlow colorA={theme.accents.a} colorB={theme.accents.b} />
                                         <Card
-                                            style={{
-                                                background: theme.cardBg,
-                                                border: `1px solid ${theme.text}22`,
-                                                color: theme.text,
-                                            }}
+                                            className="form-card-glass border-[var(--theme-text)]/20 text-[var(--theme-text)]"
                                         >
                                             <CardHeader>
                                                 <div className="flex items-center gap-2">
                                                     <div className="p-2 rounded-md bg-primary/10 text-primary">
-                                                        <User className="h-5 w-5" style={{ color: theme.accents.a }} />
+                                                        <User className="h-5 w-5 text-[var(--theme-accent-a)]" />
                                                     </div>
                                                     <div className="flex flex-col gap-2">
                                                         <CardTitle>Personal Details</CardTitle>
@@ -313,10 +290,7 @@ export default function BookConsultationForm() {
                                                                 <Input
                                                                     placeholder="John Doe"
                                                                     {...field}
-                                                                    style={{
-                                                                        border: `1px solid ${theme.text}22`,
-                                                                        backgroundColor: theme.background,
-                                                                    }}
+                                                                    className="border-[var(--theme-text)]/20 bg-[var(--theme-background)] text-[var(--theme-text)]"
                                                                 />
                                                             </FormControl>
                                                             <FormMessage />
@@ -335,10 +309,7 @@ export default function BookConsultationForm() {
                                                                     placeholder="john@example.com"
                                                                     type="email"
                                                                     {...field}
-                                                                    style={{
-                                                                        border: `1px solid ${theme.text}22`,
-                                                                        backgroundColor: theme.background,
-                                                                    }}
+                                                                    className="border-[var(--theme-text)]/20 bg-[var(--theme-background)] text-[var(--theme-text)]"
                                                                 />
                                                             </FormControl>
                                                             <FormMessage />
@@ -358,22 +329,12 @@ export default function BookConsultationForm() {
                                                             >
                                                                 <FormControl>
                                                                     <SelectTrigger
-                                                                        className="w-full"
-                                                                        style={{
-                                                                            border: `1px solid ${theme.text}22`,
-                                                                            backgroundColor: theme.background,
-                                                                        }}
+                                                                        className="w-full border-[var(--theme-text)]/20 bg-[var(--theme-background)] text-[var(--theme-text)]"
                                                                     >
                                                                         <SelectValue placeholder="Select your country" />
                                                                     </SelectTrigger>
                                                                 </FormControl>
-                                                                <SelectContent className="max-h-[300px]" style={{
-                                                                    backgroundColor: theme.background,
-                                                                    borderColor: theme.text + "22",
-                                                                    color: theme.text,
-                                                                    "--accent": theme.primary + "15",
-                                                                    "--accent-foreground": theme.primary,
-                                                                } as React.CSSProperties}>
+                                                                <SelectContent className="max-h-[300px] border-[var(--theme-text)]/20 bg-[var(--theme-background)] text-[var(--theme-text)]">
                                                                     {COUNTRIES.map((country) => (
                                                                         <SelectItem
                                                                             key={country.value}
@@ -400,10 +361,7 @@ export default function BookConsultationForm() {
                                                                     placeholder="123 456 7890"
                                                                     type="tel"
                                                                     {...field}
-                                                                    style={{
-                                                                        border: `1px solid ${theme.text}22`,
-                                                                        backgroundColor: theme.background,
-                                                                    }}
+                                                                    className="border-[var(--theme-text)]/20 bg-[var(--theme-background)] text-[var(--theme-text)]"
                                                                 />
                                                             </FormControl>
                                                             <FormMessage />
@@ -423,12 +381,8 @@ export default function BookConsultationForm() {
                                                                     <PopoverTrigger asChild>
                                                                         <Button
                                                                             variant="outline"
-                                                                            className="w-full justify-start text-left font-normal px-3 hover:bg-primary/10"
-                                                                            style={{
-                                                                                border: `1px solid ${theme.text}22`,
-                                                                                backgroundColor: theme.background,
-                                                                                color: theme.text,
-                                                                            }}>
+                                                                            className="w-full justify-start text-left font-normal px-3 hover:bg-primary/10 border-[var(--theme-text)]/20 bg-[var(--theme-background)] text-[var(--theme-text)]"
+                                                                        >
                                                                             <CalendarIcon className="mr-2 h-4 w-4" />
                                                                             {field.value ? format(field.value, "PPP") : "Pick a date"}
                                                                         </Button>
@@ -447,15 +401,7 @@ export default function BookConsultationForm() {
                                                                                 }
                                                                             }}
                                                                             disabled={(date) => isBefore(date, startOfDay(new Date()))}
-                                                                            style={{
-                                                                                background: theme.background,
-                                                                                color: theme.text,
-                                                                                border: `1px solid ${theme.text}22`,
-                                                                                "--accent": theme.accents.a,
-                                                                                "--accent-foreground": theme.background,
-                                                                                "--muted": theme.text + "44",
-                                                                                "--muted-foreground": theme.subtext,
-                                                                            } as React.CSSProperties}
+                                                                            className="bg-[var(--theme-background)] text-[var(--theme-text)] border border-[var(--theme-text)]/20"
                                                                             initialFocus
                                                                         />
                                                                     </PopoverContent>
@@ -498,20 +444,12 @@ export default function BookConsultationForm() {
                                                                     >
                                                                         <FormControl>
                                                                             <SelectTrigger
-                                                                                className="flex-1"
-                                                                                style={{
-                                                                                    border: `1px solid ${theme.text}22`,
-                                                                                    backgroundColor: theme.background,
-                                                                                }}
+                                                                                className="flex-1 border-[var(--theme-text)]/20 bg-[var(--theme-background)] text-[var(--theme-text)]"
                                                                             >
                                                                                 <SelectValue placeholder="HH" />
                                                                             </SelectTrigger>
                                                                         </FormControl>
-                                                                        <SelectContent style={{
-                                                                            backgroundColor: theme.background,
-                                                                            borderColor: theme.text + "22",
-                                                                            color: theme.text
-                                                                        }}>
+                                                                        <SelectContent className="border-[var(--theme-text)]/20 bg-[var(--theme-background)] text-[var(--theme-text)]">
                                                                             {HOURS.map((h) => (
                                                                                 <SelectItem key={h} value={h}>{h}</SelectItem>
                                                                             ))}
@@ -525,20 +463,12 @@ export default function BookConsultationForm() {
                                                                     >
                                                                         <FormControl>
                                                                             <SelectTrigger
-                                                                                className="flex-1"
-                                                                                style={{
-                                                                                    border: `1px solid ${theme.text}22`,
-                                                                                    backgroundColor: theme.background,
-                                                                                }}
+                                                                                className="flex-1 border-[var(--theme-text)]/20 bg-[var(--theme-background)] text-[var(--theme-text)]"
                                                                             >
                                                                                 <SelectValue placeholder="MM" />
                                                                             </SelectTrigger>
                                                                         </FormControl>
-                                                                        <SelectContent style={{
-                                                                            backgroundColor: theme.background,
-                                                                            borderColor: theme.text + "22",
-                                                                            color: theme.text
-                                                                        }}>
+                                                                        <SelectContent className="border-[var(--theme-text)]/20 bg-[var(--theme-background)] text-[var(--theme-text)]">
                                                                             {MINUTES.map((m) => (
                                                                                 <SelectItem key={m} value={m}>{m}</SelectItem>
                                                                             ))}
@@ -552,20 +482,12 @@ export default function BookConsultationForm() {
                                                                     >
                                                                         <FormControl>
                                                                             <SelectTrigger
-                                                                                className="w-[80px]"
-                                                                                style={{
-                                                                                    border: `1px solid ${theme.text}22`,
-                                                                                    backgroundColor: theme.background,
-                                                                                }}
+                                                                                className="w-[80px] border-[var(--theme-text)]/20 bg-[var(--theme-background)] text-[var(--theme-text)]"
                                                                             >
                                                                                 <SelectValue placeholder="AM/PM" />
                                                                             </SelectTrigger>
                                                                         </FormControl>
-                                                                        <SelectContent style={{
-                                                                            backgroundColor: theme.background,
-                                                                            borderColor: theme.text + "22",
-                                                                            color: theme.text
-                                                                        }}>
+                                                                        <SelectContent className="border-[var(--theme-text)]/20 bg-[var(--theme-background)] text-[var(--theme-text)]">
                                                                             {PERIODS.map((p) => (
                                                                                 <SelectItem key={p} value={p}>{p}</SelectItem>
                                                                             ))}
@@ -586,15 +508,11 @@ export default function BookConsultationForm() {
                                     <div className="relative w-full rounded-xl">
 
                                         <RandomGradientGlow colorA={theme.accents.b} colorB={theme.accents.a} />
-                                        <Card style={{
-                                            background: theme.cardBg,
-                                            border: `1px solid ${theme.text}22`,
-                                            color: theme.text,
-                                        }}>
+                                        <Card className="bg-[var(--theme-card-bg)] border-[var(--theme-text)]/15 text-[var(--theme-text)]">
                                             <CardHeader >
                                                 <div className="flex items-center gap-2">
                                                     <div className="p-2 rounded-md bg-primary/10 text-primary">
-                                                        <Briefcase className="h-5 w-5" style={{ color: theme.accents.a }} />
+                                                        <Briefcase className="h-5 w-5 text-[var(--theme-accent-a)]" />
                                                     </div>
                                                     <div className="flex flex-col gap-2">
                                                         <CardTitle>Service Interest</CardTitle>
@@ -621,22 +539,12 @@ export default function BookConsultationForm() {
                                                                 >
                                                                     <FormControl>
                                                                         <SelectTrigger
-                                                                            className="w-full"
-                                                                            style={{
-                                                                                border: `1px solid ${theme.text}22`,
-                                                                                backgroundColor: theme.background,
-                                                                            }}
+                                                                            className="w-full border-[var(--theme-text)]/20 bg-[var(--theme-background)] text-[var(--theme-text)]"
                                                                         >
                                                                             <SelectValue placeholder="Select a category" />
                                                                         </SelectTrigger>
                                                                     </FormControl>
-                                                                    <SelectContent style={{
-                                                                        backgroundColor: theme.background,
-                                                                        borderColor: theme.text + "22",
-                                                                        color: theme.text,
-                                                                        "--accent": theme.primary + "15",
-                                                                        "--accent-foreground": theme.primary,
-                                                                    } as React.CSSProperties}>
+                                                                    <SelectContent className="border-[var(--theme-text)]/20 bg-[var(--theme-background)] text-[var(--theme-text)]">
                                                                         {SERVICES_CONTENT.categories.map((cat) => (
                                                                             <SelectItem key={cat.slug} value={cat.slug}>
                                                                                 {cat.name}
@@ -662,22 +570,12 @@ export default function BookConsultationForm() {
                                                                 >
                                                                     <FormControl>
                                                                         <SelectTrigger
-                                                                            className="w-full"
-                                                                            style={{
-                                                                                border: `1px solid ${theme.text}22`,
-                                                                                backgroundColor: theme.background,
-                                                                            }}
+                                                                            className="w-full border-[var(--theme-text)]/20 bg-[var(--theme-background)] text-[var(--theme-text)]"
                                                                         >
                                                                             <SelectValue placeholder={selectedCategorySlug ? "Select a service" : "Select a category first"} />
                                                                         </SelectTrigger>
                                                                     </FormControl>
-                                                                    <SelectContent style={{
-                                                                        backgroundColor: theme.background,
-                                                                        borderColor: theme.text + "22",
-                                                                        color: theme.text,
-                                                                        "--accent": theme.primary + "15",
-                                                                        "--accent-foreground": theme.primary,
-                                                                    } as React.CSSProperties}>
+                                                                    <SelectContent className="border-[var(--theme-text)]/20 bg-[var(--theme-background)] text-[var(--theme-text)]">
                                                                         {availableServices.map((service) => (
                                                                             <SelectItem key={service.slug} value={service.slug}>
                                                                                 {service.title}
@@ -698,15 +596,11 @@ export default function BookConsultationForm() {
                                     <div className="relative w-full rounded-xl">
 
                                         <RandomGradientGlow colorA={theme.accents.a} colorB={theme.accents.b} />
-                                        <Card style={{
-                                            background: theme.cardBg,
-                                            border: `1px solid ${theme.text}22`,
-                                            color: theme.text,
-                                        }}>
+                                        <Card className="form-card-glass border-[var(--theme-text)]/20 text-[var(--theme-text)]">
                                             <CardHeader>
                                                 <div className="flex items-center gap-2">
                                                     <div className="p-2 rounded-md bg-primary/10 text-primary">
-                                                        <Phone className="h-5 w-5" style={{ color: theme.accents.a }} />
+                                                        <Phone className="h-5 w-5 text-[var(--theme-accent-a)]" />
                                                     </div>
                                                     <div className="flex flex-col gap-2">
                                                         <CardTitle>Contact Preferences</CardTitle>
@@ -733,7 +627,7 @@ export default function BookConsultationForm() {
                                                                         <RadioGroupItem
                                                                             value="whatsapp"
                                                                             id="whatsapp"
-                                                                            style={{ "--primary": theme.accents.a, borderColor: theme.text + "44" } as React.CSSProperties}
+                                                                            className="border-[var(--theme-text)]/40 data-[state=checked]:border-[var(--theme-accent-a)] data-[state=checked]:text-[var(--theme-accent-a)]"
                                                                         />
                                                                         <Label htmlFor="whatsapp" className="font-normal cursor-pointer">
                                                                             WhatsApp Call/Message
@@ -743,7 +637,7 @@ export default function BookConsultationForm() {
                                                                         <RadioGroupItem
                                                                             value="email"
                                                                             id="email"
-                                                                            style={{ "--primary": theme.accents.a, borderColor: theme.text + "44" } as React.CSSProperties}
+                                                                            className="border-[var(--theme-text)]/40 data-[state=checked]:border-[var(--theme-accent-a)] data-[state=checked]:text-[var(--theme-accent-a)]"
                                                                         />
                                                                         <Label htmlFor="email" className="font-normal cursor-pointer">
                                                                             Email
@@ -760,12 +654,7 @@ export default function BookConsultationForm() {
                                                 {/* Fix 4: Error message stays within card */}
                                                 {submissionError && (
                                                     <div
-                                                        className="w-full rounded-lg border p-4 text-sm"
-                                                        style={{
-                                                            backgroundColor: `${theme.accents.a}15`,
-                                                            borderColor: `${theme.accents.a}30`,
-                                                            color: theme.accents.a,
-                                                        }}
+                                                        className="w-full rounded-lg border p-4 text-sm bg-[var(--theme-accent-a)]/15 border-[var(--theme-accent-a)]/30 text-[var(--theme-accent-a)]"
                                                     >
                                                         <div className="flex items-center gap-2">
                                                             <span className="text-red-500">⚠️</span>
@@ -778,12 +667,7 @@ export default function BookConsultationForm() {
                                                 <Button
                                                     type="submit"
                                                     size="lg"
-                                                    className="w-full relative overflow-hidden group h-14 text-base font-bold transition-all duration-300 hover:scale-[1.02]"
-                                                    style={{
-                                                        backgroundColor: theme.accents.a,
-                                                        color: theme.primary,
-                                                        maxWidth: "100%",
-                                                    }}
+                                                    className="w-full relative overflow-hidden group h-14 text-base font-bold transition-all duration-300 hover:scale-[1.02] bg-[var(--theme-accent-a)] text-[var(--theme-primary)]"
                                                     disabled={isSubmitting}
                                                 >
                                                     {isSubmitting ? (
@@ -809,16 +693,10 @@ export default function BookConsultationForm() {
                             {/* Why Choose Us Card */}
                             <div className="relative w-full rounded-xl">
 
-                                <Card style={{
-                                    background: theme.cardBg,
-                                    border: `1px solid ${theme.text}22`,
-                                    color: theme.text,
-                                }}>
+                                <Card className="form-card-glass border-[var(--theme-text)]/20 text-[var(--theme-text)]">
                                     <CardContent className="space-y-4">
                                         <div className="flex items-center gap-2">
-                                            <div className="p-2 rounded-md bg-primary/10 text-primary">
-                                                <Star className="h-5 w-5" style={{ color: theme.accents.b }} />
-                                            </div>
+                                            <Star className="h-5 w-5 text-[var(--theme-accent-b)]" />
                                             <div>
                                                 <CardTitle>
                                                     <AnimatedLine text={BOOK_CONSULTATION_CONTENT.whyChooseUs.title} textSize="text-xl" />
@@ -831,8 +709,8 @@ export default function BookConsultationForm() {
                                         <ul className="space-y-3">
                                             {BOOK_CONSULTATION_CONTENT.whyChooseUs.list.slice(0, 3).map((item, index) => (
                                                 <li key={index} className="flex gap-2 items-start text-sm">
-                                                    <Check className="h-4 w-4 mt-0.5 shrink-0" style={{ color: theme.accents.b }} />
-                                                    <span style={{ color: theme.subtext }}>{item}</span>
+                                                    <Check className="h-4 w-4 mt-0.5 shrink-0 text-[var(--theme-accent-b)]" />
+                                                    <span className="text-[var(--theme-subtext)]">{item}</span>
                                                 </li>
                                             ))}
                                         </ul>
@@ -843,16 +721,10 @@ export default function BookConsultationForm() {
                             {/* Projects Card */}
                             <div className="relative w-full rounded-xl">
 
-                                <Card style={{
-                                    background: theme.cardBg,
-                                    border: `1px solid ${theme.text}22`,
-                                    color: theme.text,
-                                }}>
+                                <Card className="form-card-glass border-[var(--theme-text)]/20 text-[var(--theme-text)]">
                                     <CardContent className="space-y-4">
                                         <div className="flex items-center gap-2">
-                                            <div className="p-2 rounded-md bg-primary/10 text-primary">
-                                                <FolderGit2 className="h-5 w-5" style={{ color: theme.accents.b }} />
-                                            </div>
+                                            <FolderGit2 className="h-5 w-5 text-[var(--theme-accent-b)]" />
                                             <div>
                                                 <CardTitle>
                                                     <AnimatedLine text={BOOK_CONSULTATION_CONTENT.projects.title} textSize="text-xl" />
@@ -870,16 +742,10 @@ export default function BookConsultationForm() {
                             {/* Contact Card */}
                             <div className="relative w-full rounded-xl">
 
-                                <Card style={{
-                                    background: theme.cardBg,
-                                    border: `1px solid ${theme.text}22`,
-                                    color: theme.text,
-                                }}>
+                                <Card className="form-card-glass border-[var(--theme-text)]/20 text-[var(--theme-text)]">
                                     <CardContent className="space-y-3 pt-0">
                                         <div className="flex items-center gap-2">
-                                            <div className="p-2 rounded-md bg-primary/10 text-primary">
-                                                <Phone className="h-5 w-5" style={{ color: theme.accents.b }} />
-                                            </div>
+                                            <Phone className="h-5 w-5 text-[var(--theme-accent-b)]" />
                                             <div className="text-xl">
                                                 <CardTitle>Contact Us</CardTitle>
                                             </div>
@@ -890,13 +756,12 @@ export default function BookConsultationForm() {
                                                 <Mail className="h-5 w-5" />
                                             </div>
                                             <div className="min-w-0">
-                                                <p className="text-xs font-semibold uppercase tracking-wider opacity-50 mb-1" style={{ color: theme.subtext }}>Email</p>
+                                                <p className="text-xs font-semibold uppercase tracking-wider opacity-50 mb-1 text-[var(--theme-subtext)]">Email</p>
                                                 {BOOK_CONSULTATION_CONTENT.contact.emails.map((email, idx) => (
                                                     <a
                                                         key={idx}
                                                         href={`mailto:${email}`}
-                                                        className="block text-sm hover:underline hover:opacity-80 transition-opacity truncate mb-0.5"
-                                                        style={{ color: theme.text }}
+                                                        className="block text-sm hover:underline hover:opacity-80 transition-opacity truncate mb-0.5 text-[var(--theme-text)]"
                                                     >
                                                         {email}
                                                     </a>
@@ -909,13 +774,12 @@ export default function BookConsultationForm() {
                                                 <Phone className="h-5 w-5" />
                                             </div>
                                             <div className="min-w-0">
-                                                <p className="text-xs font-semibold uppercase tracking-wider opacity-50 mb-1" style={{ color: theme.subtext }}>Phone</p>
+                                                <p className="text-xs font-semibold uppercase tracking-wider opacity-50 mb-1 text-[var(--theme-subtext)]">Phone</p>
                                                 {BOOK_CONSULTATION_CONTENT.contact.phones.map((phone, idx) => (
                                                     <a
                                                         key={idx}
                                                         href={`tel:${phone.replace(/\s+/g, '')}`}
-                                                        className="block text-sm hover:underline hover:opacity-80 transition-opacity truncate mb-0.5"
-                                                        style={{ color: theme.text }}
+                                                        className="block text-sm hover:underline hover:opacity-80 transition-opacity truncate mb-0.5 text-[var(--theme-text)]"
                                                     >
                                                         {phone}
                                                     </a>

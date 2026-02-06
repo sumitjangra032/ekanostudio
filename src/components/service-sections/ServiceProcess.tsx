@@ -120,25 +120,18 @@ export default function ServiceProcess({ data }: { data: any }) {
                         className="flex justify-center mb-6"
                     >
                         <div
-                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full"
-                            style={{
-                                background: `${theme.accents.a}08`,
-                                border: `1px solid ${theme.accents.a}20`,
-                                backdropFilter: "blur(4px)",
-                            }}
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--theme-accent-a)]/5 border border-[var(--theme-accent-a)]/20 backdrop-blur-[4px]"
                         >
                             <div className="pulse red" />
                             <span
-                                className="text-xs font-medium tracking-wide uppercase"
-                                style={{ color: theme.accents.a }}
+                                className="text-xs font-medium tracking-wide uppercase text-[var(--theme-accent-a)]"
                             >
                                 Process
                             </span>
                         </div>
                     </div>
                     <h2
-                        className="text-[32px] md:text-[42px] font-bold"
-                        style={{ color: theme.text }}
+                        className="text-[32px] md:text-[42px] font-bold text-[var(--theme-text)]"
                     >
                         <AnimatedLine
                             text="Step By Step"
@@ -159,22 +152,19 @@ export default function ServiceProcess({ data }: { data: any }) {
                     style={{ y: yTimeline }}
                 >
                     <div
-                        className="absolute left-4 md:left-[50%] w-[1px] -translate-x-1/2"
+                        className="absolute left-4 md:left-[50%] w-[1px] -translate-x-1/2 [background:linear-gradient(to_bottom,var(--theme-primary)/0,var(--theme-primary)/0.4,var(--theme-primary)/0)]"
                         style={{
                             top: lineStyle.top,
                             height: lineStyle.height,
-                            background: `linear-gradient(to bottom, ${theme.primary}00, ${theme.primary}40, ${theme.primary}00)`
                         }}
                     />
 
                     <m.div
-                        className="absolute left-4 md:left-[50%] w-[3px] -translate-x-1/2 origin-top rounded-full"
+                        className="absolute left-4 md:left-[50%] w-[3px] -translate-x-1/2 origin-top rounded-full bg-[var(--theme-primary)] [box-shadow:0_0_15px_var(--theme-primary)]"
                         style={{
                             top: lineStyle.top,
                             height: lineStyle.height,
-                            background: GLOW_COLOR,
                             scaleY,
-                            boxShadow: `0 0 15px ${GLOW_COLOR}`
                         }}
                     />
 
@@ -240,7 +230,7 @@ function ProcessStep({
             {/* Timeline Dot */}
             <m.div
                 ref={dotRef}
-                className="absolute left-4 md:left-[50%] top-1/2 w-4 h-4 rounded-full -translate-x-1/2 -translate-y-1/2 z-10"
+                className="absolute left-4 md:left-[50%] top-1/2 w-4 h-4 rounded-full -translate-x-1/2 -translate-y-1/2 z-10 border-2 border-solid"
                 initial={{
                     backgroundColor: theme.background,
                     borderColor: theme.primary,
@@ -263,7 +253,6 @@ function ProcessStep({
                         }
                 }
                 transition={{ duration: 0.5, ease: "backOut" }}
-                style={{ borderWidth: "2px", borderStyle: "solid" }}
             />
 
             <div className="hidden md:block md:w-1/2" />
@@ -285,27 +274,12 @@ function ProcessStep({
 
 
                     <div
-                        className="absolute left-0 top-0 h-full w-[2px]"
-                        style={{
-                            background: `linear-gradient(
-                                to bottom,
-                                transparent,
-                                ${theme.accents.a},
-                                transparent
-                            )`,
-                        }}
+                        className="absolute left-0 top-0 h-full w-[2px] bg-gradient-to-b from-transparent via-[var(--theme-accent-a)] to-transparent"
                     />
 
                     {/* Hover glow */}
                     <div
-                        className="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                        style={{
-                            background: `radial-gradient(
-                                600px circle at top right,
-                                ${theme.accents.a}12,
-                                transparent 45%
-                            )`,
-                        }}
+                        className="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-500 pointer-events-none bg-[radial-gradient(600px_circle_at_top_right,var(--theme-accent-a)/0.1,transparent_45%)]"
                     />
 
                     <RandomGradientGlow
@@ -319,35 +293,29 @@ function ProcessStep({
                     <div className="flex items-center gap-4 mb-4 justify-between relative z-10">
                         <div className="flex items-center gap-4">
                             <div
-                                className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
-                                style={{
-                                    background: `${theme.accents.a}14`,
-                                    border: `1px solid ${theme.accents.a}30`,
-                                }}
+                                className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 bg-[var(--theme-accent-a)]/10 border border-[var(--theme-accent-a)]/30"
                             >
                                 <AnimateDownloadedSVG
                                     src={step.icon}
                                     size={28}
-                                    stroke={theme.accents.a}
+                                    stroke="var(--theme-accent-a)"
                                     repeat={false}
                                 />
                             </div>
                             <h3
-                                className="text-2xl font-semibold tracking-tight"
-                                style={{ color: theme.text, fontFamily: "var(--font-general-sans)" }}
+                                className="text-2xl font-semibold tracking-tight text-[var(--theme-text)] font-sans"
                             >
                                 <AnimatedLine text={step.title} delay={0.1} />
                             </h3>
                         </div>
                         <span
-                            className="text-4xl font-black opacity-10"
-                            style={{ color: theme.accents.a }}
+                            className="text-4xl font-black opacity-10 text-[var(--theme-accent-a)]"
                         >
                             {idx + 1}
                         </span>
                     </div>
 
-                    <div className="leading-relaxed relative z-10" style={{ color: theme.subtext, fontFamily: "var(--font-inter)" }}>
+                    <div className="leading-relaxed relative z-10 text-[var(--theme-subtext)] font-inter">
                         <AnimatedLine text={step.description} />
                     </div>
                 </div>

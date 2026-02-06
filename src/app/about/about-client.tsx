@@ -11,20 +11,14 @@ export default function AboutPageClient() {
 
   return (
     <section
-      className="px-4 sm:px-8 pt-28 pb-24"
-      style={{ backgroundColor: theme.background, color: theme.text }}
+      className="px-4 sm:px-8 pt-28 pb-24 bg-[var(--theme-background)] text-[var(--theme-text)]"
     >
       <div className="max-w-6xl mx-auto space-y-20">
 
         {/* TOP TAG */}
         <div className="flex justify-center">
           <div
-            className="px-4 py-2 rounded-full text-xs tracking-wide uppercase font-medium"
-            style={{
-              background: `${theme.accents.a}10`,
-              border: `1px solid ${theme.accents.a}30`,
-              color: theme.accents.a,
-            }}
+            className="px-4 py-2 rounded-full text-xs tracking-wide uppercase font-medium bg-[var(--theme-accent-a)]/10 border border-[var(--theme-accent-a)]/30 text-[var(--theme-accent-a)]"
           >
             About Ekanostudio
           </div>
@@ -40,8 +34,7 @@ export default function AboutPageClient() {
           </h1>
 
           <p
-            className="max-w-3xl mx-auto text-base leading-relaxed"
-            style={{ color: theme.subtext }}
+            className="max-w-3xl mx-auto text-base leading-relaxed text-[var(--theme-subtext)]"
           >
             Ekanostudio is a modern digital services studio focused on building
             high-performance digital experiences for brands, startups, and
@@ -54,7 +47,7 @@ export default function AboutPageClient() {
         <div className="grid md:grid-cols-2 gap-10">
           <div className="rounded-3xl p-8 bg-black/40 border border-white/10 backdrop-blur-xl">
             <h3 className="text-2xl font-semibold mb-4">Our Approach</h3>
-            <p className="text-sm leading-relaxed" style={{ color: theme.subtext }}>
+            <p className="text-sm leading-relaxed text-[var(--theme-subtext)]">
               Every project at Ekanostudio starts with clarity. Before design or
               development, we focus on understanding your business goals,
               audience, and long-term vision. This ensures everything we build
@@ -64,7 +57,7 @@ export default function AboutPageClient() {
 
           <div className="rounded-3xl p-8 bg-black/40 border border-white/10 backdrop-blur-xl">
             <h3 className="text-2xl font-semibold mb-4">What We Do</h3>
-            <p className="text-sm leading-relaxed" style={{ color: theme.subtext }}>
+            <p className="text-sm leading-relaxed text-[var(--theme-subtext)]">
               From UI/UX design and web development to SEO, marketing,
               automation, and branding — we offer end-to-end digital services
               under one roof. Everything we build works together as a complete
@@ -94,7 +87,7 @@ export default function AboutPageClient() {
               className="rounded-3xl p-8 bg-black/40 border border-white/10 backdrop-blur-xl"
             >
               <h4 className="text-xl font-semibold mb-3">{item.title}</h4>
-              <p className="text-sm leading-relaxed" style={{ color: theme.subtext }}>
+              <p className="text-sm leading-relaxed text-[var(--theme-subtext)]">
                 {item.text}
               </p>
             </div>
@@ -125,12 +118,11 @@ export default function AboutPageClient() {
                 className="rounded-3xl p-6 bg-black/40 border border-white/10 backdrop-blur-xl"
               >
                 <span
-                  className="text-sm font-semibold"
-                  style={{ color: theme.accents.a }}
+                  className="text-sm font-semibold text-[var(--theme-accent-a)]"
                 >
                   {item.year}
                 </span>
-                <p className="mt-3 text-sm" style={{ color: theme.subtext }}>
+                <p className="mt-3 text-sm text-[var(--theme-subtext)]">
                   {item.text}
                 </p>
               </div>
@@ -146,26 +138,26 @@ export default function AboutPageClient() {
 
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div className="rounded-3xl p-8 bg-black/40 border border-white/10 backdrop-blur-xl flex flex-col items-center gap-3">
-              <MapPinIcon size={26} style={{ color: theme.accents.a }} />
+              <MapPinIcon size={26} className="text-[var(--theme-accent-a)]" />
               <h4 className="text-lg font-semibold">Address</h4>
-              <p className="text-sm" style={{ color: theme.subtext }}>
+              <p className="text-sm text-[var(--theme-subtext)]">
                 Hisar, Haryana<br />India
               </p>
             </div>
 
             <div className="rounded-3xl p-8 bg-black/40 border border-white/10 backdrop-blur-xl flex flex-col items-center gap-3">
-              <MailIcon size={26} style={{ color: theme.accents.a }} />
+              <MailIcon size={26} className="text-[var(--theme-accent-a)]" />
               <h4 className="text-lg font-semibold">Email</h4>
-              <p className="text-sm" style={{ color: theme.subtext }}>
+              <p className="text-sm text-[var(--theme-subtext)]">
                 info@ekanostudio.com<br />
                 support@ekanostudio.com
               </p>
             </div>
 
             <div className="rounded-3xl p-8 bg-black/40 border border-white/10 backdrop-blur-xl flex flex-col items-center gap-2">
-              <PhoneIcon size={26} style={{ color: theme.accents.a }} />
+              <PhoneIcon size={26} className="text-[var(--theme-accent-a)]" />
               <h4 className="text-lg font-semibold">Phone</h4>
-              <p className="text-sm" style={{ color: theme.subtext }}>
+              <p className="text-sm text-[var(--theme-subtext)]">
                 +91 9034817987
               </p>
             </div>
@@ -177,7 +169,7 @@ export default function AboutPageClient() {
           <h3 className="text-2xl font-semibold">
             Let's Build Something That Lasts
           </h3>
-          <p className="text-sm" style={{ color: theme.subtext }}>
+          <p className="text-sm text-[var(--theme-subtext)]">
             If you're looking for a digital partner who understands design,
             technology, and business — Ekanostudio is ready.
           </p>

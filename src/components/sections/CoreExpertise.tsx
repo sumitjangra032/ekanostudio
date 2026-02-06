@@ -24,35 +24,27 @@ export default function CoreExpertise() {
         <section
             id="core-expertise"
             ref={containerRef}
-            className="relative w-full py-20 px-4 md:py-32 md:px-6"
-            style={{ backgroundColor: theme.background }}
+            className="relative w-full py-20 px-4 md:py-32 md:px-6 bg-[var(--theme-background)]"
         >
             <div className="max-w-6xl mx-auto">
                 {/* Header */}
                 {/* Header */}
                 <div className="text-center md:text-left mb-20 max-w-3xl">
                     <div
-                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6"
-                        style={{
-                            background: `${theme.accents.a}08`,
-                            border: `1px solid ${theme.accents.a}20`,
-                            backdropFilter: "blur(4px)",
-                        }}
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 bg-[var(--theme-accent-a)]/5 border border-[var(--theme-accent-a)]/15 backdrop-blur-[4px]"
                     >
                         {/* CSS Pulse Dot */}
                         <div className="pulse red"></div>
 
                         <span
-                            className="text-xs font-medium tracking-wide "
-                            style={{ color: theme.accents.a }}
+                            className="text-xs font-medium tracking-wide text-[var(--theme-accent-a)]"
                         >
                             {CORE_EXPERTISE_CONTENT.tag.label}
                         </span>
                     </div>
 
                     <h2
-                        className="text-[32px] md:text-[42px] font-semibold mb-2"
-                        style={{ color: theme.text, fontFamily: "var(--font-general-sans)" }}
+                        className="text-[32px] md:text-[42px] font-semibold mb-2 text-[var(--theme-text)] font-sans"
                     >
                         <AnimatedLine text={CORE_EXPERTISE_CONTENT.title} isHeading={true} gradient={{
                             from: "#fac175",
@@ -124,8 +116,8 @@ function CoreExpertiseCard({
             transition={{ duration: 0.6, delay: index * 0.1 }}
             className="sticky w-full origin-top top-24 md:top-[120px]"
             style={{
-                zIndex: index + 1,
                 scale,
+                zIndex: index + 1
             }}
         >
             <div
@@ -145,25 +137,13 @@ function CoreExpertiseCard({
 
                 {/* Left Accent Line */}
                 <div
-                    className="absolute left-0 top-0 h-full w-[2px]"
-                    style={{
-                        background: `linear-gradient(
-              to bottom,
-              transparent,
-              ${theme.accents.a},
-              transparent
-            )`,
-                    }}
+                    className="absolute left-0 top-0 h-full w-[2px] bg-gradient-to-b from-transparent via-[var(--theme-accent-a)] to-transparent"
                 />
 
                 {/* CONTENT */}
                 <div className="flex-1 p-6 md:p-12 flex flex-col justify-center relative z-10">
                     <h3
-                        className="text-2xl md:text-3xl font-semibold mb-6 tracking-tight"
-                        style={{
-                            color: theme.text,
-                            fontFamily: "var(--font-general-sans)",
-                        }}
+                        className="text-2xl md:text-3xl font-semibold mb-6 tracking-tight text-[var(--theme-text)] font-sans"
                     >
                         {card.title}
                     </h3>
@@ -182,12 +162,7 @@ function CoreExpertiseCard({
                         {card.tags.map((tag, tIdx) => (
                             <span
                                 key={tIdx}
-                                className="px-4 py-2 rounded-full text-sm font-medium border backdrop-blur-md"
-                                style={{
-                                    borderColor: `${theme.accents.a}30`,
-                                    color: theme.subtext,
-                                    background: `${theme.accents.a}10`,
-                                }}
+                                className="px-4 py-2 rounded-full text-sm font-medium border border-[var(--theme-accent-a)]/20 text-[var(--theme-subtext)] bg-[var(--theme-accent-a)]/10 backdrop-blur-md"
                             >
                                 {tag}
                             </span>
@@ -199,14 +174,7 @@ function CoreExpertiseCard({
                 <div className="relative w-full md:flex-1 h-64 md:h-auto overflow-hidden">
                     {/* Gradient Overlay */}
                     <div
-                        className="absolute inset-0 z-10"
-                        style={{
-                            background: `radial-gradient(
-                600px circle at top right,
-                ${theme.accents.a}25,
-                transparent 45%
-              )`,
-                        }}
+                        className="absolute inset-0 z-10 bg-[radial-gradient(600px_circle_at_top_right,var(--theme-accent-a)_0.25,transparent_45%)]"
                     />
 
                     {/* Image */}
@@ -241,7 +209,7 @@ function StaticLine({
     const words = text ? (text.match(regex) || []) : [];
 
     return (
-        <p className={className} style={{ color: textColor }}>
+        <p className={`${className} text-[var(--theme-subtext)]`}>
             {words.map((word, i) => {
                 const isTarget =
                     (word.startsWith("{") && word.endsWith("}")) ||
@@ -259,8 +227,7 @@ function StaticLine({
                 const content = (
                     <span
                         key={i}
-                        className={`inline-block mr-2 px-[0.045em] ${isTarget ? "font-medium" : ""} ${linkUrl ? "hover:underline cursor-pointer" : ""}`}
-                        style={isTarget ? { color: highlightColor } : undefined}
+                        className={`inline-block mr-2 px-[0.045em] ${isTarget ? "font-medium text-[var(--theme-accent-a)]" : ""} ${linkUrl ? "hover:underline cursor-pointer" : ""}`}
                     >
                         {cleanText}
                     </span>

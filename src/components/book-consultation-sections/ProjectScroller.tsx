@@ -19,16 +19,10 @@ export default function ProjectScroller({ projects }: ProjectScrollerProps) {
     return (
         <div className="relative w-full overflow-hidden">
             <div
-                className="absolute left-0 top-0 bottom-0 w-8 z-10"
-                style={{
-                    background: `linear-gradient(to right, ${theme.cardBg}, transparent)`,
-                }}
+                className="absolute left-0 top-0 bottom-0 w-8 z-10 bg-gradient-to-r from-[var(--theme-card-bg)] to-transparent"
             />
             <div
-                className="absolute right-0 top-0 bottom-0 w-8 z-10"
-                style={{
-                    background: `linear-gradient(to left, ${theme.cardBg}, transparent)`,
-                }}
+                className="absolute right-0 top-0 bottom-0 w-8 z-10 bg-gradient-to-l from-[var(--theme-card-bg)] to-transparent"
             />
             <m.div
                 className="flex gap-3 w-max"
@@ -44,20 +38,16 @@ export default function ProjectScroller({ projects }: ProjectScrollerProps) {
                 {list.map((project, i) => (
                     <div
                         key={i}
-                        className="flex-shrink-0 w-[240px] group flex flex-col justify-between p-4 rounded-lg border transition-colors cursor-pointer"
-                        style={{
-                            background: `${theme.text}05`, // subtle background
-                            borderColor: `${theme.text}11`,
-                        }}
+                        className="flex-shrink-0 w-[240px] group flex flex-col justify-between p-4 rounded-lg border transition-colors cursor-pointer bg-[var(--theme-text)]/5 border-[var(--theme-text)]/[0.07]"
                     >
                         <div className="space-y-2">
                             <div className="flex items-center gap-2 mb-1">
-                                <FolderGit2 size={16} style={{ color: theme.accents.b }} />
-                                <p className="font-semibold leading-none text-sm" style={{ color: theme.text }}>
+                                <FolderGit2 size={16} className="text-[var(--theme-accent-b)]" />
+                                <p className="font-semibold leading-none text-sm text-[var(--theme-text)]">
                                     {project.title}
                                 </p>
                             </div>
-                            <p className="text-xs line-clamp-2" style={{ color: theme.subtext }}>
+                            <p className="text-xs line-clamp-2 text-[var(--theme-subtext)]">
                                 {project.description}
                             </p>
                         </div>

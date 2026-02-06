@@ -13,24 +13,17 @@ export default function FAQ() {
   return (
     <section
       id="faq"
-      className="relative w-full py-32 px-6 overflow-hidden"
-      style={{ backgroundColor: "var(--theme-background)" }}
+      className="relative w-full py-32 px-6 overflow-hidden bg-[var(--theme-background)]"
     >
       {/* HEADER */}
       <div className="max-w-4xl mx-auto text-center relative z-10">
         {/* Tag */}
         <div
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6"
-          style={{
-            background: "rgba(255, 60, 40, 0.03)",
-            border: "1px solid rgba(255, 60, 40, 0.15)",
-            backdropFilter: "blur(4px)",
-          }}
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 bg-red-400/5 border border-red-400/15 backdrop-blur-[4px]"
         >
           <div className="pulse red" aria-hidden="true" />
           <span
-            className="text-xs font-medium tracking-wide"
-            style={{ color: "var(--theme-accent-a)" }}
+            className="text-xs font-medium tracking-wide text-[var(--theme-accent-a)]"
           >
             {FAQ_CONTENT.tag.label}
           </span>
@@ -38,8 +31,7 @@ export default function FAQ() {
 
         {/* Title */}
         <h2
-          className="text-[32px] md:text-[42px] font-bold"
-          style={{ color: "var(--theme-text)" }}
+          className="text-[32px] md:text-[42px] font-bold text-[var(--theme-text)]"
         >
           <AnimatedLine
             text={FAQ_CONTENT.title}
@@ -54,8 +46,7 @@ export default function FAQ() {
 
         {/* Description */}
         <div
-          className="max-w-2xl mx-auto mt-4 leading-relaxed"
-          style={{ color: "var(--theme-subtext)" }}
+          className="max-w-2xl mx-auto mt-4 leading-relaxed text-[var(--theme-subtext)]"
         >
           <AnimatedLine
             text={FAQ_CONTENT.description}

@@ -113,20 +113,12 @@ export default function LetsCollab() {
                 {/* Main Content */}
                 <div
                     ref={containerRef}
-                    className="flex flex-col gap-6 items-center justify-center z-10 px-8 max-w-4xl relative"
-                    style={{ cursor: isHovering ? 'none' : 'default' }}
+                    className={`flex flex-col gap-6 items-center justify-center z-10 px-8 max-w-4xl relative ${isHovering ? 'cursor-none' : 'cursor-default'}`}
                 >
                     {/* Cursor */}
                     <div
                         ref={cursorRef}
-                        className="absolute w-28 h-28 bg-[#FF4500] rounded-full flex items-center justify-center pointer-events-none"
-                        style={{
-                            left: 0,
-                            top: 0,
-                            transform: 'translate(-50%, -50%)',
-                            opacity: 0,
-                            zIndex: 100,
-                        }}
+                        className="absolute w-28 h-28 bg-[#FF4500] rounded-full flex items-center justify-center pointer-events-none left-0 top-0 -translate-x-1/2 -translate-y-1/2 opacity-0 z-[100]"
                     >
                         <span className="text-white text-lg font-semibold flex items-center gap-2">
                             Say Hi
@@ -140,19 +132,18 @@ export default function LetsCollab() {
                         Start here for better future
                     </p>
 
-                    <div className="flex flex-col items-center" style={{ lineHeight: '0.85' }}>
+                    <div className="flex flex-col items-center leading-[0.85]">
                         <div className="flex items-baseline gap-4">
                             <h1 className="text-white text-[clamp(80px,15vw,200px)] font-bold leading-none tracking-tight">
                                 Let's
                             </h1>
                             <h1
-                                className="text-[#FF4500] text-[clamp(80px,15vw,200px)] font-normal leading-none tracking-tight"
-                                style={{ fontFamily: "'Satisfy', cursive" }}
+                                className="text-[#FF4500] text-[clamp(80px,15vw,200px)] font-normal leading-none tracking-tight [font-family:'Satisfy',cursive]"
                             >
                                 collab
                             </h1>
                         </div>
-                        <h1 className="text-white text-[clamp(80px,15vw,200px)] font-bold leading-none tracking-tight" style={{ marginTop: '-15px' }}>
+                        <h1 className="text-white text-[clamp(80px,15vw,200px)] font-bold leading-none tracking-tight -mt-[15px]">
                             together!
                         </h1>
                     </div>

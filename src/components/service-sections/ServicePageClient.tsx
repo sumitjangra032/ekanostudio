@@ -15,11 +15,11 @@ export default function ServicePageClient({ serviceData }: ServicePageClientProp
 
     if (!serviceData) {
         return (
-            <div className="py-32 text-center min-h-screen flex flex-col items-center justify-center" style={{ backgroundColor: theme.background }}>
-                <h1 className="text-2xl" style={{ color: theme.text }}>
+            <div className="py-32 text-center min-h-screen flex flex-col items-center justify-center bg-[var(--theme-background)]">
+                <h1 className="text-2xl text-[var(--theme-text)]">
                     Service Not Found
                 </h1>
-                <p style={{ color: theme.subtext }}>
+                <p className="text-[var(--theme-subtext)]">
                     The requested service could not be found.
                 </p>
             </div>
@@ -27,7 +27,7 @@ export default function ServicePageClient({ serviceData }: ServicePageClientProp
     }
 
     return (
-        <div className="relative overflow-hidden" style={{ backgroundColor: theme.background }}>
+        <div className="relative overflow-hidden bg-[var(--theme-background)]">
 
             {/* ALL SECTIONS ON TOP */}
             <div className="relative z-10">

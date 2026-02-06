@@ -5,9 +5,9 @@ const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
     title: "Legal Information | Ekanostudio",
-    description: "View our legal documents including Privacy Policy, Terms & Conditions, and Refund Policies.",
+    description: "View our official legal documents including Privacy Policy, Terms & Conditions, and Refund Policies for Ekanostudio's digital services.",
     robots: {
-        index: false,
+        index: true,
         follow: true
     },
     openGraph: {

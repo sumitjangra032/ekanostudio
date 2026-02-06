@@ -34,33 +34,19 @@ export default function WorkSection() {
   return (
     <section
       id="work"
-      className="relative w-full space-y-12 py-24"
-      style={{ backgroundColor: theme.background }}
+      className="relative w-full space-y-12 py-24 bg-[var(--theme-background)]"
     >
       <div className="max-w-full mx-auto px-6 mb-12">
         {/* Tag */}
-        <div
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6"
-          style={{
-            background: `${theme.accents.a}08`,
-            border: `1px solid ${theme.accents.a}20`,
-            backdropFilter: "blur(4px)",
-          }}
-        >
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 tag-glass-red">
           <div className="pulse red" />
-          <span
-            className="text-xs font-medium tracking-wide"
-            style={{ color: theme.accents.a }}
-          >
+          <span className="text-xs font-medium tracking-wide text-[var(--theme-accent-a)]">
             {WORK_CONTENT.tag.label}
           </span>
         </div>
 
         {/* Title */}
-        <h2
-          className="text-[32px] md:text-[42px] font-bold mb-4"
-          style={{ color: theme.text, fontFamily: "var(--font-general-sans)" }}
-        >
+        <h2 className="text-[32px] md:text-[42px] font-bold mb-4 text-[var(--theme-text)] font-general-sans">
           <AnimatedLine
             text={WORK_CONTENT.title}
             isHeading
@@ -82,12 +68,7 @@ export default function WorkSection() {
           />
         </div>
       </div>
-      <div
-        className="space-y-8"
-        style={{
-          transform: "perspective(1200px) skewX(4deg) skewY(4deg)",
-        }}
-      >
+      <div className="space-y-8 work-perspective-skew">
         <WorkMarquee items={ROW_1} speed={45} mask="soft" />
         <WorkMarquee items={ROW_2} speed={60} reverse />
         <WorkMarquee items={ROW_3} speed={50} mask="soft" />

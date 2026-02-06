@@ -20,24 +20,16 @@ export default function WorkMarquee({
 }: WorkMarqueeProps) {
   return (
     <div
-      className="relative w-full overflow-hidden"
-      style={{
-        maskImage:
-          mask === "soft"
-            ? "linear-gradient(to right, transparent 0%, black 12.5%, black 87.5%, transparent 100%)"
-            : "linear-gradient(to right, transparent 0%, black 25%, black 75%, transparent 100%)",
-        WebkitMaskImage:
-          mask === "soft"
-            ? "linear-gradient(to right, transparent 0%, black 12.5%, black 87.5%, transparent 100%)"
-            : "linear-gradient(to right, transparent 0%, black 25%, black 75%, transparent 100%)",
-      }}
+      className={`relative w-full overflow-hidden ${mask === "soft"
+          ? "[mask-image:linear-gradient(to_right,transparent_0%,black_12.5%,black_87.5%,transparent_100%)] [WebkitMaskImage:linear-gradient(to_right,transparent_0%,black_12.5%,black_87.5%,transparent_100%)]"
+          : "[mask-image:linear-gradient(to_right,transparent_0%,black_25%,black_75%,transparent_100%)] [WebkitMaskImage:linear-gradient(to_right,transparent_0%,black_25%,black_75%,transparent_100%)]"
+        }`}
     >
       <ul
-        className="flex gap-6 w-max"
-        style={{
-          animation: `work-marquee-${reverse ? 'reverse' : 'normal'} ${speed}s linear infinite`,
-          willChange: "transform",
-        }}
+        className={`flex gap-6 w-max will-change-transform ${reverse
+            ? `animate-[work-marquee-reverse_${speed}s_linear_infinite]`
+            : `animate-[work-marquee-normal_${speed}s_linear_infinite]`
+          }`}
       >
         {[...items, ...items].map((item, index) => (
           <li key={index} className="flex-shrink-0">

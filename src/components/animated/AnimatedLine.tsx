@@ -59,7 +59,7 @@ export default function AnimatedLine({
       ref={ref}
       className={`block ${isHeading ? "font-[var(--font-cabinet)]" : ""} ${textSize ?? ""} ${className}`}
       style={{
-        color: gradient ? undefined : (textColor ?? "#ffffff"),
+        color: gradient ? undefined : textColor,
       }}
     >
       {words.map((word, i) => {

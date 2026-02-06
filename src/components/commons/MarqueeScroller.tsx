@@ -19,11 +19,9 @@ export default function MarqueeScroller({
   return (
     <div className="relative w-full overflow-hidden py-2 bg-black">
       <div
-        className={`flex gap-10 w-max ${className}`}
+        className={`flex gap-10 w-max ${className} will-change-transform`}
         style={{
           animation: `marquee-${direction} ${duration}s linear infinite`,
-          display: "flex",
-          willChange: "transform",
         }}
       >
         {list.map((item, idx) => (
@@ -39,9 +37,9 @@ export default function MarqueeScroller({
               backdrop-blur-xl
               transition-all duration-300
               border border-white/10
+              bg-black/20
             "
             style={{
-              background: "rgba(0, 0, 0, 0.2)",
               color: textColor || "var(--theme-subtext)",
             }}
           >

@@ -16,23 +16,16 @@ export default function Pricing() {
   return (
     <section
       id="pricing"
-      className="relative w-full py-32 px-6"
-      style={{ backgroundColor: "var(--theme-background)" }}
+      className="relative w-full py-32 px-6 bg-[var(--theme-background)]"
     >
       <div className="max-w-7xl mx-auto text-center">
         {/* Tag */}
         <div
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6"
-          style={{
-            background: "rgba(255, 60, 40, 0.03)",
-            border: "1px solid rgba(255, 60, 40, 0.15)",
-            backdropFilter: "blur(4px)",
-          }}
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 bg-red-400/5 border border-red-400/15 backdrop-blur-[4px]"
         >
           <div className="pulse red" aria-hidden="true" />
           <span
-            className="text-xs font-medium tracking-wide"
-            style={{ color: "var(--theme-accent-a)" }}
+            className="text-xs font-medium tracking-wide text-[var(--theme-accent-a)]"
           >
             {tag.label}
           </span>
@@ -40,8 +33,7 @@ export default function Pricing() {
 
         {/* Title */}
         <h2
-          className="text-[32px] md:text-[42px] font-bold"
-          style={{ color: "var(--theme-text)" }}
+          className="text-[32px] md:text-[42px] font-bold text-[var(--theme-text)]"
         >
           <AnimatedLine text={title} delay={0.1} isHeading gradient={{
             from: "#fac175",
@@ -52,8 +44,7 @@ export default function Pricing() {
 
         {/* Description */}
         <div
-          className="max-w-2xl mx-auto mt-4 leading-relaxed"
-          style={{ color: "var(--theme-subtext)" }}
+          className="max-w-2xl mx-auto mt-4 leading-relaxed text-[var(--theme-subtext)]"
         >
           <AnimatedLine text={description} delay={0.1} textColor="var(--theme-subtext)" />
         </div>
@@ -84,26 +75,13 @@ export default function Pricing() {
 
               {/* Left Accent Line */}
               <div
-                className="absolute left-0 top-0 h-full w-[2px]"
-                style={{
-                  background: `linear-gradient(
-                    to bottom,
-                    transparent,
-                    var(--theme-accent-a),
-                    transparent
-                  )`,
-                }}
+                className="absolute left-0 top-0 h-full w-[2px] bg-gradient-to-b from-transparent via-[var(--theme-accent-a)] to-transparent"
               />
 
               {/* Popular Badge */}
               {p.popular && (
                 <div
-                  className="absolute top-5 right-5 px-3 py-1 rounded-full text-xs font-semibold"
-                  style={{
-                    background: "rgba(255, 60, 40, 0.15)",
-                    color: "var(--theme-accent-a)",
-                    border: "1px solid rgba(255, 60, 40, 0.3)",
-                  }}
+                  className="absolute top-5 right-5 px-3 py-1 rounded-full text-xs font-semibold bg-red-500/15 text-[var(--theme-accent-a)] border border-red-500/30"
                 >
                   Most Popular
                 </div>
@@ -112,23 +90,20 @@ export default function Pricing() {
               {/* Content */}
               <div className="flex-1">
                 <h3
-                  className="text-sm font-semibold opacity-80"
-                  style={{ color: "var(--theme-text)" }}
+                  className="text-sm font-semibold opacity-80 text-[var(--theme-text)]"
                 >
                   {p.name}
                 </h3>
 
                 <p
-                  className="text-3xl font-semibold mt-2"
-                  style={{ color: "var(--theme-text)" }}
+                  className="text-3xl font-semibold mt-2 text-[var(--theme-text)]"
                 >
                   {p.price}
                 </p>
 
                 {p.desc && (
                   <p
-                    className="text-[15px] mt-4 leading-relaxed mb-4"
-                    style={{ color: "var(--theme-subtext)" }}
+                    className="text-[15px] mt-4 leading-relaxed mb-4 text-[var(--theme-subtext)]"
                   >
                     {p.desc}
                   </p>
@@ -143,17 +118,12 @@ export default function Pricing() {
                     >
                       {/* Dot */}
                       <span
-                        className="mt-2 w-2 h-2 rounded-full flex-shrink-0"
-                        style={{ background: "var(--theme-accent-a)" }}
+                        className="mt-2 w-2 h-2 rounded-full flex-shrink-0 bg-[var(--theme-accent-a)]"
                       />
 
                       {/* Text */}
                       <p
-                        className="text-[15px] leading-relaxed font-light w-full max-w-none"
-                        style={{
-                          color: "var(--theme-subtext)",
-                          fontFamily: "var(--font-inter)",
-                        }}
+                        className="text-[15px] leading-relaxed font-light w-full max-w-none text-[var(--theme-subtext)] font-sans"
                       >
                         {f}
                       </p>
@@ -189,15 +159,13 @@ export default function Pricing() {
             "
           >
             <h3
-              className="text-2xl font-medium"
-              style={{ color: "var(--theme-text)" }}
+              className="text-2xl font-medium text-[var(--theme-text)]"
             >
               {call.headline}
             </h3>
 
             <p
-              className="mt-3 leading-relaxed"
-              style={{ color: "var(--theme-subtext)" }}
+              className="mt-3 leading-relaxed text-[var(--theme-subtext)]"
             >
               {call.description}
             </p>

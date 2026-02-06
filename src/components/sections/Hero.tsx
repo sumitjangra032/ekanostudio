@@ -16,11 +16,8 @@ export default function Hero() {
         min-h-[100svh]
         flex items-center justify-center
         px-4 pt-16 sm:px-6
+        bg-[var(--theme-background)] text-[var(--theme-text)]
       "
-      style={{
-        backgroundColor: "var(--theme-background)",
-        color: "var(--theme-text)",
-      }}
     >
       {/* Background - Lazy Loaded */}
       <HeroBackgroundWrapper />
@@ -55,12 +52,7 @@ export default function Hero() {
           {/* H2 Headline (was H1) */}
           <h2
             id="hero-h1"
-            className="font-medium italic hero-headline"
-            style={{
-              fontFamily: "'Cabinet Grotesk', sans-serif",
-              fontWeight: 700,
-              color: "var(--theme-text)"
-            }}
+            className="font-bold italic hero-headline font-cabinet text-[var(--theme-text)]"
           >
             {HERO_CONTENT.headline.map((line, index) => {
               const words = line.match(/(\[[^\]]+\]|\{[^}]+\}|\S+)/g) || [];
@@ -88,8 +80,7 @@ export default function Hero() {
             {HERO_CONTENT.description.map((desc, i) => (
               <p
                 key={i}
-                className="text-sm sm:text-base leading-relaxed"
-                style={{ color: "var(--theme-subtext)" }}
+                className="text-sm sm:text-base leading-relaxed text-[var(--theme-subtext)]"
               >
                 {desc}
               </p>
@@ -101,8 +92,7 @@ export default function Hero() {
             {HERO_CONTENT.subNotes.map((note, i) => (
               <p
                 key={i}
-                className="text-xs sm:text-sm italic"
-                style={{ color: "var(--theme-subtext)" }}
+                className="text-xs sm:text-sm italic text-[var(--theme-subtext)]"
               >
                 {note}
               </p>

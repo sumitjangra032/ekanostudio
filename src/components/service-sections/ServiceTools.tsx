@@ -35,17 +35,11 @@ export default function ServiceTools({ data }: { data: any }) {
                         className="flex justify-center mb-6"
                     >
                         <div
-                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full"
-                            style={{
-                                background: `${theme.accents.a}08`,
-                                border: `1px solid ${theme.accents.a}20`,
-                                backdropFilter: "blur(4px)",
-                            }}
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--theme-accent-a)]/5 border border-[var(--theme-accent-a)]/20 backdrop-blur-[4px]"
                         >
                             <div className="pulse red" />
                             <span
-                                className="text-xs font-medium tracking-wide uppercase"
-                                style={{ color: theme.accents.a }}
+                                className="text-xs font-medium tracking-wide uppercase text-[var(--theme-accent-a)]"
                             >
                                 Tools
                             </span>
@@ -53,8 +47,7 @@ export default function ServiceTools({ data }: { data: any }) {
                     </div>
 
                     <h2
-                        className="text-[32px] md:text-[42px] font-bold mb-10"
-                        style={{ color: theme.text }}
+                        className="text-[32px] md:text-[42px] font-bold mb-10 text-[var(--theme-text)]"
                     >
                         <AnimatedLine
                             text={data.heading}
@@ -76,11 +69,7 @@ export default function ServiceTools({ data }: { data: any }) {
                     {data.items.map((item: any, i: number) => (
                         <div
                             key={i}
-                            className="px-6 py-3 rounded-full border text-sm font-medium"
-                            style={{
-                                borderColor: `${theme.text}20`,
-                                color: theme.subtext
-                            }}
+                            className="px-6 py-3 rounded-full border border-[var(--theme-text)]/20 text-[var(--theme-subtext)] text-sm font-medium"
                         >
                             {item}
                         </div>

@@ -29,18 +29,14 @@ export default function navbarblogs({
             border shadow-2xl
             transition-all duration-300 origin-top
             backdrop-blur-xl
-            border border-white/30
+            border-[var(--theme-text)]/15
             shadow-[inset_0px_1px_20px_rgba(255,255,255,0.25)]
-            overflow-hidden
+            overflow-hidden bg-[var(--theme-background)]
             ${open
                     ? "opacity-100 pointer-events-auto scale-100 translate-y-0"
                     : "opacity-0 pointer-events-none scale-95 -translate-y-4"
                 }
       `}
-            style={{
-                background: theme.background,
-                borderColor: theme.text + "15",
-            }}
         >
             <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
                 {NAV_BLOGS.map((item, idx) => {
@@ -51,42 +47,30 @@ export default function navbarblogs({
                             href={item.href}
                             onClick={() => setMenuKey(null)}
                             className="
-                    group flex items-start gap-4 p-4 rounded-xl border
+                    group flex items-start gap-4 p-4 rounded-xl border border-[var(--theme-text)]/20 bg-[var(--theme-card-bg)]
                     transition-all duration-300 hover:-translate-y-1 hover:shadow-lg
                     "
-                            style={{
-                                borderColor: theme.text + "20",
-                                background: theme.cardBg,
-                            }}
                         >
                             <div
                                 className="
                         p-2.5 rounded-lg shrink-0 transition-colors
-                        group-hover:bg-[var(--hoverBg)]
+                        group-hover:bg-[var(--theme-primary)] bg-[var(--theme-primary)]/10 text-[var(--theme-primary)] [--hoverText:#fff]
                     "
-                                style={{
-                                    background: theme.primary + "10",
-                                    color: theme.primary,
-                                    "--hoverBg": theme.primary,
-                                    "--hoverText": "#fff"
-                                } as React.CSSProperties}
-                                
-                            >
-                            <Icon size={20} className="group-hover:text-white transition-colors" />
 
-                                
+                            >
+                                <Icon size={20} className="group-hover:text-white transition-colors" />
+
+
                             </div>
 
                             <div>
                                 <h4
-                                    className="text-sm font-semibold mb-1 group-hover:text-[var(--primary)] transition-colors"
-                                    style={{ color: theme.text, "--primary": theme.primary } as React.CSSProperties}
+                                    className="text-sm font-semibold mb-1 group-hover:text-[var(--theme-primary)] transition-colors text-[var(--theme-text)]"
                                 >
                                     {item.name}
                                 </h4>
                                 <p
-                                    className="text-xs line-clamp-2 leading-relaxed"
-                                    style={{ color: theme.subtext }}
+                                    className="text-xs line-clamp-2 leading-relaxed text-[var(--theme-subtext)]"
                                 >
                                     {item.description}
                                 </p>

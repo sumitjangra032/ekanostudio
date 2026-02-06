@@ -57,20 +57,18 @@ function FAQItem({
         <m.div
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            className="group relative px-8 py-6 transition-all"
-            whileHover={{ backgroundColor: "rgba(255,255,255,0.03)" }}
+            className="group relative px-8 py-6 transition-all hover:bg-white/[0.03]"
         >
             <button
                 onClick={() => toggleItem(index)}
                 className="w-full flex justify-between items-start gap-6 text-left"
                 aria-expanded={showAnswer}
             >
-                <span
-                    className="text-[17px] font-medium leading-relaxed"
-                    style={{ color: "var(--theme-text)" }}
+                <h3
+                    className="text-[17px] font-medium leading-relaxed text-[var(--theme-text)]"
                 >
                     {item.q}
-                </span>
+                </h3>
 
                 <m.div
                     animate={{ rotate: showAnswer ? 90 : 0 }}
@@ -78,9 +76,9 @@ function FAQItem({
                     className="mt-1 flex-shrink-0"
                 >
                     {showAnswer ? (
-                        <X size={18} style={{ color: "var(--theme-accent-a)" }} />
+                        <X size={18} className="text-[var(--theme-accent-a)]" />
                     ) : (
-                        <Plus size={18} style={{ color: "var(--theme-accent-a)" }} />
+                        <Plus size={18} className="text-[var(--theme-accent-a)]" />
                     )}
                 </m.div>
             </button>
@@ -95,8 +93,7 @@ function FAQItem({
                         className="overflow-hidden"
                     >
                         <p
-                            className="mt-4 pr-4 text-[15px] leading-relaxed"
-                            style={{ color: "var(--theme-subtext)" }}
+                            className="mt-4 pr-4 text-[15px] leading-relaxed text-[var(--theme-subtext)]"
                         >
                             {item.a}
                         </p>

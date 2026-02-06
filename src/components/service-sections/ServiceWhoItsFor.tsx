@@ -36,17 +36,11 @@ export default function ServiceWhoItsFor({ data }: { data: any }) {
                         className="flex justify-center mb-6"
                     >
                         <div
-                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full"
-                            style={{
-                                background: `${theme.accents.a}08`,
-                                border: `1px solid ${theme.accents.a}20`,
-                                backdropFilter: "blur(4px)",
-                            }}
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--theme-accent-a)]/5 border border-[var(--theme-accent-a)]/20 backdrop-blur-[4px]"
                         >
                             <div className="pulse red" />
                             <span
-                                className="text-xs font-medium tracking-wide uppercase"
-                                style={{ color: theme.accents.a }}
+                                className="text-xs font-medium tracking-wide uppercase text-[var(--theme-accent-a)]"
                             >
                                 Who It's For
                             </span>
@@ -54,8 +48,7 @@ export default function ServiceWhoItsFor({ data }: { data: any }) {
                     </div>
 
                     <h2
-                        className="text-[32px] md:text-[42px] font-bold mb-10"
-                        style={{ color: theme.text }}
+                        className="text-[32px] md:text-[42px] font-bold mb-10 text-[var(--theme-text)]"
                     >
                         <AnimatedLine
                             text={data.heading}
@@ -86,8 +79,6 @@ export default function ServiceWhoItsFor({ data }: { data: any }) {
                                 transition-all duration-500
                                 hover:-translate-y-1
                             "
-                            style={{
-                            }}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -95,26 +86,16 @@ export default function ServiceWhoItsFor({ data }: { data: any }) {
                         >
                             {/* Left Accent Line */}
                             <div
-                                className="absolute left-0 top-0 h-full w-[2px]"
-                                style={{
-                                    background: `linear-gradient(
-                                        to bottom,
-                                        transparent,
-                                        ${theme.accents.a},
-                                        transparent
-                                    )`,
-                                }}
+                                className="absolute left-0 top-0 h-full w-[2px] bg-gradient-to-b from-transparent via-[var(--theme-accent-a)] to-transparent"
                             />
                             <div
-                                className="p-2 rounded-full mt-1"
-                                style={{ background: `${theme.primary}15` }}
+                                className="p-2 rounded-full mt-1 bg-[var(--theme-primary)]/10"
                             >
-                                <Check size={16} style={{ color: theme.primary }} />
+                                <Check size={16} className="text-[var(--theme-primary)]" />
                             </div>
 
                             <div
-                                className="text-lg leading-relaxed"
-                                style={{ color: theme.text }}
+                                className="text-lg leading-relaxed text-[var(--theme-text)]"
                             >
                                 <AnimatedLine text={item} delay={0.1} />
                             </div>

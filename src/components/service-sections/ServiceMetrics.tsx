@@ -50,14 +50,7 @@ export default function ServiceMetrics({ data }: { data: any }) {
         >
             {/* Background accent */}
             <div
-                className="absolute inset-0 pointer-events-none"
-                style={{
-                    background: `radial-gradient(
-                        600px circle at 50% 50%,
-                        ${theme.accents.a}05,
-                        transparent 70%
-                    )`,
-                }}
+                className="absolute inset-0 pointer-events-none bg-[radial-gradient(600px_circle_at_50%_50%,var(--theme-accent-a)/0.05,transparent_70%)]"
             />
 
             <div className="max-w-7xl mx-auto w-full relative z-10">
@@ -68,17 +61,11 @@ export default function ServiceMetrics({ data }: { data: any }) {
                 >
                     <div className="flex justify-center mb-6">
                         <div
-                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full"
-                            style={{
-                                background: `${theme.accents.a}08`,
-                                border: `1px solid ${theme.accents.a}20`,
-                                backdropFilter: "blur(4px)",
-                            }}
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--theme-accent-a)]/10 border border-[var(--theme-accent-a)]/20 backdrop-blur-[4px]"
                         >
                             <div className="pulse red" />
                             <span
-                                className="text-xs font-medium tracking-wide uppercase"
-                                style={{ color: theme.accents.a }}
+                                className="text-xs font-medium tracking-wide uppercase text-[var(--theme-accent-a)]"
                             >
                                 Metrics
                             </span>
@@ -86,8 +73,7 @@ export default function ServiceMetrics({ data }: { data: any }) {
                     </div>
 
                     <h2
-                        className="text-3xl sm:text-4xl md:text-[42px] font-bold mb-4 md:mb-6 px-2"
-                        style={{ color: theme.text }}
+                        className="text-3xl sm:text-4xl md:text-[42px] font-bold mb-4 md:mb-6 px-2 text-[var(--theme-text)]"
                     >
                         <AnimatedLine
                             text={data.heading}
@@ -102,8 +88,7 @@ export default function ServiceMetrics({ data }: { data: any }) {
                     </h2>
 
                     <div
-                        className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto px-4"
-                        style={{ color: theme.subtext }}
+                        className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto px-4 text-[var(--theme-subtext)]"
                     >
                         <AnimatedLine text={data.subheading} />
                     </div>
@@ -144,59 +129,35 @@ export default function ServiceMetrics({ data }: { data: any }) {
                         >
                             {/* Animated gradient border */}
                             <div
-                                className="absolute inset-0 rounded-2xl md:rounded-3xl p-[1px]"
-                                style={{
-                                    background: `linear-gradient(135deg, 
-                                        ${theme.accents.a}20, 
-                                        ${theme.accents.b}20, 
-                                        transparent 50%
-                                    )`,
-                                }}
+                                className="absolute inset-0 rounded-2xl md:rounded-3xl p-[1px] bg-gradient-to-br from-[var(--theme-accent-a)]/20 via-[var(--theme-accent-b)]/20 to-transparent"
                             >
                                 <div className="absolute inset-0 rounded-2xl md:rounded-3xl bg-gradient-to-br from-black/40 via-black/30 to-black/20" />
                             </div>
 
                             {/* Hover Glow */}
                             <div
-                                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
-                                style={{
-                                    background: `radial-gradient(
-                                        300px circle at var(--mouse-x) var(--mouse-y),
-                                        ${theme.accents.a}10,
-                                        transparent 60%
-                                    )`,
-                                }}
+                                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none bg-[radial-gradient(300px_circle_at_var(--mouse-x)_var(--mouse-y),var(--theme-accent-a)/0.1,transparent_60%)]"
                             />
 
                             {/* Icon Container */}
                             <div
-                                className="mb-4 md:mb-6 relative z-10 p-3 md:p-4 rounded-2xl transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
-                                style={{
-                                    background: `${theme.accents.a}08`,
-                                    border: `1px solid ${theme.accents.a}15`,
-                                    boxShadow: `0 4px 20px ${theme.accents.a}10`
-                                }}
+                                className="mb-4 md:mb-6 relative z-10 p-3 md:p-4 rounded-2xl transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 bg-[var(--theme-accent-a)]/10 border border-[var(--theme-accent-a)]/15 [box-shadow:0_4px_20px_var(--theme-accent-a)/0.1]"
                             >
                                 {typeof item.icon === 'string' ? (
                                     <AnimateDownloadedSVG
                                         src={item.icon}
                                         size={32}
-                                        stroke={theme.accents.a}
+                                        stroke="var(--theme-accent-a)"
                                         repeat={false}
                                     />
                                 ) : (
-                                    <item.icon size={32} color={theme.accents.a} />
+                                    <item.icon size={32} className="text-[var(--theme-accent-a)]" />
                                 )}
                             </div>
 
                             {/* Number Value */}
                             <h3
-                                className="text-3xl md:text-4xl lg:text-5xl font-bold relative z-10 flex items-center justify-center mb-2 md:mb-3"
-                                style={{
-                                    color: theme.text,
-                                    fontFamily: "var(--font-general-sans)",
-                                    textShadow: `0 2px 20px ${theme.accents.a}20`
-                                }}
+                                className="text-3xl md:text-4xl lg:text-5xl font-bold relative z-10 flex items-center justify-center mb-2 md:mb-3 text-[var(--theme-text)] font-sans [text-shadow:0_2px_20px_var(--theme-accent-a)/0.2]"
                             >
                                 {(() => {
                                     const valStr = String(item.value).trim();
@@ -257,33 +218,23 @@ export default function ServiceMetrics({ data }: { data: any }) {
 
                             {/* Label */}
                             <p
-                                className="relative z-10 text-sm md:text-base font-medium tracking-tight md:tracking-normal px-2"
-                                style={{
-                                    color: theme.subtext,
-                                    fontFamily: "var(--font-inter)",
-                                    maxWidth: "90%"
-                                }}
+                                className="relative z-10 text-sm md:text-base font-medium tracking-tight md:tracking-normal px-2 text-[var(--theme-subtext)] font-inter max-w-[90%]"
                             >
                                 {item.label}
                             </p>
 
                             {/* Subtle bottom accent */}
                             <div
-                                className="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-[2px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                                style={{
-                                    background: `linear-gradient(90deg, transparent, ${theme.accents.a}, transparent)`,
-                                }}
+                                className="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-[2px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-transparent via-[var(--theme-accent-a)] to-transparent"
                             />
                         </m.div>
                     ))}
                 </m.div>
 
                 {/* Decorative elements */}
-                <div className="absolute top-10 left-1/2 -translate-x-1/2 w-64 h-64 rounded-full blur-3xl opacity-10 pointer-events-none"
-                    style={{ background: theme.accents.a }}
+                <div className="absolute top-10 left-1/2 -translate-x-1/2 w-64 h-64 rounded-full blur-3xl opacity-10 pointer-events-none bg-[var(--theme-accent-a)]"
                 />
-                <div className="absolute bottom-10 right-1/4 w-48 h-48 rounded-full blur-3xl opacity-5 pointer-events-none"
-                    style={{ background: theme.accents.b }}
+                <div className="absolute bottom-10 right-1/4 w-48 h-48 rounded-full blur-3xl opacity-5 pointer-events-none bg-[var(--theme-accent-b)]"
                 />
             </div>
         </section>

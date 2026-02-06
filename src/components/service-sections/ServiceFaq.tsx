@@ -44,27 +44,16 @@ export default function ServiceFaq({ data, theme }: { data: any; theme: any }) {
           style={{ y: yText }}
         >
           {/* Tag */}
-          <div
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6"
-            style={{
-              background: `${theme.accents.a}08`,
-              border: `1px solid ${theme.accents.a}20`,
-              backdropFilter: "blur(4px)",
-            }}
-          >
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 tag-glass-red">
             <div className="pulse red" />
-            <span
-              className="text-xs font-medium tracking-wide uppercase"
-              style={{ color: theme.accents.a }}
-            >
+            <span className="text-xs font-medium tracking-wide uppercase text-[var(--theme-accent-a)]">
               FAQ’S
             </span>
           </div>
 
           {/* Title */}
           <h2
-            className="text-[32px] md:text-[42px] font-bold"
-            style={{ color: theme.text }}
+            className="text-[32px] md:text-[42px] font-bold text-[var(--theme-text)]"
           >
             <AnimatedLine
               text={data.heading}
@@ -150,8 +139,7 @@ function FAQItem({
     <m.div
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="group relative px-8 py-6 transition-all"
-      whileHover={{ backgroundColor: "rgba(255,255,255,0.03)" }}
+      className="group relative px-8 py-6 transition-all hover:bg-white/[0.03]"
     >
       {/* QUESTION */}
       <button
@@ -159,8 +147,7 @@ function FAQItem({
         className="w-full flex justify-between items-start gap-6 text-left"
       >
         <span
-          className="text-[17px] font-medium leading-relaxed"
-          style={{ color: theme.text }}
+          className="text-[17px] font-medium leading-relaxed text-[var(--theme-text)]"
         >
           {item.q}
         </span>
@@ -171,9 +158,9 @@ function FAQItem({
           className="mt-1 flex-shrink-0"
         >
           {showAnswer ? (
-            <X size={18} style={{ color: theme.accents.a }} />
+            <X size={18} className="text-[var(--theme-accent-a)]" />
           ) : (
-            <Plus size={18} style={{ color: theme.accents.a }} />
+            <Plus size={18} className="text-[var(--theme-accent-a)]" />
           )}
         </m.div>
       </button>
@@ -189,8 +176,7 @@ function FAQItem({
             className="overflow-hidden"
           >
             <p
-              className="mt-4 pr-4 text-[15px] leading-relaxed"
-              style={{ color: theme.subtext }}
+              className="mt-4 pr-4 text-[15px] leading-relaxed text-[var(--theme-subtext)]"
             >
               {item.a}
             </p>

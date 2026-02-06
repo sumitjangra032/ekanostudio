@@ -4,20 +4,20 @@ import { Metadata } from "next";
 const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
-  title: "Our Portfolio - Digital Projects | Ekanostudio",
-  description: "Explore our portfolio of digital projects, case studies, and client work. Branding, Web Design, Webflow, Creative Development, and beyond.",
-  keywords: ["portfolio", "case studies", "web design portfolio", "digital projects", "client work"],
+  title: "Our Portfolio – Web Design & AI Case Studies | Ekanostudio",
+  description: "Explore our work in Web Design, AI Automation, and Performance Marketing. Real case studies of digital transformation for global brands.",
+  keywords: ["portfolio", "case studies", "web design portfolio", "AI case studies", "digital projects", "Ekanostudio"],
   openGraph: {
-    title: "Our Portfolio - Digital Projects | Ekanostudio",
-    description: "Explore our portfolio of digital projects, case studies, and client work. Branding, Web Design, Webflow, Creative Development, and beyond.",
+    title: "Our Portfolio – Web Design & AI Case Studies | Ekanostudio",
+    description: "Explore our work in Web Design, AI Automation, and Performance Marketing. Real case studies of digital transformation for global brands.",
     url: `${SITE_URL}/portfolio`,
     siteName: "Ekanostudio",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Our Portfolio - Digital Projects | Ekanostudio",
-    description: "Explore our portfolio of digital projects, case studies, and client work.",
+    title: "Our Portfolio – Web Design & AI Case Studies | Ekanostudio",
+    description: "Explore our work in Web Design, AI Automation, and Performance Marketing.",
   },
   alternates: {
     canonical: `${SITE_URL}/portfolio`,
