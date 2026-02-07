@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FOOTER_CONTENT } from "@/constants/footer";
 import { BRAND, BRAND_LOGO } from "@/constants/global";
-import { MapPin } from "lucide-react";
+import { MapPin, Mail, Phone, Landmark } from "lucide-react";
 import { THEMES, currentTheme } from "../../constants/theme";
 
 export default function Footer() {
@@ -44,15 +44,49 @@ export default function Footer() {
                 {FOOTER_CONTENT.tagline}
               </p>
 
-              {FOOTER_CONTENT.address && (
-                <div className="mt-4 text-sm space-y-3 relative text-[var(--theme-subtext)]">
-                  <div className="leading-relaxed">
-                    {FOOTER_CONTENT.address.lines.map((line, index) => (
-                      <p key={index}>{line}</p>
-                    ))}
-                  </div>
+              <div className="space-y-1 text-sm text-[var(--theme-subtext)] leading-relaxed">
+
+                {/* ADDRESS */}
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 mt-1 text-[var(--theme-accent)]" />
+                  <p>
+                    Red Square Market, Mehta Nagar 125001<br />
+                    Hisar, Haryana<br />
+                    India
+                  </p>
                 </div>
-              )}
+
+                {/* EMAIL */}
+                <div className="flex items-start gap-3">
+                  <Mail className="w-5 h-5 mt-1 text-[var(--theme-accent)]" />
+                  <a href="mailto:info@ekanostudio.com" className="hover:underline">
+                    info@ekanostudio.com
+                  </a>
+                </div>
+
+                {/* PHONE */}
+                <div className="flex items-start gap-3">
+                  <Phone className="w-5 h-5 mt-1 text-[var(--theme-accent)]" />
+                  <a href="tel:+919034817987" className="hover:underline">
+                    +91 90348 17987
+                  </a>
+                </div>
+
+                {/* GOOGLE BUSINESS PROFILE */}
+                <div className="flex items-start gap-3">
+                  <Landmark className="w-5 h-5 mt-1 text-[var(--theme-accent)]" />
+                  <a
+                    href="https://share.google/CBbRBuR5WFk27Nb3w"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    Google Business
+                  </a>
+                </div>
+              </div>
+
+
 
 
 
