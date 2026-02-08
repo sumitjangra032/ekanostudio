@@ -2,6 +2,8 @@ import {
   InstagramIcon,
   TwitterIcon,
   LinkedInIcon,
+  YouTubeIcon,
+  FacebookIcon,
 } from "@/components/icons/LocalIcons";
 
 export const FOOTER_CONTENT = {
@@ -54,5 +56,7 @@ export const FOOTER_CONTENT = {
     { icon: InstagramIcon, href: "https://www.instagram.com/connectekanostudio/" },
     { icon: TwitterIcon, href: "https://x.com/connectekano" },
     { icon: LinkedInIcon, href: "https://www.linkedin.com/in/ekano-studio-50670b3aa/" },
+    { icon: YouTubeIcon, href: "https://www.youtube.com/@EkanoStudio" },
+    { icon: FacebookIcon, href: "https://www.facebook.com/profile.php?id=61587941123742" },
   ],
 };

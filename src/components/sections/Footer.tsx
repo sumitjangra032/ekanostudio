@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FOOTER_CONTENT } from "@/constants/footer";
 import { BRAND, BRAND_LOGO } from "@/constants/global";
-import { MapPin } from "lucide-react";
+import { MapPin, Mail, Phone, Landmark } from "lucide-react";
 import { THEMES, currentTheme } from "../../constants/theme";
 
 export default function Footer() {
@@ -10,31 +10,15 @@ export default function Footer() {
 
   return (
     <footer
-      className="relative w-full"
-      style={{ backgroundColor: "var(--theme-background)" }}
+      className="relative w-full bg-[var(--theme-background)]"
     >
       {/* TOP DIVIDER (ALWAYS VISIBLE) */}
       <div className="absolute top-0 left-0 w-full h-[1px] z-20">
-        <div
-          className="mx-auto h-full max-w-7xl"
-          style={{
-            background:
-              "linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent)",
-          }}
-        />
+        <div className="mx-auto h-full max-w-7xl footer-divider-gradient" />
       </div>
 
       {/* AMBIENT GLOW */}
-      <div
-        className="absolute inset-0 pointer-events-none z-0"
-        style={{
-          background: `radial-gradient(
-            1100px circle at bottom center,
-            rgba(255, 60, 40, 0.07),
-            transparent 65%
-          )`,
-        }}
-      />
+      <div className="absolute inset-0 pointer-events-none z-0 footer-ambient-glow" />
 
       {/* CENTERED CONTENT WRAPPER */}
       <div className="relative z-10">
@@ -56,10 +40,7 @@ export default function Footer() {
                 />
               </Link>
 
-              <p
-                className="text-sm leading-relaxed max-w-md"
-                style={{ color: "var(--theme-subtext)" }}
-              >
+              <p className="text-sm leading-relaxed max-w-md text-[var(--theme-subtext)]">
                 {FOOTER_CONTENT.tagline}
               </p>
 
@@ -74,53 +55,30 @@ export default function Footer() {
                     ))}
                   </div>
 
-                  <a
-                    href="https://share.google/cP5T8K6ymH0d2APK3"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block relative w-[220px] h-[110px]"
-                  >
-                    <div
-                      className="absolute inset-0 overflow-hidden"
-                      style={{
-                        borderRadius: "22px",
-                        maskImage:
-                          "radial-gradient(circle at 50% 50%, black 60%, transparent 100%)",
-                        WebkitMaskImage:
-                          "radial-gradient(circle at 50% 50%, black 60%, transparent 100%)",
-                      }}
+                  {/* GOOGLE BUSINESS PROFILE */}
+                  <div className="flex items-start gap-3">
+                    <Landmark className="w-5 h-5 mt-1 text-[var(--theme-accent)]" />
+                    <a
+                      href="https://share.google/CBbRBuR5WFk27Nb3w"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
                     >
-                      <iframe
-                        src="https://www.google.com/maps?q=Red+Square+Market,+Mehta+Nagar,+Hisar&output=embed"
-                        width="200%"
-                        height="200%"
-                        style={{
-                          border: 0,
-                          transform: "scale(1.2)",
-                          filter: "brightness(0.35) contrast(1.1)",
-                          pointerEvents: "none",   // ← VERY IMPORTANT
-                        }}
-                        loading="lazy"
-                      ></iframe>
-                    </div>
-                  </a>
+                      Google Business
+                    </a>
+                  </div>
                 </div>
+
+
               )}
 
-
-
               {/* SOCIALS */}
-              <div className="flex gap-4 pt-2">
+              <div className="flex gap-1 pt-2">
                 {FOOTER_CONTENT.socials.map((item, i) => (
                   <a
                     key={i}
                     href={item.href}
-                    className="p-2 rounded-full transition-all duration-300 hover:-translate-y-1"
-                    style={{
-                      background: "rgba(255,255,255,0.04)",
-                      border: "1px solid rgba(255,255,255,0.08)",
-                      color: "var(--theme-subtext)",
-                    }}
+                    className="p-1 rounded-full transition-all duration-300 hover:-translate-y-1 footer-social-link text-[var(--theme-subtext)]"
                     aria-label={`Visit our ${item.href.split('.').slice(-2, -1)}`}
                   >
                     <item.icon size={18} />
@@ -132,8 +90,7 @@ export default function Footer() {
             {/* COMPANY — 2 COLS */}
             <div className="lg:col-span-2 flex flex-col gap-3">
               <h4
-                className="text-xs font-semibold uppercase tracking-widest"
-                style={{ color: "var(--theme-text)" }}
+                className="text-xs font-semibold uppercase tracking-widest text-[var(--theme-text)]"
               >
                 Company
               </h4>
@@ -150,8 +107,7 @@ export default function Footer() {
             {/* SERVICES — 2 COLS */}
             <div className="lg:col-span-2 flex flex-col gap-3">
               <h4
-                className="text-xs font-semibold uppercase tracking-widest"
-                style={{ color: "var(--theme-text)" }}
+                className="text-xs font-semibold uppercase tracking-widest text-[var(--theme-text)]"
               >
                 Services
               </h4>
@@ -168,8 +124,7 @@ export default function Footer() {
             {/* LEGAL — 3 COLS */}
             <div className="lg:col-span-3 flex flex-col gap-3">
               <h4
-                className="text-xs font-semibold uppercase tracking-widest"
-                style={{ color: "var(--theme-text)" }}
+                className="text-xs font-semibold uppercase tracking-widest text-[var(--theme-text)]"
               >
                 Legal
               </h4>
@@ -188,15 +143,11 @@ export default function Footer() {
           <div
             className="
               mt-20 pt-8
-              border-t
+              border-t border-white/10
               flex flex-col md:flex-row
               items-center justify-between gap-4
-              text-xs
+              text-xs text-[var(--theme-subtext)]
             "
-            style={{
-              borderColor: "rgba(255,255,255,0.08)",
-              color: "var(--theme-subtext)",
-            }}
           >
             <p>
               © {new Date().getFullYear()} {FOOTER_CONTENT.brand}. All rights reserved.
@@ -213,8 +164,7 @@ function FooterLink({ link, theme }: any) {
   return (
     <Link
       href={link.href}
-      className="group relative inline-flex items-center gap-2 text-sm font-light"
-      style={{ color: "var(--theme-subtext)" }}
+      className="group relative inline-flex items-center gap-2 text-sm font-light text-[var(--theme-subtext)]"
     >
       <span className="relative z-10">{link.label}</span>
 
@@ -226,20 +176,14 @@ function FooterLink({ link, theme }: any) {
             scale-x-0 origin-left
             transition-transform duration-500 ease-out
             group-hover:scale-x-100
+             [clip-path:polygon(0_40%,100%_0%,100%_100%,0_60%)]
           "
-          style={{
-            clipPath: "polygon(0 40%, 100% 0%, 100% 100%, 0 60%)",
-          }}
         />
       </span>
 
       {link.badge && (
         <span
-          className="text-[10px] px-2 py-0.5 rounded-md font-semibold uppercase"
-          style={{
-            background: "rgba(255, 60, 40, 0.13)",
-            color: "var(--theme-accent-a)",
-          }}
+          className="text-[10px] px-2 py-0.5 rounded-md font-semibold uppercase bg-red-500/10 text-[var(--theme-accent-a)]"
         >
           {link.badge}
         </span>

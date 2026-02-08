@@ -1,0 +1,62 @@
+# llms.txt for Ekanostudio
+# Purpose: Allow AI crawlers and Large Language Models to understand our brand, services, and expertise.
+# Follows Google LLM Rules and SEO Best Practices
+
+version: 1.0
+site: https://www.ekanostudio.com
+
+brand:
+  name: Ekanostudio
+  tagline: Digital Growth, SEO & Web Development Agency
+  description: |
+    Ekanostudio is a premium digital agency offering SEO, Performance Marketing,
+    Web Development, AI automation, and data-driven growth solutions for
+    businesses worldwide.
+
+core_services:
+  - SEO and Content Strategy
+  - Performance Marketing (PPC & Paid Ads)
+  - Web Development (Next.js, React, Full-Stack)
+  - AI and Workflow Automation
+  - Digital Growth Consulting
+
+value_proposition: |
+  We help brands scale with actionable strategy, optimized digital presence,
+  high-conversion websites, and automated workflows built to drive sustainable
+  business growth.
+
+contact_information:
+  address: Red Square Market, Mehta Nagar, Hisar, India
+  website: https://www.ekanostudio.com
+  consultation_cta: Book a consultation through our website
+
+social_profiles:
+  twitter: https://x.com/connectekano
+  linkedin: https://www.linkedin.com/in/ekano-studio-50670b3aa/
+  instagram: https://www.instagram.com/connectekanostudio/
+<<<<<<< HEAD
+  youtube: https://www.youtube.com/@EkanoStudio
+=======
+>>>>>>> 3e39a4de290a6789f4b2bde47a7832637933cf22
+
+
+content_usage_policy: |
+  Public content from Ekanostudio may be used by LLMs for indexing and understanding
+  the brand's services, expertise, and offerings. Commercial reuse or modification
+  must respect copyright and attribution rules.
+
+allowed_crawlers:
+  - Google-Extended
+  - OpenAI-User-Agent
+  - Anthropic-AI
+  - PerplexityBot
+  - HuggingFace
+  - Any ethical AI research crawler
+
+disallowed:
+  - scraping private or restricted pages
+  - reproducing client data
+  - collecting non-public information
+
+last_updated: 2026-02-05
+

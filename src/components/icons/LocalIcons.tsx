@@ -680,3 +680,9 @@ export const TiktokIcon = ({ size = 24, className = "", ...props }: React.SVGPro
         <path d="M19.4 4.5h-2.45c.05 2.47 1.8 4.5 4.2 4.96V12.95c-3.15-.5-5.55-3.2-5.65-6.48H12.9v9.03c0 2.45-1.98 4.45-4.43 4.45-2.45 0-4.43-2-4.43-4.45s1.98-4.45 4.43-4.45c.85 0 1.65.25 2.33.68V8.58c-3.2-.85-6.33 1.58-6.33 4.97 0 3.32 2.68 6 6 6s6-2.68 6-6V2z" /> {/* Better Tiktok path */}
     </svg>
 );
+
+export const FacebookIcon = ({ size = 24, className = "", ...props }: React.SVGProps<SVGSVGElement> & { size?: number }) => (
+    <svg {...props} width={size} height={size} viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+        <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.17 6 13.97 6c1.34 0 2.49.1 2.83.15v3.13h-1.94c-1.5 0-1.8.71-1.8 1.76V12h4l-.62 3h-3.38v6.8c4.56-.93 8-4.96 8-9.8z" />
+    </svg>
+);
