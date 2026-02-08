@@ -62,51 +62,57 @@ export default function AnimatedLine({
         color: gradient ? undefined : (textColor ?? "#ffffff"),
       }}
     >
-      {words.map((word, i) => {
-        const isTarget =
-          (word.startsWith("{") && word.endsWith("}")) ||
-          (word.startsWith("[") && word.endsWith("]"));
+      {/* SEO & Accessibility: Full text visible to bots/screen readers */}
+      <span className="sr-only">{text.replace(/\[|\]|\{|\}/g, "")}</span>
 
-        let cleanText = isTarget ? word.slice(1, -1) : word;
-        let linkUrl: string | null = null;
+      {/* Visual Animation: Hidden from screen readers to avoid duplication */}
+      <span aria-hidden="true">
+        {words.map((word, i) => {
+          const isTarget =
+            (word.startsWith("{") && word.endsWith("}")) ||
+            (word.startsWith("[") && word.endsWith("]"));
 
-        if (isTarget && cleanText.includes("|")) {
-          const parts = cleanText.split("|");
-          cleanText = parts[0];
-          linkUrl = parts[1];
-        }
+          let cleanText = isTarget ? word.slice(1, -1) : word;
+          let linkUrl: string | null = null;
 
-        const content = (
-          <m.span
-            key={i}
-            className={`inline-block mr-2 ${isTarget ? highlightClassName : ""} px-[0.045em] ${linkUrl ? "hover:underline cursor-pointer" : ""
-              }`}
-            initial={{ opacity: 0, y: 8 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{
-              duration,
-              delay: isInView ? delay + i * 0.08 : 0,
-              ease: "easeOut",
-            }}
-            style={{
-              ...(isTarget && gradient ? gradientStyle : {}),
-              ...(isTarget && highlightStyle ? highlightStyle : {}),
-            }}
-          >
-            {cleanText}
-          </m.span>
-        );
+          if (isTarget && cleanText.includes("|")) {
+            const parts = cleanText.split("|");
+            cleanText = parts[0];
+            linkUrl = parts[1];
+          }
 
-        if (linkUrl) {
-          return (
-            <Link key={i} href={linkUrl} className="inline-block">
-              {content}
-            </Link>
+          const content = (
+            <m.span
+              key={i}
+              className={`inline-block mr-2 ${isTarget ? highlightClassName : ""} px-[0.045em] ${linkUrl ? "hover:underline cursor-pointer" : ""
+                }`}
+              initial={{ opacity: 0, y: 8 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{
+                duration,
+                delay: isInView ? delay + i * 0.08 : 0,
+                ease: "easeOut",
+              }}
+              style={{
+                ...(isTarget && gradient ? gradientStyle : {}),
+                ...(isTarget && highlightStyle ? highlightStyle : {}),
+              }}
+            >
+              {cleanText}
+            </m.span>
           );
-        }
 
-        return content;
-      })}
+          if (linkUrl) {
+            return (
+              <Link key={i} href={linkUrl} className="inline-block" tabIndex={-1}>
+                {content}
+              </Link>
+            );
+          }
+
+          return content;
+        })}
+      </span>
     </div>
   );
 }

@@ -8,7 +8,7 @@ export const CORE_EXPERTISE_CONTENT = {
   },
   title: "[Mastering] [the] [Digital] [Landscape]",
   description:
-    "We blend creativity with data-driven strategies to deliver {comprehensive} digital solutions that drive real growth for your business.",
+    "We blend creativity with data-driven strategies to deliver {high-performance} digital solutions that drive real growth for your business.",
   cards: [
     {
       title: "Web Design & Development",

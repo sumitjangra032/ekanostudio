@@ -16,9 +16,9 @@ import {
 const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
-  title: "Ekanostudio – Web Design, SEO & AI Automation Agency",
+  title: "Ekanostudio – SEO, Web Development & Digital Growth Agency",
   description:
-    "Accelerate your digital growth with Ekanostudio. Expert Web Design, SEO, AI Automation, and Performance Marketing services to scale your business online.",
+    "Ekanostudio: Priority support, real-time reporting, and performance-driven digital marketing services for sustainable business growth. Get started today.",
   keywords: [
     "digital transformation agency",
     "web design agency",
@@ -27,20 +27,24 @@ export const metadata: Metadata = {
     "UI UX design",
     "business consulting",
     "SEO services",
+    "priority support",
+    "real-time reporting",
+    "content strategy",
+    "business growth",
   ],
   openGraph: {
-    title: "Ekanostudio – Digital Transformation & Consulting Agency",
+    title: "Ekanostudio – SEO, Web Development & Digital Growth Agency",
     description:
-      "Ekanostudio helps modern businesses grow through digital transformation, web development, branding, digital marketing, and strategic consulting.",
+      "Ekanostudio: Priority support, real-time reporting, and performance-driven digital marketing services for sustainable business growth. Get started today.",
     url: SITE_URL,
     siteName: "Ekanostudio",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ekanostudio – Digital Transformation & Consulting Agency",
+    title: "Ekanostudio – SEO, Web Development & Digital Growth Agency",
     description:
-      "Ekanostudio helps modern businesses grow through digital transformation, web development, branding, digital marketing, and consulting.",
+      "Ekanostudio: Priority support, real-time reporting, and performance-driven digital marketing services for sustainable business growth. Get started today.",
   },
   alternates: {
     canonical: SITE_URL,

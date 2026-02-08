@@ -16,13 +16,13 @@ export const WHY_US_CONTENT = {
   cards: [
     {
       icon: "/icons/trending-up.svg",
-      title: "Smart Solutions – Zero Hassle",
+      title: "Smart Solutions for Business Growth",
       description:
         "Easy processes, clear communication, and no complications. Our smart systems and responsive support keep your projects organized and effortless.",
     },
     {
       icon: "/icons/chart-no-axes-column.svg",
-      title: "Real-Time Insights – Better Decisions",
+      title: "Real-Time Reporting & Insights",
       description:
         "Stay informed with transparent data, analytics, and performance dashboards. Make confident decisions faster with meaningful insights.",
     },

@@ -185,7 +185,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 },
                 "sameAs": [
                   "https://www.instagram.com/connectekanostudio/",
-                  "https://www.linkedin.com/in/ekano-studio-50670b3aa/"
+                  "https://www.linkedin.com/in/ekano-studio-50670b3aa/",
                   "https://x.com/connectekano"
                 ],
                 "contactPoint": {
@@ -207,13 +207,22 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                   "streetAddress": "Red Square Market, Mehta Nagar",
                   "addressLocality": "Hisar",
                   "addressRegion": "Haryana",
-                  "addressCountry": "IN"
+                  "addressCountry": "IN",
+                  "postalCode": "125001"
                 },
                 "geo": {
                   "@type": "GeoCoordinates",
                   "latitude": "29.157610077674295",
                   "longitude": "75.72107762523662" 
                 },
+                "hasMap": "https://www.google.com/maps/search/?api=1&query=Ekanostudio+Hisar",
+                "sameAs": [
+                  "https://www.instagram.com/connectekanostudio/",
+                  "https://www.linkedin.com/in/ekano-studio-50670b3aa/",
+                  "https://x.com/connectekano",
+                  "https://www.facebook.com/profile.php?id=61587941123742",
+                  "https://www.youtube.com/@EkanoStudio"
+                ],
                 "priceRange": "₹1000-₹10000"
               }
             ]

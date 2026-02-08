@@ -21,17 +21,18 @@ export default function WhyChooseUs() {
 
       <div className="relative max-w-7xl mx-auto z-10">
         {/* Title */}
-        <AnimatedLine
-          text={WHY_US_CONTENT.title}
-          delay={0.4}
-          isHeading
-          gradient={{
-            from: "#fac175",
-            via: "#ff006a",
-            to: "#8b5cf6",
-          }}
-          className="text-[32px] md:text-[42px] font-bold mb-3 font-satoshi"
-        />
+        <h2 className="text-[32px] md:text-[42px] font-bold mb-3 font-satoshi">
+          <AnimatedLine
+            text={WHY_US_CONTENT.title}
+            delay={0.4}
+            isHeading
+            gradient={{
+              from: "#fac175",
+              via: "#ff006a",
+              to: "#8b5cf6",
+            }}
+          />
+        </h2>
 
         {/* Description */}
         <AnimatedLine

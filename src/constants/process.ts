@@ -14,7 +14,7 @@ export const PROCESS_CONTENT = {
   processSteps: [
     {
       step: "01",
-      title: "Quick Launch Process",
+      title: "Quick Launch: Get Started Fast",
       bullets: [
         "Start fast with minimal steps and zero complexity.",
         "Streamlined onboarding built for maximum efficiency.",
