@@ -1,6 +1,5 @@
 import "./globals.css";
 import { ReactNode } from "react";
-// Fonts are now loaded via global.css and preloaded manually below
 
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import Navbar from "@/components/navbar/Navbar";
@@ -9,7 +8,6 @@ const Footer = dynamic(() => import("@/components/sections/Footer"), { ssr: true
 import Script from "next/script";
 import { Metadata } from "next";
 import { LazyMotionProvider } from "@/components/providers/LazyMotionProvider";
-
 import SmoothScroll from "@/components/commons/SmoothScroll";
 
 const SITE_URL = "https://www.ekanostudio.com";
@@ -94,7 +92,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
-        {/* Manual Font Preloading for Performance */}
+        {/* Manual Font Preloading */}
         <link
           rel="preload"
           href="/fonts/satoshi/Satoshi-Medium.woff2"
@@ -138,6 +136,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           crossOrigin="anonymous"
         />
 
+        {/* GA4 */}
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-0T7Z4PX35H"
@@ -153,7 +152,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 gtag('config', 'G-0T7Z4PX35H');
               });
             } else {
-              // Fallback
               setTimeout(function() {
                  gtag('js', new Date());
                  gtag('config', 'G-0T7Z4PX35H');
@@ -162,7 +160,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           `}
         </Script>
 
-        {/* Schema.org - Organization (Enhanced for Google Graph) */}
+        {/* Schema.org Fixed */}
         <Script
           id="schema-organization"
           type="application/ld+json"
@@ -186,7 +184,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 "sameAs": [
                   "https://www.instagram.com/connectekanostudio/",
                   "https://www.linkedin.com/in/ekano-studio-50670b3aa/",
-                  "https://x.com/connectekano"
+                  "https://x.com/connectekano",
+                  "https://www.facebook.com/profile.php?id=61587941123742",
+                  "https://www.youtube.com/@EkanoStudio"
                 ],
                 "contactPoint": {
                   "@type": "ContactPoint",
@@ -197,7 +197,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               },
               {
                 "@type": "LocalBusiness",
-                "@parent": "https://www.ekanostudio.com/#organization",
                 "name": "Ekanostudio",
                 "image": "https://www.ekanostudio.com/logo.png",
                 "url": "https://www.ekanostudio.com",
@@ -213,7 +212,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 "geo": {
                   "@type": "GeoCoordinates",
                   "latitude": "29.157610077674295",
-                  "longitude": "75.72107762523662" 
+                  "longitude": "75.72107762523662"
                 },
                 "hasMap": "https://www.google.com/maps/search/?api=1&query=Ekanostudio+Hisar",
                 "sameAs": [
@@ -238,18 +237,17 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         >
           Skip to main content
         </a>
+
         <SmoothScroll />
+
         <LazyMotionProvider>
           <ThemeProvider>
             <Navbar />
-            <main id="main-content">
-              {children}
-            </main>
+            <main id="main-content">{children}</main>
             <Footer />
           </ThemeProvider>
         </LazyMotionProvider>
       </body>
-
     </html>
   );
 }

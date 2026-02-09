@@ -31,7 +31,7 @@ export default function Navbar() {
   if (!mounted) return null;
 
   return (
-    <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-7xl ">
+    <header className="fixed top-4 left-1/2 -translate-x-1/2 z-[250] w-[95%] max-w-7xl ">
       {/* Under Development Notice */}
       {/* <div
   className="absolute -top-4 left-1/2 -translate-x-1/2 px-6 py-1.5 rounded-full text-[11px] md:text-xs font-semibold tracking-[0.15em] uppercase"

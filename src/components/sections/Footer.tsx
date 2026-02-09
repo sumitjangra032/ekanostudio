@@ -13,8 +13,9 @@ export default function Footer() {
       className="relative w-full bg-[var(--theme-background)]"
     >
       {/* TOP DIVIDER (ALWAYS VISIBLE) */}
-      <div className="absolute top-0 left-0 w-full h-[1px] z-20">
-        <div className="mx-auto h-full max-w-7xl footer-divider-gradient" />
+      {/* TOP DIVIDER (ALWAYS VISIBLE) */}
+      <div className="absolute top-0 left-0 w-full h-[1px] z-20 overflow-hidden">
+        <div className="w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent" />
       </div>
 
       {/* AMBIENT GLOW */}

@@ -407,7 +407,7 @@
     }
 
     .portfolio-text-mobile {
-        font-size: clamp(28px, 7vw, 44px);
+        font-size: clamp(24px, 6vw, 36px);
         font-weight: 500;
         color: rgba(229, 30, 8, 0.95);
         letter-spacing: 0.12em;
