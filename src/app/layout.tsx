@@ -135,6 +135,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           type="font/woff2"
           crossOrigin="anonymous"
         />
+        <meta name="p:domain_verify" content="015c1ca0b99c509411057086ec985440" />
 
         {/* GA4 */}
         <Script
