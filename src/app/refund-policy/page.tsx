@@ -6,10 +6,6 @@ const SITE_URL = "https://www.ekanostudio.com";
 export const metadata: Metadata = {
     title: "Refund Policy | Ekanostudio",
     description: "Read our Refund Policy to understand provisions for refunds, disputes, and non-refundable services at Ekanostudio.",
-    robots: {
-        index: false,
-        follow: true,
-    },
     openGraph: {
         title: "Refund Policy | Ekanostudio",
         description: "Read our Refund Policy to understand provisions for refunds, disputes, and non-refundable services at Ekanostudio.",

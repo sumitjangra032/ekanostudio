@@ -4,14 +4,10 @@ import { Metadata } from "next";
 const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
-    title: "Cancellation Policy | Ekanostudio",
+    title: "Ekanostudio | Cancellation Policy",
     description: "Read our Cancellation Policy to understand terms and conditions for service cancellation at Ekanostudio.",
-    robots: {
-        index: false,
-        follow: true,
-    },
     openGraph: {
-        title: "Cancellation Policy | Ekanostudio",
+        title: "Ekanostudio | Cancellation Policy",
         description: "Read our Cancellation Policy to understand terms and conditions for service cancellation at Ekanostudio.",
         url: `${SITE_URL}/cancellation-policy`,
         siteName: "Ekanostudio",
@@ -19,7 +15,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary",
-        title: "Cancellation Policy | Ekanostudio",
+        title: "Ekanostudio | Cancellation Policy",
         description: "Read our Cancellation Policy to understand terms and conditions for service cancellation.",
     },
     alternates: {

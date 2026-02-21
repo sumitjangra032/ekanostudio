@@ -21,7 +21,7 @@ export const RELATED_CONTENT: RelatedContentItem[] = [
     {
         id: "related-3",
         image: "/images/blog/related-3.jpg", // Replace with actual image path
-        link: "/contact",                      // Replace with actual link
+        link: "/book-consultation",                      // Replace with actual link
         title: "Start Your Project",
     },
 ];

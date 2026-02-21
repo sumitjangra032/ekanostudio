@@ -27,7 +27,6 @@ const STATIC_SECTIONS: SitemapSection[] = [
             { label: "Services", href: "/services" },
             { label: "Portfolio", href: "/portfolio" },
             { label: "Book Consultation", href: "/book-consultation" },
-            { label: "Contact", href: "/contact" },
             { label: "Careers", href: "/careers" },
         ],
     },
