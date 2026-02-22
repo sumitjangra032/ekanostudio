@@ -31,7 +31,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Digital Marketing Agency Canada | Performance, ROI & Growth",
+        title: "Top Digital Marketing Agency in Canada",
         description:
             "Canadian digital marketing experts. Specializing in ROI-driven Google Ads, Social Media campaigns, and cross-channel growth across all of Canada.",
         canonical: "/digital-marketing-canada",

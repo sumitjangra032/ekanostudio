@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const PAID_SOCIAL_ADS: IServiceType = {
   slug: "paid-social-ads",
   title: "Paid Social Ads",
+  meta: { title: "Paid Social Ads Management Services" },
   sections: [
     {
       type: "hero",

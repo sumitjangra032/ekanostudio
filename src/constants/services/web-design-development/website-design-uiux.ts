@@ -3,6 +3,7 @@ import { IServiceType } from "@/constants/services";
 const SERVICES_DYNAMIC_CONTENT: IServiceType = {
   slug: "website-design-uiux",
   title: "Website Design (UI/UX)",
+  meta: { title: "UI UX Website Design Services" , description: "Transform user experiences with custom UI UX website design. We build stunning, intuitive websites that convert visitors." },
   sections: [
     {
       type: "hero",

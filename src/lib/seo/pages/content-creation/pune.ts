@@ -30,7 +30,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Content Creation Services in Pune | Video, Copywriting & SEO",
+        title: "Content Creation Services in Pune",
         description:
             "High-quality content creation in Pune. We produce professional videos, SEO-optimized copy, and digital assets for education and IT firms.",
         canonical: "/content-creation-pune",

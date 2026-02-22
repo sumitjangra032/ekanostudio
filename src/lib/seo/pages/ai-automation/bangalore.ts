@@ -29,7 +29,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "AI Automation Services in Bangalore | n8n Workflow Experts",
+        title: "Top AI Automation Agency in Bangalore",
         description:
             "AI automation services for Bangalore businesses. We design secure n8n workflows and intelligent systems to save time, reduce errors, and scale operations.",
         canonical: "/ai-automation-bangalore",

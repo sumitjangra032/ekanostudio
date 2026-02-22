@@ -31,7 +31,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Website Design Company in Bangalore | UI/UX & Performance",
+        title: "Best Website Design Company in Bangalore",
         description:
             "Top website design company in Bangalore. We build fast, scalable, and conversion-optimized websites designed for startups and tech businesses.",
         canonical: "/website-design-bangalore",

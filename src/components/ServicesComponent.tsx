@@ -63,7 +63,7 @@ export default function ServicesComponent() {
       <div className="max-w-7xl mx-auto space-y-10">
 
         {/* TOP TAG (CENTERED, NOT REPEATED) */}
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-6">
           <div
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full"
             style={{
@@ -80,6 +80,15 @@ export default function ServicesComponent() {
               All Services
             </span>
           </div>
+        </div>
+
+        <div className="text-center mb-4">
+          <h1
+            className="text-4xl sm:text-5xl md:text-6xl font-bold font-cabinet tracking-tight"
+            style={{ color: theme.text }}
+          >
+            Digital Services
+          </h1>
         </div>
 
         <div className="text-center">
@@ -148,6 +157,33 @@ export default function ServicesComponent() {
             );
           })}
         </m.div>
+
+        {/* CATEGORY SPECIFIC CTA */}
+        {activeTag !== "All" && (
+          <m.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="max-w-xl mx-auto p-6 rounded-2xl border text-center"
+            style={{
+              background: `${theme.accents.a}08`,
+              borderColor: `${theme.accents.a}20`,
+            }}
+          >
+            <p className="text-sm mb-4" style={{ color: theme.subtext }}>
+              Ready to start your {activeTag} project?
+            </p>
+            <Link
+              href={`/service-form?category=${SERVICES_CONTENT.categories.find(c => c.name === activeTag)?.slug}`}
+              className="inline-block px-6 py-2 rounded-full text-sm font-semibold transition-all hover:scale-105"
+              style={{
+                background: `linear-gradient(90deg, ${theme.accents.a}, ${theme.accents.b})`,
+                color: "#000",
+              }}
+            >
+              Start Your {activeTag} Project →
+            </Link>
+          </m.div>
+        )}
 
         {/* SERVICE CARDS */}
         <m.div
@@ -242,6 +278,6 @@ export default function ServicesComponent() {
           ))}
         </m.div>
       </div>
-    </section>
+    </section >
   );
 }

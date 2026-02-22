@@ -283,7 +283,7 @@
     pointer-events: none;
 }
 
-.portfolio-text {
+.portfolio-wrapper .portfolio-text {
     font-size: clamp(100px, 15vw, 220px);
     font-weight: 400;
     color: rgba(229, 30, 8, 0.95);
@@ -406,7 +406,7 @@
         pointer-events: none;
     }
 
-    .portfolio-text-mobile {
+    .portfolio-wrapper .portfolio-text-mobile {
         font-size: 10.5vw;
         font-weight: 500;
         color: rgba(229, 30, 8, 0.95);

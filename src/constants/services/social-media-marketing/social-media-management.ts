@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const SOCIAL_MEDIA_MANAGEMENT: IServiceType = {
   slug: "social-media-management",
   title: "Social Media Management",
+  meta: { title: "Expert Social Media Management Services" , description: "Streamline your online presence with expert social media management. We handle content, engagement, and consistent growth." },
   sections: [
     {
       type: "hero",

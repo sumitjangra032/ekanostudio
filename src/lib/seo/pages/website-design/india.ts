@@ -23,7 +23,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Website Design Agency India | Premium UI/UX & Development",
+        title: "Best Website Design Company in India",
         description:
             "Transform your digital presence in India. We build high-performance, mobile-first websites for scaling startups, enterprises and global brands.",
         canonical: "/website-design-india",

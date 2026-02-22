@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const INFLUENCER_MARKETING: IServiceType = {
   slug: "influencer-marketing",
   title: "Influencer Marketing",
+  meta: { title: "Leading Influencer Marketing Agency" , description: "Boost your brand with our premium influencer marketing agency. We connect you with top creators to drive real engagement." },
   sections: [
     {
       type: "hero",

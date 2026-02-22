@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const STORE_MANAGEMENT: IServiceType = {
   slug: "store-management",
   title: "Store Management & Operations",
+  meta: { title: "eCommerce Store Management Services" },
   sections: [
     {
       type: "hero",

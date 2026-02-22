@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const BRAND_IDENTITY_DESIGN: IServiceType = {
   slug: "brand-identity-design",
   title: "Brand Identity Design",
+  meta: { title: "Custom Brand Identity Design Services" , description: "Elevate your business with expert brand identity design. We create memorable logos, guidelines, and visual assets for you." },
   sections: [
     {
       type: "hero",

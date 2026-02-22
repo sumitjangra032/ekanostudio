@@ -28,15 +28,15 @@ export const FOOTER_CONTENT = {
         { label: "Process", href: "/#process" },
         { label: "Book Consultation", href: "/book-consultation" },
         { label: "Careers", href: "/careers", badge: "We are Hiring" },
-        { label: "Sitemap", href: "/sitemap" },
+        { label: "Sitemap", href: "/site-map" },
       ],
     },
     {
       title: "Services",
       links: [
         { label: "Services Offered", href: "/services" },
+        { label: "Service Enquiry Form", href: "/service-form" },
         { label: "Get a Quote", href: "/book-consultation" },
-        { label: "Service Form", href: "/service-form" },
         { label: "Pricing", href: "/#pricing" },
         { label: "FAQ", href: "/#faq" },
       ],

@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const TECHNICAL_SEO: IServiceType = {
   slug: "technical-seo",
   title: "Technical SEO",
+  meta: { title: "Technical SEO Audits and Services" },
   sections: [
     {
       type: "hero",

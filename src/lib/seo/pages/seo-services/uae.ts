@@ -33,7 +33,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "SEO Agency UAE | Arabic & English SEO for Dubai & Abu Dhabi",
+        title: "Top SEO Services in UAE",
         description:
             "Rank higher on Google in the UAE. Our bilingual SEO strategies in English and Arabic help businesses win organic traffic across Dubai and Abu Dhabi.",
         canonical: "/seo-services-uae",

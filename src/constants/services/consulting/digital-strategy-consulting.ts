@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const DIGITAL_STRATEGY_CONSULTING: IServiceType = {
   slug: "digital-strategy-consulting",
   title: "Digital Strategy Consulting",
+  meta: { title: "Digital Strategy Consulting Services" , description: "Reach your business goals faster with expert digital strategy consulting. We provide actionable plans for sustainable growth." },
   sections: [
     {
       type: "hero",

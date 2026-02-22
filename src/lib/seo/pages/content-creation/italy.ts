@@ -30,7 +30,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Creazione Contenuti Italia | Video, Copywriting e Strategia",
+        title: "Expert Content Creation Services in Italy",
         description:
             "Creiamo contenuti di alta qualità per il mercato italiano: video, testi e visual pensati per coinvolgere, posizionare e far crescere il tuo brand.",
         canonical: "/content-creation-italy",

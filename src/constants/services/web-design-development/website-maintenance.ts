@@ -3,6 +3,7 @@ import { IServiceType } from "@/constants/services";
 const SERVICES_DYNAMIC_CONTENT: IServiceType = {
   slug: "website-maintenance",
   title: "Website Maintenance",
+  meta: { title: "Reliable Website Maintenance Services" , description: "Ensure peak performance with reliable website maintenance services. We manage updates, security, and backups for your site." },
   sections: [
     {
       type: "hero",

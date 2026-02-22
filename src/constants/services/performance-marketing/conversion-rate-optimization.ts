@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const CONVERSION_RATE_OPTIMIZATION: IServiceType = {
   slug: "conversion-rate-optimization",
   title: "Conversion Optimization (CRO)",
+  meta: { title: "Expert Conversion Rate Optimization" , description: "Maximize your ROI with expert conversion rate optimization. We analyze user data to turn more website visitors into buyers." },
   sections: [
     {
       type: "hero",

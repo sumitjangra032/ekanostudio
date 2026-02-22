@@ -29,7 +29,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "AI Automation Services in Luxembourg | Secure n8n Workflows",
+        title: "Top AI Automation Services in Luxembourg",
         description:
             "AI automation for Luxembourg enterprises. We design secure n8n workflows and AI systems for financial, corporate, and regulated organizations.",
         canonical: "/ai-automation-luxembourg",

@@ -52,7 +52,7 @@ export async function generateMetadata(
    * Prevents Google rewriting
    * Optimized for CTR + intent
    */
-  const seoTitle = `${serviceData.title} Services | ${meta.title} Experts | Ekanostudio`;
+  const seoTitle = serviceData.meta?.title || `${serviceData.title} Services | ${meta.title} Experts | Ekanostudio`;
 
   /**
    * 🔒 SEO-SAFE DESCRIPTION STRATEGY
@@ -130,5 +130,5 @@ export default async function ServicePage({ params }: PageProps) {
     serviceData = await loadServiceBySlug(category, service);
   }
 
-  return <ServicePageClient serviceData={serviceData} />;
+  return <ServicePageClient serviceData={serviceData} categorySlug={category} />;
 }

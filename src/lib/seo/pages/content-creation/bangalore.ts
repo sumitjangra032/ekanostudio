@@ -30,7 +30,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Content Creation Agency Bangalore | Tech Copy & Video Studio",
+        title: "Top Content Creation Agency in Bangalore",
         description:
             "Content creation for Bangalore startups and IT companies. We produce tech-focused copy, videos, and brand content that builds trust and authority.",
         canonical: "/content-creation-bangalore",

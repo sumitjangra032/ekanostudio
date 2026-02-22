@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const OFF_PAGE_SEO: IServiceType = {
   slug: "off-page-seo",
   title: "Off-Page SEO",
+  meta: { title: "Expert Off Page SEO Services" },
   sections: [
     {
       type: "hero",

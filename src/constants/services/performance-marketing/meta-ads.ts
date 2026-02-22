@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const META_ADS: IServiceType = {
   slug: "meta-ads",
   title: "Meta Ads (Facebook & Instagram)",
+  meta: { title: "Expert Meta Ads Agency Services" },
   sections: [
     {
       type: "hero",

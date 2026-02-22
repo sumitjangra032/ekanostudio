@@ -7,7 +7,7 @@ export const COMPETITOR_ANALYSIS_DATA: {
     tocItems: TOCItem[];
     content: React.ReactNode;
 } = {
-    title: "The Competitor Analysis Master Class",
+    title: "How to do Competitor Analysis",
     subtitle: "Strategic Frameworks, Digital Espionage, and Battlefield Execution",
     tocItems: [
         {

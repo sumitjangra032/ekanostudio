@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const CRM_SETUP: IServiceType = {
   slug: "crm-setup",
   title: "CRM Implementation & Setup",
+  meta: { title: "Professional CRM Setup Services" },
   sections: [
     {
       type: "hero",

@@ -31,7 +31,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "SEO Agentur Österreich | Google.at Rankings für Ihr Business",
+        title: "Expert SEO Services in Austria",
         description:
             "Erreichen Sie mehr Kunden auf Google.at. Wir bieten maßgeschneiderte SEO-Services für Unternehmen in Wien, Graz, Linz und ganz Österreich.",
         canonical: "/seo-services-austria",

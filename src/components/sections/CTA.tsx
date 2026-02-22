@@ -9,8 +9,19 @@ import AnimatedRotateButton from "../animated/AnimatedRotateButton";
 
 import Link from "next/link";
 
-export default function CTA() {
+interface CTAProps {
+  category?: string;
+  service?: string;
+}
+
+export default function CTA({ category, service }: CTAProps) {
   const theme = THEMES[currentTheme as keyof typeof THEMES];
+
+  const projectHref = category && service
+    ? `${GLOBAL_CTA_CONTENT.serviceForm.href}?category=${category}&service=${service}`
+    : category
+      ? `${GLOBAL_CTA_CONTENT.serviceForm.href}?category=${category}`
+      : GLOBAL_CTA_CONTENT.serviceForm.href;
 
   return (
     <section
@@ -50,12 +61,20 @@ export default function CTA() {
           <AnimatedLine text={CTA_CONTENT.description} delay={0.4} textColor="var(--theme-subtext)" />
         </div>
 
-        <AnimatedRotateButton
-          text={GLOBAL_CTA_CONTENT.getStarted.title}
-          href={GLOBAL_CTA_CONTENT.getStarted.href}
-          color={theme.buttonBg}
-          accent={theme.accents}
-        />
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <AnimatedRotateButton
+            text="Start Your Project"
+            href={projectHref}
+            color={theme.buttonBg}
+            accent={theme.accents}
+          />
+          <AnimatedRotateButton
+            text={GLOBAL_CTA_CONTENT.bookConsultation.title}
+            href={GLOBAL_CTA_CONTENT.bookConsultation.href}
+            color={theme.buttonBg}
+            accent={theme.accents}
+          />
+        </div>
       </div>
     </section>
   );

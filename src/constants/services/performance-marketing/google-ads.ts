@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const GOOGLE_ADS: IServiceType = {
   slug: "google-ads",
   title: "Google Ads (Search & Display)",
+  meta: { title: "Expert Google Ads Management Services" , description: "Drive high-intent traffic with expert Google Ads management. Our targeted search campaigns maximize ROI and grow your leads." },
   sections: [
     {
       type: "hero",

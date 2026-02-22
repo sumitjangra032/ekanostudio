@@ -24,7 +24,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Website Design Agency UK | London, Manchester & Nationwide",
+        title: "Top Website Design Agency in UK",
         description:
             "High-performance website design for UK businesses. We create GDPR-compliant, accessible, and conversion-focused websites for lasting growth.",
         canonical: "/website-design-uk",

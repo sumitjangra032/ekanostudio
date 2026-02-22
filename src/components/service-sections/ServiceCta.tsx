@@ -9,9 +9,15 @@ import Image from "next/image";
 import { BRAND, GLOBAL_CTA_CONTENT, BRAND_LOGO } from "@/constants/global";
 import Link from "next/link";
 
-export default function ServiceCta({ data }: { data: any }) {
+export default function ServiceCta({ data, category, service }: { data: any; category?: string; service?: string }) {
     const { themeName } = useTheme();
     const theme = THEMES[themeName];
+
+    const projectHref = category && service
+        ? `${GLOBAL_CTA_CONTENT.serviceForm.href}?category=${category}&service=${service}`
+        : category
+            ? `${GLOBAL_CTA_CONTENT.serviceForm.href}?category=${category}`
+            : GLOBAL_CTA_CONTENT.serviceForm.href;
 
     const sectionRef = useRef(null);
 
@@ -67,7 +73,13 @@ export default function ServiceCta({ data }: { data: any }) {
                         <AnimatedLine text={data.subheading} delay={0.3} />
                     </div>
 
-                    <div className="flex justify-center">
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <AnimatedRotateButton
+                            text="Start Your Project"
+                            href={projectHref}
+                            color={theme.buttonBg}
+                            accent={theme.accents}
+                        />
                         <AnimatedRotateButton
                             text={GLOBAL_CTA_CONTENT.bookConsultation.title}
                             href={GLOBAL_CTA_CONTENT.bookConsultation.href}

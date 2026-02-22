@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const PRODUCT_LISTING_OPTIMIZATION: IServiceType = {
   slug: "product-listing-optimization",
   title: "Product Listing Optimization",
+  meta: { title: "Product Listing Optimization Services" , description: "Increase visibility with product listing optimization. We optimize titles, descriptions, and keywords to drive more online sales." },
   sections: [
     {
       type: "hero",

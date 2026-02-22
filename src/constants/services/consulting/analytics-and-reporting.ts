@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const ANALYTICS_AND_REPORTING: IServiceType = {
   slug: "analytics-and-reporting",
   title: "Analytics & Reporting",
+  meta: { title: "Custom Analytics and Reporting Services" , description: "Make data-driven decisions with custom analytics and reporting. We track performance metrics to optimize your digital campaigns." },
   sections: [
     {
       type: "hero",

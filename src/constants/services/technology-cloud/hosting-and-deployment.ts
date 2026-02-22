@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const HOSTING_AND_DEPLOYMENT: IServiceType = {
   slug: "hosting-and-deployment",
   title: "Hosting & Deployment",
+  meta: { title: "Secure Hosting and Deployment Services" , description: "Ensure uptime with secure web hosting and deployment. We offer reliable, fast, and scalable cloud solutions for your platform." },
   sections: [
     {
       type: "hero",

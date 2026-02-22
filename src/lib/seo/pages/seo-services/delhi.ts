@@ -31,7 +31,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Best SEO Agency in Delhi | Enterprise & Local SEO Experts",
+        title: "Best SEO Services in Delhi",
         description:
             "Rank higher in Delhi NCR. Our SEO team specializes in competitive industries like real estate, healthcare, finance, and corporate sectors.",
         canonical: "/seo-services-delhi",

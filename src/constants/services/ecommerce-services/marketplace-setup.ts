@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const MARKETPLACE_SETUP: IServiceType = {
   slug: "marketplace-setup",
   title: "Marketplace Setup & Launch",
+  meta: { title: "eCommerce Marketplace Setup Services" , description: "Expand your reach with professional eCommerce marketplace setup. We help you launch seamlessly on Amazon, Shopify, and more." },
   sections: [
     {
       type: "hero",

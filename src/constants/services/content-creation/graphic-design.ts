@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const GRAPHIC_DESIGN: IServiceType = {
   slug: "graphic-design",
   title: "Graphic Design",
+  meta: { title: "Creative Graphic Design Services" },
   sections: [
     {
       type: "hero",

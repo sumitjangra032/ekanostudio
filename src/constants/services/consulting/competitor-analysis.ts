@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const COMPETITOR_ANALYSIS: IServiceType = {
   slug: "competitor-analysis",
   title: "Competitor Analysis",
+  meta: { title: "In Depth Competitor Analysis Services" , description: "Gain an edge with deep competitor analysis services. We uncover market opportunities and strategies to help you stay ahead." },
   sections: [
     {
       type: "hero",

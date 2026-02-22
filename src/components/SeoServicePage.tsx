@@ -167,5 +167,5 @@ export default function SeoServicePage({ data }: { data: SeoPageData }) {
         ]
     };
 
-    return <ServicePageClient serviceData={serviceData} />;
+    return <ServicePageClient serviceData={serviceData} categorySlug={data.service.categorySlug} />;
 }

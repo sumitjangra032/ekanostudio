@@ -30,7 +30,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Content Creation Services UK | Video, Copywriting & Strategy",
+        title: "Expert Content Creation Services in UK",
         description:
             "UK-focused content creation agency delivering video, SEO copywriting, and brand storytelling tailored to British audiences and search intent.",
         canonical: "/content-creation-uk",

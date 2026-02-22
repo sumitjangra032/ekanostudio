@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const BRAND_STRATEGY: IServiceType = {
   slug: "brand-strategy",
   title: "Brand Strategy & Positioning",
+  meta: { title: "Expert Brand Strategy Consulting" },
   sections: [
     {
       type: "hero",

@@ -29,7 +29,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "AI Automation Services UK | Secure n8n Workflow Solutions",
+        title: "Top AI Automation Services in UK",
         description:
             "AI automation for UK businesses. We design compliant n8n workflows and AI systems to reduce admin workload, improve accuracy, and scale operations.",
         canonical: "/ai-automation-uk",

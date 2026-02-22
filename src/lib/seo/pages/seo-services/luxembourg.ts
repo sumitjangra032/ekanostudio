@@ -31,7 +31,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "SEO Agency Luxembourg | Multilingual SEO & Corporate Ranking",
+        title: "Top SEO Services in Luxembourg",
         description:
             "Grow your visibility in Luxembourg. We specialize in multilingual, corporate, and finance-sector SEO tailored for the Grand Duchy.",
         canonical: "/seo-services-luxembourg",

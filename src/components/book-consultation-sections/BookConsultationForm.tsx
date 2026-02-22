@@ -181,11 +181,9 @@ export default function BookConsultationForm() {
                             CONTACT US
                         </span>
                     </m.div>
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-cabinet leading-[1.05] tracking-tighter mb-2 lg:mb-8">
-                        <span style={{ color: theme.text }}>Book  </span>
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-cabinet leading-[1.05] tracking-tighter mb-4 lg:mb-8 text-center">
+                        <span style={{ color: theme.text }}>Book </span>
                         <span style={{ color: theme.accents.a }}>Consultation</span>
-
-                        <br />
                     </h1>
                     <div
                         className="text-sm md:text-base lg:text-lg font-medium items-center justify-center leading-tight"

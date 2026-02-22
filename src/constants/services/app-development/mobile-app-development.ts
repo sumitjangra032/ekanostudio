@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const MOBILE_APP_DEVELOPMENT: IServiceType = {
   slug: "mobile-app-development",
   title: "Mobile App Development",
+  meta: { title: "Custom Mobile App Development Services" , description: "Launch your product with professional mobile app development. We build scalable, high-performance apps for iOS and Android." },
   sections: [
     {
       type: "hero",

@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const KEYWORD_RESEARCH: IServiceType = {
   slug: "keyword-research",
   title: "Keyword Research",
+  meta: { title: "SEO Keyword Research Services" },
   sections: [
     {
       type: "hero",

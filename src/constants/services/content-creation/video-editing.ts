@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const VIDEO_EDITING: IServiceType = {
   slug: "video-editing",
   title: "Video Editing",
+  meta: { title: "Professional Video Editing Services" },
   sections: [
     {
       type: "hero",

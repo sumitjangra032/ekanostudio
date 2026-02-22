@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const MARKETING_AUTOMATION: IServiceType = {
   slug: "marketing-automation",
   title: "Marketing Automation",
+  meta: { title: "Expert Marketing Automation Services" , description: "Drive consistent sales with advanced marketing automation. We design optimized workflows that nurture leads and engage customers." },
   sections: [
     {
       type: "hero",

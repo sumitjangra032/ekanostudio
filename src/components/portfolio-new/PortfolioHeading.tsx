@@ -11,7 +11,7 @@ export default function PortfolioHeading() {
 
     const text = heading.innerText;
     let spanned = '';
-    
+
     for (let i = 0; i < text.length; i++) {
       if (text[i] === ' ') {
         spanned += text[i];
@@ -30,7 +30,7 @@ export default function PortfolioHeading() {
         ">${text[i]}</span>`;
       }
     }
-    
+
     heading.innerHTML = spanned;
   }, []);
 
@@ -52,12 +52,12 @@ export default function PortfolioHeading() {
           letter-spacing: 3px;
         }
       `}</style>
-      <h2 
+      <h1
         ref={headingRef}
         className="portfolio-text "
       >
         PORTFOLIO
-      </h2>
+      </h1>
     </div>
   );
 }

@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const API_INTEGRATIONS: IServiceType = {
   slug: "api-integrations",
   title: "API Integrations & Custom Solutions",
+  meta: { title: "Seamless API Integrations Services" },
   sections: [
     {
       type: "hero",

@@ -3,6 +3,7 @@ import { IServiceType } from "@/constants/services";
 const SERVICES_DYNAMIC_CONTENT: IServiceType = {
   slug: "landing-page-development",
   title: "Landing Page Development",
+  meta: { title: "Custom Landing Page Development Services" , description: "Increase conversions with custom landing page development. We design responsive, high-converting pages tailored to your ads." },
   sections: [
     {
       type: "hero",

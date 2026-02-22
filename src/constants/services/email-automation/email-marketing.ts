@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const EMAIL_MARKETING: IServiceType = {
   slug: "email-marketing",
   title: "Email Marketing Automation",
+  meta: { title: "Expert Email Marketing Services" },
   sections: [
     {
       type: "hero",

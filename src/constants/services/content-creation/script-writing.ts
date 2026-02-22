@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const SCRIPT_WRITING: IServiceType = {
   slug: "script-writing",
   title: "Script Writing",
+  meta: { title: "Professional Script Writing Services" },
   sections: [
     {
       type: "hero",

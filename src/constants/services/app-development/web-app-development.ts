@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const WEB_APP_DEVELOPMENT: IServiceType = {
   slug: "web-app-development",
   title: "Web App Development",
+  meta: { title: "Custom Web App Development Services" , description: "Build powerful platforms with custom web app development. We deliver secure, scalable, and responsive progressive web apps." },
   sections: [
     {
       type: "hero",

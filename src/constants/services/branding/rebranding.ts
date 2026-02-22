@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const REBRANDING: IServiceType = {
   slug: "rebranding",
   title: "Rebranding & Brand Transformation",
+  meta: { title: "Professional Rebranding Services" },
   sections: [
     {
       type: "hero",

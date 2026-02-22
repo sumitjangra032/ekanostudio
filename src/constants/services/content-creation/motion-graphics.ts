@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const MOTION_GRAPHICS: IServiceType = {
   slug: "motion-graphics",
   title: "Motion Graphics",
+  meta: { title: "Professional Motion Graphics Services" },
   sections: [
     {
       type: "hero",

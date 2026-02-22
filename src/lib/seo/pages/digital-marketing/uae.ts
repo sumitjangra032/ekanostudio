@@ -31,7 +31,7 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Digital Marketing Agency Dubai | UAE Performance Marketing",
+        title: "Top Digital Marketing Agency in UAE",
         description:
             "Grow faster in the UAE. We manage premium Google Ads, Instagram Ads, and LinkedIn campaigns tailored for Dubai & Abu Dhabi’s high-value audience.",
         canonical: "/digital-marketing-uae",

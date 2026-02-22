@@ -3,6 +3,7 @@ import { IServiceType } from "@/constants/services";
 const SERVICES_DYNAMIC_CONTENT: IServiceType = {
   slug: "website-development",
   title: "Website Development",
+  meta: { title: "Custom Website Development Services" , description: "Grow your brand with custom website development. We build fast, secure, and SEO-friendly sites that drive business results." },
   sections: [
     {
       type: "hero",

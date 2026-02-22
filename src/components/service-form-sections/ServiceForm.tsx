@@ -223,12 +223,12 @@ export default function ServiceForm({ initialCategory, initialService }: Service
                                 Service Inquiry
                             </div>
 
-                            <div
+                            <h1
                                 className="text-3xl md:text-4xl lg:text-5xl font-bold font-cabinet leading-[1.05] tracking-tight"
                                 style={{ color: theme.text }}
                             >
                                 {serviceData?.title || "Get Your Service Started"}
-                            </div>
+                            </h1>
 
                             <p
                                 className="text-base md:text-lg opacity-80 leading-relaxed max-w-lg"

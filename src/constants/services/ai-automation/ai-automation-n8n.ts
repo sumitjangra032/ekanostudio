@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const AI_AUTOMATION_N8N: IServiceType = {
   slug: "ai-automation-n8n",
   title: "AI Automation & n8n Workflows",
+  meta: { title: "Expert n8n AI Automation Services" , description: "Streamline workflows with n8n AI automation services. We connect your tools to save time, reduce costs, and boost output." },
   sections: [
     {
       type: "hero",

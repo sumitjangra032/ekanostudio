@@ -4,9 +4,9 @@ import { Metadata } from "next";
 const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
-  title: "The Competitor Analysis Master Class: War Game Your Market",
+  title: "How to do Competitor Analysis",
   description:
-    "A deep dive into competitor analysis, using strategic frameworks, digital espionage, and psychological audits to find market gaps and exploit competitor weaknesses.",
+    "Learn how to do a competitor analysis properly to uncover market gaps, track rivals, and build a winning business strategy.",
   keywords: [
     "Competitor Analysis",
     "Market Strategy",
@@ -18,16 +18,16 @@ export const metadata: Metadata = {
     "Pricing Strategy"
   ],
   openGraph: {
-    title: "The Competitor Analysis Master Class: War Game Your Market",
-    description: "A deep dive into competitor analysis, using strategic frameworks, digital espionage, and psychological audits.",
+    title: "How to do Competitor Analysis",
+    description: "Learn how to do a competitor analysis properly to uncover market gaps, track rivals, and build a winning business strategy.",
     url: `${SITE_URL}/how-to-do-a-competitor-analysis`,
     siteName: "Ekanostudio",
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Competitor Analysis Master Class: War Game Your Market",
-    description: "A deep dive into competitor analysis, using strategic frameworks, digital espionage, and psychological audits.",
+    title: "how to do Competitor Analysis",
+    description: "Learn how to do a competitor analysis properly to uncover market gaps, track rivals, and build a winning business strategy.",
   },
   alternates: {
     canonical: `${SITE_URL}/how-to-do-a-competitor-analysis`,

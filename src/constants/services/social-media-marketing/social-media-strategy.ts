@@ -3,6 +3,7 @@ import { IServiceType } from "../../services";
 const SOCIAL_MEDIA_STRATEGY: IServiceType = {
   slug: "social-media-strategy",
   title: "Social Media Strategy",
+  meta: { title: "Custom Social Media Strategy Services" , description: "Develop a custom social media strategy tailored to your brand goals. Drive measurable growth, engagement, and long-term sales." },
   sections: [
     {
       type: "hero",

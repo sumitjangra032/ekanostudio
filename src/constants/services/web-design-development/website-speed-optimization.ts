@@ -3,6 +3,7 @@ import { IServiceType } from "@/constants/services";
 const SERVICES_DYNAMIC_CONTENT: IServiceType = {
   slug: "website-speed-optimization",
   title: "Website Speed Optimization",
+  meta: { title: "Expert Website Speed Optimization" , description: "Improve user experience with professional website speed optimization. We reduce load times to boost your SEO and conversions." },
   sections: [
     {
       type: "hero",
