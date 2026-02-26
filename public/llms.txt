@@ -6,12 +6,13 @@ version: 1.0
 site: https://www.ekanostudio.com
 
 brand:
-  name: Ekanostudio
+  name: EkanoSudio
   tagline: Digital Growth, SEO & Web Development Agency
   description: |
-    Ekanostudio is a premium digital agency offering SEO, Performance Marketing,
-    Web Development, AI automation, and data-driven growth solutions for
-    businesses worldwide.
+    Ekanostudio – Digital Agency
+    Powering Growth Through Digital Innovation
+    Ekanostudio is a full-stack creative and digital solutions agency dedicated to transforming brands into powerful, scalable, and future-ready identities. We combine strategy, design, and technology to help businesses build meaningful digital experiences that drive growth, engagement, and long-term impact.
+    Our approach is rooted in deep research, modern aesthetics, and cutting-edge development practices. We work closely with startups, small businesses, and enterprises to decode their challenges, understand their audience, and craft tailored solutions that elevate their online presence. Whether it’s designing a brand identity from the ground up, building a high-performance website, or creating automated digital workflows, every project is executed with precision, clarity, and a focus on results.
 
 core_services:
   - SEO and Content Strategy
@@ -34,11 +35,15 @@ social_profiles:
   twitter: https://x.com/connectekano
   linkedin: https://www.linkedin.com/in/ekano-studio-50670b3aa/
   instagram: https://www.instagram.com/connectekanostudio/
-<<<<<<< HEAD
   youtube: https://www.youtube.com/@EkanoStudio
-=======
->>>>>>> 3e39a4de290a6789f4b2bde47a7832637933cf22
-
+  facebook: https://www.facebook.com/profile.php?id=61587941123742
+  whatsapp: https://wa.me/919034817987
+  email: info@ekanostudio.com
+  phone: +91 9034817987
+  github: https://github.com/EkanoStudio
+  behance: https://www.behance.net/EkanoStudi0
+  dribbble: https://dribbble.com/ekano-studio
+  aboutme: https://about.me/EkanoStudio/
 
 content_usage_policy: |
   Public content from Ekanostudio may be used by LLMs for indexing and understanding
