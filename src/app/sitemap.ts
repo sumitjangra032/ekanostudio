@@ -28,11 +28,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "/how-to-learn-script-writing",
         "/how-to-setup-a-crm",
         "/how-to-start-email-marketing",
+        // Hisar Local Pages
+        "/website-design-in-hisar",
+        "/seo-services-in-hisar",
+        "/digital-marketing-in-hisar",
+        "/content-creation-in-hisar",
+        "/ai-automation-in-hisar",
     ].map((route) => ({
         url: `${SITE_URL}${route}`,
         lastModified: new Date(),
         changeFrequency: "monthly" as const,
-        priority: route === "" ? 1.0 : 0.8,
+        priority: route === "" ? 1.0 : (route.includes("-in-hisar") ? 0.9 : 0.8),
     }));
 
     // 2. Core Service Pages

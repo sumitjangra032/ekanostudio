@@ -71,6 +71,17 @@ export default function SitemapPageClient() {
         })),
         STATIC_SECTIONS[1], // Legal
         STATIC_SECTIONS[2], // Resources
+        // Hisar Specialized Pages
+        {
+            category: "Hisar Specialized Services",
+            links: [
+                { label: "Website Design in Hisar", href: "/website-design-in-hisar" },
+                { label: "SEO Services in Hisar", href: "/seo-services-in-hisar" },
+                { label: "Digital Marketing in Hisar", href: "/digital-marketing-in-hisar" },
+                { label: "Content Creation in Hisar", href: "/content-creation-in-hisar" },
+                { label: "AI Automation in Hisar", href: "/ai-automation-in-hisar" },
+            ],
+        },
         // New SEO Pages Grouped
         {
             category: "Local & Global Services",

@@ -16,9 +16,9 @@ import {
 const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
-  title: "Ekanostudio – SEO, Web Development & Digital Growth Agency",
+  title: "Best Digital Marketing Company In Hisar | Digital Marketing Agency In Haryana | EkanoStudio",
   description:
-    "Ekanostudio: Priority support, real-time reporting, and performance-driven digital marketing services for sustainable business growth. Get started today.",
+    "Top digital marketing & web development agency in Hisar, Haryana. Ekanostudio delivers SEO, real-time reporting & growth solutions. Contact us today!",
   keywords: [
     "digital transformation agency",
     "web design agency",
@@ -33,18 +33,18 @@ export const metadata: Metadata = {
     "business growth",
   ],
   openGraph: {
-    title: "Ekanostudio – SEO, Web Development & Digital Growth Agency",
+    title: "Best Digital Marketing Company In Hisar | Digital Marketing Agency In Haryana | EkanoStudio",
     description:
-      "Ekanostudio: Priority support, real-time reporting, and performance-driven digital marketing services for sustainable business growth. Get started today.",
+      "Top digital marketing & web development agency in Hisar, Haryana. Ekanostudio delivers SEO, real-time reporting & growth solutions. Contact us today!",
     url: SITE_URL,
     siteName: "Ekanostudio",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ekanostudio – SEO, Web Development & Digital Growth Agency",
+    title: "Best Digital Marketing Company In Hisar | Digital Marketing Agency In Haryana | EkanoStudio",
     description:
-      "Ekanostudio: Priority support, real-time reporting, and performance-driven digital marketing services for sustainable business growth. Get started today.",
+      "Top digital marketing & web development agency in Hisar, Haryana. Ekanostudio delivers SEO, real-time reporting & growth solutions. Contact us today!",
   },
   alternates: {
     canonical: SITE_URL,

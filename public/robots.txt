@@ -1,9 +1,3 @@
-# *
 User-agent: *
 Allow: /
-
-# Host
-Host: https://www.ekanostudio.com
-
-# Sitemaps
 Sitemap: https://www.ekanostudio.com/sitemap.xml
