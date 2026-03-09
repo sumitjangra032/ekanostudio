@@ -50,6 +50,7 @@ import AnimateDownloadedSVG from "../animated/AnimateDownloadedSVG";
 import { useSearchParams } from "next/navigation";
 import { loadServiceBySlug } from "@/constants/services/loader";
 import { Textarea } from "@/components/ui/textarea";
+import { formatPrice, type Currency, getInternalServiceSlug } from "@/lib/pricing";
 
 const serviceFormSchema = z.object({
     name: z.string().min(2, "Name must be at least 2 characters."),
@@ -66,20 +67,25 @@ const serviceFormSchema = z.object({
 type ServiceFormValues = z.infer<typeof serviceFormSchema>;
 
 /**
- * Formats a price string by dividing numbers by 1000 and adding 'K'.
+ * Compacts currency amounts into K notation while preserving symbols and ranges.
+ * Examples:
+ * - ₹44,910 -> ₹44.9K
+ * - ₹1,25,910 -> ₹125.9K
+ * - $4,500+ -> $4.5K+
  */
 function formatPriceToK(priceStr: string): string {
     if (!priceStr) return priceStr;
 
-    return priceStr.replace(/(\d{1,3}(?:,\d{3})*(?:\.\d+)?)/g, (match) => {
-        const num = parseFloat(match.replace(/,/g, ""));
-        if (isNaN(num)) return match;
+    return priceStr.replace(/([₹$])\s?(\d[\d,]*(?:\.\d+)?)/g, (_match, symbol, amount) => {
+        const numeric = parseFloat(amount.replace(/,/g, ""));
+        if (isNaN(numeric)) return `${symbol}${amount}`;
 
-        const kValue = num / 1000;
-        if (kValue >= 1 && kValue % 1 === 0) {
-            return kValue.toString() + "K";
+        if (numeric < 1000) {
+            return `${symbol}${numeric.toLocaleString("en-IN")}`;
         }
-        return kValue.toFixed(1).replace(/\.0$/, "") + "K";
+
+        const compact = `${(numeric / 1000).toFixed(1).replace(/\.0$/, "")}K`;
+        return `${symbol}${compact}`;
     });
 }
 
@@ -100,6 +106,10 @@ export default function ServiceForm({ initialCategory, initialService }: Service
     const searchParams = useSearchParams();
     const categoryFromUrl = searchParams.get("category") || initialCategory;
     const serviceFromUrl = searchParams.get("service") || initialService;
+    // Strict currency behavior:
+    // - INR only when explicitly passed via URL (from Indian city service pages)
+    // - USD for all other cases
+    const currency: Currency = searchParams.get("currency") === "INR" ? "INR" : "USD";
 
     // Determine initial values
     let initialCat = categoryFromUrl || "";
@@ -158,7 +168,8 @@ export default function ServiceForm({ initialCategory, initialService }: Service
     useEffect(() => {
         if (selectedCategorySlug && selectedServiceSlug) {
             setLoadingService(true);
-            loadServiceBySlug(selectedCategorySlug, selectedServiceSlug)
+            const internalSlug = getInternalServiceSlug(selectedServiceSlug) || selectedServiceSlug;
+            loadServiceBySlug(selectedCategorySlug, internalSlug)
                 .then((data) => {
                     setServiceData(data);
                     // Reset package ONLY if current package doesn't exist in new data
@@ -552,7 +563,9 @@ export default function ServiceForm({ initialCategory, initialService }: Service
                                                                     >
                                                                         {pricingSection.plans.map((plan: { name: string; price: string; description: string }) => {
                                                                             const isSelected = field.value === plan.name;
-                                                                            const displayPrice = formatPriceToK(plan.price);
+                                                                            // 1. Convert currency if needed (USD → INR)
+                                                                            // 2. Then compact large numbers to K notation
+                                                                            const displayPrice = formatPriceToK(formatPrice(plan.price, currency));
 
                                                                             return (
                                                                                 <FormItem key={plan.name} className="h-full">

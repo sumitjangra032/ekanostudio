@@ -16,7 +16,12 @@ export function parseSeoSlug(slug: string): { service: Service; location: Locati
     // slug = "website-design-bangalore"
     // location = "bangalore" (length 9)
     // service part = slug.slice(0, - (length + 1)) -> +1 for the dash
-    const serviceSlug = slug.slice(0, -(matchedLocation.slug.length + 1));
+    let serviceSlug = slug.slice(0, -(matchedLocation.slug.length + 1));
+
+    // Handle "service-in-location" pattern
+    if (serviceSlug.endsWith("-in")) {
+        serviceSlug = serviceSlug.slice(0, -3);
+    }
 
     const matchedService = SEO_SERVICES.find(s => s.slug === serviceSlug);
 

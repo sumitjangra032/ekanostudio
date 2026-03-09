@@ -8,16 +8,22 @@ import AnimatedRotateButton from "../animated/AnimatedRotateButton";
 import Image from "next/image";
 import { BRAND, GLOBAL_CTA_CONTENT, BRAND_LOGO } from "@/constants/global";
 import Link from "next/link";
+import { type Currency, getInternalServiceSlug } from "@/lib/pricing";
 
-export default function ServiceCta({ data, category, service }: { data: any; category?: string; service?: string }) {
+export default function ServiceCta({ data, category, service, currency }: { data: any; category?: string; service?: string; currency?: Currency }) {
     const { themeName } = useTheme();
     const theme = THEMES[themeName];
 
-    const projectHref = category && service
-        ? `${GLOBAL_CTA_CONTENT.serviceForm.href}?category=${category}&service=${service}`
-        : category
-            ? `${GLOBAL_CTA_CONTENT.serviceForm.href}?category=${category}`
-            : GLOBAL_CTA_CONTENT.serviceForm.href;
+    const projectHref = (() => {
+        const currencyParam = currency === "INR" ? "&currency=INR" : "";
+        const internalService = getInternalServiceSlug(data?.serviceSlug || service);
+
+        if (category && internalService)
+            return `${GLOBAL_CTA_CONTENT.serviceForm.href}?category=${category}&service=${internalService}${currencyParam}`;
+        if (category)
+            return `${GLOBAL_CTA_CONTENT.serviceForm.href}?category=${category}${currencyParam}`;
+        return GLOBAL_CTA_CONTENT.serviceForm.href;
+    })();
 
     const sectionRef = useRef(null);
 

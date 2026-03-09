@@ -4,10 +4,10 @@ import { Metadata } from "next";
 const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
-    title: "Refund Policy | Ekanostudio",
+    title: " Refund Policy",
     description: "Read our Refund Policy to understand provisions for refunds, disputes, and non-refundable services at Ekanostudio.",
     openGraph: {
-        title: "Refund Policy | Ekanostudio",
+        title: " Refund Policy",
         description: "Read our Refund Policy to understand provisions for refunds, disputes, and non-refundable services at Ekanostudio.",
         url: `${SITE_URL}/refund-policy`,
         siteName: "Ekanostudio",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary",
-        title: "Refund Policy | Ekanostudio",
+        title: " Refund Policy",
         description: "Read our Refund Policy to understand provisions for refunds, disputes, and non-refundable services.",
     },
     alternates: {

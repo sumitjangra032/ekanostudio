@@ -61,6 +61,12 @@ export default function SeoServicesHisarPage() {
                     subheadline: "Data-driven SEO strategies built for businesses in Hisar and Haryana — combining local SEO, technical fixes, and content to drive real organic growth.",
 
                     isSmallHeading: true,
+                    currency: "INR",
+                    serviceSlug: "on-page-seo",
+                    categorySlug: "seo",
+                    serviceCta: {
+                        text: "Get Started",
+                    }
                 }
             },
 
@@ -195,13 +201,52 @@ export default function SeoServicesHisarPage() {
             },
 
             {
+                type: "pricing",
+                data: {
+                    heading: "SEO Pricing for Hisar Businesses",
+                    category: "seo",
+                    serviceSlug: "on-page-seo",
+                    currency: "INR",
+                    plans: [
+                        {
+                            name: "Starter",
+                            price: "$249 – $449",
+                            description: "On-page SEO for up to 5 core pages.",
+                            features: ["Keyword Research (5 Keywords)", "Title & Meta Optimization", "H1-H6 Structure Audit", "Basic Content Review"]
+                        },
+                        {
+                            name: "Standard",
+                            price: "$699 – $1,199",
+                            description: "Full website on-page SEO (up to 25 pages).",
+                            features: ["Keyword Mapping (25 Pages)", "Full Technical SEO Audit", "Image Alt Tag Optimization", "Internal Link Strategy"]
+                        },
+                        {
+                            name: "Premium",
+                            price: "$1,600 – $2,900",
+                            description: "Advanced content optimization, schema & Core Web Vitals.",
+                            features: ["Advanced Content Strategy", "Schema Markup Implementation", "Core Web Vitals Fixes", "Competitor SEO Analysis"]
+                        },
+                        {
+                            name: "Enterprise",
+                            price: "$4,000+",
+                            description: "Large websites, e-commerce & multi-language SEO optimization.",
+                            features: ["Enterprise CMS Optimization", "Multi-language SEO Setup", "Ongoing Algorithm Tracking", "Dedicated SEO Strategist"]
+                        },
+                    ]
+                }
+            },
+
+            {
                 type: "cta",
                 data: {
                     // CTA — specific, local, action-driven
                     heading: "Get a Free SEO Audit for Your Hisar Business",
-                    subheading: "Find out exactly why your website is not ranking in Hisar and what it will take to fix it — completely free, no obligation.",
-                    ctaText: "Claim Free SEO Audit",
-                    ctaLink: "/book-consultation"
+                    subheading: "Stop losing customers to your competitors. Ekanostudio provides data-driven SEO strategies that rank your business on top. Book your free audit today.",
+                    ctaText: "Get Your Free Audit",
+                    ctaLink: "/book-consultation",
+                    currency: "INR",
+                    serviceSlug: "on-page-seo",
+                    categorySlug: "seo"
                 }
             }
         ]

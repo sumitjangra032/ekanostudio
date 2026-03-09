@@ -64,6 +64,12 @@ export default function AiAutomationHisarPage() {
                     subheadline: "Ekanostudio builds custom AI chatbots, automated workflows, and data-driven systems that help businesses in Hisar and Haryana operate faster, smarter, and at lower cost.",
 
                     isSmallHeading: true,
+                    currency: "INR",
+                    serviceSlug: "ai-automation-n8n",
+                    categorySlug: "ai-automation",
+                    serviceCta: {
+                        text: "Get Started",
+                    }
                 }
             },
 
@@ -200,13 +206,52 @@ export default function AiAutomationHisarPage() {
             },
 
             {
+                type: "pricing",
+                data: {
+                    heading: "AI & Automation Pricing for Hisar Businesses",
+                    category: "ai-automation",
+                    serviceSlug: "ai-automation-n8n",
+                    currency: "INR",
+                    plans: [
+                        {
+                            name: "Starter",
+                            price: "$499 – $999",
+                            description: "Simple automation workflow, basic integrations, setup & deployment.",
+                            features: ["Initial n8n Setup", "1 Core Workflow", "Basic Webhook Setup", "Email Integrations"]
+                        },
+                        {
+                            name: "Standard",
+                            price: "$999 – $1,999",
+                            description: "Multiple workflows, AI integration, error handling, documentation.",
+                            features: ["Multiple n8n Workflows", "OpenAI/LLM Integration", "Advanced Error Handling", "Full Process Documentation"]
+                        },
+                        {
+                            name: "Premium",
+                            price: "$1,999 – $4,999",
+                            description: "Complex automation system, custom nodes, monitoring, training, support.",
+                            features: ["Enterprise Scale Systems", "Custom Node Development", "Uptime Monitoring Setup", "Internal Team Training"]
+                        },
+                        {
+                            name: "Enterprise",
+                            price: "$5,000+",
+                            description: "Enterprise automation platform, custom development, dedicated support, SLA.",
+                            features: ["Full Platform Architecture", "Dedicated Automation Lead", "Priority 24/7 SLA", "Annual Strategic Review"]
+                        },
+                    ]
+                }
+            },
+
+            {
                 type: "cta",
                 data: {
                     // CTA — specific, local, action-driven
                     heading: "Find Out How Much Time AI Can Save Your Hisar Business",
                     subheading: "Book a free 30-minute discovery call with Ekanostudio's automation team. We will map out the highest-ROI automation opportunities in your Hisar business — no obligation.",
                     ctaText: "Book Free Discovery Call",
-                    ctaLink: "/book-consultation"
+                    ctaLink: "/book-consultation",
+                    currency: "INR",
+                    serviceSlug: "ai-automation-n8n",
+                    categorySlug: "ai-automation"
                 }
             }
         ]

@@ -4,10 +4,10 @@ import { Metadata } from "next";
 const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
-    title: "Ekanostudio | Terms and Conditions",
+    title: " Terms and Conditions",
     description: "Read our Terms and Conditions to understand the rules and guidelines for using Ekanostudio's services.",
     openGraph: {
-        title: "Ekanostudio | Terms and Conditions",
+        title: " Terms and Conditions",
         description: "Read our Terms and Conditions to understand the rules and guidelines for using Ekanostudio's services.",
         url: `${SITE_URL}/terms-and-conditions`,
         siteName: "Ekanostudio",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary",
-        title: "Ekanostudio | Terms and Conditions",
+        title: " Terms and Conditions",
         description: "Read our Terms and Conditions to understand the rules and guidelines for using Ekanostudio's services.",
     },
     alternates: {

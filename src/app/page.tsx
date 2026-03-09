@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   description:
     "Top digital marketing & web development agency in Hisar, Haryana. Ekanostudio delivers SEO, real-time reporting & growth solutions. Contact us today!",
   keywords: [
-    "digital transformation agency",
+    "Marketing Services",
     "web design agency",
     "branding agency",
     "digital marketing services",

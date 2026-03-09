@@ -62,6 +62,12 @@ export default function ContentCreationHisarPage() {
                     subheadline: "From Instagram reels and graphic design to SEO blog writing and video production — Ekanostudio creates content that builds your brand and drives real engagement for businesses in Hisar and Haryana.",
 
                     isSmallHeading: true,
+                    currency: "INR",
+                    serviceSlug: "content-writing",
+                    categorySlug: "content-creation",
+                    serviceCta: {
+                        text: "Get Started",
+                    }
                 }
             },
 
@@ -198,13 +204,52 @@ export default function ContentCreationHisarPage() {
             },
 
             {
+                type: "pricing",
+                data: {
+                    heading: "Content Creation Pricing for Hisar Businesses",
+                    category: "content-creation",
+                    serviceSlug: "content-writing",
+                    currency: "INR",
+                    plans: [
+                        {
+                            name: "Starter",
+                            price: "$0.08 – $0.12",
+                            description: "Per word for SEO blogs & articles.",
+                            features: ["Professional Copywriting", "SEO Keyword Integration", "Plagiarism Checks", "1 Round of Revisions"]
+                        },
+                        {
+                            name: "Standard",
+                            price: "$0.15 – $0.25",
+                            description: "Per word for website & landing page copy.",
+                            features: ["High-Conversion Copy", "Targeted Audience Tone", "Competitive Research", "2 Rounds of Revisions"]
+                        },
+                        {
+                            name: "Premium",
+                            price: "$0.30+",
+                            description: "Per word for specialized technical or sales copy.",
+                            features: ["Expert Technical Writing", "Strategic Sales Copy", "Multi-Asset Campaigns", "Unlimited Revisions"]
+                        },
+                        {
+                            name: "Retainer",
+                            price: "Custom",
+                            description: "Monthly content packages for blogs & social.",
+                            features: ["Regular Content Cycles", "Dedicated Writer", "Content Strategy Planning", "Performance Tracking"]
+                        },
+                    ]
+                }
+            },
+
+            {
                 type: "cta",
                 data: {
                     // CTA — specific, local, action-driven, no vague "Start Creating"
                     heading: "Get Professional Content for Your Hisar Business",
                     subheading: "Let Ekanostudio handle your content creation so you can focus on running your business. Book a free consultation with our Hisar content team today.",
                     ctaText: "Book Free Consultation",
-                    ctaLink: "/book-consultation"
+                    ctaLink: "/book-consultation",
+                    currency: "INR",
+                    serviceSlug: "content-writing",
+                    categorySlug: "content-creation"
                 }
             }
         ]

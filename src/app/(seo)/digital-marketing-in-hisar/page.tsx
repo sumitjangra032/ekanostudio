@@ -53,6 +53,12 @@ export default function DigitalMarketingHisarPage() {
                     subheadline: "From SEO and social media to Google Ads and content marketing — Ekanostudio delivers digital marketing strategies built specifically for businesses in Hisar and Haryana.",
 
                     isSmallHeading: true,
+                    currency: "INR",
+                    serviceSlug: "social-media-strategy",
+                    categorySlug: "social-media-marketing",
+                    serviceCta: {
+                        text: "Get Started",
+                    }
                 }
             },
 
@@ -189,13 +195,52 @@ export default function DigitalMarketingHisarPage() {
             },
 
             {
+                type: "pricing",
+                data: {
+                    heading: "Digital Marketing Pricing for Hisar Businesses",
+                    category: "social-media-marketing",
+                    serviceSlug: "social-media-strategy",
+                    currency: "INR",
+                    plans: [
+                        {
+                            name: "Starter",
+                            price: "$249 – $449",
+                            description: "Single-platform strategy & content framework.",
+                            features: ["Channel Performance Audit", "Single Platform Strategy", "Content Pillar Definitions", "Basic Hashtag Research"]
+                        },
+                        {
+                            name: "Standard",
+                            price: "$699 – $1,199",
+                            description: "Multi-platform strategy with content pillars & calendar.",
+                            features: ["Multi-Platform Strategy", "Audience Persona Mapping", "Full Monthly Calendar", "Competitor Benchmarking"]
+                        },
+                        {
+                            name: "Premium",
+                            price: "$1,500 – $2,900",
+                            description: "Full funnel-based content & engagement strategy.",
+                            features: ["Conversion Funnel Design", "Engagement Automations", "Advanced Paid Alignment", "Influencer Roadmap"]
+                        },
+                        {
+                            name: "Enterprise",
+                            price: "$4,000+",
+                            description: "Brand-scale multi-platform strategy with influencer & paid social.",
+                            features: ["Global Brand Strategy", "Multi-Channel Integration", "Dedicated Strategy Lead", "ROI Modeling & Forecasts"]
+                        },
+                    ]
+                }
+            },
+
+            {
                 type: "cta",
                 data: {
                     // CTA — specific offer, local, action-driven, no vague "Get Started"
                     heading: "Get a Free Digital Marketing Strategy for Your Hisar Business",
                     subheading: "Find out exactly which digital marketing channels will grow your business in Hisar fastest — completely free, no obligation.",
                     ctaText: "Book Free Strategy Call",
-                    ctaLink: "/book-consultation"
+                    ctaLink: "/book-consultation",
+                    currency: "INR",
+                    serviceSlug: "social-media-strategy",
+                    categorySlug: "social-media-marketing"
                 }
             }
         ]

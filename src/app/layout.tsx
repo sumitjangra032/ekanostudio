@@ -15,13 +15,13 @@ const SITE_URL = "https://www.ekanostudio.com";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Ekanostudio - Digital Transformation Services & Consulting",
+    default: "Ekanostudio - Marketing Services & Consulting",
     template: "Ekanostudio - %s",
   },
   description:
     "Accelerate your digital growth with Ekanostudio. We provide expert SEO, web development, branding, and digital marketing services across India.",
   keywords: [
-    "digital transformation",
+    "Marketing",
     "Ekanostudio",
     "SEO agency",
     "web development",
@@ -35,7 +35,10 @@ export const metadata: Metadata = {
   creator: "Ekanostudio",
   publisher: "Ekanostudio",
   icons: {
-    icon: "/logo.png",
+    icon: [
+      { url: "/logo.png", sizes: "48x48", type: "image/png" },
+      { url: "/logo.png", sizes: "96x96", type: "image/png" },
+    ],
     shortcut: "/logo.png",
     apple: "/logo.png",
   },
@@ -44,24 +47,24 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: SITE_URL,
     siteName: "Ekanostudio",
-    title: "Ekanostudio - Digital Transformation Services & Consulting",
+    title: "Ekanostudio - Marketing Services & Consulting",
     description:
       "Ekanostudio helps businesses grow with SEO, web development, branding, and digital marketing services across India.",
     images: [
       {
-        url: "/logo.png",
-        width: 800,
-        height: 600,
-        alt: "Ekanostudio Logo",
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Ekanostudio - Marketing Services",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ekanostudio - Digital Transformation Services & Consulting",
+    title: "Ekanostudio - Marketing Services & Consulting",
     description:
       "Ekanostudio helps businesses grow with SEO, web development, branding, and digital marketing services across India.",
-    images: ["/logo.png"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -75,7 +78,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "./",
+    canonical: SITE_URL,
   },
   applicationName: "Ekanostudio",
   appleWebApp: {
@@ -90,9 +93,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en-IN">
       <head>
-        {/* Manual Font Preloading */}
         <link
           rel="preload"
           href="/fonts/satoshi/Satoshi-Medium.woff2"
@@ -135,18 +137,15 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           type="font/woff2"
           crossOrigin="anonymous"
         />
+
         <meta name="p:domain_verify" content="015c1ca0b99c509411057086ec985440" />
 
-        {/* GA4 */}
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-0T7Z4PX35H"
-        />
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-0T7Z4PX35H" />
+
         <Script id="ga4" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
-            
             if ('requestIdleCallback' in window) {
               requestIdleCallback(function() {
                 gtag('js', new Date());
@@ -154,19 +153,33 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               });
             } else {
               setTimeout(function() {
-                 gtag('js', new Date());
-                 gtag('config', 'G-0T7Z4PX35H');
+                gtag('js', new Date());
+                gtag('config', 'G-0T7Z4PX35H');
               }, 2000);
             }
           `}
         </Script>
 
-        {/* Schema.org Fixed */}
-        <Script
-          id="schema-organization"
-          type="application/ld+json"
-          strategy="afterInteractive"
-        >
+        <Script id="schema-website" type="application/ld+json" strategy="beforeInteractive">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Ekanostudio",
+            "url": "https://www.ekanostudio.com",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://www.ekanostudio.com/search?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          }
+          `}
+        </Script>
+
+        <Script id="schema-organization" type="application/ld+json" strategy="beforeInteractive">
           {`
           {
             "@context": "https://schema.org",
@@ -201,7 +214,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 "name": "Ekanostudio",
                 "image": "https://www.ekanostudio.com/logo.png",
                 "url": "https://www.ekanostudio.com",
-                "telephone": "",
+                "telephone": "+91 9034817987",
                 "address": {
                   "@type": "PostalAddress",
                   "streetAddress": "Red Square Market, Mehta Nagar",

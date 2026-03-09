@@ -13,6 +13,7 @@ import ServiceDeliverables from "./ServiceDeliverables";
 import ServiceWhyMatters from "./ServiceWhyMatters";
 
 import { ISectionType, IServiceSection } from "@/constants/services";
+import { type Currency } from "@/lib/pricing";
 
 export const SECTION_COMPONENTS: Partial<Record<ISectionType, any>> = {
   hero: ServiceHero,
@@ -34,15 +35,27 @@ export default function SectionRenderer({
   theme,
   heroCta,
   category,
-  service
+  service,
+  currency,
 }: {
   section: IServiceSection,
   theme: any,
   heroCta?: any,
   category?: string,
-  service?: string
+  service?: string,
+  // Optional — only present when the section carries a currency override (e.g. Indian pages)
+  currency?: Currency,
 }) {
   const Component = SECTION_COMPONENTS[section.type];
   if (!Component) return null;
-  return <Component data={section.data} theme={theme} heroCta={heroCta} category={category} service={service} />;
+  return (
+    <Component
+      data={section.data}
+      theme={theme}
+      heroCta={heroCta}
+      category={category}
+      service={service}
+      currency={currency}
+    />
+  );
 }

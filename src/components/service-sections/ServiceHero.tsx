@@ -11,8 +11,9 @@ import { GLOBAL_CTA_CONTENT } from "@/constants/global";
 import { useParams } from "next/navigation";
 import ParallaxBackground from "../animated/ParallaxBackground";
 import FloatingParticles from "../animated/FloatingParticles";
+import { type Currency, getInternalServiceSlug } from "@/lib/pricing";
 
-export default function ServiceHero({ data }: { data: any }) {
+export default function ServiceHero({ data, currency }: { data: any; currency?: Currency }) {
   const { themeName } = useTheme();
   const theme = THEMES[themeName];
 
@@ -26,8 +27,9 @@ export default function ServiceHero({ data }: { data: any }) {
 
   const yHero = useTransform(scrollYProgress, [0, 1], [0, -150]);
 
-  const category = params?.category;
-  const service = params?.service;
+  const category = data.categorySlug || params?.category;
+  const service = getInternalServiceSlug(data.serviceSlug || (params?.service as string));
+  const currencyParam = currency === "INR" ? "&currency=INR" : "";
 
   return (
     <section
@@ -122,7 +124,7 @@ export default function ServiceHero({ data }: { data: any }) {
             {data.serviceCta && (
               <AnimatedRotateButton
                 text={data.serviceCta.text}
-                href={`${GLOBAL_CTA_CONTENT.serviceForm.href}?category=${category}&service=${service}`}
+                href={`${GLOBAL_CTA_CONTENT.serviceForm.href}?category=${category}&service=${service}${currencyParam}`}
                 color={theme.buttonBg2}
                 accent={theme.accents}
                 variant="secondary"
@@ -131,7 +133,7 @@ export default function ServiceHero({ data }: { data: any }) {
             )}
             <AnimatedRotateButton
               text={GLOBAL_CTA_CONTENT.bookConsultation.title}
-              href={GLOBAL_CTA_CONTENT.bookConsultation.href}
+              href={`${GLOBAL_CTA_CONTENT.bookConsultation.href}?category=${category}&service=${service}${currencyParam}`}
               color={theme.buttonBg}
               accent={theme.accents}
               className="w-full sm:w-auto"

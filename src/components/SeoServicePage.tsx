@@ -4,10 +4,14 @@ import { SeoPageData } from "@/lib/seo/content-generator";
 import ServicePageClient from "@/components/service-sections/ServicePageClient";
 import { IServiceType } from "@/constants/services";
 import { SERVICE_PRICING } from "@/constants/servicePricing";
+import { isIndianLocation, INR_CURRENCY, USD_CURRENCY, type Currency } from "@/lib/pricing";
 
 import { ChartLineIcon, RocketIcon, GlobeIcon, ClockIcon } from "@/components/icons/LocalIcons";
 
 export default function SeoServicePage({ data }: { data: SeoPageData }) {
+
+    // Determine currency based on location — Indian locations use INR
+    const currency: Currency = isIndianLocation(data.location) ? INR_CURRENCY : USD_CURRENCY;
 
     // Convert SeoPageData to IServiceType format expected by ServicePageClient
     const serviceData: IServiceType = {
@@ -24,6 +28,12 @@ export default function SeoServicePage({ data }: { data: SeoPageData }) {
                     headline: data.content.hero.subtitle,
                     subheadline: `Professional ${data.service.name} services tailored for the ${data.location.adjective} market.`,
                     isSmallHeading: true,
+                    currency,
+                    serviceSlug: data.service.slug,
+                    categorySlug: data.service.categorySlug,
+                    serviceCta: {
+                        text: "Get Started",
+                    }
                 }
             },
             // 2. METRICS
@@ -132,36 +142,21 @@ export default function SeoServicePage({ data }: { data: SeoPageData }) {
                     heading: "Flexible Pricing Plans",
                     category: data.service.categorySlug,
                     serviceSlug: data.service.targetServiceSlug,
-                    plans: SERVICE_PRICING[data.service.targetServiceSlug] || [
-                        {
-                            name: "Starter",
-                            price: "$499+",
-                            description: `Essential ${data.service.name} for small businesses.`,
-                            features: ["Strategy Session", "Core Implementation", "Basic Support", "1 Month Maintenance"]
-                        },
-                        {
-                            name: "Growth",
-                            price: "$1,499+",
-                            description: `Advanced solutions for scaling companies in ${data.location.name}.`,
-                            features: ["Advanced Strategy", "Full Feature Set", "Priority Support", "3 Months Maintenance"]
-                        },
-                        {
-                            name: "Enterprise",
-                            price: "$4,999+",
-                            description: "Comprehensive end-to-end solutions.",
-                            features: ["Dedicated Team", "Custom Development", "24/7 Support", "Annual Integration"]
-                        }
-                    ]
+                    currency,
+                    plans: SERVICE_PRICING[data.service.targetServiceSlug] || []
                 }
             },
             // 10. CTA
             {
                 type: "cta",
                 data: {
-                    heading: data.content.cta.title, // Fixed: was 'title'
-                    subheading: data.content.cta.text, // Fixed: was 'description'
+                    heading: data.content.cta.title,
+                    subheading: data.content.cta.text,
                     ctaText: "Start Your Project",
-                    ctaLink: "/book-consultation"
+                    ctaLink: "/book-consultation",
+                    currency,
+                    serviceSlug: data.service.slug,
+                    categorySlug: data.service.categorySlug,
                 }
             }
         ]

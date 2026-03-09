@@ -59,6 +59,12 @@ export default function WebsiteDesignHisarPage() {
                     subheadline: "Custom web design and development that helps businesses in Hisar, Haryana attract more customers, rank on Google, and grow online.",
 
                     isSmallHeading: true,
+                    currency: "INR",
+                    serviceSlug: "website-design-uiux",
+                    categorySlug: "web-design-development",
+                    serviceCta: {
+                        text: "Get Started",
+                    }
                 }
             },
 
@@ -206,13 +212,52 @@ export default function WebsiteDesignHisarPage() {
             },
 
             {
+                type: "pricing",
+                data: {
+                    heading: "Website Design Pricing for Hisar Businesses",
+                    category: "web-design-development",
+                    serviceSlug: "website-design-uiux",
+                    currency: "INR",
+                    plans: [
+                        {
+                            name: "Starter",
+                            price: "$299 – $499",
+                            description: "Landing page design or 1–2 pages.",
+                            features: ["Custom UI/UX Design", "Mobile Responsive", "Figma Source Files", "Up to 2 Revisions"]
+                        },
+                        {
+                            name: "Standard",
+                            price: "$799 – $1,399",
+                            description: "Full business website design.",
+                            features: ["Multi-page UI/UX Design", "Interactive Prototypes", "Design Systems", "Up to 5 Revisions"]
+                        },
+                        {
+                            name: "Premium",
+                            price: "$1,800 – $3,500",
+                            description: "Advanced UI/UX and ecommerce websites.",
+                            features: ["Advanced User Research", "High-Fidelity Wireframes", "E-commerce Flow Design", "Unlimited Revisions"]
+                        },
+                        {
+                            name: "Enterprise",
+                            price: "$4,500+",
+                            description: "Global web design agency solutions.",
+                            features: ["Full Product Design", "Accessibility Audits", "Dedicated Designer", "Global Design Standards"]
+                        },
+                    ]
+                }
+            },
+
+            {
                 type: "cta",
                 data: {
                     // CTA heading — action-driven, local keyword reinforcement
-                    heading: "Ready to Build Your Website in Hisar?",
-                    subheading: "Join growing businesses in Hisar and Haryana that trust Ekanostudio for professional web design. Get a free consultation today.",
-                    ctaText: "Get Free Quote",
-                    ctaLink: "/book-consultation"
+                    heading: "Build a Website That Converts for Your Hisar Business",
+                    subheading: "Ready to take your business online? Ekanostudio builds performance-focused websites that look stunning and drive results. Book your free consultation today.",
+                    ctaText: "Start Your Project",
+                    ctaLink: "/book-consultation",
+                    currency: "INR",
+                    serviceSlug: "website-design-uiux",
+                    categorySlug: "web-design-development"
                 }
             }
         ]

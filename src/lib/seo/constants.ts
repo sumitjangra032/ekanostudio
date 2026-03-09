@@ -88,6 +88,16 @@ export const SEO_LOCATIONS = [
         metaTitleSuffix: "Gurgaon | Leading Agency",
         traits: ["MNCs", "financial districts", "tech startups"],
     },
+    {
+        name: "Hisar",
+        slug: "hisar",
+        type: "city",
+        country: "India",
+        adjective: "Hisar-based",
+        context: "in Haryana's growing industrial hub",
+        metaTitleSuffix: "Hisar | Local Experts",
+        traits: ["local businesses", "industrial growth", "service providers"],
+    },
 
     // COUNTRIES
     {

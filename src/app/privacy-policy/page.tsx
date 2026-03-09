@@ -4,10 +4,10 @@ import { Metadata } from "next";
 const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
-    title: "Ekanostudio | Privacy Policy",
+    title: " Privacy Policy",
     description: "Read our Privacy Policy to understand how Ekanostudio collects, uses, and protects your personal data.",
     openGraph: {
-        title: "Ekanostudio | Privacy Policy",
+        title: " Privacy Policy",
         description: "Read our Privacy Policy to understand how Ekanostudio collects, uses, and protects your personal data.",
         url: `${SITE_URL}/privacy-policy`,
         siteName: "Ekanostudio",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary",
-        title: "Ekanostudio | Privacy Policy",
+        title: " Privacy Policy",
         description: "Read our Privacy Policy to understand how Ekanostudio collects, uses, and protects your personal data.",
     },
     alternates: {

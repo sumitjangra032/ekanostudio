@@ -12,15 +12,18 @@ import { GLOBAL_CTA_CONTENT } from "@/constants/global";
 import RandomGradientGlow from "../effects/RandomGradientGlow";
 import FloatingParticles from "../animated/FloatingParticles";
 import ParallaxBackground from "../animated/ParallaxBackground";
+import { formatPrice, type Currency, getInternalServiceSlug } from "@/lib/pricing";
 
-export default function ServicePricing({ data, theme, heroCta }: { data: any; theme: any, heroCta?: any }) {
+export default function ServicePricing({ data, theme, heroCta, currency }: { data: any; theme: any; heroCta?: any; currency?: Currency }) {
   if (!data?.plans?.length) return null;
 
   const params = useParams();
   const category = data.category || params?.category;
-  const service = data.serviceSlug || params?.service;
+  const service = getInternalServiceSlug(data.serviceSlug || (params?.service as string));
 
-  const dynamicHref = `${GLOBAL_CTA_CONTENT.serviceForm.href}?category=${category}&service=${service}`;
+  // Append currency param to the form link so ServiceForm can apply the same conversion
+  const currencyParam = currency === "INR" ? `&currency=INR` : "";
+  const dynamicHref = `${GLOBAL_CTA_CONTENT.serviceForm.href}?category=${category}&service=${service}${currencyParam}`;
 
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -145,7 +148,7 @@ export default function ServicePricing({ data, theme, heroCta }: { data: any; th
                   className="text-4xl md:text-5xl font-bold mb-4"
                   style={{ color: theme.accents.a }}
                 >
-                  {p.price}
+                  {formatPrice(p.price, currency)}
                 </div>
                 <p style={{ color: theme.subtext }}>{p.description}</p>
               </div>
