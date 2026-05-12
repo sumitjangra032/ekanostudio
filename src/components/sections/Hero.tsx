@@ -1,3 +1,4 @@
+import React from "react";
 import { HERO_CONTENT } from "@/constants/hero";
 import { THEMES, currentTheme } from "../../constants/theme";
 import AnimatedRotateButton from "../animated/AnimatedRotateButton";
@@ -70,12 +71,14 @@ export default function Hero() {
                     const isTarget = (word.startsWith("{") && word.endsWith("}")) || (word.startsWith("[") && word.endsWith("]"));
                     const cleanText = isTarget ? word.slice(1, -1) : word;
                     return (
-                      <span
-                        key={i}
-                        className={`inline-block mr-2 px-[0.045em] ${isTarget ? 'gradient-text' : ''}`}
-                      >
-                        {cleanText}
-                      </span>
+                      <React.Fragment key={i}>
+                        <span
+                          className={`inline-block mr-2 px-[0.045em] ${isTarget ? 'gradient-text' : ''}`}
+                        >
+                          {cleanText}
+                        </span>
+                        {" "}
+                      </React.Fragment>
                     );
                   })}
                 </div>

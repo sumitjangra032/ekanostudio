@@ -39,8 +39,22 @@ export default function WorkMarquee({
           willChange: "transform",
         }}
       >
-        {[...items, ...items].map((item, index) => (
+        {items.map((item, index) => (
           <li key={index} className="flex-shrink-0">
+            <div className="relative rounded-xl overflow-hidden border border-white/10 w-[300px] md:w-[600px] aspect-[6/4]">
+              <Image
+                src={item.src}
+                alt={item.alt || ""}
+                fill
+                className="h-full w-full object-cover"
+                draggable={false}
+                sizes="(max-width: 768px) 300px, 600px"
+              />
+            </div>
+          </li>
+        ))}
+        {items.map((item, index) => (
+          <li key={`clone-${index}`} className="flex-shrink-0" aria-hidden="true">
             <div className="relative rounded-xl overflow-hidden border border-white/10 w-[300px] md:w-[600px] aspect-[6/4]">
               <Image
                 src={item.src}

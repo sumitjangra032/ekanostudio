@@ -24,9 +24,22 @@ export const Carousel: React.FC<CarouselProps> = ({ images }) => {
                     animation: "marquee 60s linear infinite",
                 }}
             >
-                {duplicatedImages.map((img, index) => {
+                {images.map((img, index) => {
                     return (
                         <div key={index} className="shrink-0 flex items-center relative h-[420px] w-[600px]">
+                            <Image
+                                src={img}
+                                alt=""
+                                fill
+                                className="object-contain rounded-lg"
+                                sizes="(max-width: 768px) 300px, 600px"
+                            />
+                        </div>
+                    );
+                })}
+                {images.map((img, index) => {
+                    return (
+                        <div key={`clone-${index}`} aria-hidden="true" className="shrink-0 flex items-center relative h-[420px] w-[600px]">
                             <Image
                                 src={img}
                                 alt=""

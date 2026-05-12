@@ -61,7 +61,7 @@ export function ScrambleText({ text, className = "", delay = 0, autoStart = fals
 
     return (
         <span ref={ref} className={className}>
-            {displayText || text.split('').map(() => '\u00A0').join('')}
+            {displayText || text}
         </span>
     )
 }

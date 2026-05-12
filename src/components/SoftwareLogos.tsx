@@ -37,8 +37,38 @@ const SoftwareLogos = () => {
                         display: "flex",
                     }}
                 >
-                    {[...logos, ...logos, ...logos].map((logo, index) => (
+                    {logos.map((logo, index) => (
                         <div key={index} className="flex flex-col items-center gap-3 group shrink-0 cursor-default">
+                            <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 lg:w-22 lg:h-22 flex items-center justify-center">
+                                <Image
+                                    src={logo.icon}
+                                    alt={logo.name}
+                                    className="w-full h-full object-contain rounded-xl opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                                    width={80}
+                                    height={80}
+                                    sizes="(max-width: 768px) 64px, 80px"
+                                />
+                            </div>
+                            <span className="text-xs md:text-sm font-medium text-white/40 group-hover:text-white transition-colors duration-300">{logo.name}</span>
+                        </div>
+                    ))}
+                    {logos.map((logo, index) => (
+                        <div key={`clone1-${index}`} aria-hidden="true" className="flex flex-col items-center gap-3 group shrink-0 cursor-default">
+                            <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 lg:w-22 lg:h-22 flex items-center justify-center">
+                                <Image
+                                    src={logo.icon}
+                                    alt={logo.name}
+                                    className="w-full h-full object-contain rounded-xl opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                                    width={80}
+                                    height={80}
+                                    sizes="(max-width: 768px) 64px, 80px"
+                                />
+                            </div>
+                            <span className="text-xs md:text-sm font-medium text-white/40 group-hover:text-white transition-colors duration-300">{logo.name}</span>
+                        </div>
+                    ))}
+                    {logos.map((logo, index) => (
+                        <div key={`clone2-${index}`} aria-hidden="true" className="flex flex-col items-center gap-3 group shrink-0 cursor-default">
                             <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 lg:w-22 lg:h-22 flex items-center justify-center">
                                 <Image
                                     src={logo.icon}

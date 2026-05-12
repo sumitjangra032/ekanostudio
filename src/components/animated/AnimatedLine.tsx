@@ -1,7 +1,7 @@
 "use client";
 
 import { m, useInView } from "framer-motion";
-import { useRef } from "react";
+import React, { useRef } from "react";
 import Link from "next/link";
 
 interface Gradient {
@@ -62,57 +62,59 @@ export default function AnimatedLine({
         color: gradient ? undefined : (textColor ?? "#ffffff"),
       }}
     >
-      {/* SEO & Accessibility: Full text visible to bots/screen readers */}
-      <span className="sr-only">{text.replace(/\[|\]|\{|\}/g, "")}</span>
+      {words.map((word, i) => {
+        const isTarget =
+          (word.startsWith("{") && word.endsWith("}")) ||
+          (word.startsWith("[") && word.endsWith("]"));
 
-      {/* Visual Animation: Hidden from screen readers to avoid duplication */}
-      <span aria-hidden="true">
-        {words.map((word, i) => {
-          const isTarget =
-            (word.startsWith("{") && word.endsWith("}")) ||
-            (word.startsWith("[") && word.endsWith("]"));
+        let cleanText = isTarget ? word.slice(1, -1) : word;
+        let linkUrl: string | null = null;
 
-          let cleanText = isTarget ? word.slice(1, -1) : word;
-          let linkUrl: string | null = null;
+        if (isTarget && cleanText.includes("|")) {
+          const parts = cleanText.split("|");
+          cleanText = parts[0];
+          linkUrl = parts[1];
+        }
 
-          if (isTarget && cleanText.includes("|")) {
-            const parts = cleanText.split("|");
-            cleanText = parts[0];
-            linkUrl = parts[1];
-          }
+        const content = (
+          <m.span
+            key={i}
+            className={`inline-block mr-2 ${isTarget ? highlightClassName : ""} px-[0.045em] ${linkUrl ? "hover:underline cursor-pointer" : ""
+              }`}
+            initial={{ opacity: 0, y: 8 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{
+              duration,
+              delay: isInView ? delay + i * 0.08 : 0,
+              ease: "easeOut",
+            }}
+            style={{
+              ...(isTarget && gradient ? gradientStyle : {}),
+              ...(isTarget && highlightStyle ? highlightStyle : {}),
+            }}
+          >
+            {cleanText}
+          </m.span>
+        );
 
-          const content = (
-            <m.span
-              key={i}
-              className={`inline-block mr-2 ${isTarget ? highlightClassName : ""} px-[0.045em] ${linkUrl ? "hover:underline cursor-pointer" : ""
-                }`}
-              initial={{ opacity: 0, y: 8 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{
-                duration,
-                delay: isInView ? delay + i * 0.08 : 0,
-                ease: "easeOut",
-              }}
-              style={{
-                ...(isTarget && gradient ? gradientStyle : {}),
-                ...(isTarget && highlightStyle ? highlightStyle : {}),
-              }}
-            >
-              {cleanText}
-            </m.span>
-          );
-
-          if (linkUrl) {
-            return (
-              <Link key={i} href={linkUrl} className="inline-block" tabIndex={-1}>
+        if (linkUrl) {
+          return (
+            <React.Fragment key={i}>
+              <Link href={linkUrl} className="inline-block" tabIndex={-1}>
                 {content}
               </Link>
-            );
-          }
+              {" "}
+            </React.Fragment>
+          );
+        }
 
-          return content;
-        })}
-      </span>
+        return (
+          <React.Fragment key={i}>
+            {content}
+            {" "}
+          </React.Fragment>
+        );
+      })}
     </div>
   );
 }

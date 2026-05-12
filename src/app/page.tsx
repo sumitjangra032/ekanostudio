@@ -16,35 +16,42 @@ import {
 const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
-  title: "Best Digital Marketing Company In Hisar | Digital Marketing Agency In Haryana | EkanoStudio",
+  title: "EkanoStudio — Web Design & Digital Marketing Agency in Hisar",
   description:
-    "Top digital marketing & web development agency in Hisar, Haryana. Ekanostudio delivers SEO, real-time reporting & growth solutions. Contact us today!",
+    "EkanoStudio helps businesses in Hisar and across India grow online with custom websites, SEO, performance marketing, and social media — transparent pricing, no long-term contracts.",
   keywords: [
-    "Marketing Services",
-    "web design agency",
-    "branding agency",
-    "digital marketing services",
-    "UI UX design",
-    "business consulting",
-    "SEO services",
-    "priority support",
-    "real-time reporting",
-    "content strategy",
-    "business growth",
+    "digital marketing agency Hisar",
+    "web design agency Hisar",
+    "SEO services Haryana",
+    "web development Hisar",
+    "performance marketing India",
+    "social media marketing Hisar",
+    "UI UX design agency",
+    "ecommerce development Haryana",
   ],
   openGraph: {
-    title: "Best Digital Marketing Company In Hisar | Digital Marketing Agency In Haryana | EkanoStudio",
+    title: "EkanoStudio — Web Design & Digital Marketing Agency in Hisar",
     description:
-      "Top digital marketing & web development agency in Hisar, Haryana. Ekanostudio delivers SEO, real-time reporting & growth solutions. Contact us today!",
+      "Custom websites, SEO, performance marketing, and social media management for businesses in Hisar and across India. Transparent pricing, no long-term contracts.",
     url: SITE_URL,
-    siteName: "Ekanostudio",
+    siteName: "EkanoStudio",
     type: "website",
+
+    images: [
+      {
+        url: `${SITE_URL}/logo.png`, // create a 1200x630px branded image
+        width: 1200,
+        height: 630,
+        alt: "EkanoStudio — Digital Marketing & Web Design Agency in Hisar",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Digital Marketing Company In Hisar | Digital Marketing Agency In Haryana | EkanoStudio",
+    title: "EkanoStudio — Web Design & Digital Marketing Agency in Hisar",
     description:
-      "Top digital marketing & web development agency in Hisar, Haryana. Ekanostudio delivers SEO, real-time reporting & growth solutions. Contact us today!",
+      "Custom websites, SEO, performance marketing, and social media management for businesses in Hisar and across India. Transparent pricing, no long-term contracts.",
+    images: [`${SITE_URL}/logo.png`],
   },
   alternates: {
     canonical: SITE_URL,
