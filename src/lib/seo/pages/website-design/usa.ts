@@ -24,9 +24,9 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Website Design USA | Premium UI/UX for American Brands",
+        title: "Website Design Services American Businesses |  Ekanostudio",
         description:
-            "High-performance, ADA-compliant websites built for the American market. Silicon-Valley-grade UI/UX and enterprise-ready architecture for scale.",
+            "Get high-converting websites with our USA web design services. Custom, responsive and SEO-friendly designs built to boost traffic, leads and business growth.",
         canonical: "/website-design-usa",
     },
 

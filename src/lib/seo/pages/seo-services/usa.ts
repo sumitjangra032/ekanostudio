@@ -32,9 +32,9 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "SEO Services USA | Rank Nationwide on Google.com",
+        title: "SEO Services USA | Drive Rankings, Traffic and Leads",
         description:
-            "Dominate Google.com with US-focused SEO. We help businesses rank nationally and locally across all 50 states using advanced, white-hat SEO strategies.",
+            "Boost rankings, organic traffic and leads with expert SEO services. Get customized strategies designed to increase visibility, drive traffic and grow your business.",
         canonical: "/seo-services-usa",
     },
 

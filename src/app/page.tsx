@@ -16,9 +16,9 @@ import {
 const SITE_URL = "https://www.ekanostudio.com";
 
 export const metadata: Metadata = {
-  title: "Web Design & Digital Marketing Agency in Hisar",
+  title: "AI Automation, Web Design and Digital Growth |  Ekanostudio",
   description:
-    "EkanoStudio helps businesses in Hisar and across India grow online with custom websites, SEO, performance marketing, and social media , transparent pricing , no long-term contracts.",
+    "Boost your business in the USA with AI automation, web design, SEO and digital marketing services. Custom solutions to increase traffic, efficiency and growth.",
   keywords: [
     "digital marketing agency Hisar",
     "web design agency Hisar",

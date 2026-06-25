@@ -30,9 +30,9 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "AI Automation USA | Scalable n8n & Workflows",
+        title: "AI Automation Services USA | Business Automation |  Ekanostudio",
         description:
-            "AI automation for US companies. We design custom n8n workflows and AI agents that replace repetitive tasks, reduce overhead, and scale operations.",
+            "Automate workflows, reduce manual tasks, and boost efficiency with AI automation services in the USA. Get custom solutions to scale your business faster.",
         canonical: "/ai-automation-usa",
     },
 

@@ -31,9 +31,9 @@ export const data: SeoPageData = {
     },
 
     meta: {
-        title: "Digital Marketing Agency USA | Performance, Growth & ROI",
+        title: "Digital Marketing Services | Grow Your Business |  Ekanostudio",
         description:
-            "Scale faster in the United States. We manage Google Ads, Meta Ads, and Email campaigns built to convert traffic into measurable revenue.",
+            "Grow your business with expert SEO services in the USA. Improve rankings, increase organic traffic & generate quality leads with customized SEO strategies.",
         canonical: "/digital-marketing-usa",
     },
 
