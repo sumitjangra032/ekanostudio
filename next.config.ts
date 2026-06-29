@@ -3,6 +3,35 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   reactCompiler: true,
+  async redirects() {
+    return [
+      {
+        source: "/website-design-hisar",
+        destination: "/website-design-in-hisar",
+        permanent: true,
+      },
+      {
+        source: "/seo-services-hisar",
+        destination: "/seo-services-in-hisar",
+        permanent: true,
+      },
+      {
+        source: "/content-creation-hisar",
+        destination: "/content-creation-in-hisar",
+        permanent: true,
+      },
+      {
+        source: "/digital-marketing-hisar",
+        destination: "/digital-marketing-in-hisar",
+        permanent: true,
+      },
+      {
+        source: "/ai-automation-hisar",
+        destination: "/ai-automation-in-hisar",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
