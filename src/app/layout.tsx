@@ -167,7 +167,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: "Ekanostudio - Marketing Services & Consulting",
-    template: "Ekanostudio - %s",
+    template: "%s",
   },
   description:
     "Accelerate your digital growth with Ekanostudio. We provide expert SEO, web development, branding, and digital marketing services across India.",
