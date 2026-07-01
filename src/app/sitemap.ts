@@ -4,6 +4,13 @@ import { SEO_SERVICES, SEO_LOCATIONS } from "@/lib/seo/constants";
 import { SERVICES_CONTENT } from "@/constants/services";
 
 const SITE_URL = "https://www.ekanostudio.com";
+const EXCLUDED_PATHS = new Set([
+    "/website-design-hisar",
+    "/seo-services-hisar",
+    "/content-creation-hisar",
+    "/digital-marketing-hisar",
+    "/ai-automation-hisar",
+]);
 
 export default function sitemap(): MetadataRoute.Sitemap {
     // 1. Static Routes
@@ -55,8 +62,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const seoRoutes = [];
     for (const service of SEO_SERVICES) {
         for (const location of SEO_LOCATIONS) {
+            const path = `/${service.slug}-${location.slug}`;
+            if (EXCLUDED_PATHS.has(path)) {
+                continue;
+            }
+
             seoRoutes.push({
-                url: `${SITE_URL}/${service.slug}-${location.slug}`,
+                url: `${SITE_URL}${path}`,
                 lastModified: new Date(),
                 changeFrequency: "weekly" as const,
                 priority: 0.8, // Slightly lower than core services
